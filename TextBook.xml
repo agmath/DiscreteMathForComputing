@@ -13,7 +13,9 @@
 			
 			<p>This interactive, IBL, text was designed for use in a first-year course in Discrete Mathematics at Southern New Hampshire University. The course is designed for students taking a first semester of discrete mathematics in conjunction with an introductory programming course. Discrete mathematics content is introduced in time for it to be utilized in the corrsponding programming class.</p>
 			
-			<p>At Southern New Hampshire University, first-semester Computer Science tudents take CS113 (an introductory course in C++) and also traditionally took a course in Discrete Mathematics designed for general education purposes. In 2020, this Discrete Mathematics course was phased out and was replaced by a Discrete Mathematics for Computing course. Topics from the original Discrete Mathematics course were rearranged such that they are covered in time to be used in the CS113 class. Because the course is advertised as a mathematics <i>for computing</i> course, connections are explicitly made between the mathematics and programming concepts. Since the course has been developed, students majoring in Information Technology and students majoring in Game Programming have been encouraged to enroll as well. Those programs utilize Python and C# in their first-semester coursework, respectively. For these reasons, we've attempted to build the Discrete Mathematics for Computing course (and this accompanying text) as "language agnostic" experiences. A table of aligned coverage for the Discrete Mathematics for Computing course and the corresponding first-semester programming coursework in the partner programs appears below.</p>
+			<p>At Southern New Hampshire University, first-semester Computer Science tudents take CS113 (an introductory course in C++) and also traditionally took a course in Discrete Mathematics designed for general education purposes. In 2020, this Discrete Mathematics course was phased out and was replaced by a Discrete Mathematics for Computing course. Topics from the original Discrete Mathematics course were rearranged such that they are covered in time to be used in the CS113 class. Because the course is advertised as a mathematics <i>for computing</i> course, connections are explicitly made between the mathematics and programming concepts.</p>
+			
+			<p>Since the course has been developed, students majoring in Information Technology and students majoring in Game Programming have been encouraged by their major faculty to enroll as well. Those programs utilize Python and C#, respectively, in their first-semester coursework. For these reasons, we've attempted to build the Discrete Mathematics for Computing course (and this accompanying text) as "language agnostic" experiences. A table of aligned coverage for the Discrete Mathematics for Computing course and the corresponding first-semester programming coursework in the partner programs appears below.</p>
 			
 			<center>
 				<table>
@@ -141,41 +143,34 @@
 		</chapter>
 		
 		<chapter>
-			<title>Number Representations</title>
+			<title>Base Representations for Number Systems</title>
 			
-			<section xml:id = "Ch1-1-base10">
-				<title>Base-10 Representation of Numbers</title>
+			<section xml:id = "Base-Reps-Intro">
+				<title>Introduction</title>
+				
+				<p>A short introductory section designed to be read before students attend class. This section addresses why humans developed a base-10 number system as well as where other systems find natural applications. </p>
 			</section>
 			
-			<section xml:id = "Ch1-2-why-other-bases">
-				<title>Why Care About Other Bases?</title>
+			<section xml:id = "Base-Reps-b-to-10">
+				<title>Converting from Non-Standard Bases into Base 10</title>
+			</section>
+						
+			<section xml:id = "Base-Reps-10-to-b">
+				<title>Converting from Base-10 to Non-Standard Bases</title>
 			</section>
 			
-			<section xml:id = "Ch1-3-others-to-base10">
-				<title>Converting from Other Bases Into Base-10</title>
-			</section>
-			
-			<section xml:id = "Ch1-4-base10-to-others">
-				<title>Converting from Base-10 to Other Bases</title>
-			</section>
-			
-			<section xml:id = "Ch1-5-case-study">
-				<title>Case Study: </title>
-			</section>
-		
 		</chapter>
 		
 		<chapter>
 			<title>Symbolic Logic</title>
 			
-			<section xml:id = "Ch2-1-intro-logic">
-				<title>Symbolic Logic and Truth Tables</title>
+			<section xml:id = "Symbolic-Logic-Intro">
+				<title>Introduction</title>
 				<p>Some intro discussion text to lay out the chapter...</p>
-				
 			</section>
 			
-			<section xml:id = "Ch2-2-statements">
-				<title>Truth Values of Complex Logical Statements</title>
+			<section xml:id = "Logic-Operators-Truth-Tables">
+				<title>Logical Operators and Truth Tables</title>
 
 				<definition> In mathematics a <term>statement</term> is a sentence that has a well-defined truth value. It is either true or it is false and is not a matter of opinion.</definition>
 				
@@ -187,38 +182,61 @@
 				
 			</section>
 			
-			<section xml:id = "Ch2-3-symbolic-logic">
+			<section xml:id = "Complex-Logical-Statements">
+				<title>Evaluating Complex Logical Statements</title>
+				<p>text</p>
+			</section>
+			
+			<section xml:id = "Boolean-Algebra">
 				<title>Boolean Algebra</title>
 				<p>text</p>
 			</section>
 			
-			<section xml:id = "Ch2-4-case-study">
-				<title>Case Study: Logic for Flow Control</title>
+			<section xml:id = "Programmatic-Flow-Control">
+				<title>Logic for Programmatic Flow Control</title>
 				<p>text</p>
 			</section>
 		
 		</chapter>
 		
 		<chapter>
+			<title>Exam and Project I</title>
+			
+			<section xml:id = "Project-I">
+				<title>Project I</title>
+				<p>Placeholder...not sure if this should be / needs to be in the book.</p>
+			</section>
+		</chapter>
+		
+		<chapter>
 			<title>Counting</title>
 			
-			<section xml:id = "Ch3-1-counting-sets">
-				<title>Counting Sets of Objects</title>
+			<section xml:id = "Counting-Intro">
+				<title>Introduction</title>
+				<p>Some introductory text...</p>
 			</section>
 			
-			<section xml:id = "Ch3-2-fundamental-principle-counting">
-				<title>The Fundamental Principle of Counting</title>
+			<section xml:id = "Fundamental-Couning-Principles">
+				<title>Fundamental Counting Rules and Strategies</title>
 			</section>
 			
-			<section xml:id = "Ch3-3-counting-and-complexity">
+			<section xml:id = "Counting-Problems">
+				<title>Example Counting Problems</title>
+			</section>
+			
+			<section xml:id = "Looping-and-Complexity">
 				<title>Counting Operations, Looping, and Run-Time Complexity</title>
 			</section>
 			
-			<section xml:id = "Ch3-4-counting-and-probability">
+			<section xml:id = "Probability">
 				<title>Counting and Basic Probability</title>
 			</section>
 			
-			<section xml:id = "Ch3-5-probability-distributions">
+			<section xml:id = "Probability-and-Simulation">
+				<title>Probability and Simulation</title>
+			</section>
+			
+			<section xml:id = "Probability-Distributions">
 				<title>Discrete Probability Distributions</title>
 			</section>
 			
@@ -227,24 +245,42 @@
 		<chapter>
 			<title>Functions</title>
 			
-			<section xml:id = "Ch4-1-functions-part-i">
-				<title>An Introduction to Functions</title>
+			<section xml:id = "Functions-Intro">
+				<title>Introduction</title>
 			</section>
 
-			<section xml:id = "Ch4-2-functions-part-ii">
+			<section xml:id = "Building-Functions">
+				<title>Building Functions</title>
+			</section>
+			
+			<section xml:id = "Properties-of-Functions">
 				<title>Properties of Functions</title>
 			</section>
 			
 		</chapter>
+
+		<chapter>
+			<title>Exam and Project II</title>
+			
+			<section xml:id = "Project-II">
+				<title>Project II</title>
+				<p>Placeholder...not sure if this should be / needs to be in the book.</p>
+			</section>
+		</chapter>
+
 		
 		<chapter>
 			<title>Arrays</title>
 			
-			<section xml:id = "Ch5-1-vectors-and-arrays">
-				<title>Vectors and Arrays</title>
+			<section xml:id = "Arrays-Intro">
+				<title>Introduction</title>
+			</section>
+			
+			<section xml:id = "Vectors-and-1D-Arrays">
+				<title>Vectors and Other 1-dimensional Arrays</title>
 			</section>
 
-			<section xml:id = "Ch5-2-matrices-nd-arrays">
+			<section xml:id = "Matrices-and-n-d-Arrays">
 				<title>Matrices and Other Multidimensional Arrays</title>
 			</section>
 			
@@ -253,22 +289,39 @@
 		<chapter>
 			<title>Graphs and Trees</title>
 			
-			<section xml:id = "Ch6-1-intro">
-				<title>Introduction to Graphs</title>
+			<section xml:id = "Graphs-Intro">
+				<title>Introduction</title>
+			</section>
+			
+			<section xml:id = "Graph-Structures">
+				<title>Graph Structures</title>
 			</section>
 
-			<section xml:id = "Ch6-2-trees">
+			<section xml:id = "Tree-Structures">
 				<title>Tree Structures</title>
 			</section>
 
-			<section xml:id = "Ch6-3-tree-traversals">
+			<section xml:id = "Tree-Traversals">
 				<title>Tree Traversals</title>
 			</section>
 
-			<section xml:id = "Ch6-4-searching-and-sorting">
+			<section xml:id = "Searching-and-Sorting">
 				<title>Searching and Sorting Algorithms</title>
 			</section>
 			
+		</chapter>
+
+		<chapter>
+			<title>Exam and Project III</title>
+			
+			<section xml:id = "Project-III">
+				<title>Project III</title>
+				<p>Placeholder...not sure if this should be / needs to be in the book.</p>
+			</section>
+		</chapter>
+		
+		<chapter>
+			<title>Epilogue</title>
 		</chapter>
 		
 		

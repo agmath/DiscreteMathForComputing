@@ -1,7 +1,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-04-06T09:41:43-04:00    *-->
+<!--*    on 2022-04-14T13:30:34-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -9,7 +9,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Arrays</title>
+<title>Functions</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -70,10 +70,10 @@ var js_version = 0.11;
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Ch4-2-functions-part-ii.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Ch5-1-vectors-and-arrays.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Probability-Distributions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Functions-Intro.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Ch4-2-functions-part-ii.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Ch5-1-vectors-and-arrays.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Probability-Distributions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Functions-Intro.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -86,59 +86,74 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link">
-<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">Number Representations</span></a><ul>
-<li><a href="Ch1-1-base10.html" data-scroll="Ch1-1-base10">Base-10 Representation of Numbers</a></li>
-<li><a href="Ch1-2-why-other-bases.html" data-scroll="Ch1-2-why-other-bases">Why Care About Other Bases?</a></li>
-<li><a href="Ch1-3-others-to-base10.html" data-scroll="Ch1-3-others-to-base10">Converting from Other Bases Into Base-10</a></li>
-<li><a href="Ch1-4-base10-to-others.html" data-scroll="Ch1-4-base10-to-others">Converting from Base-10 to Other Bases</a></li>
-<li><a href="Ch1-5-case-study.html" data-scroll="Ch1-5-case-study">Case Study:</a></li>
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">Base Representations for Number Systems</span></a><ul>
+<li><a href="Base-Reps-Intro.html" data-scroll="Base-Reps-Intro">Introduction</a></li>
+<li><a href="Base-Reps-b-to-10.html" data-scroll="Base-Reps-b-to-10">Converting from Non-Standard Bases into Base 10</a></li>
+<li><a href="Base-Reps-10-to-b.html" data-scroll="Base-Reps-10-to-b">Converting from Base-10 to Non-Standard Bases</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Symbolic Logic</span></a><ul>
-<li><a href="Ch2-1-intro-logic.html" data-scroll="Ch2-1-intro-logic">Symbolic Logic and Truth Tables</a></li>
-<li><a href="Ch2-2-statements.html" data-scroll="Ch2-2-statements">Truth Values of Complex Logical Statements</a></li>
-<li><a href="Ch2-3-symbolic-logic.html" data-scroll="Ch2-3-symbolic-logic">Boolean Algebra</a></li>
-<li><a href="Ch2-4-case-study.html" data-scroll="Ch2-4-case-study">Case Study: Logic for Flow Control</a></li>
+<li><a href="Symbolic-Logic-Intro.html" data-scroll="Symbolic-Logic-Intro">Introduction</a></li>
+<li><a href="Logic-Operators-Truth-Tables.html" data-scroll="Logic-Operators-Truth-Tables">Logical Operators and Truth Tables</a></li>
+<li><a href="Complex-Logical-Statements.html" data-scroll="Complex-Logical-Statements">Evaluating Complex Logical Statements</a></li>
+<li><a href="Boolean-Algebra.html" data-scroll="Boolean-Algebra">Boolean Algebra</a></li>
+<li><a href="Programmatic-Flow-Control.html" data-scroll="Programmatic-Flow-Control">Logic for Programmatic Flow Control</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Counting</span></a><ul>
-<li><a href="Ch3-1-counting-sets.html" data-scroll="Ch3-1-counting-sets">Counting Sets of Objects</a></li>
-<li><a href="Ch3-2-fundamental-principle-counting.html" data-scroll="Ch3-2-fundamental-principle-counting">The Fundamental Principle of Counting</a></li>
-<li><a href="Ch3-3-counting-and-complexity.html" data-scroll="Ch3-3-counting-and-complexity">Counting Operations, Looping, and Run-Time Complexity</a></li>
-<li><a href="Ch3-4-counting-and-probability.html" data-scroll="Ch3-4-counting-and-probability">Counting and Basic Probability</a></li>
-<li><a href="Ch3-5-probability-distributions.html" data-scroll="Ch3-5-probability-distributions">Discrete Probability Distributions</a></li>
-</ul>
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Exam and Project I</span></a><ul><li><a href="Project-I.html" data-scroll="Project-I">Project I</a></li></ul>
 </li>
 <li class="link">
-<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Functions</span></a><ul>
-<li><a href="Ch4-1-functions-part-i.html" data-scroll="Ch4-1-functions-part-i">An Introduction to Functions</a></li>
-<li><a href="Ch4-2-functions-part-ii.html" data-scroll="Ch4-2-functions-part-ii">Properties of Functions</a></li>
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Counting</span></a><ul>
+<li><a href="Counting-Intro.html" data-scroll="Counting-Intro">Introduction</a></li>
+<li><a href="Fundamental-Couning-Principles.html" data-scroll="Fundamental-Couning-Principles">Fundamental Counting Rules and Strategies</a></li>
+<li><a href="Counting-Problems.html" data-scroll="Counting-Problems">Example Counting Problems</a></li>
+<li><a href="Looping-and-Complexity.html" data-scroll="Looping-and-Complexity">Counting Operations, Looping, and Run-Time Complexity</a></li>
+<li><a href="Probability.html" data-scroll="Probability">Counting and Basic Probability</a></li>
+<li><a href="Probability-and-Simulation.html" data-scroll="Probability-and-Simulation">Probability and Simulation</a></li>
+<li><a href="Probability-Distributions.html" data-scroll="Probability-Distributions">Discrete Probability Distributions</a></li>
 </ul>
 </li>
 <li class="link active">
-<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Arrays</span></a><ul>
-<li><a href="Ch5-1-vectors-and-arrays.html" data-scroll="Ch5-1-vectors-and-arrays">Vectors and Arrays</a></li>
-<li><a href="Ch5-2-matrices-nd-arrays.html" data-scroll="Ch5-2-matrices-nd-arrays">Matrices and Other Multidimensional Arrays</a></li>
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Functions</span></a><ul>
+<li><a href="Functions-Intro.html" data-scroll="Functions-Intro">Introduction</a></li>
+<li><a href="Building-Functions.html" data-scroll="Building-Functions">Building Functions</a></li>
+<li><a href="Properties-of-Functions.html" data-scroll="Properties-of-Functions">Properties of Functions</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Graphs and Trees</span></a><ul>
-<li><a href="Ch6-1-intro.html" data-scroll="Ch6-1-intro">Introduction to Graphs</a></li>
-<li><a href="Ch6-2-trees.html" data-scroll="Ch6-2-trees">Tree Structures</a></li>
-<li><a href="Ch6-3-tree-traversals.html" data-scroll="Ch6-3-tree-traversals">Tree Traversals</a></li>
-<li><a href="Ch6-4-searching-and-sorting.html" data-scroll="Ch6-4-searching-and-sorting">Searching and Sorting Algorithms</a></li>
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Exam and Project II</span></a><ul><li><a href="Project-II.html" data-scroll="Project-II">Project II</a></li></ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Arrays</span></a><ul>
+<li><a href="Arrays-Intro.html" data-scroll="Arrays-Intro">Introduction</a></li>
+<li><a href="Vectors-and-1D-Arrays.html" data-scroll="Vectors-and-1D-Arrays">Vectors and Other 1-dimensional Arrays</a></li>
+<li><a href="Matrices-and-n-d-Arrays.html" data-scroll="Matrices-and-n-d-Arrays">Matrices and Other Multidimensional Arrays</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span> <span class="title">Graphs and Trees</span></a><ul>
+<li><a href="Graphs-Intro.html" data-scroll="Graphs-Intro">Introduction</a></li>
+<li><a href="Graph-Structures.html" data-scroll="Graph-Structures">Graph Structures</a></li>
+<li><a href="Tree-Structures.html" data-scroll="Tree-Structures">Tree Structures</a></li>
+<li><a href="Tree-Traversals.html" data-scroll="Tree-Traversals">Tree Traversals</a></li>
+<li><a href="Searching-and-Sorting.html" data-scroll="Searching-and-Sorting">Searching and Sorting Algorithms</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span> <span class="title">Exam and Project III</span></a><ul><li><a href="Project-III.html" data-scroll="Project-III">Project III</a></li></ul>
+</li>
+<li class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span> <span class="title">Epilogue</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="chapter" id="chapter-6"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">6</span> <span class="title">Arrays</span>
+<span class="type">Chapter</span> <span class="codenumber">6</span> <span class="title">Functions</span>
 </h2>
 <nav class="summary-links"><ul>
-<li><a href="Ch5-1-vectors-and-arrays.html"><span class="codenumber">6.1</span> <span class="title">Vectors and Arrays</span></a></li>
-<li><a href="Ch5-2-matrices-nd-arrays.html"><span class="codenumber">6.2</span> <span class="title">Matrices and Other Multidimensional Arrays</span></a></li>
+<li><a href="Functions-Intro.html"><span class="codenumber">6.1</span> <span class="title">Introduction</span></a></li>
+<li><a href="Building-Functions.html"><span class="codenumber">6.2</span> <span class="title">Building Functions</span></a></li>
+<li><a href="Properties-of-Functions.html"><span class="codenumber">6.3</span> <span class="title">Properties of Functions</span></a></li>
 </ul></nav></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
