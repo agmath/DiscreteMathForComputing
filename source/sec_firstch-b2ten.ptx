@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_firstch-b2ten" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Converting from Non-Standard Bases into Base-10</title>
+  
+  <p>Before discussing a strategy for converting from non-standard bases 
+	back to the base-10 (decimal) system, it is worth considering how 
+	counting in the decimal system works. Have you ever considered what the
+	number 927 really means? Below is an insightful expansion.</p>
+  
+	<example xml:id = "int-expansion-ex"> <title> Explicit Base-10 Explansion</title>
+		<p> Below is the explicit base-10 expansion of the integer 927.</p>			
+		<md>
+		<mrow>927 = 9*(10^2) + 2*(10^1) + 7*(10^0)</mrow> 
+		</md>			
+	</example>
+
+	<p>The example above highlights the role of <i>place-value</i> in any
+	number system, not just our own decimal system. The place of the digit
+	determines the power of the base which it is attached to. The rightmost
+	digit, perhaps you've referred to it as the singles digit, is attached
+	to the <m>0^{th}</m> power of the base. The second digit from the right 
+	is attached to the <m>1^{st}</m> power of the base. With each successive 
+	position (towards the left) the digit is attached to an increasing power
+	of the relevant base.</p> 
+
+	<exercise exercise-customization="inline" exercise-interactive="static"><title>Explicit Base-10 Expansion</title><introduction>
+    	<p>Use your knowledge of place-value to explicitly write the integer
+		as the sum of its base-10 components.
+    	</p>
+    </introduction><myopenmath problem="974079" />
+	</exercise>
+
+	<exercise exercise-customization="inline" exercise-interactive="static"><title>Base-10 Place Value</title><introduction>
+    	<p>Use your knowledge of place-value to answer the following.
+    	</p>
+    </introduction><myopenmath problem="974086" />
+	</exercise>
+
+	<subsection><title>Numbers in Non-Standard Bases</title> 
+		<p>Let's shift away from our standard base-10 number system 
+		(commonly referred to as the decimal system), and think about
+		representing values in other bases. The discussion about place-value
+		in the previous section gives us all of the tools we need.</p>
+
+		<p>Given a base <m>b</m> (with <m>b > 0</m>) and digits <m>a_k, a_{k-1}, 
+		\cdots, a_1, a_0</m> with <m> 0 \leq a_i \lt b</m>, the number 
+		<m>\left(a_{k}a_{k-1}\cdots a_{1}a_{0}\right)_b</m> represents the value 
+		<m>a_{k}b^{k} + a_{k-1}b^{k-1} + \cdots + a_{1}b^{1} + a_{0}b^{0}</m>.
+		For example, the number represented by <m>\left(2501\right)_{6}</m>
+		is represents the value <m>2\cdot \left(6^3\right) + 5\cdot \left(6^2\right) +
+		0\cdot \left(6^1\right) + 1\cdot \left(6^0\right)</m>.</p>
+
+		<p>The definition above gives us a simple method for converting numbers 
+		represented in any non-standard base into their decimal representations. 
+		We need only write out their expansions in the provided base, and then
+		simplifly using our familiar operations. For example, the decimal 
+		representation of <m>\left(2501\right)_{6}</m> is <m>613</m>. You can 
+		verify this from the expansion in the previous paragraph. Let's try some 
+		examples below.</p> 
+
+		<exercise exercise-customization="inline" exercise-interactive="static"><title>Convert to Base-10</title><introduction>
+    	<p>Use your knowledge of place-value to answer the following.
+    	</p>
+    	</introduction><myopenmath problem="974643" />
+		</exercise>
+
+		<exercise exercise-customization="inline" exercise-interactive="static"><title>Convert to Base-10</title><introduction>
+    	<p>Use your knowledge of place-value to answer the following.
+    	</p>
+    	</introduction><myopenmath problem="974643" />
+		</exercise>
+
+		<exercise exercise-customization="inline" exercise-interactive="static"><title>Convert to Base-10</title><introduction>
+    	<p>Use your knowledge of place-value to answer the following.
+    	</p>
+    	</introduction><myopenmath problem="974643" />
+		</exercise>
+
+		<exercise exercise-customization="inline" exercise-interactive="static"><title>Convert to Base-10</title><introduction>
+    	<p>Use your knowledge of place-value to answer the following.
+    	</p>
+    	</introduction><myopenmath problem="974643" />
+		</exercise> 
+
+	</subsection> 
+
+	<subsection><title>Common Number Systems</title>
+		<p>Beyond our own base-10 (decimal) number system, there are others that 
+		are quite common. In particular, base-2 (binary), base-8 (octal), and base-16 
+		(hexadecimal) are popular. Let's explore those number systems a bit further.</p>
+
+		<p>In the previous subsection, we identified how number systems in different bases 
+		work, and highlighted how it is just a generalization of representing numbers
+		using our common decimal system. From that discussion, we see that the binary
+		system utilizes only two digits, 0 and 1, and place-values are attached to
+		increasing powers of 2 as we move towards the left. These <em>bi</em>nary 
+		dig<em>its</em> are often referred to as <em>bits</em>. Moving to the octal system,
+		we can deduce that it utilizes eight digits, 0 through 7, and that place-values 
+		are determined by increasing powers of 8 as we move towards the left.</p>
+
+		<p>The understanding above extends to hexadecimal, but creates a small problem. 
+		We've run out of digits to use. Indeed, the hexadecimal system will utilize sixteen
+		unique digits. To accommodate this, we'll utilize 0 through 9 as usual, but then 
+		include <m>A</m> through <m>F</m> to represent the quantites 10 - 15, as we 
+		know them. Why can't we use 10 - 15 to represent themselves? If we did so,
+		the encoding <m>\left(510\right)_{16}</m> becomes ambiguous. For example, do we 
+		mean <m>\left(5\cdot 16^2 + 1 \cdot 16^1 + 0\cdot 16^0\right) = 
+		\left(1296\right)_{10}</m> or do we mean <m>\left(5\cdot 16^1 + 10\cdot 16^0\right) 
+		= \left(26\right)_{10}</m>? Making use of the characters <m>A</m> through <m>F</m> 
+		prevents this ambiguity. The correct hexadecimal encoding of <m>26_{10}</m> 
+		would be <m>\left(5A\right)_{16}</m>. We'll discuss more on how to make this 
+		conversion in the next section.</p> 
+	</subsection>
+
+	<subsection><title>Conclusion</title>
+
+		<p>In this section we've seen that numbers can be written in a variety
+		of bases. In particular, any positive integer can serve as the base for a
+		number system. For bases larger than 10, we run out of our (familiar) digits, 
+		and need to include symbols to represent larger quanitities -- like using 
+		the characters <m>A</m> through <m>F</m> to represent 10 - 15 in the 
+		hexadecimal system.</p>
+
+		<p>In order to understand quantities written in different bases, we often need
+		to convert them back to the decimal system (base-10). This is because we don't 
+		commonly work in those non-standard base-systems and have little intuition for 
+		them. We can exploit what we know about *place-value* in converting from a known
+		non-standard base <m>b</m> into the corresponding decimal value. The 
+		equation below describes the conversion.</p>
+
+		<me>\left(a_{k}a_{k-1}\cdots a_{1}a_{0}\right)_{b} = \left(a_{k}\cdot b^k + a_{k-1}\cdot b^{k-1} + \cdots + a_{1}b^{1} + a_{0}b^{0}\right)_{10}</me>
+
+		<p>There are several non-standard bases which are commonly utilized in computing. 
+		In particular, it is not surprising to encounter the binary, octal, or hexadecimal
+		systems. Binary is commonly encountered because computers <em>think</em> in 
+		terms of the presence or absence of an electrical signal. Recognizing that there
+		are only two observable states shows why we are limited to two digits. Binary 
+		encodings can be quite long and cumbersome, grouping bits together can reduce the 
+		"length" of an encoding. For example, grouping every three consecutive bits together 
+		results in an octal encoding whole grouping every four consecutive bits 
+		together results in a hexadecimal encoding. It is very fast to switch between any of 
+		these three number systems because of this relationship.</p>
+	</subsection>
+
+</section>
+

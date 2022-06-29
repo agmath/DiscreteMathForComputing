@@ -1,0 +1,418 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<mathbook>
+	<book>
+
+	<title>Discrete Mathematics for Computing</title>
+		<introduction>
+			<p>A reader-friendly text for a first-year course in Discrete Mathematics,
+			focused on students pursuing majors involving computing.</p>
+		</introduction>
+
+		<preface>
+			<title>About This Text</title>
+			
+			<p>This interactive, IBL, text was designed for use in a first-year
+			 course in Discrete Mathematics at Southern New Hampshire University. 
+			 The course is designed for students taking a first semester of discrete 
+			 mathematics in conjunction with an introductory programming course. 
+			 Discrete mathematics content is introduced in time for it to be utilized 
+			 in the corrsponding programming class.</p>
+			
+			<p>At Southern New Hampshire University, first-semester Computer Science 
+			students take CS113 (an introductory course in C++) and also traditionally 
+			took a course in Discrete Mathematics designed for general education 
+			purposes. In 2020, this Discrete Mathematics course was phased out and was 
+			replaced by a Discrete Mathematics for Computing course. Topics from the 
+			original Discrete Mathematics course were rearranged such that they are 
+			covered in time to be used in the CS113 class. Because the course is 
+			advertised as a mathematics <i>for computing</i> course, connections are 
+			explicitly made between mathematics and programming concepts.</p>
+			
+			<p>Since the course has been developed, students majoring in Information 
+			Technology and students majoring in Game Programming have been encouraged 
+			by their major faculty to enroll as well. Those programs utilize Python and 
+			C#, respectively, in their first-semester coursework. For these reasons, 
+			we've attempted to build the Discrete Mathematics for Computing course (and 
+			this accompanying text) as "language agnostic" experiences. A table of 
+			aligned coverage for the Discrete Mathematics for Computing course and the 
+			corresponding first-semester programming coursework in the partner programs 
+			appears below.</p>
+			
+			<center>
+				<table>
+					<title>Alignment of Content Coverage</title>
+					<tabular halign="center">
+						<row header="yes" bottom="major">
+							<cell><em>Week Number</em></cell> <cell><em>MAT239</em></cell> <cell><em>CS113</em></cell> <cell><em>IT140</em></cell> <cell><em>GAM110</em></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 1</cell> <cell>Base-Representations of Integers</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 2</cell> <cell>Introduction to Sets</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 3</cell> <cell>Symbolic Logic</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 4</cell> <cell>Boolean Algebra and Logic for Flow Control</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 5</cell> <cell>Project / Exam</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 6</cell> <cell>Introduction to Counting</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 7</cell> <cell>Counting and Run-Time Complexity</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 8</cell> <cell>Introduction to Probability</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 9</cell> <cell>Probability Distributions and Queueing</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 10</cell> <cell>Functions</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 11</cell> <cell>Project / Exam</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 12</cell> <cell>Arrays</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 13</cell> <cell>Operations with Arrays, Multidimensional Arrays</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 14</cell> <cell>Introduction to Graph Theory</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 15</cell> <cell>Trees for Architecture, Searching, and Sorting</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+						<row bottom="minor">
+							<cell>Week 16</cell> <cell>Project / Exam</cell> <cell></cell> <cell></cell> <cell></cell>
+						</row>
+					</tabular>
+				</table>
+			</center>
+
+		</preface>
+
+		<chapter>
+			<title>PreTeXt Structural Reminders (Delete Later)</title>
+		
+			<section xml:id = "section-short">
+				<title>Sample Formatting</title>
+				
+				<subsection>
+					<title>Narrative text and definitions</title>
+					<p>This is a short sentence.</p>
+				
+					<definition> Here is the definition of an <term> important term</term>, and it is really important!</definition>
+				</subsection>
+
+				<subsection>
+					<title> Examples and embedded reading exercises</title>
+					
+					<example xml:id = "lin-solve-ex"> <title> Solving a linear equation</title>
+					Solve <m>2x+4 = 10</m>
+						<md>
+						<mrow>2x+4 \amp = 10</mrow> 
+						<mrow>\implies 2x \amp = 6</mrow>
+						<mrow>\implies x \amp= 3</mrow>
+						</md>			
+					</example>
+				
+					<exercise> <title> Try it!</title>
+						<myopenmath problem = "5547" />
+					</exercise>
+				</subsection>
+				
+				<subsection>
+					<title> Lemmas, Theorems, Corollaries, and Proofs</title>
+					
+					<p>The following lemma is used in the proof of the theorem that follows:
+					<lemma> A helpful lemma</lemma>
+					<theorem> An interesting theorem.</theorem>
+						<proof> The proof can go here.</proof>
+					<corollary> A corollary that follows</corollary>
+					</p>
+				</subsection>
+				
+				<subsection>
+					<title> Exercises</title>
+					
+					<exercises>
+						<exercise>
+							<myopenmath problem = "4372"/>
+						</exercise>
+						
+						<exercise> Solve <m> 5x + 10 = 5</m>
+						</exercise>
+							<hint>Check <xref ref = "lin-solve-ex"/> </hint>
+					</exercises>
+				</subsection>
+			</section>
+		
+			<section xml:id = "section-multiple-paragraph">
+				<title>Endings</title>
+				<p>This is a longer sentence that is followed by another sentence. 
+				Two sentences, and a second paragraph to follow.</p>
+			
+				<p>One more paragraph. If the two sides of a right triangle have 
+				lengths <m>a</m> and <m>b</m> with a hypotenuse of length <m>c</m>, 
+				then the equation <me>a^2+b^2=c^2</me> will always hold.</p>
+			</section>
+		</chapter>
+		
+		<chapter>
+			<title>Base Representations for Number Systems</title>
+			
+			<section xml:id = "Base-Reps-Intro">
+				<title>Introduction</title>
+				
+				<p>A short introductory section designed to be read before students 
+				attend class. This section addresses why humans developed a base-10 
+				number system as well as where other systems find natural applications.</p>
+
+				<p>Humans devised a base-10 number system simply because the species
+				evolved with 10 fingers. We could have used any other base system -- in
+				fact, some ancient civilizations did. The ancient Sumerians and 
+				Babylonians (3000BCE and 2000BCE, respectively) used base-60, while the 
+				Mayans and Aztecs adopted base-20 (circa 1400CE and 1500CE, respectively). 
+				The Alaskan Iñupak as well as the Eskimo-Aleut languages all include a 
+				base-20 numeral system in their current forms.</p>
+
+				<p>What's so special about base-10, base-20, or base-60? The Babylonians 
+				are credited with developing the concept of a 24-hour day, with each hour 
+				broken into 60-minutes and each minute broken into 60-seconds. The number 
+				60 was attractive because it had many <i>factors</i>. The numbers 2, 3, 4, 
+				5, 6, 10, 12, 15, 20, and 30 all divide evenly into 60. This meant that
+				working in base-60 often made fractions easy to work with. One conjectured
+				reason that the Mayans utilized a Base-20 system is that they lived in a
+				warm climate, where they simply didn't wear shoes. Having their toes 
+				exposed meant an additional set of 10 digits readily available for 
+				counting.</p>
+
+				<p>Perhaps not [currently] qualifying as a civilization, but an important
+				component of our lives nonetheless are machines -- more specifically,
+				computers. Computers don't have the advantage, nor the awareness, of 
+				fingers or toes. They're simply aware of the presence or absence of 
+				electrical pulses. Because of this, it is natural for them to process and
+				store information in a base-2 system -- a system more commonly known as
+				<i>binary</i>.</p>
+			</section>
+			
+			<section xml:id = "Base-Reps-b-to-10">
+				<title>Converting from Non-Standard Bases into Base 10</title>
+
+				<p>Before discussing a strategy for converting from non-standard bases 
+				back to the base-10 (decimal) system, it is worth considering how 
+				counting in the decimal system works. Have you ever considered what the
+				number 927 really means? Below is an insightful expansion.</p>
+
+				<example xml:id = "int-expansion-ex"> <title> The real meaning of 927</title>
+					
+					<md>
+					<mrow>927 = 9*(10^2) + 2*(10^1) + 7*(10^0)</mrow> 
+					</md>			
+				</example>
+
+				<p>The example above highlights the role of <i>place-value</i> in any
+				number system, not just our own decimal system. The place of the digit
+				determines the power of the base which it is attached to. The rightmost
+				digit, perhaps you've referred to it as the singles digit, is attached
+				to the <m>0^{th}</m> power of the base. The second digit from the right 
+				is attached to the <m>1^{st}</m> power of the base. With each successive 
+				position (towards the left) the digit is attached to an increasing power
+				of the relevant base.</p> 
+
+				<example xml:id = "identify-place-value-1">
+					<title>Check Your Understanding!</title>
+					What power of 10 is the digit 8 attached to in the expansion of the
+					number 586325?
+					<solution>
+					<md>
+						<m>586325 = 5*(10^5) + 8*(10^4) + 6*(10^3) + 3*(10^2) + 2*(10^1) + 
+						5*(10^0)</m>
+					</md>
+					<p>So the digit <m>8</m> is attached to <m>10^4</m>.</p>
+					</solution>
+				</example>
+
+			</section>
+						
+			<section xml:id = "Base-Reps-10-to-b">
+				<title>Converting from Base-10 to Non-Standard Bases</title>
+			</section>
+			
+		</chapter>
+		
+		<chapter>
+			<title>Symbolic Logic</title>
+			
+			<section xml:id = "Symbolic-Logic-Intro">
+				<title>Introduction</title>
+				<p>Some intro discussion text to lay out the chapter...</p>
+			</section>
+			
+			<section xml:id = "Logic-Operators-Truth-Tables">
+				<title>Logical Operators and Truth Tables</title>
+
+				<definition> In mathematics a <term>statement</term> is a sentence that has a well-defined truth value. It is either true or it is false and is not a matter of opinion.</definition>
+				
+				<p> Check your understanding with the following embedded example.</p>
+				
+				<exercise>
+					<myopenmath problem = "69971, resizer = true" />
+				</exercise>
+				
+			</section>
+			
+			<section xml:id = "Complex-Logical-Statements">
+				<title>Evaluating Complex Logical Statements</title>
+				<p>text</p>
+			</section>
+			
+			<section xml:id = "Boolean-Algebra">
+				<title>Boolean Algebra</title>
+				<p>text</p>
+			</section>
+			
+			<section xml:id = "Programmatic-Flow-Control">
+				<title>Logic for Programmatic Flow Control</title>
+				<p>text</p>
+			</section>
+		
+		</chapter>
+		
+		<chapter>
+			<title>Exam and Project I</title>
+			
+			<section xml:id = "Project-I">
+				<title>Project I</title>
+				<p>Placeholder...not sure if this should be / needs to be in the book.</p>
+			</section>
+		</chapter>
+		
+		<chapter>
+			<title>Counting</title>
+			
+			<section xml:id = "Counting-Intro">
+				<title>Introduction</title>
+				<p>Some introductory text...</p>
+			</section>
+			
+			<section xml:id = "Fundamental-Couning-Principles">
+				<title>Fundamental Counting Rules and Strategies</title>
+			</section>
+			
+			<section xml:id = "Counting-Problems">
+				<title>Example Counting Problems</title>
+			</section>
+			
+			<section xml:id = "Looping-and-Complexity">
+				<title>Counting Operations, Looping, and Run-Time Complexity</title>
+			</section>
+			
+			<section xml:id = "Probability">
+				<title>Counting and Basic Probability</title>
+			</section>
+			
+			<section xml:id = "Probability-and-Simulation">
+				<title>Probability and Simulation</title>
+			</section>
+			
+			<section xml:id = "Probability-Distributions">
+				<title>Discrete Probability Distributions</title>
+			</section>
+			
+		</chapter>
+		
+		<chapter>
+			<title>Functions</title>
+			
+			<section xml:id = "Functions-Intro">
+				<title>Introduction</title>
+			</section>
+
+			<section xml:id = "Building-Functions">
+				<title>Building Functions</title>
+			</section>
+			
+			<section xml:id = "Properties-of-Functions">
+				<title>Properties of Functions</title>
+			</section>
+			
+		</chapter>
+
+		<chapter>
+			<title>Exam and Project II</title>
+			
+			<section xml:id = "Project-II">
+				<title>Project II</title>
+				<p>Placeholder...not sure if this should be / needs to be in the book.</p>
+			</section>
+		</chapter>
+
+		
+		<chapter>
+			<title>Arrays</title>
+			
+			<section xml:id = "Arrays-Intro">
+				<title>Introduction</title>
+			</section>
+			
+			<section xml:id = "Vectors-and-1D-Arrays">
+				<title>Vectors and Other 1-dimensional Arrays</title>
+			</section>
+
+			<section xml:id = "Matrices-and-n-d-Arrays">
+				<title>Matrices and Other Multidimensional Arrays</title>
+			</section>
+			
+		</chapter>
+		
+		<chapter>
+			<title>Graphs and Trees</title>
+			
+			<section xml:id = "Graphs-Intro">
+				<title>Introduction</title>
+			</section>
+			
+			<section xml:id = "Graph-Structures">
+				<title>Graph Structures</title>
+			</section>
+
+			<section xml:id = "Tree-Structures">
+				<title>Tree Structures</title>
+			</section>
+
+			<section xml:id = "Tree-Traversals">
+				<title>Tree Traversals</title>
+			</section>
+
+			<section xml:id = "Searching-and-Sorting">
+				<title>Searching and Sorting Algorithms</title>
+			</section>
+			
+		</chapter>
+
+		<chapter>
+			<title>Exam and Project III</title>
+			
+			<section xml:id = "Project-III">
+				<title>Project III</title>
+				<p>Placeholder...not sure if this should be / needs to be in the book.</p>
+			</section>
+		</chapter>
+		
+		<chapter>
+			<title>Epilogue</title>
+		</chapter>
+		
+		
+	</book>
+</mathbook>
