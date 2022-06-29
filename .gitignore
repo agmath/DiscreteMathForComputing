@@ -1,8 +1,8 @@
 # unpublished builds
-output
+#output
 
 # assets generated from source
-generated-assets
+#generated-assets
 
 # error logs
 .error-schema.log
