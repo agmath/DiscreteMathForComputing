@@ -1,4 +1,4 @@
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-b2ten.ptx:144:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 143 and subsection
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-b2ten.ptx:146:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 134 and section
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-b2ten.ptx:148:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag subsection line 116
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:23:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-b2ten.ptx, and no fallback was found
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:43:16:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 30 and subsection
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:46:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: subsection line 21 and section
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:48:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 3
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:24:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx, and no fallback was found

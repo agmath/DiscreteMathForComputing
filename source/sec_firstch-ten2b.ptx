@@ -2,6 +2,45 @@
 
 <section xml:id="sec_firstch-ten2b" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Converting from Base-10 to Non-Standard Bases</title>
+
+  <introduction>
+    <p>In the previous section, we considered that representation of 
+    numbers using bases other than the base-10 (decimal) system is 
+    possible, and sometimes necessary. In that section you considered 
+    the true meaning of <em>place-value</em> and built on your 
+    intuitive understanding to identify a scheme for converting an 
+    integer, written in any non-standard base, into its decimal-
+    equivalent.</p>
+
+    <p>In this section, we'll work in the opposite direction. Say we
+    have a decimal represresentation of a value. How do we identify 
+    or construct its base-<m>b</m> equivalent? We'll use a procedure 
+    called the Euclidean Algorithm.</p>
+  </introduction>
+
+  <subsection><title>Motivating a Strategy</title>
+    <p>In order to convert a value whose decimal representation is 
+    <m>n</m> into its corresponding base-<m>b</m> equivalent, we 
+    need to first identify the number of whole copies of <m>b</m> 
+    which divide evenly into <m>n</m>. The left over amount (you've 
+    likely called this the <em>remainder</em> when discussing division
+    in your previous math courses) will be the <em>singles</em> digit 
+    in the base-<m>b</m> representation of <m>n</m>.</p>
+
+    <p>Let's consider an example, which we'll parse throughout this 
+    discussion. Consider the decimal value <m>n = 113</m>, for which 
+    we'll try to discover its base-<m>3</m> equivalent. The paragraph 
+    above suggests that we should start by identifying the number of 
+    whole copies of <m>3</m> which divide evenly into <m>113</m>. 
+    Notice that <m>3\cdot 37 = 111</m>, so there are <m>37</m> "whole" 
+    copies of <m>3</m> within the decimal value <m>113</m> with a 
+    remainder of <m>2</m>. That is, <m>113 = 3\cdot \left(37\right) + 
+    2</m>, and <m>2</m> will occupy the singles-digit in the 
+    base-<m>3</m> representation of <m>113</m>.</p> 
+
+    <p>How can we identify the next digit to the left in the 
+    base-<m>3</m> representation of <m>113</m>?</p>
+  </subsection>
   
 
 </section>

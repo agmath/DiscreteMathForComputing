@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-29T12:56:05-04:00       *-->
+<!--*       on 2022-06-29T13:50:27-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -108,7 +108,15 @@
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_firstch-ten2b"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Converting from Base-10 to Non-Standard Bases</span>
-</h2></section></div></main>
+</h2>
+<section class="introduction" id="introduction-9"><p id="p-27">In the previous section, we considered that representation of numbers using bases other than the base-10 (decimal) system is possible, and sometimes necessary. In that section you considered the true meaning of <em class="emphasis">place-value</em> and built on your intuitive understanding to identify a scheme for converting an integer, written in any non-standard base, into its decimal- equivalent.</p>
+<p id="p-28">In this section, we'll work in the opposite direction. Say we have a decimal represresentation of a value. How do we identify or construct its base-\(b\) equivalent? We'll use a procedure called the Euclidean Algorithm.</p></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.1</span> <span class="title">Motivating a Strategy</span>
+</h3>
+<p id="p-29">In order to convert a value whose decimal representation is \(n\) into its corresponding base-\(b\) equivalent, we need to first identify the number of whole copies of \(b\) which divide evenly into \(n\text{.}\) The left over amount (you've likely called this the <em class="emphasis">remainder</em> when discussing division in your previous math courses) will be the <em class="emphasis">singles</em> digit in the base-\(b\) representation of \(n\text{.}\)</p>
+<p id="p-30">Let's consider an example, which we'll parse throughout this discussion. Consider the decimal value \(n = 113\text{,}\) for which we'll try to discover its base-\(3\) equivalent. The paragraph above suggests that we should start by identifying the number of whole copies of \(3\) which divide evenly into \(113\text{.}\) Notice that \(3\cdot 37 = 111\text{,}\) so there are \(37\) "whole" copies of \(3\) within the decimal value \(113\) with a remainder of \(2\text{.}\) That is, \(113 = 3\cdot \left(37\right) + 
+2\text{,}\) and \(2\) will occupy the singles-digit in the base-\(3\) representation of \(113\text{.}\)</p>
+<p id="p-31">How can we identify the next digit to the left in the base-\(3\) representation of \(113\text{?}\)</p></section></section></div></main>
 </div>
 </body>
 </html>
