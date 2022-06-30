@@ -1,6 +1,8 @@
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:88:30:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:89:11:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:90:11:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:91:10:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:92:10:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:24:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx, and no fallback was found
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx:96:30:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx:96:30:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag tabular line 96
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx:148:16:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: table line 94 and tabular
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx:149:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: center line 93 and table
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx:150:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: preface line 64 and center
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx:152:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: frontmatter line 6 and preface
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx:155:1:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:24:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/frontmatter.ptx, and no fallback was found

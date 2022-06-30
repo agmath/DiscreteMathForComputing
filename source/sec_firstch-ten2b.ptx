@@ -124,7 +124,7 @@
     	</introduction><myopenmath problem="975442" />
 		</exercise>
 
-    <p> Now that you've converted from decimal to binary a few times, let's 
+    <p>Now that you've converted from decimal to binary a few times, let's 
     work with some other bases. In the examples that follow, the bases 
     we want to convert to will change but your strategy remains the same.</p>
 
@@ -139,8 +139,48 @@
     <exercise exercise-customization="inline" exercise-interactive="static"><title>Convert to Base-b III</title><introduction>
       </introduction><myopenmath problem="975449" />
 		</exercise>
+  </subsection>
+
+  <subsection><title>Converting to Hexadecimal</title>
+    <p>Let's close out the section with an example showing how to convert 
+    a decimal integer into hexadecimal. As reminder, hexadecimal is the 
+    base-<m>16</m> number system. We make use of the characters <m>A</m> 
+    through <m>F</m> to reprecent the decimal values <m>10</m> through 
+    <m>15</m> in order to avoid ambiguity in the base-<m>16</m> value we 
+    are writing. Below is a completely worked example, but it is followed
+    by an embedded exercise for you to confirm your understanding.
+    </p>
+
+    <example><title>Converting from Decimal to Hexadecimal (base-16)</title>
+      <p>Convert <m>\left(1133\right)_{10}</m> to its equivalent hexadecimal 
+      form.</p>
+      <md>
+        <mrow>1133 \amp = 16\cdot 70 + 13</mrow>
+        <mrow>70 \amp = 16\cdot 4 + 6</mrow>
+        <mrow>4 \amp = 16\cdot 0 + 4</mrow>
+      </md>
+
+      <p>Remembering that <m>\left(13\right)_{10} = \left(D\right)_{16}</m>, 
+      we can write the hexadecimal representation of 
+      <m>\left(1133\right)_{10}</m> as <m>\left(46D\right)_{16}</m>. 
+      </p>
+    </example>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Convert to Hexadecimal</title><introduction>
+      </introduction><myopenmath problem="975491" />
+		</exercise>
+  </subsection>
 
 
+  <subsection><title>Conclusion</title>
+    <p>In this section, we've learned the <em>mechanics</em> of converting
+    a decimal number into its base-<m>b</m> equivalent for a variety of 
+    bases. You got practice implementing the conversion algorithm, and even 
+    worked in bases higher than <m>10</m> -- where we needed to introduce the
+    use of symbols to represent large digits. In the next section, we'll 
+    explore the most common non-standard base systems in a bit more 
+    detail. We'll also highlight the connections between them.
+    </p>
   </subsection>
   
 

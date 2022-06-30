@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_firstch-properties" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Properties of Binary, Octal, and Hexadecimal Systems</title>
+
+  <introduction>
+    <p>In this section we'll explore some of the properties of the binary,
+    octal, and hexadecimal number systems. The majority of the section will 
+    work with the binary number system, but then we'll explore its connections
+    to the octal and hexidecimal systems as a way to motivate why they are 
+    used.
+    </p>
+  </introduction>
+
+  <subsection><title>Properties of Binary Numbers</title>
+    <p>As we've discussed, the binary number system uses only the two digits
+    <m>0</m> and <m>1</m>. These <em>bi</em>nary dig<em>its</em> are commonly
+    referred to as <em>bits</em>. Consider the following questions associated
+    with binary numbers.
+    </p>
+
+    <example><title>Largest and Smallest</title>
+        <p>What are the smallest and largerst positive integers representable
+        by and <m>8</m>-bit binary number?</p>
+        <solution>
+            <p>The smallest positive integer would be 
+            <m>\left(00000000\right)_{2}</m>, or more simply 
+            <m>\left(0\right)_{10}</m>. The largest positive integer would be 
+            <m>\left(11111111\right)_{2}</m>, which is 
+            <m>\left(255\right)_{10}</m>. We can see this by evaluating the 
+            full expansion, 
+                <me>1\cdot 2^7 + 1\cdot 2^6 + 1\cdot 2^5 + 1\cdot 2^4 + 
+                1\cdot 2^3 + 1\cdot 2^2 + 1\cdot 2^1 + 1\cdot 2^0</me>
+            or by recognizing that this is equivalent to <m>2^8 - 1</m>.
+            </p>
+        </solution>
+    </example>
+
+    <example><title>Tracking Time</title>
+        <p>Approaching the year 2000, most computers had a 32-bit processor. 
+        Knowing also that computers typically store time in <em>number 
+        of seconds elapsed since midnight January 1, 1970</em>, how close were 
+        we to computers not being able to tell the time? That is, when would 
+        the number of seconds elapsed since midnight on January 1, 1970 become 
+        too large to store as a 32-bit binary number?</p>
+        <solution>
+            <p>The largest 32-bit positive integer is equivalent to the decimal
+            integer <m>2^{33} - 1</m>. There are about 365 days each year, 24 hours 
+            in each day, 60 minutes in each hour, and 60 seconds in each minute.
+            Using this, computers could successfully keep time for 
+            <me>\displaystyle{\frac{2^{33} - 1}{365\cdot 24\cdot 60\cdot 60}} 
+            \approx 272 \text{ years}</me>
+            Computers' timekeeping was never in any real danger, but now with 
+            64-bit processors, we won't need to worry for a trillion years!
+            </p>
+        </solution>
+    </example>
+
+    <p>Up until now, we've been working only with positive integer values.
+    Computers are certainly capable of handling more general values -- indeed,
+    negative integers and floating point numbers are all data types recognized 
+    by computers. How do they store such values?</p>
+
+    <p>If we would like to store a signed integer (allowing for both positive 
+    and negative values), then we need to reserve one digit for encoding the 
+    sign on the 
+    value. One way to do this is to use the left-most bit to encode the sign 
+    (0 is positive, 1 is negative), and all remaining bits to encode the 
+    absolute value of the number encoded. This representation scheme is called 
+    <em>sign-magnitude</em>, but there are other methods such as <em>one's 
+    complement</em> and <em>two's complement</em>.
+    </p>
+
+    <example><title>Largest and Smallest Signed Integers</title>
+        <p>What are the largest and smallest representable 8-bit signed 
+        integers?</p>
+        <solution>
+            <p>The largest 8-bit signed integer would be encoded as 
+            <m>\left(01111111\right)_{2}</m>, which is equivalent to 
+            <m>\left(127\right)_{10}</m>. The smallest integer would be encoded
+            as <m>\left(11111111\right)_{2}</m>, which represents 
+            <m>\left(-127\right)_{10}</m> under the <em>sign-magnitude</em> scheme.
+            </p>
+            <p>An interesting property of <em>sign-magnitude</em> is that there 
+            are two ways to represent <m>\left(0\right)_{10}</m>!
+            </p>
+        </solution>
+    </example>
+
+    <p>Considering the consequences associated with different number encodings 
+    is beyond the scope of this course. 
+    Interested students should look for a course in <em>Numerical Analysis</em>, 
+    which will cover methods for representing floating point numbers, floating point 
+    arithmetic, and more.
+    </p>
+  </subsection>
+
+  <subsection><title>Connecting Binary to Octal and Hexadecimal</title>
+    <p>Perhaps you are convinced that the binary system is important because 
+    machines lack fingers and toes to count on, but why are the octal and 
+    hexadecimal systems also used? Binary encodings can be quite lengthy. To 
+    represent the number <m>\left(999\right)_{10}</m>, we need <m>10</m> bits. 
+    Its difficult to extract any meaning from such a number by looking at its 
+    binary representation. By grouping bits together, we can achieve more 
+    efficient encodings. Additionally, since we are simply grouping adjacent 
+    bits together with one another, we can quickly convert between binary 
+    and either octal, hexadecimal, or even whatever fancy name you want to 
+    give to a base-32 or base-64 numbering system. Let's take a look at an 
+    example below.
+    </p>
+
+    <example><title>Binary to Hexadecimal</title>
+        <p>Convert <m>\left(11011001\right)_{2}</m> to its hexadecimal 
+        equivalent.
+        </p>
+        <solution>
+            <md>
+                <mrow>\left(11011001\right)_{2} \amp = \left(\underbrace{1101}_{D_{16}}\underbrace{1001}_{9_{16}}\right)_{2}</mrow>
+                <mrow> \amp = \left(D9\right)_{16}</mrow>
+            </md>
+        </solution>
+    </example>
+
+    <example><title>Binary to Octal</title>
+        <p>Convert <m>\left(11011001\right)_{2}</m> to its octal 
+        equivalent.
+        </p>
+        <solution>
+            <p>We'd like to create groups of three bits, but our binary number 
+            is only 8-bits in length. We'll start by padding the numbr with an 
+            extra 0 on the left. Do you agree that it doesn't change the value 
+            of the encoded number?
+            </p>
+            <md>
+                <mrow>\left(11011001\right)_{2} \amp = \left(011011001\right)_{2}</mrow>  
+                <mrow>\amp = \left(\underbrace{011}_{3_{8}}\underbrace{011}_{3_{8}}\underbrace{001}_{1_{8}}\right)_{2}</mrow>
+                <mrow> \amp = \left(331\right)_{8}</mrow>
+            </md>
+        </solution>
+    </example>
+
+    <example><title>Hexadecimal to Binary</title>
+        <p>Convert <m>\left(8A2C\right)_{16}</m> to its binary equivalent.
+        </p>
+        <solution>
+            <p>Each hexadecimal digit will be encoded by four bits in the 
+            corresponding binary representation.
+            </p>
+            <md>
+                <mrow>\left(8A2C\right)_{16} \amp = \left(\underbrace{8}_{1000_{2}}\underbrace{A}_{1010_{2}}\underbrace{2}_{0010_{2}}\underbrace{C}_{1100_{2}}\right)_{16}</mrow>
+                <mrow> \amp = \left(1000101000101100\right)_{2}</mrow>
+            </md>
+        </solution>
+    </example>
+
+    <p>Did you find those conversions to be much easier than the conversions 
+    we've made between generic pairs of bases?
+    </p>
+
+  </subsection>
+
+  <subsection><title>Conclusion</title>
+    <p>There's nothing here yet.
+    </p>
+  </subsection>
+  
+
+</section>
+

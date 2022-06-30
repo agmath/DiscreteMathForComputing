@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T10:32:22-04:00       *-->
+<!--*       on 2022-06-30T16:58:59-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -61,17 +61,17 @@
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing</span></a></h1>
-<p class="byline">Christine Caples, PhD, Adam Gilbert, PhD, Melanie Fraser, PhD</p>
+<p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
 </div>
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_firstch-b2ten.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ex_firstch.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_firstch-b2ten.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_firstch-properties.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_firstch-b2ten.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ex_firstch.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_firstch-b2ten.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_firstch-properties.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -79,7 +79,6 @@
 <li class="link frontmatter">
 <a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
-<li><a href="dedication-1.html" data-scroll="dedication-1">Dedication</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">About This Text</a></li>
 </ul>
 </li>
@@ -88,6 +87,7 @@
 <li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro">Introduction</a></li>
 <li><a href="sec_firstch-b2ten.html" data-scroll="sec_firstch-b2ten">Converting from Non-Standard Bases into Base-10</a></li>
 <li><a href="sec_firstch-ten2b.html" data-scroll="sec_firstch-ten2b" class="active">Converting from Base-10 to Non-Standard Bases</a></li>
+<li><a href="sec_firstch-properties.html" data-scroll="sec_firstch-properties">Properties of Binary, Octal, and Hexadecimal Systems</a></li>
 <li><a href="ex_firstch.html" data-scroll="ex_firstch">My Exercises</a></li>
 </ul>
 </li>
@@ -109,19 +109,19 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_firstch-ten2b"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Converting from Base-10 to Non-Standard Bases</span>
 </h2>
-<section class="introduction" id="introduction-9"><p id="p-27">In the previous section, we considered that representation of numbers using bases other than the base-10 (decimal) system is possible, and sometimes necessary. In that section you considered the true meaning of <em class="emphasis">place-value</em> and built on your intuitive understanding to identify a scheme for converting an integer, written in any non-standard base, into its decimal- equivalent.</p>
-<p id="p-28">In this section, we'll work in the opposite direction. Say we have a decimal represresentation of a value. How do we identify or construct its base-\(b\) equivalent?</p></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-9"><p id="p-26">In the previous section, we considered that representation of numbers using bases other than the base-10 (decimal) system is possible, and sometimes necessary. In that section you considered the true meaning of <em class="emphasis">place-value</em> and built on your intuitive understanding to identify a scheme for converting an integer, written in any non-standard base, into its decimal- equivalent.</p>
+<p id="p-27">In this section, we'll work in the opposite direction. Say we have a decimal represresentation of a value. How do we identify or construct its base-\(b\) equivalent?</p></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.3.1</span> <span class="title">Developing a Strategy</span>
 </h3>
-<p id="p-29">THIS SECTION WILL NEED LOTS OF EDITING -- just getting a "working version" up for now.</p>
-<p id="p-30">In order to convert a value whose decimal representation is \(n\) into its corresponding base-\(b\) equivalent, we need to first identify the number of whole copies of \(b\) which divide evenly into \(n\text{.}\) The left over amount (you've likely called this the <em class="emphasis">remainder</em> when discussing division in your previous math courses) will be the <em class="emphasis">singles</em> digit in the base-\(b\) representation of \(n\text{.}\)</p>
-<p id="p-31">Let's consider an example, which we'll parse throughout this discussion. Consider the decimal value \(n = 113\text{,}\) for which we'll try to discover its base-\(3\) equivalent. The paragraph above suggests that we should start by identifying the number of "whole copies" of \(3\) which divide evenly into \(113\text{.}\) Notice that \(3\cdot 37 = 111\text{,}\) so there are \(37\) "whole" copies of \(3\) within the decimal value \(113\text{,}\) with a remainder of \(2\text{.}\) That is, \(113 = 3\cdot \left(37\right) + 
+<p id="p-28">THIS SECTION WILL NEED LOTS OF EDITING -- just getting a "working version" up for now.</p>
+<p id="p-29">In order to convert a value whose decimal representation is \(n\) into its corresponding base-\(b\) equivalent, we need to first identify the number of whole copies of \(b\) which divide evenly into \(n\text{.}\) The left over amount (you've likely called this the <em class="emphasis">remainder</em> when discussing division in your previous math courses) will be the <em class="emphasis">singles</em> digit in the base-\(b\) representation of \(n\text{.}\)</p>
+<p id="p-30">Let's consider an example, which we'll parse throughout this discussion. Consider the decimal value \(n = 113\text{,}\) for which we'll try to discover its base-\(3\) equivalent. The paragraph above suggests that we should start by identifying the number of "whole copies" of \(3\) which divide evenly into \(113\text{.}\) Notice that \(3\cdot 37 = 111\text{,}\) so there are \(37\) "whole" copies of \(3\) within the decimal value \(113\text{,}\) with a remainder of \(2\text{.}\) That is, \(113 = 3\cdot \left(37\right) + 
 2\text{,}\) and \(2\) will occupy the singles-digit in the base-\(3\) representation of \(113\text{.}\)</p>
-<p id="p-32">How can we identify the next digit to the left in the base-\(3\) representation of \(113\text{?}\) That digit will be the remainder after considering the number of whole copies of \(3^2\) within the decimal value \(113\text{,}\) after accounting for the singles digit. That is, the digit occupying the second place-value will be the remainder after considering the number of whole copies of \(9\) which divide evenly into \(\left(
+<p id="p-31">How can we identify the next digit to the left in the base-\(3\) representation of \(113\text{?}\) That digit will be the remainder after considering the number of whole copies of \(3^2\) within the decimal value \(113\text{,}\) after accounting for the singles digit. That is, the digit occupying the second place-value will be the remainder after considering the number of whole copies of \(9\) which divide evenly into \(\left(
 114 - 2\right)\text{.}\) More simply, we could consider the remainder after \(3\) is divided into \(37\) -- the quotient from the previous step. From here, we note that \(37 = 3\cdot
 \left(12\right) + 1\text{,}\) and so the digit occupying the second position will be \(1\text{.}\)</p>
-<p id="p-33">Identifying the digit occupying the remaining positions is similar. The next digit will be the remainder, when dividing \(3\) into the quotient from the previous step (here, that value was \(12\)). Since \(12 = 3\cdot \left(4\right) + 0\text{,}\) the digit occupying the third position from the right is \(0\text{.}\) Similarly, the digit occupying the next position is the remainder after \(3\) is divided into \(4\) (again, using the previous quotient). Since \(4 = 3\cdot\left(1\right) + 1\text{,}\) the digit occupying that fourth position is \(1\text{.}\) Finally, the leftmost digit will be the remainder when this quotient (\(1\)) is divided by the desired base (here, \(3\)). So we have \(1 = 3\cdot \left(0\right) + 1\text{,}\) and the leftmost digit is \(1\text{.}\) To summarize, we've discovered that \(\left(113\right)_{10} = \left(11012\right)_{3}\text{.}\)</p>
-<p id="p-34">Let's describe the process above before summarizing with a more concise version of the procedure. If we wish to find the base-\(b\) equivalent representation of the decimal integer \(n\text{,}\) we write</p>
+<p id="p-32">Identifying the digit occupying the remaining positions is similar. The next digit will be the remainder, when dividing \(3\) into the quotient from the previous step (here, that value was \(12\)). Since \(12 = 3\cdot \left(4\right) + 0\text{,}\) the digit occupying the third position from the right is \(0\text{.}\) Similarly, the digit occupying the next position is the remainder after \(3\) is divided into \(4\) (again, using the previous quotient). Since \(4 = 3\cdot\left(1\right) + 1\text{,}\) the digit occupying that fourth position is \(1\text{.}\) Finally, the leftmost digit will be the remainder when this quotient (\(1\)) is divided by the desired base (here, \(3\)). So we have \(1 = 3\cdot \left(0\right) + 1\text{,}\) and the leftmost digit is \(1\text{.}\) To summarize, we've discovered that \(\left(113\right)_{10} = \left(11012\right)_{3}\text{.}\)</p>
+<p id="p-33">Let's describe the process above before summarizing with a more concise version of the procedure. If we wish to find the base-\(b\) equivalent representation of the decimal integer \(n\text{,}\) we write</p>
 <div class="displaymath">
 \begin{equation*}
 n = b\cdot q_{0} + r_{0}, \text{ where } 0 \leq r_{0} \lt b
@@ -134,7 +134,7 @@ q_{0} = b\cdot q_{1} + r_{1}, \text{ where } 0 \leq r_{1} \lt b
 \end{equation*}
 </div>
 <p class="continuation">We continue this while the quotients, \(q_{i}\) are non-zero. Once we arrive at a quotient \(q_{k} = 0\text{,}\) the process terminates and we use the remainders to write the base-\(b\) representation \(\left(r_{k}r_{k-1}\cdots r_{1}r_{0}\right)_{b}\) of our original \(n\text{.}\)</p>
-<p id="p-35">We recap the process of constructing the base-\(3\) equivalent of \(\left(113\right)_{10}\) below.</p>
+<p id="p-34">We recap the process of constructing the base-\(3\) equivalent of \(\left(113\right)_{10}\) below.</p>
 <div class="displaymath">
 \begin{align*}
 113 \amp = 3\cdot 37 + 2\\
@@ -147,36 +147,57 @@ q_{0} = b\cdot q_{1} + r_{1}, \text{ where } 0 \leq r_{1} \lt b
 <p class="continuation">At the last line, we arrive at a quotient of \(0\text{,}\) so we terminate the procedure. The base-\(3\) encoding of \(\left(113\right)_{10}\) is given by \(\left(11012\right)_{3}\text{,}\) reading the remainders from the last line back up to the first.</p></section><section class="subsection" id="subsection-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.3.2</span> <span class="title">Let's Try It!</span>
 </h3>
-<p id="p-36">Now that we've developed a strategy for writing the base-\(b\) equivalent of a given decimal integer, let's get more comfortable using it. In this section, you'll have a variety of opportunities to work through our algorithm. You'll have lots of support through the initial examples, but we'll provide less and less structure with each successive task.</p>
+<p id="p-35">Now that we've developed a strategy for writing the base-\(b\) equivalent of a given decimal integer, let's get more comfortable using it. In this section, you'll have a variety of opportunities to work through our algorithm. You'll have lots of support through the initial examples, but we'll provide less and less structure with each successive task.</p>
 <article class="exercise exercise-like" id="exercise-7"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-7"><h6 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Convert Bases, Part I.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part I.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-7"><article class="exercise exercise-like"><div class="introduction" id="introduction-10"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975427&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-8"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-8"><h6 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Convert Bases, Part I.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part II.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-8"><article class="exercise exercise-like"><div class="introduction" id="introduction-11"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975431&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-9"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-9"><h6 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Convert Bases, Part I.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part III.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-9"><article class="exercise exercise-like"><div class="introduction" id="introduction-12"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975437&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-10"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-10"><h6 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Convert Bases, Part I.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part IV.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-10"><article class="exercise exercise-like"><div class="introduction" id="introduction-13"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975442&amp;resizer=true"></iframe></div></article></div>
-<p id="p-37">Now that you've converted from decimal to binary a few times, let's work with some other bases. In the examples that follow, the bases we want to convert to will change but your strategy remains the same.</p>
+<p id="p-36">Now that you've converted from decimal to binary a few times, let's work with some other bases. In the examples that follow, the bases we want to convert to will change but your strategy remains the same.</p>
 <article class="exercise exercise-like" id="exercise-11"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-11"><h6 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Convert Bases, Part I.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-b I.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-11"><article class="exercise exercise-like"><div class="introduction" id="introduction-14"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-12"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-12"><h6 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Convert Bases, Part I.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-b II.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-12"><article class="exercise exercise-like"><div class="introduction" id="introduction-15"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-13"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-13"><h6 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Convert Bases, Part I.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-b III.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-13"><article class="exercise exercise-like"><div class="introduction" id="introduction-16"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></div></section></section></div></main>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.3</span> <span class="title">Converting to Hexadecimal</span>
+</h3>
+<p id="p-37">Let's close out the section with an example showing how to convert a decimal integer into hexadecimal. As reminder, hexadecimal is the base-\(16\) number system. We make use of the characters \(A\) through \(F\) to reprecent the decimal values \(10\) through \(15\) in order to avoid ambiguity in the base-\(16\) value we are writing. Below is a completely worked example, but it is followed by an embedded exercise for you to confirm your understanding.</p>
+<article class="example example-like" id="example-2"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Converting from Decimal to Hexadecimal (base-16).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"><p id="p-38">Convert \(\left(1133\right)_{10}\) to its equivalent hexadecimal form.</p>
+<div class="displaymath">
+\begin{align*}
+1133 \amp = 16\cdot 70 + 13\\
+70 \amp = 16\cdot 4 + 6\\
+4 \amp = 16\cdot 0 + 4
+\end{align*}
+</div>
+<p id="p-39">Remembering that \(\left(13\right)_{10} = \left(D\right)_{16}\text{,}\) we can write the hexadecimal representation of \(\left(1133\right)_{10}\) as \(\left(46D\right)_{16}\text{.}\)</p></article></div>
+<article class="exercise exercise-like" id="exercise-14"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-14"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Hexadecimal.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-14"><article class="exercise exercise-like"><div class="introduction" id="introduction-17"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975491&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.4</span> <span class="title">Conclusion</span>
+</h3>
+<p id="p-40">In this section, we've learned the <em class="emphasis">mechanics</em> of converting a decimal number into its base-\(b\) equivalent for a variety of bases. You got practice implementing the conversion algorithm, and even worked in bases higher than \(10\) -- where we needed to introduce the use of symbols to represent large digits. In the next section, we'll explore the most common non-standard base systems in a bit more detail. We'll also highlight the connections between them.</p></section></section></div></main>
 </div>
 </body>
 </html>

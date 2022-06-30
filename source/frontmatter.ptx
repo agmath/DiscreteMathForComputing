@@ -6,17 +6,17 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>Christine Caples, PhD</personname>
+      <personname>Christine Caples</personname>
       <department>Department of Mathematics</department>
       <institution>Southern New Hampshire University</institution>
     </author>
 	<author>
-      <personname>Adam Gilbert, PhD</personname>
+      <personname>Adam Gilbert</personname>
       <department>Department of Mathematics</department>
       <institution>Southern New Hampshire University</institution>
     </author>
     <author>
-      <personname>Melanie Fraser, PhD</personname>
+      <personname>Melanie Fraser</personname>
       <department>Learning Strategies Center</department>
       <institution>Cornell University</institution>
     </author>
@@ -26,7 +26,7 @@
   <colophon>
     <website>
       <name><c>Book Site (GitHub)</c></name>
-      <address>https://agmath.github.io/DiscreteForComputing.html</address>
+      <address>https://agmath.github.io/DiscreteMathForComputing/output/html/frontmatter.html</address>
     </website>
 
     <copyright>
@@ -47,13 +47,13 @@
 
   </colophon>
 
-  <dedication>
+  <!-- <dedication>
     <p>
-      Our Students
+      To our students
     </p>
-  </dedication>
+  </dedication> -->
 
-  <!--- <acknowledgement>
+  <!-- <acknowledgement>
     <p>
       I would like to thank...
     </p>
@@ -88,63 +88,63 @@
 			we've attempted to build the Discrete Mathematics for Computing course (and 
 			this accompanying text) as "language agnostic" experiences. A table of 
 			aligned coverage for the Discrete Mathematics for Computing course and the 
-			corresponding first-semester programming coursework in the partner programs 
-			appears below.</p>
+			first-semester CS113 course appears below.</p>
 			
 			<center>
 				<table>
 					<title>Alignment of Content Coverage</title>
 					<tabular halign="center">
+					<!--Width is controlled for <col>...consider rewriting the table with columns??-->
 						<row header="yes" bottom="major">
-							<cell><em>Week Number</em></cell> <cell><em>MAT239</em></cell> <cell><em>CS113</em></cell> <cell><em>IT140</em></cell> <cell><em>GAM110</em></cell>
+							<cell><em>Week Number</em></cell> <cell><em>MAT239</em></cell> <cell><em>CS113</em></cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 1</cell> <cell>Base-Representations of Integers</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 1</cell> <cell>Base-Representations of Integers</cell> <cell></cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 2</cell> <cell>Introduction to Sets</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 2</cell> <cell>Introduction to Sets</cell> <cell></cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 3</cell> <cell>Symbolic Logic</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 3</cell> <cell>Symbolic Logic</cell> <cell>Data Types, Memory Size, Binary Arithmetic, Integer Division</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 4</cell> <cell>Boolean Algebra and Logic for Flow Control</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 4</cell> <cell>Boolean Algebra and Logic for Flow Control</cell> <cell>relational operators, boolean expressions, control statements</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 5</cell> <cell>Project / Exam</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 5</cell> <cell>Project / Exam</cell> <cell>Introduction to Looping</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 6</cell> <cell>Introduction to Counting</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 6</cell> <cell>Introduction to Counting</cell> <cell>Nested Loops and Switches</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 7</cell> <cell>Counting and Run-Time Complexity</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 7</cell> <cell>Counting and Run-Time Complexity</cell> <cell>User-Defined Functions, Random Numbers</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 8</cell> <cell>Introduction to Probability</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 8</cell> <cell>Functions</cell> <cell>Modularizing a Program with Functions</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 9</cell> <cell>Probability Distributions and Queueing</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 9</cell> <cell>Introduction to Probability</cell> <cell>More on Functions, Overloading, Scoping, and Parameters</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 10</cell> <cell>Functions</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 10</cell> <cell>Probability Distributions and Queueing</cell> <cell>Introduction to Arrays</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 11</cell> <cell>Project / Exam</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 11</cell> <cell>Project / Exam</cell> <cell>More on Arrays</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 12</cell> <cell>Arrays</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 12</cell> <cell>Arrays</cell> <cell>Vectors</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 13</cell> <cell>Operations with Arrays, Multidimensional Arrays</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 13</cell> <cell>Operations with Arrays, Multidimensional Arrays</cell> <cell>File Input, Standard String Class</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 14</cell> <cell>Introduction to Graph Theory</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 14</cell> <cell>Introduction to Graph Theory</cell> <cell>Working with Files and Arrays</cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 15</cell> <cell>Trees for Architecture, Searching, and Sorting</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 15</cell> <cell>Trees for Architecture, Searching, and Sorting</cell> <cell></cell>
 						</row>
 						<row bottom="minor">
-							<cell>Week 16</cell> <cell>Project / Exam</cell> <cell></cell> <cell></cell> <cell></cell>
+							<cell>Week 16</cell> <cell>Project / Exam</cell> <cell></cell>
 						</row>
 					</tabular>
 				</table>

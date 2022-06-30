@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-30T16:58:59-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Properties of Binary, Octal, and Hexadecimal Systems</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing</span></a></h1>
+<p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_firstch-ten2b.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ex_firstch.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_firstch-ten2b.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ex_firstch.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">About This Text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-first.html" data-scroll="ch-first"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a><ul>
+<li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro">Introduction</a></li>
+<li><a href="sec_firstch-b2ten.html" data-scroll="sec_firstch-b2ten">Converting from Non-Standard Bases into Base-10</a></li>
+<li><a href="sec_firstch-ten2b.html" data-scroll="sec_firstch-ten2b">Converting from Base-10 to Non-Standard Bases</a></li>
+<li><a href="sec_firstch-properties.html" data-scroll="sec_firstch-properties" class="active">Properties of Binary, Octal, and Hexadecimal Systems</a></li>
+<li><a href="ex_firstch.html" data-scroll="ex_firstch">My Exercises</a></li>
+</ul>
+</li>
+<li class="link"><a href="ch-empty.html" data-scroll="ch-empty"><span class="codenumber">2</span> <span class="title"></span></a></li>
+<li class="link">
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features"><span class="codenumber">3</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks">Environments and Blocks</a></li>
+<li><a href="section-2-2.html" data-scroll="section-2-2">Another section</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_firstch-properties"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Properties of Binary, Octal, and Hexadecimal Systems</span>
+</h2>
+<section class="introduction" id="introduction-18"><p id="p-41">In this section we'll explore some of the properties of the binary, octal, and hexadecimal number systems. The majority of the section will work with the binary number system, but then we'll explore its connections to the octal and hexidecimal systems as a way to motivate why they are used.</p></section><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.1</span> <span class="title">Properties of Binary Numbers</span>
+</h3>
+<p id="p-42">As we've discussed, the binary number system uses only the two digits \(0\) and \(1\text{.}\) These <em class="emphasis">bi</em>nary dig<em class="emphasis">its</em> are commonly referred to as <em class="emphasis">bits</em>. Consider the following questions associated with binary numbers.</p>
+<article class="example example-like" id="example-3"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Largest and Smallest.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like"><p id="p-43">What are the smallest and largerst positive integers representable by and \(8\)-bit binary number?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like">
+<p id="p-44">The smallest positive integer would be \(\left(00000000\right)_{2}\text{,}\) or more simply \(\left(0\right)_{10}\text{.}\) The largest positive integer would be \(\left(11111111\right)_{2}\text{,}\) which is \(\left(255\right)_{10}\text{.}\) We can see this by evaluating the full expansion,</p>
+<div class="displaymath">
+\begin{equation*}
+1\cdot 2^7 + 1\cdot 2^6 + 1\cdot 2^5 + 1\cdot 2^4 + 
+1\cdot 2^3 + 1\cdot 2^2 + 1\cdot 2^1 + 1\cdot 2^0
+\end{equation*}
+</div>
+<p class="continuation">or by recognizing that this is equivalent to \(2^8 - 1\text{.}\)</p>
+</div></div></article></div>
+<article class="example example-like" id="example-4"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-4"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Tracking Time.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-45">Approaching the year 2000, most computers had a 32-bit processor. Knowing also that computers typically store time in <em class="emphasis">number of seconds elapsed since midnight January 1, 1970</em>, how close were we to computers not being able to tell the time? That is, when would the number of seconds elapsed since midnight on January 1, 1970 become too large to store as a 32-bit binary number?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-46">The largest 32-bit positive integer is equivalent to the decimal integer \(2^{33} - 1\text{.}\) There are about 365 days each year, 24 hours in each day, 60 minutes in each hour, and 60 seconds in each minute. Using this, computers could successfully keep time for</p>
+<div class="displaymath">
+\begin{equation*}
+\displaystyle{\frac{2^{33} - 1}{365\cdot 24\cdot 60\cdot 60}} 
+\approx 272 \text{ years}
+\end{equation*}
+</div>
+<p class="continuation">Computers' timekeeping was never in any real danger, but now with 64-bit processors, we won't need to worry for a trillion years!</p>
+</div></div></article></div>
+<p id="p-47">Up until now, we've been working only with positive integer values. Computers are certainly capable of handling more general values -- indeed, negative integers and floating point numbers are all data types recognized by computers. How do they store such values?</p>
+<p id="p-48">If we would like to store a signed integer (allowing for both positive and negative values), then we need to reserve one digit for encoding the sign on the value. One way to do this is to use the left-most bit to encode the sign (0 is positive, 1 is negative), and all remaining bits to encode the absolute value of the number encoded. This representation scheme is called <em class="emphasis">sign-magnitude</em>, but there are other methods such as <em class="emphasis">one's complement</em> and <em class="emphasis">two's complement</em>.</p>
+<article class="example example-like" id="example-5"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-5"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Largest and Smallest Signed Integers.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-5"><article class="example example-like"><p id="p-49">What are the largest and smallest representable 8-bit signed integers?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">
+<p id="p-50">The largest 8-bit signed integer would be encoded as \(\left(01111111\right)_{2}\text{,}\) which is equivalent to \(\left(127\right)_{10}\text{.}\) The smallest integer would be encoded as \(\left(11111111\right)_{2}\text{,}\) which represents \(\left(-127\right)_{10}\) under the <em class="emphasis">sign-magnitude</em> scheme.</p>
+<p id="p-51">An interesting property of <em class="emphasis">sign-magnitude</em> is that there are two ways to represent \(\left(0\right)_{10}\text{!}\)</p>
+</div></div></article></div>
+<p id="p-52">Considering the consequences associated with different number encodings is beyond the scope of this course. Interested students should look for a course in <em class="emphasis">Numerical Analysis</em>, which will cover methods for representing floating point numbers, floating point arithmetic, and more.</p></section><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.2</span> <span class="title">Connecting Binary to Octal and Hexadecimal</span>
+</h3>
+<p id="p-53">Perhaps you are convinced that the binary system is important because machines lack fingers and toes to count on, but why are the octal and hexadecimal systems also used? Binary encodings can be quite lengthy. To represent the number \(\left(999\right)_{10}\text{,}\) we need \(10\) bits. Its difficult to extract any meaning from such a number by looking at its binary representation. By grouping bits together, we can achieve more efficient encodings. Additionally, since we are simply grouping adjacent bits together with one another, we can quickly convert between binary and either octal, hexadecimal, or even whatever fancy name you want to give to a base-32 or base-64 numbering system. Let's take a look at an example below.</p>
+<article class="example example-like" id="example-6"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Binary to Hexadecimal.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like"><p id="p-54">Convert \(\left(11011001\right)_{2}\) to its hexadecimal equivalent.</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath">
+\begin{align*}
+\left(11011001\right)_{2} \amp = \left(\underbrace{1101}_{D_{16}}\underbrace{1001}_{9_{16}}\right)_{2}\\
+\amp = \left(D9\right)_{16}
+\end{align*}
+</div></div></div></article></div>
+<article class="example example-like" id="example-7"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-7"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Binary to Octal.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-55">Convert \(\left(11011001\right)_{2}\) to its octal equivalent.</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
+<p id="p-56">We'd like to create groups of three bits, but our binary number is only 8-bits in length. We'll start by padding the numbr with an extra 0 on the left. Do you agree that it doesn't change the value of the encoded number?</p>
+<div class="displaymath">
+\begin{align*}
+\left(11011001\right)_{2} \amp = \left(011011001\right)_{2}\\
+\amp = \left(\underbrace{011}_{3_{8}}\underbrace{011}_{3_{8}}\underbrace{001}_{1_{8}}\right)_{2}\\
+\amp = \left(331\right)_{8}
+\end{align*}
+</div>
+</div></div></article></div>
+<article class="example example-like" id="example-8"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-8"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Hexadecimal to Binary.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><p id="p-57">Convert \(\left(8A2C\right)_{16}\) to its binary equivalent.</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like">
+<p id="p-58">Each hexadecimal digit will be encoded by four bits in the corresponding binary representation.</p>
+<div class="displaymath">
+\begin{align*}
+\left(8A2C\right)_{16} \amp = \left(\underbrace{8}_{1000_{2}}\underbrace{A}_{1010_{2}}\underbrace{2}_{0010_{2}}\underbrace{C}_{1100_{2}}\right)_{16}\\
+\amp = \left(1000101000101100\right)_{2}
+\end{align*}
+</div>
+</div></div></article></div>
+<p id="p-59">Did you find those conversions to be much easier than the conversions we've made between generic pairs of bases?</p></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.3</span> <span class="title">Conclusion</span>
+</h3>
+<p id="p-60">There's nothing here yet.</p></section></section></div></main>
+</div>
+</body>
+</html>
