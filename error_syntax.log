@@ -1,4 +1,6 @@
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:43:16:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 30 and subsection
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:46:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: subsection line 21 and section
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:48:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 3
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:88:30:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:89:11:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:90:11:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:91:10:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx:92:10:FATAL:PARSER:ERR_NAME_REQUIRED: xmlParseEntityRef: no name
 file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:24:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_firstch-ten2b.ptx, and no fallback was found
