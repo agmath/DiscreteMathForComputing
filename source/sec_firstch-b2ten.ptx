@@ -11,14 +11,15 @@
 	<example xml:id = "int-expansion-ex"> <title> Explicit Base-10 Explansion</title>
 		<p> Below is the explicit base-10 expansion of the integer 927.</p>			
 		<md>
-		<mrow>927 = 9*(10^2) + 2*(10^1) + 7*(10^0)</mrow> 
+		<mrow>927 \amp = 900 + 20 + 7</mrow>
+		<mrow>\amp = 9*(10^2) + 2*(10^1) + 7*(10^0)</mrow> 
 		</md>			
 	</example>
 
-	<p>The example above highlights the role of <i>place-value</i> in any
+	<p>The example above highlights the role of <em>place-value</em> in any
 	number system, not just our own decimal system. The place of the digit
 	determines the power of the base which it is attached to. The rightmost
-	digit, perhaps you've referred to it as the singles digit, is attached
+	digit, perhaps you've referred to it as the <em>singles</em> digit, is attached
 	to the <m>0^{th}</m> power of the base. The second digit from the right 
 	is attached to the <m>1^{st}</m> power of the base. With each successive 
 	position (towards the left) the digit is attached to an increasing power
@@ -47,8 +48,8 @@
 		\cdots, a_1, a_0</m> with <m> 0 \leq a_i \lt b</m>, the number 
 		<m>\left(a_{k}a_{k-1}\cdots a_{1}a_{0}\right)_b</m> represents the value 
 		<m>a_{k}b^{k} + a_{k-1}b^{k-1} + \cdots + a_{1}b^{1} + a_{0}b^{0}</m>.
-		For example, the number represented by <m>\left(2501\right)_{6}</m>
-		is represents the value <m>2\cdot \left(6^3\right) + 5\cdot \left(6^2\right) +
+		For example, the number <m>\left(2501\right)_{6}</m>
+		is the value <m>2\cdot \left(6^3\right) + 5\cdot \left(6^2\right) +
 		0\cdot \left(6^1\right) + 1\cdot \left(6^0\right)</m>.</p>
 
 		<p>The definition above gives us a simple method for converting numbers 
@@ -109,7 +110,7 @@
 		\left(1296\right)_{10}</m> or do we mean <m>\left(5\cdot 16^1 + 10\cdot 16^0\right) 
 		= \left(26\right)_{10}</m>? Making use of the characters <m>A</m> through <m>F</m> 
 		prevents this ambiguity. The correct hexadecimal encoding of <m>26_{10}</m> 
-		would be <m>\left(5A\right)_{16}</m>. We'll discuss more on how to make this 
+		would be <m>\left(1A\right)_{16}</m>. We'll discuss more on how to make this 
 		conversion in the next section.</p> 
 	</subsection>
 

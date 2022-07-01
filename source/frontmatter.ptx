@@ -86,15 +86,19 @@
 			by their major faculty to enroll as well. Those programs utilize Python and 
 			C#, respectively, in their first-semester coursework. For these reasons, 
 			we've attempted to build the Discrete Mathematics for Computing course (and 
-			this accompanying text) as "language agnostic" experiences. A table of 
+			this accompanying text) as "language agnostic" experiences.
+			</p>
+			
+			<!-- <p>A table of 
 			aligned coverage for the Discrete Mathematics for Computing course and the 
-			first-semester CS113 course appears below.</p>
+			first-semester CS113 course appears below.
+			Width is controlled for <col>...consider rewriting the table with columns??
+			</p> 
 			
 			<center>
 				<table>
 					<title>Alignment of Content Coverage</title>
 					<tabular halign="center">
-					<!--Width is controlled for <col>...consider rewriting the table with columns??-->
 						<row header="yes" bottom="major">
 							<cell><em>Week Number</em></cell> <cell><em>MAT239</em></cell> <cell><em>CS113</em></cell>
 						</row>
@@ -149,6 +153,8 @@
 					</tabular>
 				</table>
 			</center>
+			
+			-->
 
 		</preface>
 

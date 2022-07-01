@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T16:58:59-04:00       *-->
+<!--*       on 2022-07-01T12:17:04-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -91,9 +91,44 @@
 <li><a href="ex_firstch.html" data-scroll="ex_firstch">My Exercises</a></li>
 </ul>
 </li>
-<li class="link"><a href="ch-empty.html" data-scroll="ch-empty"><span class="codenumber">2</span> <span class="title"></span></a></li>
 <li class="link">
-<a href="ch_pretext-features.html" data-scroll="ch_pretext-features"><span class="codenumber">3</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<a href="ch-sets.html" data-scroll="ch-sets"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a><ul>
+<li><a href="sec_sets-ch-intro.html" data-scroll="sec_sets-ch-intro">Introduction to Sets</a></li>
+<li><a href="sec_sets-ch-foundations.html" data-scroll="sec_sets-ch-foundations">Foundations for Working with Sets</a></li>
+<li><a href="sec_sets-ch-operations.html" data-scroll="sec_sets-ch-operations">Operations with Sets</a></li>
+<li><a href="sec_sets-ch-setsofsets.html" data-scroll="sec_sets-ch-setsofsets">Sets of Sets</a></li>
+<li><a href="ex_sets-ch.html" data-scroll="ex_sets-ch">My Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">Symbolic Logic and Boolean Algebra</span></a><ul><li><a href="ex_logic-ch.html" data-scroll="ex_logic-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-project1.html" data-scroll="ch-project1"><span class="codenumber">4</span> <span class="title">Project I</span></a><ul><li><a href="ex_project1-ch.html" data-scroll="ex_project1-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-counting.html" data-scroll="ch-counting"><span class="codenumber">5</span> <span class="title">Counting</span></a><ul><li><a href="ex_counting-ch.html" data-scroll="ex_counting-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-functions.html" data-scroll="ch-functions"><span class="codenumber">6</span> <span class="title">Functions</span></a><ul><li><a href="ex_functions-ch.html" data-scroll="ex_functions-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-probability.html" data-scroll="ch-probability"><span class="codenumber">7</span> <span class="title">Probability</span></a><ul><li><a href="ex_probability-ch.html" data-scroll="ex_probability-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-project2.html" data-scroll="ch-project2"><span class="codenumber">8</span> <span class="title">Project II</span></a><ul><li><a href="ex_project2-ch.html" data-scroll="ex_project2-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-arrays.html" data-scroll="ch-arrays"><span class="codenumber">9</span> <span class="title">Arrays</span></a><ul><li><a href="ex_arrays-ch.html" data-scroll="ex_arrays-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-graphs.html" data-scroll="ch-graphs"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul><li><a href="ex_graphs-ch.html" data-scroll="ex_graphs-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-project3.html" data-scroll="ch-project3"><span class="codenumber">11</span> <span class="title">Project II</span></a><ul><li><a href="ex_project3-ch.html" data-scroll="ex_project3-ch">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features"><span class="codenumber">12</span> <span class="title">Examples of PreTeXt features</span></a><ul>
 <li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks">Environments and Blocks</a></li>
 <li><a href="section-2-2.html" data-scroll="section-2-2">Another section</a></li>
 </ul>
@@ -114,11 +149,12 @@
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Explicit Base-10 Explansion.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-int-expansion-ex"><article class="example example-like"><p id="p-9">Below is the explicit base-10 expansion of the integer 927.</p>
 <div class="displaymath">
-\begin{gather*}
-927 = 9*(10^2) + 2*(10^1) + 7*(10^0)
-\end{gather*}
+\begin{align*}
+927 \amp = 900 + 20 + 7\\
+\amp = 9*(10^2) + 2*(10^1) + 7*(10^0)
+\end{align*}
 </div></article></div>
-<p id="p-10">The example above highlights the role of place-value in any number system, not just our own decimal system. The place of the digit determines the power of the base which it is attached to. The rightmost digit, perhaps you've referred to it as the singles digit, is attached to the \(0^{th}\) power of the base. The second digit from the right is attached to the \(1^{st}\) power of the base. With each successive position (towards the left) the digit is attached to an increasing power of the relevant base.</p>
+<p id="p-10">The example above highlights the role of <em class="emphasis">place-value</em> in any number system, not just our own decimal system. The place of the digit determines the power of the base which it is attached to. The rightmost digit, perhaps you've referred to it as the <em class="emphasis">singles</em> digit, is attached to the \(0^{th}\) power of the base. The second digit from the right is attached to the \(1^{st}\) power of the base. With each successive position (towards the left) the digit is attached to an increasing power of the relevant base.</p>
 <article class="exercise exercise-like" id="exercise-1"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-1"><h6 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Explicit Base-10 Expansion.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1"><article class="exercise exercise-like"><div class="introduction" id="introduction-3"><p id="p-11">Use your knowledge of place-value to explicitly write the integer as the sum of its base-10 components.</p></div>
@@ -132,7 +168,7 @@
 </h3>
 <p id="p-13">Let's shift away from our standard base-10 number system (commonly referred to as the decimal system), and think about representing values in other bases. The discussion about place-value in the previous section gives us all of the tools we need.</p>
 <p id="p-14">Given a base \(b\) (with \(b &gt; 0\)) and digits \(a_k, a_{k-1}, 
-\cdots, a_1, a_0\) with \(0 \leq a_i \lt b\text{,}\) the number \(\left(a_{k}a_{k-1}\cdots a_{1}a_{0}\right)_b\) represents the value \(a_{k}b^{k} + a_{k-1}b^{k-1} + \cdots + a_{1}b^{1} + a_{0}b^{0}\text{.}\) For example, the number represented by \(\left(2501\right)_{6}\) is represents the value \(2\cdot \left(6^3\right) + 5\cdot \left(6^2\right) +
+\cdots, a_1, a_0\) with \(0 \leq a_i \lt b\text{,}\) the number \(\left(a_{k}a_{k-1}\cdots a_{1}a_{0}\right)_b\) represents the value \(a_{k}b^{k} + a_{k-1}b^{k-1} + \cdots + a_{1}b^{1} + a_{0}b^{0}\text{.}\) For example, the number \(\left(2501\right)_{6}\) is the value \(2\cdot \left(6^3\right) + 5\cdot \left(6^2\right) +
 0\cdot \left(6^1\right) + 1\cdot \left(6^0\right)\text{.}\)</p>
 <p id="p-15">The definition above gives us a simple method for converting numbers represented in any non-standard base into their decimal representations. We need only write out their expansions in the provided base, and then simplifly using our familiar operations. For example, the decimal representation of \(\left(2501\right)_{6}\) is \(613\text{.}\) You can verify this from the expansion in the previous paragraph. Let's try some examples below.</p>
 <article class="exercise exercise-like" id="exercise-3"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-3"><h6 class="heading">
@@ -157,7 +193,7 @@
 <p id="p-21">In the previous subsection, we identified how number systems in different bases work, and highlighted how it is just a generalization of representing numbers using our common decimal system. From that discussion, we see that the binary system utilizes only two digits, 0 and 1, and place-values are attached to increasing powers of 2 as we move towards the left. These <em class="emphasis">bi</em>nary dig<em class="emphasis">its</em> are often referred to as <em class="emphasis">bits</em>. Moving to the octal system, we can deduce that it utilizes eight digits, 0 through 7, and that place-values are determined by increasing powers of 8 as we move towards the left.</p>
 <p id="p-22">The understanding above extends to hexadecimal, but creates a small problem. We've run out of digits to use. Indeed, the hexadecimal system will utilize sixteen unique digits. To accommodate this, we'll utilize 0 through 9 as usual, but then include \(A\) through \(F\) to represent the quantites 10 - 15, as we know them. Why can't we use 10 - 15 to represent themselves? If we did so, the encoding \(\left(510\right)_{16}\) becomes ambiguous. For example, do we mean \(\left(5\cdot 16^2 + 1 \cdot 16^1 + 0\cdot 16^0\right) = 
 \left(1296\right)_{10}\) or do we mean \(\left(5\cdot 16^1 + 10\cdot 16^0\right) 
-= \left(26\right)_{10}\text{?}\) Making use of the characters \(A\) through \(F\) prevents this ambiguity. The correct hexadecimal encoding of \(26_{10}\) would be \(\left(5A\right)_{16}\text{.}\) We'll discuss more on how to make this conversion in the next section.</p></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
+= \left(26\right)_{10}\text{?}\) Making use of the characters \(A\) through \(F\) prevents this ambiguity. The correct hexadecimal encoding of \(26_{10}\) would be \(\left(1A\right)_{16}\text{.}\) We'll discuss more on how to make this conversion in the next section.</p></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Conclusion</span>
 </h3>
 <p id="p-23">In this section we've seen that numbers can be written in a variety of bases. In particular, any positive integer can serve as the base for a number system. For bases larger than 10, we run out of our (familiar) digits, and need to include symbols to represent larger quanitities -- like using the characters \(A\) through \(F\) to represent 10 - 15 in the hexadecimal system.</p>
