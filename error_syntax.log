@@ -1,4 +1,6 @@
-<string>:0:0:WARNING:IO:IO_LOAD_ERROR: failed to load external entity "file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/ex_projectII-ch.ptx"
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:26:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/ex_projectII-ch.ptx, and no fallback was found
-<string>:0:0:WARNING:IO:IO_LOAD_ERROR: failed to load external entity "file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/ex_projectIII-ch.ptx"
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:26:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/ex_projectIII-ch.ptx, and no fallback was found
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:69:14:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: ul line 68 and li
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:72:24:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 66 and li
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:78:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: introduction line 6 and ul
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:79:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 3 and p
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:80:5:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:56:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx, and no fallback was found

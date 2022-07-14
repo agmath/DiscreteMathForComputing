@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_p2-you-can-count" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>You Can Count! </title>
+
+  <introduction>
+
+    <p><em>Note.</em> This project does not require any coding.
+    </p>
+
+    <br/><br/>
+
+    <p>We spent a few weeks in our course covering some techniques for 
+    counting. We saw that counting is not as simple as your elementary 
+    school teachers made it seem - in fact, counting can be quite complex 
+    and difficult! You'll explore some even more advanced counting 
+    techniques in this project. This project includes the following 
+    requirements.
+    </p>
+
+  <ul>
+    <li> Read Section 2.5 of <a href="https://rellek.net/book/s_strings_bin-coeff.html"><em>Applied Combinatorics</em>, 
+    by Mitch Keller and Tom Trotter</a>.</li>
+    <li> Provide your own synopsis of the section, including how it 
+    extends our ability to count beyond those applications we considered 
+    in our class discussions.</li>
+    <li> Provide detailed discussions and solutions of problems 15, 16, 
+    and 24 from the Chapter Exercises.</li>
+  </ul>
+
+  <p><em>Topic Expectations.</em> A complete submission for this topic will 
+  include solutions to all three of the problems mentioned in the topic 
+  description above. Solutions alone, however, are not enough to earn 
+  full credit for the assignment. The quality of your synopses of the 
+  required readings as well as your discussions around the solutions to 
+  the problems is of primary importance. In particular, you should write 
+  your paper so that someone in our class could read and understand how 
+  to use these new counting techniques, and understand how you approached 
+  the problems.
+  </p>
+</introduction>
+
+</section>
+

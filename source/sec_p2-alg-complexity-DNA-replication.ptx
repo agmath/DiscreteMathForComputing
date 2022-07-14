@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_p2-alg-complexity-DNA-replication" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Complexity and DNA Replication</title>
+
+  <introduction>
+    <p><em>Note.</em> This project can be completing using live code or 
+    pseudocode.
+    </p>
+
+    <br/><br/>
+
+    <p>In this project you'll consider an application from Bioinformatics. The 
+    goal will be to count the frequency of a substring within a section 
+    of a genome. This project provides a foundation for finding the DNA 
+    replication origin within a genome. For this project, you'll work with 
+    the Vibrio cholerae genome, which you can obtain <a href="https://bioinformaticsalgorithms.com/data/realdatasets/Replication/Vibrio_cholerae.txt">here</a>.
+    </p>
+    <ol>
+    <li> Build a function or describe an algorithm (i.e. write pseudocode) 
+    which will count the frequency of each nucleotide (A: adenine, 
+    C: cytosine, G: guanine, T: thymine) in the Vibrio cholerae genome. 
+    What is the run-time complexity of your algorithm?</li>
+    <li> Bioinformaticists have found that the subsequence ATGATCAAG 
+    signals to DNA polymerase that DNA replication should begin. DNA 
+    polymerase is a protein structure that controls DNA replication. Edit 
+    your function or algorithm from part (1) to count the frequency of 
+    ATGATCAAG in the Vibrio cholerae genome. What is the run-time 
+    complexity of your new algorithm?</li>
+    <li> Bioinformaticists are often interested in frequent substrings 
+    within a genome that occur with high frequency in a particular 
+    region. Update your function to count the frequency of ATGATCAAG
+    within a sliding window of 300 nucleotides along the Vibrio cholerae 
+    genome. Your function should return two items - the maximum number of 
+    times ATGATCAAG occurs within the Vibrio cholerae genome inside of 
+    the 300-nucleotide window and the starting index of the window. Be 
+    sure to clearly indicate whether you are using indexing beginning 
+    from 0 or 1. What is the run-time complexity of this algorithm?</li>
+    </ol>
+
+    <p><em>Topic Expectations.</em> In addition to covering the tasks 
+    outlined above, your paper must achieve the following:
+    <ul>
+    <li>Give a basic introduction to DNA replication. You may find some 
+    helpful information in lessons 1.1 and 1.2 here of Pavel Pevzner and 
+    Phillip Compeau's wonderful <em>Bioinformatics Algorithms</em> 
+    textbook available <a href="https://www.bioinformaticsalgorithms.org/bioinformatics-chapter-1">here</a>.</li>
+    <li> Provide detailed discussions of what your algorithms solving 
+    each task above are doing and why your algorithm achieves what the 
+    task requests.</li>
+    </ul>
+    </p>
+    </introduction>
+
+</section>
+

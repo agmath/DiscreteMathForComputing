@@ -23,6 +23,7 @@
   <xi:include href="./sec_firstch-b2ten.ptx" />
   <xi:include href="./sec_firstch-ten2b.ptx" />
   <xi:include href="./sec_firstch-properties.ptx" />
+  <xi:include href="./sec_firstch-b1tob2.ptx" />
 
   <!-- One or more of the sections of a chapter might be exercises-->
   <xi:include href="./ex_firstch.ptx"/>

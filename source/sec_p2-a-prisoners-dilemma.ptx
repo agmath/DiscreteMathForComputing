@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_p2-a-prisoners-dilemma" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>A Prisoners' Dilemma</title>
+
+  <introduction>
+    <p><em>Note.</em> This project can be completing with or without 
+    coding. Part 3 of the project is difficult without coding.
+    </p>
+
+    <br/><br/>
+
+    <p>You are locked in a tower of a Medieval castle with three fellow 
+    captives (i.e., there are four captured persons in total), each in 
+    an isolated cell with no opportunity to communicate.
+    </p>
+
+    <p>The guards have decided to give you all a single chance for 
+    immediate release. They invite you and your three fellow captives to 
+    partake in a game of chance. Provide your analysis of the best 
+    strategy under the following individual game scenarios. Given your 
+    strategy, what is the probability of escaping the tower?
+    </p>
+
+    <p> In your analysis, please remember that you may not consult with 
+    your fellow captives (not even prior to the game commencing), nor 
+    will they be able to communicate with one another, and you will not 
+    be able to learn the choice made or result obtained by any of the 
+    captives participating before you.
+    </p>
+
+    <ol>
+        <li> Each captive will be given a fair die, which they can 
+        either decide to roll or simply return to the guards without 
+        rolling. If the sum of the rolls is at least 8, then you will 
+        all be released without question, but if the total of the rolls 
+        is less than 8, you will all remain imprisoned in the castle 
+        tower for the rest of your days.</li>
+        <li> Each captive will be given a fair coin, which they then can 
+        either decide to flip or simply return to the guards without 
+        flipping. If all flipped coins come up tails, you will all be 
+        released without question, but if any of the flipped coins show 
+        heads, or if none of you flip the coin, you will all remain 
+        imprisoned in the castle tower for the rest of your days.</li>
+        <li> Each captive will be given a fair die, which each captive 
+        can either decide to roll or simply return to the guards without 
+        rolling. If all rolls result in an odd number of pips facing 
+        upwards, then you will all be released without question, but if 
+        any single roll turns up an even number, or if none of you choose 
+        to roll, you will all remain imprisoned in the castle tower for 
+        the rest of your days.</li>
+    </ol>
+
+    <p>The only tools you and your fellow prisoners have to aid you are 
+    random number generators, which will give each prisoner a random 
+    number, uniformly and independently chosen between zero and one (i.e. 
+    you could get .25 or .64, etc on this number generator). These random 
+    number generators may be a helpful tool in making individual decisions 
+    about whether to play or pass. As part of your strategy, though you 
+    cannot decide beforehand who will play and who will pass, you can 
+    decide a number from the random number generator that will be a 
+    threshold below which a prisoner will play, and above which they will 
+    pass.
+    </p>
+
+    <p><em>Topic Expectations.</em> Regardless of whether or not you use 
+    code, you should do part (1).
+    <ul>
+        <li> If you do NOT use code, then for parts (2) and (3), give 
+        your best estimate of what your threshold with the random number 
+        generator should be. Explain why you think that threshold would 
+        work best.</li>
+        <li> If you DO use code, then for parts (2) and (3), use a 
+        simulation to determine what the threshold for the random number 
+        generator should be. Please include your code as an appendix, and 
+        explain why the number your code generates makes sense.
+        </li>
+    </ul>
+    </p>
+    </introduction>
+
+</section>
+

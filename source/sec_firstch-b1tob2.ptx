@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_firstch-properties" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Converting Between Arbitrary Bases</title>
+
+  <introduction>
+    <p>Up to this point, we've discussed converting from base-<m>b</m> to 
+    base-<m>10</m> and also from base-<m>10</m> to base-<m>b</m>. We also 
+    discussed conversions between binary and either the octal or hexadecimal 
+    systems. We saw that this was made convenient because each group of 
+    three bits could be encoded as a single octal digit, and similarly 
+    each group of four bits could be encoded as a single hexadecimal digit. 
+    The relationship between the bases, <m>8 = 2^3</m> and <m>16 = 2^4</m> 
+    is what made this possible. Such a quick conversion is not even possible 
+    between octal and hexadecimal because <m>16</m> is not a positive integer 
+    power of <m>8</m>.
+    </p>
+
+    <p>Unfortunately, in order to convert between two arbitrary bases, we 
+    are stuck with converting to base-<m>10</m> and then from base-<m>10</m> 
+    into the desired new base. We're already comfortable with each of these 
+    individual tasks, so rather than waste time with arbitrary 
+    base-conversions now, let's revisit this a bit later in our course.
+    </p>
+  </introduction>
+
+</section>
+

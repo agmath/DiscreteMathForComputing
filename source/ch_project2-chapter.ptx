@@ -9,7 +9,34 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>We've spent the last few chapters of this book discussing counting,
+    functions, and probability. These are all very impotant ideas in 
+    computing. In the last section of the chapter on counting, we showed 
+    how you can apply counting techniques to better understand both the 
+    run-time and space complexity of any short programs you write. You 
+    can apply those techniques to analyze complexity for much larger, and 
+    comprehensive routines. In the chapter on functions, we explored the 
+    concepts of domain and codomain. We noted that functions can take zero 
+    or more parameters (inputs), and that functions can be chained 
+    together via an operation called <em>composition</em>. This allows for 
+    output values produced by one function to be used an an input value 
+    for another function. This is a commonly occurring phenomenon in 
+    computing. Finally, in the chapter on probability, we applied what we 
+    learned in the counting chapter to discrete probability. We also 
+    encountered discrete probability distributions like the Binomial and 
+    Poisson distributions which find lots of applications.</p>
+
+    <p> In this chapter, we encourage the reader to try one or more 
+    projects which tie together some of the material we've encountered 
+    over the previous three chapters. You'll also need to remember 
+    content from those earlier chapters as well. The majority of the 
+    projects proposed in this chapter can be done with or without writing 
+    code. That being said, some projects are made easier (or perhaps 
+    more interesting) with the use of code. In particular, readers who 
+    would like to solve general versions of the project scenarios 
+    proposed will find that writing simulations can give great insights 
+    when the mathematics becomes difficult or unwieldy.
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -23,5 +50,8 @@
   -->
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_project2-ch.ptx"/>
+  <xi:include href="./sec_p2-you-can-count.ptx"/>
+  <xi:include href="./sec_p2-alg-complexity-DNA-replication.ptx"/>
+  <xi:include href="./sec_p2-a-game-of-bridge.ptx"/>
+  <xi:include href="./sec_p2-a-prisoners-dilemma.ptx"/>
 </chapter>
