@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-15T14:31:37-04:00       *-->
+<!--*       on 2022-07-15T16:24:18-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -182,7 +182,32 @@
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">Operations to Sum All Elements.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-24"><article class="exercise exercise-like"><div class="introduction" id="introduction-31"><p id="p-96">Answer the following.</p></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=982404&amp;resizer=true"></iframe></div></article></div>
-<p id="p-97">Note that in the first three interactive problems above, the size of the input array didn't matter. That is, number of operations required to arrive at the value to be returned did not depend on the length of the input array. If you didn't notice that on your own, try regenerating new versions of the embedded examples and working through the examples again. In the final example, however, the number of operations required to complete before arriving at the value to be returned did depend on the length of the input array. Input arrays with more elements require more calculations, and so it should be expected that, as this <code class="code-inline tex2jax_ignore">sum_array_values()</code> function is applied to larger and larger arrays, it takes longer to run. How much longer run-time should we expect if the length of the input array were to, let's say, double in length? Should we expect the function to take approximately twice as long? More time? Less that that? How can we tell? This is the job of <em class="emphasis">big-O</em> notation.</p></section></div></main>
+<p id="p-97">Note that in the first three interactive problems above, the size of the input array didn't matter. That is, number of operations required to arrive at the value to be returned did not depend on the length of the input array. If you didn't notice that on your own, try regenerating new versions of the embedded examples and working through the examples again. In the final example, however, the number of operations required to complete before arriving at the value to be returned did depend on the length of the input array. Input arrays with more elements require more calculations, and so it should be expected that, as this <code class="code-inline tex2jax_ignore">sum_array_values()</code> function is applied to larger and larger arrays, it takes longer to run. How much longer run-time should we expect if the length of the input array were to, let's say, double in length? Should we expect the function to take approximately twice as long? More time? Less that that? How can we tell? This is the job of <em class="emphasis">big-O</em> notation.</p>
+<p id="p-98">Consider a routine which takes an array as input and then produces some output. The run-time complexity of the algorithm describes the <em class="emphasis">order</em> of the number of operations to be done in transforming the input array into the output, as a function of the length of the input array. Traditionally, the run-time complexity has been written using big-O notation, which looks like \(O\left(f\left(n\right)\right)\text{,}\) where \(f\left(n\right)\) is a function of the length of the input array. We'll see some examples below.</p>
+<article class="example example-like" id="return-first"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-return-first"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">Run-Time Complexity 1.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-return-first"><article class="example example-like"><p id="p-99">Consider the routine below, which takes in an array as input and returns the value of the first element of the array. Describe the run-time of the routine as a function of the size of the input <code class="code-inline tex2jax_ignore">array</code>.</p>
+<div class="displaymath">
+\begin{gather*}
+\texttt{def return_first(array):}\\
+~~\texttt{return array[0]}
+\end{gather*}
+</div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like">Note that the function immediately returns the first element of the array, regardless of the size of the input array. There is a single operation being done here, no matter what non-empty array is supplied as the input. This means that the routine in question has constant runtime. We say that the routine is \(O\left(1\right)\text{.}\)</div></div></article></div> Let's see another example in which more than just a single operation is required to transform the input array into the output. <article class="example example-like" id="return-sum-first-two"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-return-sum-first-two"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.6</span><span class="period">.</span><span class="space"> </span><span class="title">Run-Time Complexity 2.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-return-sum-first-two"><article class="example example-like"><p id="p-100">Consider the routine below, which takes in an array as input and returns the sum of the first two array elements. Describe the run-time of the routine as a function of the size of the input <code class="code-inline tex2jax_ignore">array</code>.</p>
+<div class="displaymath">
+\begin{gather*}
+\texttt{def sum_first_two(array):}\\
+~~\texttt{a = array[0]}\\
+~~\texttt{b = array[1]}\\
+~~\texttt{total = a + b}\\
+~~\texttt{return total}
+\end{gather*}
+</div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like">Note that the routine uses three operations in order to transform the input <code class="code-inline tex2jax_ignore">array</code> into the value which is returned. First, the item in <code class="code-inline tex2jax_ignore">array[0]</code> is stored in the variable \(a\text{.}\) Next, the intem in <code class="code-inline tex2jax_ignore">array[1]</code> is stored in the variable \(b\text{.}\) Finally, the sum, \(a + b\) is stored in the <code class="code-inline tex2jax_ignore">total</code> variable, which is the value to be returned. Three operations are being completed here, so we might say that this routine has run-time complexity \(O\left(3\right)\text{.}\) The attentive reader may ask why this routine is not \(O\left(4\right)\) because of the <code class="code-inline tex2jax_ignore">return</code> statement. In short, we shouldn't waste time making a distinction because, regardless of whether we consider <code class="code-inline tex2jax_ignore">return</code>ing a value to be an operation or not, this routine has <em class="emphasis">constant</em> run-time. That is, this routine is also \(O\left(1\right)\text{.}\)</div></div></article></div>
+<p id="p-101">We saw in the previous example that there is no distinction made between \(O\left(1\right)\) and \(O\left(3\right)\text{,}\) or even \(O\left(10^6\right)\text{,}\) for that matter. All of these denote constant run-time, and so their big-O description of complexity is \(O\left(1\right)\text{.}\)</p>
+<p id="p-102">Let's see how the run-time complexity grows for some more interesting functions in the examples below.</p></section></div></main>
 </div>
 </body>
 </html>

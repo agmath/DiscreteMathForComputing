@@ -86,5 +86,77 @@
   approximately twice as long? More time? Less that that? How can we 
   tell? This is the job of <em>big-O</em> notation.
   </p> 
+
+  <p>Consider a routine which takes an array as input and then produces 
+  some output. The run-time complexity of the algorithm describes the 
+  <em>order</em> of the number of operations to be done in transforming 
+  the input array into the output, as a function of the length of the 
+  input array. Traditionally, the run-time complexity has been written 
+  using big-O notation, which looks like <m>O\left(f\left(n\right)\right)</m>,
+  where <m>f\left(n\right)</m> is a function of the length of the 
+  input array. We'll see some examples below.
+  </p>
+
+  	<example xml:id = "return-first"> 
+        <title>Run-Time Complexity 1</title>
+		<p> Consider the routine below, which takes in an array as input 
+        and returns the value of the first element of the array. Describe 
+        the run-time of the routine as a function of the size of the 
+        input <c>array</c>.</p>			
+		<md>
+		<mrow>\texttt{def return_first(array):}</mrow>
+		<mrow>~~\texttt{return array[0]}</mrow> 
+		</md>
+        <solution> Note that the function immediately returns the first 
+        element of the array, regardless of the size of the input array. 
+        There is a single operation being done here, no matter what 
+        non-empty array is supplied as the input. This means that the 
+        routine in question has constant runtime. We say that the
+        routine is <m>O\left(1\right)</m>. 
+        </solution>
+	</example>
+
+    Let's see another example in which more than just a single operation 
+    is required to transform the input array into the output.
+
+    <example xml:id = "return-sum-first-two"> 
+        <title>Run-Time Complexity 2</title>
+		<p> Consider the routine below, which takes in an array as input 
+        and returns the sum of the first two array elements. Describe 
+        the run-time of the routine as a function of the size of the 
+        input <c>array</c>.</p>			
+		<md>
+		<mrow>\texttt{def sum_first_two(array):}</mrow>
+		<mrow>~~\texttt{a = array[0]}</mrow>
+        <mrow>~~\texttt{b = array[1]}</mrow>
+        <mrow>~~\texttt{total = a + b}</mrow>
+        <mrow>~~\texttt{return total}</mrow> 
+		</md>
+        <solution> Note that the routine uses three operations in order 
+        to transform the input <c>array</c> into the value which is 
+        returned. First, the item in <c>array[0]</c> is stored in the 
+        variable <m>a</m>. Next, the intem in <c>array[1]</c> is stored 
+        in the variable <m>b</m>. Finally, the sum, <m>a + b</m> is 
+        stored in the <c>total</c> variable, which is the value to be 
+        returned. Three operations are being completed here, so we 
+        might say that this routine has run-time complexity 
+        <m>O\left(3\right)</m>. The attentive reader may ask why this 
+        routine is not <m>O\left(4\right)</m> because of the <c>return</c>
+        statement. In short, we shouldn't waste time making a distinction 
+        because, regardless of whether we consider <c>return</c>ing a 
+        value to be an operation or not, this routine has <em>constant</em> 
+        run-time. That is, this routine is also <m>O\left(1\right)</m>. 
+        </solution>
+	</example>
+
+    <p> We saw in the previous example that there is no distinction made 
+    between <m>O\left(1\right)</m> and <m>O\left(3\right)</m>, or even 
+    <m>O\left(10^6\right)</m>, for that matter. All of these denote 
+    constant run-time, and so their big-O description of complexity is 
+    <m>O\left(1\right)</m>. 
+    </p>
+
+    <p>Let's see how the run-time complexity grows for some more 
+    interesting functions in the examples below.</p>
 </section>
 

@@ -1,6 +1,2 @@
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:19:41:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: em line 19 and m
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:58:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: li line 55 and ul
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:59:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: ul line 47 and p
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:68:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 45 and section
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:70:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 3
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:48:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx, and no fallback was found
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_counting-big-O.ptx:138:62:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: c line 138 and b
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:24:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_counting-big-O.ptx, and no fallback was found
