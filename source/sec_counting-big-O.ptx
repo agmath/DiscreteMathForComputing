@@ -28,12 +28,12 @@
   provided via some pseudocode -- something about halfway between 
   human preferrable and computer readable. Since we are working with 
   arrays, it is useful to have some convention about how to access 
-  individual array elements. Throughout this section, we use <code>
-  myArray[0]</code> to access the element in the left-most slot of 
-  the <code>myArray</code> object. We use <code>myArray[i]</code> 
-  to access the element in the <m>i^{th}</m> slot of <code>myArray
-  </code>, remembering that the left-most item occupies the 
-  <m>0^{th}</m> slot of <code>myArray</code>.
+  individual array elements. Throughout this section, we use <c>
+  myArray[0]</c> to access the element in the left-most slot of 
+  the <c>myArray</c> object. We use <c>myArray[i]</c> 
+  to access the element in the <m>i^{th}</m> slot of <c>myArray
+  </c>, remembering that the left-most item occupies the 
+  <m>0^{th}</m> slot of <c>myArray</c>.
   </p>
 
   <p>Indexing from 0 may seem awkward to those of you who are just 
@@ -79,7 +79,7 @@
   operations required to complete before arriving at the value to be 
   returned did depend on the length of the input array. Input arrays with 
   more elements require more calculations, and so it should be expected 
-  that, as this <code>sum_array_values()</code> function is applied to 
+  that, as this <c>sum_array_values()</c> function is applied to 
   larger and larger arrays, it takes longer to run. How much longer 
   run-time should we expect if the length of the input array were to, 
   let's say, double in length? Should we expect the function to take 
