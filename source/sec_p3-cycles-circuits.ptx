@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_p3-cycles-circuits" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Eulerian Circuits and Hamiltonian Cycles</title>
+
+  <introduction>
+    <p><em>Note.</em> This project can be completing with or without 
+    coding.
+    </p>
+
+    <br/><br/>
+
+    <p><em>Eulerian Circuits and Hamiltonian Cycles.</em> In this project,
+    students will explore Eulerian Circuits as well as Hamiltonian Cycles 
+    in graphs. As part of your project, you should be sure to define both 
+    Eulerian circuits and Hamiltonian cycles, construct examples of graphs 
+    for which these structures exist and other examples of graphs for 
+    which they do not exist. Your project should also discuss the 
+    conditions under which these structures can be found in graphs. You 
+    may even elect to discuss some interesting applications of these 
+    structures or some existing unsolved problems involving them.
+    </p>
+    </introduction>
+
+</section>
+

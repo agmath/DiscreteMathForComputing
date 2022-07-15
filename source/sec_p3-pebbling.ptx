@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_p3-pebbling" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Graph Pebbling</title>
+
+  <introduction>
+    <p><em>Note.</em> This project can be completing with or without 
+    coding.
+    </p>
+
+    <br/><br/>
+
+    <p><em>Graph Pebbling.</em> Consider a graph in which a non-negative 
+    integer number of currency (pebbles) are placed at each vertex. That 
+    is, some vertices may have no pebbles, while others have a positive 
+    whole number of pebbles. The goal of graph pebbling is to carry at 
+    least one pebble to a target vertex that begins with no pebbles. 
+    Each time a stack of pebbles is moved along an edge, a 50% "tax" 
+    must be paid. That is, if you move a stack of 6 pebbles from a vertex 
+    to one of its neighbors, only 3 pebbles arrive at the neighbor, and 
+    the other three are lost. Similarly, if a stack of 9 pebbles are 
+    moved, only 4 will remain (there is no way to make "change" in 
+    pebbling). 
+    </p>
+
+    <p>The <em>pebbling number</em> of a graph is the smallest number of 
+    pebbles such that any (even the most diabolical) initial configuration 
+    and choice of target is "pebblable". As part of this project, you will 
+    find the pebbling numbers for several classes of graph, including 
+    complete graphs, paths, and cycles. Glen Hurlbert's 
+    <a href="http://www.people.vcu.edu/~ghurlbert/pebbling/pebb.html">Graph 
+    Pebbling page</a> is a good place to start your research.
+    </p>
+    </introduction>
+
+</section>
+

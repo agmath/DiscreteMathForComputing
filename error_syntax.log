@@ -1,6 +1,6 @@
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:69:14:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: ul line 68 and li
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:72:24:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 66 and li
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:78:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: introduction line 6 and ul
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:79:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 3 and p
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx:80:5:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:56:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p2-a-prisoners-dilemma.ptx, and no fallback was found
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:19:41:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: em line 19 and m
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:58:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: li line 55 and ul
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:59:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: ul line 47 and p
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:68:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 45 and section
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx:70:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 3
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:48:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p3-our-guidelines.ptx, and no fallback was found

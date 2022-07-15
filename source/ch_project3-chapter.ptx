@@ -9,7 +9,29 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>In the final two chapters of our course we encountered 
+    arrays and got a quick introduction to graph theory. In our
+    chapter on arrays we encountered both one-dimensional arrays 
+    (vectors), and multidimensional arrays (matrices and tensors). 
+    In our chapter on graph theory, we developed the notion of a 
+    graph as a network of nodes, potentially connected via edges. 
+    We saw that graphs find many uses in computing. They serve as 
+    models for everything from database design, to file systems, or 
+    social networks.</p>
+
+    <p>If you continue along with computing coursework, you'll 
+    encounter both arrays and graph structures often throughout 
+    your studies. Arrays are a very common linear data structure, 
+    and many non-linear data structures are analogous to graphs.
+    </p>
+
+    <p>You'll find opportunities to explore more about graphs and 
+    arrays in this final chapter worth of project ideas. Some of
+    the projects proposed in the sections that follow come from 
+    open areas of research in graph theory, while others invite 
+    the reader to explor an interesting application of graph 
+    theory. We hope you'll find something that piques your interest!
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -23,5 +45,11 @@
   -->
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_project3-ch.ptx"/>
+  <xi:include href="./sec_p3-our-guidelines.ptx"/>
+  <xi:include href="./sec_p3-coloring.ptx"/>
+  <xi:include href="./sec_p3-pebbling.ptx"/>
+  <xi:include href="./sec_p3-cycles-circuits.ptx"/>
+  <xi:include href="./sec_p3-algorithms.ptx"/>
+  <xi:include href="./sec_p3-networks.ptx"/>
+  <xi:include href="./sec_p3-matrix-tree.ptx"/>
 </chapter>

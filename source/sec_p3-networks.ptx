@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_p3-networks" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Networks</title>
+
+  <introduction>
+    <p><em>Note.</em> This project can be completing with or without 
+    coding.
+    </p>
+
+    <br/><br/>
+
+    <p><em>Networks.</em> Networks encode real-world relationships into 
+    graphs. Your project should give examples of networks (be sure to 
+    explain what your vertices and edges represent!), and should discuss 
+    and explain various centrality measures including degree centrality 
+    and betweeness centrality. You should also mention eigenvector 
+    centrality and what it measures, though unless you have taken linear
+    algebra, you do not need to talk about how to find it.
+    </p>
+    </introduction>
+
+</section>
+
