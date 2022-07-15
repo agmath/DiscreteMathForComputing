@@ -16,11 +16,12 @@
   <!-- with organization to include them as separate files.      -->
   <!-- That way it is easy to include the section in a different -->
   <!-- chapter later if you change your mind about the order.    -->
-  <!--<xi:include href="./sec_sets-ch-intro.ptx" />
-  <xi:include href="./sec_sets-ch-foundations.ptx" />
-  <xi:include href="./sec_sets-ch-operations.ptx" />
-  <xi:include href="./sec_sets-ch-setsofsets.ptx" />
-  -->
+  <!-- <xi:include href="./sec_sets-ch-intro.ptx" /> -->
+  <xi:include href="./sec_counting-basics.ptx" />
+  <xi:include href="./sec_counting-permutations.ptx" />
+  <xi:include href="./sec_counting-binomial-coefficients.ptx" />
+  <xi:include href="./sec_counting-fundamental-principle.ptx" />
+  <xi:include href="./sec_counting-big-O.ptx" />
 
   <!-- One or more of the sections of a chapter might be exercises-->
   <xi:include href="./ex_counting-ch.ptx"/>

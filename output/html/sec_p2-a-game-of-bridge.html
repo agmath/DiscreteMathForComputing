@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-14T21:04:28-04:00       *-->
+<!--*       on 2022-07-15T14:22:27-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -104,7 +104,14 @@
 <a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">Symbolic Logic and Boolean Algebra</span></a><ul><li><a href="ex_logic-ch.html" data-scroll="ex_logic-ch">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-counting.html" data-scroll="ch-counting"><span class="codenumber">4</span> <span class="title">Counting</span></a><ul><li><a href="ex_counting-ch.html" data-scroll="ex_counting-ch">My Exercises</a></li></ul>
+<a href="ch-counting.html" data-scroll="ch-counting"><span class="codenumber">4</span> <span class="title">Counting</span></a><ul>
+<li><a href="sec_counting-basics.html" data-scroll="sec_counting-basics">Basic Counting Techniques</a></li>
+<li><a href="sec_counting-permutations.html" data-scroll="sec_counting-permutations">Orderings and Permutations</a></li>
+<li><a href="sec_counting-binomial-coefficients.html" data-scroll="sec_counting-binomial-coefficients">Selections and Binomial Coefficients</a></li>
+<li><a href="sec_counting-fundamental-principle.html" data-scroll="sec_counting-fundamental-principle">The Fundamental Principle of Counting</a></li>
+<li><a href="sec_counting-big-O.html" data-scroll="sec_counting-big-O">Complexity and Big-O Notation</a></li>
+<li><a href="ex_counting-ch.html" data-scroll="ex_counting-ch">My Exercises</a></li>
+</ul>
 </li>
 <li class="link">
 <a href="ch-functions.html" data-scroll="ch-functions"><span class="codenumber">5</span> <span class="title">Functions</span></a><ul><li><a href="ex_functions-ch.html" data-scroll="ex_functions-ch">My Exercises</a></li></ul>
@@ -154,21 +161,21 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_p2-a-game-of-bridge"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">A Game of Bridge</span>
 </h2>
-<section class="introduction" id="introduction-28"><p id="p-109"><em class="emphasis">Note.</em> This project can be completing with or without coding. Part 3 of the project is difficult without coding.</p>
-<p id="p-110">In this Squid Game-inspired project, you'll analyse a bridge- crossing game. Various scenarios will be considered. In each scenario, the game is as follows. All players begin at one end of the bridge, with the goal of getting all the way to the other side. The bridge consists of glass panes, each of which will turn red or green when stepped on. If a player stops on a pane and it turns red, that player is out. All lit panes remain lit for the entirety of the game (so later players have an advantage). Players will cross the bridge one at a time, in a predetermined order. You may also assume that the glass panes are large enough that players may not jump over segments of the bridge. That is, in the picture below, the players begin from the left side of the bridge and each player must step on one of the two panes in each column in an attempt to reach the right hand side of the bridge.</p>
+<section class="introduction" id="introduction-37"><p id="p-123"><em class="emphasis">Note.</em> This project can be completing with or without coding. Part 3 of the project is difficult without coding.</p>
+<p id="p-124">In this Squid Game-inspired project, you'll analyse a bridge- crossing game. Various scenarios will be considered. In each scenario, the game is as follows. All players begin at one end of the bridge, with the goal of getting all the way to the other side. The bridge consists of glass panes, each of which will turn red or green when stepped on. If a player stops on a pane and it turns red, that player is out. All lit panes remain lit for the entirety of the game (so later players have an advantage). Players will cross the bridge one at a time, in a predetermined order. You may also assume that the glass panes are large enough that players may not jump over segments of the bridge. That is, in the picture below, the players begin from the left side of the bridge and each player must step on one of the two panes in each column in an attempt to reach the right hand side of the bridge.</p>
 <figure class="figure figure-like" id="figure-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/bridge.jpg" class="contained" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.3.1<span class="period">.</span></span><span class="space"> </span>A sample "bridge" with two panes and four segments to cross.</figcaption></figure><p id="p-111">Analyse the game by finding the expected number of players reaching the opposite end of the bridge safely (without stepping on a red glass pane) in each of the following scenarios.</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.3.1<span class="period">.</span></span><span class="space"> </span>A sample "bridge" with two panes and four segments to cross.</figcaption></figure><p id="p-125">Analyse the game by finding the expected number of players reaching the opposite end of the bridge safely (without stepping on a red glass pane) in each of the following scenarios.</p>
 <ol class="decimal">
-<li id="li-9"><p id="p-derived-li-9">The bridge contains 2 glass panes in each segment and there are 18 segments to cross the entire bridge. That is, the bridge is like the one in the image above, but it contains 18 columns rather than just four. Each segment contains one pane that will light green and one pane that will light red.</p></li>
-<li id="li-10"><p id="p-derived-li-10">The bridge contains 3 glass panes in each segment and there are 18 segments to cross the entire bridge. Each segment contains two panes that will light green and one pane that will light red.</p></li>
-<li id="li-11"><p id="p-derived-li-11">The bridge contains 3 glass panes in each segment and there are 18 segments to cross the entire bridge. Each segment contains two panes that will light red and one that will light green.</p></li>
+<li id="li-14"><p id="p-derived-li-14">The bridge contains 2 glass panes in each segment and there are 18 segments to cross the entire bridge. That is, the bridge is like the one in the image above, but it contains 18 columns rather than just four. Each segment contains one pane that will light green and one pane that will light red.</p></li>
+<li id="li-15"><p id="p-derived-li-15">The bridge contains 3 glass panes in each segment and there are 18 segments to cross the entire bridge. Each segment contains two panes that will light green and one pane that will light red.</p></li>
+<li id="li-16"><p id="p-derived-li-16">The bridge contains 3 glass panes in each segment and there are 18 segments to cross the entire bridge. Each segment contains two panes that will light red and one that will light green.</p></li>
 </ol>
-<p id="p-112"><em class="emphasis">Topic Expectations.</em> All code or mathematics for each scenario should be included as an appendix to your paper. In addition to your supporting work and your solutions to the expected number of players, your paper should:</p>
+<p id="p-126"><em class="emphasis">Topic Expectations.</em> All code or mathematics for each scenario should be included as an appendix to your paper. In addition to your supporting work and your solutions to the expected number of players, your paper should:</p>
 <ul class="disc">
-<li id="li-12"><p id="p-derived-li-12">Describe what your code/mathematics does, and what changes you needed to make for each scenario.</p></li>
-<li id="li-13"><p id="p-derived-li-13">Explain why your code/mathematics accurately simulates or models the scenario.</p></li>
-<li id="li-14"><p id="p-derived-li-14">When finding the expected number of players, explain why it makes sense for the expected numbers in some parts to be bigger or smaller than other parts.</p></li>
-<li id="li-15"><p id="p-derived-li-15">Explain why the third part is more difficult to solve than the first two parts.</p></li>
+<li id="li-17"><p id="p-derived-li-17">Describe what your code/mathematics does, and what changes you needed to make for each scenario.</p></li>
+<li id="li-18"><p id="p-derived-li-18">Explain why your code/mathematics accurately simulates or models the scenario.</p></li>
+<li id="li-19"><p id="p-derived-li-19">When finding the expected number of players, explain why it makes sense for the expected numbers in some parts to be bigger or smaller than other parts.</p></li>
+<li id="li-20"><p id="p-derived-li-20">Explain why the third part is more difficult to solve than the first two parts.</p></li>
 </ul></section></section></div></main>
 </div>
 </body>

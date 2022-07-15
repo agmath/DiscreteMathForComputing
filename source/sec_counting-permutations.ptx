@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_counting-permutations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Orderings and Permutations</title>
+
+  <introduction>
+    <p>In this section we encounter methods for counting the number of 
+    <em>orderings</em> of items selected from a set of options.
+    </p>
+  </introduction>
+
+</section>
+
