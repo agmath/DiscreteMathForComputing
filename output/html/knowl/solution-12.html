@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-15T16:24:19-04:00       *-->
+<!--*       on 2022-07-19T13:33:02-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,10 +16,17 @@
 <body>
 <div class="solution solution-like">
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.6.1.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.5.7.1</span><span class="period">.</span>
 </h6>
-<p>It is, but not a very good one.</p>
+<p>The presence of the loop here has the potential to result in run times that are related to the size of the input <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">array</code>. There is a single operation being done within the body of the <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">for</code> loop. That is, the body of the loop has \(O\left(1\right)\) run-time. The loop will run once for each <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">element</code> in the input <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">array</code>. Let's label the number of elements in the input <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">array</code> by \(n\text{.}\) We'll ignore accounting for the "operations" of setting up the loop and <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">return</code>ing the result, but there is the operation required to initialize the <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">myProd</code> variable which we will account for.</p>
+<p>Given the analysis above, the total run-time for this routine is \(n\cdot O\left(1\right) + O\left(1\right)\text{.}\) When analyzing the run-time complexity of a routine, we are looking to identify the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bottlenecks</em> in our code. This means that we care only about the part of the code whose run-time grows the fastest. For this reason, we identify the highest-order term in our analysis and throw away all of the others (since for very large input arrays, the lower-order terms will have diminished impact on the observed run-time). This leaves us with</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+n\cdot O\left(1\right) + O\left(1\right) \amp = O\left(n\right) + O\left(1\right)\\
+\amp = O\left(n\right)
+\end{align*}
 </div>
-<span class="incontext"><a href="ex_counting-ch.html#solution-12">in-context</a></span>
+</div>
+<span class="incontext"><a href="sec_counting-big-O.html#solution-12">in-context</a></span>
 </body>
 </html>

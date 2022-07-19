@@ -5,9 +5,9 @@
 
   <introduction>
     <p>In this section we apply our knowledge of looping and counting 
-    to develop the notion of big-O notation. We'll look at functions 
+    to develop the notion of big-O notation. We'll look at routines 
     which accept an array as input and explore the growth in the number
-    of operations run during function execution as the size of the 
+    of operations run during execution of the routine as the size of the 
     input array grows. In particular, we'll see applications which are 
     <m>O\left(1\right)</m>, <m>O\left(n\right)</m>, <m>O\left(n^2\right)</m>, and 
     <m>O\left(n^3\right)</m>. 
@@ -22,18 +22,18 @@
   </introduction>
 
   <p><em>About.</em> In this section, it is necessary to provide 
-  definitions of example functions. The functions are not written in 
+  definitions of example routines. The routines are not written in 
   any particular language -- in fact, most won't work in <em>any</em> 
-  language as you see them written here. Instead, the functions are 
+  language as you see them written here. Instead, the routines are 
   provided via some pseudocode -- something about halfway between 
   human preferrable and computer readable. Since we are working with 
   arrays, it is useful to have some convention about how to access 
   individual array elements. Throughout this section, we use <c>
   myArray[0]</c> to access the element in the left-most slot of 
   the <c>myArray</c> object. We use <c>myArray[i]</c> 
-  to access the element in the <m>i^{th}</m> slot of <c>myArray
-  </c>, remembering that the left-most item occupies the 
-  <m>0^{th}</m> slot of <c>myArray</c>.
+  to access the element in the <m>i^{th}</m> slot of <c>myArray</c>, 
+  remembering that the left-most item occupies the <m>0^{th}</m> 
+  slot of <c>myArray</c>.
   </p>
 
   <p>Indexing from 0 may seem awkward to those of you who are just 
@@ -79,10 +79,10 @@
   operations required to complete before arriving at the value to be 
   returned did depend on the length of the input array. Input arrays with 
   more elements require more calculations, and so it should be expected 
-  that, as this <c>sum_array_values()</c> function is applied to 
+  that, as this <c>sum_array_values()</c> routine is applied to 
   larger and larger arrays, it takes longer to run. How much longer 
   run-time should we expect if the length of the input array were to, 
-  let's say, double in length? Should we expect the function to take 
+  let's say, double in length? Should we expect the routine to take 
   approximately twice as long? More time? Less that that? How can we 
   tell? This is the job of <em>big-O</em> notation.
   </p> 
@@ -103,11 +103,13 @@
         and returns the value of the first element of the array. Describe 
         the run-time of the routine as a function of the size of the 
         input <c>array</c>.</p>			
-		<md>
-		<mrow>\texttt{def return_first(array):}</mrow>
-		<mrow>~~\texttt{return array[0]}</mrow> 
-		</md>
-        <solution> Note that the function immediately returns the first 
+        <pre>
+		<cd>
+		def return_first(array):
+		  return array[0] 
+		</cd>
+        </pre>
+        <solution> Note that the routine immediately returns the first 
         element of the array, regardless of the size of the input array. 
         There is a single operation being done here, no matter what 
         non-empty array is supplied as the input. This means that the 
@@ -125,13 +127,16 @@
         and returns the sum of the first two array elements. Describe 
         the run-time of the routine as a function of the size of the 
         input <c>array</c>.</p>			
-		<md>
-		<mrow>\texttt{def sum_first_two(array):}</mrow>
-		<mrow>~~\texttt{a = array[0]}</mrow>
-        <mrow>~~\texttt{b = array[1]}</mrow>
-        <mrow>~~\texttt{total = a + b}</mrow>
-        <mrow>~~\texttt{return total}</mrow> 
-		</md>
+        <pre>
+		<cd>
+def sum_first_two(array):
+  a = array[0]
+  b = array[1]
+  total = a + b
+
+  return total 
+		</cd>
+        </pre>
         <solution> Note that the routine uses three operations in order 
         to transform the input <c>array</c> into the value which is 
         returned. First, the item in <c>array[0]</c> is stored in the 
@@ -153,10 +158,233 @@
     between <m>O\left(1\right)</m> and <m>O\left(3\right)</m>, or even 
     <m>O\left(10^6\right)</m>, for that matter. All of these denote 
     constant run-time, and so their big-O description of complexity is 
-    <m>O\left(1\right)</m>. 
+    <m>O\left(1\right)</m>. We say that such routines have <em>constant 
+    run-time</em>, since the time required to run the routine does not 
+    change as the size of the input array changes.
     </p>
 
     <p>Let's see how the run-time complexity grows for some more 
-    interesting functions in the examples below.</p>
+    interesting routines in the examples below.</p>
+
+    <example xml:id = "return-product-all"> 
+        <title>Run-Time Complexity 3</title>
+		<p> Consider the routine below, which takes in an array as input 
+        and returns the product of all the array elements. Describe 
+        the run-time of the routine as a function of the size of the 
+        input <c>array</c>.</p>	
+        <pre>		
+		<cd>
+def array_product(array):
+  myProd = 1
+  for element in array:
+    myProd = myProd*element
+
+  return myProd 
+		</cd>
+        </pre>
+        <solution> 
+        <p>The presence of the loop here has the potential to 
+        result in run times that are related to the size of the input 
+        <c>array</c>. There is a single operation being done within the 
+        body of the <c>for</c> loop. That is, the body of the loop has 
+        <m>O\left(1\right)</m> run-time. The loop will run once for 
+        each <c>element</c> in the input <c>array</c>. Let's label the 
+        number of elements in the input <c>array</c> by <m>n</m>. We'll 
+        ignore accounting for the "operations" of setting up the loop 
+        and <c>return</c>ing the result, but there is the operation 
+        required to initialize the <c>myProd</c> variable which we will 
+        account for.
+        </p>
+
+        <p>Given the analysis above, the total run-time for this routine 
+        is <m>n\cdot O\left(1\right) + O\left(1\right)</m>. When 
+        analyzing the run-time complexity of a routine, we are looking 
+        to identify the <em>bottlenecks</em> in our code. This means 
+        that we care only about the part of the code whose run-time 
+        grows the fastest. For this reason, we identify the 
+        highest-order term in our analysis and throw away all of the 
+        others (since for very large input arrays, the lower-order 
+        terms will have diminished impact on the observed run-time).
+        This leaves us with 
+        </p>
+        <md>
+            <mrow> n\cdot O\left(1\right) + O\left(1\right) \amp = O\left(n\right) + O\left(1\right)</mrow>
+            <mrow> \amp = O\left(n\right)</mrow>
+        </md>
+        </solution>
+	</example>
+
+    <example xml:id = "return-product-difference"> 
+        <title>Run-Time Complexity 4</title>
+		<p> Consider the routine below, which takes in an array as input 
+        and returns a value computed using the values from the input 
+        <c>array</c>. Describe the run-time of the routine as a function 
+        of the size of the input <c>array</c>.
+        </p>			
+		<pre>
+        <cd>
+def array_product_difference(array):
+  myValue = 1
+  for element in array:
+    myValue = myValue - element
+    myValue = myValue * element
+        
+  return myValue 
+		</cd>
+        </pre>
+        <solution> 
+        <p>Again, the presence of the loop here has the potential to 
+        result in run times that are related to the size of the input 
+        <c>array</c>. There are two operations being done within the 
+        body of the <c>for</c> loop. That is, the body of the loop has 
+        <m>O\left(1\right) + O\left(1\right)</m> run-time. The loop 
+        will run once for each <c>element</c> in the input <c>array</c>. 
+        Again, we'll label the number of elements in the input 
+        <c>array</c> by <m>n</m>. As usual, we'll ignore accounting for 
+        the "operations" of setting up the loop and <c>return</c>ing 
+        the result, but we account for the operation to initialize the 
+        <c>myValue</c> variable. The run-time is then 
+        </p>
+        <md>
+            <mrow> n\left(\cdot O\left(1\right) + O\left(1\right)\right) + O\left(1\right) \amp = n\cdot O\left(2\right) + O\left(1\right)</mrow>
+            <mrow> \amp = O\left(2n\right) + O\left(1\right)</mrow>
+            <mrow> \amp = O\left(2n\right)</mrow>
+            <mrow> \amp = O\left(n\right)</mrow>
+        </md>
+
+        <p> In the last line from the string of equalities above, we 
+        dropped the constant <m>2</m> from <m>O\left(2n\right)</m>. 
+        This wasn't simply a typo, and the rationale for doing so is 
+        similar to the rationale for omitting any constant run-time 
+        elements from the overall description of the run-time of the 
+        entire routine. 
+        </p>
+        </solution>
+	</example>
+
+    <p>NOTE: Need to decide whether setting up a loop or returning 
+    values should be counted as an "operation" in determining the 
+    run-time complexities -- I'll reach out to the CS department 
+    about the choice they currently make in Analysis of Algorithms. 
+    </p>
+
+    <example xml:id = "return-check-product"> 
+        <title>Run-Time Complexity 5</title>
+		<p> Consider the routine below, which takes in an array as input 
+        and returns a value of <c>TRUE</c> if there exist elements <c>a</c>,
+        <c>b</c>, and <c>c</c> in the <c>array</c> such that <c>a*b = c</c>, 
+        and returns <c>FALSE</c> otherwise. Describe the run-time of the 
+        routine as a function of the size of the input <c>array</c>.
+        </p>			
+        <pre>
+		<cd>
+def detect_product(array):
+  for element_a in array:
+    for element_b in array:
+      for element_c in array:
+        if a*b == c:
+          return TRUE
+        
+  return FALSE 
+		</cd>
+        </pre>
+        <solution> 
+        <p>In the routine defined above, we should note that once a 
+        program reaches a <c>return</c> statement, the corresponding 
+        value is <em>returned</em> and the routine terminates. When we 
+        are analyzing run-time complexity, we always consider a 
+        "worst-case" scenario for run-time. Given the routine above, a 
+        worst-case is that no such trio of array elements are found. As 
+        a result, the routine must run completely over the entire array 
+        before returning <c>FALSE</c>. In such a scenario, we have 
+        </p>
+        <md>
+            <mrow> n\left(n\left(n\left(O\left(1\right)\right)\right)\right) \amp = n^3\cdot O\left(1\right)</mrow>
+            <mrow> \amp = O\left(n^3\right)</mrow>
+        </md>
+
+        <p> This routine, as coded here, has a run-time of 
+        <m>O\left(n^3\right)</m>. This means that if we double the length 
+        of the input array, say from <m>k</m> to <m>2k</m>, the routine 
+        is expected to take about <m>2^3 = 8\times</m> longer to run. 
+        </p>
+        </solution>
+	</example>
+
+    <p> To recap from the examples above, we use big-O notation to 
+    describe the run-time of a routine as a function of the length of 
+    its input array. Big-O notation allows us to answer the question 
+    "<em>How would our run-time change if the size of our input array 
+    was doubled?</em>". If the length of an input array was doubled, 
+    we have the following expected changes in run-times.
+    <ul>
+        <li>For an <m>O\left(1\right)</m> routine, the expected run 
+        time does not change.</li>
+        <li>For an <m>O\left(n\right)</m> routine, the expected run 
+        time is approximately doubled.</li>
+        <li>For an <m>O\left(n^2\right)</m> routine, the expected run 
+        time is approximately four times longer.</li>
+        <li>For an <m>O\left(n^3\right)</m> routine, the expected 
+        run time is approximately eight times longer.</li>
+    </ul>
+    There are routines which have run-time complexities which are 
+    between constant and linear. For example, some routines have 
+    <m>O\left(\log\left(n\right)\right)</m> run-time. We'll see 
+    some later in our course. There are also routines which don't 
+    have polynomial run-time. They may be <em>exponential</em> --  
+    for example <m>O\left(2^n\right)</m> -- or <em>factorial</em>, 
+    <m>O\left(n!\right)</m>. In general, we desire routines which 
+    are more efficient -- that is, routines with lower-order run-time 
+    complexities -- because they are faster. However, there is 
+    sometimes a tradeoff between run-time complexity and 
+    space-complexity. What good is a fast algorithm if requires more 
+    memory than you have access to? 
+    </p>
+
+    <p>Complete the examples below to verify your grasp of algorithmic 
+    complexity and big-O notation. Please note that the algorithms are 
+    written in pseudocode, and the algorithms don't necessarily claim 
+    to solve their corresponding challenge in the most efficient manner 
+    possible. Your answers should describe the algorithmic complexity 
+    of the routines as written in the sample problems. Interested 
+    readers may try writing working versions of these routines in a 
+    language of their choice, and are invited to think about optimizing 
+    the algorithms.
+    </p>
+
+    <exercise exercise-customization="inline" exercise-interactive="static">
+        <title>Big-O Analysis 1</title><introduction>
+    	<p>Answer the following.
+    	</p>
+    </introduction><myopenmath problem="983689" />
+	</exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static">
+        <title>Big-O Analysis 2</title><introduction>
+    	<p>Answer the following.
+    	</p>
+    </introduction><myopenmath problem="983911" />
+	</exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static">
+        <title>Big-O Analysis 3</title><introduction>
+    	<p>Answer the following.
+    	</p>
+    </introduction><myopenmath problem="983932" />
+	</exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static">
+        <title>Big-O Analysis 4</title><introduction>
+    	<p>Answer the following.
+    	</p>
+    </introduction><myopenmath problem="983926" />
+	</exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static">
+        <title>Big-O Analysis 5</title><introduction>
+    	<p>Answer the following. This one is challenging.
+    	</p>
+    </introduction><myopenmath problem="983694" />
+	</exercise> 
 </section>
 
