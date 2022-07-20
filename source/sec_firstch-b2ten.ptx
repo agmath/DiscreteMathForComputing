@@ -8,7 +8,7 @@
 	counting in the decimal system works. Have you ever considered what the
 	number 927 really means? Below is an insightful expansion.</p>
   
-	<example xml:id = "int-expansion-ex"> <title> Explicit Base-10 Explansion</title>
+	<example xml:id = "int-expansion-ex"> <title> Explicit Base-10 Expansion</title>
 		<p> Below is the explicit base-10 expansion of the integer 927.</p>			
 		<md>
 		<mrow>927 \amp = 900 + 20 + 7</mrow>
