@@ -8,9 +8,8 @@
     base-conversion function using computer code. There 
     are interactive code blocks included throughout the section, 
     where you are invited to  write your own from scratch. The 
-    interactive code blocks are set to allow <code>Sage</code>, 
-    <code>Python</code>, <code>C++</code>, <code>C#</code>, and 
-    <code>R</code>. CURRENTLY ONLY SAGE IS PERMITTED.
+    interactive code blocks exist to allow <c>Sage</c>, 
+    <c>Python</c>, and <c>R</c>.
     </p>
 
     <p> In order to successfully navigate this Project, you'll 
@@ -18,8 +17,8 @@
     You'll also need to use what we learned about logic and 
     how it can be used for programmatic flow control. That is, 
     you'll need to recall what we learned about <em>If/Then</em> 
-    statements. You'll also need to make use of <code>for</code> 
-    and <code>while</code> loops. This project is a great 
+    statements. You'll also need to make use of <c>for</c> 
+    and <c>while</c> loops. This project is a great 
     opportunity to connect our discrete math content to the 
     topics you've been learning and implementing in your 
     introductory coding course.
@@ -37,9 +36,19 @@
         <li> Choose your favorite programming language and try to 
         transform your pseudocode into a working function.</li>
     </ul>
-    <sage>
+    <sage language="sage">
     <input>
-    #Define your function here
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
     </input>
     </sage>
     <ul>
@@ -61,10 +70,19 @@
         <li> Try taking your pseudocode and implementing it as a 
         working function in your language of choice.</li>
     </ul>
-    <sage>
+    <sage language="sage">
     <input>
-    #Define your function here
-        
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
     </input>
     </sage>
     <ul>
@@ -93,10 +111,19 @@
         convert a decimal integer to base-<m>b</m>, where 
         <m>2\leq b \lt 10</m>.</li>
     </ul>
-    <sage>
+    <sage language="sage">
     <input>
-    #Define your new function here
-
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
     </input>
     </sage>
     <ul>
@@ -104,10 +131,19 @@
         convert an integer written in base-<m>b</m>, where 
         <m>2\leq b \lt 10</m>, into its decimal representation.</li>
     </ul>
-    <sage>
+    <sage language="sage">
     <input>
-    #Define your new function here
-
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
     </input>
     </sage>
     <ul>
@@ -124,25 +160,43 @@
         <li> Build a new function, calling the functions you've written 
         so far as helpers, to convert between any two bases (as long 
         as those bases are at most base-10). Your function will need 
-        three input values: <code>initial_value</code>, 
-        <code>initial_base</code>, and <code>target_base</code>.</li>
+        three input values: <c>initial_value</c>, 
+        <c>initial_base</c>, and <c>target_base</c>.</li>
     </ul>
-    <sage>
+    <sage language="sage">
     <input>
-    #Build your function here.
-
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
     </input>
     </sage>
     </p>
     
     <p> As one more challenge, try building a function which will 
     convert a decimal integer value into its hexadecimal representation. 
-    You'll get more practice with <code>if</code> / 
-    <code>else if</code>, and <code>else</code> statements here.</p>
-    <sage>
+    You'll get more practice with <c>if</c> / 
+    <c>else if</c>, and <c>else</c> statements here.</p>
+    <sage language="sage">
     <input>
-    #Build your function here
-
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
     </input>
     </sage>
 </section>

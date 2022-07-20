@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-19T22:22:56-04:00       *-->
+<!--*       on 2022-07-20T10:12:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -20,13 +20,31 @@
                            languages: ['sage'],
                            evalButtonText: 'Evaluate (Sage)'});
 });
+</script><script>$(function () {
+    // Make *any* div with class 'sagecell-python' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-python',
+                           linked: true,
+                           languages: ['python'],
+                           evalButtonText: 'Evaluate (Python)'});
+});
+</script><script>$(function () {
+    // Make *any* div with class 'sagecell-r' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-r',
+                           linked: true,
+                           languages: ['r'],
+                           evalButtonText: 'Evaluate (R)'});
+});
 </script>
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
 <p>You now have all of the tools you need in order to piece together a function that will convert between two bases \(b_1\) and \(b_2\text{,}\) with \(2\leq b_1, b_2 \leq 10\text{.}\)</p>
-<ul class="disc"><li><p>Build a new function, calling the functions you've written so far as helpers, to convert between any two bases (as long as those bases are at most base-10). Your function will need three input values: initial_value, initial_base, and target_base.</p></li></ul>
-<p class="continuation"><div class="sagecell-sage" id="sage-5"><script type="text/x-sage">#Build your function here.
+<ul class="disc"><li><p>Build a new function, calling the functions you've written so far as helpers, to convert between any two bases (as long as those bases are at most base-10). Your function will need three input values: <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">initial_value</code>, <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">initial_base</code>, and <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">target_base</code>.</p></li></ul>
+<p class="continuation"><div class="sagecell-sage" id="sage-13"><script type="text/x-sage">#Define your Sage function here
+</script></div> <div class="sagecell-python" id="sage-14"><script type="text/x-sage">#Define your Python function here
+</script></div> <div class="sagecell-r" id="sage-15"><script type="text/x-sage">#Define your R function here
 </script></div></p>
 <span class="incontext"><a href="sec_p1-outline.html#p-90">in-context</a></span>
 </body>
