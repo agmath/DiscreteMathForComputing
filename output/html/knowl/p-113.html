@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-19T13:33:02-04:00       *-->
+<!--*       on 2022-07-19T22:04:33-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,14 +15,7 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>To recap from the examples above, we use big-O notation to describe the run-time of a routine as a function of the length of its input array. Big-O notation allows us to answer the question "<em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">How would our run-time change if the size of our input array was doubled?</em>". If the length of an input array was doubled, we have the following expected changes in run-times.</p>
-<ul class="disc">
-<li><p>For an \(O\left(1\right)\) routine, the expected run time does not change.</p></li>
-<li><p>For an \(O\left(n\right)\) routine, the expected run time is approximately doubled.</p></li>
-<li><p>For an \(O\left(n^2\right)\) routine, the expected run time is approximately four times longer.</p></li>
-<li><p>For an \(O\left(n^3\right)\) routine, the expected run time is approximately eight times longer.</p></li>
-</ul>
-<p class="continuation">There are routines which have run-time complexities which are between constant and linear. For example, some routines have \(O\left(\log\left(n\right)\right)\) run-time. We'll see some later in our course. There are also routines which don't have polynomial run-time. They may be <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">exponential</em> -- for example \(O\left(2^n\right)\) -- or <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">factorial</em>, \(O\left(n!\right)\text{.}\) In general, we desire routines which are more efficient -- that is, routines with lower-order run-time complexities -- because they are faster. However, there is sometimes a tradeoff between run-time complexity and space-complexity. What good is a fast algorithm if requires more memory than you have access to?</p>
+<p>Consider the routine below, which takes in an array as input and returns a value of <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">TRUE</code> if there exist elements <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">a</code>, <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">b</code>, and <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">c</code> in the <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">array</code> such that <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">a*b = c</code>, and returns <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">FALSE</code> otherwise. Describe the run-time of the routine as a function of the size of the input <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">array</code>.</p>
 <span class="incontext"><a href="sec_counting-big-O.html#p-113">in-context</a></span>
 </body>
 </html>

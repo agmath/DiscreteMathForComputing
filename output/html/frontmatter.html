@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-19T13:33:01-04:00       *-->
+<!--*       on 2022-07-19T22:04:32-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,7 +14,7 @@
 <title>Front Matter</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -26,6 +26,19 @@
   options: {
     ignoreHtmlClass: "tex2jax_ignore",
     processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
   },
   chtml: {
     scale: 0.88,
@@ -104,7 +117,10 @@
 <a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">Symbolic Logic and Boolean Algebra</span></a><ul><li><a href="ex_logic-ch.html" data-scroll="ex_logic-ch">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-counting.html" data-scroll="ch-counting"><span class="codenumber">4</span> <span class="title">Counting</span></a><ul>
+<a href="ch-project1.html" data-scroll="ch-project1"><span class="codenumber">4</span> <span class="title">Project I</span></a><ul><li><a href="sec_p1-outline.html" data-scroll="sec_p1-outline">Building a Base-Conversion Function</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-counting.html" data-scroll="ch-counting"><span class="codenumber">5</span> <span class="title">Counting</span></a><ul>
 <li><a href="sec_counting-basics.html" data-scroll="sec_counting-basics">Basic Counting Techniques</a></li>
 <li><a href="sec_counting-permutations.html" data-scroll="sec_counting-permutations">Orderings and Permutations</a></li>
 <li><a href="sec_counting-binomial-coefficients.html" data-scroll="sec_counting-binomial-coefficients">Selections and Binomial Coefficients</a></li>
@@ -114,13 +130,13 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-functions.html" data-scroll="ch-functions"><span class="codenumber">5</span> <span class="title">Functions</span></a><ul><li><a href="ex_functions-ch.html" data-scroll="ex_functions-ch">My Exercises</a></li></ul>
+<a href="ch-functions.html" data-scroll="ch-functions"><span class="codenumber">6</span> <span class="title">Functions</span></a><ul><li><a href="ex_functions-ch.html" data-scroll="ex_functions-ch">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-probability.html" data-scroll="ch-probability"><span class="codenumber">6</span> <span class="title">Probability</span></a><ul><li><a href="ex_probability-ch.html" data-scroll="ex_probability-ch">My Exercises</a></li></ul>
+<a href="ch-probability.html" data-scroll="ch-probability"><span class="codenumber">7</span> <span class="title">Probability</span></a><ul><li><a href="ex_probability-ch.html" data-scroll="ex_probability-ch">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-project2.html" data-scroll="ch-project2"><span class="codenumber">7</span> <span class="title">Project I</span></a><ul>
+<a href="ch-project2.html" data-scroll="ch-project2"><span class="codenumber">8</span> <span class="title">Project II</span></a><ul>
 <li><a href="sec_p2-you-can-count.html" data-scroll="sec_p2-you-can-count">You Can Count!</a></li>
 <li><a href="sec_p2-alg-complexity-DNA-replication.html" data-scroll="sec_p2-alg-complexity-DNA-replication">Complexity and DNA Replication</a></li>
 <li><a href="sec_p2-a-game-of-bridge.html" data-scroll="sec_p2-a-game-of-bridge">A Game of Bridge</a></li>
@@ -128,13 +144,13 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-arrays.html" data-scroll="ch-arrays"><span class="codenumber">8</span> <span class="title">Arrays</span></a><ul><li><a href="ex_arrays-ch.html" data-scroll="ex_arrays-ch">My Exercises</a></li></ul>
+<a href="ch-arrays.html" data-scroll="ch-arrays"><span class="codenumber">9</span> <span class="title">Arrays</span></a><ul><li><a href="ex_arrays-ch.html" data-scroll="ex_arrays-ch">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-graphs.html" data-scroll="ch-graphs"><span class="codenumber">9</span> <span class="title">Graph Theory</span></a><ul><li><a href="ex_graphs-ch.html" data-scroll="ex_graphs-ch">My Exercises</a></li></ul>
+<a href="ch-graphs.html" data-scroll="ch-graphs"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul><li><a href="ex_graphs-ch.html" data-scroll="ex_graphs-ch">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-project3.html" data-scroll="ch-project3"><span class="codenumber">10</span> <span class="title">Project II</span></a><ul>
+<a href="ch-project3.html" data-scroll="ch-project3"><span class="codenumber">11</span> <span class="title">Project III</span></a><ul>
 <li><a href="sec_p3-our-guidelines.html" data-scroll="sec_p3-our-guidelines">Sample Project Guidelines</a></li>
 <li><a href="sec_p3-coloring.html" data-scroll="sec_p3-coloring">Graph Colorings</a></li>
 <li><a href="sec_p3-pebbling.html" data-scroll="sec_p3-pebbling">Graph Pebbling</a></li>
@@ -145,7 +161,7 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch_pretext-features.html" data-scroll="ch_pretext-features"><span class="codenumber">11</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features"><span class="codenumber">12</span> <span class="title">Examples of PreTeXt features</span></a><ul>
 <li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks">Environments and Blocks</a></li>
 <li><a href="section-2-2.html" data-scroll="section-2-2">Another section</a></li>
 </ul>

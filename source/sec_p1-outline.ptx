@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_p1-outline" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Building a Base-Conversion Function</title>
+
+  <introduction>
+    <p><em>Note.</em> This section outlines the steps needed to 
+    construct a base-conversion function using computer code. There 
+    are interactive code blocks included throughout the section, 
+    where you are invited to fill in an existing outline for a 
+    program or to write your own from scratch. The interactive code 
+    blocks are set to allow <code>Sage</code>, <code>Python</code>, 
+    <code>C++</code>, <code>C#</code>, and <code>R</code>.
+    </p>
+    </introduction>
+
+    <ol>
+    <li> Let's start with a function that converts decimal numbers 
+    into their corresponding binary representations.</li>
+    <ol>
+        <li> Start with a pseudocode outline for your function. 
+        Pseudocode is a very high-level description of the steps a 
+        program must complete, beginning with 0 or more inputs, 
+        before returning a desired output. Write a pseudocode 
+        description of this function.</li>
+        <li> Choose your favorite programming language and try to 
+        transform your pseudocode into a working function.</li>
+        <sage>
+        <input>
+            #Define your function here
+        </input>
+        </sage>
+        <li> Whether or not you've chosen to build a working version 
+        of the function to take a decimal integer and convert it 
+        into binary, think about whether your code/pseudocode will 
+        handle special ("edge") cases. Is your function capable of 
+        converting 0? Can it handle negative integers as inputs? How 
+        does your function behave when you pass it a non-integer 
+        value as an input? Try updating your code/pseudocode to 
+        handle these things.</li>
+    </ol>
+    <li> Build a function which will convert a bit-string (binary 
+    string) to its corresponding decimal representation.</li>
+    <ol>
+        <li> Start with a pseudocode outline for the function.</li>
+        <li> Try taking your pseudocode and implementing it as a 
+        working function in your language of choice.</li>
+        <sage>
+        <input>
+        #Define your function here
+        
+        </input>
+        </sage>
+        <li> Does your function "work" if you accidentally provide 
+        it a non-binary input? We better update the function to 
+        check this. We don't want users to get an output if they 
+        don't provide a valid input. Make the corresponding update 
+        to your function.</li>
+        <li>Does your error check use a separate loop to ensure that 
+        the user input is binary? If so, can you make your function 
+        more efficient by using just a single loop? NOTE: We'll 
+        return to the idea of looping and efficiency later in our 
+        course.</li>
+    </ol>
+    <li> Now that you've made it this far, maybe we don't want to 
+    restrict ourselves to working only in binary. Make updates to 
+    your previous two functions so that they can convert to and from 
+    decimal representations and any other base less than 10. HINT: 
+    You'll need to allow for users to input both the value to be 
+    converted as well as the base you are working with in each 
+    function.</li>
+    <ol>
+        <li> Create a new version of your first function which will 
+        convert a decimal integer to base-<m>b</m>, where 
+        <m>2\leq b \lt 10</m>.</li>
+        <sage>
+        <input>
+        #Define your new function here
+
+        </input>
+        </sage>
+        <li> Create a new version of your second function which will 
+        convert an integer written in base-<m>b</m>, where 
+        <m>2\leq b \lt 10</m>, into its decimal representation.</li>
+        <sage>
+        <input>
+        #Define your new function here
+
+        </input>
+        </sage>
+        <li> Check to ensure your functions handle "edge" cases, like 
+        converting 0, dealing with negative integers, and checking to 
+        ensure valid inputs before returning a converted value.</li>
+    </ol>
+    <li> You now have all of the tools you need in order to piece 
+    together a function that will convert between two bases <m>b_1</m> 
+    and <m>b_2</m>, with <m>2\leq b_1, b_2 \leq 10</m>.</li>
+    <ol>
+        <li> Build a new function, calling the functions you've written 
+        so far as helpers, to convert between any two bases (as long 
+        as those bases are at most base-10). Your function will need 
+        three input values: <code>initial_value</code>, 
+        <code>initial_base</code>, and <code>target_base</code>.</li>
+        <sage>
+        <input>
+        #Build your function here.
+
+        </input>
+        </sage>
+    </ol>
+    <li> As one more challenge, try building a function which will 
+    convert a decimal integer value into its hexadecimal representation. 
+    You'll get more practice with <code>if</code> / 
+    <code>else if</code>, and <code>else</code> statements here.</li>
+    <sage>
+    <input>
+    #Build your function here
+
+    </input>
+    </sage>
+    </ol>
+</section>
+
