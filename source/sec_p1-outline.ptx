@@ -4,14 +4,25 @@
   <title>Building a Base-Conversion Function</title>
 
   <introduction>
-    <p><em>Note.</em> This section outlines the steps needed to 
-    construct a base-conversion function using computer code. There 
+    <p><em>Note.</em> This section asks you to construct a 
+    base-conversion function using computer code. There 
     are interactive code blocks included throughout the section, 
-    where you are invited to fill in an existing outline for a 
-    program or to write your own from scratch. The interactive code 
-    blocks are set to allow <code>Sage</code>, <code>Python</code>, 
-    <code>C++</code>, <code>C#</code>, and <code>R</code>. CURRENTLY 
-    ONLY SAGE IS PERMITTED.
+    where you are invited to  write your own from scratch. The 
+    interactive code blocks are set to allow <code>Sage</code>, 
+    <code>Python</code>, <code>C++</code>, <code>C#</code>, and 
+    <code>R</code>. CURRENTLY ONLY SAGE IS PERMITTED.
+    </p>
+
+    <p> In order to successfully navigate this Project, you'll 
+    need to recall how base-conversion works (from Chapter 1). 
+    You'll also need to use what we learned about logic and 
+    how it can be used for programmatic flow control. That is, 
+    you'll need to recall what we learned about <em>If/Then</em> 
+    statements. You'll also need to make use of <code>for</code> 
+    and <code>while</code> loops. This project is a great 
+    opportunity to connect our discrete math content to the 
+    topics you've been learning and implementing in your 
+    introductory coding course.
     </p>
     </introduction>
 
