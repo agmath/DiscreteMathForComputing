@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-20T11:12:33-04:00       *-->
+<!--*       on 2022-07-20T12:37:59-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -9,23 +9,27 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US">
-<head>
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sets of Sets</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>window.MathJax = {
+<meta property="og:type" content="book">
+<meta property="book:title" content="Discrete Mathematics for Computing">
+<meta property="book:author" content="Christine Caples">
+<meta property="book:author" content="Adam Gilbert">
+<meta property="book:author" content="Melanie Fraser">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
-    useLabelIds: true,
     tagSide: "right",
     tagIndent: ".8em",
     packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
   },
   options: {
-    ignoreHtmlClass: "tex2jax_ignore",
-    processHtmlClass: "has_am",
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
     renderActions: {
         findScript: [10, function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
@@ -49,35 +53,36 @@
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
-</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
-\)</div>
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing</span></a></h1>
 <p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
 </div>
 </div></div>
-<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_sets-ch-operations.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-sets.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ex_sets-ch.html" title="Next">Next</a></span>
@@ -87,94 +92,94 @@
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_sets-ch-operations.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-sets.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ex_sets-ch.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
-<li><a href="preface-1.html" data-scroll="preface-1">About This Text</a></li>
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">About This Text</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch-first.html" data-scroll="ch-first"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a><ul>
-<li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro">Introduction</a></li>
-<li><a href="sec_firstch-b2ten.html" data-scroll="sec_firstch-b2ten">Converting from Non-Standard Bases into Base-10</a></li>
-<li><a href="sec_firstch-ten2b.html" data-scroll="sec_firstch-ten2b">Converting from Base-10 to Non-Standard Bases</a></li>
-<li><a href="sec_firstch-properties.html" data-scroll="sec_firstch-properties">Properties of Binary, Octal, and Hexadecimal Systems</a></li>
-<li><a href="sec_firstch-properties.html" data-scroll="sec_firstch-properties">Converting Between Arbitrary Bases</a></li>
-<li><a href="ex_firstch.html" data-scroll="ex_firstch">My Exercises</a></li>
+<a href="ch-first.html" data-scroll="ch-first" class="internal"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a><ul>
+<li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro" class="internal">Introduction</a></li>
+<li><a href="sec_firstch-b2ten.html" data-scroll="sec_firstch-b2ten" class="internal">Converting from Non-Standard Bases into Base-10</a></li>
+<li><a href="sec_firstch-ten2b.html" data-scroll="sec_firstch-ten2b" class="internal">Converting from Base-10 to Non-Standard Bases</a></li>
+<li><a href="sec_firstch-properties.html" data-scroll="sec_firstch-properties" class="internal">Properties of Binary, Octal, and Hexadecimal Systems</a></li>
+<li><a href="sec_firstch-between-bases.html" data-scroll="sec_firstch-between-bases" class="internal">Converting Between Arbitrary Bases</a></li>
+<li><a href="ex_firstch.html" data-scroll="ex_firstch" class="internal">My Exercises</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch-sets.html" data-scroll="ch-sets"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a><ul>
-<li><a href="sec_sets-ch-foundations.html" data-scroll="sec_sets-ch-foundations">Foundations for Working with Sets</a></li>
-<li><a href="sec_sets-ch-operations.html" data-scroll="sec_sets-ch-operations">Operations with Sets</a></li>
+<a href="ch-sets.html" data-scroll="ch-sets" class="internal"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a><ul>
+<li><a href="sec_sets-ch-foundations.html" data-scroll="sec_sets-ch-foundations" class="internal">Foundations for Working with Sets</a></li>
+<li><a href="sec_sets-ch-operations.html" data-scroll="sec_sets-ch-operations" class="internal">Operations with Sets</a></li>
 <li><a href="sec_sets-ch-setsofsets.html" data-scroll="sec_sets-ch-setsofsets" class="active">Sets of Sets</a></li>
-<li><a href="ex_sets-ch.html" data-scroll="ex_sets-ch">My Exercises</a></li>
+<li><a href="ex_sets-ch.html" data-scroll="ex_sets-ch" class="internal">My Exercises</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">Symbolic Logic and Boolean Algebra</span></a><ul><li><a href="ex_logic-ch.html" data-scroll="ex_logic-ch">My Exercises</a></li></ul>
+<a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic and Boolean Algebra</span></a><ul><li><a href="ex_logic-ch.html" data-scroll="ex_logic-ch" class="internal">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-project1.html" data-scroll="ch-project1"><span class="codenumber">4</span> <span class="title">Project I</span></a><ul><li><a href="sec_p1-outline.html" data-scroll="sec_p1-outline">Building a Base-Conversion Function</a></li></ul>
+<a href="ch-project1.html" data-scroll="ch-project1" class="internal"><span class="codenumber">4</span> <span class="title">Project I</span></a><ul><li><a href="sec_p1-outline.html" data-scroll="sec_p1-outline" class="internal">Building a Base-Conversion Function</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-counting.html" data-scroll="ch-counting"><span class="codenumber">5</span> <span class="title">Counting</span></a><ul>
-<li><a href="sec_counting-basics.html" data-scroll="sec_counting-basics">Basic Counting Techniques</a></li>
-<li><a href="sec_counting-permutations.html" data-scroll="sec_counting-permutations">Orderings and Permutations</a></li>
-<li><a href="sec_counting-binomial-coefficients.html" data-scroll="sec_counting-binomial-coefficients">Selections and Binomial Coefficients</a></li>
-<li><a href="sec_counting-fundamental-principle.html" data-scroll="sec_counting-fundamental-principle">The Fundamental Principle of Counting</a></li>
-<li><a href="sec_counting-big-O.html" data-scroll="sec_counting-big-O">Complexity and Big-O Notation</a></li>
-<li><a href="ex_counting-ch.html" data-scroll="ex_counting-ch">My Exercises</a></li>
+<a href="ch-counting.html" data-scroll="ch-counting" class="internal"><span class="codenumber">5</span> <span class="title">Counting</span></a><ul>
+<li><a href="sec_counting-basics.html" data-scroll="sec_counting-basics" class="internal">Basic Counting Techniques</a></li>
+<li><a href="sec_counting-permutations.html" data-scroll="sec_counting-permutations" class="internal">Orderings and Permutations</a></li>
+<li><a href="sec_counting-binomial-coefficients.html" data-scroll="sec_counting-binomial-coefficients" class="internal">Selections and Binomial Coefficients</a></li>
+<li><a href="sec_counting-fundamental-principle.html" data-scroll="sec_counting-fundamental-principle" class="internal">The Fundamental Principle of Counting</a></li>
+<li><a href="sec_counting-big-O.html" data-scroll="sec_counting-big-O" class="internal">Complexity and Big-O Notation</a></li>
+<li><a href="ex_counting-ch.html" data-scroll="ex_counting-ch" class="internal">My Exercises</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch-functions.html" data-scroll="ch-functions"><span class="codenumber">6</span> <span class="title">Functions</span></a><ul><li><a href="ex_functions-ch.html" data-scroll="ex_functions-ch">My Exercises</a></li></ul>
+<a href="ch-functions.html" data-scroll="ch-functions" class="internal"><span class="codenumber">6</span> <span class="title">Functions</span></a><ul><li><a href="ex_functions-ch.html" data-scroll="ex_functions-ch" class="internal">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-probability.html" data-scroll="ch-probability"><span class="codenumber">7</span> <span class="title">Probability</span></a><ul><li><a href="ex_probability-ch.html" data-scroll="ex_probability-ch">My Exercises</a></li></ul>
+<a href="ch-probability.html" data-scroll="ch-probability" class="internal"><span class="codenumber">7</span> <span class="title">Probability</span></a><ul><li><a href="ex_probability-ch.html" data-scroll="ex_probability-ch" class="internal">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-project2.html" data-scroll="ch-project2"><span class="codenumber">8</span> <span class="title">Project II</span></a><ul>
-<li><a href="sec_p2-you-can-count.html" data-scroll="sec_p2-you-can-count">You Can Count!</a></li>
-<li><a href="sec_p2-alg-complexity-DNA-replication.html" data-scroll="sec_p2-alg-complexity-DNA-replication">Complexity and DNA Replication</a></li>
-<li><a href="sec_p2-a-game-of-bridge.html" data-scroll="sec_p2-a-game-of-bridge">A Game of Bridge</a></li>
-<li><a href="sec_p2-a-prisoners-dilemma.html" data-scroll="sec_p2-a-prisoners-dilemma">A Prisoners' Dilemma</a></li>
+<a href="ch-project2.html" data-scroll="ch-project2" class="internal"><span class="codenumber">8</span> <span class="title">Project II</span></a><ul>
+<li><a href="sec_p2-you-can-count.html" data-scroll="sec_p2-you-can-count" class="internal">You Can Count!</a></li>
+<li><a href="sec_p2-alg-complexity-DNA-replication.html" data-scroll="sec_p2-alg-complexity-DNA-replication" class="internal">Complexity and DNA Replication</a></li>
+<li><a href="sec_p2-a-game-of-bridge.html" data-scroll="sec_p2-a-game-of-bridge" class="internal">A Game of Bridge</a></li>
+<li><a href="sec_p2-a-prisoners-dilemma.html" data-scroll="sec_p2-a-prisoners-dilemma" class="internal">A Prisoners' Dilemma</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch-arrays.html" data-scroll="ch-arrays"><span class="codenumber">9</span> <span class="title">Arrays</span></a><ul><li><a href="ex_arrays-ch.html" data-scroll="ex_arrays-ch">My Exercises</a></li></ul>
+<a href="ch-arrays.html" data-scroll="ch-arrays" class="internal"><span class="codenumber">9</span> <span class="title">Arrays</span></a><ul><li><a href="ex_arrays-ch.html" data-scroll="ex_arrays-ch" class="internal">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-graphs.html" data-scroll="ch-graphs"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul><li><a href="ex_graphs-ch.html" data-scroll="ex_graphs-ch">My Exercises</a></li></ul>
+<a href="ch-graphs.html" data-scroll="ch-graphs" class="internal"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul><li><a href="ex_graphs-ch.html" data-scroll="ex_graphs-ch" class="internal">My Exercises</a></li></ul>
 </li>
 <li class="link">
-<a href="ch-project3.html" data-scroll="ch-project3"><span class="codenumber">11</span> <span class="title">Project III</span></a><ul>
-<li><a href="sec_p3-our-guidelines.html" data-scroll="sec_p3-our-guidelines">Sample Project Guidelines</a></li>
-<li><a href="sec_p3-coloring.html" data-scroll="sec_p3-coloring">Graph Colorings</a></li>
-<li><a href="sec_p3-pebbling.html" data-scroll="sec_p3-pebbling">Graph Pebbling</a></li>
-<li><a href="sec_p3-cycles-circuits.html" data-scroll="sec_p3-cycles-circuits">Eulerian Circuits and Hamiltonian Cycles</a></li>
-<li><a href="sec_p3-algorithms.html" data-scroll="sec_p3-algorithms">Graph Algorithms</a></li>
-<li><a href="sec_p3-networks.html" data-scroll="sec_p3-networks">Networks</a></li>
-<li><a href="sec_p3-matrix-tree.html" data-scroll="sec_p3-matrix-tree">The Matrix-Tree Theorem</a></li>
+<a href="ch-project3.html" data-scroll="ch-project3" class="internal"><span class="codenumber">11</span> <span class="title">Project III</span></a><ul>
+<li><a href="sec_p3-our-guidelines.html" data-scroll="sec_p3-our-guidelines" class="internal">Sample Project Guidelines</a></li>
+<li><a href="sec_p3-coloring.html" data-scroll="sec_p3-coloring" class="internal">Graph Colorings</a></li>
+<li><a href="sec_p3-pebbling.html" data-scroll="sec_p3-pebbling" class="internal">Graph Pebbling</a></li>
+<li><a href="sec_p3-cycles-circuits.html" data-scroll="sec_p3-cycles-circuits" class="internal">Eulerian Circuits and Hamiltonian Cycles</a></li>
+<li><a href="sec_p3-algorithms.html" data-scroll="sec_p3-algorithms" class="internal">Graph Algorithms</a></li>
+<li><a href="sec_p3-networks.html" data-scroll="sec_p3-networks" class="internal">Networks</a></li>
+<li><a href="sec_p3-matrix-tree.html" data-scroll="sec_p3-matrix-tree" class="internal">The Matrix-Tree Theorem</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch_pretext-features.html" data-scroll="ch_pretext-features"><span class="codenumber">12</span> <span class="title">Examples of PreTeXt features</span></a><ul>
-<li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks">Environments and Blocks</a></li>
-<li><a href="section-2-2.html" data-scroll="section-2-2">Another section</a></li>
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features" class="internal"><span class="codenumber">12</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks" class="internal">Environments and Blocks</a></li>
+<li><a href="section-2-2.html" data-scroll="section-2-2" class="internal">Another section</a></li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
-<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_sets-ch-setsofsets"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_sets-ch-setsofsets"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Sets of Sets</span>
 </h2>
 <p id="p-71">In progress...</p></section></div></main>

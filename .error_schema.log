@@ -1,2 +1,2 @@
-file:/C:/users/agilb/documents/github/discretemathforcomputing/source/main.ptx:11:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element include there
-file:/C:/users/agilb/documents/github/discretemathforcomputing/source/main.ptx:11:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element pretext has extra content: include
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:11:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element include there
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:11:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element pretext has extra content: include

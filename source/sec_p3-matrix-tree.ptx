@@ -10,8 +10,6 @@
     is prior to choosing this project.
     </p>
 
-    <br/><br/>
-
     <p><em>The Matrix-Tree Theorem.</em> The matrix tree theorem uses 
     matrix determinants to find the number of spanning trees in a graph. 
     In practice, this could help you find - for instance - the number of 

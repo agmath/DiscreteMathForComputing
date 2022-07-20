@@ -104,10 +104,8 @@
         the run-time of the routine as a function of the size of the 
         input <c>array</c>.</p>			
         <pre>
-		<cd>
-		def return_first(array):
-		  return array[0] 
-		</cd>
+def return_first(array):
+  return array[0] 
         </pre>
         <solution> Note that the routine immediately returns the first 
         element of the array, regardless of the size of the input array. 
@@ -128,14 +126,12 @@
         the run-time of the routine as a function of the size of the 
         input <c>array</c>.</p>			
         <pre>
-		<cd>
 def sum_first_two(array):
   a = array[0]
   b = array[1]
   total = a + b
 
   return total 
-		</cd>
         </pre>
         <solution> Note that the routine uses three operations in order 
         to transform the input <c>array</c> into the value which is 
@@ -173,14 +169,12 @@ def sum_first_two(array):
         the run-time of the routine as a function of the size of the 
         input <c>array</c>.</p>	
         <pre>		
-		<cd>
 def array_product(array):
   myProd = 1
   for element in array:
     myProd = myProd*element
 
   return myProd 
-		</cd>
         </pre>
         <solution> 
         <p>The presence of the loop here has the potential to 
@@ -222,7 +216,6 @@ def array_product(array):
         of the size of the input <c>array</c>.
         </p>			
 		<pre>
-        <cd>
 def array_product_difference(array):
   myValue = 1
   for element in array:
@@ -230,7 +223,6 @@ def array_product_difference(array):
     myValue = myValue * element
         
   return myValue 
-		</cd>
         </pre>
         <solution> 
         <p>Again, the presence of the loop here has the potential to 
@@ -277,7 +269,6 @@ def array_product_difference(array):
         routine as a function of the size of the input <c>array</c>.
         </p>			
         <pre>
-		<cd>
 def detect_product(array):
   for element_a in array:
     for element_b in array:
@@ -286,7 +277,6 @@ def detect_product(array):
           return TRUE
         
   return FALSE 
-		</cd>
         </pre>
         <solution> 
         <p>In the routine defined above, we should note that once a 

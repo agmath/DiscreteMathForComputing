@@ -3,7 +3,7 @@
 <section xml:id="sec_firstch-b2ten" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Converting from Non-Standard Bases into Base-10</title>
   
-  <p>Before discussing a strategy for converting from non-standard bases 
+  <introduction><p>Before discussing a strategy for converting from non-standard bases 
 	back to the base-10 (decimal) system, it is worth considering how 
 	counting in the decimal system works. Have you ever considered what the
 	number 927 really means? Below is an insightful expansion.</p>
@@ -37,6 +37,8 @@
     	</p>
     </introduction><myopenmath problem="974086" />
 	</exercise>
+
+	</introduction>
 
 	<subsection><title>Numbers in Non-Standard Bases</title> 
 		<p>Let's shift away from our standard base-10 number system 
@@ -114,8 +116,8 @@
 		conversion in the next section.</p> 
 	</subsection>
 
-	<subsection><title>Conclusion</title>
 
+	<subsection><title>Conclusion</title>
 		<p>In this section we've seen that numbers can be written in a variety
 		of bases. In particular, any positive integer can serve as the base for a
 		number system. For bases larger than 10, we run out of our (familiar) digits, 

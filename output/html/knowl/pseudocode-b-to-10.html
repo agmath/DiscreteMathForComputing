@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-20T11:12:34-04:00       *-->
+<!--*       on 2022-07-20T12:27:00-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,21 +13,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body>
-<article class="exercise exercise-like">Write Pseudocode<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-            <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<body class="ignore-math">
+<article class="exercise exercise-like">Write PseudocodeDrag and drop the blocks of pseudocode below 
+        to outline a program which will convert a decimal integer 
+        into its binary equivalent.
+        
+            define decimal_to_binary(decimal_integer):
             
-                <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+                  integer_part = decimal_integer
+                  binary_digits = empty list
              
-            <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+              while integer_part &gt; 0:
+            
+                    myBit = integer_part modulo 2
+                    integer_part = floor of (integer_part / 2)
+                    append myBit to binary_digits list
             
             
-                <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+                  reverse the binary_digits list
+                  collapse binary_digits list to a string
             
-            
-                <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-            
-            <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-        </article><span class="incontext"><a href="sec_p1-outline.html#pseudocode-b-to-10">in-context</a></span>
+              return binary_digits string
+        </article><span class="incontext"><a href="sec_p1-outline.html#pseudocode-b-to-10" class="internal">in-context</a></span>
 </body>
 </html>

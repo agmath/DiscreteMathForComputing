@@ -8,8 +8,6 @@
     pseudocode.
     </p>
 
-    <br/><br/>
-
     <p>In this project you'll consider an application from Bioinformatics. The 
     goal will be to count the frequency of a substring within a section 
     of a genome. This project provides a foundation for finding the DNA 

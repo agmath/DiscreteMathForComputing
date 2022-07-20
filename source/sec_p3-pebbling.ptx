@@ -8,8 +8,6 @@
     coding.
     </p>
 
-    <br/><br/>
-
     <p><em>Graph Pebbling.</em> Consider a graph in which a non-negative 
     integer number of currency (pebbles) are placed at each vertex. That 
     is, some vertices may have no pebbles, while others have a positive 

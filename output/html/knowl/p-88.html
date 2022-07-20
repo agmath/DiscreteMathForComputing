@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-20T11:12:34-04:00       *-->
+<!--*       on 2022-07-20T12:38:00-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -12,10 +12,41 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
+                       linked: true,
+                       languages: ['sage'],
+                       evalButtonText: 'Evaluate (Sage)'});
+</script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-python',
+                       linked: true,
+                       languages: ['python'],
+                       evalButtonText: 'Evaluate (Python)'});
+</script><script>// Make *any* pre with class 'sagecell-r' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
+                       linked: true,
+                       languages: ['r'],
+                       evalButtonText: 'Evaluate (R)'});
+</script>
 </head>
-<body>
-<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Drag and drop the blocks of pseudocode below to outline a program which will convert a decimal integer into its binary equivalent.</p>
-<span class="incontext"><a href="sec_p1-outline.html#p-88">in-context</a></span>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<p>Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</p>
+<ul class="disc">
+<li><p>Start with a pseudocode outline for the function.</p></li>
+<li><p>Try taking your pseudocode and implementing it as a working function in your language of choice.</p></li>
+</ul>
+<p class="continuation"><pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">#Define your Sage function here
+</script></pre> <pre class="ptx-sagecell sagecell-python" id="sage-5"><script type="text/x-sage">#Define your Python function here
+</script></pre> <pre class="ptx-sagecell sagecell-r" id="sage-6"><script type="text/x-sage">#Define your R function here
+</script></pre></p>
+<ul class="disc">
+<li><p>Does your function "work" if you accidentally provide it a non-binary input? We better update the function to check this. We don't want users to get an output if they don't provide a valid input. Make the corresponding update to your function.</p></li>
+<li><p>Does your error check use a separate loop to ensure that the user input is binary? If so, can you make your function more efficient by using just a single loop? NOTE: We'll return to the idea of looping and efficiency later in our course.</p></li>
+</ul>
+<span class="incontext"><a href="sec_p1-outline.html#p-88" class="internal">in-context</a></span>
 </body>
 </html>

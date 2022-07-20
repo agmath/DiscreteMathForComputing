@@ -39,31 +39,32 @@
         before returning a desired output. Write a pseudocode 
         description of this function.</li>
     </ul>
-    <exercise xml:id="pseudocode-b-to-10"><title>Write Pseudocode</title>
-        <statement> <p>Drag and drop the blocks of pseudocode below 
+    
+    <!-- <exercise xml:id="pseudocode-b-to-10"><title>Write Pseudocode</title>
+        <statement>Drag and drop the blocks of pseudocode below 
         to outline a program which will convert a decimal integer 
-        into its binary equivalent.</p>
+        into its binary equivalent.
         </statement>
         <blocks>
-            <block order="1"><p><cline>define decimal_to_binary(decimal_integer):</cline></p></block>
+            <block order="1"><cline>define decimal_to_binary(decimal_integer):</cline></block>
             <block order="2">
-                <p><cline>  integer_part = decimal_integer</cline>
-                <cline>  binary_digits = empty list</cline></p>
+                <cline>  integer_part = decimal_integer</cline>
+                <cline>  binary_digits = empty list</cline>
             </block> 
-            <block order="3"><p><cline>  while integer_part > 0:</cline></p></block>
-            <!--<block correct="no"><cline>  for integer_part > 0:</cline></block>-->
+            <block order="3"><cline>  while integer_part > 0:</cline></block>
             <block order="4">
-                <p><cline>    myBit = integer_part modulo 2</cline>
+                <cline>    myBit = integer_part modulo 2</cline>
                 <cline>    integer_part = floor of (integer_part / 2)</cline>
-                <cline>    append myBit to binary_digits list</cline></p>
+                <cline>    append myBit to binary_digits list</cline>
             </block>
             <block order="5">
-                <p><cline>  reverse the binary_digits list</cline>
-                <cline>  collapse binary_digits list to a string</cline></p>
+                <cline>  reverse the binary_digits list</cline>
+                <cline>  collapse binary_digits list to a string</cline>
             </block>
-            <block order="6"><p><cline>  return binary_digits string</cline></p></block>
+            <block order="6"><cline>  return binary_digits string</cline></block>
         </blocks>
-    </exercise>
+    </exercise> -->
+    
     <ul>
         <li> Choose your favorite programming language and try to 
         transform your pseudocode into a working function.</li>
