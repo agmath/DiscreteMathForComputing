@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-19T22:04:32-04:00       *-->
+<!--*       on 2022-07-19T22:15:33-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -185,13 +185,40 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_p1-outline"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Building a Base-Conversion Function</span>
 </h2>
-<section class="introduction" id="introduction-23"><p id="p-85"><em class="emphasis">Note.</em> This section outlines the steps needed to construct a base-conversion function using computer code. There are interactive code blocks included throughout the section, where you are invited to fill in an existing outline for a program or to write your own from scratch. The interactive code blocks are set to allow Sage, Python, C++, C#, and R.</p></section><ol class="decimal">
-<li id="li-1"><p id="p-derived-li-1">Let's start with a function that converts decimal numbers into their corresponding binary representations.</p></li>
-<li id="li-5"><p id="p-derived-li-5">Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</p></li>
-<li id="li-10"><p id="p-derived-li-10">Now that you've made it this far, maybe we don't want to restrict ourselves to working only in binary. Make updates to your previous two functions so that they can convert to and from decimal representations and any other base less than 10. HINT: You'll need to allow for users to input both the value to be converted as well as the base you are working with in each function.</p></li>
-<li id="li-14"><p id="p-derived-li-14">You now have all of the tools you need in order to piece together a function that will convert between two bases \(b_1\) and \(b_2\text{,}\) with \(2\leq b_1, b_2 \leq 10\text{.}\)</p></li>
-<li id="li-16"><p id="p-derived-li-16">As one more challenge, try building a function which will convert a decimal integer value into its hexadecimal representation. You'll get more practice with if / else if, and else statements here.</p></li>
-</ol></section></div></main>
+<section class="introduction" id="introduction-23"><p id="p-85"><em class="emphasis">Note.</em> This section outlines the steps needed to construct a base-conversion function using computer code. There are interactive code blocks included throughout the section, where you are invited to fill in an existing outline for a program or to write your own from scratch. The interactive code blocks are set to allow Sage, Python, C++, C#, and R. CURRENTLY ONLY SAGE IS PERMITTED.</p></section><p id="p-86">Let's start with a function that converts decimal numbers into their corresponding binary representations.</p>
+<ul class="disc">
+<li id="li-1"><p id="p-derived-li-1">Start with a pseudocode outline for your function. Pseudocode is a very high-level description of the steps a program must complete, beginning with 0 or more inputs, before returning a desired output. Write a pseudocode description of this function.</p></li>
+<li id="li-2"><p id="p-derived-li-2">Choose your favorite programming language and try to transform your pseudocode into a working function.</p></li>
+</ul>
+<p class="continuation"><div class="sagecell-sage" id="sage-1"><script type="text/x-sage">#Define your function here
+</script></div></p>
+<ul class="disc"><li id="li-3"><p id="p-derived-li-3">Whether or not you've chosen to build a working version of the function to take a decimal integer and convert it into binary, think about whether your code/pseudocode will handle special ("edge") cases. Is your function capable of converting 0? Can it handle negative integers as inputs? How does your function behave when you pass it a non-integer value as an input? Try updating your code/pseudocode to handle these things.</p></li></ul>
+<p id="p-87">Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</p>
+<ul class="disc">
+<li id="li-4"><p id="p-derived-li-4">Start with a pseudocode outline for the function.</p></li>
+<li id="li-5"><p id="p-derived-li-5">Try taking your pseudocode and implementing it as a working function in your language of choice.</p></li>
+</ul>
+<p class="continuation"><div class="sagecell-sage" id="sage-2"><script type="text/x-sage">#Define your function here
+</script></div></p>
+<ul class="disc">
+<li id="li-6"><p id="p-derived-li-6">Does your function "work" if you accidentally provide it a non-binary input? We better update the function to check this. We don't want users to get an output if they don't provide a valid input. Make the corresponding update to your function.</p></li>
+<li id="li-7"><p id="p-derived-li-7">Does your error check use a separate loop to ensure that the user input is binary? If so, can you make your function more efficient by using just a single loop? NOTE: We'll return to the idea of looping and efficiency later in our course.</p></li>
+</ul>
+<p id="p-88">Now that you've made it this far, maybe we don't want to restrict ourselves to working only in binary. Make updates to your previous two functions so that they can convert to and from decimal representations and any other base less than 10. HINT: You'll need to allow for users to input both the value to be converted as well as the base you are working with in each function.</p>
+<ul class="disc"><li id="li-8"><p id="p-derived-li-8">Create a new version of your first function which will convert a decimal integer to base-\(b\text{,}\) where \(2\leq b \lt 10\text{.}\)</p></li></ul>
+<p class="continuation"><div class="sagecell-sage" id="sage-3"><script type="text/x-sage">#Define your new function here
+</script></div></p>
+<ul class="disc"><li id="li-9"><p id="p-derived-li-9">Create a new version of your second function which will convert an integer written in base-\(b\text{,}\) where \(2\leq b \lt 10\text{,}\) into its decimal representation.</p></li></ul>
+<p class="continuation"><div class="sagecell-sage" id="sage-4"><script type="text/x-sage">#Define your new function here
+</script></div></p>
+<ul class="disc"><li id="li-10"><p id="p-derived-li-10">Check to ensure your functions handle "edge" cases, like converting 0, dealing with negative integers, and checking to ensure valid inputs before returning a converted value.</p></li></ul>
+<p id="p-89">You now have all of the tools you need in order to piece together a function that will convert between two bases \(b_1\) and \(b_2\text{,}\) with \(2\leq b_1, b_2 \leq 10\text{.}\)</p>
+<ul class="disc"><li id="li-11"><p id="p-derived-li-11">Build a new function, calling the functions you've written so far as helpers, to convert between any two bases (as long as those bases are at most base-10). Your function will need three input values: initial_value, initial_base, and target_base.</p></li></ul>
+<p class="continuation"><div class="sagecell-sage" id="sage-5"><script type="text/x-sage">#Build your function here.
+</script></div></p>
+<p id="p-90">As one more challenge, try building a function which will convert a decimal integer value into its hexadecimal representation. You'll get more practice with if / else if, and else statements here.</p>
+<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">#Build your function here
+</script></div></section></div></main>
 </div>
 </body>
 </html>

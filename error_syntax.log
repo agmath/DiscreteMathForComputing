@@ -1,2 +1,7 @@
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_counting-big-O.ptx:327:45:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 327 and li
-file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:24:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_counting-big-O.ptx, and no fallback was found
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p1-outline.ptx:28:11:FATAL:PARSER:ERR_NAME_REQUIRED: error parsing attribute name
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p1-outline.ptx:28:11:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p1-outline.ptx:28:11:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag sage line 28
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p1-outline.ptx:32:12:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 17 and sage
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p1-outline.ptx:43:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 3 and p
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p1-outline.ptx:45:5:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/main.ptx:28:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/agilb/Documents/GitHub/DiscreteMathForComputing/source/sec_p1-outline.ptx, and no fallback was found

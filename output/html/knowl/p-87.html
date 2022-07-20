@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-19T22:04:33-04:00       *-->
+<!--*       on 2022-07-19T22:15:34-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -12,10 +12,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script>
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>In this section we discover some fundamental counting techniques which will provide us a foundation to build upon. You'll encounter some scenarios in which addition is utilized to count a number of objects/possibilities as well as other scenarios in which multiplication is utilized. You'll identify how to determine which approach should be applied in a given scenario and you'll apply your chosen method to carry out the counting.</p>
-<span class="incontext"><a href="sec_counting-basics.html#p-87">in-context</a></span>
+<p>Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</p>
+<ul class="disc">
+<li><p>Start with a pseudocode outline for the function.</p></li>
+<li><p>Try taking your pseudocode and implementing it as a working function in your language of choice.</p></li>
+</ul>
+<p class="continuation"><div class="sagecell-sage" id="sage-2"><script type="text/x-sage">#Define your function here
+</script></div></p>
+<ul class="disc">
+<li><p>Does your function "work" if you accidentally provide it a non-binary input? We better update the function to check this. We don't want users to get an output if they don't provide a valid input. Make the corresponding update to your function.</p></li>
+<li><p>Does your error check use a separate loop to ensure that the user input is binary? If so, can you make your function more efficient by using just a single loop? NOTE: We'll return to the idea of looping and efficiency later in our course.</p></li>
+</ul>
+<span class="incontext"><a href="sec_p1-outline.html#p-87">in-context</a></span>
 </body>
 </html>
