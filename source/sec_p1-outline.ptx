@@ -31,7 +31,7 @@
     could also use Parsons Problems for the pseudocoding aspect.-->
 
     <p>Let's start with a function that converts decimal numbers 
-    into their corresponding binary representations.
+    into their corresponding binary representations.</p>
     <ul>
         <li> Start with a pseudocode outline for your function. 
         Pseudocode is a very high-level description of the steps a 
@@ -40,30 +40,31 @@
         description of this function.</li>
     </ul>
     
-    <!-- <exercise xml:id="pseudocode-b-to-10"><title>Write Pseudocode</title>
-        <statement>Drag and drop the blocks of pseudocode below 
+    <exercise><title>Write Pseudocode 1</title>
+        <statement xml:id="pseudocode-parsons-dec-to-bin"><p>Drag and drop the blocks of pseudocode below 
         to outline a program which will convert a decimal integer 
-        into its binary equivalent.
+        into its binary equivalent.</p>
         </statement>
         <blocks>
-            <block order="1"><cline>define decimal_to_binary(decimal_integer):</cline></block>
+            <block order="1"><p><cline>define decimal_to_binary(decimal_integer):</cline></p></block>
             <block order="2">
-                <cline>  integer_part = decimal_integer</cline>
-                <cline>  binary_digits = empty list</cline>
+                <p><cline>  integer_part = decimal_integer</cline>
+                <cline>  binary_digits = empty list</cline></p>
             </block> 
-            <block order="3"><cline>  while integer_part > 0:</cline></block>
+            <block order="3"><p><cline>  while integer_part > 0:</cline></p></block>
+            <block correct="no"><p><cline>  while integer_part > 0:</cline></p></block>
             <block order="4">
-                <cline>    myBit = integer_part modulo 2</cline>
+                <p><cline>    myBit = integer_part modulo 2</cline>
                 <cline>    integer_part = floor of (integer_part / 2)</cline>
-                <cline>    append myBit to binary_digits list</cline>
+                <cline>    append myBit to binary_digits list</cline></p>
             </block>
             <block order="5">
-                <cline>  reverse the binary_digits list</cline>
-                <cline>  collapse binary_digits list to a string</cline>
+                <p><cline>  reverse the binary_digits list</cline>
+                <cline>  collapse binary_digits list to a string</cline></p>
             </block>
-            <block order="6"><cline>  return binary_digits string</cline></block>
+            <block order="6"><p><cline>  return binary_digits string</cline></p></block>
         </blocks>
-    </exercise> -->
+    </exercise>
     
     <ul>
         <li> Choose your favorite programming language and try to 
@@ -94,12 +95,34 @@
         value as an input? Try updating your code/pseudocode to 
         handle these things.</li>
     </ul>
-    </p>
     
     <p>Build a function which will convert a bit-string (binary 
-    string) to its corresponding decimal representation.
+    string) to its corresponding decimal representation.</p>
     <ul>
         <li> Start with a pseudocode outline for the function.</li>
+    </ul>
+
+    <exercise><title>Write Pseudocode 2</title>
+        <statement xml:id="pseudocode-parsons-bin-to-dec"><p>Drag and drop the blocks of pseudocode below 
+        to outline a program which will convert an integer from its 
+        binary representation to its decimal representation.</p>
+        </statement>
+        <blocks>
+            <block order="1"><cline>define binary_to_decima(bit_string):</cline></block>
+            <block order="2">
+                <cline>  bit_list = bitstring converted to list of numeric bits</cline>
+                <cline>  reverse order of bit_list</cline>
+                <cline>  initialize decimal_integer to 0</cline>
+            </block>
+            <block order="3"><cline>  for i in [0, 1,...,length(bit_list) - 1]:</cline></block>
+            <block order="no"><cline>  for bit in bit_list:</cline></block>
+            <block correct="no"><cline>  while bit in bit_list:</cline></block>
+            <block order="4"><cline>    decimal_integer = decimal_integer + (bit_list[i]*2^i)</cline></block>
+            <block order="5"><cline>  return decimal_integer</cline></block>
+        </blocks>
+    </exercise>
+
+    <ul>
         <li> Try taking your pseudocode and implementing it as a 
         working function in your language of choice.</li>
     </ul>
@@ -130,7 +153,6 @@
         return to the idea of looping and efficiency later in our 
         course.</li>
     </ul>
-    </p>
     
     <p> Now that you've made it this far, maybe we don't want to 
     restrict ourselves to working only in binary. Make updates to 

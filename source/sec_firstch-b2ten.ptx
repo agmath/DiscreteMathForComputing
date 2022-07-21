@@ -25,6 +25,8 @@
 	position (towards the left) the digit is attached to an increasing power
 	of the relevant base.</p> 
 
+	</introduction>
+
 	<exercise exercise-customization="inline" exercise-interactive="static"><title>Explicit Base-10 Expansion</title><introduction>
     	<p>Use your knowledge of place-value to explicitly write the integer
 		as the sum of its base-10 components.
@@ -37,8 +39,6 @@
     	</p>
     </introduction><myopenmath problem="974086" />
 	</exercise>
-
-	</introduction>
 
 	<subsection><title>Numbers in Non-Standard Bases</title> 
 		<p>Let's shift away from our standard base-10 number system 

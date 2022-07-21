@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-20T12:37:59-04:00       *-->
+<!--*       on 2022-07-20T20:59:19-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -82,6 +82,38 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -203,26 +235,84 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
 <section class="introduction" id="introduction-24"><p id="p-85"><em class="emphasis">Note.</em> This section asks you to construct a base-conversion function using computer code. There are interactive code blocks included throughout the section, where you are invited to  write your own from scratch. The interactive code blocks exist to allow <code class="code-inline tex2jax_ignore">Sage</code>, <code class="code-inline tex2jax_ignore">Python</code>, and <code class="code-inline tex2jax_ignore">R</code>.</p>
 <p id="p-86">In order to successfully navigate this Project, you'll need to recall how base-conversion works (from Chapter 1). You'll also need to use what we learned about logic and how it can be used for programmatic flow control. That is, you'll need to recall what we learned about <em class="emphasis">If/Then</em> statements. You'll also need to make use of <code class="code-inline tex2jax_ignore">for</code> and <code class="code-inline tex2jax_ignore">while</code> loops. This project is a great opportunity to connect our discrete math content to the topics you've been learning and implementing in your introductory coding course.</p></section><p id="p-87">Let's start with a function that converts decimal numbers into their corresponding binary representations.</p>
 <ul class="disc"><li id="li-1"><p id="p-derived-li-1">Start with a pseudocode outline for your function. Pseudocode is a very high-level description of the steps a program must complete, beginning with 0 or more inputs, before returning a desired output. Write a pseudocode description of this function.</p></li></ul>
+<article class="exercise exercise-like" id="exercise-21"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-21"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Write Pseudocode 1.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-21"><article class="exercise exercise-like"><div class="ptx-runestone-container"><div class="runestone" style="max-width: none;"><div data-component="parsons" class="parsons" id="">
+<div class="parsons_question parsons-text"><p id="p-88">Drag and drop the blocks of pseudocode below to outline a program which will convert a decimal integer into its binary equivalent.</p></div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-noindent="true"><p id="p-89">define decimal_to_binary(decimal_integer):
+</p>
+---
+<p id="p-90">  integer_part = decimal_integer
+   binary_digits = empty list
+</p>
+---
+<p id="p-91">  while integer_part &gt; 0:
+</p>
+---
+<p id="p-92">  while integer_part &gt; 0:
+</p> #distractor
+---
+<p id="p-93">    myBit = integer_part modulo 2
+     integer_part = floor of (integer_part / 2)
+     append myBit to binary_digits list
+</p>
+---
+<p id="p-94">  reverse the binary_digits list
+   collapse binary_digits list to a string
+</p>
+---
+<p id="p-95">  return binary_digits string
+</p></pre>
+</div></div></div></article></div>
 <ul class="disc"><li id="li-2"><p id="p-derived-li-2">Choose your favorite programming language and try to transform your pseudocode into a working function.</p></li></ul>
-<p class="continuation"><pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">#Define your Sage function here
-</script></pre> <pre class="ptx-sagecell sagecell-python" id="sage-2"><script type="text/x-sage">#Define your Python function here
-</script></pre> <pre class="ptx-sagecell sagecell-r" id="sage-3"><script type="text/x-sage">#Define your R function here
-</script></pre></p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">#Define your Sage function here
+</script></pre>
+<pre class="ptx-sagecell sagecell-python" id="sage-2"><script type="text/x-sage">#Define your Python function here
+</script></pre>
+<pre class="ptx-sagecell sagecell-r" id="sage-3"><script type="text/x-sage">#Define your R function here
+</script></pre>
 <ul class="disc"><li id="li-3"><p id="p-derived-li-3">Whether or not you've chosen to build a working version of the function to take a decimal integer and convert it into binary, think about whether your code/pseudocode will handle special ("edge") cases. Is your function capable of converting 0? Can it handle negative integers as inputs? How does your function behave when you pass it a non-integer value as an input? Try updating your code/pseudocode to handle these things.</p></li></ul>
-<p id="p-88">Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</p>
-<ul class="disc">
-<li id="li-4"><p id="p-derived-li-4">Start with a pseudocode outline for the function.</p></li>
-<li id="li-5"><p id="p-derived-li-5">Try taking your pseudocode and implementing it as a working function in your language of choice.</p></li>
-</ul>
-<p class="continuation"><pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">#Define your Sage function here
-</script></pre> <pre class="ptx-sagecell sagecell-python" id="sage-5"><script type="text/x-sage">#Define your Python function here
-</script></pre> <pre class="ptx-sagecell sagecell-r" id="sage-6"><script type="text/x-sage">#Define your R function here
-</script></pre></p>
+<p id="p-96">Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</p>
+<ul class="disc"><li id="li-4"><p id="p-derived-li-4">Start with a pseudocode outline for the function.</p></li></ul>
+<article class="exercise exercise-like" id="exercise-22"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-22"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Write Pseudocode 2.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-22"><article class="exercise exercise-like"><div class="ptx-runestone-container"><div class="runestone" style="max-width: none;"><div data-component="parsons" class="parsons" id="">
+<div class="parsons_question parsons-text"><p id="p-97">Drag and drop the blocks of pseudocode below to outline a program which will convert an integer from its binary representation to its decimal representation.</p></div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-noindent="true">define binary_to_decima(bit_string):
+
+---
+  bit_list = bitstring converted to list of numeric bits
+   reverse order of bit_list
+   initialize decimal_integer to 0
+
+---
+  for i in [0, 1,...,length(bit_list) - 1]:
+
+---
+  for bit in bit_list:
+
+---
+  while bit in bit_list:
+ #distractor
+---
+    decimal_integer = decimal_integer + (bit_list[i]*2^i)
+
+---
+  return decimal_integer
+</pre>
+</div></div></div></article></div>
+<ul class="disc"><li id="li-5"><p id="p-derived-li-5">Try taking your pseudocode and implementing it as a working function in your language of choice.</p></li></ul>
+<pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">#Define your Sage function here
+</script></pre>
+<pre class="ptx-sagecell sagecell-python" id="sage-5"><script type="text/x-sage">#Define your Python function here
+</script></pre>
+<pre class="ptx-sagecell sagecell-r" id="sage-6"><script type="text/x-sage">#Define your R function here
+</script></pre>
 <ul class="disc">
 <li id="li-6"><p id="p-derived-li-6">Does your function "work" if you accidentally provide it a non-binary input? We better update the function to check this. We don't want users to get an output if they don't provide a valid input. Make the corresponding update to your function.</p></li>
 <li id="li-7"><p id="p-derived-li-7">Does your error check use a separate loop to ensure that the user input is binary? If so, can you make your function more efficient by using just a single loop? NOTE: We'll return to the idea of looping and efficiency later in our course.</p></li>
 </ul>
-<p id="p-89">Now that you've made it this far, maybe we don't want to restrict ourselves to working only in binary. Make updates to your previous two functions so that they can convert to and from decimal representations and any other base less than 10. HINT: You'll need to allow for users to input both the value to be converted as well as the base you are working with in each function.</p>
+<p id="p-98">Now that you've made it this far, maybe we don't want to restrict ourselves to working only in binary. Make updates to your previous two functions so that they can convert to and from decimal representations and any other base less than 10. HINT: You'll need to allow for users to input both the value to be converted as well as the base you are working with in each function.</p>
 <ul class="disc"><li id="li-8"><p id="p-derived-li-8">Create a new version of your first function which will convert a decimal integer to base-<span class="process-math">\(b\text{,}\)</span> where <span class="process-math">\(2\leq b \lt 10\text{.}\)</span></p></li></ul>
 <p class="continuation"><pre class="ptx-sagecell sagecell-sage" id="sage-7"><script type="text/x-sage">#Define your Sage function here
 </script></pre> <pre class="ptx-sagecell sagecell-python" id="sage-8"><script type="text/x-sage">#Define your Python function here
@@ -234,13 +324,13 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
 </script></pre> <pre class="ptx-sagecell sagecell-r" id="sage-12"><script type="text/x-sage">#Define your R function here
 </script></pre></p>
 <ul class="disc"><li id="li-10"><p id="p-derived-li-10">Check to ensure your functions handle "edge" cases, like converting 0, dealing with negative integers, and checking to ensure valid inputs before returning a converted value.</p></li></ul>
-<p id="p-90">You now have all of the tools you need in order to piece together a function that will convert between two bases <span class="process-math">\(b_1\)</span> and <span class="process-math">\(b_2\text{,}\)</span> with <span class="process-math">\(2\leq b_1, b_2 \leq 10\text{.}\)</span></p>
+<p id="p-99">You now have all of the tools you need in order to piece together a function that will convert between two bases <span class="process-math">\(b_1\)</span> and <span class="process-math">\(b_2\text{,}\)</span> with <span class="process-math">\(2\leq b_1, b_2 \leq 10\text{.}\)</span></p>
 <ul class="disc"><li id="li-11"><p id="p-derived-li-11">Build a new function, calling the functions you've written so far as helpers, to convert between any two bases (as long as those bases are at most base-10). Your function will need three input values: <code class="code-inline tex2jax_ignore">initial_value</code>, <code class="code-inline tex2jax_ignore">initial_base</code>, and <code class="code-inline tex2jax_ignore">target_base</code>.</p></li></ul>
 <p class="continuation"><pre class="ptx-sagecell sagecell-sage" id="sage-13"><script type="text/x-sage">#Define your Sage function here
 </script></pre> <pre class="ptx-sagecell sagecell-python" id="sage-14"><script type="text/x-sage">#Define your Python function here
 </script></pre> <pre class="ptx-sagecell sagecell-r" id="sage-15"><script type="text/x-sage">#Define your R function here
 </script></pre></p>
-<p id="p-91">As one more challenge, try building a function which will convert a decimal integer value into its hexadecimal representation. You'll get more practice with <code class="code-inline tex2jax_ignore">if</code> / <code class="code-inline tex2jax_ignore">else if</code>, and <code class="code-inline tex2jax_ignore">else</code> statements here.</p>
+<p id="p-100">As one more challenge, try building a function which will convert a decimal integer value into its hexadecimal representation. You'll get more practice with <code class="code-inline tex2jax_ignore">if</code> / <code class="code-inline tex2jax_ignore">else if</code>, and <code class="code-inline tex2jax_ignore">else</code> statements here.</p>
 <pre class="ptx-sagecell sagecell-sage" id="sage-16"><script type="text/x-sage">#Define your Sage function here
 </script></pre>
 <pre class="ptx-sagecell sagecell-python" id="sage-17"><script type="text/x-sage">#Define your Python function here
