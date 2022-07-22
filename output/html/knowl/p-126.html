@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-20T20:59:20-04:00       *-->
+<!--*       on 2022-07-22T19:10:09-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>In the last line from the string of equalities above, we dropped the constant <span class="process-math">\(2\)</span> from <span class="process-math">\(O\left(2n\right)\text{.}\)</span> This wasn't simply a typo, and the rationale for doing so is similar to the rationale for omitting any constant run-time elements from the overall description of the run-time of the entire routine.</p>
+<p>Again, the presence of the loop here has the potential to result in run times that are related to the size of the input <code class="code-inline tex2jax_ignore">array</code>. There are two operations being done within the body of the <code class="code-inline tex2jax_ignore">for</code> loop. That is, the body of the loop has <span class="process-math">\(O\left(1\right) + O\left(1\right)\)</span> run-time. The loop will run once for each <code class="code-inline tex2jax_ignore">element</code> in the input <code class="code-inline tex2jax_ignore">array</code>. Again, we'll label the number of elements in the input <code class="code-inline tex2jax_ignore">array</code> by <span class="process-math">\(n\text{.}\)</span> As usual, we'll ignore accounting for the "operations" of setting up the loop and <code class="code-inline tex2jax_ignore">return</code>ing the result, but we account for the operation to initialize the <code class="code-inline tex2jax_ignore">myValue</code> variable. The run-time is then</p>
 <span class="incontext"><a href="sec_counting-big-O.html#p-126" class="internal">in-context</a></span>
 </body>
 </html>

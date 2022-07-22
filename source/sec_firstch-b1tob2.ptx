@@ -10,7 +10,7 @@
     systems. We saw that this was made convenient because each group of 
     three bits could be encoded as a single octal digit, and similarly 
     each group of four bits could be encoded as a single hexadecimal digit. 
-    The relationship between the bases, <m>8 = 2^3</m> and <m>16 = 2^4</m> 
+    The relationship between the bases (<m>8 = 2^3</m> and <m>16 = 2^4</m>) 
     is what made this possible. Such a quick conversion is not even possible 
     between octal and hexadecimal because <m>16</m> is not a positive integer 
     power of <m>8</m>.
@@ -20,7 +20,9 @@
     are stuck with converting to base-<m>10</m> and then from base-<m>10</m> 
     into the desired new base. We're already comfortable with each of these 
     individual tasks, so rather than waste time with arbitrary 
-    base-conversions now, let's revisit this a bit later in our course.
+    base-conversions now, we'll revisit this task later in our course. At 
+    that point, we'll know a bit about logic and programmatic flow control,
+    some looping structures, and we'll tackle the problem with some code.
     </p>
   </introduction>
 

@@ -5,11 +5,17 @@
 
   <introduction>
     <p><em>Note.</em> This section asks you to construct a 
-    base-conversion function using computer code. There 
-    are interactive code blocks included throughout the section, 
-    where you are invited to  write your own from scratch. The 
-    interactive code blocks exist to allow <c>Sage</c>, 
-    <c>Python</c>, and <c>R</c>.
+    base-conversion function using computer code. Each task 
+    includes a prompt to write pseudocode to construct the 
+    corresponding function. The first two such prompts are 
+    accompanied by interactive exercises asking you to organize 
+    provided pseudocode into an order which will achieve the 
+    desired result. Subsequent tasks ask you to write your own 
+    pseudocode from scratch. Accompanying each task are also  
+    interactive code blocks which invite you to write your own 
+    working function in a language of your choice. The existing 
+    interactive code blocks allow <c>Sage</c>, <c>Python</c>, 
+    and <c>R</c>.
     </p>
 
     <p> In order to successfully navigate this Project, you'll 

@@ -87,11 +87,10 @@
         </solution>
     </example>
 
-    <p>Considering the consequences associated with different number encodings 
-    is beyond the scope of this course. 
-    Interested students should look for a course in <em>Numerical Analysis</em>, 
-    which will cover methods for representing floating point numbers, floating point 
-    arithmetic, and more.
+    <p>Considering the consequences associated with different number encoding 
+    implementations is beyond the scope of this course. Interested students should 
+    look for a course in <em>Numerical Analysis</em>, which will cover methods for 
+    representing floating point numbers, floating point arithmetic, and more.
     </p>
   </subsection>
 
@@ -113,7 +112,11 @@
         <p>Convert <m>\left(11011001\right)_{2}</m> to its hexadecimal 
         equivalent.
         </p>
-        <solution>
+        <solution><p>Start by grouping sets of four consecutive bits together. 
+        since every four bits can be encoded using a single hexadecimal digit. 
+        We must do this grouping beginning with the rightmost bit. Once we 
+        have the bits grouped, then we can convert the groups of four bits to 
+        their equivalent hexadecimal digits independently of one another.</p> 
             <md>
                 <mrow>\left(11011001\right)_{2} \amp = \left(\underbrace{1101}_{D_{16}}\underbrace{1001}_{9_{16}}\right)_{2}</mrow>
                 <mrow> \amp = \left(D9\right)_{16}</mrow>
@@ -126,10 +129,14 @@
         equivalent.
         </p>
         <solution>
-            <p>We'd like to create groups of three bits, but our binary number 
-            is only 8-bits in length. We'll start by padding the numbr with an 
-            extra 0 on the left. Do you agree that it doesn't change the value 
-            of the encoded number?
+            <p>Similarly to the previous example, we'd like to group our bits 
+            together. Here, we would like to create groups of three bits (since 
+            we are converting to base-8, and <m>2^3 = 8</m>), but our binary 
+            number is only 8-bits in length. We'll start by padding the number 
+            with an extra 0 on the left. Do you agree that it doesn't change the 
+            value of the encoded number? Once we've done this, the conversion is 
+            just like before. We convert each group of three consecutive bits 
+            into the corresponding octal digit independently of the other groups.
             </p>
             <md>
                 <mrow>\left(11011001\right)_{2} \amp = \left(011011001\right)_{2}</mrow>  
@@ -143,8 +150,11 @@
         <p>Convert <m>\left(8A2C\right)_{16}</m> to its binary equivalent.
         </p>
         <solution>
-            <p>Each hexadecimal digit will be encoded by four bits in the 
-            corresponding binary representation.
+            <p>We are now just working backwards. Each hexadecimal digit will be 
+            encoded by four bits in the corresponding binary representation. That 
+            is, we'll expand each hexadecimal digit into four bits in the binary 
+            representation. Similar to the previous examples, this expansion can 
+            happen independently for each hexadecimal digit.
             </p>
             <md>
                 <mrow>\left(8A2C\right)_{16} \amp = \left(\underbrace{8}_{1000_{2}}\underbrace{A}_{1010_{2}}\underbrace{2}_{0010_{2}}\underbrace{C}_{1100_{2}}\right)_{16}</mrow>

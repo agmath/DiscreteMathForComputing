@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-20T20:59:19-04:00       *-->
+<!--*       on 2022-07-22T19:10:08-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -253,24 +253,27 @@ eBookConfig.enable_chatcodes =  false;
 <p id="p-50">The largest 8-bit signed integer would be encoded as <span class="process-math">\(\left(01111111\right)_{2}\text{,}\)</span> which is equivalent to <span class="process-math">\(\left(127\right)_{10}\text{.}\)</span> The smallest integer would be encoded as <span class="process-math">\(\left(11111111\right)_{2}\text{,}\)</span> which represents <span class="process-math">\(\left(-127\right)_{10}\)</span> under the <em class="emphasis">sign-magnitude</em> scheme.</p>
 <p id="p-51">An interesting property of <em class="emphasis">sign-magnitude</em> is that there are two ways to represent <span class="process-math">\(\left(0\right)_{10}\text{!}\)</span></p>
 </div></div></article></div>
-<p id="p-52">Considering the consequences associated with different number encodings is beyond the scope of this course. Interested students should look for a course in <em class="emphasis">Numerical Analysis</em>, which will cover methods for representing floating point numbers, floating point arithmetic, and more.</p></section><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
+<p id="p-52">Considering the consequences associated with different number encoding implementations is beyond the scope of this course. Interested students should look for a course in <em class="emphasis">Numerical Analysis</em>, which will cover methods for representing floating point numbers, floating point arithmetic, and more.</p></section><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.4.2</span> <span class="title">Connecting Binary to Octal and Hexadecimal</span>
 </h3>
 <p id="p-53">Perhaps you are convinced that the binary system is important because machines lack fingers and toes to count on, but why are the octal and hexadecimal systems also used? Binary encodings can be quite lengthy. To represent the number <span class="process-math">\(\left(999\right)_{10}\text{,}\)</span> we need <span class="process-math">\(10\)</span> bits. Its difficult to extract any meaning from such a number by looking at its binary representation. By grouping bits together, we can achieve more efficient encodings. Additionally, since we are simply grouping adjacent bits together with one another, we can quickly convert between binary and either octal, hexadecimal, or even whatever fancy name you want to give to a base-32 or base-64 numbering system. Let's take a look at an example below.</p>
 <article class="example example-like" id="example-6"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Binary to Hexadecimal.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like"><p id="p-54">Convert <span class="process-math">\(\left(11011001\right)_{2}\)</span> to its hexadecimal equivalent.</p>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-4">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">
+<p id="p-55">Start by grouping sets of four consecutive bits together. since every four bits can be encoded using a single hexadecimal digit. We must do this grouping beginning with the rightmost bit. Once we have the bits grouped, then we can convert the groups of four bits to their equivalent hexadecimal digits independently of one another.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-4">
 \begin{align*}
 \left(11011001\right)_{2} \amp = \left(\underbrace{1101}_{D_{16}}\underbrace{1001}_{9_{16}}\right)_{2}\\
 \amp = \left(D9\right)_{16}
 \end{align*}
-</div></div></div></article></div>
+</div>
+</div></div></article></div>
 <article class="example example-like" id="example-7"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Binary to Octal.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-55">Convert <span class="process-math">\(\left(11011001\right)_{2}\)</span> to its octal equivalent.</p>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-56">Convert <span class="process-math">\(\left(11011001\right)_{2}\)</span> to its octal equivalent.</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
-<p id="p-56">We'd like to create groups of three bits, but our binary number is only 8-bits in length. We'll start by padding the numbr with an extra 0 on the left. Do you agree that it doesn't change the value of the encoded number?</p>
+<p id="p-57">Similarly to the previous example, we'd like to group our bits together. Here, we would like to create groups of three bits (since we are converting to base-8, and <span class="process-math">\(2^3 = 8\)</span>), but our binary number is only 8-bits in length. We'll start by padding the number with an extra 0 on the left. Do you agree that it doesn't change the value of the encoded number? Once we've done this, the conversion is just like before. We convert each group of three consecutive bits into the corresponding octal digit independently of the other groups.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-5">
 \begin{align*}
 \left(11011001\right)_{2} \amp = \left(011011001\right)_{2}\\
@@ -281,9 +284,9 @@ eBookConfig.enable_chatcodes =  false;
 </div></div></article></div>
 <article class="example example-like" id="example-8"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-8"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Hexadecimal to Binary.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><p id="p-57">Convert <span class="process-math">\(\left(8A2C\right)_{16}\)</span> to its binary equivalent.</p>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><p id="p-58">Convert <span class="process-math">\(\left(8A2C\right)_{16}\)</span> to its binary equivalent.</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like">
-<p id="p-58">Each hexadecimal digit will be encoded by four bits in the corresponding binary representation.</p>
+<p id="p-59">We are now just working backwards. Each hexadecimal digit will be encoded by four bits in the corresponding binary representation. That is, we'll expand each hexadecimal digit into four bits in the binary representation. Similar to the previous examples, this expansion can happen independently for each hexadecimal digit.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-6">
 \begin{align*}
 \left(8A2C\right)_{16} \amp = \left(\underbrace{8}_{1000_{2}}\underbrace{A}_{1010_{2}}\underbrace{2}_{0010_{2}}\underbrace{C}_{1100_{2}}\right)_{16}\\
@@ -291,10 +294,10 @@ eBookConfig.enable_chatcodes =  false;
 \end{align*}
 </div>
 </div></div></article></div>
-<p id="p-59">Did you find those conversions to be much easier than the conversions we've made between generic pairs of bases?</p></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<p id="p-60">Did you find those conversions to be much easier than the conversions we've made between generic pairs of bases?</p></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.4.3</span> <span class="title">Conclusion</span>
 </h3>
-<p id="p-60">There's nothing here yet.</p></section></section></div></main>
+<p id="p-61">There's nothing here yet.</p></section></section></div></main>
 </div>
 </body>
 </html>
