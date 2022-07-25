@@ -9,7 +9,31 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>Welcome to our next chapter, on arrays. In short, arrays are a 
+    structure for storing data. You've almost surely encountered arrays 
+    in your prior math or physics classes. Vectors are a special type 
+    array -- vectors are assumed to be elements of an orientable space, 
+    in which direction and magnitude are meaningful. Matrices are 
+    another example of an array from your previous math courses -- 
+    matrices are 2-dimensional arrays (they have both rows and columns), 
+    while vectors are 1-dimensional. It is even possible to have arrays 
+    which are multidimensional. Such an example are the current RGB 
+    values of pixels arranged on your computer monitor. Each pixel has 
+    corresponding red, green, and blue values. The result is a 
+    3-dimensional array, which can be visualized as three matrices 
+    positioned one behind the other.
+    </p>
+
+    <p>Like in mathematics, arrays as a computing object are structures 
+    for storing data. Arrays carry the restriction that the data stored 
+    within them must all be of the same type. For example, all integer 
+    values, all floats, all strings, etc. We'll spend some time over the 
+    next few sections of this book exploring these structures and 
+    operations which can be done with them. We'll leave the technical 
+    details about how arrays are stored in memory to your computing 
+    courses, instead we will focus on mathematical operations with 
+    arrays.
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -18,7 +42,7 @@
   <!-- chapter later if you change your mind about the order.    -->
   <!--<xi:include href="./sec_sets-ch-intro.ptx" />
   <xi:include href="./sec_sets-ch-foundations.ptx" /> -->
-  <xi:include href="./sec_arrays-ch-vectors.ptx" />
+  <xi:include href="./sec_arrays-ch-one-dimensional-arrays.ptx" />
   <xi:include href="./sec_arrays-ch-matrices.ptx" />
   <xi:include href="./sec_arrays-ch-multidimensional-arrays.ptx" />
 

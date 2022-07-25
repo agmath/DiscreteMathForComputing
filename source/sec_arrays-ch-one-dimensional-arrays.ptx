@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_arrays-ch-one-dimensional-arrays" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>One-Dimensional Arrays</title>
+
+  <introduction>
+    <p>As a reminder, an <em>array</em> is a structure for storing several 
+    data values, as long as those values all share the same data type. It is 
+    common to refer to one-dimensional arrays as <em>vectors</em>, though the 
+    term "vector" has a special meaning in physics and engineering.</p>
+  </introduction>
+
+  <p>A one-dimensional array looks a lot like a list of values. For example, 
+  <c>myFirstArray = [1, 5, 9, -11]</c> is a one-dimensional array with four 
+  elements while <c>mySecondArray = [1.5, -2.8, 3]</c> is a one-dimensional 
+  array with three elements. In the two examples, <c>myFirstArray</c> is an 
+  array of integer values, while <c>mySecondArray</c> is an array of floats. 
+  Perhaps you remember from our first chapter that there are different memory 
+  requirements for integers versus floats, and that can sometimes make a big 
+  difference in our programs.
+  </p>
+
+  <p>Addition and subtraction between arrays is done <em>elementwise</em>. For 
+  example, we can add the two arrays <c>[1, 6, 2]</c> and <c>[5, 11, 3]</c> as 
+  follows.
+  <md>
+    <mrow>[1, 6, 3] + [5, 11, 2] \amp = [1 + 5, 6 + 11, 3 + 2]</mrow>
+    <mrow> \amp = [6, 17, 5]</mrow>
+  </md>  
+  Subtraction between those two arrays is done similarly.
+  <md>
+    <mrow>[1, 6, 3] - [5, 11, 2] \amp = [1 - 5, 6 - 11, 3 - 2]</mrow>
+    <mrow> \amp = [-4, -5, 1]</mrow>
+  </md>
+  </p>
+
+  <p>A <em>scalar</em> is a quantity which has only a magnitude. For example, 
+  the value <m>8</m> is considered a scalar, while <m>[8]</m> may be considered 
+  a one-dimensional array containing a single element. We can multiply arrays 
+  by a scalar value. To do this, each element of the array is multiplied by the 
+  scalar. For example, let's multiply the array <c>[2, 12, -64, 32, 18]</c> by 
+  the scalar <m>\frac{1}{2}</m>.
+  <md>
+    <mrow>\frac{1}{2}\cdot [2, 12, -64, 32, 18] \amp = [\frac{1}{2}\cdot 2, \frac{1}{2}\cdot 12, \frac{1}{2}\cdot \left(-64\right), \frac{1}{2}\cdot 32, \frac{1}{2}\cdot 18]</mrow>
+    <mrow> \amp = [1, 6, -32, 16, 9]</mrow>
+  </md>  
+  </p>
+
+  <p>At the end of our chapter on counting, we encountered big-O notation and 
+  its use in describing the <em>run-time complexity</em> of a routine, algorithm, 
+  or program. Answer the following questions about the run-time complexity of 
+  array addition and scalar multiplication.
+  </p>
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Array Addition</title><introduction>
+    </introduction><myopenmath problem="987073" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication</title><introduction>
+    </introduction><myopenmath problem="987075" />
+	</exercise>
+
+
+
+
+</section>
+
