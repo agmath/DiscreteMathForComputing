@@ -21,15 +21,15 @@
   </p>
 
   <p>Addition and subtraction between arrays is done <em>elementwise</em>. For 
-  example, we can add the two arrays <c>[1, 6, 2]</c> and <c>[5, 11, 3]</c> as 
+  example, we can add the two arrays <c>[1, 6, 3]</c> and <c>[5, 11, 2]</c> as 
   follows.
   <md>
-    <mrow>[1, 6, 3] + [5, 11, 2] \amp = [1 + 5, 6 + 11, 3 + 2]</mrow>
+    <mrow>[1, 6, 3] + [5, 11, 2] \amp = [\left(1 + 5\right), \left(6 + 11\right), \left(3 + 2\right)]</mrow>
     <mrow> \amp = [6, 17, 5]</mrow>
   </md>  
   Subtraction between those two arrays is done similarly.
   <md>
-    <mrow>[1, 6, 3] - [5, 11, 2] \amp = \left[1 - 5, 6 - 11, 3 - 2\right]</mrow>
+    <mrow>[1, 6, 3] - [5, 11, 2] \amp = \left[\left(1 - 5\right), \left(6 - 11\right), \left(3 - 2\right)\right]</mrow>
     <mrow> \amp = [-4, -5, 1]</mrow>
   </md>
   </p>
@@ -41,7 +41,7 @@
   scalar. For example, let's multiply the array <c>[2, 12, -64, 32, 18]</c> by 
   the scalar <m>\frac{1}{2}</m>.
   <md>
-    <mrow>\frac{1}{2}\cdot \left[2, 12, -64, 32, 18\right] \amp = \left[\frac{1}{2}\cdot 2, \frac{1}{2}\cdot 12, \frac{1}{2}\cdot \left(-64\right), \frac{1}{2}\cdot 32, \frac{1}{2}\cdot 18\right]</mrow>
+    <mrow>\frac{1}{2}\cdot \left[2, 12, -64, 32, 18\right] \amp = \left[\left(\frac{1}{2}\cdot 2\right), \left(\frac{1}{2}\cdot 12\right), \left(\frac{1}{2}\cdot \left(-64\right)\right), \left(\frac{1}{2}\cdot 32\right), \left(\frac{1}{2}\cdot 18\right)\right]</mrow>
     <mrow> \amp = [1, 6, -32, 16, 9]</mrow>
   </md>  
   </p>

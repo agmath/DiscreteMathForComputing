@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-26T08:55:08-04:00       *-->
+<!--*       on 2022-07-26T08:59:59-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -219,24 +219,24 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">9.1</span> <span class="title">One-Dimensional Arrays</span>
 </h2>
 <section class="introduction" id="introduction-48"><p id="p-176">As a reminder, an <em class="emphasis">array</em> is a structure for storing several data values, as long as those values all share the same data type. It is common to refer to one-dimensional arrays as <em class="emphasis">vectors</em>, though the term "vector" has a special meaning in physics and engineering.</p></section><p id="p-177">A one-dimensional array looks a lot like a list of values. For example, <code class="code-inline tex2jax_ignore">myFirstArray = [1, 5, 9, -11]</code> is a one-dimensional array with four elements while <code class="code-inline tex2jax_ignore">mySecondArray = [1.5, -2.8, 3]</code> is a one-dimensional array with three elements. In the two examples, <code class="code-inline tex2jax_ignore">myFirstArray</code> is an array of integer values, while <code class="code-inline tex2jax_ignore">mySecondArray</code> is an array of floats. Perhaps you remember from our first chapter that there are different memory requirements for integers versus floats, and that can sometimes make a big difference in our programs.</p>
-<p id="p-178">Addition and subtraction between arrays is done <em class="emphasis">elementwise</em>. For example, we can add the two arrays <code class="code-inline tex2jax_ignore">[1, 6, 2]</code> and <code class="code-inline tex2jax_ignore">[5, 11, 3]</code> as follows.</p>
+<p id="p-178">Addition and subtraction between arrays is done <em class="emphasis">elementwise</em>. For example, we can add the two arrays <code class="code-inline tex2jax_ignore">[1, 6, 3]</code> and <code class="code-inline tex2jax_ignore">[5, 11, 2]</code> as follows.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-10">
 \begin{align*}
-[1, 6, 3] + [5, 11, 2] \amp = [1 + 5, 6 + 11, 3 + 2]\\
+[1, 6, 3] + [5, 11, 2] \amp = [\left(1 + 5\right), \left(6 + 11\right), \left(3 + 2\right)]\\
 \amp = [6, 17, 5]
 \end{align*}
 </div>
 <p class="continuation">Subtraction between those two arrays is done similarly.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-11">
 \begin{align*}
-[1, 6, 3] - [5, 11, 2] \amp = \left[1 - 5, 6 - 11, 3 - 2\right]\\
+[1, 6, 3] - [5, 11, 2] \amp = \left[\left(1 - 5\right), \left(6 - 11\right), \left(3 - 2\right)\right]\\
 \amp = [-4, -5, 1]
 \end{align*}
 </div>
 <p id="p-179">A <em class="emphasis">scalar</em> is a quantity which has only a magnitude. For example, the value <span class="process-math">\(8\)</span> is considered a scalar, while <span class="process-math">\([8]\)</span> may be considered a one-dimensional array containing a single element. We can multiply arrays by a scalar value. To do this, each element of the array is multiplied by the scalar. For example, let's multiply the array <code class="code-inline tex2jax_ignore">[2, 12, -64, 32, 18]</code> by the scalar <span class="process-math">\(\frac{1}{2}\text{.}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-12">
 \begin{align*}
-\frac{1}{2}\cdot \left[2, 12, -64, 32, 18\right] \amp = \left[\frac{1}{2}\cdot 2, \frac{1}{2}\cdot 12, \frac{1}{2}\cdot \left(-64\right), \frac{1}{2}\cdot 32, \frac{1}{2}\cdot 18\right]\\
+\frac{1}{2}\cdot \left[2, 12, -64, 32, 18\right] \amp = \left[\left(\frac{1}{2}\cdot 2\right), \left(\frac{1}{2}\cdot 12\right), \left(\frac{1}{2}\cdot \left(-64\right)\right), \left(\frac{1}{2}\cdot 32\right), \left(\frac{1}{2}\cdot 18\right)\right]\\
 \amp = [1, 6, -32, 16, 9]
 \end{align*}
 </div>
