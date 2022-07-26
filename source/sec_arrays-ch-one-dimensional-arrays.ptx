@@ -29,7 +29,7 @@
   </md>  
   Subtraction between those two arrays is done similarly.
   <md>
-    <mrow>[1, 6, 3] - [5, 11, 2] \amp = [1 - 5, 6 - 11, 3 - 2]</mrow>
+    <mrow>[1, 6, 3] - [5, 11, 2] \amp = \left[1 - 5, 6 - 11, 3 - 2\right]</mrow>
     <mrow> \amp = [-4, -5, 1]</mrow>
   </md>
   </p>
@@ -41,21 +41,34 @@
   scalar. For example, let's multiply the array <c>[2, 12, -64, 32, 18]</c> by 
   the scalar <m>\frac{1}{2}</m>.
   <md>
-    <mrow>\frac{1}{2}\cdot [2, 12, -64, 32, 18] \amp = [\frac{1}{2}\cdot 2, \frac{1}{2}\cdot 12, \frac{1}{2}\cdot \left(-64\right), \frac{1}{2}\cdot 32, \frac{1}{2}\cdot 18]</mrow>
+    <mrow>\frac{1}{2}\cdot \left[2, 12, -64, 32, 18\right] \amp = \left[\frac{1}{2}\cdot 2, \frac{1}{2}\cdot 12, \frac{1}{2}\cdot \left(-64\right), \frac{1}{2}\cdot 32, \frac{1}{2}\cdot 18\right]</mrow>
     <mrow> \amp = [1, 6, -32, 16, 9]</mrow>
   </md>  
   </p>
+
+  <p>Use what you've learned to verify your grasp of addition, subtraction, and  
+  scalar multiplication for one-dimensional arrays.
+  </p>
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Array Addition/Subtraction</title><introduction>
+    </introduction><myopenmath problem="987312" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Array Addition/Subtraction</title><introduction>
+    </introduction><myopenmath problem="987525" />
+	</exercise>
+
+
 
   <p>At the end of our chapter on counting, we encountered big-O notation and 
   its use in describing the <em>run-time complexity</em> of a routine, algorithm, 
   or program. Answer the following questions about the run-time complexity of 
   array addition and scalar multiplication.
   </p>
-  <exercise exercise-customization="inline" exercise-interactive="static"><title>Array Addition</title><introduction>
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Array Addition Complexity</title><introduction>
     </introduction><myopenmath problem="987073" />
 	</exercise>
 
-  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication</title><introduction>
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication Complexity</title><introduction>
     </introduction><myopenmath problem="987075" />
 	</exercise>
 
