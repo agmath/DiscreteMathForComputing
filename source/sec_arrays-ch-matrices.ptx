@@ -183,9 +183,97 @@
 
   <subsection><title>Matrix Multiplication</title>
 
-  <p>This section in progress.
+  <p>The operation of matrix multiplication is more complex that simply 
+  multiplying element-wise. Given two matrices <m>A</m> and <m>B</m>, we 
+  compute the <m>ij^{\text{th}}</m> entry of the matrix product <m>AB</m> 
+  by taking the inner product between the <m>i^{\text{th}}</m> row of the 
+  matrix <m>A</m> with the <m>j^{\text{th}}</m> column of the matrix 
+  <m>B</m>. This forces that the number of columns in <m>A</m> matches the 
+  number of rows in <m>B</m>. The resulting matrix <m>AB</m> then has a 
+  number of rows equal to the number of rows in <m>A</m> and a number of 
+  columns equal to the number of columns in <m>B</m>. 
   </p>
 
+  <p>Below is an example showing how to compute the matrix product between 
+  a <m>2\times 2</m> matrix and a <m>2\times 3</m> matrix.
+  </p>
+
+  <example><title>Matrix Product</title>
+    <p>Compute the matrix product <m>AB</m>, where <m>A = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]</m>
+    and <m>B = \left[\begin{array}{ccc} 5 \amp -4 \amp -2\\ 1 \amp -1 \amp 3\end{array}\right]</m>. 
+    </p>
+    <solution>
+      <md>
+        <mrow>AB \amp = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\cdot \left[\begin{array}{ccc} 5 \amp -4 \amp -2\\ 1 \amp -1 \amp 3\end{array}\right]</mrow>
+        <mrow> \amp = \left[\begin{array}{ccc} \left(\left(1\cdot 5\right) + \left(2\cdot 1\right)\right) \amp \left(\left(1\cdot \left(-4\right)\right) + \left(2\cdot\left(-1\right)\right)\right) \amp \left(\left(1\cdot \left(-2\right)\right) + \left(2\cdot 3\right)\right)\\
+        \left(\left(0\cdot 5\right) + \left(-3\cdot 1\right)\right) \amp \left(\left(0\cdot \left(-4\right)\right) + \left(-3\cdot\left(-1\right)\right)\right) \amp \left(\left(0\cdot \left(-2\right)\right) + \left(-3\cdot 3\right)\right)\end{array}\right]</mrow>
+        <mrow> \amp = \left[\begin{array}{ccc} \left(5 + 2\right) \amp \left(-4 -2\right) \amp \left(-2 + 6\right)\\
+        \left(0 - 3\right) \amp \left(0 + 3\right) \amp \left(0 - 9\right)\end{array}\right]</mrow>
+        <mrow> \amp = \left[\begin{array}{ccc} 7 \amp -6 \amp 4\\
+        -3 \amp 3 \amp -9\end{array}\right]</mrow>
+      </md>
+    </solution>
+  </example>
+
+  <p>We can generalize this procedure into an algorithm below.
+  </p>
+
+  <cd>
+    <cline>def matrix_product(A, B):</cline>
+    <cline>  mA = number of rows in A</cline>
+    <cline>  mB = number of rows in B</cline>
+    <cline>  nA = number of columns in A</cline>
+    <cline>  nB = number of columns in B</cline>
+    <cline></cline>
+    <cline>  if nA not equal mB:</cline>
+    <cline>    print("Matrix dimensions are not compatible for multiplication.")</cline>
+    <cline>    return NULL</cline>
+    <cline></cline>
+    <cline>  matrix_product = an mA x nB array</cline>
+    <cline>  for row in [0, 1, ..., mA - 1]:</cline>
+    <cline>    for col in [0, 1, ..., nB - 1]:</cline>
+    <cline>      myEntry = 0</cline>
+    <cline>      for index in [0, 1, ..., nA - 1]:</cline>
+    <cline>        myEntry = myEntry + (A[row, index] * B[index, col])</cline>
+    <cline>      matrix_product[row, col] = myEntry</cline>
+    <cline></cline>
+    <cline>  return matrix_product</cline>
+  </cd>
+
+  <p>As we've done with the other algorithms we've presented, complete the 
+  following exercise to determine the run-time complexity of the matrix 
+  multiplication algorithm outlined above.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Multiplication Complexity</title><introduction>
+    </introduction><myopenmath problem="989247" />
+	</exercise>
+
+  <p>Try the following exercises to test your understanding of computing 
+  matrix products.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Multiplication 1</title><introduction>
+    </introduction><myopenmath problem="989284" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Multiplication 2</title><introduction>
+    </introduction><myopenmath problem="989284" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Multiplication 3</title><introduction>
+    </introduction><myopenmath problem="989284" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Multiplication 4</title><introduction>
+    </introduction><myopenmath problem="989284" />
+	</exercise>
+
+  </subsection>
+
+  <subsection><title>Conclusions</title>
+  <p>A conclusion will eventually go here...
+  </p>
   </subsection>
 
 </section>
