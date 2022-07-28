@@ -12,7 +12,7 @@ INFO    :  verifying and expanding input directory: C:\Users\agilb\Documents\Git
 INFO    :  input directory expanded to absolute path: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\generated-assets
 INFO    :  verifying and expanding input directory: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\../assets
 INFO    :  input directory expanded to absolute path: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\assets
-INFO    :  converting C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\main.ptx to HTML in C:\Users\agilb\AppData\Local\Temp\tmptux01ze2
+INFO    :  converting C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\main.ptx to HTML in C:\Users\agilb\AppData\Local\Temp\tmpwn5uxh2v
 INFO    :  XSL conversion of C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\main.ptx by C:\Users\agilb\AppData\Local\Programs\Python\Python310\lib\site-packages\pretext\static\xsl\pretext-html.xsl
 INFO    :  comprehensive messages, warnings, and errors:
 INFO    :  successful application of C:\Users\agilb\AppData\Local\Programs\Python\Python310\lib\site-packages\pretext\static\xsl\pretext-html.xsl

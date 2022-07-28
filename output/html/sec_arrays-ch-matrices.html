@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-26T09:27:33-04:00       *-->
+<!--*       on 2022-07-28T10:34:10-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Matrices</title>
+<title>Two-Dimensional Arrays (Matrices)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -183,7 +183,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link">
 <a href="ch-arrays.html" data-scroll="ch-arrays" class="internal"><span class="codenumber">9</span> <span class="title">Arrays</span></a><ul>
 <li><a href="sec_arrays-ch-one-dimensional-arrays.html" data-scroll="sec_arrays-ch-one-dimensional-arrays" class="internal">One-Dimensional Arrays</a></li>
-<li><a href="sec_arrays-ch-matrices.html" data-scroll="sec_arrays-ch-matrices" class="active">Matrices</a></li>
+<li><a href="sec_arrays-ch-matrices.html" data-scroll="sec_arrays-ch-matrices" class="active">Two-Dimensional Arrays (Matrices)</a></li>
 <li><a href="sec_arrays-ch-multidimensional-arrays.html" data-scroll="sec_arrays-ch-multidimensional-arrays" class="internal">Multidimensional Arrays</a></li>
 </ul>
 </li>
@@ -216,9 +216,134 @@ eBookConfig.enable_chatcodes =  false;
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_arrays-ch-matrices"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">9.2</span> <span class="title">Matrices</span>
+<span class="type">Section</span> <span class="codenumber">9.2</span> <span class="title">Two-Dimensional Arrays (Matrices)</span>
 </h2>
-<section class="introduction" id="introduction-53"><p id="p-182">An introduction will go here...</p></section><p id="p-183">Discussion on matrices will go here...</p></section></div></main>
+<section class="introduction" id="introduction-57"><p id="p-187">We ended our last section by mentioning the <em class="emphasis">outer-product</em> between two arrays. Unlike the inner-product, the outer-product is defined even between arrays whose lengths do not match. Before we return to the definition of the outer-product, let's take a look at two-dimensional arrays, which are often referred to as matrices.</p></section><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.2.1</span> <span class="title">What is a two-dimensional array?</span>
+</h3>
+<p id="p-188">A matrix is a two-dimensional array. That is, a matrix is an array which has both rows and columns. An example of a two-by-three matrix appears below.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-13">
+\begin{align*}
+\left[\begin{array}{ccc} 2 \amp 4 \amp -11\\ -7 \amp \frac{3}{4} \amp \frac{5}{2}\end{array}\right]
+\end{align*}
+</div>
+<p id="p-189">Seeing the form of a general <span class="process-math">\(m\times n\)</span> (<span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span>) matrix gives a bit of insight as to how matrix elements are organized and how they can be accessed in a computing environment. An <span class="process-math">\(m\times n\)</span> matrix is a two-dimensional array with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. The general from of an <span class="process-math">\(m\times n\)</span> matrix appears below.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-14">
+\begin{align*}
+\left[\begin{array}{cccc} a_{11} \amp a_{12} \amp \cdots \amp a_{1n}\\ 
+a_{21} \amp a_{22} \amp \cdots \amp a_{2n}\\
+\vdots \amp \amp \ddots \amp \vdots\\
+a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
+\end{align*}
+</div>
+<p id="p-190">From the definition above, we can see that the element <span class="process-math">\(a_{ij}\)</span> occupies the position in row <span class="process-math">\(i\)</span> and column <span class="process-math">\(j\text{.}\)</span> This insight allows us to access matrix elements through code. The following example of an algorithm to convert a list to a matrix shows how accessing elements of a two-dimensional array can be done.</p>
+<pre class="code-display tex2jax_ignore">def list_to_matrix(myList, rows):
+  list_length = length(myList)
+  if (rows does not divide list_length):
+    print("Warning: number of rows must divide the length of the list")
+    return NULL
+
+  columns = list_length / rows 
+  myMatrix = a rows x columns array
+  list_counter = 0
+
+  for row in [0, 1, ..., rows - 1]:
+    for column in [0, 1, ..., columns - 1]:
+      myMatrix[row, column] = myList[list_counter]
+      list_counter = list_counter + 1
+
+  return myMatrix
+</pre>
+<p id="p-191">Notice the use of the nested <code class="code-inline tex2jax_ignore">for</code> loops to move throw the <code class="code-inline tex2jax_ignore">row</code> and <code class="code-inline tex2jax_ignore">column</code> combinations. Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">list_to_matrix()</code> algorithm proposed above.</p>
+<article class="exercise exercise-like" id="exercise-46"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-46"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">List to Matrix Complexity.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-46"><article class="exercise exercise-like"><div class="introduction" id="introduction-58"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988781&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.2.2</span> <span class="title">Matrix Addition/Subtraction</span>
+</h3>
+<p id="p-192">Now that we know how matrices are constructed, we can think about operations with these two-dimensional structures. Just like with one-dimensional arrays, matrix addition and subtraction is done element-wise. This requires that two matrices have the same dimensions (the same number of rows and same number of columns) as one another in order to add or subtract the two objects. An algorithm to define matrix addition appears below.</p>
+<pre class="code-display tex2jax_ignore">def matrix_sum(myMatrix1, myMatrix2):
+  rows_matrix1 = number of rows in myMatrix1
+  rows_matrix2 = number of rows in muMatrix2
+  cols_matrix1 = number of columns in myMatrix1
+  cols_matrix2 = number of columns in muMatrix2
+  if (rows_matrix1 not equal to rows_matrix2) or (cols_matrix1 not equal to cols_matrix2):
+    print("Warning: matrix dimensions don't match")
+    return NULL
+
+  sumMatrix = a rows_matrix1 x cols_matrix1 array
+
+  for row in [0, 1, ..., rows_matrix1 - 1]:
+    for column in [0, 1, ..., cols_matrix1 - 1]:
+      sumMatrix[row, column] = myMatrix1[row, column] + myMatrix2[row, column]
+
+  return sumMatrix
+</pre>
+<p id="p-193">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">matrix_sum()</code> algorithm outlined here.</p>
+<article class="exercise exercise-like" id="exercise-47"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-47"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Sum Complexity.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-47"><article class="exercise exercise-like"><div class="introduction" id="introduction-59"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988788&amp;resizer=true"></iframe></div></article></div>
+<p id="p-194">Try the following exercises to test your understanding of computing matrix sums and differences.</p>
+<article class="exercise exercise-like" id="exercise-48"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-48"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Sum of <span class="process-math">\(2\times 2\)</span> Matrices.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-48"><article class="exercise exercise-like"><div class="introduction" id="introduction-60"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988791&amp;resizer=true"></iframe></div></article></div>
+<article class="exercise exercise-like" id="exercise-49"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-49"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 1.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-49"><article class="exercise exercise-like"><div class="introduction" id="introduction-61"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></div>
+<article class="exercise exercise-like" id="exercise-50"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-50"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 2.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-50"><article class="exercise exercise-like"><div class="introduction" id="introduction-62"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></div>
+<article class="exercise exercise-like" id="exercise-51"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-51"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 3.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-51"><article class="exercise exercise-like"><div class="introduction" id="introduction-63"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></div>
+<article class="exercise exercise-like" id="exercise-52"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-52"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 4.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-52"><article class="exercise exercise-like"><div class="introduction" id="introduction-64"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.2.3</span> <span class="title">Scalar Multiplication</span>
+</h3>
+<p id="p-195">Again, similar to one-dimensional arrays, scalar multiplication with matrices is done element-wise. The algorithm below describes a method for computing a scalar multiple of an <span class="process-math">\(m\times n\)</span> matrix.</p>
+<pre class="code-display tex2jax_ignore">def scalar_mult_matrix(myScalar, myMatrix):
+  rows = number of rows in myMatrix
+  cols = number of columns in myMatrix
+  scaled_matrix = a rows x cols array
+
+  for row in [0, 1, ..., rows - 1]:
+    for col in [0, 1, ..., cols - 1]:
+      scaled_matrix[row, col] = myScalar * myMatrix[row, col]
+
+  return scaled_matrix
+</pre>
+<p id="p-196">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">scalar_mult_matrix()</code> algorithm outlined above.</p>
+<article class="exercise exercise-like" id="exercise-53"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-53"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Sum Complexity.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-53"><article class="exercise exercise-like"><div class="introduction" id="introduction-65"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988797&amp;resizer=true"></iframe></div></article></div>
+<p id="p-197">Try the following exercises to test your understanding of computing scalar multiples of matrices.</p>
+<article class="exercise exercise-like" id="exercise-54"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-54"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 1.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-54"><article class="exercise exercise-like"><div class="introduction" id="introduction-66"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></div>
+<article class="exercise exercise-like" id="exercise-55"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-55"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 2.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-55"><article class="exercise exercise-like"><div class="introduction" id="introduction-67"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></div>
+<article class="exercise exercise-like" id="exercise-56"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-56"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 3.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-56"><article class="exercise exercise-like"><div class="introduction" id="introduction-68"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></div>
+<article class="exercise exercise-like" id="exercise-57"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-57"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 4.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-57"><article class="exercise exercise-like"><div class="introduction" id="introduction-69"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-16"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.2.4</span> <span class="title">Matrix Multiplication</span>
+</h3>
+<p id="p-198">This section in progress.</p></section></section></div></main>
 </div>
 </body>
 </html>

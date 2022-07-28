@@ -1,13 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec_arrays-ch-matrices" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Matrices</title>
+  <title>Two-Dimensional Arrays (Matrices)</title>
 
   <introduction>
-    <p>An introduction will go here...</p>
+    <p>We ended our last section by mentioning the <em>outer-product</em> 
+    between two arrays. Unlike the inner-product, the outer-product is 
+    defined even between arrays whose lengths do not match. Before we 
+    return to the definition of the outer-product, let's take a look at 
+    two-dimensional arrays, which are often referred to as matrices.</p>
   </introduction>
 
-  <p>Discussion on matrices will go here...</p>
+  <subsection><title>What is a two-dimensional array?</title>
+  <p>A matrix is a two-dimensional array. That is, a matrix is an array 
+  which has both rows and columns. An example of a two-by-three matrix 
+  appears below.</p>
+
+  <md><mrow>\left[\begin{array}{ccc} 2 \amp 4 \amp -11\\ -7 \amp \frac{3}{4} \amp \frac{5}{2}\end{array}\right]</mrow></md>
+
+  <p>Seeing the form of a general <m>m\times n</m> (<m>m</m> by <m>n</m>)
+  matrix gives a bit of insight as to how matrix elements are organized 
+  and how they can be accessed in a computing environment. An <m>m\times n</m>
+  matrix is a two-dimensional array with <m>m</m> rows and <m>n</m> columns. 
+  The general from of an <m>m\times n</m> matrix appears below.
+  </p>
+
+  <md><mrow>\left[\begin{array}{cccc} a_{11} \amp a_{12} \amp \cdots \amp a_{1n}\\ 
+  a_{21} \amp a_{22} \amp \cdots \amp a_{2n}\\
+  \vdots \amp \amp \ddots \amp \vdots\\
+  a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]</mrow></md>
+
+  <p>From the definition above, we can see that the element <m>a_{ij}</m> 
+  occupies the position in row <m>i</m> and column <m>j</m>. This insight 
+  allows us to access matrix elements through code. The following example 
+  of an algorithm to convert a list to a matrix shows how accessing elements 
+  of a two-dimensional array can be done.
+  </p>
+
+  <cd>
+    <cline>def list_to_matrix(myList, rows):</cline>
+    <cline>  list_length = length(myList)</cline>
+    <cline>  if (rows does not divide list_length):</cline>
+    <cline>    print("Warning: number of rows must divide the length of the list")</cline>
+    <cline>    return NULL</cline>
+    <cline></cline>
+    <cline>  columns = list_length / rows </cline>
+    <cline>  myMatrix = a rows x columns array</cline>
+    <cline>  list_counter = 0</cline>
+    <cline></cline>
+    <cline>  for row in [0, 1, ..., rows - 1]:</cline>
+    <cline>    for column in [0, 1, ..., columns - 1]:</cline>
+    <cline>      myMatrix[row, column] = myList[list_counter]</cline>
+    <cline>      list_counter = list_counter + 1</cline>
+    <cline></cline>
+    <cline>  return myMatrix</cline>
+  </cd>
+
+  <p>Notice the use of the nested <c>for</c> loops to move throw the <c>row</c> 
+  and <c>column</c> combinations. Complete the exercise below to determine the 
+  run-time complexity of the <c>list_to_matrix()</c> algorithm proposed above.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>List to Matrix Complexity</title><introduction>
+    </introduction><myopenmath problem="988781" />
+	</exercise>
+
+  </subsection>
+
+  <subsection><title>Matrix Addition/Subtraction</title>
+
+  <p>Now that we know how matrices are constructed, we can think about 
+  operations with these two-dimensional structures. Just like with 
+  one-dimensional arrays, matrix addition and subtraction is done 
+  element-wise. This requires that two matrices have the same dimensions
+  (the same number of rows and same number of columns) as one another in 
+  order to add or subtract the two objects. An algorithm to define matrix 
+  addition appears below.
+  </p>
+
+  <cd>
+    <cline>def matrix_sum(myMatrix1, myMatrix2):</cline>
+    <cline>  rows_matrix1 = number of rows in myMatrix1</cline>
+    <cline>  rows_matrix2 = number of rows in muMatrix2</cline>
+    <cline>  cols_matrix1 = number of columns in myMatrix1</cline>
+    <cline>  cols_matrix2 = number of columns in muMatrix2</cline>
+    <cline>  if (rows_matrix1 not equal to rows_matrix2) or (cols_matrix1 not equal to cols_matrix2):</cline>
+    <cline>    print("Warning: matrix dimensions don't match")</cline>
+    <cline>    return NULL</cline>
+    <cline></cline>
+    <cline>  sumMatrix = a rows_matrix1 x cols_matrix1 array</cline>
+    <cline></cline>
+    <cline>  for row in [0, 1, ..., rows_matrix1 - 1]:</cline>
+    <cline>    for column in [0, 1, ..., cols_matrix1 - 1]:</cline>
+    <cline>      sumMatrix[row, column] = myMatrix1[row, column] + myMatrix2[row, column]</cline>
+    <cline></cline>
+    <cline>  return sumMatrix</cline>
+  </cd>
+
+  <p>Complete the exercise below to determine the run-time complexity of
+  the <c>matrix_sum()</c> algorithm outlined here.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Sum Complexity</title><introduction>
+    </introduction><myopenmath problem="988788" />
+	</exercise>
+
+  <p>Try the following exercises to test your understanding of computing 
+  matrix sums and differences.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Sum of <m>2\times 2</m> Matrices</title><introduction>
+    </introduction><myopenmath problem="988791" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Sum/Difference of <m>m\times n</m> Matrices 1</title><introduction>
+    </introduction><myopenmath problem="988792" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Sum/Difference of <m>m\times n</m> Matrices 2</title><introduction>
+    </introduction><myopenmath problem="988792" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Sum/Difference of <m>m\times n</m> Matrices 3</title><introduction>
+    </introduction><myopenmath problem="988792" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Sum/Difference of <m>m\times n</m> Matrices 4</title><introduction>
+    </introduction><myopenmath problem="988792" />
+	</exercise>
+
+  </subsection> 
+
+  <subsection><title>Scalar Multiplication</title>
+
+  <p>Again, similar to one-dimensional arrays, scalar multiplication with 
+  matrices is done element-wise. The algorithm below describes a method 
+  for computing a scalar multiple of an <m>m\times n</m> matrix.
+  </p>
+
+  <cd>
+    <cline>def scalar_mult_matrix(myScalar, myMatrix):</cline>
+    <cline>  rows = number of rows in myMatrix</cline>
+    <cline>  cols = number of columns in myMatrix</cline>
+    <cline>  scaled_matrix = a rows x cols array</cline>
+    <cline></cline>
+    <cline>  for row in [0, 1, ..., rows - 1]:</cline>
+    <cline>    for col in [0, 1, ..., cols - 1]:</cline>
+    <cline>      scaled_matrix[row, col] = myScalar * myMatrix[row, col]</cline>
+    <cline></cline>
+    <cline>  return scaled_matrix</cline>
+  </cd>
+
+  <p>Complete the exercise below to determine the run-time complexity of
+  the <c>scalar_mult_matrix()</c> algorithm outlined above.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Sum Complexity</title><introduction>
+    </introduction><myopenmath problem="988797" />
+	</exercise>
+
+  <p>Try the following exercises to test your understanding of computing 
+  scalar multiples of matrices.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication 1</title><introduction>
+    </introduction><myopenmath problem="988799" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication 2</title><introduction>
+    </introduction><myopenmath problem="988799" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication 3</title><introduction>
+    </introduction><myopenmath problem="988799" />
+	</exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication 4</title><introduction>
+    </introduction><myopenmath problem="988799" />
+	</exercise>
+
+  </subsection>
+
+  <subsection><title>Matrix Multiplication</title>
+
+  <p>This section in progress.
+  </p>
+
+  </subsection>
 
 </section>
 

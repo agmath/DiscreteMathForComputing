@@ -10,6 +10,7 @@
     term "vector" has a special meaning in physics and engineering.</p>
   </introduction>
 
+  <subsection><title>Addition and Scalar Multiplication</title>
   <p>A one-dimensional array looks a lot like a list of values. For example, 
   <c>myFirstArray = [1, 5, 9, -11]</c> is a one-dimensional array with four 
   elements while <c>mySecondArray = [1.5, -2.8, 3]</c> is a one-dimensional 
@@ -71,7 +72,69 @@
   <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication Complexity</title><introduction>
     </introduction><myopenmath problem="987075" />
 	</exercise>
+  </subsection>
 
+  <subsection><title>Array Products: Inner- and Outer-Products</title>
+    <p>In addition to adding/subtracting arrays or multiplying arrays by 
+    scalars, there's lots of interesting and meaningful operations that can 
+    be done with arrays. We'll take a look at the <em>inner-product</em> in 
+    this section, and then introduce the <em>outer-product</em> as a bridge 
+    to our next section on two-dimensional arrays (matrices).</p>
+
+    <p>We start with the <em>inner-product</em> (also known as the 
+    <em>dot-product</em>) between two arrays. Given two real-valued arrays 
+    of equal length, we can calculate the inner-product between them. The 
+    value of the inner-product can be interpreted as the area of the 
+    parallelogram created when the two arrays are added in space. We'll 
+    introduce the inner-product algorithmically using the pseudocode below.
+    </p>
+
+    <cd>
+      <cline>def inner_product(myArray1, myArray2):</cline>
+      <cline>  n = length(myArray1)</cline>
+      <cline>  if length(myArray2) not equal n:</cline>
+      <cline>    print("Arrays must be the same length")</cline>
+      <cline>    return NULL</cline>
+      <cline>  inner_prod = 0</cline>
+      <cline>  for i in [0, 1, ..., n - 1]:</cline>
+      <cline>    inner_prod = inner_prod + (myArray1[i] * myArray2[i])</cline>
+      <cline>  return inner_prod</cline>
+    </cd>
+
+    <p>Answer the following regarding the run-time complexity of the following 
+    implementation to compute the inner product between two arrays.
+    </p>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Inner Product Complexity</title><introduction>
+      </introduction><myopenmath problem="988776" />
+	  </exercise>
+
+    <p>Now try the following examples for computing the inner product between 
+    two arrays on your own.</p>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Compute Inner Product 1</title><introduction>
+      </introduction><myopenmath problem="988777" />
+	  </exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Compute Inner Product 1</title><introduction>
+      </introduction><myopenmath problem="988778" />
+	  </exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Compute Inner Product 1</title><introduction>
+      </introduction><myopenmath problem="988779" />
+	  </exercise>
+
+    <p>Another type of array product is the <em>outer-product</em>. Given two one-dimensional 
+    arrays, we can define the outer product between them. The outer-product, 
+    however, results in a two-dimensional array. If <c>array1</c> and <c>array2</c> 
+    are arrays of length <m>m</m> and <m>n</m> respectively, then the outer product 
+    between <c>array1</c> and <c>array2</c> is an <m>m\times n</m> array. Note that this 
+    also means that <c>inner_product(array1, array2)</c> is generally not the same as 
+    <c>inner_product(array2, array1)</c>. We'll see how to compute the inner product 
+    in our next section.
+    </p>
+
+  </subsection>
 
 
 
