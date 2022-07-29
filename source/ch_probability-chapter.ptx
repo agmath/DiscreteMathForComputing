@@ -9,7 +9,14 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>In progress. This chapter will eventually include the following 
+    sections.
+    <ul>
+      <li> Counting and Discrete Probabilities</li>
+      <li> Discrete Probability Distributions</li>
+      <li> Queueing</li>
+    </ul>
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->

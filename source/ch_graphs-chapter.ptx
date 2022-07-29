@@ -9,7 +9,15 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>In progress. We don't intent for much to be included here, since 
+    the Project III chapter which follows asks the reader to research a 
+    topic in graph theory. This chapter will eventually include the 
+    following sections covering very basic background.
+    <ul>
+      <li> Introduction to Graph Theory</li>
+      <li> Special Classes of Graph</li>
+    </ul>
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -23,5 +31,5 @@
   -->
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_graphs-ch.ptx"/>
+  <!--<xi:include href="./ex_graphs-ch.ptx"/>-->
 </chapter>

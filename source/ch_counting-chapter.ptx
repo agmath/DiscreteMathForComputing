@@ -9,7 +9,15 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>In progress. Will include the following sections.
+    <ul>
+      <li> Counting Basics</li>
+      <li> Counting Permutations</li>
+      <li> Counting Selections Using Binomial Coefficients</li>
+      <li> The Fundamental Principle of Counting</li>
+      <li> Big-O Notation and Run-Time Complexity</li>
+    </ul>
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -17,12 +25,12 @@
   <!-- That way it is easy to include the section in a different -->
   <!-- chapter later if you change your mind about the order.    -->
   <!-- <xi:include href="./sec_sets-ch-intro.ptx" /> -->
-  <xi:include href="./sec_counting-basics.ptx" />
+  <!-- <xi:include href="./sec_counting-basics.ptx" />
   <xi:include href="./sec_counting-permutations.ptx" />
   <xi:include href="./sec_counting-binomial-coefficients.ptx" />
-  <xi:include href="./sec_counting-fundamental-principle.ptx" />
+  <xi:include href="./sec_counting-fundamental-principle.ptx" /> -->
   <xi:include href="./sec_counting-big-O.ptx" />
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_counting-ch.ptx"/>
+  <!--<xi:include href="./ex_counting-ch.ptx"/>-->
 </chapter>

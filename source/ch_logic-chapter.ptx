@@ -5,11 +5,19 @@
 <chapter xml:id="ch-logic" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <!-- Change title when you have one: -->
-  <title>Symbolic Logic and Boolean Algebra</title>
+  <title>Symbolic Logic, Boolean Algebra, and Flow Control</title>
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>In progress. This chapter will eventually contain the following 
+    sections.
+    <ul>
+      <li> Introduction to Statements and Symbolic Logic</li>
+      <li> Conditional Statements and Logical Equivalence</li>
+      <li> Boolean Algebra</li>
+      <li> Logic for Programmatic Flow Control</li>
+    </ul>
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -23,5 +31,5 @@
   -->
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_logic-ch.ptx"/>
+  <!--<xi:include href="./ex_logic-ch.ptx"/>-->
 </chapter>

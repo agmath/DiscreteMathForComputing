@@ -9,7 +9,13 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress...</p>
+    <p>In progress. This chapter will eventually include the following 
+    sections.
+    <ul>
+      <li> Functions and Their Properties</li>
+      <li> Composition of Functions and Invertibility</li>
+    </ul>
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -23,5 +29,5 @@
   -->
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_functions-ch.ptx"/>
+  <!--<xi:include href="./ex_functions-ch.ptx"/>-->
 </chapter>

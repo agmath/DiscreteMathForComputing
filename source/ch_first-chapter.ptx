@@ -26,5 +26,5 @@
   <xi:include href="./sec_firstch-b1tob2.ptx" />
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_firstch.ptx"/>
+  <!--<xi:include href="./ex_firstch.ptx"/>-->
 </chapter>
