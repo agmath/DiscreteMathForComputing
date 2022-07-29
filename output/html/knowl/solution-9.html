@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-28T21:13:55-04:00       *-->
+<!--*       on 2022-07-28T21:20:04-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,8 +16,16 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h3 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.1.6.1</span><span class="period">.</span>
-</h3>Note that the routine uses three operations in order to transform the input <code class="code-inline tex2jax_ignore">array</code> into the value which is returned. First, the item in <code class="code-inline tex2jax_ignore">array[0]</code> is stored in the variable <span class="process-math">\(a\text{.}\)</span> Next, the intem in <code class="code-inline tex2jax_ignore">array[1]</code> is stored in the variable <span class="process-math">\(b\text{.}\)</span> Finally, the sum, <span class="process-math">\(a + b\)</span> is stored in the <code class="code-inline tex2jax_ignore">total</code> variable, which is the value to be returned. Three operations are being completed here, so we might say that this routine has run-time complexity <span class="process-math">\(O\left(3\right)\text{.}\)</span> The attentive reader may ask why this routine is not <span class="process-math">\(O\left(4\right)\)</span> because of the <code class="code-inline tex2jax_ignore">return</code> statement. In short, we shouldn't waste time making a distinction because, regardless of whether we consider <code class="code-inline tex2jax_ignore">return</code>ing a value to be an operation or not, this routine has <em class="emphasis">constant</em> run-time. That is, this routine is also <span class="process-math">\(O\left(1\right)\text{.}\)</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.1.7.1</span><span class="period">.</span>
+</h3>
+<p>The presence of the loop here has the potential to result in run times that are related to the size of the input <code class="code-inline tex2jax_ignore">array</code>. There is a single operation being done within the body of the <code class="code-inline tex2jax_ignore">for</code> loop. That is, the body of the loop has <span class="process-math">\(O\left(1\right)\)</span> run-time. The loop will run once for each <code class="code-inline tex2jax_ignore">element</code> in the input <code class="code-inline tex2jax_ignore">array</code>. Let's label the number of elements in the input <code class="code-inline tex2jax_ignore">array</code> by <span class="process-math">\(n\text{.}\)</span> We'll ignore accounting for the "operations" of setting up the loop and <code class="code-inline tex2jax_ignore">return</code>ing the result, but there is the operation required to initialize the <code class="code-inline tex2jax_ignore">myProd</code> variable which we will account for.</p>
+<p>Given the analysis above, the total run-time for this routine is <span class="process-math">\(n\cdot O\left(1\right) + O\left(1\right)\text{.}\)</span> When analyzing the run-time complexity of a routine, we are looking to identify the <em class="emphasis">bottlenecks</em> in our code. This means that we care only about the part of the code whose run-time grows the fastest. For this reason, we identify the highest-order term in our analysis and throw away all of the others (since for very large input arrays, the lower-order terms will have diminished impact on the observed run-time). This leaves us with</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+n\cdot O\left(1\right) + O\left(1\right) \amp = O\left(n\right) + O\left(1\right)\\
+\amp = O\left(n\right)
+\end{align*}
+</div>
 </div>
 <span class="incontext"><a href="sec_counting-big-O.html#solution-9" class="internal">in-context</a></span>
 </body>

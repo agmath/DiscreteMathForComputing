@@ -16,6 +16,14 @@
     elements. We'll explore properties and manipulations of these "bags 
     of elements" for the duration of the chapter.
     </p>
+
+    <p>This chapter will eventually include the following sections.
+    <ul>
+      <li> Foundations for Working with Sets</li>
+      <li> Set Operations</li>
+      <li> Sets of Sets</li>
+    </ul>
+    </p>
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
@@ -23,10 +31,10 @@
   <!-- That way it is easy to include the section in a different -->
   <!-- chapter later if you change your mind about the order.    -->
   <!--<xi:include href="./sec_sets-ch-intro.ptx" />-->
-  <xi:include href="./sec_sets-ch-foundations.ptx" />
+  <!--<xi:include href="./sec_sets-ch-foundations.ptx" />
   <xi:include href="./sec_sets-ch-operations.ptx" />
-  <xi:include href="./sec_sets-ch-setsofsets.ptx" />
+  <xi:include href="./sec_sets-ch-setsofsets.ptx" />-->
 
   <!-- One or more of the sections of a chapter might be exercises-->
-  <xi:include href="./ex_sets-ch.ptx"/>
+  <!--<xi:include href="./ex_sets-ch.ptx"/>-->
 </chapter>
