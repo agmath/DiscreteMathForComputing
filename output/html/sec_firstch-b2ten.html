@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-28T21:20:03-04:00       *-->
+<!--*       on 2022-07-29T15:07:42-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -140,7 +140,9 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="link"><a href="ch-sets.html" data-scroll="ch-sets" class="internal"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a></li>
-<li class="link"><a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a></li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul><li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li></ul>
+</li>
 <li class="link">
 <a href="ch-project1.html" data-scroll="ch-project1" class="internal"><span class="codenumber">4</span> <span class="title">Project I</span></a><ul><li><a href="sec_p1-outline.html" data-scroll="sec_p1-outline" class="internal">Building a Base-Conversion Function</a></li></ul>
 </li>
@@ -229,7 +231,7 @@ eBookConfig.enable_chatcodes =  false;
 <p id="p-21">In the previous subsection, we identified how number systems in different bases work, and highlighted how it is just a generalization of representing numbers using our common decimal system. From that discussion, we see that the binary system utilizes only two digits, 0 and 1, and place-values are attached to increasing powers of 2 as we move towards the left. These <em class="emphasis">bi</em>nary dig<em class="emphasis">its</em> are often referred to as <em class="emphasis">bits</em>. Moving to the octal system, we can deduce that it utilizes eight digits, 0 through 7, and that place-values are determined by increasing powers of 8 as we move towards the left.</p>
 <p id="p-22">The understanding above extends to hexadecimal, but creates a small problem. We've run out of digits to use. Indeed, the hexadecimal system will utilize sixteen unique digits. To accommodate this, we'll utilize 0 through 9 as usual, but then include <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> to represent the quantites 10 - 15, as we know them. Why can't we use 10 - 15 to represent themselves? If we did so, the encoding <span class="process-math">\(\left(510\right)_{16}\)</span> becomes ambiguous. For example, do we mean <span class="process-math">\(\left(5\cdot 16^2 + 1 \cdot 16^1 + 0\cdot 16^0\right) = 
 \left(1296\right)_{10}\)</span> or do we mean <span class="process-math">\(\left(5\cdot 16^1 + 10\cdot 16^0\right) 
-= \left(26\right)_{10}\text{?}\)</span> Making use of the characters <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> prevents this ambiguity. The correct hexadecimal encoding of <span class="process-math">\(26_{10}\)</span> would be <span class="process-math">\(\left(1A\right)_{16}\text{.}\)</span> We'll discuss more on how to make this conversion in the next section.</p></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
+= \left(90\right)_{10}\text{?}\)</span> Making use of the characters <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> prevents this ambiguity. The correct hexadecimal encoding of <span class="process-math">\(90_{10}\)</span> would be <span class="process-math">\(\left(5A\right)_{16}\text{.}\)</span> We'll discuss more on how to make this conversion in the next section.</p></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Conclusion</span>
 </h3>
 <p id="p-23">In this section we've seen that numbers can be written in a variety of bases. In particular, any positive integer can serve as the base for a number system. For bases larger than 10, we run out of our (familiar) digits, and need to include symbols to represent larger quanitities -- like using the characters <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> to represent 10 - 15 in the hexadecimal system.</p>

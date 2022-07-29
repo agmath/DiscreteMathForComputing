@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-28T21:20:04-04:00       *-->
+<!--*       on 2022-07-29T15:07:43-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<p>In this section we apply our knowledge of looping and counting to develop the notion of big-O notation. We'll look at routines which accept an array as input and explore the growth in the number of operations run during execution of the routine as the size of the input array grows. In particular, we'll see applications which are <span class="process-math">\(O\left(1\right)\text{,}\)</span> <span class="process-math">\(O\left(n\right)\text{,}\)</span> <span class="process-math">\(O\left(n^2\right)\text{,}\)</span> and <span class="process-math">\(O\left(n^3\right)\text{.}\)</span></p>
-<span class="incontext"><a href="sec_counting-big-O.html#p-86" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p>Notice that <code class="code-inline tex2jax_ignore">my_doubling_function()</code> does not include a preset number of iterations over which the <code class="code-inline tex2jax_ignore">val = 2*val</code> code in the <code class="code-inline tex2jax_ignore">while</code> loop will be run. At each iteration through the loop, <code class="code-inline tex2jax_ignore">val</code> is checked to see whether it exceeds <span class="process-math">\(100\text{.}\)</span> As soon as <code class="code-inline tex2jax_ignore">val</code> exceeds <span class="process-math">\(100\text{,}\)</span> the <code class="code-inline tex2jax_ignore">while</code> loop is terminated. Try running the function with several input different input values. Unfortunately, with a <code class="code-inline tex2jax_ignore">while</code> loop it is possible to find yourself in a scenario where you function loops infinitely, never returning a value, and eventually crashing. Such is the case here if we try evaluating <code class="code-inline tex2jax_ignore">my_doubling_function()</code> with a negative input value.</p>
+<span class="incontext"><a href="sec_logic-ch-flow-control.html#p-86" class="internal">in-context</a></span>
 </body>
 </html>

@@ -110,9 +110,9 @@
 		the encoding <m>\left(510\right)_{16}</m> becomes ambiguous. For example, do we 
 		mean <m>\left(5\cdot 16^2 + 1 \cdot 16^1 + 0\cdot 16^0\right) = 
 		\left(1296\right)_{10}</m> or do we mean <m>\left(5\cdot 16^1 + 10\cdot 16^0\right) 
-		= \left(26\right)_{10}</m>? Making use of the characters <m>A</m> through <m>F</m> 
-		prevents this ambiguity. The correct hexadecimal encoding of <m>26_{10}</m> 
-		would be <m>\left(1A\right)_{16}</m>. We'll discuss more on how to make this 
+		= \left(90\right)_{10}</m>? Making use of the characters <m>A</m> through <m>F</m> 
+		prevents this ambiguity. The correct hexadecimal encoding of <m>90_{10}</m> 
+		would be <m>\left(5A\right)_{16}</m>. We'll discuss more on how to make this 
 		conversion in the next section.</p> 
 	</subsection>
 

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_logic-ch-flow-control" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Logic for Flow Control</title>
+<introduction>
+<p>In this section we'll take what we've learned about logic and apply it to 
+computing in such a way that it helps control which commands are run when a 
+routine is called. We'll find that the logical connectors <c>and</c>, <c>or</c>,
+<c>not</c>, and <c>if</c> are quite useful in code. We'll start this section by 
+using them to write some simple routines.</p>
+
+<p>Once we've seen <c>if</c>, <c>and</c>, <c>or</c>, and <c>not</c> in action,  
+We'll introduce three other logical operators often found in code. The <c>else</c> 
+keyword can be combined with an <c>if</c> statement to provide alternate code to 
+be run in the case that the conditions on the <c>if</c> statement are not 
+satisfied. We can even combine <c>else if</c> to define alternate sets of 
+conditions in series, resulting in the running of different code in each scenario. 
+We'll also introduce two looping structures, the <c>for</c> loop and the 
+<c>while</c> loop. These looping structures allow the same code to be run over 
+and over again. In the case of the <c>for</c> loop a predetermined number of 
+iterations will be run, but in the case of the <c>while</c> loop the code will be 
+run until a termination condition is satisfied.
+</p>
+</introduction>
+
+<subsection><title>Conditional Statements in Code</title>
+<p>Earlier in this chapter, we were exposed to conditional statements of the 
+form <m>P\implies Q</m>. We read these statements <em> If <m>P</m> is true, then 
+<m>Q</m> is true</em>. The idea with code is quite similar -- the interpretation 
+of <em>If <m>P</m>, then <m>Q</m></em> in code, however, is <em>If <m>P</m> is 
+true, then do <m>Q</m></em>. Seeing this in action will help.
+</p>
+
+<p>Let's write a simple snippet of code which will test whether an input value is 
+even, and will report back <c>"The input is even!"</c> if that is the case. We'll 
+see an implementation in pseudocode below, and then I'll provide a working version 
+in Python so that you can run the code and experiment with it.
+</p>
+
+<cd>
+    <cline>def is_even(myNumber):</cline>
+    <cline>  if myNumber is divisible by 2:</cline>
+    <cline>    print("The input is even!")</cline>
+    <cline>  return None</cline>
+</cd>
+
+<p>The first line in the pseudocode <c>def</c>ines the function, including its 
+name and any inputs (parameters) it requires. The second line contains the <c>if</c> 
+statement and its condition. That is, this line defines the <em>If <m>P</m></em> portion 
+of our conditional statement. The line ends with a colon, and all indented lines 
+below this one define what will be done if the condition is true. That is, the 
+indented lines define the <em>then <m>Q</m></em> portion of our conditional statement. 
+Different programming languages have slightly different syntax. For example, the 
+colon and indentation are used in Python, but curly braces surround the code to 
+be run when the condition is true in C++, R, and others. The final line in the 
+pseudocode definition of the function is a <c>return</c> statement. It describes 
+what the result of the function is and how it will be passed back to the computing 
+environment. The function we've written has nothing to return, which we describe 
+as <c>return</c>ing <c>None</c>.</p>
+
+<p>The following is a live implementation of the <c>is_even()</c> function in 
+Python. Please consider experimenting with the code. At the very least, try 
+evaluating <c>is_even()</c> for other input values.
+</p>
+
+<sage language="python">
+    <input>
+    def is_even(myNumber):
+      if myNumber % 2 == 0:
+        print("The input is even!")
+      return None
+    
+    is_even(846)
+    </input>
+</sage>
+
+<p>The Python implementation of the <c>is_even()</c> function looks quite 
+similar to the pseudocode we used to describe the function initially. The major 
+difference is how the condition on the <c>if</c> statement appears. The 
+expression <c>myNumber % 2</c> computes the remainder when <c>myNumber</c> is 
+divided by <c>2</c>. The <c>==</c> is a test for whether the value on the left 
+of the operator is identically the same as the value on the right of the 
+operator. All together, <c>myNumber % 2 == 0</c> evaluates to <c>true</c> if 
+the remainder when dividing the input <c>myNumber</c> by <c>2</c> is <c>0</c>, 
+and it evaluates to <c>false</c> otherwise. This means that our call to 
+<c>print()</c> will only be executed if the <c>myNumber</c> input parameter is 
+even.
+</p>
+
+<p>If you played around with the function, you'll have likely noticed that 
+nothing is printed out if you pass a value to the <c>myNumber</c> parameter 
+which is not even. We can add an <c>else</c> statement to print out that the 
+input is odd if the original conditional is not satisfied. We'll do that in 
+pseudocode and follow it up with a live implementation below. 
+</p>
+
+<cd>
+    <cline>def is_even(myNumber):</cline>
+    <cline>  if myNumber is divisible by 2:</cline>
+    <cline>    print("The input is even!")</cline>
+    <cline>  else: </cline>
+    <cline>    print("The input is odd!") </cline>
+    <cline>  return None</cline>
+</cd>
+
+<sage language="python">
+    <input>
+    def is_even(myNumber):
+      if myNumber % 2 == 0:
+        print("The input is even!")
+      else:
+        print("The input is odd!")
+      return None
+    
+    is_even(113)
+    </input>
+</sage>
+
+<p>Hopefully you noticed that we've constructed a function which no longer 
+behaves correctly. If you didn't notice this, try passing the value 0.5 to 
+the <c>myNumber</c> input parameter. The function prints out that <c>"The 
+input is odd"</c>, but that's not correct. This brings up an important point 
+about code and computing in general. Computers are great at following 
+instructions, but they aren't smart. The computer has no way to know that 
+it is providing us with wrong information -- instead, it is only following 
+the instructions that we've written for it. We can create a better (and 
+correct) version of our function if we use <c>else if</c> followed by an 
+<c>else</c> statement to catch scenarios where the user has input a 
+non-integer. Below is what that might look like using pseudocode as well 
+as in a live Python implementation.
+</p>
+
+<cd>
+    <cline>def is_even(myNumber):</cline>
+    <cline>  if myNumber is divisible by 2:</cline>
+    <cline>    print("The input is even!")</cline>
+    <cline>  else if myNumber has a remainder of 1 under division by 2: </cline>
+    <cline>    print("The input is odd!") </cline>
+    <cline>  else: </cline>
+    <cline>    print("The input was not an integer!")</cline>
+    <cline>  return None</cline>
+</cd>
+
+<sage language="python">
+    <input>
+    def is_even(myNumber):
+      if myNumber % 2 == 0:
+        print("The input is even!")
+      elif myNumber % 2 == 1:
+        print("The input is odd!")
+      else:
+        print("The input was not an integer!")
+      return None
+    
+    is_even(0.5)
+    </input>
+</sage>
+
+<p>Note that in the working implementation, the combination <c>else if</c> is 
+shortened to <c>elif</c>. This is a common feature of many languages, since it 
+helps to avoid nested <c>if</c> statements within <c>else</c> statements. The 
+result is more compact and readable code. 
+</p>
+
+</subsection>
+
+<subsection><title>Conditionals with Compound Conditions</title>
+<p>In each iteration of the <c>is_even()</c> function explored in the previous 
+subsection, we tested simple conditions for each <c>if</c> or <c>else if</c> 
+conditional. We are certainly able to require more complex conditions to be 
+satisfied in order for the code in the body of the conditional to be run. We 
+can combine simple conditions using the <c>and</c>, <c>or</c>, and <c>not</c> 
+logical connectors we've learned about throughout this chapter.
+</p>
+
+<p>Let's see this by building a new function, `is_large_even()` which prints 
+out <c>"The input is over 1000 and is even!"</c> if the input value exceeds 
+<m>1000</m> and is en even number, and prints that <c>"The input is either 
+small or is not even!"</c> otherwise. As before, we'll start with a pseudocode 
+implementation followed by a live implementation in Python below.
+</p>
+
+<cd>
+    <cline>def is_large_even(myNumber):</cline>
+    <cline>  if (myNumber is even) and (myNumber > 1000):</cline>
+    <cline>    print("The input is over 1000 and is even!")</cline>
+    <cline>  else:</cline>
+    <cline>    print(The input is either small or is not even!)</cline>
+    <cline>  return None</cline>
+</cd>
+
+<sage language="python">
+    <input>
+    def is_large_even(myNumber):
+      if ((myNumber % 2 == 0) and (myNumber > 1000)):
+        print("The input is over 1000 and is even!")
+      else:
+        print("The input is either small or is not even!")
+      return None
+    
+    is_large_even(5250)
+    </input>
+</sage>
+
+<p>In Python we simply used the keyword <c>and</c> to create the compound 
+conditional statement. The keywords <c>or</c> and <c>not</c> can be used 
+similarly in Python. In other languages the syntax is for constructing these 
+compound conditionals is similar, but you may need to use symbols in place 
+of the <c>and</c>/<c>or</c>/<c>not</c> keywords. For example, in C++ we write 
+<c>\amp\amp</c> to mean "and", use <c>||</c> in place of "or", and use <c>!</c>
+in place of "not".  For example, let's create a new function which will print 
+<c>"true"</c> if its input value is large and even <em>or</em> is <em>not</em> 
+a multiple of <m>3</m>, but will print <c>"false"</c> otherwise. We show a 
+version of the function in pseudocode and a working Python implementation 
+below. 
+</p>
+
+<cd>
+    <cline>def is_large_even_or_not_mult3(myNumber):</cline>
+    <cline>  if ((myNumber is even) and (myNumber > 1000)) or (myNumber is not a multiple of 3):</cline>
+    <cline>    print("true")</cline>
+    <cline>  else:</cline>
+    <cline>    print("false")</cline>
+    <cline>  return None</cline>
+</cd>
+
+<sage language="python">
+    <input>
+    def is_large_even_or_not_mult3(myNumber):
+      if ((myNumber % 2 == 0) and (myNumber > 1000)) or (myNumber % 3 != 0):
+        print("true")
+      else:
+        print("false")
+      return None
+
+    is_large_even_or_not_mult3(3000)
+    </input>
+</sage>
+
+<p>You may notice that, in the working implementation, <c>myNumber % 3 != 0</c> 
+was used to test whether the input <c>myNumber</c> is not divisible by <m>3</m>. 
+There are, of course, other ways to encode this test -- perhaps something like 
+<c>(not (myNumber % 3 == 0))</c>. There are always multiple means to an end; we 
+typically prefer code which is more simple, more readable, and more efficient.
+</p>
+
+</subsection>
+
+<subsection><title>Looping with <c>for</c> and <c>while</c></title>
+<p>Now that we've seen conditionals as well as our logical connectors in 
+action, let's see a slightly more advanced feature of code. We'll explore loops, 
+which can help us re-run the same set of instructions many times. We'll make use 
+of two types of loop here because they'll be helpful to us when we return to 
+develop a base-conversion function which will convert between two arbitraty bases 
+(although we'll build a function that only works as long as those bases are both 
+at most 10).
+</p>
+
+<p>We'll start our discussion of loops with the <c>for</c> loop. A <c>for</c> 
+loop will run through a block of code (instructions) for a set number of 
+iterations. For example, perhaps we would like to double every value in a list. 
+Then we can struct a <c>for</c> loop which will double each value from an input 
+list. The doubling code will run once for each element in the list and then the 
+loop will terminate. Let's see such a function.
+</p>
+
+<cd>
+    <cline>def double_list_values(myList):</cline>
+    <cline>  n = length(myList)</cline>
+    <cline>  doubled_list = new list of length n</cline>
+    <cline>  for i in list(0, 1, ..., n - 1):</cline>
+    <cline>    doubled_list element i = 2*(myList element i)</cline>
+    <cline>  return doubled_list</cline>
+</cd>
+
+<sage language="python">
+    <input>
+    def double_list_values(myList):
+        n = len(myList)
+        doubled_list = n*[0]
+        for i in range(n):
+            doubled_list[i] = 2*myList[i]
+        return doubled_list
+    
+    result = double_list_values([1, 10, 0, -12, 5])
+    print(result)
+    </input>
+</sage>
+
+<p>Please experiment with the code above. Try evaluating 
+<c>double_list_values()</c> on lists of a variety of lengths. The <c>for</c> 
+loop in the function definition adapts automatically to input lists of any 
+length. This makes our function quite flexible. You'll note that when we 
+evaluated our function this time, we stored the result in a new variable and 
+then explicitly printed it out. This is because values returned by a function 
+are not generally printed out in any language. We need to explicitly ask for 
+the returned value to be printed. See this for yourself by simply running 
+<c>double_list_values([1, 2, 3])</c> -- while nothing is printed out, the 
+values of the input list are doubled.
+</p>
+
+<p>There are a few additional things to notice here about the Python 
+implementation of the <c>double_list_values()</c> function. First, a majority 
+of programming languages are 0-indexed. That means for objects like lists or 
+arrays, the first element occupies index 0, the second occupies index 1, etc. 
+This takes some getting used to, but we've adopted the 0-indexing convention 
+here since you are almost certain to encounter it in the future. Next, in 
+the working implementation which uses Python, the code <c>n*[0]</c> initializes 
+a list of length <c>n</c>, all of whose entries are <c>0</c>. In Python, lists 
+are denoted/defined by square brackets. Finally, in Python we can access the 
+item occupying the <c>i</c><m>^{\text{th}}</m> index of a list by using 
+<c>ListName[i]</c>. Finally, values returned by a function are not printed out 
+unless we explicitly ask for that behavior. You can see this for yourself by 
+simply running <c>double_list_values([1, 2, 3])</c>. You'll notice that other 
+languages have slightly different syntax for working with lists.
+</p>
+
+<p>What if there is no way to determine ahead of time the number of iterations 
+that the code within the loop should be run? For example, what if we would like 
+to run a block of code until a condition is no longer true? For example, what 
+if we would like to double an input value until the result exceeds 100? There's 
+no convenient/simple way to determine ahead of time the number of iterations the 
+loop should run through before terminating. This is exactly a scenario for a 
+<c>while</c> loop. Let's build the function described above.
+</p>
+<cd>
+    <cline>def my_doubling_function(startingValue):</cline>
+    <cline>  val = startingValue</cline>
+    <cline>  while val &lt;= 100: </cline>
+    <cline>    val = 2*val</cline>
+    <cline>  return val</cline>
+</cd>
+
+<sage language="python">
+    <input>
+    def my_doubling_function(startingValue):
+        val = startingValue
+        while val &lt;= 100:
+            val = 2*val
+        return val
+    
+    result = my_doubling_function(5)
+    print(result)
+    </input>
+</sage>
+
+<p>Notice that <c>my_doubling_function()</c> does not include a preset number 
+of iterations over which the <c>val = 2*val</c> code in the <c>while</c> loop 
+will be run. At each iteration through the loop, <c>val</c> is checked to see 
+whether it exceeds <m>100</m>. As soon as <c>val</c> exceeds <m>100</m>, the 
+<c>while</c> loop is terminated. Try running the function with several input 
+different input values. Unfortunately, with a <c>while</c> loop it is possible 
+to find yourself in a scenario where you function loops infinitely, never 
+returning a value, and eventually crashing. Such is the case here if we try 
+evaluating <c>my_doubling_function()</c> with a negative input value.
+</p>
+
+</subsection>
+
+<subsection><title>Putting it all together</title>
+<p>In this final, subsection, we'll provide ourselves an opportunity to build 
+a function which explores the Collatz Conjecture. You may have heard of this 
+colloquially as the "<m>3x + 1</m>" conjecture. Below is a video from the 
+Veritasium YouTube channel discussing the conjecture.
+</p>
+
+<p>
+<video youtube="094y1Z2wpJg"/>
+</p>
+
+<p>The conjecture is simple enough to state. Create a sequence by choosing any 
+positive integer starting value you like. Obtain the next element of the 
+sequence by either dividing by <m>2</m> (if the current sequence element is 
+even), or multiplying the current sequence value by <m>3</m> and adding 
+<m>1</m>. The conjecture claims that no matter your choice of starting value, 
+the resulting sequence will eventually attain a value of <m>1</m>, which then 
+results in the sequence repeating <m>4, 2, 1</m> forever. Nobody, not even the 
+best mathematicians in the world, has been able to prove or disprove this claim. 
+We can use code to create the sequence of values created by this procedure for a 
+given starting value. It will require several of the ideas we've introduced here.
+</p>
+
+<cd>
+    <cline>def collatz_sequence(startVal):</cline>
+    <cline>  my_sequence = empty list</cline>
+    <cline>  current_val = startVal</cline>
+    <cline>  append startVal to my_sequence</cline>
+    <cline>  while current_val is not 1:</cline>
+    <cline>    if current_val is divisible by 2:</cline>
+    <cline>      current_val = current_val / 2</cline>
+    <cline>    else:</cline>
+    <cline>      current_val = 3*current_val + 1</cline>
+    <cline>    append current_val to my_sequence</cline>
+    <cline>  return my_sequence</cline>
+</cd>
+
+<sage language="python">
+    <input>
+    def collatz_sequence(startValue):
+        my_sequence = []
+        current_val = startValue 
+        my_sequence = my_sequence + [current_val]
+        while current_val != 1:
+            if current_val % 2 == 0:
+                current_val = current_val / 2
+            else:
+                current_val = 3*current_val + 1
+            my_sequence = my_sequence + [current_val]
+        return my_sequence
+    
+    result = collatz_sequence(5)
+    print(result)
+    </input>
+</sage>
+
+<p>Try computing the <c>collatz_sequence()</c> for a variety of different 
+<c>startValue</c>s. Do you always end up with a sequence terminating at <m>1</m>? 
+Below is another function containing a <c>for</c> loop which has the ability to 
+call our <c>collatz_sequence()</c> function many times and plot the resulting 
+sequences.
+</p>
+
+<sage language="python">
+    <input>
+    import matplotlib.pyplot as plt
+    import random
+
+    def plot_collatz_sequences(n_iterations):
+        for i in range(n_iterations):
+            startValue = random.randint(5, 10000)
+            sequence = collatz_sequence(startValue)
+            plt.plot(sequence)
+        
+        plt.show()
+        return None
+
+    plot_collatz_sequences(50)
+    </input>
+</sage>
+
+</subsection>
+
+<subsection><title>Conclusion</title>
+<p>That's it for this section. Hopefully you enjoyed applying our newfound 
+knowledge of logic to code. You saw how the use of <c>if</c>, <c>else if</c>, 
+and <c>else</c> statements combined with conditions can direct the flow of 
+your code. This is powerful because it allows us to run different 
+instructions depending on the state of a parameter within our code. You also 
+saw how we can use looping to run the same set of instructions over and over 
+within a function. We saw that <c>for</c> loops can be used when we know the 
+number of iterations the loop must run ahead of time. If a loop should run an 
+unspecified number of iterations and terminate only when a stopping condition 
+is satisfied, then we should use a <c>while</c> loop. If you decide to complete 
+<em>Project I</em> in the next chapter, you'll have an opportunity to test 
+out what you've learned here. 
+</p>
+</subsection>
+
+</section>
+
