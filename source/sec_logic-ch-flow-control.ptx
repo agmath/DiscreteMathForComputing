@@ -66,9 +66,9 @@ evaluating <c>is_even()</c> for other input values.
 <sage language="python">
     <input>
     def is_even(myNumber):
-      if myNumber % 2 == 0:
-        print("The input is even!")
-      return None
+        if myNumber % 2 == 0:
+            print("The input is even!")
+        return None
     
     is_even(846)
     </input>
@@ -106,11 +106,11 @@ pseudocode and follow it up with a live implementation below.
 <sage language="python">
     <input>
     def is_even(myNumber):
-      if myNumber % 2 == 0:
-        print("The input is even!")
-      else:
-        print("The input is odd!")
-      return None
+        if myNumber % 2 == 0:
+            print("The input is even!")
+        else:
+            print("The input is odd!")
+        return None
     
     is_even(113)
     </input>
@@ -144,13 +144,13 @@ as in a live Python implementation.
 <sage language="python">
     <input>
     def is_even(myNumber):
-      if myNumber % 2 == 0:
-        print("The input is even!")
-      elif myNumber % 2 == 1:
-        print("The input is odd!")
-      else:
-        print("The input was not an integer!")
-      return None
+        if myNumber % 2 == 0:
+            print("The input is even!")
+        elif myNumber % 2 == 1:
+            print("The input is odd!")
+        else:
+            print("The input was not an integer!")
+        return None
     
     is_even(0.5)
     </input>
@@ -192,11 +192,11 @@ implementation followed by a live implementation in Python below.
 <sage language="python">
     <input>
     def is_large_even(myNumber):
-      if ((myNumber % 2 == 0) and (myNumber > 1000)):
-        print("The input is over 1000 and is even!")
-      else:
-        print("The input is either small or is not even!")
-      return None
+        if ((myNumber % 2 == 0) and (myNumber > 1000)):
+            print("The input is over 1000 and is even!")
+        else:
+            print("The input is either small or is not even!")
+        return None
     
     is_large_even(5250)
     </input>
@@ -227,11 +227,11 @@ below.
 <sage language="python">
     <input>
     def is_large_even_or_not_mult3(myNumber):
-      if ((myNumber % 2 == 0) and (myNumber > 1000)) or (myNumber % 3 != 0):
-        print("true")
-      else:
-        print("false")
-      return None
+        if ((myNumber % 2 == 0) and (myNumber > 1000)) or (myNumber % 3 != 0):
+            print("true")
+        else:
+            print("false")
+        return None
 
     is_large_even_or_not_mult3(3000)
     </input>

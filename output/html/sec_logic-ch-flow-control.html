@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-29T15:07:42-04:00       *-->
+<!--*       on 2022-07-29T15:19:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -209,9 +209,9 @@ eBookConfig.enable_chatcodes =  false;
 <p id="p-71">The first line in the pseudocode <code class="code-inline tex2jax_ignore">def</code>ines the function, including its name and any inputs (parameters) it requires. The second line contains the <code class="code-inline tex2jax_ignore">if</code> statement and its condition. That is, this line defines the <em class="emphasis">If <span class="process-math">\(P\)</span></em> portion of our conditional statement. The line ends with a colon, and all indented lines below this one define what will be done if the condition is true. That is, the indented lines define the <em class="emphasis">then <span class="process-math">\(Q\)</span></em> portion of our conditional statement. Different programming languages have slightly different syntax. For example, the colon and indentation are used in Python, but curly braces surround the code to be run when the condition is true in C++, R, and others. The final line in the pseudocode definition of the function is a <code class="code-inline tex2jax_ignore">return</code> statement. It describes what the result of the function is and how it will be passed back to the computing environment. The function we've written has nothing to return, which we describe as <code class="code-inline tex2jax_ignore">return</code>ing <code class="code-inline tex2jax_ignore">None</code>.</p>
 <p id="p-72">The following is a live implementation of the <code class="code-inline tex2jax_ignore">is_even()</code> function in Python. Please consider experimenting with the code. At the very least, try evaluating <code class="code-inline tex2jax_ignore">is_even()</code> for other input values.</p>
 <pre class="ptx-sagecell sagecell-python" id="sage-1"><script type="text/x-sage">def is_even(myNumber):
-  if myNumber % 2 == 0:
-    print("The input is even!")
-  return None
+    if myNumber % 2 == 0:
+        print("The input is even!")
+    return None
 
 is_even(846)
 </script></pre>
@@ -225,11 +225,11 @@ is_even(846)
   return None
 </pre>
 <pre class="ptx-sagecell sagecell-python" id="sage-2"><script type="text/x-sage">def is_even(myNumber):
-  if myNumber % 2 == 0:
-    print("The input is even!")
-  else:
-    print("The input is odd!")
-  return None
+    if myNumber % 2 == 0:
+        print("The input is even!")
+    else:
+        print("The input is odd!")
+    return None
 
 is_even(113)
 </script></pre>
@@ -245,13 +245,13 @@ input is odd"</code>, but that's not correct. This brings up an important point 
   return None
 </pre>
 <pre class="ptx-sagecell sagecell-python" id="sage-3"><script type="text/x-sage">def is_even(myNumber):
-  if myNumber % 2 == 0:
-    print("The input is even!")
-  elif myNumber % 2 == 1:
-    print("The input is odd!")
-  else:
-    print("The input was not an integer!")
-  return None
+    if myNumber % 2 == 0:
+        print("The input is even!")
+    elif myNumber % 2 == 1:
+        print("The input is odd!")
+    else:
+        print("The input was not an integer!")
+    return None
 
 is_even(0.5)
 </script></pre>
@@ -269,11 +269,11 @@ small or is not even!"</code> otherwise. As before, we'll start with a pseudocod
   return None
 </pre>
 <pre class="ptx-sagecell sagecell-python" id="sage-4"><script type="text/x-sage">def is_large_even(myNumber):
-  if ((myNumber % 2 == 0) and (myNumber > 1000)):
-    print("The input is over 1000 and is even!")
-  else:
-    print("The input is either small or is not even!")
-  return None
+    if ((myNumber % 2 == 0) and (myNumber > 1000)):
+        print("The input is over 1000 and is even!")
+    else:
+        print("The input is either small or is not even!")
+    return None
 
 is_large_even(5250)
 </script></pre>
@@ -286,11 +286,11 @@ is_large_even(5250)
   return None
 </pre>
 <pre class="ptx-sagecell sagecell-python" id="sage-5"><script type="text/x-sage">def is_large_even_or_not_mult3(myNumber):
-  if ((myNumber % 2 == 0) and (myNumber > 1000)) or (myNumber % 3 != 0):
-    print("true")
-  else:
-    print("false")
-  return None
+    if ((myNumber % 2 == 0) and (myNumber > 1000)) or (myNumber % 3 != 0):
+        print("true")
+    else:
+        print("false")
+    return None
 
 is_large_even_or_not_mult3(3000)
 </script></pre>
