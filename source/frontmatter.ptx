@@ -25,7 +25,7 @@
 
   <colophon>
     <website>
-      <name><c>Book Site (GitHub)</c></name>
+      <name><c>This book is freely available online.</c></name>
       <address>https://agmath.github.io/DiscreteMathForComputing/output/html/frontmatter.html</address>
     </website>
 
@@ -63,6 +63,12 @@
 
 		<preface id = "preface">
 			<title>About This Text</title>
+
+			<p>This text is currently in development and all of it is subject to 
+			change. A very rough draft version is being prepared with high-priority 
+			sections during the Summer of 2022. We expect to release a first stable 
+			version for September 2023.
+			</p>
 			
 			<p>This interactive, IBL, text was designed for use in a first-year
 			 course in Discrete Mathematics at Southern New Hampshire University. 

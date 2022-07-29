@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-29T15:19:51-04:00       *-->
+<!--*       on 2022-07-29T19:17:05-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,7 @@
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Discrete Mathematics for Computing">
+<meta property="book:title" content="Discrete Mathematics for Computing (Draft)">
 <meta property="book:author" content="Christine Caples">
 <meta property="book:author" content="Adam Gilbert">
 <meta property="book:author" content="Melanie Fraser">
@@ -110,7 +110,7 @@ eBookConfig.enable_chatcodes =  false;
 \)</span></div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing</span></a></h1>
+<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing (Draft)</span></a></h1>
 <p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
 </div>
 </div></div>
@@ -183,65 +183,65 @@ eBookConfig.enable_chatcodes =  false;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_firstch-b2ten"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Converting from Non-Standard Bases into Base-10</span>
 </h2>
-<section class="introduction" id="introduction-3"><p id="p-8">Before discussing a strategy for converting from non-standard bases back to the base-10 (decimal) system, it is worth considering how counting in the decimal system works. Have you ever considered what the number 927 really means? Below is an insightful expansion.</p>
+<section class="introduction" id="introduction-3"><p id="p-9">Before discussing a strategy for converting from non-standard bases back to the base-10 (decimal) system, it is worth considering how counting in the decimal system works. Have you ever considered what the number 927 really means? Below is an insightful expansion.</p>
 <article class="example example-like" id="int-expansion-ex"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-int-expansion-ex"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Explicit Base-10 Expansion.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-int-expansion-ex"><article class="example example-like"><p id="p-9">Below is the explicit base-10 expansion of the integer 927.</p>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-int-expansion-ex"><article class="example example-like"><p id="p-10">Below is the explicit base-10 expansion of the integer 927.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-1">
 \begin{align*}
 927 \amp = 900 + 20 + 7\\
 \amp = 9*(10^2) + 2*(10^1) + 7*(10^0)
 \end{align*}
 </div></article></div>
-<p id="p-10">The example above highlights the role of <em class="emphasis">place-value</em> in any number system, not just our own decimal system. The place of the digit determines the power of the base which it is attached to. The rightmost digit, perhaps you've referred to it as the <em class="emphasis">singles</em> digit, is attached to the <span class="process-math">\(0^{th}\)</span> power of the base. The second digit from the right is attached to the <span class="process-math">\(1^{st}\)</span> power of the base. With each successive position (towards the left) the digit is attached to an increasing power of the relevant base.</p></section><article class="exercise exercise-like" id="exercise-1"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-1"><h3 class="heading">
+<p id="p-11">The example above highlights the role of <em class="emphasis">place-value</em> in any number system, not just our own decimal system. The place of the digit determines the power of the base which it is attached to. The rightmost digit, perhaps you've referred to it as the <em class="emphasis">singles</em> digit, is attached to the <span class="process-math">\(0^{th}\)</span> power of the base. The second digit from the right is attached to the <span class="process-math">\(1^{st}\)</span> power of the base. With each successive position (towards the left) the digit is attached to an increasing power of the relevant base.</p></section><article class="exercise exercise-like" id="exercise-1"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-1"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Explicit Base-10 Expansion.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1"><article class="exercise exercise-like"><div class="introduction" id="introduction-4"><p id="p-11">Use your knowledge of place-value to explicitly write the integer as the sum of its base-10 components.</p></div>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1"><article class="exercise exercise-like"><div class="introduction" id="introduction-4"><p id="p-12">Use your knowledge of place-value to explicitly write the integer as the sum of its base-10 components.</p></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=974079&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-2"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-2"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Base-10 Place Value.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2"><article class="exercise exercise-like"><div class="introduction" id="introduction-5"><p id="p-12">Use your knowledge of place-value to answer the following.</p></div>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2"><article class="exercise exercise-like"><div class="introduction" id="introduction-5"><p id="p-13">Use your knowledge of place-value to answer the following.</p></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=974086&amp;resizer=true"></iframe></div></article></div>
 <section class="subsection" id="subsection-1"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.1</span> <span class="title">Numbers in Non-Standard Bases</span>
 </h3>
-<p id="p-13">Let's shift away from our standard base-10 number system (commonly referred to as the decimal system), and think about representing values in other bases. The discussion about place-value in the previous section gives us all of the tools we need.</p>
-<p id="p-14">Given a base <span class="process-math">\(b\)</span> (with <span class="process-math">\(b &gt; 0\)</span>) and digits <span class="process-math">\(a_k, a_{k-1}, 
+<p id="p-14">Let's shift away from our standard base-10 number system (commonly referred to as the decimal system), and think about representing values in other bases. The discussion about place-value in the previous section gives us all of the tools we need.</p>
+<p id="p-15">Given a base <span class="process-math">\(b\)</span> (with <span class="process-math">\(b &gt; 0\)</span>) and digits <span class="process-math">\(a_k, a_{k-1}, 
 \cdots, a_1, a_0\)</span> with <span class="process-math">\(0 \leq a_i \lt b\text{,}\)</span> the number <span class="process-math">\(\left(a_{k}a_{k-1}\cdots a_{1}a_{0}\right)_b\)</span> represents the value <span class="process-math">\(a_{k}b^{k} + a_{k-1}b^{k-1} + \cdots + a_{1}b^{1} + a_{0}b^{0}\text{.}\)</span> For example, the number <span class="process-math">\(\left(2501\right)_{6}\)</span> is the value <span class="process-math">\(2\cdot \left(6^3\right) + 5\cdot \left(6^2\right) +
 0\cdot \left(6^1\right) + 1\cdot \left(6^0\right)\text{.}\)</span></p>
-<p id="p-15">The definition above gives us a simple method for converting numbers represented in any non-standard base into their decimal representations. We need only write out their expansions in the provided base, and then simplifly using our familiar operations. For example, the decimal representation of <span class="process-math">\(\left(2501\right)_{6}\)</span> is <span class="process-math">\(613\text{.}\)</span> You can verify this from the expansion in the previous paragraph. Let's try some examples below.</p>
+<p id="p-16">The definition above gives us a simple method for converting numbers represented in any non-standard base into their decimal representations. We need only write out their expansions in the provided base, and then simplifly using our familiar operations. For example, the decimal representation of <span class="process-math">\(\left(2501\right)_{6}\)</span> is <span class="process-math">\(613\text{.}\)</span> You can verify this from the expansion in the previous paragraph. Let's try some examples below.</p>
 <article class="exercise exercise-like" id="exercise-3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-3"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-10.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-3"><article class="exercise exercise-like"><div class="introduction" id="introduction-6"><p id="p-16">Use your knowledge of place-value to answer the following.</p></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-3"><article class="exercise exercise-like"><div class="introduction" id="introduction-6"><p id="p-17">Use your knowledge of place-value to answer the following.</p></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=974643&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-4"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-4"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-10.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-4"><article class="exercise exercise-like"><div class="introduction" id="introduction-7"><p id="p-17">Use your knowledge of place-value to answer the following.</p></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-4"><article class="exercise exercise-like"><div class="introduction" id="introduction-7"><p id="p-18">Use your knowledge of place-value to answer the following.</p></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=974643&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-5"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-5"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-10.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-5"><article class="exercise exercise-like"><div class="introduction" id="introduction-8"><p id="p-18">Use your knowledge of place-value to answer the following.</p></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-5"><article class="exercise exercise-like"><div class="introduction" id="introduction-8"><p id="p-19">Use your knowledge of place-value to answer the following.</p></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=974643&amp;resizer=true"></iframe></div></article></div>
 <article class="exercise exercise-like" id="exercise-6"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-6"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-10.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-6"><article class="exercise exercise-like"><div class="introduction" id="introduction-9"><p id="p-19">Use your knowledge of place-value to answer the following.</p></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-6"><article class="exercise exercise-like"><div class="introduction" id="introduction-9"><p id="p-20">Use your knowledge of place-value to answer the following.</p></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=974643&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-2"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Common Number Systems</span>
 </h3>
-<p id="p-20">Beyond our own base-10 (decimal) number system, there are others that are quite common. In particular, base-2 (binary), base-8 (octal), and base-16 (hexadecimal) are popular. Let's explore those number systems a bit further.</p>
-<p id="p-21">In the previous subsection, we identified how number systems in different bases work, and highlighted how it is just a generalization of representing numbers using our common decimal system. From that discussion, we see that the binary system utilizes only two digits, 0 and 1, and place-values are attached to increasing powers of 2 as we move towards the left. These <em class="emphasis">bi</em>nary dig<em class="emphasis">its</em> are often referred to as <em class="emphasis">bits</em>. Moving to the octal system, we can deduce that it utilizes eight digits, 0 through 7, and that place-values are determined by increasing powers of 8 as we move towards the left.</p>
-<p id="p-22">The understanding above extends to hexadecimal, but creates a small problem. We've run out of digits to use. Indeed, the hexadecimal system will utilize sixteen unique digits. To accommodate this, we'll utilize 0 through 9 as usual, but then include <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> to represent the quantites 10 - 15, as we know them. Why can't we use 10 - 15 to represent themselves? If we did so, the encoding <span class="process-math">\(\left(510\right)_{16}\)</span> becomes ambiguous. For example, do we mean <span class="process-math">\(\left(5\cdot 16^2 + 1 \cdot 16^1 + 0\cdot 16^0\right) = 
+<p id="p-21">Beyond our own base-10 (decimal) number system, there are others that are quite common. In particular, base-2 (binary), base-8 (octal), and base-16 (hexadecimal) are popular. Let's explore those number systems a bit further.</p>
+<p id="p-22">In the previous subsection, we identified how number systems in different bases work, and highlighted how it is just a generalization of representing numbers using our common decimal system. From that discussion, we see that the binary system utilizes only two digits, 0 and 1, and place-values are attached to increasing powers of 2 as we move towards the left. These <em class="emphasis">bi</em>nary dig<em class="emphasis">its</em> are often referred to as <em class="emphasis">bits</em>. Moving to the octal system, we can deduce that it utilizes eight digits, 0 through 7, and that place-values are determined by increasing powers of 8 as we move towards the left.</p>
+<p id="p-23">The understanding above extends to hexadecimal, but creates a small problem. We've run out of digits to use. Indeed, the hexadecimal system will utilize sixteen unique digits. To accommodate this, we'll utilize 0 through 9 as usual, but then include <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> to represent the quantites 10 - 15, as we know them. Why can't we use 10 - 15 to represent themselves? If we did so, the encoding <span class="process-math">\(\left(510\right)_{16}\)</span> becomes ambiguous. For example, do we mean <span class="process-math">\(\left(5\cdot 16^2 + 1 \cdot 16^1 + 0\cdot 16^0\right) = 
 \left(1296\right)_{10}\)</span> or do we mean <span class="process-math">\(\left(5\cdot 16^1 + 10\cdot 16^0\right) 
 = \left(90\right)_{10}\text{?}\)</span> Making use of the characters <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> prevents this ambiguity. The correct hexadecimal encoding of <span class="process-math">\(90_{10}\)</span> would be <span class="process-math">\(\left(5A\right)_{16}\text{.}\)</span> We'll discuss more on how to make this conversion in the next section.</p></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Conclusion</span>
 </h3>
-<p id="p-23">In this section we've seen that numbers can be written in a variety of bases. In particular, any positive integer can serve as the base for a number system. For bases larger than 10, we run out of our (familiar) digits, and need to include symbols to represent larger quanitities -- like using the characters <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> to represent 10 - 15 in the hexadecimal system.</p>
-<p id="p-24">In order to understand quantities written in different bases, we often need to convert them back to the decimal system (base-10). This is because we don't commonly work in those non-standard base-systems and have little intuition for them. We can exploit what we know about *place-value* in converting from a known non-standard base <span class="process-math">\(b\)</span> into the corresponding decimal value. The equation below describes the conversion.</p>
+<p id="p-24">In this section we've seen that numbers can be written in a variety of bases. In particular, any positive integer can serve as the base for a number system. For bases larger than 10, we run out of our (familiar) digits, and need to include symbols to represent larger quanitities -- like using the characters <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> to represent 10 - 15 in the hexadecimal system.</p>
+<p id="p-25">In order to understand quantities written in different bases, we often need to convert them back to the decimal system (base-10). This is because we don't commonly work in those non-standard base-systems and have little intuition for them. We can exploit what we know about *place-value* in converting from a known non-standard base <span class="process-math">\(b\)</span> into the corresponding decimal value. The equation below describes the conversion.</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \left(a_{k}a_{k-1}\cdots a_{1}a_{0}\right)_{b} = \left(a_{k}\cdot b^k + a_{k-1}\cdot b^{k-1} + \cdots + a_{1}b^{1} + a_{0}b^{0}\right)_{10}
 \end{equation*}
 </div>
-<p id="p-25">There are several non-standard bases which are commonly utilized in computing. In particular, it is not surprising to encounter the binary, octal, or hexadecimal systems. Binary is commonly encountered because computers <em class="emphasis">think</em> in terms of the presence or absence of an electrical signal. Recognizing that there are only two observable states shows why we are limited to two digits. Binary encodings can be quite long and cumbersome, grouping bits together can reduce the "length" of an encoding. For example, grouping every three consecutive bits together results in an octal encoding whole grouping every four consecutive bits together results in a hexadecimal encoding. It is very fast to switch between any of these three number systems because of this relationship.</p></section></section></div></main>
+<p id="p-26">There are several non-standard bases which are commonly utilized in computing. In particular, it is not surprising to encounter the binary, octal, or hexadecimal systems. Binary is commonly encountered because computers <em class="emphasis">think</em> in terms of the presence or absence of an electrical signal. Recognizing that there are only two observable states shows why we are limited to two digits. Binary encodings can be quite long and cumbersome, grouping bits together can reduce the "length" of an encoding. For example, grouping every three consecutive bits together results in an octal encoding whole grouping every four consecutive bits together results in a hexadecimal encoding. It is very fast to switch between any of these three number systems because of this relationship.</p></section></section></div></main>
 </div>
 </body>
 </html>

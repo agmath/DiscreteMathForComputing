@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_probability-ch-queueing" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Queueing</title>
+  <introduction>
+    <p>A queueing system is any system which involves waiting in a line for 
+    service. Queueing systems can be simple single-line, single-server systems 
+    like the drive through at your favorite coffee shop. They can involve a 
+    single line with multiple servers, like the tellers' desk at your local 
+    Credit Union. A system may involve multiple queues and servers in parallel. 
+    Perhaps you've been at a DMV location where you wait in a line to check in, 
+    and then wait in a line again to be served at the appropriate window. There 
+    are lots and lots of types of queueing systems. So much so that there are 
+    courses on queuing and researchers who make their livelihoods better 
+    understanding these systems and proposing methods for making them more 
+    efficient. We'll just get some basic exposure here. 
+    </p>
+  </introduction>
+
+  <subsection><title>Queueing Basics</title>
+    <p>This subsection introduces the terminology required to discuss queueing. 
+    In particular, we introduce the notion of a queue, a server, interarrival 
+    times, and service times.
+    <ul>
+        <li> Queue: The line portion of a queing system. New arrivals begin at 
+        the rear of the queue and make their way to the head of the queue as 
+        earlier arrivals are served and released from the queue. Queues are 
+        assumed to follow FIFO (First in, First out -- or First come, first serve).</li>
+        <li> Server: The point at which queue members are serviced and released from 
+        the queue.</li>
+        <li> Interarrival Times: The time between consecutive requests arriving to wait 
+    in line.</li>
+        <li>Service Times: The time it takes to serve and release the 
+    head member from the queue.</li>
+
+    </ul>
+    </p>
+  </subsection>
+
+  <subsection><title>Random Arrival Times</title>
+    <p>Randomness is a key component of queuing systems. In particular, the 
+    "interarrival times" and "service times" can both be assumed random.
+  </subsection>
+
+  <subsection><title>Random Service Times</title>
+
+  </subsection>
+
+  <subsection><title>Simulating a Queueing System</title>
+
+  </subsection>
+
+</section>
+

@@ -14,8 +14,8 @@
   <!-- to some short (non-spaced) description of your book         -->
   <book xml:id="dm4c">
     <!-- The book needs a title and can have a subtitle  -->
-    <title>Discrete Mathematics for Computing</title>
-    <!-- <subtitle>An example to be modified</subtitle> -->
+    <title>Discrete Mathematics for Computing (Draft)</title>
+    <!--<subtitle>Draft</subtitle> -->
 
     <!-- Now we include files containing each main devision.       -->
 
