@@ -4,10 +4,35 @@
   <title>Multidimensional Arrays</title>
 
   <introduction>
-    <p>An introduction will go here...</p>
-  </introduction>
+    <p>In the first two sections of this chapter on arrays, we've encountered 
+    one-dimensional arrays (sometimes referred to as vectors), and 
+    two-dimensional arrays (often referred to as matrices). Arrays are 
+    important structures in mathematics and also in computing. We've spent 
+    our time focused on operations which can be done with arrays and some 
+    example implementations of algorithms that compute those operations. We've 
+    ignored the technical aspects of arrays from a computer science perspective 
+    since you'll get that exposure in computer science coursework. 
+    </p>
 
-  <p>Discussion on multidimensional arrays will go here...</p>
+    <p>Before we exit this chapter, its worth mentioning that multidimensional 
+    arrays (arrays with more than just rows and columns) exist and find lots of 
+    uses in the real world. For example, a three-dimensional array is requird to 
+    define the colors of the pixels on your computer monitor right now. You can 
+    think of such an array as containing a matrix for the <em>red</em> channel, 
+    another matrix for the <em>green</em> channel, and a third matrix for the 
+    <em>blue</em> channel. Perhaps there is a fourth matrix governing the opacity 
+    (equivalently, the level of transparency) of the pixel. This is often referred 
+    to as an <em>alpha</em> channel. 
+    </p>
+
+    <p>These multidimensional arrays find uses elsewhere too. Perhaps you've heard 
+    of machine learning, where some classes of model, like <em>Long Short-Term 
+    Memory</em> (LSTM) models, require these multidimensional arrays (sometimes 
+    called <em>tensors</em>) as inputs. Arrays are important data structures, and 
+    you'll be making lots of use of them in your future coursework and computing 
+    endeavours.
+    </p>
+  </introduction>
 
 </section>
 

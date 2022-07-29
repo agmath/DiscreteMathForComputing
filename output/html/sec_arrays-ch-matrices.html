@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-28T17:33:58-04:00       *-->
+<!--*       on 2022-07-28T20:48:08-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -321,7 +321,7 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
 </pre>
 <p id="p-196">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">scalar_mult_matrix()</code> algorithm outlined above.</p>
 <article class="exercise exercise-like" id="exercise-53"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-53"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Sum Complexity.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication Complexity.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-53"><article class="exercise exercise-like"><div class="introduction" id="introduction-65"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988797&amp;resizer=true"></iframe></div></article></div>
 <p id="p-197">Try the following exercises to test your understanding of computing scalar multiples of matrices.</p>
@@ -402,9 +402,29 @@ AB \amp = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\cdot \l
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.18</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication 4.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-62"><article class="exercise exercise-like"><div class="introduction" id="introduction-74"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">9.2.5</span> <span class="title">Conclusions</span>
+<span class="type">Subsection</span> <span class="codenumber">9.2.5</span> <span class="title">Outer-products of one-dimensional arrays</span>
 </h3>
-<p id="p-204">A conclusion will eventually go here...</p></section></section></div></main>
+<p id="p-204">At the end of the previous section, you were promised learning how to compute the outer-product between two one-dimensional arrays. We've blown by that, but will return to it now. With the addition of a simple initial step, computing the outer-product becomes a special case of the matrix multiplication you've just learned. Given two one-dimensional arrays, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we'll tip <span class="process-math">\(B\)</span> on its side so that it becomes a <em class="emphasis">row vector</em> rather than a <em class="emphasis">column vector</em>. We'll call this taking the <em class="emphasis">transpose</em> of <span class="process-math">\(B\text{,}\)</span> and denote it by <span class="process-math">\(B^T\text{.}\)</span> The new array <span class="process-math">\(B^T\)</span> then has a single row. Since the array <span class="process-math">\(A\)</span> has a single column, then matrix multiplication is defined between these two objects. If <span class="process-math">\(A\)</span> is an array of length <span class="process-math">\(m\)</span> and <span class="process-math">\(B\)</span> is an array of length <span class="process-math">\(n\text{,}\)</span> then the outer product <span class="process-math">\(AB^T\)</span> is a two-dimensional array with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. See the example below.</p>
+<article class="example example-like" id="example-15"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-15"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.19</span><span class="period">.</span><span class="space"> </span><span class="title">Compute the Outer-Product.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-15"><article class="example example-like"><p id="p-205">Given the arrays <span class="process-math">\(A = \left[\begin{array}{c}2\\ 3\end{array}\right]\)</span> and <span class="process-math">\(B = \left[\begin{array}{c} -1\\ 0\\ 5\end{array}\right]\text{,}\)</span> compute the outer-product <span class="process-math">\(AB^T\text{.}\)</span></p>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-16">
+\begin{align*}
+AB^T \amp = \left[\begin{array}{c} 2\\ 3\end{array}\right]\cdot \left[\begin{array}{ccc} -1 \amp 0 \amp 5\end{array}\right]\\
+\amp = \left[\begin{array}{ccc} 2\left(-1\right) \amp 2\left(0\right) \amp 2\left(5\right)\\
+3\left(-1\right) \amp 3\left(0\right) \amp 3\left(5\right)\end{array}\right]\\
+\amp = \left[\begin{array}{ccc} -2 \amp 0 \amp 10\\
+-3 \amp 0 \amp 15\end{array}\right]
+\end{align*}
+</div></div></div></article></div>
+<article class="exercise exercise-like" id="exercise-63"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-63"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.2.20</span><span class="period">.</span><span class="space"> </span><span class="title">Compute the Outer Product.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-63"><article class="exercise exercise-like"><div class="introduction" id="introduction-75"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989418&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.2.6</span> <span class="title">Conclusions</span>
+</h3>
+<p id="p-206">In this and the previous section you were exposed two one- and two-dimensional arrays. You've seen how simple mathematical operations, including scalar multiplication, addition/subtraction, and products. We saw that there are at least two ways to define vector products, including the inner- and outer-products. Spoiler alert, there are more, and you'll encounter them elsewhere. We saw that multiplication is not a commutative operation with arrays. That is, <span class="process-math">\(AB\)</span> is not generally the same as <span class="process-math">\(BA\)</span> -- in fact, knowing that the product <span class="process-math">\(AB\)</span> is defined doesn't even guarantee that the product <span class="process-math">\(BA\)</span> is defined.</p>
+<p id="p-207">In the final section of this chapter, we'll simply introduce the notion that arrays with more than two dimensions exist and are quite useful. You've certainly encountered them whether you realize it or not. You'll likely encounter these structures in your more advanced coursework. See you in the next section.</p></section></section></div></main>
 </div>
 </body>
 </html>

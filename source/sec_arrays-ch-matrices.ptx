@@ -155,7 +155,7 @@
   the <c>scalar_mult_matrix()</c> algorithm outlined above.
   </p>
 
-  <exercise exercise-customization="inline" exercise-interactive="static"><title>Matrix Sum Complexity</title><introduction>
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Scalar Multiplication Complexity</title><introduction>
     </introduction><myopenmath problem="988797" />
 	</exercise>
 
@@ -271,8 +271,61 @@
 
   </subsection>
 
+  <subsection><title>Outer-products of one-dimensional arrays</title>
+  <p>At the end of the previous section, you were promised learning how to 
+  compute the outer-product between two one-dimensional arrays. We've blown 
+  by that, but will return to it now. With the addition of a simple initial 
+  step, computing the outer-product becomes a special case of the matrix 
+  multiplication you've just learned. Given two one-dimensional arrays, 
+  <m>A</m> and <m>B</m>, we'll tip <m>B</m> on its side so that it becomes a 
+  <em>row vector</em> rather than a <em>column vector</em>. We'll call this 
+  taking the <em>transpose</em> of <m>B</m>, and denote it by <m>B^T</m>. The 
+  new array <m>B^T</m> then has a single row. Since the array <m>A</m> has 
+  a single column, then matrix multiplication is defined between these two 
+  objects. If <m>A</m> is an array of length <m>m</m> and <m>B</m> is an 
+  array of length <m>n</m>, then the outer product <m>AB^T</m> is a 
+  two-dimensional array with <m>m</m> rows and <m>n</m> columns. See the 
+  example below.
+  </p>
+
+  <example><title>Compute the Outer-Product</title>
+    <p>Given the arrays <m>A = \left[\begin{array}{c}2\\ 3\end{array}\right]</m> 
+    and <m>B = \left[\begin{array}{c} -1\\ 0\\ 5\end{array}\right]</m>, compute 
+    the outer-product <m>AB^T</m>.
+    </p>
+    <solution>
+      <md>
+        <mrow> AB^T \amp = \left[\begin{array}{c} 2\\ 3\end{array}\right]\cdot \left[\begin{array}{ccc} -1 \amp 0 \amp 5\end{array}\right]</mrow>
+        <mrow> \amp = \left[\begin{array}{ccc} 2\left(-1\right) \amp 2\left(0\right) \amp 2\left(5\right)\\
+        3\left(-1\right) \amp 3\left(0\right) \amp 3\left(5\right)\end{array}\right]</mrow>
+        <mrow> \amp = \left[\begin{array}{ccc} -2 \amp 0 \amp 10\\
+        -3 \amp 0 \amp 15\end{array}\right]</mrow>
+      </md>
+    </solution>
+  </example>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Compute the Outer Product</title><introduction>
+    </introduction><myopenmath problem="989418" />
+	</exercise>
+
+  </subsection>
+
   <subsection><title>Conclusions</title>
-  <p>A conclusion will eventually go here...
+  <p>In this and the previous section you were exposed two one- and 
+  two-dimensional arrays. You've seen how simple mathematical operations, 
+  including scalar multiplication, addition/subtraction, and products. We saw 
+  that there are at least two ways to define vector products, including the 
+  inner- and outer-products. Spoiler alert, there are more, and you'll encounter 
+  them elsewhere. We saw that multiplication is not a commutative operation with 
+  arrays. That is, <m>AB</m> is not generally the same as <m>BA</m> -- in fact, 
+  knowing that the product <m>AB</m> is defined doesn't even guarantee that the 
+  product <m>BA</m> is defined.
+  </p>
+
+  <p>In the final section of this chapter, we'll simply introduce the notion that 
+  arrays with more than two dimensions exist and are quite useful. You've 
+  certainly encountered them whether you realize it or not. You'll likely encounter 
+  these structures in your more advanced coursework. See you in the next section. 
   </p>
   </subsection>
 

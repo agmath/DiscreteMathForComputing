@@ -25,13 +25,13 @@
   example, we can add the two arrays <c>[1, 6, 3]</c> and <c>[5, 11, 2]</c> as 
   follows.
   <md>
-    <mrow>[1, 6, 3] + [5, 11, 2] \amp = [\left(1 + 5\right), \left(6 + 11\right), \left(3 + 2\right)]</mrow>
-    <mrow> \amp = [6, 17, 5]</mrow>
+    <mrow>\left[\begin{array}{c} 1\\ 6\\ 3\end{array}\right] + \left[\begin{array}{c} 5\\ 11\\ 2\end{array}\right] \amp = \left[\begin{array}{c} \left(1 + 5\right)\\ \left(6 + 11\right)\\ \left(3 + 2\right)\end{array}\right]</mrow>
+    <mrow> \amp = \left[\begin{array}{c} 6\\ 17\\ 5\end{array}\right]</mrow>
   </md>  
   Subtraction between those two arrays is done similarly.
   <md>
-    <mrow>[1, 6, 3] - [5, 11, 2] \amp = \left[\left(1 - 5\right), \left(6 - 11\right), \left(3 - 2\right)\right]</mrow>
-    <mrow> \amp = [-4, -5, 1]</mrow>
+    <mrow>\left[\begin{array}{c} 1\\ 6\\ 3\end{array}\right] - \left[\begin{array}{c} 5\\ 11\\ 2\end{array}\right] \amp = \left[\begin{array}{c} \left(1 - 5\right)\\ \left(6 - 11\right)\\ \left(3 - 2\right)\end{array}\right]</mrow>
+    <mrow> \amp = \left[\begin{array}{c} -4\\ -5\\ 1\end{array}\right]</mrow>
   </md>
   </p>
 
@@ -42,8 +42,8 @@
   scalar. For example, let's multiply the array <c>[2, 12, -64, 32, 18]</c> by 
   the scalar <m>\frac{1}{2}</m>.
   <md>
-    <mrow>\frac{1}{2}\cdot \left[2, 12, -64, 32, 18\right] \amp = \left[\left(\frac{1}{2}\cdot 2\right), \left(\frac{1}{2}\cdot 12\right), \left(\frac{1}{2}\cdot \left(-64\right)\right), \left(\frac{1}{2}\cdot 32\right), \left(\frac{1}{2}\cdot 18\right)\right]</mrow>
-    <mrow> \amp = [1, 6, -32, 16, 9]</mrow>
+    <mrow>\frac{1}{2}\cdot \left[\begin{array}{c} 2\\ 12\\ -64\\ 32\\ 18\end{array}\right] \amp = \left[\begin{array}{c} \left(\frac{1}{2}\cdot 2\right)\\ \left(\frac{1}{2}\cdot 12\right)\\ \left(\frac{1}{2}\cdot \left(-64\right)\right)\\ \left(\frac{1}{2}\cdot 32\right)\\ \left(\frac{1}{2}\cdot 18\right)\end{array}\right]</mrow>
+    <mrow> \amp = \left[\begin{array}{c} 1\\ 6\\ -32\\ 16\\ 9\end{array}\right]</mrow>
   </md>  
   </p>
 
@@ -74,19 +74,17 @@
 	</exercise>
   </subsection>
 
-  <subsection><title>Array Products: Inner- and Outer-Products</title>
+  <subsection><title>Inner-products</title>
     <p>In addition to adding/subtracting arrays or multiplying arrays by 
     scalars, there's lots of interesting and meaningful operations that can 
-    be done with arrays. We'll take a look at the <em>inner-product</em> in 
-    this section, and then introduce the <em>outer-product</em> as a bridge 
-    to our next section on two-dimensional arrays (matrices).</p>
+    be done with arrays. We'll take a look at one of them, called the 
+    <em>inner-product</em> in this section. Our section will end by mentioning 
+    the <em>outer-product</em>, but we'll need to wait until we see 
+    two-dimensional arrays before we can compute that.</p>
 
-    <p>We start with the <em>inner-product</em> (also known as the 
-    <em>dot-product</em>) between two arrays. Given two real-valued arrays 
-    of equal length, we can calculate the inner-product between them. The 
-    value of the inner-product can be interpreted as the area of the 
-    parallelogram created when the two arrays are added in space. We'll 
-    introduce the inner-product algorithmically using the pseudocode below.
+    <p>Given two arrays of equal length, we can calculate the inner-product 
+    between them. We'll introduce the inner-product algorithmically using 
+    the pseudocode below.
     </p>
 
     <cd>
@@ -124,14 +122,15 @@
       </introduction><myopenmath problem="988779" />
 	  </exercise>
 
-    <p>Another type of array product is the <em>outer-product</em>. Given two one-dimensional 
-    arrays, we can define the outer product between them. The outer-product, 
-    however, results in a two-dimensional array. If <c>array1</c> and <c>array2</c> 
-    are arrays of length <m>m</m> and <m>n</m> respectively, then the outer product 
-    between <c>array1</c> and <c>array2</c> is an <m>m\times n</m> array. Note that this 
-    also means that <c>inner_product(array1, array2)</c> is generally not the same as 
-    <c>inner_product(array2, array1)</c>. We'll see how to compute the inner product 
-    in our next section.
+    <p>Another type of array product is the <em>outer-product</em>. Given two 
+    one-dimensional arrays, we can define the outer product between them. The 
+    outer-product, however, results in a two-dimensional array. If <c>array1</c> 
+    and <c>array2</c> are arrays of length <m>m</m> and <m>n</m> respectively, 
+    then the outer product between <c>array1</c> and <c>array2</c> is an 
+    <m>m\times n</m> array. Note that this also means that 
+    <c>inner_product(array1, array2)</c> is generally not the same as 
+    <c>inner_product(array2, array1)</c>. We'll see how to compute the inner 
+    product in our next section.
     </p>
 
   </subsection>
