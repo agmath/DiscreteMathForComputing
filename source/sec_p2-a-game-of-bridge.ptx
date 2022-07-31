@@ -25,7 +25,7 @@
     </p>
 
     <figure>
-        <image source="images/bridge.jpg"/>
+        <image source="images/bridge.png" width="60%"/>
         <caption>A sample "bridge" with two panes and four segments to 
         cross.</caption>
     </figure>

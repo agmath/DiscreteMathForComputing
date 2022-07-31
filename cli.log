@@ -1,11 +1,21 @@
 INFO    :  PreTeXt project found in `C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing`.
 INFO    :  
-INFO    :  Now preparing local server to preview directory `C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\output\html`.
-INFO    :    (Reminder: use `pretext deploy` to deploy your built project to a public
-INFO    :    GitHub Pages site that can be shared with readers who cannot access your
-INFO    :    personal computer.)
+WARNING :  Assets like latex-images will not be regenerated for this build
+WARNING :  (previously generated assets will be used if they exist).
+WARNING :  To generate these assets before building, run `pretext build -g`.
+INFO    :  Preparing to build into C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\output\html.
 INFO    :  
-INFO    :  Success! Open the below url in a web browser to preview the most recent build of your project.
-INFO    :      http://localhost:8000
-INFO    :  Use [Ctrl]+[C] to halt the server.
+Now building HTML into C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\output\html
+
+INFO    :  discovering source file's directory name: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source
+INFO    :  verifying and expanding input directory: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\../generated-assets
+INFO    :  input directory expanded to absolute path: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\generated-assets
+INFO    :  verifying and expanding input directory: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\../assets
+INFO    :  input directory expanded to absolute path: C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\assets
+INFO    :  converting C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\main.ptx to HTML in C:\Users\agilb\AppData\Local\Temp\tmp9_nr6s8w
+INFO    :  XSL conversion of C:\Users\agilb\Documents\GitHub\DiscreteMathForComputing\source\main.ptx by C:\Users\agilb\AppData\Local\Programs\Python\Python310\lib\site-packages\pretext\static\xsl\pretext-html.xsl
+INFO    :  comprehensive messages, warnings, and errors:
+INFO    :  successful application of C:\Users\agilb\AppData\Local\Programs\Python\Python310\lib\site-packages\pretext\static\xsl\pretext-html.xsl
+INFO    :  
+Success! Run `pretext view html` to see the results.
 

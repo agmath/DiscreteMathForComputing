@@ -17,8 +17,8 @@
     </p>
 
   <ul>
-    <li> Read Section 2.5 of <a href="https://rellek.net/book/s_strings_bin-coeff.html"><em>Applied Combinatorics</em>, 
-    by Mitch Keller and Tom Trotter</a>.</li>
+    <li> Read Section 2.5 of <url href="https://rellek.net/book/s_strings_bin-coeff.html" visual="https://rellek.net/book/s_strings_bin-coeff.html"><em>Applied Combinatorics</em>, 
+    by Mitch Keller and Tom Trotter</url>.</li>
     <li> Provide your own synopsis of the section, including how it 
     extends our ability to count beyond those applications we considered 
     in our class discussions.</li>

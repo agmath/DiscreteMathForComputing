@@ -16,8 +16,8 @@
         <li>Define what is meant by a vertex coloring of a graph, a proper 
         coloring of a graph, and the chromatic number of a graph. Find the 
         chromatic number of a path, a tree, a cycle, and a complete graph.</li>
-        <li> Use this <a href="https://en.wikipedia.org/wiki/Graph_coloring_game">
-        Wikipedia article</a> to learn a bit about the vertex coloring game 
+        <li> Use this <url href="https://en.wikipedia.org/wiki/Graph_coloring_game" visual="https://en.wikipedia.org/wiki/Graph_coloring_game">
+        Wikipedia article</url> to learn a bit about the vertex coloring game 
         and the game chromatic number of a graph. Be sure to provide your 
         understanding of the game chromatic number and this competitive 
         approach to vertex coloring. Find the game chromatic number of a 
