@@ -30,14 +30,14 @@
     <xi:include href="./ch_first-chapter.ptx" />
     <xi:include href="./ch_sets-chapter.ptx"/>
     <xi:include href="./ch_logic-chapter.ptx"/>
-    <xi:include href="./ch_project1-chapter.ptx"/>
+    <!-- <xi:include href="./ch_project1-chapter.ptx"/> -->
     <xi:include href="./ch_counting-chapter.ptx"/>
     <xi:include href="./ch_functions-chapter.ptx"/>
     <xi:include href="./ch_probability-chapter.ptx"/>
-    <xi:include href="./ch_project2-chapter.ptx"/>
+    <!-- <xi:include href="./ch_project2-chapter.ptx"/> -->
     <xi:include href="./ch_arrays-chapter.ptx"/>
     <xi:include href="./ch_graphs-chapter.ptx"/>
-    <xi:include href="./ch_project3-chapter.ptx"/>
+    <!-- <xi:include href="./ch_project3-chapter.ptx"/> -->
     <!-- Of course you will want to add more chapters as you proceed-->
 
     <!-- The final chapter contains a wide variety of elements to  -->
