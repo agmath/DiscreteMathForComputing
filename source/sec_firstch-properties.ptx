@@ -45,13 +45,14 @@
         too large to store as a 32-bit binary number?</p>
         <solution>
             <p>The largest 32-bit positive integer is equivalent to the decimal
-            integer <m>2^{33} - 1</m>. There are about 365 days each year, 24 hours 
+            integer <m>2^{32} - 1</m>. There are about 365 days each year, 24 hours 
             in each day, 60 minutes in each hour, and 60 seconds in each minute.
             Using this, computers could successfully keep time for 
-            <me>\displaystyle{\frac{2^{33} - 1}{365\cdot 24\cdot 60\cdot 60}} 
-            \approx 272 \text{ years}</me>
+            <me>\displaystyle{\frac{2^{32} - 1}{365\cdot 24\cdot 60\cdot 60}} 
+            \approx 136 \text{ years}</me>
             Computers' timekeeping was never in any real danger, but now with 
-            64-bit processors, we won't need to worry for a trillion years!
+            64-bit processors, we won't need to worry for over half a trillion 
+            years!
             </p>
         </solution>
     </example>
