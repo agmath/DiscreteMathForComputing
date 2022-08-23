@@ -2,9 +2,132 @@
 
 <section xml:id="sec_sets-ch-foundations" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Foundations for Working with Sets</title>
-<p>In progress...
+<p>In order to start working with sets, we'll need to introduce some notation.
+As mentioned in the introduction to this champter, a <em>set</em> is a (possibly 
+empty) collection of items, called <em>elements</em>. A useful mental paradigm 
+for sets is to think of a set as a "bag of items". The elements of a set are the 
+items which can be observed by reaching into the bag and taking something out. In 
+general, sets will be denoted using capital letters such as <m>A</m>, <m>B</m>, 
+<m>X</m>, etc. Elements of those sets will be denoted using lowercase letters. We 
+have the following additional notation for working with sets.
 </p>  
 
+<p> Since sets contain elements, it is useful to have a notation to denote whether 
+and element belongs to a set. The notation <m>a\in A</m> states that the element 
+<m>a</m> is <em>in</em> the set <m>A</m>, while the notation <m>b\not \in A</m> 
+states that the element <m>b</m> is not an element of the set <m>A</m>. For 
+convenience, we may write <m>a, b, c\in A</m>, to indicate that all of the elements 
+<m>a</m>, <m>b</m>, and <m>c</m> belong to the set <m>A</m>. Finally, if a set has 
+no elements, it is called the <em>empty-set</em> and is denoted by <m>\emptyset</m>.
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Sets and Elements I</title><introduction>
+    </introduction><myopenmath problem="270046" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Sets and Elements II</title><introduction>
+    </introduction><myopenmath problem="270055" />
+</exercise>
+
+<p> We need methods for describing the contents of a set. Two are quite common: 
+<em>roster notation</em> lists all of the elements containined in a set, while 
+<em>set-builder notation</em> describes a condition which determines set 
+membership. Roster notation is useful when the set to be described contains few 
+elements or follows a simple pattern. For example, <m>A = \{1, 2, 3, 11\}</m> and 
+<m>B = \{2, 4, 6, 8, \cdots\}</m> are both descriptions in roster notation. 
+Set-builder notation follows the form 
+<m>A = \{\text{ sample element } : \text{ condition }\}</m>. For example, 
+<m>X = \{x : x \in \mathbb{R} \text{ and } x^2 &lt; 9\}</m> is the set of all real 
+numbers (<m>\mathbb{R}</m>) whose squares are less than <m>9</m>.
+</p>
+
+<p> In addition to roster and set-builder notation, some sets are simply so common 
+that they have their own notations. The set of natural numbers, 
+<m>\{1, 2, 3, \cdots\}</m>, is denoted by <m>\mathbb{N}</m>. The set of integers, 
+<m>\{\cdots, -2, -1, 0, 1, 2, \cdots\}</m>, is denoted by <m>\mathbb{Z}</m>. The 
+set of all rational numbers is denoted by <m>\mathbb{Q}</m> and the set of all 
+real numbers is denoted by <m>\mathbb{R}</m>, as you saw in the example above.
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Roster Notation I</title><introduction>
+    	<p> Use your knowledge of roster notation to answer the following 
+      question.
+    	</p>
+    </introduction><myopenmath problem="281568" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Roster Notation I</title><introduction>
+    	<p> Use your knowledge of roster notation to answer the following 
+      question.
+    	</p>
+    </introduction><myopenmath problem="281580" />
+</exercise>
+
+<p> In addition to describing the conents of a set, an ability to describe 
+relationships between sets is also useful. If every element of the set <m>A</m> 
+is also an element of the set <m>B</m>, then we say that <m>A</m> is a 
+<em>subset</em> of <m>B</m> and we write <m>A\subseteq B</m> to denote this. 
+If <m>A\subseteq B</m> and <m>B\subseteq A</m>, then we write <m>A = B</m> 
+since <m>A</m> and <m>B</m> contain exactly the same elements.
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Set Notation I</title><introduction>
+    	<p> Use your knowledge of sets, elements, and subsets to answer the following.
+    	</p>
+    </introduction><myopenmath problem="17424" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Set Notation II</title><introduction>
+    	<p> Use your knowledge of sets, elements, and subsets to answer the following.
+    	</p>
+    </introduction><myopenmath problem="122183" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Set Notation III</title><introduction>
+    	<p> Use your knowledge of sets, elements, and subsets to answer the following.
+    	</p>
+    </introduction><myopenmath problem="211694" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Set Notation IV</title><introduction>
+    	<p> Convert the following sets from set-builder notation into roster notation.
+    	</p>
+    </introduction><myopenmath problem="122183" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Set Notation</title><introduction>
+    	<p> Use your knowledge of sets, elements, and subsets to answer the following.
+    	</p>
+    </introduction><myopenmath problem="122183" />
+</exercise>
+
+<p> Now that you've practiced with some of our basic set notation, we'll introduce one 
+more concept before moving on to the next section. Given a set containing a finite number 
+of elements, it is sometimes useful to identify the number of elements in the set. The 
+<em>cardinality</em> of a set <m>A</m> measures the number of elements in the set <m>A</m>. 
+The cardinality of <m>A</m> is often denoted by <m>n\left(A\right)</m> or <m>\left|A\right|</m>. 
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Cardinality of a Set I</title><introduction>
+    	<p> Use your knowledge of roster notation and cardinality to answer the following 
+      question.
+    	</p>
+    </introduction><myopenmath problem="270100" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Cardinality of a Set II</title><introduction>
+    	<p> Use your knowledge of roster notation and cardinality to answer the following 
+      question.
+    	</p>
+    </introduction><myopenmath problem="270102" />
+  </exercise>
+
+<p> In this section we've built up a familiarity with sets and their elements. 
+We've also described relationships between sets. In particular, we've considered 
+what it means for one set to be a subset of another set as well as what it means 
+for two sets to be equal to one another. In the next section, we'll consider 
+operations on and between sets.
+</p>
 
 </section>
 

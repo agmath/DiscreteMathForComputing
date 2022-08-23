@@ -21,7 +21,7 @@
     <ul>
       <li> Foundations for Working with Sets</li>
       <li> Set Operations</li>
-      <li> Sets of Sets</li>
+      <!--<li> Sets of Sets</li>-->
     </ul>
     </p>
   </introduction>
@@ -31,8 +31,8 @@
   <!-- That way it is easy to include the section in a different -->
   <!-- chapter later if you change your mind about the order.    -->
   <!--<xi:include href="./sec_sets-ch-intro.ptx" />-->
-  <!--<xi:include href="./sec_sets-ch-foundations.ptx" />
-  <xi:include href="./sec_sets-ch-operations.ptx" />
+  <xi:include href="./sec_sets-ch-foundations.ptx" />
+  <!--<xi:include href="./sec_sets-ch-operations.ptx" />
   <xi:include href="./sec_sets-ch-setsofsets.ptx" />-->
 
   <!-- One or more of the sections of a chapter might be exercises-->
