@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-23T15:06:33-04:00       *-->
+<!--*       on 2022-08-23T15:53:55-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>The presence of the loop here has the potential to result in run times that are related to the size of the input <code class="code-inline tex2jax_ignore">array</code>. There is a single operation being done within the body of the <code class="code-inline tex2jax_ignore">for</code> loop. That is, the body of the loop has <span class="process-math">\(O\left(1\right)\)</span> run-time. The loop will run once for each <code class="code-inline tex2jax_ignore">element</code> in the input <code class="code-inline tex2jax_ignore">array</code>. Let's label the number of elements in the input <code class="code-inline tex2jax_ignore">array</code> by <span class="process-math">\(n\text{.}\)</span> We'll ignore accounting for the "operations" of setting up the loop and <code class="code-inline tex2jax_ignore">return</code>ing the result, but there is the operation required to initialize the <code class="code-inline tex2jax_ignore">myProd</code> variable which we will account for.</p>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<p>Note that in the first three interactive problems above, the size of the input array didn't matter. That is, number of operations required to arrive at the value to be returned did not depend on the length of the input array. If you didn't notice that on your own, try regenerating new versions of the embedded examples and working through the examples again. In the final example, however, the number of operations required to complete before arriving at the value to be returned did depend on the length of the input array. Input arrays with more elements require more calculations, and so it should be expected that, as this <code class="code-inline tex2jax_ignore">sum_array_values()</code> routine is applied to larger and larger arrays, it takes longer to run. How much longer run-time should we expect if the length of the input array were to, let's say, double in length? Should we expect the routine to take approximately twice as long? More time? Less that that? How can we tell? This is the job of <em class="emphasis">big-O</em> notation.</p>
 <span class="incontext"><a href="sec_counting-big-O.html#p-125" class="internal">in-context</a></span>
 </body>
 </html>

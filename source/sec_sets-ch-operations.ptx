@@ -2,9 +2,82 @@
 
 <section xml:id="sec_sets-ch-operations" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Operations with Sets</title>
-<p>In progress...
+<p> In the previous section we were introduced to the notion of a set, its 
+elements, the cardinality of a finite set, the notion of subsets, and also the 
+notion of equality between sets. In this section, we'll be introduced to four 
+common operations on sets. 
+<ul>
+  <li> The <em>complement</em> of a set, denoted by <m>A^c</m> or <m>A'</m>.</li>
+  <li> The <em>intersection</em> between two sets, denoted by <m>A\cap B</m>.</li>
+  <li> The <em>union</em> between two sets, denoted by <m>A\cup B</m>.</li>
+  <li> The <em>difference</em> between two sets, denoted by <m>A - B</m>.</li>
+</ul>
 </p>  
 
+<p> Given a set <m>A</m> in some universal set <m>U</m>, we can define the 
+<em>complement of <m>A</m> in <m>U</m></em> to be the collection of all 
+elements which are in the universal set <m>U</m> but not in the set <m>A</m>. 
+We denote the complement of the set <m>A</m> by <m>A^c</m> or <m>A'</m>. 
+</p>
+
+<p> Given two sets <m>A</m> and <m>B</m>, we can define the <em>intersection 
+between <m>A</m> and <m>B</m></em> as the collection of elements which are in 
+<em>both</em> the set <m>A</m> and also the set <m>B</m>. We use the notation 
+<m>A\cap B</m> to denote the intersection between <m>A</m> and <m>B</m>. 
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Compute an Intersection</title><introduction>
+    </introduction><myopenmath problem="293170" />
+</exercise>
+
+<p> Given two sets <m>A</m> and <m>B</m>, we can define the <em>union 
+between <m>A</m> and <m>B</m></em> as the collection of elements which are in 
+<em>at least on of</em> the set <m>A</m> or the set <m>B</m>. We use the notation 
+<m>A\cup B</m> to denote the union between <m>A</m> and <m>B</m>. 
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Union and Intersection I</title><introduction>
+    	</introduction><myopenmath problem="210842" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Union and Intersection II</title><introduction>
+    	</introduction><myopenmath problem="270152" />
+</exercise>
+
+<p>In addition to computing unions and intersections over pairs of sets, we can combine 
+these operations to created new sets. Like in your prior exposure to arithmetic 
+and algebra, parentheses can be used to dictate the order in which operations are 
+to be evaluated. In the absence of parentheses, the complement is evaluated before 
+unions and intersections. Then unions and intersections are evaluated from left to 
+right.
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Combining Operations I</title><introduction>
+    	</introduction><myopenmath problem="270167" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Combining Operations II</title><introduction>
+    	</introduction><myopenmath problem="295675" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Combining Operations III</title><introduction>
+    	</introduction><myopenmath problem="293324" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Combining Operations IV</title><introduction>
+    	</introduction><myopenmath problem="295599" />
+</exercise>
+
+<p>Now that you've mastered the union, the intersection, and the complement. 
+Let's see our last set operation, the set difference. Given two sets <m>A</m> and 
+<m>B</m>, the set difference is denoted by <m>A - B</m>, and is the set consisting 
+of all elements of <m>A</m> which are not elements of <m>B</m>. That is, to find 
+the set <m>A - B</m>, we begin with all of the elements of <m>A</m> and remove 
+any elements which also appear in <m>B</m>. 
+</p>
+
+<p>Need to write MyOpenMath problems to add in...
+</p>
 
 </section>
 
