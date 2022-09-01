@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-23T15:53:55-04:00       *-->
+<!--*       on 2022-09-01T15:07:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -64,6 +64,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -114,7 +146,10 @@
 </ul>
 </li>
 <li class="link">
-<a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul><li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li></ul>
+<a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
+<li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
+<li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
+</ul>
 </li>
 <li class="link">
 <a href="ch-counting.html" data-scroll="ch-counting" class="internal"><span class="codenumber">4</span> <span class="title">Counting</span></a><ul><li><a href="sec_counting-big-O.html" data-scroll="sec_counting-big-O" class="internal">Complexity and Big-O Notation</a></li></ul>
@@ -134,9 +169,9 @@
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_arrays-ch-multidimensional-arrays"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">Multidimensional Arrays</span>
 </h2>
-<section class="introduction" id="introduction-84"><p id="p-184">In the first two sections of this chapter on arrays, we've encountered one-dimensional arrays (sometimes referred to as vectors), and two-dimensional arrays (often referred to as matrices). Arrays are important structures in mathematics and also in computing. We've spent our time focused on operations which can be done with arrays and some example implementations of algorithms that compute those operations. We've ignored the technical aspects of arrays from a computer science perspective since you'll get that exposure in computer science coursework.</p>
-<p id="p-185">Before we exit this chapter, its worth mentioning that multidimensional arrays (arrays with more than just rows and columns) exist and find lots of uses in the real world. For example, a three-dimensional array is requird to define the colors of the pixels on your computer monitor right now. You can think of such an array as containing a matrix for the <em class="emphasis">red</em> channel, another matrix for the <em class="emphasis">green</em> channel, and a third matrix for the <em class="emphasis">blue</em> channel. Perhaps there is a fourth matrix governing the opacity (equivalently, the level of transparency) of the pixel. This is often referred to as an <em class="emphasis">alpha</em> channel.</p>
-<p id="p-186">These multidimensional arrays find uses elsewhere too. Perhaps you've heard of machine learning, where some classes of model, like <em class="emphasis">Long Short-Term Memory</em> (LSTM) models, require these multidimensional arrays (sometimes called <em class="emphasis">tensors</em>) as inputs. Arrays are important data structures, and you'll be making lots of use of them in your future coursework and computing endeavours.</p></section></section></div></main>
+<section class="introduction" id="introduction-85"><p id="p-200">In the first two sections of this chapter on arrays, we've encountered one-dimensional arrays (sometimes referred to as vectors), and two-dimensional arrays (often referred to as matrices). Arrays are important structures in mathematics and also in computing. We've spent our time focused on operations which can be done with arrays and some example implementations of algorithms that compute those operations. We've ignored the technical aspects of arrays from a computer science perspective since you'll get that exposure in computer science coursework.</p>
+<p id="p-201">Before we exit this chapter, its worth mentioning that multidimensional arrays (arrays with more than just rows and columns) exist and find lots of uses in the real world. For example, a three-dimensional array is requird to define the colors of the pixels on your computer monitor right now. You can think of such an array as containing a matrix for the <em class="emphasis">red</em> channel, another matrix for the <em class="emphasis">green</em> channel, and a third matrix for the <em class="emphasis">blue</em> channel. Perhaps there is a fourth matrix governing the opacity (equivalently, the level of transparency) of the pixel. This is often referred to as an <em class="emphasis">alpha</em> channel.</p>
+<p id="p-202">These multidimensional arrays find uses elsewhere too. Perhaps you've heard of machine learning, where some classes of model, like <em class="emphasis">Long Short-Term Memory</em> (LSTM) models, require these multidimensional arrays (sometimes called <em class="emphasis">tensors</em>) as inputs. Arrays are important data structures, and you'll be making lots of use of them in your future coursework and computing endeavours.</p></section></section></div></main>
 </div>
 </body>
 </html>

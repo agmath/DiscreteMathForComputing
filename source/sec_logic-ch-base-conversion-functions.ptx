@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_logic-ch-base-conversion-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Building a Base-Conversion Function</title>
+
+  <introduction>
+    <p><em>Note.</em> This section asks you to construct a 
+    base-conversion function using computer code. Each task 
+    includes a prompt to write pseudocode to construct the 
+    corresponding function. The first two such prompts are 
+    accompanied by interactive exercises asking you to organize 
+    provided pseudocode into an order which will achieve the 
+    desired result. Subsequent tasks ask you to write your own 
+    pseudocode from scratch. Accompanying each task are also  
+    interactive code blocks which invite you to write your own 
+    working function in a language of your choice. The existing 
+    interactive code blocks allow <c>Sage</c>, <c>Python</c>, 
+    and <c>R</c>.
+    </p>
+
+    <p> In order to successfully navigate this section, you'll 
+    need to recall how base-conversion works (from Chapter 1). 
+    You'll also need to use what we learned about logic and 
+    how it can be used for programmatic flow control. That is, 
+    you'll need to recall what we learned about <em>If/Then</em> 
+    statements. You'll also need to make use of <c>for</c> 
+    and <c>while</c> loops. This section is a great 
+    opportunity to connect our discrete math content to the 
+    topics you've been learning and implementing in your 
+    introductory coding course.
+    </p>
+    </introduction>
+
+    <!-- Note to Us: Perhaps we can write these as [Parsons 
+    Problems](https://pretextbook.org/doc/guide/html/topic-interactive-exercises.html)
+    as another option for students who are not in coding majors. We 
+    could also use Parsons Problems for the pseudocoding aspect.-->
+
+    <p>Let's start with a function that converts decimal numbers 
+    into their corresponding binary representations.</p>
+    <ul>
+        <li> Start with a pseudocode outline for your function. 
+        Pseudocode is a very high-level description of the steps a 
+        program must complete, beginning with 0 or more inputs, 
+        before returning a desired output. Write a pseudocode 
+        description of this function.</li>
+    </ul>
+    
+    <exercise><title>Write Pseudocode 1</title>
+        <statement xml:id="pseudocode-parsons-dec-to-bin"><p>Drag and drop the blocks of pseudocode below 
+        to outline a program which will convert a decimal integer 
+        into its binary equivalent.</p>
+        </statement>
+        <blocks>
+            <block order="1"><p><cline>define decimal_to_binary(decimal_integer):</cline></p></block>
+            <block order="2">
+                <p><cline>  integer_part = decimal_integer</cline>
+                <cline>  binary_digits = empty list</cline></p>
+            </block> 
+            <block order="3"><p><cline>  while integer_part > 0:</cline></p></block>
+            <block correct="no"><p><cline>  while integer_part > 0:</cline></p></block>
+            <block order="4">
+                <p><cline>    myBit = integer_part modulo 2</cline>
+                <cline>    integer_part = floor of (integer_part / 2)</cline>
+                <cline>    append myBit to binary_digits list</cline></p>
+            </block>
+            <block order="5">
+                <p><cline>  reverse the binary_digits list</cline>
+                <cline>  collapse binary_digits list to a string</cline></p>
+            </block>
+            <block order="6"><p><cline>  return binary_digits string</cline></p></block>
+        </blocks>
+    </exercise>
+    
+    <ul>
+        <li> Choose your favorite programming language and try to 
+        transform your pseudocode into a working function.</li>
+    </ul>
+    <sage language="sage">
+    <input>
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
+    </input>
+    </sage>
+    <ul>
+        <li> Whether or not you've chosen to build a working version 
+        of the function to take a decimal integer and convert it 
+        into binary, think about whether your code/pseudocode will 
+        handle special ("edge") cases. Is your function capable of 
+        converting 0? Can it handle negative integers as inputs? How 
+        does your function behave when you pass it a non-integer 
+        value as an input? Try updating your code/pseudocode to 
+        handle these things.</li>
+    </ul>
+    
+    <p>Build a function which will convert a bit-string (binary 
+    string) to its corresponding decimal representation.</p>
+    <ul>
+        <li> Start with a pseudocode outline for the function.</li>
+    </ul>
+
+    <exercise><title>Write Pseudocode 2</title>
+        <statement xml:id="pseudocode-parsons-bin-to-dec"><p>Drag and drop the blocks of pseudocode below 
+        to outline a program which will convert an integer from its 
+        binary representation to its decimal representation.</p>
+        </statement>
+        <blocks>
+            <block order="1"><cline>define binary_to_decima(bit_string):</cline></block>
+            <block order="2">
+                <cline>  bit_list = bitstring converted to list of numeric bits</cline>
+                <cline>  reverse order of bit_list</cline>
+                <cline>  initialize decimal_integer to 0</cline>
+            </block>
+            <block order="3"><cline>  for i in [0, 1,...,length(bit_list) - 1]:</cline></block>
+            <block order="no"><cline>  for bit in bit_list:</cline></block>
+            <block correct="no"><cline>  while bit in bit_list:</cline></block>
+            <block order="4"><cline>    decimal_integer = decimal_integer + (bit_list[i]*2^i)</cline></block>
+            <block order="5"><cline>  return decimal_integer</cline></block>
+        </blocks>
+    </exercise>
+
+    <ul>
+        <li> Try taking your pseudocode and implementing it as a 
+        working function in your language of choice.</li>
+    </ul>
+    <sage language="sage">
+    <input>
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
+    </input>
+    </sage>
+    <ul>
+        <li> Does your function "work" if you accidentally provide 
+        it a non-binary input? We better update the function to 
+        check this. We don't want users to get an output if they 
+        don't provide a valid input. Make the corresponding update 
+        to your function.</li>
+        <li>Does your error check use a separate loop to ensure that 
+        the user input is binary? If so, can you make your function 
+        more efficient by using just a single loop? NOTE: We'll 
+        return to the idea of looping and efficiency later in our 
+        course.</li>
+    </ul>
+    
+    <p> Now that you've made it this far, maybe we don't want to 
+    restrict ourselves to working only in binary. Make updates to 
+    your previous two functions so that they can convert to and from 
+    decimal representations and any other base less than 10. HINT: 
+    You'll need to allow for users to input both the value to be 
+    converted as well as the base you are working with in each 
+    function.
+    <ul>
+        <li> Create a new version of your first function which will 
+        convert a decimal integer to base-<m>b</m>, where 
+        <m>2\leq b \lt 10</m>.</li>
+    </ul>
+    <sage language="sage">
+    <input>
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
+    </input>
+    </sage>
+    <ul>
+        <li> Create a new version of your second function which will 
+        convert an integer written in base-<m>b</m>, where 
+        <m>2\leq b \lt 10</m>, into its decimal representation.</li>
+    </ul>
+    <sage language="sage">
+    <input>
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
+    </input>
+    </sage>
+    <ul>
+        <li> Check to ensure your functions handle "edge" cases, like 
+        converting 0, dealing with negative integers, and checking to 
+        ensure valid inputs before returning a converted value.</li>
+    </ul>
+    </p>
+    
+    <p> You now have all of the tools you need in order to piece 
+    together a function that will convert between two bases <m>b_1</m> 
+    and <m>b_2</m>, with <m>2\leq b_1, b_2 \leq 10</m>.
+    <ul>
+        <li> Build a new function, calling the functions you've written 
+        so far as helpers, to convert between any two bases (as long 
+        as those bases are at most base-10). Your function will need 
+        three input values: <c>initial_value</c>, 
+        <c>initial_base</c>, and <c>target_base</c>.</li>
+    </ul>
+    <sage language="sage">
+    <input>
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
+    </input>
+    </sage>
+    </p>
+    
+    <p> As one more challenge, try building a function which will 
+    convert a decimal integer value into its hexadecimal representation. 
+    You'll get more practice with <c>if</c> / 
+    <c>else if</c>, and <c>else</c> statements here.</p>
+    <sage language="sage">
+    <input>
+    #Define your Sage function here
+    </input>
+    </sage>
+    <sage language="python">
+    <input>
+    #Define your Python function here
+    </input>
+    </sage>
+    <sage language="r">
+    <input>
+    #Define your R function here
+    </input>
+    </sage>
+</section>
+

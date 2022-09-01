@@ -30,7 +30,7 @@
   <xi:include href="./sec_sets-ch-setsofsets.ptx" />
   -->
   <xi:include href="./sec_logic-ch-flow-control.ptx" />
-
+  <xi:include href="./sec_logic-ch-base-conversion-functions.ptx" />
   <!-- One or more of the sections of a chapter might be exercises-->
   <!--<xi:include href="./ex_logic-ch.ptx"/>-->
 </chapter>
