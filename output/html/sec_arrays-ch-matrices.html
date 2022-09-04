@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-09-04T14:33:46-04:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -19,7 +16,8 @@
 <meta property="book:author" content="Christine Caples">
 <meta property="book:author" content="Adam Gilbert">
 <meta property="book:author" content="Melanie Fraser">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -52,6 +50,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -72,8 +78,8 @@
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -86,7 +92,6 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -94,8 +99,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/runtime.980858fa0f34fd96.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/runestone.dca7462213311157.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.7/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.7/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -149,6 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
+<li><a href="reprex.html" data-scroll="reprex" class="internal">Reproducible Examples for Troubleshooting</a></li>
 </ul>
 </li>
 <li class="link">
@@ -169,16 +175,16 @@ eBookConfig.enable_chatcodes =  false;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_arrays-ch-matrices"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Two-Dimensional Arrays (Matrices)</span>
 </h2>
-<section class="introduction" id="introduction-66"><p id="p-177">We ended our last section by mentioning the <em class="emphasis">outer-product</em> between two arrays. Unlike the inner-product, the outer-product is defined even between arrays whose lengths do not match. Before we return to the definition of the outer-product, let's take a look at two-dimensional arrays, which are often referred to as matrices.</p></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-66"><p id="p-176">We ended our last section by mentioning the <em class="emphasis">outer-product</em> between two arrays. Unlike the inner-product, the outer-product is defined even between arrays whose lengths do not match. Before we return to the definition of the outer-product, let's take a look at two-dimensional arrays, which are often referred to as matrices.</p></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.1</span> <span class="title">What is a two-dimensional array?</span>
 </h3>
-<p id="p-178">A matrix is a two-dimensional array. That is, a matrix is an array which has both rows and columns. An example of a two-by-three matrix appears below.</p>
+<p id="p-177">A matrix is a two-dimensional array. That is, a matrix is an array which has both rows and columns. An example of a two-by-three matrix appears below.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-13">
 \begin{align*}
 \left[\begin{array}{ccc} 2 \amp 4 \amp -11\\ -7 \amp \frac{3}{4} \amp \frac{5}{2}\end{array}\right]
 \end{align*}
 </div>
-<p id="p-179">Seeing the form of a general <span class="process-math">\(m\times n\)</span> (<span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span>) matrix gives a bit of insight as to how matrix elements are organized and how they can be accessed in a computing environment. An <span class="process-math">\(m\times n\)</span> matrix is a two-dimensional array with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. The general from of an <span class="process-math">\(m\times n\)</span> matrix appears below.</p>
+<p id="p-178">Seeing the form of a general <span class="process-math">\(m\times n\)</span> (<span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span>) matrix gives a bit of insight as to how matrix elements are organized and how they can be accessed in a computing environment. An <span class="process-math">\(m\times n\)</span> matrix is a two-dimensional array with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. The general from of an <span class="process-math">\(m\times n\)</span> matrix appears below.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-14">
 \begin{align*}
 \left[\begin{array}{cccc} a_{11} \amp a_{12} \amp \cdots \amp a_{1n}\\ 
@@ -187,7 +193,7 @@ a_{21} \amp a_{22} \amp \cdots \amp a_{2n}\\
 a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
 \end{align*}
 </div>
-<p id="p-180">From the definition above, we can see that the element <span class="process-math">\(a_{ij}\)</span> occupies the position in row <span class="process-math">\(i\)</span> and column <span class="process-math">\(j\text{.}\)</span> This insight allows us to access matrix elements through code. The following example of an algorithm to convert a list to a matrix shows how accessing elements of a two-dimensional array can be done.</p>
+<p id="p-179">From the definition above, we can see that the element <span class="process-math">\(a_{ij}\)</span> occupies the position in row <span class="process-math">\(i\)</span> and column <span class="process-math">\(j\text{.}\)</span> This insight allows us to access matrix elements through code. The following example of an algorithm to convert a list to a matrix shows how accessing elements of a two-dimensional array can be done.</p>
 <pre class="code-display tex2jax_ignore">def list_to_matrix(myList, rows):
   list_length = length(myList)
   if (rows does not divide list_length):
@@ -205,14 +211,14 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
 
   return myMatrix
 </pre>
-<p id="p-181">Notice the use of the nested <code class="code-inline tex2jax_ignore">for</code> loops to move throw the <code class="code-inline tex2jax_ignore">row</code> and <code class="code-inline tex2jax_ignore">column</code> combinations. Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">list_to_matrix()</code> algorithm proposed above.</p>
+<p id="p-180">Notice the use of the nested <code class="code-inline tex2jax_ignore">for</code> loops to move throw the <code class="code-inline tex2jax_ignore">row</code> and <code class="code-inline tex2jax_ignore">column</code> combinations. Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">list_to_matrix()</code> algorithm proposed above.</p>
 <article class="exercise exercise-like" id="exercise-53"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-53"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">List to Matrix Complexity.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-53"><article class="exercise exercise-like"><div class="introduction" id="introduction-67"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988781&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.2</span> <span class="title">Matrix Addition/Subtraction</span>
 </h3>
-<p id="p-182">Now that we know how matrices are constructed, we can think about operations with these two-dimensional structures. Just like with one-dimensional arrays, matrix addition and subtraction is done element-wise. This requires that two matrices have the same dimensions (the same number of rows and same number of columns) as one another in order to add or subtract the two objects. An algorithm to define matrix addition appears below.</p>
+<p id="p-181">Now that we know how matrices are constructed, we can think about operations with these two-dimensional structures. Just like with one-dimensional arrays, matrix addition and subtraction is done element-wise. This requires that two matrices have the same dimensions (the same number of rows and same number of columns) as one another in order to add or subtract the two objects. An algorithm to define matrix addition appears below.</p>
 <pre class="code-display tex2jax_ignore">def matrix_sum(myMatrix1, myMatrix2):
   rows_matrix1 = number of rows in myMatrix1
   rows_matrix2 = number of rows in muMatrix2
@@ -230,12 +236,12 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
 
   return sumMatrix
 </pre>
-<p id="p-183">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">matrix_sum()</code> algorithm outlined here.</p>
+<p id="p-182">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">matrix_sum()</code> algorithm outlined here.</p>
 <article class="exercise exercise-like" id="exercise-54"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-54"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Sum Complexity.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-54"><article class="exercise exercise-like"><div class="introduction" id="introduction-68"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988788&amp;resizer=true"></iframe></div></article></div>
-<p id="p-184">Try the following exercises to test your understanding of computing matrix sums and differences.</p>
+<p id="p-183">Try the following exercises to test your understanding of computing matrix sums and differences.</p>
 <article class="exercise exercise-like" id="exercise-55"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-55"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Sum of <span class="process-math">\(2\times 2\)</span> Matrices.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-55"><article class="exercise exercise-like"><div class="introduction" id="introduction-69"></div>
@@ -258,7 +264,7 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.3</span> <span class="title">Scalar Multiplication</span>
 </h3>
-<p id="p-185">Again, similar to one-dimensional arrays, scalar multiplication with matrices is done element-wise. The algorithm below describes a method for computing a scalar multiple of an <span class="process-math">\(m\times n\)</span> matrix.</p>
+<p id="p-184">Again, similar to one-dimensional arrays, scalar multiplication with matrices is done element-wise. The algorithm below describes a method for computing a scalar multiple of an <span class="process-math">\(m\times n\)</span> matrix.</p>
 <pre class="code-display tex2jax_ignore">def scalar_mult_matrix(myScalar, myMatrix):
   rows = number of rows in myMatrix
   cols = number of columns in myMatrix
@@ -270,12 +276,12 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
 
   return scaled_matrix
 </pre>
-<p id="p-186">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">scalar_mult_matrix()</code> algorithm outlined above.</p>
+<p id="p-185">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">scalar_mult_matrix()</code> algorithm outlined above.</p>
 <article class="exercise exercise-like" id="exercise-60"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-60"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication Complexity.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-60"><article class="exercise exercise-like"><div class="introduction" id="introduction-74"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988797&amp;resizer=true"></iframe></div></article></div>
-<p id="p-187">Try the following exercises to test your understanding of computing scalar multiples of matrices.</p>
+<p id="p-186">Try the following exercises to test your understanding of computing scalar multiples of matrices.</p>
 <article class="exercise exercise-like" id="exercise-61"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-61"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 1.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-61"><article class="exercise exercise-like"><div class="introduction" id="introduction-75"></div>
@@ -294,11 +300,11 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.4</span> <span class="title">Matrix Multiplication</span>
 </h3>
-<p id="p-188">The operation of matrix multiplication is more complex that simply multiplying element-wise. Given two matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we compute the <span class="process-math">\(ij^{\text{th}}\)</span> entry of the matrix product <span class="process-math">\(AB\)</span> by taking the inner product between the <span class="process-math">\(i^{\text{th}}\)</span> row of the matrix <span class="process-math">\(A\)</span> with the <span class="process-math">\(j^{\text{th}}\)</span> column of the matrix <span class="process-math">\(B\text{.}\)</span> This forces that the number of columns in <span class="process-math">\(A\)</span> matches the number of rows in <span class="process-math">\(B\text{.}\)</span> The resulting matrix <span class="process-math">\(AB\)</span> then has a number of rows equal to the number of rows in <span class="process-math">\(A\)</span> and a number of columns equal to the number of columns in <span class="process-math">\(B\text{.}\)</span></p>
-<p id="p-189">Below is an example showing how to compute the matrix product between a <span class="process-math">\(2\times 2\)</span> matrix and a <span class="process-math">\(2\times 3\)</span> matrix.</p>
+<p id="p-187">The operation of matrix multiplication is more complex that simply multiplying element-wise. Given two matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we compute the <span class="process-math">\(ij^{\text{th}}\)</span> entry of the matrix product <span class="process-math">\(AB\)</span> by taking the inner product between the <span class="process-math">\(i^{\text{th}}\)</span> row of the matrix <span class="process-math">\(A\)</span> with the <span class="process-math">\(j^{\text{th}}\)</span> column of the matrix <span class="process-math">\(B\text{.}\)</span> This forces that the number of columns in <span class="process-math">\(A\)</span> matches the number of rows in <span class="process-math">\(B\text{.}\)</span> The resulting matrix <span class="process-math">\(AB\)</span> then has a number of rows equal to the number of rows in <span class="process-math">\(A\)</span> and a number of columns equal to the number of columns in <span class="process-math">\(B\text{.}\)</span></p>
+<p id="p-188">Below is an example showing how to compute the matrix product between a <span class="process-math">\(2\times 2\)</span> matrix and a <span class="process-math">\(2\times 3\)</span> matrix.</p>
 <article class="example example-like" id="example-14"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-14"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Product.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-14"><article class="example example-like"><p id="p-190">Compute the matrix product <span class="process-math">\(AB\text{,}\)</span> where <span class="process-math">\(A = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\)</span> and <span class="process-math">\(B = \left[\begin{array}{ccc} 5 \amp -4 \amp -2\\ 1 \amp -1 \amp 3\end{array}\right]\text{.}\)</span></p>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-14"><article class="example example-like"><p id="p-189">Compute the matrix product <span class="process-math">\(AB\text{,}\)</span> where <span class="process-math">\(A = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\)</span> and <span class="process-math">\(B = \left[\begin{array}{ccc} 5 \amp -4 \amp -2\\ 1 \amp -1 \amp 3\end{array}\right]\text{.}\)</span></p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-15">
 \begin{align*}
 AB \amp = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\cdot \left[\begin{array}{ccc} 5 \amp -4 \amp -2\\ 1 \amp -1 \amp 3\end{array}\right]\\
@@ -310,7 +316,7 @@ AB \amp = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\cdot \l
 -3 \amp 3 \amp -9\end{array}\right]
 \end{align*}
 </div></div></div></article></div>
-<p id="p-191">We can generalize this procedure into an algorithm below.</p>
+<p id="p-190">We can generalize this procedure into an algorithm below.</p>
 <pre class="code-display tex2jax_ignore">def matrix_product(A, B):
   mA = number of rows in A
   mB = number of rows in B
@@ -331,12 +337,12 @@ AB \amp = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\cdot \l
 
   return matrix_product
 </pre>
-<p id="p-192">As we've done with the other algorithms we've presented, complete the following exercise to determine the run-time complexity of the matrix multiplication algorithm outlined above.</p>
+<p id="p-191">As we've done with the other algorithms we've presented, complete the following exercise to determine the run-time complexity of the matrix multiplication algorithm outlined above.</p>
 <article class="exercise exercise-like" id="exercise-65"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-65"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.14</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication Complexity.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-65"><article class="exercise exercise-like"><div class="introduction" id="introduction-79"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989247&amp;resizer=true"></iframe></div></article></div>
-<p id="p-193">Try the following exercises to test your understanding of computing matrix products.</p>
+<p id="p-192">Try the following exercises to test your understanding of computing matrix products.</p>
 <article class="exercise exercise-like" id="exercise-66"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-66"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.15</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication 1.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-66"><article class="exercise exercise-like"><div class="introduction" id="introduction-80"></div>
@@ -355,10 +361,10 @@ AB \amp = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\cdot \l
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.5</span> <span class="title">Outer-products of one-dimensional arrays</span>
 </h3>
-<p id="p-194">At the end of the previous section, you were promised learning how to compute the outer-product between two one-dimensional arrays. We've blown by that, but will return to it now. With the addition of a simple initial step, computing the outer-product becomes a special case of the matrix multiplication you've just learned. Given two one-dimensional arrays, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we'll tip <span class="process-math">\(B\)</span> on its side so that it becomes a <em class="emphasis">row vector</em> rather than a <em class="emphasis">column vector</em>. We'll call this taking the <em class="emphasis">transpose</em> of <span class="process-math">\(B\text{,}\)</span> and denote it by <span class="process-math">\(B^T\text{.}\)</span> The new array <span class="process-math">\(B^T\)</span> then has a single row. Since the array <span class="process-math">\(A\)</span> has a single column, then matrix multiplication is defined between these two objects. If <span class="process-math">\(A\)</span> is an array of length <span class="process-math">\(m\)</span> and <span class="process-math">\(B\)</span> is an array of length <span class="process-math">\(n\text{,}\)</span> then the outer product <span class="process-math">\(AB^T\)</span> is a two-dimensional array with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. See the example below.</p>
+<p id="p-193">At the end of the previous section, you were promised learning how to compute the outer-product between two one-dimensional arrays. We've blown by that, but will return to it now. With the addition of a simple initial step, computing the outer-product becomes a special case of the matrix multiplication you've just learned. Given two one-dimensional arrays, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we'll tip <span class="process-math">\(B\)</span> on its side so that it becomes a <em class="emphasis">row vector</em> rather than a <em class="emphasis">column vector</em>. We'll call this taking the <em class="emphasis">transpose</em> of <span class="process-math">\(B\text{,}\)</span> and denote it by <span class="process-math">\(B^T\text{.}\)</span> The new array <span class="process-math">\(B^T\)</span> then has a single row. Since the array <span class="process-math">\(A\)</span> has a single column, then matrix multiplication is defined between these two objects. If <span class="process-math">\(A\)</span> is an array of length <span class="process-math">\(m\)</span> and <span class="process-math">\(B\)</span> is an array of length <span class="process-math">\(n\text{,}\)</span> then the outer product <span class="process-math">\(AB^T\)</span> is a two-dimensional array with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. See the example below.</p>
 <article class="example example-like" id="example-15"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-15"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.19</span><span class="period">.</span><span class="space"> </span><span class="title">Compute the Outer-Product.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-15"><article class="example example-like"><p id="p-195">Given the arrays <span class="process-math">\(A = \left[\begin{array}{c}2\\ 3\end{array}\right]\)</span> and <span class="process-math">\(B = \left[\begin{array}{c} -1\\ 0\\ 5\end{array}\right]\text{,}\)</span> compute the outer-product <span class="process-math">\(AB^T\text{.}\)</span></p>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-15"><article class="example example-like"><p id="p-194">Given the arrays <span class="process-math">\(A = \left[\begin{array}{c}2\\ 3\end{array}\right]\)</span> and <span class="process-math">\(B = \left[\begin{array}{c} -1\\ 0\\ 5\end{array}\right]\text{,}\)</span> compute the outer-product <span class="process-math">\(AB^T\text{.}\)</span></p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-16">
 \begin{align*}
 AB^T \amp = \left[\begin{array}{c} 2\\ 3\end{array}\right]\cdot \left[\begin{array}{ccc} -1 \amp 0 \amp 5\end{array}\right]\\
@@ -374,8 +380,8 @@ AB^T \amp = \left[\begin{array}{c} 2\\ 3\end{array}\right]\cdot \left[\begin{arr
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989418&amp;resizer=true"></iframe></div></article></div></section><section class="subsection" id="subsection-23"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.6</span> <span class="title">Conclusions</span>
 </h3>
-<p id="p-196">In this and the previous section you were exposed two one- and two-dimensional arrays. You've seen how simple mathematical operations, including scalar multiplication, addition/subtraction, and products. We saw that there are at least two ways to define vector products, including the inner- and outer-products. Spoiler alert, there are more, and you'll encounter them elsewhere. We saw that multiplication is not a commutative operation with arrays. That is, <span class="process-math">\(AB\)</span> is not generally the same as <span class="process-math">\(BA\)</span> -- in fact, knowing that the product <span class="process-math">\(AB\)</span> is defined doesn't even guarantee that the product <span class="process-math">\(BA\)</span> is defined.</p>
-<p id="p-197">In the final section of this chapter, we'll simply introduce the notion that arrays with more than two dimensions exist and are quite useful. You've certainly encountered them whether you realize it or not. You'll likely encounter these structures in your more advanced coursework. See you in the next section.</p></section></section></div></main>
+<p id="p-195">In this and the previous section you were exposed two one- and two-dimensional arrays. You've seen how simple mathematical operations, including scalar multiplication, addition/subtraction, and products. We saw that there are at least two ways to define vector products, including the inner- and outer-products. Spoiler alert, there are more, and you'll encounter them elsewhere. We saw that multiplication is not a commutative operation with arrays. That is, <span class="process-math">\(AB\)</span> is not generally the same as <span class="process-math">\(BA\)</span> -- in fact, knowing that the product <span class="process-math">\(AB\)</span> is defined doesn't even guarantee that the product <span class="process-math">\(BA\)</span> is defined.</p>
+<p id="p-196">In the final section of this chapter, we'll simply introduce the notion that arrays with more than two dimensions exist and are quite useful. You've certainly encountered them whether you realize it or not. You'll likely encounter these structures in your more advanced coursework. See you in the next section.</p></section></section></div></main>
 </div>
 </body>
 </html>

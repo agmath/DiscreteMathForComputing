@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="reprex" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Reproducible Examples for Troubleshooting</title>
+
+  <exercise label="Decimal-to-Binary-reprex"><title>Write Pseudocode 1</title>
+    <statement xml:id="pseudocode-parsons-dec-to-bin-reprex"><p>Put the blocks in order.</p>
+    </statement>
+    <blocks>
+        <block order="1"><p>First</p></block>
+        <block order="2"><p>Second</p></block> 
+        <block order="3"><p>Third</p></block>
+    </blocks>
+  </exercise>
+    
+
+</section>
+
