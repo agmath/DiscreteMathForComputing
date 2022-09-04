@@ -46,29 +46,49 @@
         description of this function.</li>
     </ul>
     
-    <exercise><title>Write Pseudocode 1</title>
+<exercise label="number-theory-proof" adaptive="yes">
+   <title>Early morning exercise</title>
+   <statement>
+       <p>Put the blocks in order.</p>
+   </statement>
+   <blocks>
+       <block order="2">
+           <p>Get Up</p>
+       </block>
+       <block order="3">
+           <choice><p>Drink a shot of rum</p></choice>
+           <choice correct="yes"><p>Eat Breakfast</p></choice>
+       </block>
+       <block order="1">
+           <p>Brush your teeth</p>
+       </block>
+   </blocks>
+   <hint>Drinking before noon is not recommended.</hint>
+</exercise>
+
+    <exercise label="Decimal-to-Binary"><title>Write Pseudocode 1</title>
         <statement xml:id="pseudocode-parsons-dec-to-bin"><p>Drag and drop the blocks of pseudocode below 
         to outline a program which will convert a decimal integer 
         into its binary equivalent.</p>
         </statement>
         <blocks>
-            <block order="1"><p><cline>define decimal_to_binary(decimal_integer):</cline></p></block>
+            <block order="1"><c>define decimal_to_binary(decimal_integer):</c></block>
             <block order="2">
-                <p><cline>  integer_part = decimal_integer</cline>
-                <cline>  binary_digits = empty list</cline></p>
+                <c>  integer_part = decimal_integer</c>
+                <c>  binary_digits = empty list</c>
             </block> 
-            <block order="3"><p><cline>  while integer_part > 0:</cline></p></block>
-            <block correct="no"><p><cline>  while integer_part > 0:</cline></p></block>
+            <block order="3"><c>  while integer_part > 0:</c></block>
+            <!--<block correct="no"><cd>  while integer_part > 0:</cd></block>-->
             <block order="4">
-                <p><cline>    myBit = integer_part modulo 2</cline>
-                <cline>    integer_part = floor of (integer_part / 2)</cline>
-                <cline>    append myBit to binary_digits list</cline></p>
+                <c>    myBit = integer_part modulo 2</c>
+                <c>    integer_part = floor of (integer_part / 2)</c>
+                <c>    append myBit to binary_digits list</c>
             </block>
             <block order="5">
-                <p><cline>  reverse the binary_digits list</cline>
-                <cline>  collapse binary_digits list to a string</cline></p>
+                <c>  reverse the binary_digits list</c>
+                <c>  collapse binary_digits list to a string</c>
             </block>
-            <block order="6"><p><cline>  return binary_digits string</cline></p></block>
+            <block order="6"><c>  return binary_digits string</c></block>
         </blocks>
     </exercise>
     
@@ -76,6 +96,11 @@
         <li> Choose your favorite programming language and try to 
         transform your pseudocode into a working function.</li>
     </ul>
+    <sage language="cpp">
+    <input>
+    #Define your C++ function here
+    </input>
+    </sage>
     <sage language="sage">
     <input>
     #Define your Sage function here
