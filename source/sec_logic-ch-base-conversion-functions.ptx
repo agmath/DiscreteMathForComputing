@@ -52,23 +52,23 @@
         into its binary equivalent.</p>
         </statement>
         <blocks>
-            <block order="1"><cd>define decimal_to_binary(decimal_integer):</cd></block>
+            <block order="1"><cd>define dec_to_bin(decimal_integer):</cd></block>
             <block order="2">
-                <cd>  integer_part = decimal_integer</cd>
-                <cd>  binary_digits = empty list</cd>
+                <cd> int_part = decimal_integer</cd>
+                <cd> binary_digits = empty list</cd>
             </block> 
-            <block order="3"><cd>  while integer_part > 0:</cd></block>
+            <block order="3"><cd> while integer_part > 0:</cd></block>
             <!--<block correct="no"><cd>  while integer_part > 0:</cd></block>-->
             <block order="4">
-                <cd>    myBit = integer_part modulo 2</cd>
-                <cd>    integer_part = floor of (integer_part / 2)</cd>
-                <cd>    append myBit to binary_digits list</cd>
+                <cd>  myBit = int_part modulo 2</cd>
+                <cd>  int_part = floor of (int_part / 2)</cd>
+                <cd>  append myBit to binary_digits list</cd>
             </block>
             <block order="5">
-                <cd>  reverse the binary_digits list</cd>
-                <cd>  collapse binary_digits list to a string</cd>
+                <cd> reverse the binary_digits list</cd>
+                <cd> collapse binary_digits list to a string</cd>
             </block>
-            <block order="6"><cd>  return binary_digits string</cd></block>
+            <block order="6"><cd> return binary_digits string</cd></block>
         </blocks>
     </exercise>
     
@@ -114,17 +114,18 @@
         binary representation to its decimal representation.</p>
         </statement>
         <blocks>
-            <block order="1"><cline>define binary_to_decima(bit_string):</cline></block>
+            <block order="1"><cd>define bin_to_dec(bit_string):</cd></block>
             <block order="2">
-                <cline>  bit_list = bitstring converted to list of numeric bits</cline>
-                <cline>  reverse order of bit_list</cline>
-                <cline>  initialize decimal_integer to 0</cline>
+                <cd> bit_list = bitstring as numeric list</cd>
+                <cd> reverse order of bit_list</cd>
+                <cd> initialize dec_int to 0</cd>
+                <cd> n = length(bit_list)</cd>
             </block>
-            <block order="3"><cline>  for i in [0, 1,...,length(bit_list) - 1]:</cline></block>
-            <block order="no"><cline>  for bit in bit_list:</cline></block>
-            <block correct="no"><cline>  while bit in bit_list:</cline></block>
-            <block order="4"><cline>    decimal_integer = decimal_integer + (bit_list[i]*2^i)</cline></block>
-            <block order="5"><cline>  return decimal_integer</cline></block>
+            <block order="3"><cd> for i in list(0, 1,...,n - 1):</cd></block>
+            <!--<block order="no"><cd>  for bit in bit_list:</cd></block>
+            <block correct="no"><cd>  while bit in bit_list:</cd></block>-->
+            <block order="4"><cd>  dec_int = dec_int + (bit_list[i]*2^i)</cd></block>
+            <block order="5"><cd> return dec_int</cd></block>
         </blocks>
     </exercise>
 

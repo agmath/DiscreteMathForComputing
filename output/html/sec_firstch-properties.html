@@ -154,7 +154,6 @@ eBookConfig.enable_chatcodes =  false;
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
-<li><a href="reprex.html" data-scroll="reprex" class="internal">Reproducible Examples for Troubleshooting</a></li>
 </ul>
 </li>
 <li class="link">
@@ -179,9 +178,10 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span> <span class="codenumber">1.4.1</span> <span class="title">Properties of Binary Numbers</span>
 </h3>
 <p id="p-43">As we've discussed, the binary number system uses only the two digits <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span> These <em class="emphasis">bi</em>nary dig<em class="emphasis">its</em> are commonly referred to as <em class="emphasis">bits</em>. Consider the following questions associated with binary numbers.</p>
-<article class="example example-like" id="example-3"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-3"><h4 class="heading">
+<article class="example example-like" id="example-3"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Largest and Smallest.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like"><p id="p-44">What are the smallest and largerst positive integers representable by and <span class="process-math">\(8\)</span>-bit binary number?</p>
+</h4>
+<p id="p-44">What are the smallest and largerst positive integers representable by and <span class="process-math">\(8\)</span>-bit binary number?</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like">
 <p id="p-45">The smallest positive integer would be <span class="process-math">\(\left(00000000\right)_{2}\text{,}\)</span> or more simply <span class="process-math">\(\left(0\right)_{10}\text{.}\)</span> The largest positive integer would be <span class="process-math">\(\left(11111111\right)_{2}\text{,}\)</span> which is <span class="process-math">\(\left(255\right)_{10}\text{.}\)</span> We can see this by evaluating the full expansion,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
@@ -191,10 +191,10 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <p class="continuation">or by recognizing that this is equivalent to <span class="process-math">\(2^8 - 1\text{.}\)</span></p>
-</div></div></article></div>
-<article class="example example-like" id="example-4"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-4"><h4 class="heading">
+</div></div></article><article class="example example-like" id="example-4"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Tracking Time.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-46">Approaching the year 2000, most computers had a 32-bit processor. Knowing also that computers typically store time in <em class="emphasis">number of seconds elapsed since midnight January 1, 1970</em>, how close were we to computers not being able to tell the time? That is, when would the number of seconds elapsed since midnight on January 1, 1970 become too large to store as a 32-bit binary number?</p>
+</h4>
+<p id="p-46">Approaching the year 2000, most computers had a 32-bit processor. Knowing also that computers typically store time in <em class="emphasis">number of seconds elapsed since midnight January 1, 1970</em>, how close were we to computers not being able to tell the time? That is, when would the number of seconds elapsed since midnight on January 1, 1970 become too large to store as a 32-bit binary number?</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
 <p id="p-47">The largest 32-bit positive integer is equivalent to the decimal integer <span class="process-math">\(2^{32} - 1\text{.}\)</span> There are about 365 days each year, 24 hours in each day, 60 minutes in each hour, and 60 seconds in each minute. Using this, computers could successfully keep time for</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
@@ -204,23 +204,23 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <p class="continuation">Computers' timekeeping was never in any real danger, but now with 64-bit processors, we won't need to worry for over half a trillion years!</p>
-</div></div></article></div>
-<p id="p-48">Up until now, we've been working only with positive integer values. Computers are certainly capable of handling more general values -- indeed, negative integers and floating point numbers are all data types recognized by computers. How do they store such values?</p>
+</div></div></article><p id="p-48">Up until now, we've been working only with positive integer values. Computers are certainly capable of handling more general values -- indeed, negative integers and floating point numbers are all data types recognized by computers. How do they store such values?</p>
 <p id="p-49">If we would like to store a signed integer (allowing for both positive and negative values), then we need to reserve one digit for encoding the sign on the value. One way to do this is to use the left-most bit to encode the sign (0 is positive, 1 is negative), and all remaining bits to encode the absolute value of the number encoded. This representation scheme is called <em class="emphasis">sign-magnitude</em>, but there are other methods such as <em class="emphasis">one's complement</em> and <em class="emphasis">two's complement</em>.</p>
-<article class="example example-like" id="example-5"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-5"><h4 class="heading">
+<article class="example example-like" id="example-5"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Largest and Smallest Signed Integers.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-5"><article class="example example-like"><p id="p-50">What are the largest and smallest representable 8-bit signed integers?</p>
+</h4>
+<p id="p-50">What are the largest and smallest representable 8-bit signed integers?</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">
 <p id="p-51">The largest 8-bit signed integer would be encoded as <span class="process-math">\(\left(01111111\right)_{2}\text{,}\)</span> which is equivalent to <span class="process-math">\(\left(127\right)_{10}\text{.}\)</span> The smallest integer would be encoded as <span class="process-math">\(\left(11111111\right)_{2}\text{,}\)</span> which represents <span class="process-math">\(\left(-127\right)_{10}\)</span> under the <em class="emphasis">sign-magnitude</em> scheme.</p>
 <p id="p-52">An interesting property of <em class="emphasis">sign-magnitude</em> is that there are two ways to represent <span class="process-math">\(\left(0\right)_{10}\text{!}\)</span></p>
-</div></div></article></div>
-<p id="p-53">Considering the consequences associated with different number encoding implementations is beyond the scope of this course. Interested students should look for a course in <em class="emphasis">Numerical Analysis</em>, which will cover methods for representing floating point numbers, floating point arithmetic, and more.</p></section><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
+</div></div></article><p id="p-53">Considering the consequences associated with different number encoding implementations is beyond the scope of this course. Interested students should look for a course in <em class="emphasis">Numerical Analysis</em>, which will cover methods for representing floating point numbers, floating point arithmetic, and more.</p></section><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.4.2</span> <span class="title">Connecting Binary to Octal and Hexadecimal</span>
 </h3>
 <p id="p-54">Perhaps you are convinced that the binary system is important because machines lack fingers and toes to count on, but why are the octal and hexadecimal systems also used? Binary encodings can be quite lengthy. To represent the number <span class="process-math">\(\left(999\right)_{10}\text{,}\)</span> we need <span class="process-math">\(10\)</span> bits. Its difficult to extract any meaning from such a number by looking at its binary representation. By grouping bits together, we can achieve more efficient encodings. Additionally, since we are simply grouping adjacent bits together with one another, we can quickly convert between binary and either octal, hexadecimal, or even whatever fancy name you want to give to a base-32 or base-64 numbering system. Let's take a look at an example below.</p>
-<article class="example example-like" id="example-6"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h4 class="heading">
+<article class="example example-like" id="example-6"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Binary to Hexadecimal.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like"><p id="p-55">Convert <span class="process-math">\(\left(11011001\right)_{2}\)</span> to its hexadecimal equivalent.</p>
+</h4>
+<p id="p-55">Convert <span class="process-math">\(\left(11011001\right)_{2}\)</span> to its hexadecimal equivalent.</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">
 <p id="p-56">Start by grouping sets of four consecutive bits together. since every four bits can be encoded using a single hexadecimal digit. We must do this grouping beginning with the rightmost bit. Once we have the bits grouped, then we can convert the groups of four bits to their equivalent hexadecimal digits independently of one another.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-4">
@@ -229,10 +229,10 @@ eBookConfig.enable_chatcodes =  false;
 \amp = \left(D9\right)_{16}
 \end{align*}
 </div>
-</div></div></article></div>
-<article class="example example-like" id="example-7"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-7"><h4 class="heading">
+</div></div></article><article class="example example-like" id="example-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Binary to Octal.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-57">Convert <span class="process-math">\(\left(11011001\right)_{2}\)</span> to its octal equivalent.</p>
+</h4>
+<p id="p-57">Convert <span class="process-math">\(\left(11011001\right)_{2}\)</span> to its octal equivalent.</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
 <p id="p-58">Similarly to the previous example, we'd like to group our bits together. Here, we would like to create groups of three bits (since we are converting to base-8, and <span class="process-math">\(2^3 = 8\)</span>), but our binary number is only 8-bits in length. We'll start by padding the number with an extra 0 on the left. Do you agree that it doesn't change the value of the encoded number? Once we've done this, the conversion is just like before. We convert each group of three consecutive bits into the corresponding octal digit independently of the other groups.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-5">
@@ -242,10 +242,10 @@ eBookConfig.enable_chatcodes =  false;
 \amp = \left(331\right)_{8}
 \end{align*}
 </div>
-</div></div></article></div>
-<article class="example example-like" id="example-8"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-8"><h4 class="heading">
+</div></div></article><article class="example example-like" id="example-8"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Hexadecimal to Binary.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><p id="p-59">Convert <span class="process-math">\(\left(8A2C\right)_{16}\)</span> to its binary equivalent.</p>
+</h4>
+<p id="p-59">Convert <span class="process-math">\(\left(8A2C\right)_{16}\)</span> to its binary equivalent.</p>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like">
 <p id="p-60">We are now just working backwards. Each hexadecimal digit will be encoded by four bits in the corresponding binary representation. That is, we'll expand each hexadecimal digit into four bits in the binary representation. Similar to the previous examples, this expansion can happen independently for each hexadecimal digit.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-6">
@@ -254,8 +254,7 @@ eBookConfig.enable_chatcodes =  false;
 \amp = \left(1000101000101100\right)_{2}
 \end{align*}
 </div>
-</div></div></article></div>
-<p id="p-61">Did you find those conversions to be much easier than the conversions we've made between generic pairs of bases?</p></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+</div></div></article><p id="p-61">Did you find those conversions to be much easier than the conversions we've made between generic pairs of bases?</p></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.4.3</span> <span class="title">Conclusion</span>
 </h3>
 <p id="p-62">There's nothing here yet.</p></section></section></div></main>

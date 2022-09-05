@@ -31,7 +31,7 @@
   -->
   <xi:include href="./sec_logic-ch-flow-control.ptx" />
   <xi:include href="./sec_logic-ch-base-conversion-functions.ptx" />
-  <xi:include href="./reprex.ptx" />
+  <!--<xi:include href="./reprex.ptx" />-->
   <!-- One or more of the sections of a chapter might be exercises-->
   <!--<xi:include href="./ex_logic-ch.ptx"/>-->
 </chapter>
