@@ -362,6 +362,8 @@ print(result)
 <pre class="ptx-sagecell sagecell-python" id="sage-9"><script type="text/x-sage">import matplotlib.pyplot as plt
 import random
 
+plt.cla()
+
 def plot_collatz_sequences(n_iterations):
     for i in range(n_iterations):
         startValue = random.randint(5, 10000)

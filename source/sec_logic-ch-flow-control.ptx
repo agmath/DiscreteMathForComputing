@@ -425,6 +425,8 @@ sequences.
     import matplotlib.pyplot as plt
     import random
 
+    plt.cla()
+
     def plot_collatz_sequences(n_iterations):
         for i in range(n_iterations):
             startValue = random.randint(5, 10000)

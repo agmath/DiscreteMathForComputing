@@ -2,6 +2,7 @@
 <!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
 <!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
 <!-- is needed if you use xi:include in this file             -->
+
 <chapter xml:id="ch-graphs" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <!-- Change title when you have one: -->
@@ -17,7 +18,42 @@
       <li> Introduction to Graph Theory</li>
       <li> Special Classes of Graph</li>
     </ul>
+    The example below shows how to embed tikz graphs into a PreTeXt document.
     </p>
+
+  <figure>
+    <caption>A Graph</caption>
+    <image xml:id="an-example-graph" width="100%">
+        <description>Just a graph.</description>
+        <latex-image>
+        \begin{tikzpicture}[domain=-3:3,scale=.5]
+          \draw (0,0) node[circle,draw,fill=black,inner sep=2.5] (D) {};
+          \draw (-.2,0) node[left] {$d$};
+          \draw (1,1) node[circle,draw,fill=black,inner sep=2.5] (A) {};
+          \draw (.9,1.1) node[above] {$a$};
+          \draw (3,2) node[circle,draw,fill=black,inner sep=2.5] (B) {};
+          \draw (2.9,2.1) node[above] {$b$};
+          \draw (5,2.5) node[circle,draw,fill=black,inner sep=2.5] (H) {};
+          \draw (5.1,2.5) node[right] {$h$};
+          \draw (6,1) node[circle,draw,fill=black,inner sep=2.5] (G) {};
+          \draw (6.2,1) node[right] {$g$};
+          \draw (5,0) node[circle,draw,fill=black,inner sep=2.5] (E) {};
+          \draw (5.2,-.1) node[below] {$e$};
+          \draw (4,-1) node[circle,draw,fill=black,inner sep=2.5] (I) {};
+          \draw (3.8,-1.2) node[below] {$i$};
+          \draw (5,-2) node[circle,draw,fill=black,inner sep=2.5] (C) {};
+          \draw (5.2,-2.1) node[right] {$c$};
+          \draw (1.5,-2) node[circle,draw,fill=black,inner sep=2.5] (F) {};
+          \draw (1.5,-2.2) node[below] {$f$};
+          \draw[thick,black] (C) -- (I) -- (F) -- (D) -- (A) -- (B) -- (H) -- (G) -- (E) -- (I);
+          \draw[thick,black] (F) -- (B);
+          \draw[thick,black] (A) -- (E) -- (B);
+        \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+
+
   </introduction>
 
   <!-- Sections can be written directly here, but it might help  -->
