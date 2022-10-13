@@ -28,8 +28,8 @@
   provided via some pseudocode -- something about halfway between 
   human preferrable and computer readable. Since we are working with 
   arrays, it is useful to have some convention about how to access 
-  individual array elements. Throughout this section, we use <c>
-  myArray[0]</c> to access the element in the left-most slot of 
+  individual array elements. Throughout this section, we use 
+  <c>myArray[0]</c> to access the element in the left-most slot of 
   the <c>myArray</c> object. We use <c>myArray[i]</c> 
   to access the element in the <m>i^{th}</m> slot of <c>myArray</c>, 
   remembering that the left-most item occupies the <m>0^{th}</m> 
@@ -40,6 +40,17 @@
   beginning your computing careers, but this is the case for many 
   of the most popular computing languages. For this reason, we adopt
   0-based indexing here.
+  </p>
+
+  <p>Complete the following checkpoint exercises to gain some familiarity 
+  with analyzing operations within a function. For reasons that will become 
+  clear later in the section, you'll be asked to ignore any "operations" 
+  required to initialize variables, initialize a loop, or return a result 
+  back to the computing environment. Additionally, you can consider lines 
+  combining arithmetic operations and updating a stored value to be a single 
+  operation. That is, <c>x = x + i</c> can be considered a single operation 
+  in the checkpoint items below. The reason we can do this will be addressed 
+  when <em>big-O</em> notation is introduced later in the section. 
   </p>
 
     <exercise exercise-customization="inline" exercise-interactive="static">
@@ -83,7 +94,7 @@
   larger and larger arrays, it takes longer to run. How much longer 
   run-time should we expect if the length of the input array were to, 
   let's say, double in length? Should we expect the routine to take 
-  approximately twice as long? More time? Less that that? How can we 
+  approximately twice as long? More time? Less than that? How can we 
   tell? This is the job of <em>big-O</em> notation.
   </p> 
 
