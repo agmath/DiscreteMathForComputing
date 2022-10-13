@@ -284,7 +284,7 @@ def detect_product(array):
   for element_a in array:
     for element_b in array:
       for element_c in array:
-        if a*b == c:
+        if element_a*element_b == element_c:
           return TRUE
         
   return FALSE 
