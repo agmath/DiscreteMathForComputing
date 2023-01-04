@@ -47,7 +47,7 @@
     for the singles digit. That is, the digit occupying the second 
     place-value will be the remainder after considering the number 
     of whole copies of <m>9</m> which divide evenly into <m>\left(
-    114 - 2\right)</m>. More simply, we could consider the remainder 
+    113 - 2\right)</m>. More simply, we could consider the remainder 
     after <m>3</m> is divided into <m>37</m> -- the quotient from the 
     previous step. From here, we note that <m>37 = 3\cdot
     \left(12\right) + 1</m>, and so the digit occupying the second 
