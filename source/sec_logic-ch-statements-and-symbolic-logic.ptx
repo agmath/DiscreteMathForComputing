@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_logic-ch-statements-and-symbolic-logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Statements and Symbolic Logic</title>
+<introduction>
+<p>Statements and logic are foundational across all of mathematics. In this section,
+we'll formally introduce the definition of a mathematical <em>statement</em> and we'll 
+introduce <em>symbolic logic</em> as a set of notation to remove the ambiguity that 
+often accompanies written language. Along the way, we'll also provide a limited 
+introduction to <em>truth tables</em> as a mechanism for analyzing the conditions 
+under which compound logical statements are valid (true).</p>
+</introduction>
+
+<subsection><title>Statements</title>
+
+<p>In mathematics, a <em>statement</em> is a claim which is either <em>true</em> or 
+<em>false</em>, but for which there is no ambiguity. The following are examples of 
+statements.
+
+    <ul>
+    <li> Water boils at <m>100^\circ</m>C.</li>
+    <li> If a triangle is a right triangle, and <m>a</m> and <m>b</m> are the lengths 
+    of its legs while <m>c</m> is the length of its hypotenuse, then 
+    <m>a^2 + b^2 = c^2</m>.</li>
+    <li> The real number <m>\pi</m> is even.</li>
+    </ul>
+Notice that each of these claims is either true or false, and the truth value of the 
+claim does not depend on the reader. Water indeed boils at <m>100^\circ</m>C, the 
+Pythagorean Theorem does hold for right triangles, and the number <m>\pi</m> is 
+not an even number. That is the first two claims are true, while the second one is 
+false. Since the three claims have these truth values regardless of who is 
+evaluating them, they are indeed <em>statements</em>.
+</p>
+
+<p>Since we've defined what a statement <em>is</em>, it will also be helpful to have 
+examples of what a statement <em>isn't</em>. The following are examples which are 
+not statements.
+
+    <ul>
+    <li> Trigonometry is difficult.</li>
+    <li> Are you enjoying this book so far?</li>
+    <li> Make sure you complete all the embedded exercises in this section.</li>
+    </ul>
+None of the above are statements because they do not have truth values. The first 
+is a matter of opinion, whose truth value is dependent on the reader. The second 
+is a question, while the third is a command.
+</p>
+
+<p>Now is a good time for you to try your hand at identifying statements. Use the 
+following embedded exercises to check your understanding.</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Identifying Statements</title><introduction>
+    </introduction><myopenmath problem="1200983" />
+</exercise>
+
+<p>If you got all of those correct on the first try, nice work! If you got any 
+wrong on the first try, click the button to generate a new version and try 
+again on a new set of questions.
+</p>
+
+</subsection>
+
+<subsection> <title>Symbolic Logic</title>
+
+<p>Written and spoken language can have ambiguous meaning. For example, if we 
+say "I will be at the gym or I will be studying at the library", what we really 
+mean is that I will be doing one or the other -- but not both. In mathematics we 
+do not work with ambiguity, indeed compound statements -- individual (atomic) 
+statements joined by logical operators (like <em>or</em>) -- must be statements 
+in their own right. That is, these compound logical statements must be true or 
+false, but not both. For this reason, we'll develop <em>symbolic logic</em>, 
+including a set of boolean (true/false) algebraic operators in our further 
+exploration of logic.</p>
+
+<p>We'll refer to an <em>atomic statement</em> as a statement which cannot be 
+decomposed into smaller substatements. For example, the statement "it is raining" 
+is an atomic statement, while the statement "it is raining and I have an umbrella" 
+is not an atomic statement. The latter can be decomposed into the atomic statements 
+"it is raining" and "I have an umbrella". In symbolic logic we'll use letters like 
+<m>p</m>, <m>q</m>, <m>r</m>, etc. to represent atomic statements. For example, 
+
+    <md>
+    <mrow> p:~ \text{I am writing in Python}</mrow>
+    <mrow> q:~ \text{I am using correct indentation}</mrow>
+    <mrow> r:~ \text{my code will run}</mrow>
+    </md>
+
+Each of those statements listed above is an atomic statement which cannot be 
+decomposed into smaller sub-statements. Using <m>p</m>, <m>q</m>, and <m>r</m> 
+to represent their corresponding statements is convenient and efficient.
+</p>
+
+<p>We'll now introduce four logical operators, corresponding to <em>not</em>, 
+<em>and</em>, <em>or</em>, and <em>if/then</em>. These operators allow us to 
+combine statements to build compound logical statements just like we do in 
+written and spoken language.
+</p>
+
+<p>The <em>negation</em> operator corresponds to the word "not" and is used 
+to switch the truth value of a statement. There are a variety of symbols which 
+can be used to represent the negation operator. Common symbols are <m>\neg</m>, 
+<m>\sim</m>, or <m>!</m> -- since the focus of this text is mathematics for 
+computing, we'll use <m>!</m> to signify negation, since that is common in 
+programming languages. That is, the statement <m>!p</m> is the negation of the 
+statement <m>p</m> -- they have opposite truth values. We can make use of a 
+<em>truth table</em> to describe all of this compactly.
+
+    <table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>!p</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+    </row>
+  </tabular>
+</table>
+
+</p>
+
+<p>The <em>conjunction</em> ... 
+</p>
+
+<p>The <em>disjunction</em> ... 
+</p>
+
+<p>The <em>implication</em> (or <em>confitional</em>) ... 
+</p>
+
+</subsection>
+
+</section>
+

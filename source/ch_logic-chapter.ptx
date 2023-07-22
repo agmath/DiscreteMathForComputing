@@ -29,6 +29,7 @@
   <xi:include href="./sec_sets-ch-operations.ptx" />
   <xi:include href="./sec_sets-ch-setsofsets.ptx" />
   -->
+  <xi:include href="./sec_logic-ch-statements-and-symbolic-logic.ptx"/>
   <xi:include href="./sec_logic-ch-flow-control.ptx" />
   <xi:include href="./sec_logic-ch-base-conversion-functions.ptx" />
   <!--<xi:include href="./reprex.ptx" />-->

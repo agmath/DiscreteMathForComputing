@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>About This Text</title>
+<title>Statements and Symbolic Logic</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -121,10 +121,10 @@ eBookConfig.enable_chatcodes =  false;
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="colophon-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="frontmatter.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-first.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="colophon-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="frontmatter.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch-first.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -132,7 +132,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link frontmatter">
 <a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="preface-1.html" data-scroll="preface-1" class="active">About This Text</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">About This Text</a></li>
 </ul>
 </li>
 <li class="link">
@@ -152,7 +152,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="link">
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
-<li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="internal">Statements and Symbolic Logic</a></li>
+<li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="active">Statements and Symbolic Logic</a></li>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
 </ul>
@@ -172,13 +172,62 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link"><a href="ch-graphs.html" data-scroll="ch-graphs" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="preface" id="preface-1"><h2 class="heading hide-type">
-<span class="type">Preface</span> <span class="codenumber"></span> <span class="title">About This Text</span>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_logic-ch-statements-and-symbolic-logic"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Statements and Symbolic Logic</span>
 </h2>
-<p id="p-1">This text is currently in development and all of it is subject to change. A very rough draft version is being prepared with high-priority sections during the Summer of 2022. We expect to release a first stable version for September 2023.</p>
-<p id="p-2">This interactive, IBL, text was designed for use in a first-year course in Discrete Mathematics at Southern New Hampshire University. The course is designed for students taking a first semester of discrete mathematics in conjunction with an introductory programming course. Discrete mathematics content is introduced in time for it to be utilized in the corrsponding programming class.</p>
-<p id="p-3">At Southern New Hampshire University, first-semester Computer Science students take CS113 (an introductory course in C++) and also traditionally took a course in Discrete Mathematics designed for general education purposes. In 2020, this Discrete Mathematics course was phased out and was replaced by a Discrete Mathematics for Computing course. Topics from the original Discrete Mathematics course were rearranged such that they are covered in time to be used in the CS113 class. Because the course is advertised as a mathematics for computing course, connections are explicitly made between mathematics and programming concepts.</p>
-<p id="p-4">Since the course has been developed, students majoring in Information Technology and students majoring in Game Programming have been encouraged by their major faculty to enroll as well. Those programs utilize Python and C#, respectively, in their first-semester coursework. For these reasons, we've attempted to build the Discrete Mathematics for Computing course (and this accompanying text) as "language agnostic" experiences.</p></section></div></main>
+<section class="introduction" id="introduction-41"><p id="p-91">Statements and logic are foundational across all of mathematics. In this section, we'll formally introduce the definition of a mathematical <em class="emphasis">statement</em> and we'll introduce <em class="emphasis">symbolic logic</em> as a set of notation to remove the ambiguity that often accompanies written language. Along the way, we'll also provide a limited introduction to <em class="emphasis">truth tables</em> as a mechanism for analyzing the conditions under which compound logical statements are valid (true).</p></section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Statements</span>
+</h3>
+<p id="p-92">In mathematics, a <em class="emphasis">statement</em> is a claim which is either <em class="emphasis">true</em> or <em class="emphasis">false</em>, but for which there is no ambiguity. The following are examples of statements.</p>
+<ul class="disc">
+<li id="li-11"><p id="p-derived-li-11">Water boils at <span class="process-math">\(100^\circ\)</span>C.</p></li>
+<li id="li-12"><p id="p-derived-li-12">If a triangle is a right triangle, and <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the lengths of its legs while <span class="process-math">\(c\)</span> is the length of its hypotenuse, then <span class="process-math">\(a^2 + b^2 = c^2\text{.}\)</span></p></li>
+<li id="li-13"><p id="p-derived-li-13">The real number <span class="process-math">\(\pi\)</span> is even.</p></li>
+</ul>
+<p class="continuation">Notice that each of these claims is either true or false, and the truth value of the claim does not depend on the reader. Water indeed boils at <span class="process-math">\(100^\circ\)</span>C, the Pythagorean Theorem does hold for right triangles, and the number <span class="process-math">\(\pi\)</span> is not an even number. That is the first two claims are true, while the second one is false. Since the three claims have these truth values regardless of who is evaluating them, they are indeed <em class="emphasis">statements</em>.</p>
+<p id="p-93">Since we've defined what a statement <em class="emphasis">is</em>, it will also be helpful to have examples of what a statement <em class="emphasis">isn't</em>. The following are examples which are not statements.</p>
+<ul class="disc">
+<li id="li-14"><p id="p-derived-li-14">Trigonometry is difficult.</p></li>
+<li id="li-15"><p id="p-derived-li-15">Are you enjoying this book so far?</p></li>
+<li id="li-16"><p id="p-derived-li-16">Make sure you complete all the embedded exercises in this section.</p></li>
+</ul>
+<p class="continuation">None of the above are statements because they do not have truth values. The first is a matter of opinion, whose truth value is dependent on the reader. The second is a question, while the third is a command.</p>
+<p id="p-94">Now is a good time for you to try your hand at identifying statements. Use the following embedded exercises to check your understanding.</p>
+<article class="exercise exercise-like" id="exercise-33"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Identifying Statements.</span>
+</h4>
+<div class="introduction" id="introduction-42"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=1200983&amp;resizer=true"></iframe></div></article><p id="p-95">If you got all of those correct on the first try, nice work! If you got any wrong on the first try, click the button to generate a new version and try again on a new set of questions.</p></section><section class="subsection" id="subsection-12"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Symbolic Logic</span>
+</h3>
+<p id="p-96">Written and spoken language can have ambiguous meaning. For example, if we say "I will be at the gym or I will be studying at the library", what we really mean is that I will be doing one or the other -- but not both. In mathematics we do not work with ambiguity, indeed compound statements -- individual (atomic) statements joined by logical operators (like <em class="emphasis">or</em>) -- must be statements in their own right. That is, these compound logical statements must be true or false, but not both. For this reason, we'll develop <em class="emphasis">symbolic logic</em>, including a set of boolean (true/false) algebraic operators in our further exploration of logic.</p>
+<p id="p-97">We'll refer to an <em class="emphasis">atomic statement</em> as a statement which cannot be decomposed into smaller substatements. For example, the statement "it is raining" is an atomic statement, while the statement "it is raining and I have an umbrella" is not an atomic statement. The latter can be decomposed into the atomic statements "it is raining" and "I have an umbrella". In symbolic logic we'll use letters like <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> <span class="process-math">\(r\text{,}\)</span> etc. to represent atomic statements. For example,</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-7">
+\begin{gather*}
+p:~ \text{I am writing in Python}\\
+q:~ \text{I am using correct indentation}\\
+r:~ \text{my code will run}
+\end{gather*}
+</div>
+<p class="continuation">Each of those statements listed above is an atomic statement which cannot be decomposed into smaller sub-statements. Using <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> and <span class="process-math">\(r\)</span> to represent their corresponding statements is convenient and efficient.</p>
+<p id="p-98">We'll now introduce four logical operators, corresponding to <em class="emphasis">not</em>, <em class="emphasis">and</em>, <em class="emphasis">or</em>, and <em class="emphasis">if/then</em>. These operators allow us to combine statements to build compound logical statements just like we do in written and spoken language.</p>
+<p id="p-99">The <em class="emphasis">negation</em> operator corresponds to the word "not" and is used to switch the truth value of a statement. There are a variety of symbols which can be used to represent the negation operator. Common symbols are <span class="process-math">\(\neg\text{,}\)</span> <span class="process-math">\(\sim\text{,}\)</span> or <span class="process-math">\(!\)</span> -- since the focus of this text is mathematics for computing, we'll use <span class="process-math">\(!\)</span> to signify negation, since that is common in programming languages. That is, the statement <span class="process-math">\(!p\)</span> is the negation of the statement <span class="process-math">\(p\)</span> -- they have opposite truth values. We can make use of a <em class="emphasis">truth table</em> to describe all of this compactly. <figure class="table table-like" id="table-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure></p>
+<p id="p-100">The <em class="emphasis">conjunction</em> ...</p>
+<p id="p-101">The <em class="emphasis">disjunction</em> ...</p>
+<p id="p-102">The <em class="emphasis">implication</em> (or <em class="emphasis">confitional</em>) ...</p></section></section></div></main>
 </div>
 </body>
 </html>

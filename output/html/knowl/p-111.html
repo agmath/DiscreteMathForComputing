@@ -12,7 +12,8 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>In this final, subsection, we'll provide ourselves an opportunity to build a function which explores the Collatz Conjecture. You may have heard of this colloquially as the "<span class="process-math">\(3x + 1\)</span>" conjecture. Below is a video from the Veritasium YouTube channel discussing the conjecture.</p>
+<p>Hopefully you noticed that we've constructed a function which no longer behaves correctly. If you didn't notice this, try passing the value 0.5 to the <code class="code-inline tex2jax_ignore">myNumber</code> input parameter. The function prints out that <code class="code-inline tex2jax_ignore">"The 
+input is odd"</code>, but that's not correct. This brings up an important point about code and computing in general. Computers are great at following instructions, but they aren't smart. The computer has no way to know that it is providing us with wrong information -- instead, it is only following the instructions that we've written for it. We can create a better (and correct) version of our function if we use <code class="code-inline tex2jax_ignore">else if</code> followed by an <code class="code-inline tex2jax_ignore">else</code> statement to catch scenarios where the user has input a non-integer. Below is what that might look like using pseudocode as well as in a live Python implementation.</p>
 <span class="incontext"><a href="sec_logic-ch-flow-control.html#p-111" class="internal">in-context</a></span>
 </body>
 </html>

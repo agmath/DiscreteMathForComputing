@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Notice that <code class="code-inline tex2jax_ignore">my_doubling_function()</code> does not include a preset number of iterations over which the <code class="code-inline tex2jax_ignore">val = 2*val</code> code in the <code class="code-inline tex2jax_ignore">while</code> loop will be run. At each iteration through the loop, <code class="code-inline tex2jax_ignore">val</code> is checked to see whether it exceeds <span class="process-math">\(100\text{.}\)</span> As soon as <code class="code-inline tex2jax_ignore">val</code> exceeds <span class="process-math">\(100\text{,}\)</span> the <code class="code-inline tex2jax_ignore">while</code> loop is terminated. Try running the function with several input different input values. Unfortunately, with a <code class="code-inline tex2jax_ignore">while</code> loop it is possible to find yourself in a scenario where you function loops infinitely, never returning a value, and eventually crashing. Such is the case here if we try evaluating <code class="code-inline tex2jax_ignore">my_doubling_function()</code> with a negative input value.</p>
+<p>If you played around with the function, you'll have likely noticed that nothing is printed out if you pass a value to the <code class="code-inline tex2jax_ignore">myNumber</code> parameter which is not even. We can add an <code class="code-inline tex2jax_ignore">else</code> statement to print out that the input is odd if the original conditional is not satisfied. We'll do that in pseudocode and follow it up with a live implementation below.</p>
 <span class="incontext"><a href="sec_logic-ch-flow-control.html#p-110" class="internal">in-context</a></span>
 </body>
 </html>

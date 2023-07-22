@@ -13,8 +13,10 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-n\left(n\left(n\left(O\left(1\right)\right)\right)\right) \amp = n^3\cdot O\left(1\right)\\
-\amp = O\left(n^3\right)
+n\left(\cdot O\left(1\right) + O\left(1\right)\right) + O\left(1\right) \amp = n\cdot O\left(2\right) + O\left(1\right)\\
+\amp = O\left(2n\right) + O\left(1\right)\\
+\amp = O\left(2n\right)\\
+\amp = O\left(n\right)
 \end{align*}
 </div>
 <span class="incontext"><a href="sec_counting-big-O.html#md-9" class="internal">in-context</a></span>
