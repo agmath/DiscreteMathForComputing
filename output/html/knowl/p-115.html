@@ -12,7 +12,43 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>The following is a live implementation of the <code class="code-inline tex2jax_ignore">is_even()</code> function in Python. Please consider experimenting with the code. At the very least, try evaluating <code class="code-inline tex2jax_ignore">is_even()</code> for other input values.</p>
-<span class="incontext"><a href="sec_logic-ch-flow-control.html#p-115" class="internal">in-context</a></span>
+<p>Perhaps you also noticed that building two truth tables was inefficient and took up lots of space and effort. We can condense our work into a single truth table as long as we compare the columns in the truth table that correspond to our statements in question. For example, consider the truth table below as an alternative to the two tables above. <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.15<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\to q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\lor !p\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure> Notice still that the two columns corresponding to our statements, <span class="process-math">\(p\to q\)</span> and <span class="process-math">\(q\lor !p\)</span> are identical.</p>
+<span class="incontext"><a href="sec_logic-ch-compound-statements.html#p-115" class="internal">in-context</a></span>
 </body>
 </html>

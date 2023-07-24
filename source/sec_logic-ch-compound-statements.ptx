@@ -124,7 +124,7 @@ argument.
 </p>
 
 <p> Consider the following truth table as an example for analyzing the truth values 
-of <m>\left(p\lor !q\right)\implies !r</m>.
+of <m>\left(p\lor !q\right)\to !r</m>.
 
 <table>
     <tabular halign="center">
@@ -229,6 +229,218 @@ Now fill in the remaining truth values before moving on.
 </subsection>
 
 <subsection><title>Compound Statements and Truth Tables</title>
+
+<p>You have all the tools you need to analyze compound logical statements 
+with the help of truth tables. As such, this subsection mainly consists of 
+embedded example problems for you to solve. As usual, these embedded examples 
+are interactive and will help you check your understanding. The earliest 
+examples involve truth tables that are mostly set up for you. The final 
+examples ask you to construct nearly all aspects of the truth tables while 
+you build your solutions. The examples slowly build you up to being able to 
+approach these problems independently.
+</p>
+
+[NEED TO UPDATE MoM PROBLEM TO HAVE DYNAMIC ANSWER COLUMNS] 
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table I</title><introduction>
+    </introduction><myopenmath problem="25467" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table II</title><introduction>
+    </introduction><myopenmath problem="25470" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table III</title><introduction>
+    </introduction><myopenmath problem="270242" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table IV</title><introduction>
+    </introduction><myopenmath problem="270247" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table V</title><introduction>
+    </introduction><myopenmath problem="270249" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table VI</title><introduction>
+    </introduction><myopenmath problem="270255" />
+</exercise>
+
+<p>Now you'll be more responsible for building your own truth table. The rows
+are predetermined, but you'll need to fill in the column headings.
+</p>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table I</title><introduction>
+    </introduction><myopenmath problem="271847" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table II</title><introduction>
+    </introduction><myopenmath problem="271848" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table III</title><introduction>
+    </introduction><myopenmath problem="271853" />
+</exercise>
+
+<exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table IV</title><introduction>
+    </introduction><myopenmath problem="271854" />
+</exercise>
+
+<p>How did you do with building those truth tables? Are you gaining confidence 
+in constructing the tables and using them to evaluate the conditions under 
+which a compound logical expression are true or false? In the next subsection, 
+we'll see how to use truth tables to determine whether compound logical 
+statements are equivalent to one another. 
+</p>
+
+</subsection>
+
+<subsection><title>Logical Equivalence</title>
+
+<p>Now that we know how to evaluate logical expressions, the next natural 
+question to ask is "when are two logical expressions equivalent to one 
+another?". Simply put, two expressions are logically equivalent if they 
+have exactly the same truth values under the same conditions. In terms of 
+their truth tables, they have exactly the same combination of <em>trues</em> 
+and <em>falses</em> in exactly the same order (as long as the atomic 
+statements are arranged identically). This means that, if we build 
+a truth table for each of the statements in queston, ensuring that the tables 
+include the same atomic statements and that the truth values for those atomic 
+statements appear in the same order, then two statements are logically 
+equivalent if the final columns in their truth tables are identical.
+</p>
+
+<p>For example, we might consider the logical statements <m>p\to q</m> and 
+<m>q\lor !p</m>. We can construct and compare their truth tables below:
+
+  <table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>p \to q</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+    </row>
+    </tabular>
+  </table>
+
+and 
+
+<table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>!p</m></cell>
+      <cell><m>q\lor !p</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    </tabular>
+  </table>
+
+Notice that the final columns of the two truth tables are identical. Since 
+<m>p\to q</m> and <m>q\lor !p</m> are true and false under exactly the same 
+conditions, we have identified that they are logically equivalent. In this 
+case, we'll write that <m>p\to q \equiv q\lor !p</m>.
+</p>
+
+<p>Perhaps you also noticed that building two truth tables was inefficient 
+and took up lots of space and effort. We can condense our work into a single 
+truth table as long as we compare the columns in the truth table that 
+correspond to our statements in question. For example, consider the truth 
+table below as an alternative to the two tables above.
+
+  <table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>!p</m></cell>
+      <cell><m>p\to q</m></cell>
+      <cell><m>q\lor !p</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    </tabular>
+  </table>
+
+Notice still that the two columns corresponding to our statements, <m>p\to q</m> 
+and <m>q\lor !p</m> are identical.
+</p>
+
+<p>Check your understanding in the following examples by building the truth 
+tables and determining whether the statements are logically equivalent.
+</p>
+
+[NEED TO WRITE EXAMPLES INTO MoM]
 
 </subsection>
 
