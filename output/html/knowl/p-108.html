@@ -12,7 +12,14 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Earlier in this chapter, we were exposed to conditional statements of the form <span class="process-math">\(P\implies Q\text{.}\)</span> We read these statements <em class="emphasis">If <span class="process-math">\(P\)</span> is true, then <span class="process-math">\(Q\)</span> is true</em>. The idea with code is quite similar -- the interpretation of <em class="emphasis">If <span class="process-math">\(P\text{,}\)</span> then <span class="process-math">\(Q\)</span></em> in code, however, is <em class="emphasis">If <span class="process-math">\(P\)</span> is true, then do <span class="process-math">\(Q\)</span></em>. Seeing this in action will help.</p>
-<span class="incontext"><a href="sec_logic-ch-flow-control.html#p-108" class="internal">in-context</a></span>
+<p>In short, a truth table is a stucture which allows us to systematically analyze truth values for logical statements. The number of rows and columns in a truth table will depend on the complexity of the logical statement to be analysed. For a logical statement that includes <span class="process-math">\(n\)</span> distinct atomic statements, a truth table with <span class="process-math">\(2^n\)</span> rows is required to capture all of the combinations of truth and falsity for each of the atomic statements. The number of columns in the truth table will vary with the number of operators in the statement. You can (and should) use the strategy below when constructing a truth table to analyze a logical statement or argument.</p>
+<ol class="decimal">
+<li><p>Identify the number of atomic statements included in the compound logical statement.</p></li>
+<li><p>Build a truth table with <span class="process-math">\(2^n\)</span> rows (not including the header row), where <span class="process-math">\(n\)</span> is the number of atomic statements you identified in step 1.</p></li>
+<li><p>Build a column for each of the individual atomic statements.</p></li>
+<li><p>Look for any negation operators attached to atomic statements and build a column in the truth table for each negated atomic statement that appears.</p></li>
+<li><p>The order of operations for logic are: <em class="emphasis">parentheses</em>, <em class="emphasis">negations</em>, <em class="emphasis">conjunctions</em>/<em class="emphasis">disjunctions</em> (left to right), and then <em class="emphasis">implications</em>. Slowly add columns to your truth table according to this order of operations that will build up to the full compound logical statement you are analyzing.</p></li>
+</ol>
+<span class="incontext"><a href="sec_logic-ch-compound-statements.html#p-108" class="internal">in-context</a></span>
 </body>
 </html>

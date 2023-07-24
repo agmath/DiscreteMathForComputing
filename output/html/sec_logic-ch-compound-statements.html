@@ -217,8 +217,109 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines">F</td>
 <td class="c m b0 r0 l0 t0 lines">T</td>
 </tr>
-</table></div></figure></p></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Compound Statements and Truth Tables</span>
+</table></div></figure></p>
+<p id="p-106">Given your previous experience with mathematics, it likely comes as no surprise to you that we can combine our statements and logical operators together to build more complex logical statements. These more complex statements will be the focus of this section of our text.</p></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Truth Tables</span>
+</h3>
+<p id="p-107">In both the previous section and also the introduction to this section, we've utilized truth tables to analyse the conditions under which our compound logical statements are <em class="emphasis">true</em> or <em class="emphasis">false</em>. We've used this structures without much explanation though, so we'll take a moment to discuss them here.</p>
+<p id="p-108">In short, a truth table is a stucture which allows us to systematically analyze truth values for logical statements. The number of rows and columns in a truth table will depend on the complexity of the logical statement to be analysed. For a logical statement that includes <span class="process-math">\(n\)</span> distinct atomic statements, a truth table with <span class="process-math">\(2^n\)</span> rows is required to capture all of the combinations of truth and falsity for each of the atomic statements. The number of columns in the truth table will vary with the number of operators in the statement. You can (and should) use the strategy below when constructing a truth table to analyze a logical statement or argument.</p>
+<ol class="decimal">
+<li id="li-17"><p id="p-derived-li-17">Identify the number of atomic statements included in the compound logical statement.</p></li>
+<li id="li-19"><p id="p-derived-li-19">Build a truth table with <span class="process-math">\(2^n\)</span> rows (not including the header row), where <span class="process-math">\(n\)</span> is the number of atomic statements you identified in step 1.</p></li>
+<li id="li-20"><p id="p-derived-li-20">Build a column for each of the individual atomic statements.</p></li>
+<li id="li-24"><p id="p-derived-li-24">Look for any negation operators attached to atomic statements and build a column in the truth table for each negated atomic statement that appears.</p></li>
+<li id="li-25"><p id="p-derived-li-25">The order of operations for logic are: <em class="emphasis">parentheses</em>, <em class="emphasis">negations</em>, <em class="emphasis">conjunctions</em>/<em class="emphasis">disjunctions</em> (left to right), and then <em class="emphasis">implications</em>. Slowly add columns to your truth table according to this order of operations that will build up to the full compound logical statement you are analyzing.</p></li>
+</ol>
+<p id="p-109">Consider the following truth table as an example for analyzing the truth values of <span class="process-math">\(\left(p\lor !q\right)\implies !r\text{.}\)</span> <figure class="table table-like" id="table-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(r\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!r\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\lor !q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\left(p \lor !q\right)\to !r\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure> Consider the following questions before trying to fill in the truth table on your own.</p>
+<ol class="decimal">
+<li id="li-27"><p id="p-derived-li-27">Why are there 8 rows in this truth table? Is having 8 correct?</p></li>
+<li id="li-28"><p id="p-derived-li-28">Why isn't there a <span class="process-math">\(!p\)</span> column if there are columns for <span class="process-math">\(!q\)</span> and <span class="process-math">\(!r\text{?}\)</span></p></li>
+<li id="li-29"><p id="p-derived-li-29">Are 7 columns appropriate here? Can we fill in each column by looking at the truth values in at most two columns to the left of it?</p></li>
+</ol>
+<p class="continuation">Now fill in the remaining truth values before moving on.</p></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Compound Statements and Truth Tables</span>
 </h3></section></section></div></main>
 </div>
 </body>

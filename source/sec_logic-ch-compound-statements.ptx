@@ -60,7 +60,173 @@ the results from that previous section appears below:
     </table>
 </p>
 
+<p>Given your previous experience with mathematics, it likely comes as no surprise 
+to you that we can combine our statements and logical operators together to build 
+more complex logical statements. These more complex statements will be the focus of 
+this section of our text.
+</p>
+
 </introduction>
+
+<subsection><title>Truth Tables</title>
+
+<p>In both the previous section and also the introduction to this section, we've 
+utilized truth tables to analyse the conditions under which our compound logical 
+statements are <em>true</em> or <em>false</em>. We've used this structures without 
+much explanation though, so we'll take a moment to discuss them here.</p>
+
+<p>In short, a truth table is a stucture which allows us to systematically analyze 
+truth values for logical statements. The number of rows and columns in a truth table 
+will depend on the complexity of the logical statement to be analysed. For a logical 
+statement that includes <m>n</m> distinct atomic statements, a truth table with 
+<m>2^n</m> rows is required to capture all of the combinations of truth and falsity 
+for each of the atomic statements. The number of columns in the truth table will 
+vary with the number of operators in the statement. You can (and should) use the 
+strategy below when constructing a truth table to analyze a logical statement or 
+argument.
+
+  <ol>
+    <li> Identify the number of atomic statements included in the compound logical 
+    statement.</li> 
+    <ul> 
+      <li> As a reminder, each atomic statement will be represented by a 
+      lowercase letter in the symbolic form of the logical statement.</li>
+    </ul>
+    <li> Build a truth table with <m>2^n</m> rows (not including the header row), 
+    where <m>n</m> is the number of atomic statements you identified in step 1.</li>
+    <li> Build a column for each of the individual atomic statements.</li>
+    <ol type="a">
+      <li> Beginning with the right-most atomic statement in the table, alternate 
+      T/F/T/F/T/F/T/F... all the way down the table.</li>
+      <li> Move one column to the left and fill in the column for your next atomic 
+      statement by doubling the number of T's and F's appearing together. That is, 
+      fill in the column with T/T/F/F/T/T/F/F...</li>
+      <li> Continue moving to the left one column at a time and filling in the 
+      column by doubling the number of consecutive trues and falses appearing in 
+      the column to the right until you have a column built for each atomic 
+      statement. For this next column you'd have four trues followed by four falses 
+      over and over again. Then eight trues with eight falses, etc.</li>
+    </ol>
+    <li> Look for any negation operators attached to atomic statements and build a 
+    column in the truth table for each negated atomic statement that appears.</li>
+    <li> The order of operations for logic are: <em>parentheses</em>, 
+    <em>negations</em>, <em>conjunctions</em>/<em>disjunctions</em> (left to right),
+    and then <em>implications</em>. Slowly add columns to your truth table according 
+    to this order of operations that will build up to the full compound logical 
+    statement you are analyzing.</li>
+    <ul>
+      <li> PRO TIP: Add new columns so that can be populated with their T/F values 
+      by looking only at one or two existing columns in your truth table. If you are 
+      looking at more than two columns to decide whether to place a T or F in your 
+      new column, you'll make mistakes.</li>
+    </ul>
+  </ol>
+</p>
+
+<p> Consider the following truth table as an example for analyzing the truth values 
+of <m>\left(p\lor !q\right)\implies !r</m>.
+
+<table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>r</m></cell>
+      <cell><m>!q</m></cell>
+      <cell><m>!r</m></cell>
+      <cell><m>p\lor !q</m></cell>
+      <cell><m>\left(p \lor !q\right)\to !r</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    </tabular>
+    </table>
+
+Consider the following questions before trying to fill in the truth table on 
+your own.
+
+<ol type="a">
+  <li> Why are there 8 rows in this truth table? Is having 8 correct?</li>
+  <li> Why isn't there a <m>!p</m> column if there are columns for  
+  <m>!q</m> and <m>!r</m>?</li>
+  <li> Are 7 columns appropriate here? Can we fill in each column by looking 
+  at the truth values in at most two columns to the left of it?</li>
+</ol>
+
+Now fill in the remaining truth values before moving on.
+</p>
+
+</subsection>
 
 <subsection><title>Compound Statements and Truth Tables</title>
 
