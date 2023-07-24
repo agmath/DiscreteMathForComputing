@@ -153,6 +153,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link">
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
 <li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="internal">Statements and Symbolic Logic</a></li>
+<li><a href="sec_logic-ch-compound-statements.html" data-scroll="sec_logic-ch-compound-statements" class="internal">Compound Statements, Truth Tables, and Logical Equivalence</a></li>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
 </ul>
@@ -175,11 +176,11 @@ eBookConfig.enable_chatcodes =  false;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_arrays-ch-one-dimensional-arrays"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">One-Dimensional Arrays</span>
 </h2>
-<section class="introduction" id="introduction-59"><p id="p-174">As a reminder, an <em class="emphasis">array</em> is a structure for storing several data values, as long as those values all share the same data type. It is common to refer to one-dimensional arrays as <em class="emphasis">vectors</em>, though the term "vector" has a special meaning in physics and engineering.</p></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-60"><p id="p-177">As a reminder, an <em class="emphasis">array</em> is a structure for storing several data values, as long as those values all share the same data type. It is common to refer to one-dimensional arrays as <em class="emphasis">vectors</em>, though the term "vector" has a special meaning in physics and engineering.</p></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.1.1</span> <span class="title">Addition and Scalar Multiplication</span>
 </h3>
-<p id="p-175">A one-dimensional array looks a lot like a list of values. For example, <code class="code-inline tex2jax_ignore">myFirstArray = [1, 5, 9, -11]</code> is a one-dimensional array with four elements while <code class="code-inline tex2jax_ignore">mySecondArray = [1.5, -2.8, 3]</code> is a one-dimensional array with three elements. In the two examples, <code class="code-inline tex2jax_ignore">myFirstArray</code> is an array of integer values, while <code class="code-inline tex2jax_ignore">mySecondArray</code> is an array of floats. Perhaps you remember from our first chapter that there are different memory requirements for integers versus floats, and that can sometimes make a big difference in our programs.</p>
-<p id="p-176">Addition and subtraction between arrays is done <em class="emphasis">elementwise</em>. For example, we can add the two arrays <code class="code-inline tex2jax_ignore">[1, 6, 3]</code> and <code class="code-inline tex2jax_ignore">[5, 11, 2]</code> as follows.</p>
+<p id="p-178">A one-dimensional array looks a lot like a list of values. For example, <code class="code-inline tex2jax_ignore">myFirstArray = [1, 5, 9, -11]</code> is a one-dimensional array with four elements while <code class="code-inline tex2jax_ignore">mySecondArray = [1.5, -2.8, 3]</code> is a one-dimensional array with three elements. In the two examples, <code class="code-inline tex2jax_ignore">myFirstArray</code> is an array of integer values, while <code class="code-inline tex2jax_ignore">mySecondArray</code> is an array of floats. Perhaps you remember from our first chapter that there are different memory requirements for integers versus floats, and that can sometimes make a big difference in our programs.</p>
+<p id="p-179">Addition and subtraction between arrays is done <em class="emphasis">elementwise</em>. For example, we can add the two arrays <code class="code-inline tex2jax_ignore">[1, 6, 3]</code> and <code class="code-inline tex2jax_ignore">[5, 11, 2]</code> as follows.</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-11">
 \begin{align*}
 \left[\begin{array}{c} 1\\ 6\\ 3\end{array}\right] + \left[\begin{array}{c} 5\\ 11\\ 2\end{array}\right] \amp = \left[\begin{array}{c} \left(1 + 5\right)\\ \left(6 + 11\right)\\ \left(3 + 2\right)\end{array}\right]\\
@@ -193,36 +194,36 @@ eBookConfig.enable_chatcodes =  false;
 \amp = \left[\begin{array}{c} -4\\ -5\\ 1\end{array}\right]
 \end{align*}
 </div>
-<p id="p-177">A <em class="emphasis">scalar</em> is a quantity which has only a magnitude. For example, the value <span class="process-math">\(8\)</span> is considered a scalar, while <span class="process-math">\([8]\)</span> may be considered a one-dimensional array containing a single element. We can multiply arrays by a scalar value. To do this, each element of the array is multiplied by the scalar. For example, let's multiply the array <code class="code-inline tex2jax_ignore">[2, 12, -64, 32, 18]</code> by the scalar <span class="process-math">\(\frac{1}{2}\text{.}\)</span></p>
+<p id="p-180">A <em class="emphasis">scalar</em> is a quantity which has only a magnitude. For example, the value <span class="process-math">\(8\)</span> is considered a scalar, while <span class="process-math">\([8]\)</span> may be considered a one-dimensional array containing a single element. We can multiply arrays by a scalar value. To do this, each element of the array is multiplied by the scalar. For example, let's multiply the array <code class="code-inline tex2jax_ignore">[2, 12, -64, 32, 18]</code> by the scalar <span class="process-math">\(\frac{1}{2}\text{.}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-13">
 \begin{align*}
 \frac{1}{2}\cdot \left[\begin{array}{c} 2\\ 12\\ -64\\ 32\\ 18\end{array}\right] \amp = \left[\begin{array}{c} \left(\frac{1}{2}\cdot 2\right)\\ \left(\frac{1}{2}\cdot 12\right)\\ \left(\frac{1}{2}\cdot \left(-64\right)\right)\\ \left(\frac{1}{2}\cdot 32\right)\\ \left(\frac{1}{2}\cdot 18\right)\end{array}\right]\\
 \amp = \left[\begin{array}{c} 1\\ 6\\ -32\\ 16\\ 9\end{array}\right]
 \end{align*}
 </div>
-<p id="p-178">Use what you've learned to verify your grasp of addition, subtraction, and scalar multiplication for one-dimensional arrays.</p>
+<p id="p-181">Use what you've learned to verify your grasp of addition, subtraction, and scalar multiplication for one-dimensional arrays.</p>
 <article class="exercise exercise-like" id="exercise-45"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Array Addition/Subtraction.</span>
 </h4>
-<div class="introduction" id="introduction-60"></div>
+<div class="introduction" id="introduction-61"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=987312&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="exercise-46"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication.</span>
 </h4>
-<div class="introduction" id="introduction-61"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=987525&amp;resizer=true"></iframe></div></article><p id="p-179">At the end of our chapter on counting, we encountered big-O notation and its use in describing the <em class="emphasis">run-time complexity</em> of a routine, algorithm, or program. Answer the following questions about the run-time complexity of array addition and scalar multiplication.</p>
+<div class="introduction" id="introduction-62"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=987525&amp;resizer=true"></iframe></div></article><p id="p-182">At the end of our chapter on counting, we encountered big-O notation and its use in describing the <em class="emphasis">run-time complexity</em> of a routine, algorithm, or program. Answer the following questions about the run-time complexity of array addition and scalar multiplication.</p>
 <article class="exercise exercise-like" id="exercise-47"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Array Addition Complexity.</span>
 </h4>
-<div class="introduction" id="introduction-62"></div>
+<div class="introduction" id="introduction-63"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=987073&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="exercise-48"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication Complexity.</span>
 </h4>
-<div class="introduction" id="introduction-63"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=987075&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
+<div class="introduction" id="introduction-64"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=987075&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.1.2</span> <span class="title">Inner-products</span>
 </h3>
-<p id="p-180">In addition to adding/subtracting arrays or multiplying arrays by scalars, there's lots of interesting and meaningful operations that can be done with arrays. We'll take a look at one of them, called the <em class="emphasis">inner-product</em> in this section. Our section will end by mentioning the <em class="emphasis">outer-product</em>, but we'll need to wait until we see two-dimensional arrays before we can compute that.</p>
-<p id="p-181">Given two arrays of equal length, we can calculate the inner-product between them. We'll introduce the inner-product algorithmically using the pseudocode below.</p>
+<p id="p-183">In addition to adding/subtracting arrays or multiplying arrays by scalars, there's lots of interesting and meaningful operations that can be done with arrays. We'll take a look at one of them, called the <em class="emphasis">inner-product</em> in this section. Our section will end by mentioning the <em class="emphasis">outer-product</em>, but we'll need to wait until we see two-dimensional arrays before we can compute that.</p>
+<p id="p-184">Given two arrays of equal length, we can calculate the inner-product between them. We'll introduce the inner-product algorithmically using the pseudocode below.</p>
 <pre class="code-display tex2jax_ignore">def inner_product(myArray1, myArray2):
   n = length(myArray1)
   if length(myArray2) not equal n:
@@ -233,25 +234,25 @@ eBookConfig.enable_chatcodes =  false;
     inner_prod = inner_prod + (myArray1[i] * myArray2[i])
   return inner_prod
 </pre>
-<p id="p-182">Answer the following regarding the run-time complexity of the following implementation to compute the inner product between two arrays.</p>
+<p id="p-185">Answer the following regarding the run-time complexity of the following implementation to compute the inner product between two arrays.</p>
 <article class="exercise exercise-like" id="exercise-49"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Inner Product Complexity.</span>
 </h4>
-<div class="introduction" id="introduction-64"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988776&amp;resizer=true"></iframe></div></article><p id="p-183">Now try the following examples for computing the inner product between two arrays on your own.</p>
+<div class="introduction" id="introduction-65"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988776&amp;resizer=true"></iframe></div></article><p id="p-186">Now try the following examples for computing the inner product between two arrays on your own.</p>
 <article class="exercise exercise-like" id="exercise-50"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Compute Inner Product 1.</span>
 </h4>
-<div class="introduction" id="introduction-65"></div>
+<div class="introduction" id="introduction-66"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988777&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="exercise-51"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Compute Inner Product 1.</span>
 </h4>
-<div class="introduction" id="introduction-66"></div>
+<div class="introduction" id="introduction-67"></div>
 <div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988778&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="exercise-52"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Compute Inner Product 1.</span>
 </h4>
-<div class="introduction" id="introduction-67"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988779&amp;resizer=true"></iframe></div></article><p id="p-184">Another type of array product is the <em class="emphasis">outer-product</em>. Given two one-dimensional arrays, we can define the outer product between them. The outer-product, however, results in a two-dimensional array. If <code class="code-inline tex2jax_ignore">array1</code> and <code class="code-inline tex2jax_ignore">array2</code> are arrays of length <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> respectively, then the outer product between <code class="code-inline tex2jax_ignore">array1</code> and <code class="code-inline tex2jax_ignore">array2</code> is an <span class="process-math">\(m\times n\)</span> array. Note that this also means that <code class="code-inline tex2jax_ignore">inner_product(array1, array2)</code> is generally not the same as <code class="code-inline tex2jax_ignore">inner_product(array2, array1)</code>. We'll see how to compute the inner product in our next section.</p></section></section></div></main>
+<div class="introduction" id="introduction-68"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988779&amp;resizer=true"></iframe></div></article><p id="p-187">Another type of array product is the <em class="emphasis">outer-product</em>. Given two one-dimensional arrays, we can define the outer product between them. The outer-product, however, results in a two-dimensional array. If <code class="code-inline tex2jax_ignore">array1</code> and <code class="code-inline tex2jax_ignore">array2</code> are arrays of length <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> respectively, then the outer product between <code class="code-inline tex2jax_ignore">array1</code> and <code class="code-inline tex2jax_ignore">array2</code> is an <span class="process-math">\(m\times n\)</span> array. Note that this also means that <code class="code-inline tex2jax_ignore">inner_product(array1, array2)</code> is generally not the same as <code class="code-inline tex2jax_ignore">inner_product(array2, array1)</code>. We'll see how to compute the inner product in our next section.</p></section></section></div></main>
 </div>
 </body>
 </html>

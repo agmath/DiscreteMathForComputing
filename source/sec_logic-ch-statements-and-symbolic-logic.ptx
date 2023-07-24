@@ -119,18 +119,146 @@ statement <m>p</m> -- they have opposite truth values. We can make use of a
       <cell>F</cell>
       <cell>T</cell>
     </row>
-  </tabular>
-</table>
+    </tabular>
+    </table>
 
 </p>
 
-<p>The <em>conjunction</em> ... 
+<p>The <em>conjunction</em> operator takes the place of the word "and". The 
+conjunction is denoted by <m>\land</m>, and it requires two statements -- one 
+to the left of the operatory and one to the right, for example <m>p \land q</m>. 
+The compound logical expression <m>p \land q</m> evaluates to *true* only if 
+both of its components (<m>p</m> and <m>q</m>) are true. That is, 
+
+    <table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>p \land q</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+    </row>
+    </tabular>
+    </table>
+
 </p>
 
-<p>The <em>disjunction</em> ... 
+<p>The <em>disjunction</em> operator replaces the word "or", and is denoted 
+by <m>\lor</m>. Like the conjunction, the disjunction requires two statements 
+but it evaluates to *true* as long as at least one of its components are true. 
+That is, 
+
+    <table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>p \lor q</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+    </row>
+    </tabular>
+    </table>
 </p>
 
-<p>The <em>implication</em> (or <em>confitional</em>) ... 
+<p>The <em>implication</em> (or <em>conditional</em>) operator is used to denote "if/then" statements. 
+This is another operator that requires two component statements. The implication 
+operator is typically written as an arrow (either <m>\to</m> or <m>\implies</m>). 
+I'll use the single line arrow to denote the implication -- that is, 
+<m>p \to q</m>. As mentioned at the beginning of this paragraph, it is common to 
+read <m>p\to q</m> as "if <m>p</m>, then <m>q</m>", but another common reading is 
+that "<m>p</m> implies <m>q</m>". The implication is true in all cases except when 
+<m>p</m> is *true* and <m>q</m> is *false*. That is,
+
+    <table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>p \implies q</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    </tabular>
+    </table>
+</p>
+
+<p>For the implication <m>p\to q</m>, we consider <m>p</m> the <em>hypothesis</em> 
+and <m>q</m> to be the <em>conclusion</em>. This is helpful for constructing formal 
+arguments, writing technical mathematical theorems, and more. if you are not quite 
+that you grasp the notion of a conditional statement just yet, it may be helpful to 
+think of <m>p\to q</m> as a <em>promise</em>. That is, "if you do <m>p</m> for me, 
+then I will do <m>q</m> for you". A simple example I often give my students is 
+"If you mow my lawn, then I will pay you $20" -- my promise made is only broken if 
+you mow my lawn but I don't pay you. This is just like the implication.  
+</p>
+
+</subsection>
+
+<subsection><title>Summary</title>
+
+<p>That's plenty for this section. Here you were introduced to <em>statements</em>, 
+which are claims which are either true or false -- but cannot be both. You were also 
+introduced to our foundational logical operators -- the <em>negation</em> (not), the 
+<em>conjunction</em> (and), the <em>disjunction</em> (or), and the <em>conditional</em> 
+(if/then). These are all of the main building blocks of logic. We'll see more with 
+formal logic, in particular with compound logical statements and truth tables for 
+evaluating them, in the next section.
 </p>
 
 </subsection>

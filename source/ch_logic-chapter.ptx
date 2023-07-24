@@ -13,7 +13,7 @@
     sections.
     <ul>
       <li> Introduction to Statements and Symbolic Logic</li>
-      <li> Conditional Statements and Logical Equivalence</li>
+      <li> Compound Statements and Logical Equivalence</li>
       <li> Boolean Algebra</li>
       <li> Logic for Programmatic Flow Control</li>
     </ul>
@@ -30,6 +30,7 @@
   <xi:include href="./sec_sets-ch-setsofsets.ptx" />
   -->
   <xi:include href="./sec_logic-ch-statements-and-symbolic-logic.ptx"/>
+  <xi:include href="./sec_logic-ch-compound-statements.ptx"/>
   <xi:include href="./sec_logic-ch-flow-control.ptx" />
   <xi:include href="./sec_logic-ch-base-conversion-functions.ptx" />
   <!--<xi:include href="./reprex.ptx" />-->

@@ -121,10 +121,10 @@ eBookConfig.enable_chatcodes =  false;
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-compound-statements.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-compound-statements.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -153,6 +153,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link">
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
 <li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="active">Statements and Symbolic Logic</a></li>
+<li><a href="sec_logic-ch-compound-statements.html" data-scroll="sec_logic-ch-compound-statements" class="internal">Compound Statements, Truth Tables, and Logical Equivalence</a></li>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
 </ul>
@@ -225,9 +226,91 @@ r:~ \text{my code will run}
 <td class="c m b0 r0 l0 t0 lines">T</td>
 </tr>
 </table></div></figure></p>
-<p id="p-100">The <em class="emphasis">conjunction</em> ...</p>
-<p id="p-101">The <em class="emphasis">disjunction</em> ...</p>
-<p id="p-102">The <em class="emphasis">implication</em> (or <em class="emphasis">confitional</em>) ...</p></section></section></div></main>
+<p id="p-100">The <em class="emphasis">conjunction</em> operator takes the place of the word "and". The conjunction is denoted by <span class="process-math">\(\land\text{,}\)</span> and it requires two statements -- one to the left of the operatory and one to the right, for example <span class="process-math">\(p \land q\text{.}\)</span> The compound logical expression <span class="process-math">\(p \land q\)</span> evaluates to *true* only if both of its components (<span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span>) are true. That is, <figure class="table table-like" id="table-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \land q\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure></p>
+<p id="p-101">The <em class="emphasis">disjunction</em> operator replaces the word "or", and is denoted by <span class="process-math">\(\lor\text{.}\)</span> Like the conjunction, the disjunction requires two statements but it evaluates to *true* as long as at least one of its components are true. That is, <figure class="table table-like" id="table-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \lor q\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure></p>
+<p id="p-102">The <em class="emphasis">implication</em> (or <em class="emphasis">conditional</em>) operator is used to denote "if/then" statements. This is another operator that requires two component statements. The implication operator is typically written as an arrow (either <span class="process-math">\(\to\)</span> or <span class="process-math">\(\implies\)</span>). I'll use the single line arrow to denote the implication -- that is, <span class="process-math">\(p \to q\text{.}\)</span> As mentioned at the beginning of this paragraph, it is common to read <span class="process-math">\(p\to q\)</span> as "if <span class="process-math">\(p\text{,}\)</span> then <span class="process-math">\(q\)</span>", but another common reading is that "<span class="process-math">\(p\)</span> implies <span class="process-math">\(q\)</span>". The implication is true in all cases except when <span class="process-math">\(p\)</span> is *true* and <span class="process-math">\(q\)</span> is *false*. That is, <figure class="table table-like" id="table-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \implies q\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure></p>
+<p id="p-103">For the implication <span class="process-math">\(p\to q\text{,}\)</span> we consider <span class="process-math">\(p\)</span> the <em class="emphasis">hypothesis</em> and <span class="process-math">\(q\)</span> to be the <em class="emphasis">conclusion</em>. This is helpful for constructing formal arguments, writing technical mathematical theorems, and more. if you are not quite that you grasp the notion of a conditional statement just yet, it may be helpful to think of <span class="process-math">\(p\to q\)</span> as a <em class="emphasis">promise</em>. That is, "if you do <span class="process-math">\(p\)</span> for me, then I will do <span class="process-math">\(q\)</span> for you". A simple example I often give my students is "If you mow my lawn, then I will pay you $20" -- my promise made is only broken if you mow my lawn but I don't pay you. This is just like the implication.</p></section><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">Summary</span>
+</h3>
+<p id="p-104">That's plenty for this section. Here you were introduced to <em class="emphasis">statements</em>, which are claims which are either true or false -- but cannot be both. You were also introduced to our foundational logical operators -- the <em class="emphasis">negation</em> (not), the <em class="emphasis">conjunction</em> (and), the <em class="emphasis">disjunction</em> (or), and the <em class="emphasis">conditional</em> (if/then). These are all of the main building blocks of logic. We'll see more with formal logic, in particular with compound logical statements and truth tables for evaluating them, in the next section.</p></section></section></div></main>
 </div>
 </body>
 </html>

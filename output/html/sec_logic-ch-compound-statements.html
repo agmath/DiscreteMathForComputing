@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Symbolic Logic, Boolean Algebra, and Flow Control</title>
+<title>Compound Statements, Truth Tables, and Logical Equivalence</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -59,25 +59,7 @@ window.MathJax = {
     )}
 },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
-</script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-python',
-                       linked: true,
-                       languages: ['python'],
-                       evalButtonText: 'Evaluate (Python)'});
-</script><script>// Make *any* pre with class 'sagecell-r' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
-                       linked: true,
-                       languages: ['r'],
-                       evalButtonText: 'Evaluate (R)'});
-</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
@@ -139,10 +121,10 @@ eBookConfig.enable_chatcodes =  false;
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_sets-ch-operations.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="dm4c.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_sets-ch-operations.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="dm4c.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -168,10 +150,10 @@ eBookConfig.enable_chatcodes =  false;
 <li><a href="sec_sets-ch-operations.html" data-scroll="sec_sets-ch-operations" class="internal">Operations with Sets</a></li>
 </ul>
 </li>
-<li class="link active">
+<li class="link">
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
 <li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="internal">Statements and Symbolic Logic</a></li>
-<li><a href="sec_logic-ch-compound-statements.html" data-scroll="sec_logic-ch-compound-statements" class="internal">Compound Statements, Truth Tables, and Logical Equivalence</a></li>
+<li><a href="sec_logic-ch-compound-statements.html" data-scroll="sec_logic-ch-compound-statements" class="active">Compound Statements, Truth Tables, and Logical Equivalence</a></li>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
 </ul>
@@ -191,21 +173,53 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link"><a href="ch-graphs.html" data-scroll="ch-graphs" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="chapter" id="ch-logic"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_logic-ch-compound-statements"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span>
 </h2>
-<section class="introduction" id="introduction-40"><p id="p-90">In progress. This chapter will eventually contain the following sections.</p>
-<ul class="disc">
-<li id="li-7"><p id="p-derived-li-7">Introduction to Statements and Symbolic Logic</p></li>
-<li id="li-8"><p id="p-derived-li-8">Compound Statements and Logical Equivalence</p></li>
-<li id="li-9"><p id="p-derived-li-9">Boolean Algebra</p></li>
-<li id="li-10"><p id="p-derived-li-10">Logic for Programmatic Flow Control</p></li>
-</ul></section><nav class="summary-links"><ul>
-<li><a href="sec_logic-ch-statements-and-symbolic-logic.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Statements and Symbolic Logic</span></a></li>
-<li><a href="sec_logic-ch-compound-statements.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span></a></li>
-<li><a href="sec_logic-ch-flow-control.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logic for Flow Control</span></a></li>
-<li><a href="sec_logic-ch-base-conversion-functions.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Building a Base-Conversion Function</span></a></li>
-</ul></nav></section></div></main>
+<section class="introduction" id="introduction-43"><p id="p-105">In the previous section we were introduced to <em class="emphasis">statements</em> and our four foundational logical operators -- the negation (<span class="process-math">\(!p\)</span>), the conjunction (<span class="process-math">\(p\land q\)</span>), the disjunction (<span class="process-math">\(p \lor q\)</span>), and the implication (<span class="process-math">\(p\to q\)</span>). We described <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> as <em class="emphasis">atomic</em> statements and these statements involving operators as <em class="emphasis">compound logical statements</em>. We also evaluated the conditions under which these compound logical statements are true by constructing tables called truth tables. A single table summarizing the results from that previous section appears below: <figure class="table table-like" id="table-5"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\land q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\lor q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \implies q\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure></p></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Compound Statements and Truth Tables</span>
+</h3></section></section></div></main>
 </div>
 </body>
 </html>

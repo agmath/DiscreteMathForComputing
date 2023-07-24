@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_logic-ch-compound-statements" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Compound Statements, Truth Tables, and Logical Equivalence</title>
+
+<introduction>
+
+<p> In the previous section we were introduced to <em>statements</em> and our
+four foundational logical operators -- the negation (<m>!p</m>), the conjunction 
+(<m>p\land q</m>), the disjunction (<m>p \lor q</m>), and the implication 
+(<m>p\to q</m>). We described <m>p</m> and <m>q</m> as <em>atomic</em> statements 
+and these statements involving operators as <em>compound logical statements</em>. 
+We also evaluated the conditions under which these compound logical statements 
+are true by constructing tables called truth tables. A single table summarizing 
+the results from that previous section appears below:
+
+    <table>
+    <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell><m>p</m></cell>
+      <cell><m>q</m></cell>
+      <cell><m>!p</m></cell>
+      <cell><m>p\land q</m></cell>
+      <cell><m>p\lor q</m></cell>
+      <cell><m>p \implies q</m></cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>T</cell>
+    </row>
+    <row>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+      <cell>F</cell>
+      <cell>F</cell>
+      <cell>T</cell>
+    </row>
+    </tabular>
+    </table>
+</p>
+
+</introduction>
+
+<subsection><title>Compound Statements and Truth Tables</title>
+
+</subsection>
+
+</section>
+
