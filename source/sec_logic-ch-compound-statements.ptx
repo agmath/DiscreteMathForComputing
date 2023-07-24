@@ -22,7 +22,7 @@ the results from that previous section appears below:
       <cell><m>!p</m></cell>
       <cell><m>p\land q</m></cell>
       <cell><m>p\lor q</m></cell>
-      <cell><m>p \implies q</m></cell>
+      <cell><m>p \to q</m></cell>
     </row>
     <row>
       <cell>T</cell>
