@@ -12,14 +12,7 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<p>To recap from the examples above, we use big-O notation to describe the run-time of a routine as a function of the length of its input array. Big-O notation allows us to answer the question "<em class="emphasis">How would our run-time change if the size of our input array was doubled?</em>". If the length of an input array was doubled, we have the following expected changes in run-times.</p>
-<ul class="disc">
-<li><p>For an <span class="process-math">\(O\left(1\right)\)</span> routine, the expected run time does not change.</p></li>
-<li><p>For an <span class="process-math">\(O\left(n\right)\)</span> routine, the expected run time is approximately doubled.</p></li>
-<li><p>For an <span class="process-math">\(O\left(n^2\right)\)</span> routine, the expected run time is approximately four times longer.</p></li>
-<li><p>For an <span class="process-math">\(O\left(n^3\right)\)</span> routine, the expected run time is approximately eight times longer.</p></li>
-</ul>
-<p class="continuation">There are routines which have run-time complexities which are between constant and linear. For example, some routines have <span class="process-math">\(O\left(\log\left(n\right)\right)\)</span> run-time. We'll see some later in our course. There are also routines which don't have polynomial run-time. They may be <em class="emphasis">exponential</em> -- for example <span class="process-math">\(O\left(2^n\right)\)</span> -- or <em class="emphasis">factorial</em>, <span class="process-math">\(O\left(n!\right)\text{.}\)</span> In general, we desire routines which are more efficient -- that is, routines with lower-order run-time complexities -- because they are faster. However, there is sometimes a tradeoff between run-time complexity and space-complexity. What good is a fast algorithm if requires more memory than you have access to?</p>
+<p>NOTE: Need to decide whether setting up a loop or returning values should be counted as an "operation" in determining the run-time complexities -- I'll reach out to the CS department about the choice they currently make in Analysis of Algorithms.</p>
 <span class="incontext"><a href="sec_counting-big-O.html#p-177" class="internal">in-context</a></span>
 </body>
 </html>

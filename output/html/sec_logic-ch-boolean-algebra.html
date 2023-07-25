@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Functions</title>
+<title>Boolean Algebra</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -121,10 +121,10 @@ eBookConfig.enable_chatcodes =  false;
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_counting-big-O.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="dm4c.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-probability.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_logic-ch-compound-statements.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_counting-big-O.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="dm4c.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch-probability.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_logic-ch-compound-statements.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -154,7 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
 <li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="internal">Statements and Symbolic Logic</a></li>
 <li><a href="sec_logic-ch-compound-statements.html" data-scroll="sec_logic-ch-compound-statements" class="internal">Compound Statements, Truth Tables, and Logical Equivalence</a></li>
-<li><a href="sec_logic-ch-boolean-algebra.html" data-scroll="sec_logic-ch-boolean-algebra" class="internal">Boolean Algebra</a></li>
+<li><a href="sec_logic-ch-boolean-algebra.html" data-scroll="sec_logic-ch-boolean-algebra" class="active">Boolean Algebra</a></li>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
 </ul>
@@ -162,7 +162,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link">
 <a href="ch-counting.html" data-scroll="ch-counting" class="internal"><span class="codenumber">4</span> <span class="title">Counting</span></a><ul><li><a href="sec_counting-big-O.html" data-scroll="sec_counting-big-O" class="internal">Complexity and Big-O Notation</a></li></ul>
 </li>
-<li class="link active"><a href="ch-functions.html" data-scroll="ch-functions" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="ch-functions.html" data-scroll="ch-functions" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></li>
 <li class="link"><a href="ch-probability.html" data-scroll="ch-probability" class="internal"><span class="codenumber">6</span> <span class="title">Probability</span></a></li>
 <li class="link">
 <a href="ch-arrays.html" data-scroll="ch-arrays" class="internal"><span class="codenumber">7</span> <span class="title">Arrays</span></a><ul>
@@ -174,14 +174,84 @@ eBookConfig.enable_chatcodes =  false;
 <li class="link"><a href="ch-graphs.html" data-scroll="ch-graphs" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="chapter" id="ch-functions"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">5</span> <span class="title">Functions</span>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_logic-ch-boolean-algebra"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.3</span> <span class="title">Boolean Algebra</span>
 </h2>
-<section class="introduction" id="introduction-68"><p id="p-188">In progress. This chapter will eventually include the following sections.</p>
-<ul class="disc">
-<li id="li-49"><p id="p-derived-li-49">Functions and Their Properties</p></li>
-<li id="li-50"><p id="p-derived-li-50">Composition of Functions and Invertibility</p></li>
-</ul></section></section></div></main>
+<section class="introduction" id="introduction-54"><p id="p-117">At the close of the previous section, you were introduced to the notion of <em class="emphasis">logical equivalence</em>. We saw there that two logical expressions are said to be logically equivalent if they have exactly the same truth values under exactly the same conditions for their atomic statements. This affords us an opportunity to discuss "simplification" of logical expressions. Indeed, it is preferrable to use fewer atomic statements and fewer operations whenever possible. This is especially true in the context of computing, which we'll discuss explicitly in the final two sections of this chapter.</p>
+<p id="p-118">This section of the text will introduce us to a variety of properties of Boolean Algebra which can be used to simplify logical expressions without the use of a truth table.</p></section><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.1</span> <span class="title">Properties in Boolean Algebra</span>
+</h3>
+<p id="p-119">There are several properties which hold in Boolean Algebra. Many of those are properties which you proved in the checkpoint exercises in the previous section of this chapter. The table below summarizes several basic properties which can then be used in proving more complex properties. Let <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> and <span class="process-math">\(r\)</span> be atomic statements and let T denote a statement which is always true (a <em class="emphasis">tautology</em>) and F denote a statement which is always false (a <em class="emphasis">contradiction</em>). <figure class="table table-like" id="table-10"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.3.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines">Property Name</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Equivalence</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Double Negation</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(!\left(!p\right) \equiv p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Absorption Laws</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\land T \equiv p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\land F \equiv F\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\lor T \equiv T\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\lor F \equiv p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\land p \equiv p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\lor p \equiv p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Commutative Properties</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\land q \equiv q\land p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\lor q \equiv q\lor p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Associative Properties</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\lor\left(q\lor r\right) \equiv \left(p\lor q\right)\lor r\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\land\left(q\land r\right) \equiv \left(p\land q\right)\land r\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">DeMorgan's Laws</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(!\left(p\land q\right) \equiv !p\lor !q\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(!\left(p\lor q\right) \equiv !p\land q\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Distributive Laws</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\land \left(q\lor r\right) \equiv \left(p\land q\right)\lor \left(p\land r\right)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\lor \left(q\land r\right)\equiv \left(p\lor q\right)\land \left(p\lor r\right)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Implication Conversion</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\to q \equiv q\lor !p\)</span></td>
+</tr>
+</table></div></figure></p>
+<p id="p-120">As mentioned, the properties above can be used to prove logical equivalences between statements which may look symbolically different. One advantage to simplifying these logical statements is that they may result in fewer comparison evaluations. This can be particularly important in speeding up computational routines. You'll practice using the above properties in the checkpoint exercises that follow.</p></section></section></div></main>
 </div>
 </body>
 </html>

@@ -121,10 +121,10 @@ eBookConfig.enable_chatcodes =  false;
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-boolean-algebra.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-flow-control.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-boolean-algebra.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -154,6 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 <a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
 <li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="internal">Statements and Symbolic Logic</a></li>
 <li><a href="sec_logic-ch-compound-statements.html" data-scroll="sec_logic-ch-compound-statements" class="active">Compound Statements, Truth Tables, and Logical Equivalence</a></li>
+<li><a href="sec_logic-ch-boolean-algebra.html" data-scroll="sec_logic-ch-boolean-algebra" class="internal">Boolean Algebra</a></li>
 <li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
 <li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
 </ul>
@@ -224,11 +225,11 @@ eBookConfig.enable_chatcodes =  false;
 <p id="p-107">In both the previous section and also the introduction to this section, we've utilized truth tables to analyse the conditions under which our compound logical statements are <em class="emphasis">true</em> or <em class="emphasis">false</em>. We've used this structures without much explanation though, so we'll take a moment to discuss them here.</p>
 <p id="p-108">In short, a truth table is a stucture which allows us to systematically analyze truth values for logical statements. The number of rows and columns in a truth table will depend on the complexity of the logical statement to be analysed. For a logical statement that includes <span class="process-math">\(n\)</span> distinct atomic statements, a truth table with <span class="process-math">\(2^n\)</span> rows is required to capture all of the combinations of truth and falsity for each of the atomic statements. The number of columns in the truth table will vary with the number of operators in the statement. You can (and should) use the strategy below when constructing a truth table to analyze a logical statement or argument.</p>
 <ol class="decimal">
-<li id="li-17"><p id="p-derived-li-17">Identify the number of atomic statements included in the compound logical statement.</p></li>
-<li id="li-19"><p id="p-derived-li-19">Build a truth table with <span class="process-math">\(2^n\)</span> rows (not including the header row), where <span class="process-math">\(n\)</span> is the number of atomic statements you identified in step 1.</p></li>
-<li id="li-20"><p id="p-derived-li-20">Build a column for each of the individual atomic statements.</p></li>
-<li id="li-24"><p id="p-derived-li-24">Look for any negation operators attached to atomic statements and build a column in the truth table for each negated atomic statement that appears.</p></li>
-<li id="li-25"><p id="p-derived-li-25">The order of operations for logic are: <em class="emphasis">parentheses</em>, <em class="emphasis">negations</em>, <em class="emphasis">conjunctions</em>/<em class="emphasis">disjunctions</em> (left to right), and then <em class="emphasis">implications</em>. Slowly add columns to your truth table according to this order of operations that will build up to the full compound logical statement you are analyzing.</p></li>
+<li id="li-16"><p id="p-derived-li-16">Identify the number of atomic statements included in the compound logical statement.</p></li>
+<li id="li-18"><p id="p-derived-li-18">Build a truth table with <span class="process-math">\(2^n\)</span> rows (not including the header row), where <span class="process-math">\(n\)</span> is the number of atomic statements you identified in step 1.</p></li>
+<li id="li-19"><p id="p-derived-li-19">Build a column for each of the individual atomic statements.</p></li>
+<li id="li-23"><p id="p-derived-li-23">Look for any negation operators attached to atomic statements and build a column in the truth table for each negated atomic statement that appears.</p></li>
+<li id="li-24"><p id="p-derived-li-24">The order of operations for logic are: <em class="emphasis">parentheses</em>, <em class="emphasis">negations</em>, <em class="emphasis">conjunctions</em>/<em class="emphasis">disjunctions</em> (left to right), and then <em class="emphasis">implications</em>. Slowly add columns to your truth table according to this order of operations that will build up to the full compound logical statement you are analyzing.</p></li>
 </ol>
 <p id="p-109">Consider the following truth table as an example for analyzing the truth values of <span class="process-math">\(\left(p\lor !q\right)\to !r\text{.}\)</span> <figure class="table table-like" id="table-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
@@ -314,9 +315,9 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div></figure> Consider the following questions before trying to fill in the truth table on your own.</p>
 <ol class="decimal">
-<li id="li-27"><p id="p-derived-li-27">Why are there 8 rows in this truth table? Is having 8 correct?</p></li>
-<li id="li-28"><p id="p-derived-li-28">Why isn't there a <span class="process-math">\(!p\)</span> column if there are columns for <span class="process-math">\(!q\)</span> and <span class="process-math">\(!r\text{?}\)</span></p></li>
-<li id="li-29"><p id="p-derived-li-29">Are 7 columns appropriate here? Can we fill in each column by looking at the truth values in at most two columns to the left of it?</p></li>
+<li id="li-26"><p id="p-derived-li-26">Why are there 8 rows in this truth table? Is having 8 correct?</p></li>
+<li id="li-27"><p id="p-derived-li-27">Why isn't there a <span class="process-math">\(!p\)</span> column if there are columns for <span class="process-math">\(!q\)</span> and <span class="process-math">\(!r\text{?}\)</span></p></li>
+<li id="li-28"><p id="p-derived-li-28">Are 7 columns appropriate here? Can we fill in each column by looking at the truth values in at most two columns to the left of it?</p></li>
 </ol>
 <p class="continuation">Now fill in the remaining truth values before moving on.</p></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Compound Statements and Truth Tables</span>

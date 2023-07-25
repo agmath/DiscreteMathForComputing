@@ -9,14 +9,28 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress. This chapter will eventually contain the following 
-    sections.
-    <ul>
-      <li> Introduction to Statements and Symbolic Logic</li>
-      <li> Compound Statements and Logical Equivalence</li>
-      <li> Boolean Algebra</li>
-      <li> Logic for Programmatic Flow Control</li>
-    </ul>
+    <p>A draft version of this chapter is complete, however it still has several 
+    needs. For example, a greater variety of MyOpenMath problems need to be 
+    written and then embedded into the text. There are several placeholder 
+    checkpoint exercises now, but those will eventually swapped out for more 
+    dynamic versions of problems in the future. The following outline the 
+    primary needs:
+      <ul>
+        <li> In Section 3.1, more examples of identifying statements are needed. 
+        I'll have to plan out how to randomly produce samples using MyOpenMath 
+        macros. This is doable with random selection and arrays, but it will 
+        take some thinking to ensure that the structure of the generated 
+        statements is not identical. </li>
+        <li> In Section 3.2, I want randomly generated logical statements and 
+        dynamically created truth tables in the MyOpenMath problems. I think 
+        this is doable with conditional statements, but I have questions about
+        the problem displays. Look to some of the matrix problems I've written 
+        for linear algebra where the size of the answer matrix is dynamic. A 
+        similar solution should work here.</li>
+        <li> In Section 3.3, problems need to be written. Look at Doug Ensley's 
+        <em>Boolean Proof</em> problems. Writing problems similar to these will 
+        be a reasonable first pass.</li>
+      </ul>
     </p>
   </introduction>
 
@@ -31,6 +45,7 @@
   -->
   <xi:include href="./sec_logic-ch-statements-and-symbolic-logic.ptx"/>
   <xi:include href="./sec_logic-ch-compound-statements.ptx"/>
+  <xi:include href="./sec_logic-ch-boolean-algebra.ptx"/>
   <xi:include href="./sec_logic-ch-flow-control.ptx" />
   <xi:include href="./sec_logic-ch-base-conversion-functions.ptx" />
   <!--<xi:include href="./reprex.ptx" />-->

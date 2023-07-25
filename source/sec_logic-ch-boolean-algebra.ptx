@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_logic-ch-boolean-algebra" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Boolean Algebra</title>
+
+<introduction>
+
+<p> At the close of the previous section, you were introduced to the notion of 
+<em>logical equivalence</em>. We saw there that two logical expressions are 
+said to be logically equivalent if they have exactly the same truth values under 
+exactly the same conditions for their atomic statements. This affords us an 
+opportunity to discuss "simplification" of logical expressions. Indeed, it is 
+preferrable to use fewer atomic statements and fewer operations whenever 
+possible. This is especially true in the context of computing, which we'll 
+discuss explicitly in the final two sections of this chapter.
+</p>
+
+<p>This section of the text will introduce us to a variety of properties of 
+Boolean Algebra which can be used to simplify logical expressions without the 
+use of a truth table.
+</p>
+
+</introduction>
+
+<subsection><title>Properties in Boolean Algebra</title>
+
+<p>There are several properties which hold in Boolean Algebra. Many of those 
+are properties which you proved in the checkpoint exercises in the previous 
+section of this chapter. The table below summarizes several basic properties 
+which can then be used in proving more complex properties. Let <m>p</m>, 
+<m>q</m>, and <m>r</m> be atomic statements and let T denote a statement which 
+is always true (a <em>tautology</em>) and F denote a statement which is always 
+false (a <em>contradiction</em>).
+
+<table>
+    <tabular halign="left">
+    <row header="yes" bottom="minor" >
+      <cell>Property Name</cell>
+      <cell>Equivalence</cell>
+    </row>
+    <row>
+      <cell>Double Negation</cell>
+      <cell><m>!\left(!p\right) \equiv p</m></cell>
+    </row>
+    <row>
+      <cell>Absorption Laws</cell>
+      <cell><m>p\land T \equiv p</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\land F \equiv F</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\lor T \equiv T</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\lor F \equiv p</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\land p \equiv p</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\lor p \equiv p</m></cell>
+    </row>
+    <row>
+      <cell>Commutative Properties</cell>
+      <cell><m>p\land q \equiv q\land p</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\lor q \equiv q\lor p</m></cell>
+    </row>
+    <row>
+      <cell>Associative Properties</cell>
+      <cell><m>p\lor\left(q\lor r\right) \equiv \left(p\lor q\right)\lor r</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\land\left(q\land r\right) \equiv \left(p\land q\right)\land r</m></cell>
+    </row>
+    <row>
+      <cell>DeMorgan's Laws</cell>
+      <cell><m>!\left(p\land q\right) \equiv !p\lor !q</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>!\left(p\lor q\right) \equiv !p\land q</m></cell>
+    </row>
+    <row>
+      <cell>Distributive Laws</cell>
+      <cell><m>p\land \left(q\lor r\right) \equiv \left(p\land q\right)\lor \left(p\land r\right)</m></cell>
+    </row>
+    <row>
+      <cell></cell>
+      <cell><m>p\lor \left(q\land r\right)\equiv \left(p\lor q\right)\land \left(p\lor r\right)</m></cell>
+    </row>
+    <row>
+      <cell>Implication Conversion</cell>
+      <cell><m>p\to q \equiv q\lor !p</m></cell>
+    </row>
+    </tabular>
+</table>
+
+</p>
+
+<p>As mentioned, the properties above can be used to prove logical equivalences
+between statements which may look symbolically different. One advantage to 
+simplifying these logical statements is that they may result in fewer comparison 
+evaluations. This can be particularly important in speeding up computational 
+routines. You'll practice using the above properties in the checkpoint exercises
+that follow.
+</p>
+
+[ADD CHECKPOINT EXERCISES TO MoM AND EMBED HERE]
+
+</subsection>
+
+</section>
+
