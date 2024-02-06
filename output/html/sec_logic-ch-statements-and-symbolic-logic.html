@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Statements and Symbolic Logic</title>
@@ -16,20 +16,38 @@
 <meta property="book:author" content="Christine Caples">
 <meta property="book:author" content="Adam Gilbert">
 <meta property="book:author" content="Melanie Fraser">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -39,37 +57,56 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-},
+  }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -92,18 +129,34 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '5.0.1';
+eBookConfig.runestone_version = '7.2.11';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/runtime.980858fa0f34fd96.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.7/runestone.dca7462213311157.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.7/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.7/runestone.e4d5592da655219f.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.11/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.11/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing (Draft)</span></a></h1>
+<p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-logic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_logic-ch-compound-statements.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
@@ -113,107 +166,169 @@ eBookConfig.enable_chatcodes =  false;
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing (Draft)</span></a></h1>
-<p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logic-ch-compound-statements.html" title="Next">Next</a></span></div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-logic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logic-ch-compound-statements.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="preface-1.html" data-scroll="preface-1" class="internal">About This Text</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">About This Text</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-first.html" data-scroll="ch-first" class="internal"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a><ul>
-<li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro" class="internal">Introduction</a></li>
-<li><a href="sec_firstch-b2ten.html" data-scroll="sec_firstch-b2ten" class="internal">Converting from Non-Standard Bases into Base-10</a></li>
-<li><a href="sec_firstch-ten2b.html" data-scroll="sec_firstch-ten2b" class="internal">Converting from Base-10 to Non-Standard Bases</a></li>
-<li><a href="sec_firstch-properties.html" data-scroll="sec_firstch-properties" class="internal">Properties of Binary, Octal, and Hexadecimal Systems</a></li>
-<li><a href="sec_firstch-between-bases.html" data-scroll="sec_firstch-between-bases" class="internal">Converting Between Arbitrary Bases</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-first.html" class="internal"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_firstch-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-b2ten.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Converting from Non-Standard Bases into Base-10</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-5" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Numbers in Non-Standard Bases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-6" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Common Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-7" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Conclusion</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-sets.html" data-scroll="ch-sets" class="internal"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a><ul>
-<li><a href="sec_sets-ch-foundations.html" data-scroll="sec_sets-ch-foundations" class="internal">Foundations for Working with Sets</a></li>
-<li><a href="sec_sets-ch-operations.html" data-scroll="sec_sets-ch-operations" class="internal">Operations with Sets</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-ten2b.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Converting from Base-10 to Non-Standard Bases</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Developing a Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Let’s Try It!</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Converting to Hexadecimal</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Conclusion</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a><ul>
-<li><a href="sec_logic-ch-statements-and-symbolic-logic.html" data-scroll="sec_logic-ch-statements-and-symbolic-logic" class="active">Statements and Symbolic Logic</a></li>
-<li><a href="sec_logic-ch-compound-statements.html" data-scroll="sec_logic-ch-compound-statements" class="internal">Compound Statements, Truth Tables, and Logical Equivalence</a></li>
-<li><a href="sec_logic-ch-boolean-algebra.html" data-scroll="sec_logic-ch-boolean-algebra" class="internal">Boolean Algebra</a></li>
-<li><a href="sec_logic-ch-flow-control.html" data-scroll="sec_logic-ch-flow-control" class="internal">Logic for Flow Control</a></li>
-<li><a href="sec_logic-ch-base-conversion-functions.html" data-scroll="sec_logic-ch-base-conversion-functions" class="internal">Building a Base-Conversion Function</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-properties.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Properties of Binary, Octal, and Hexadecimal Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Properties of Binary Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-4" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Connecting Binary to Octal and Hexadecimal</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-5" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Conclusion</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-counting.html" data-scroll="ch-counting" class="internal"><span class="codenumber">4</span> <span class="title">Counting</span></a><ul><li><a href="sec_counting-big-O.html" data-scroll="sec_counting-big-O" class="internal">Complexity and Big-O Notation</a></li></ul>
-</li>
-<li class="link"><a href="ch-functions.html" data-scroll="ch-functions" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></li>
-<li class="link"><a href="ch-probability.html" data-scroll="ch-probability" class="internal"><span class="codenumber">6</span> <span class="title">Probability</span></a></li>
-<li class="link">
-<a href="ch-arrays.html" data-scroll="ch-arrays" class="internal"><span class="codenumber">7</span> <span class="title">Arrays</span></a><ul>
-<li><a href="sec_arrays-ch-one-dimensional-arrays.html" data-scroll="sec_arrays-ch-one-dimensional-arrays" class="internal">One-Dimensional Arrays</a></li>
-<li><a href="sec_arrays-ch-matrices.html" data-scroll="sec_arrays-ch-matrices" class="internal">Two-Dimensional Arrays (Matrices)</a></li>
-<li><a href="sec_arrays-ch-multidimensional-arrays.html" data-scroll="sec_arrays-ch-multidimensional-arrays" class="internal">Multidimensional Arrays</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_firstch-between-bases.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Converting Between Arbitrary Bases</span></a></div></li>
 </ul>
 </li>
-<li class="link"><a href="ch-graphs.html" data-scroll="ch-graphs" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_logic-ch-statements-and-symbolic-logic"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Statements and Symbolic Logic</span>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_sets-ch-foundations.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Foundations for Working with Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_sets-ch-operations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Operations with Sets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Statements and Symbolic Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Symbolic Logic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Compound Statements and Truth Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-5" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Logical Equivalence</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-boolean-algebra.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Boolean Algebra</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-boolean-algebra.html#sec_logic-ch-boolean-algebra-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Properties in Boolean Algebra</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-flow-control.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Logic for Flow Control</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Conditional Statements in Code</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-4" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Conditionals with Compound Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-5" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Looping with <code class="code-inline tex2jax_ignore">for</code> and <code class="code-inline tex2jax_ignore">while</code></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-6" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Putting it all together</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-7" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_logic-ch-base-conversion-functions.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Building a Base-Conversion Function</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-counting.html" class="internal"><span class="codenumber">4</span> <span class="title">Counting</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_counting-big-O.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Complexity and Big-O Notation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-probability.html" class="internal"><span class="codenumber">6</span> <span class="title">Probability</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-arrays.html" class="internal"><span class="codenumber">7</span> <span class="title">Arrays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html" class="internal"><span class="codenumber">7.1</span> <span class="title">One-Dimensional Arrays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html#sec_arrays-ch-one-dimensional-arrays-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Addition and Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html#sec_arrays-ch-one-dimensional-arrays-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Inner-products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_arrays-ch-matrices.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Two-Dimensional Arrays (Matrices)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">What is a two-dimensional array?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Matrix Addition/Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-5" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-6" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Matrix Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-7" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Outer-products of one-dimensional arrays</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-8" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Conclusions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_arrays-ch-multidimensional-arrays.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Multidimensional Arrays</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-graphs.html" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_logic-ch-statements-and-symbolic-logic"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Statements and Symbolic Logic</span>
 </h2>
-<section class="introduction" id="introduction-41"><p id="p-91">Statements and logic are foundational across all of mathematics. In this section, we'll formally introduce the definition of a mathematical <em class="emphasis">statement</em> and we'll introduce <em class="emphasis">symbolic logic</em> as a set of notation to remove the ambiguity that often accompanies written language. Along the way, we'll also provide a limited introduction to <em class="emphasis">truth tables</em> as a mechanism for analyzing the conditions under which compound logical statements are valid (true).</p></section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Statements</span>
+<section class="introduction" id="sec_logic-ch-statements-and-symbolic-logic-2"><div class="para" id="sec_logic-ch-statements-and-symbolic-logic-2-1">Statements and logic are foundational across all of mathematics. In this section, we’ll formally introduce the definition of a mathematical <em class="emphasis">statement</em> and we’ll introduce <em class="emphasis">symbolic logic</em> as a set of notation to remove the ambiguity that often accompanies written language. Along the way, we’ll also provide a limited introduction to <em class="emphasis">truth tables</em> as a mechanism for analyzing the conditions under which compound logical statements are valid (true).</div></section><section class="subsection" id="sec_logic-ch-statements-and-symbolic-logic-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="space"> </span><span class="title">Statements</span>
 </h3>
-<p id="p-92">In mathematics, a <em class="emphasis">statement</em> is a claim which is either <em class="emphasis">true</em> or <em class="emphasis">false</em>, but for which there is no ambiguity. The following are examples of statements.</p>
+<div class="para logical" id="sec_logic-ch-statements-and-symbolic-logic-3-2">
+<div class="para">In mathematics, a <em class="emphasis">statement</em> is a claim which is either <em class="emphasis">true</em> or <em class="emphasis">false</em>, but for which there is no ambiguity. The following are examples of statements.</div>
 <ul class="disc">
-<li id="li-10"><p id="p-derived-li-10">Water boils at <span class="process-math">\(100^\circ\)</span>C.</p></li>
-<li id="li-11"><p id="p-derived-li-11">If a triangle is a right triangle, and <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the lengths of its legs while <span class="process-math">\(c\)</span> is the length of its hypotenuse, then <span class="process-math">\(a^2 + b^2 = c^2\text{.}\)</span></p></li>
-<li id="li-12"><p id="p-derived-li-12">The real number <span class="process-math">\(\pi\)</span> is even.</p></li>
+<li id="sec_logic-ch-statements-and-symbolic-logic-3-2-4-1"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-2-4-1">Water boils at <span class="process-math">\(100^\circ\)</span>C.</div></li>
+<li id="sec_logic-ch-statements-and-symbolic-logic-3-2-4-2"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-2-4-2">If a triangle is a right triangle, and <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the lengths of its legs while <span class="process-math">\(c\)</span> is the length of its hypotenuse, then <span class="process-math">\(a^2 + b^2 = c^2\text{.}\)</span>
+</div></li>
+<li id="sec_logic-ch-statements-and-symbolic-logic-3-2-4-3"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-2-4-3">The real number <span class="process-math">\(\pi\)</span> is even.</div></li>
 </ul>
-<p class="continuation">Notice that each of these claims is either true or false, and the truth value of the claim does not depend on the reader. Water indeed boils at <span class="process-math">\(100^\circ\)</span>C, the Pythagorean Theorem does hold for right triangles, and the number <span class="process-math">\(\pi\)</span> is not an even number. That is the first two claims are true, while the second one is false. Since the three claims have these truth values regardless of who is evaluating them, they are indeed <em class="emphasis">statements</em>.</p>
-<p id="p-93">Since we've defined what a statement <em class="emphasis">is</em>, it will also be helpful to have examples of what a statement <em class="emphasis">isn't</em>. The following are examples which are not statements.</p>
+<div class="para">Notice that each of these claims is either true or false, and the truth value of the claim does not depend on the reader. Water indeed boils at <span class="process-math">\(100^\circ\)</span>C, the Pythagorean Theorem does hold for right triangles, and the number <span class="process-math">\(\pi\)</span> is not an even number. That is the first two claims are true, while the second one is false. Since the three claims have these truth values regardless of who is evaluating them, they are indeed <em class="emphasis">statements</em>.</div>
+</div>
+<div class="para logical" id="sec_logic-ch-statements-and-symbolic-logic-3-3">
+<div class="para">Since we’ve defined what a statement <em class="emphasis">is</em>, it will also be helpful to have examples of what a statement <em class="emphasis">isn’t</em>. The following are examples which are not statements.</div>
 <ul class="disc">
-<li id="li-13"><p id="p-derived-li-13">Trigonometry is difficult.</p></li>
-<li id="li-14"><p id="p-derived-li-14">Are you enjoying this book so far?</p></li>
-<li id="li-15"><p id="p-derived-li-15">Make sure you complete all the embedded exercises in this section.</p></li>
+<li id="sec_logic-ch-statements-and-symbolic-logic-3-3-3-1"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-3-3-1">Trigonometry is difficult.</div></li>
+<li id="sec_logic-ch-statements-and-symbolic-logic-3-3-3-2"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-3-3-2">Are you enjoying this book so far?</div></li>
+<li id="sec_logic-ch-statements-and-symbolic-logic-3-3-3-3"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-3-3-3">Make sure you complete all the embedded exercises in this section.</div></li>
 </ul>
-<p class="continuation">None of the above are statements because they do not have truth values. The first is a matter of opinion, whose truth value is dependent on the reader. The second is a question, while the third is a command.</p>
-<p id="p-94">Now is a good time for you to try your hand at identifying statements. Use the following embedded exercises to check your understanding.</p>
-<article class="exercise exercise-like" id="exercise-33"><h4 class="heading">
+<div class="para">None of the above are statements because they do not have truth values. The first is a matter of opinion, whose truth value is dependent on the reader. The second is a question, while the third is a command.</div>
+</div>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-3-4">Now is a good time for you to try your hand at identifying statements. Use the following embedded exercises to check your understanding.</div>
+<article class="exercise exercise-like" id="sec_logic-ch-statements-and-symbolic-logic-3-5"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Identifying Statements.</span>
 </h4>
-<div class="introduction" id="introduction-42"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=1200983&amp;resizer=true"></iframe></div></article><p id="p-95">If you got all of those correct on the first try, nice work! If you got any wrong on the first try, click the button to generate a new version and try again on a new set of questions.</p></section><section class="subsection" id="subsection-12"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Symbolic Logic</span>
+<div class="introduction" id="sec_logic-ch-statements-and-symbolic-logic-3-5-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=1200983&amp;resizer=true"></iframe></div></article><div class="para" id="sec_logic-ch-statements-and-symbolic-logic-3-6">If you got all of those correct on the first try, nice work! If you got any wrong on the first try, click the button to generate a new version and try again on a new set of questions.</div></section><section class="subsection" id="sec_logic-ch-statements-and-symbolic-logic-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="space"> </span><span class="title">Symbolic Logic</span>
 </h3>
-<p id="p-96">Written and spoken language can have ambiguous meaning. For example, if we say "I will be at the gym or I will be studying at the library", what we really mean is that I will be doing one or the other -- but not both. In mathematics we do not work with ambiguity, indeed compound statements -- individual (atomic) statements joined by logical operators (like <em class="emphasis">or</em>) -- must be statements in their own right. That is, these compound logical statements must be true or false, but not both. For this reason, we'll develop <em class="emphasis">symbolic logic</em>, including a set of boolean (true/false) algebraic operators in our further exploration of logic.</p>
-<p id="p-97">We'll refer to an <em class="emphasis">atomic statement</em> as a statement which cannot be decomposed into smaller substatements. For example, the statement "it is raining" is an atomic statement, while the statement "it is raining and I have an umbrella" is not an atomic statement. The latter can be decomposed into the atomic statements "it is raining" and "I have an umbrella". In symbolic logic we'll use letters like <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> <span class="process-math">\(r\text{,}\)</span> etc. to represent atomic statements. For example,</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="md-7">
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-2">Written and spoken language can have ambiguous meaning. For example, if we say "I will be at the gym or I will be studying at the library", what we really mean is that I will be doing one or the other -- but not both. In mathematics we do not work with ambiguity, indeed compound statements -- individual (atomic) statements joined by logical operators (like <em class="emphasis">or</em>) -- must be statements in their own right. That is, these compound logical statements must be true or false, but not both. For this reason, we’ll develop <em class="emphasis">symbolic logic</em>, including a set of boolean (true/false) algebraic operators in our further exploration of logic.</div>
+<div class="para logical" id="sec_logic-ch-statements-and-symbolic-logic-4-3">
+<div class="para">We’ll refer to an <em class="emphasis">atomic statement</em> as a statement which cannot be decomposed into smaller substatements. For example, the statement "it is raining" is an atomic statement, while the statement "it is raining and I have an umbrella" is not an atomic statement. The latter can be decomposed into the atomic statements "it is raining" and "I have an umbrella". In symbolic logic we’ll use letters like <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> <span class="process-math">\(r\text{,}\)</span> etc. to represent atomic statements. For example,</div>
+<div class="displaymath process-math" id="sec_logic-ch-statements-and-symbolic-logic-4-3-5">
 \begin{gather*}
 p:~ \text{I am writing in Python}\\
 q:~ \text{I am using correct indentation}\\
 r:~ \text{my code will run}
 \end{gather*}
 </div>
-<p class="continuation">Each of those statements listed above is an atomic statement which cannot be decomposed into smaller sub-statements. Using <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> and <span class="process-math">\(r\)</span> to represent their corresponding statements is convenient and efficient.</p>
-<p id="p-98">We'll now introduce four logical operators, corresponding to <em class="emphasis">not</em>, <em class="emphasis">and</em>, <em class="emphasis">or</em>, and <em class="emphasis">if/then</em>. These operators allow us to combine statements to build compound logical statements just like we do in written and spoken language.</p>
-<p id="p-99">The <em class="emphasis">negation</em> operator corresponds to the word "not" and is used to switch the truth value of a statement. There are a variety of symbols which can be used to represent the negation operator. Common symbols are <span class="process-math">\(\neg\text{,}\)</span> <span class="process-math">\(\sim\text{,}\)</span> or <span class="process-math">\(!\)</span> -- since the focus of this text is mathematics for computing, we'll use <span class="process-math">\(!\)</span> to signify negation, since that is common in programming languages. That is, the statement <span class="process-math">\(!p\)</span> is the negation of the statement <span class="process-math">\(p\)</span> -- they have opposite truth values. We can make use of a <em class="emphasis">truth table</em> to describe all of this compactly. <figure class="table table-like" id="table-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">Each of those statements listed above is an atomic statement which cannot be decomposed into smaller sub-statements. Using <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> and <span class="process-math">\(r\)</span> to represent their corresponding statements is convenient and efficient.</div>
+</div>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-4">We’ll now introduce four logical operators, corresponding to <em class="emphasis">not</em>, <em class="emphasis">and</em>, <em class="emphasis">or</em>, and <em class="emphasis">if/then</em>. These operators allow us to combine statements to build compound logical statements just like we do in written and spoken language.</div>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-5">The <em class="emphasis">negation</em> operator corresponds to the word "not" and is used to switch the truth value of a statement. There are a variety of symbols which can be used to represent the negation operator. Common symbols are <span class="process-math">\(\neg\text{,}\)</span> <span class="process-math">\(\sim\text{,}\)</span> or <span class="process-math">\(!\)</span> -- since the focus of this text is mathematics for computing, we’ll use <span class="process-math">\(!\)</span> to signify negation, since that is common in programming languages. That is, the statement <span class="process-math">\(!p\)</span> is the negation of the statement <span class="process-math">\(p\)</span> -- they have opposite truth values. We can make use of a <em class="emphasis">truth table</em> to describe all of this compactly. <figure class="table table-like" id="sec_logic-ch-statements-and-symbolic-logic-4-5-9"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
@@ -226,8 +341,9 @@ r:~ \text{my code will run}
 <td class="c m b0 r0 l0 t0 lines">F</td>
 <td class="c m b0 r0 l0 t0 lines">T</td>
 </tr>
-</table></div></figure></p>
-<p id="p-100">The <em class="emphasis">conjunction</em> operator takes the place of the word "and". The conjunction is denoted by <span class="process-math">\(\land\text{,}\)</span> and it requires two statements -- one to the left of the operatory and one to the right, for example <span class="process-math">\(p \land q\text{.}\)</span> The compound logical expression <span class="process-math">\(p \land q\)</span> evaluates to *true* only if both of its components (<span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span>) are true. That is, <figure class="table table-like" id="table-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure>
+</div>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-6">The <em class="emphasis">conjunction</em> operator takes the place of the word "and". The conjunction is denoted by <span class="process-math">\(\land\text{,}\)</span> and it requires two statements -- one to the left of the operatory and one to the right, for example <span class="process-math">\(p \land q\text{.}\)</span> The compound logical expression <span class="process-math">\(p \land q\)</span> evaluates to *true* only if both of its components (<span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span>) are true. That is, <figure class="table table-like" id="sec_logic-ch-statements-and-symbolic-logic-4-6-7"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
@@ -253,8 +369,9 @@ r:~ \text{my code will run}
 <td class="c m b0 r0 l0 t0 lines">F</td>
 <td class="c m b0 r0 l0 t0 lines">F</td>
 </tr>
-</table></div></figure></p>
-<p id="p-101">The <em class="emphasis">disjunction</em> operator replaces the word "or", and is denoted by <span class="process-math">\(\lor\text{.}\)</span> Like the conjunction, the disjunction requires two statements but it evaluates to *true* as long as at least one of its components are true. That is, <figure class="table table-like" id="table-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure>
+</div>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-7">The <em class="emphasis">disjunction</em> operator replaces the word "or", and is denoted by <span class="process-math">\(\lor\text{.}\)</span> Like the conjunction, the disjunction requires two statements but it evaluates to *true* as long as at least one of its components are true. That is, <figure class="table table-like" id="sec_logic-ch-statements-and-symbolic-logic-4-7-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
@@ -280,8 +397,9 @@ r:~ \text{my code will run}
 <td class="c m b0 r0 l0 t0 lines">F</td>
 <td class="c m b0 r0 l0 t0 lines">F</td>
 </tr>
-</table></div></figure></p>
-<p id="p-102">The <em class="emphasis">implication</em> (or <em class="emphasis">conditional</em>) operator is used to denote "if/then" statements. This is another operator that requires two component statements. The implication operator is typically written as an arrow (either <span class="process-math">\(\to\)</span> or <span class="process-math">\(\implies\)</span>). I'll use the single line arrow to denote the implication -- that is, <span class="process-math">\(p \to q\text{.}\)</span> As mentioned at the beginning of this paragraph, it is common to read <span class="process-math">\(p\to q\)</span> as "if <span class="process-math">\(p\text{,}\)</span> then <span class="process-math">\(q\)</span>", but another common reading is that "<span class="process-math">\(p\)</span> implies <span class="process-math">\(q\)</span>". The implication is true in all cases except when <span class="process-math">\(p\)</span> is *true* and <span class="process-math">\(q\)</span> is *false*. That is, <figure class="table table-like" id="table-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure>
+</div>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-8">The <em class="emphasis">implication</em> (or <em class="emphasis">conditional</em>) operator is used to denote "if/then" statements. This is another operator that requires two component statements. The implication operator is typically written as an arrow (either <span class="process-math">\(\to\)</span> or <span class="process-math">\(\implies\)</span>). I’ll use the single line arrow to denote the implication -- that is, <span class="process-math">\(p \to q\text{.}\)</span> As mentioned at the beginning of this paragraph, it is common to read <span class="process-math">\(p\to q\)</span> as "if <span class="process-math">\(p\text{,}\)</span> then <span class="process-math">\(q\)</span>", but another common reading is that "<span class="process-math">\(p\)</span> implies <span class="process-math">\(q\)</span>". The implication is true in all cases except when <span class="process-math">\(p\)</span> is *true* and <span class="process-math">\(q\)</span> is *false*. That is, <figure class="table table-like" id="sec_logic-ch-statements-and-symbolic-logic-4-8-13"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
@@ -307,11 +425,18 @@ r:~ \text{my code will run}
 <td class="c m b0 r0 l0 t0 lines">T</td>
 <td class="c m b0 r0 l0 t0 lines">T</td>
 </tr>
-</table></div></figure></p>
-<p id="p-103">For the implication <span class="process-math">\(p\to q\text{,}\)</span> we consider <span class="process-math">\(p\)</span> the <em class="emphasis">hypothesis</em> and <span class="process-math">\(q\)</span> to be the <em class="emphasis">conclusion</em>. This is helpful for constructing formal arguments, writing technical mathematical theorems, and more. if you are not quite that you grasp the notion of a conditional statement just yet, it may be helpful to think of <span class="process-math">\(p\to q\)</span> as a <em class="emphasis">promise</em>. That is, "if you do <span class="process-math">\(p\)</span> for me, then I will do <span class="process-math">\(q\)</span> for you". A simple example I often give my students is "If you mow my lawn, then I will pay you $20" -- my promise made is only broken if you mow my lawn but I don't pay you. This is just like the implication.</p></section><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">Summary</span>
+</table></div></figure>
+</div>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-9">For the implication <span class="process-math">\(p\to q\text{,}\)</span> we consider <span class="process-math">\(p\)</span> the <em class="emphasis">hypothesis</em> and <span class="process-math">\(q\)</span> to be the <em class="emphasis">conclusion</em>. This is helpful for constructing formal arguments, writing technical mathematical theorems, and more. if you are not quite that you grasp the notion of a conditional statement just yet, it may be helpful to think of <span class="process-math">\(p\to q\)</span> as a <em class="emphasis">promise</em>. That is, "if you do <span class="process-math">\(p\)</span> for me, then I will do <span class="process-math">\(q\)</span> for you". A simple example I often give my students is "If you mow my lawn, then I will pay you $20" -- my promise made is only broken if you mow my lawn but I don’t pay you. This is just like the implication.</div></section><section class="subsection" id="sec_logic-ch-statements-and-symbolic-logic-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="space"> </span><span class="title">Summary</span>
 </h3>
-<p id="p-104">That's plenty for this section. Here you were introduced to <em class="emphasis">statements</em>, which are claims which are either true or false -- but cannot be both. You were also introduced to our foundational logical operators -- the <em class="emphasis">negation</em> (not), the <em class="emphasis">conjunction</em> (and), the <em class="emphasis">disjunction</em> (or), and the <em class="emphasis">conditional</em> (if/then). These are all of the main building blocks of logic. We'll see more with formal logic, in particular with compound logical statements and truth tables for evaluating them, in the next section.</p></section></section></div></main>
+<div class="para" id="sec_logic-ch-statements-and-symbolic-logic-5-2">That’s plenty for this section. Here you were introduced to <em class="emphasis">statements</em>, which are claims which are either true or false -- but cannot be both. You were also introduced to our foundational logical operators -- the <em class="emphasis">negation</em> (not), the <em class="emphasis">conjunction</em> (and), the <em class="emphasis">disjunction</em> (or), and the <em class="emphasis">conditional</em> (if/then). These are all of the main building blocks of logic. We’ll see more with formal logic, in particular with compound logical statements and truth tables for evaluating them, in the next section.</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_logic-ch-compound-statements.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
 </html>
