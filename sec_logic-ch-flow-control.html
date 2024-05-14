@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Logic for Flow Control</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Discrete Mathematics for Computing (Draft)">
+<meta property="book:author" content="Christine Caples">
+<meta property="book:author" content="Adam Gilbert">
+<meta property="book:author" content="Melanie Fraser">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-python",
+  "linked": true,
+  "linkKey": "linked-python",
+  "autoeval": false,
+  "languages": [
+    "python"
+  ],
+  "evalButtonText": "Evaluate (Python)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.2.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.11/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.11/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing (Draft)</span></a></h1>
+<p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec_logic-ch-boolean-algebra.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-logic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_logic-ch-base-conversion-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">About This Text</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-first.html" class="internal"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_firstch-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-b2ten.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Converting from Non-Standard Bases into Base-10</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-5" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Numbers in Non-Standard Bases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-6" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Common Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-7" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-ten2b.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Converting from Base-10 to Non-Standard Bases</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Developing a Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Let’s Try It!</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Converting to Hexadecimal</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-properties.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Properties of Binary, Octal, and Hexadecimal Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Properties of Binary Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-4" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Connecting Binary to Octal and Hexadecimal</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-5" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_firstch-between-bases.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Converting Between Arbitrary Bases</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_sets-ch-foundations.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Foundations for Working with Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_sets-ch-operations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Operations with Sets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Statements and Symbolic Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Symbolic Logic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Compound Statements and Truth Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-5" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Logical Equivalence</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-boolean-algebra.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Boolean Algebra</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-boolean-algebra.html#sec_logic-ch-boolean-algebra-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Properties in Boolean Algebra</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec_logic-ch-flow-control.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Logic for Flow Control</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Conditional Statements in Code</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-4" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Conditionals with Compound Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-5" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Looping with <code class="code-inline tex2jax_ignore">for</code> and <code class="code-inline tex2jax_ignore">while</code></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-6" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Putting it all together</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-7" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_logic-ch-base-conversion-functions.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Building a Base-Conversion Function</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-counting.html" class="internal"><span class="codenumber">4</span> <span class="title">Counting</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_counting-big-O.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Complexity and Big-O Notation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-probability.html" class="internal"><span class="codenumber">6</span> <span class="title">Probability</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-arrays.html" class="internal"><span class="codenumber">7</span> <span class="title">Arrays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html" class="internal"><span class="codenumber">7.1</span> <span class="title">One-Dimensional Arrays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html#sec_arrays-ch-one-dimensional-arrays-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Addition and Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html#sec_arrays-ch-one-dimensional-arrays-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Inner-products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_arrays-ch-matrices.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Two-Dimensional Arrays (Matrices)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">What is a two-dimensional array?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Matrix Addition/Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-5" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-6" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Matrix Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-7" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Outer-products of one-dimensional arrays</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-8" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Conclusions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_arrays-ch-multidimensional-arrays.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Multidimensional Arrays</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-graphs.html" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_logic-ch-flow-control"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">Logic for Flow Control</span>
+</h2>
+<section class="introduction" id="sec_logic-ch-flow-control-2"><div class="para" id="sec_logic-ch-flow-control-2-1">In this section we’ll take what we’ve learned about logic and apply it to computing in such a way that it helps control which commands are run when a routine is called. We’ll find that the logical connectors <code class="code-inline tex2jax_ignore">and</code>, <code class="code-inline tex2jax_ignore">or</code>, <code class="code-inline tex2jax_ignore">not</code>, and <code class="code-inline tex2jax_ignore">if</code> are quite useful in code. We’ll start this section by using them to write some simple routines.</div> <div class="para" id="sec_logic-ch-flow-control-2-2">Once we’ve seen <code class="code-inline tex2jax_ignore">if</code>, <code class="code-inline tex2jax_ignore">and</code>, <code class="code-inline tex2jax_ignore">or</code>, and <code class="code-inline tex2jax_ignore">not</code> in action, We’ll introduce three other logical operators often found in code. The <code class="code-inline tex2jax_ignore">else</code> keyword can be combined with an <code class="code-inline tex2jax_ignore">if</code> statement to provide alternate code to be run in the case that the conditions on the <code class="code-inline tex2jax_ignore">if</code> statement are not satisfied. We can even combine <code class="code-inline tex2jax_ignore">else if</code> to define alternate sets of conditions in series, resulting in the running of different code in each scenario. We’ll also introduce two looping structures, the <code class="code-inline tex2jax_ignore">for</code> loop and the <code class="code-inline tex2jax_ignore">while</code> loop. These looping structures allow the same code to be run over and over again. In the case of the <code class="code-inline tex2jax_ignore">for</code> loop a predetermined number of iterations will be run, but in the case of the <code class="code-inline tex2jax_ignore">while</code> loop the code will be run until a termination condition is satisfied.</div></section><section class="subsection" id="sec_logic-ch-flow-control-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="space"> </span><span class="title">Conditional Statements in Code</span>
+</h3>
+<div class="para" id="sec_logic-ch-flow-control-3-2">Earlier in this chapter, we were exposed to conditional statements of the form <span class="process-math">\(P\implies Q\text{.}\)</span> We read these statements <em class="emphasis">If <span class="process-math">\(P\)</span> is true, then <span class="process-math">\(Q\)</span> is true</em>. The idea with code is quite similar -- the interpretation of <em class="emphasis">If <span class="process-math">\(P\text{,}\)</span> then <span class="process-math">\(Q\)</span></em> in code, however, is <em class="emphasis">If <span class="process-math">\(P\)</span> is true, then do <span class="process-math">\(Q\)</span></em>. Seeing this in action will help.</div>
+<div class="para" id="sec_logic-ch-flow-control-3-3">Let’s write a simple snippet of code which will test whether an input value is even, and will report back <code class="code-inline tex2jax_ignore">"The input is even!"</code> if that is the case. We’ll see an implementation in pseudocode below, and then I’ll provide a working version in Python so that you can run the code and experiment with it.</div>
+<pre class="code-display tex2jax_ignore">def is_even(myNumber):
+  if myNumber is divisible by 2:
+    print("The input is even!")
+  return None
+</pre>
+<div class="para" id="sec_logic-ch-flow-control-3-5">The first line in the pseudocode <code class="code-inline tex2jax_ignore">def</code>ines the function, including its name and any inputs (parameters) it requires. The second line contains the <code class="code-inline tex2jax_ignore">if</code> statement and its condition. That is, this line defines the <em class="emphasis">If <span class="process-math">\(P\)</span></em> portion of our conditional statement. The line ends with a colon, and all indented lines below this one define what will be done if the condition is true. That is, the indented lines define the <em class="emphasis">then <span class="process-math">\(Q\)</span></em> portion of our conditional statement. Different programming languages have slightly different syntax. For example, the colon and indentation are used in Python, but curly braces surround the code to be run when the condition is true in C++, R, and others. The final line in the pseudocode definition of the function is a <code class="code-inline tex2jax_ignore">return</code> statement. It describes what the result of the function is and how it will be passed back to the computing environment. The function we’ve written has nothing to return, which we describe as <code class="code-inline tex2jax_ignore">return</code>ing <code class="code-inline tex2jax_ignore">None</code>.</div>
+<div class="para" id="sec_logic-ch-flow-control-3-6">The following is a live implementation of the <code class="code-inline tex2jax_ignore">is_even()</code> function in Python. Please consider experimenting with the code. At the very least, try evaluating <code class="code-inline tex2jax_ignore">is_even()</code> for other input values.</div>
+<pre id="sec_logic-ch-flow-control-3-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
+    if myNumber % 2 == 0:
+        print("The input is even!")
+    return None
+
+is_even(846)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-3-8">The Python implementation of the <code class="code-inline tex2jax_ignore">is_even()</code> function looks quite similar to the pseudocode we used to describe the function initially. The major difference is how the condition on the <code class="code-inline tex2jax_ignore">if</code> statement appears. The expression <code class="code-inline tex2jax_ignore">myNumber % 2</code> computes the remainder when <code class="code-inline tex2jax_ignore">myNumber</code> is divided by <code class="code-inline tex2jax_ignore">2</code>. The <code class="code-inline tex2jax_ignore">==</code> is a test for whether the value on the left of the operator is identically the same as the value on the right of the operator. All together, <code class="code-inline tex2jax_ignore">myNumber % 2 == 0</code> evaluates to <code class="code-inline tex2jax_ignore">true</code> if the remainder when dividing the input <code class="code-inline tex2jax_ignore">myNumber</code> by <code class="code-inline tex2jax_ignore">2</code> is <code class="code-inline tex2jax_ignore">0</code>, and it evaluates to <code class="code-inline tex2jax_ignore">false</code> otherwise. This means that our call to <code class="code-inline tex2jax_ignore">print()</code> will only be executed if the <code class="code-inline tex2jax_ignore">myNumber</code> input parameter is even.</div>
+<div class="para" id="sec_logic-ch-flow-control-3-9">If you played around with the function, you’ll have likely noticed that nothing is printed out if you pass a value to the <code class="code-inline tex2jax_ignore">myNumber</code> parameter which is not even. We can add an <code class="code-inline tex2jax_ignore">else</code> statement to print out that the input is odd if the original conditional is not satisfied. We’ll do that in pseudocode and follow it up with a live implementation below.</div>
+<pre class="code-display tex2jax_ignore">def is_even(myNumber):
+  if myNumber is divisible by 2:
+    print("The input is even!")
+  else: 
+    print("The input is odd!") 
+  return None
+</pre>
+<pre id="sec_logic-ch-flow-control-3-11" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
+    if myNumber % 2 == 0:
+        print("The input is even!")
+    else:
+        print("The input is odd!")
+    return None
+
+is_even(113)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-3-12">Hopefully you noticed that we’ve constructed a function which no longer behaves correctly. If you didn’t notice this, try passing the value 0.5 to the <code class="code-inline tex2jax_ignore">myNumber</code> input parameter. The function prints out that <code class="code-inline tex2jax_ignore">"The 
+input is odd"</code>, but that’s not correct. This brings up an important point about code and computing in general. Computers are great at following instructions, but they aren’t smart. The computer has no way to know that it is providing us with wrong information -- instead, it is only following the instructions that we’ve written for it. We can create a better (and correct) version of our function if we use <code class="code-inline tex2jax_ignore">else if</code> followed by an <code class="code-inline tex2jax_ignore">else</code> statement to catch scenarios where the user has input a non-integer. Below is what that might look like using pseudocode as well as in a live Python implementation.</div>
+<pre class="code-display tex2jax_ignore">def is_even(myNumber):
+  if myNumber is divisible by 2:
+    print("The input is even!")
+  else if myNumber has a remainder of 1 under division by 2: 
+    print("The input is odd!") 
+  else: 
+    print("The input was not an integer!")
+  return None
+</pre>
+<pre id="sec_logic-ch-flow-control-3-14" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
+    if myNumber % 2 == 0:
+        print("The input is even!")
+    elif myNumber % 2 == 1:
+        print("The input is odd!")
+    else:
+        print("The input was not an integer!")
+    return None
+
+is_even(0.5)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-3-15">Note that in the working implementation, the combination <code class="code-inline tex2jax_ignore">else if</code> is shortened to <code class="code-inline tex2jax_ignore">elif</code>. This is a common feature of many languages, since it helps to avoid nested <code class="code-inline tex2jax_ignore">if</code> statements within <code class="code-inline tex2jax_ignore">else</code> statements. The result is more compact and readable code.</div></section><section class="subsection" id="sec_logic-ch-flow-control-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="space"> </span><span class="title">Conditionals with Compound Conditions</span>
+</h3>
+<div class="para" id="sec_logic-ch-flow-control-4-2">In each iteration of the <code class="code-inline tex2jax_ignore">is_even()</code> function explored in the previous subsection, we tested simple conditions for each <code class="code-inline tex2jax_ignore">if</code> or <code class="code-inline tex2jax_ignore">else if</code> conditional. We are certainly able to require more complex conditions to be satisfied in order for the code in the body of the conditional to be run. We can combine simple conditions using the <code class="code-inline tex2jax_ignore">and</code>, <code class="code-inline tex2jax_ignore">or</code>, and <code class="code-inline tex2jax_ignore">not</code> logical connectors we’ve learned about throughout this chapter.</div>
+<div class="para" id="sec_logic-ch-flow-control-4-3">Let’s see this by building a new function, `is_large_even()` which prints out <code class="code-inline tex2jax_ignore">"The input is over 1000 and is even!"</code> if the input value exceeds <span class="process-math">\(1000\)</span> and is en even number, and prints that <code class="code-inline tex2jax_ignore">"The input is either 
+small or is not even!"</code> otherwise. As before, we’ll start with a pseudocode implementation followed by a live implementation in Python below.</div>
+<pre class="code-display tex2jax_ignore">def is_large_even(myNumber):
+  if (myNumber is even) and (myNumber &gt; 1000):
+    print("The input is over 1000 and is even!")
+  else:
+    print(The input is either small or is not even!)
+  return None
+</pre>
+<pre id="sec_logic-ch-flow-control-4-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_large_even(myNumber):
+    if ((myNumber % 2 == 0) and (myNumber > 1000)):
+        print("The input is over 1000 and is even!")
+    else:
+        print("The input is either small or is not even!")
+    return None
+
+is_large_even(5250)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-4-6">In Python we simply used the keyword <code class="code-inline tex2jax_ignore">and</code> to create the compound conditional statement. The keywords <code class="code-inline tex2jax_ignore">or</code> and <code class="code-inline tex2jax_ignore">not</code> can be used similarly in Python. In other languages the syntax is for constructing these compound conditionals is similar, but you may need to use symbols in place of the <code class="code-inline tex2jax_ignore">and</code>/<code class="code-inline tex2jax_ignore">or</code>/<code class="code-inline tex2jax_ignore">not</code> keywords. For example, in C++ we write <code class="code-inline tex2jax_ignore">\amp\amp</code> to mean "and", use <code class="code-inline tex2jax_ignore">||</code> in place of "or", and use <code class="code-inline tex2jax_ignore">!</code> in place of "not".  For example, let’s create a new function which will print <code class="code-inline tex2jax_ignore">"true"</code> if its input value is large and even <em class="emphasis">or</em> is <em class="emphasis">not</em> a multiple of <span class="process-math">\(3\text{,}\)</span> but will print <code class="code-inline tex2jax_ignore">"false"</code> otherwise. We show a version of the function in pseudocode and a working Python implementation below.</div>
+<pre class="code-display tex2jax_ignore">def is_large_even_or_not_mult3(myNumber):
+  if ((myNumber is even) and (myNumber &gt; 1000)) or (myNumber is not a multiple of 3):
+    print("true")
+  else:
+    print("false")
+  return None
+</pre>
+<pre id="sec_logic-ch-flow-control-4-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_large_even_or_not_mult3(myNumber):
+    if ((myNumber % 2 == 0) and (myNumber > 1000)) or (myNumber % 3 != 0):
+        print("true")
+    else:
+        print("false")
+    return None
+
+is_large_even_or_not_mult3(3000)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-4-9">You may notice that, in the working implementation, <code class="code-inline tex2jax_ignore">myNumber % 3 != 0</code> was used to test whether the input <code class="code-inline tex2jax_ignore">myNumber</code> is not divisible by <span class="process-math">\(3\text{.}\)</span> There are, of course, other ways to encode this test -- perhaps something like <code class="code-inline tex2jax_ignore">(not (myNumber % 3 == 0))</code>. There are always multiple means to an end; we typically prefer code which is more simple, more readable, and more efficient.</div></section><section class="subsection" id="sec_logic-ch-flow-control-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="space"> </span><span class="title">Looping with <code class="code-inline tex2jax_ignore">for</code> and <code class="code-inline tex2jax_ignore">while</code></span>
+</h3>
+<div class="para" id="sec_logic-ch-flow-control-5-2">Now that we’ve seen conditionals as well as our logical connectors in action, let’s see a slightly more advanced feature of code. We’ll explore loops, which can help us re-run the same set of instructions many times. We’ll make use of two types of loop here because they’ll be helpful to us when we return to develop a base-conversion function which will convert between two arbitraty bases (although we’ll build a function that only works as long as those bases are both at most 10).</div>
+<div class="para" id="sec_logic-ch-flow-control-5-3">We’ll start our discussion of loops with the <code class="code-inline tex2jax_ignore">for</code> loop. A <code class="code-inline tex2jax_ignore">for</code> loop will run through a block of code (instructions) for a set number of iterations. For example, perhaps we would like to double every value in a list. Then we can struct a <code class="code-inline tex2jax_ignore">for</code> loop which will double each value from an input list. The doubling code will run once for each element in the list and then the loop will terminate. Let’s see such a function.</div>
+<pre class="code-display tex2jax_ignore">def double_list_values(myList):
+  n = length(myList)
+  doubled_list = new list of length n
+  for i in list(0, 1, ..., n - 1):
+    doubled_list element i = 2*(myList element i)
+  return doubled_list
+</pre>
+<pre id="sec_logic-ch-flow-control-5-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def double_list_values(myList):
+    n = len(myList)
+    doubled_list = n*[0]
+    for i in range(n):
+        doubled_list[i] = 2*myList[i]
+    return doubled_list
+
+result = double_list_values([1, 10, 0, -12, 5])
+print(result)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-5-6">Please experiment with the code above. Try evaluating <code class="code-inline tex2jax_ignore">double_list_values()</code> on lists of a variety of lengths. The <code class="code-inline tex2jax_ignore">for</code> loop in the function definition adapts automatically to input lists of any length. This makes our function quite flexible. You’ll note that when we evaluated our function this time, we stored the result in a new variable and then explicitly printed it out. This is because values returned by a function are not generally printed out in any language. We need to explicitly ask for the returned value to be printed. See this for yourself by simply running <code class="code-inline tex2jax_ignore">double_list_values([1, 2, 3])</code> -- while nothing is printed out, the values of the input list are doubled.</div>
+<div class="para" id="sec_logic-ch-flow-control-5-7">There are a few additional things to notice here about the Python implementation of the <code class="code-inline tex2jax_ignore">double_list_values()</code> function. First, a majority of programming languages are 0-indexed. That means for objects like lists or arrays, the first element occupies index 0, the second occupies index 1, etc. This takes some getting used to, but we’ve adopted the 0-indexing convention here since you are almost certain to encounter it in the future. Next, in the working implementation which uses Python, the code <code class="code-inline tex2jax_ignore">n*[0]</code> initializes a list of length <code class="code-inline tex2jax_ignore">n</code>, all of whose entries are <code class="code-inline tex2jax_ignore">0</code>. In Python, lists are denoted/defined by square brackets. Finally, in Python we can access the item occupying the <code class="code-inline tex2jax_ignore">i</code><span class="process-math">\(^{\text{th}}\)</span> index of a list by using <code class="code-inline tex2jax_ignore">ListName[i]</code>. Finally, values returned by a function are not printed out unless we explicitly ask for that behavior. You can see this for yourself by simply running <code class="code-inline tex2jax_ignore">double_list_values([1, 2, 3])</code>. You’ll notice that other languages have slightly different syntax for working with lists.</div>
+<div class="para" id="sec_logic-ch-flow-control-5-8">What if there is no way to determine ahead of time the number of iterations that the code within the loop should be run? For example, what if we would like to run a block of code until a condition is no longer true? For example, what if we would like to double an input value until the result exceeds 100? There’s no convenient/simple way to determine ahead of time the number of iterations the loop should run through before terminating. This is exactly a scenario for a <code class="code-inline tex2jax_ignore">while</code> loop. Let’s build the function described above.</div>
+<pre class="code-display tex2jax_ignore">def my_doubling_function(startingValue):
+  val = startingValue
+  while val &lt;= 100: 
+    val = 2*val
+  return val
+</pre>
+<pre id="sec_logic-ch-flow-control-5-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def my_doubling_function(startingValue):
+    val = startingValue
+    while val <= 100:
+        val = 2*val
+    return val
+
+result = my_doubling_function(5)
+print(result)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-5-11">Notice that <code class="code-inline tex2jax_ignore">my_doubling_function()</code> does not include a preset number of iterations over which the <code class="code-inline tex2jax_ignore">val = 2*val</code> code in the <code class="code-inline tex2jax_ignore">while</code> loop will be run. At each iteration through the loop, <code class="code-inline tex2jax_ignore">val</code> is checked to see whether it exceeds <span class="process-math">\(100\text{.}\)</span> As soon as <code class="code-inline tex2jax_ignore">val</code> exceeds <span class="process-math">\(100\text{,}\)</span> the <code class="code-inline tex2jax_ignore">while</code> loop is terminated. Try running the function with several input different input values. Unfortunately, with a <code class="code-inline tex2jax_ignore">while</code> loop it is possible to find yourself in a scenario where you function loops infinitely, never returning a value, and eventually crashing. Such is the case here if we try evaluating <code class="code-inline tex2jax_ignore">my_doubling_function()</code> with a negative input value.</div></section><section class="subsection" id="sec_logic-ch-flow-control-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="space"> </span><span class="title">Putting it all together</span>
+</h3>
+<div class="para" id="sec_logic-ch-flow-control-6-2">In this final, subsection, we’ll provide ourselves an opportunity to build a function which explores the Collatz Conjecture. You may have heard of this colloquially as the "<span class="process-math">\(3x + 1\)</span>" conjecture. Below is a video from the Veritasium YouTube channel discussing the conjecture.</div>
+<div class="para" id="sec_logic-ch-flow-control-6-3"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/094y1Z2wpJg?&amp;modestbranding=1&amp;rel=0" id="sec_logic-ch-flow-control-6-3-1"></iframe></div></div>
+<div class="para" id="sec_logic-ch-flow-control-6-4">The conjecture is simple enough to state. Create a sequence by choosing any positive integer starting value you like. Obtain the next element of the sequence by either dividing by <span class="process-math">\(2\)</span> (if the current sequence element is even), or multiplying the current sequence value by <span class="process-math">\(3\)</span> and adding <span class="process-math">\(1\text{.}\)</span> The conjecture claims that no matter your choice of starting value, the resulting sequence will eventually attain a value of <span class="process-math">\(1\text{,}\)</span> which then results in the sequence repeating <span class="process-math">\(4, 2, 1\)</span> forever. Nobody, not even the best mathematicians in the world, has been able to prove or disprove this claim. We can use code to create the sequence of values created by this procedure for a given starting value. It will require several of the ideas we’ve introduced here.</div>
+<pre class="code-display tex2jax_ignore">def collatz_sequence(startVal):
+  my_sequence = empty list
+  current_val = startVal
+  append startVal to my_sequence
+  while current_val is not 1:
+    if current_val is divisible by 2:
+      current_val = current_val / 2
+    else:
+      current_val = 3*current_val + 1
+    append current_val to my_sequence
+  return my_sequence
+</pre>
+<pre id="sec_logic-ch-flow-control-6-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def collatz_sequence(startValue):
+    my_sequence = []
+    current_val = startValue 
+    my_sequence = my_sequence + [current_val]
+    while current_val != 1:
+        if current_val % 2 == 0:
+            current_val = current_val / 2
+        else:
+            current_val = 3*current_val + 1
+        my_sequence = my_sequence + [current_val]
+    return my_sequence
+
+result = collatz_sequence(5)
+print(result)
+</script></pre>
+<div class="para" id="sec_logic-ch-flow-control-6-7">Try computing the <code class="code-inline tex2jax_ignore">collatz_sequence()</code> for a variety of different <code class="code-inline tex2jax_ignore">startValue</code>s. Do you always end up with a sequence terminating at <span class="process-math">\(1\text{?}\)</span> Below is another function containing a <code class="code-inline tex2jax_ignore">for</code> loop which has the ability to call our <code class="code-inline tex2jax_ignore">collatz_sequence()</code> function many times and plot the resulting sequences.</div>
+<pre id="sec_logic-ch-flow-control-6-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import matplotlib.pyplot as plt
+import random
+
+plt.cla()
+
+def plot_collatz_sequences(n_iterations):
+    for i in range(n_iterations):
+        startValue = random.randint(5, 10000)
+        sequence = collatz_sequence(startValue)
+        plt.plot(sequence)
+    
+    plt.show()
+    return None
+
+plot_collatz_sequences(50)
+</script></pre></section><section class="subsection" id="sec_logic-ch-flow-control-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="space"> </span><span class="title">Conclusion</span>
+</h3>
+<div class="para" id="sec_logic-ch-flow-control-7-2">That’s it for this section. Hopefully you enjoyed applying our newfound knowledge of logic to code. You saw how the use of <code class="code-inline tex2jax_ignore">if</code>, <code class="code-inline tex2jax_ignore">else if</code>, and <code class="code-inline tex2jax_ignore">else</code> statements combined with conditions can direct the flow of your code. This is powerful because it allows us to run different instructions depending on the state of a parameter within our code. You also saw how we can use looping to run the same set of instructions over and over within a function. We saw that <code class="code-inline tex2jax_ignore">for</code> loops can be used when we know the number of iterations the loop must run ahead of time. If a loop should run an unspecified number of iterations and terminate only when a stopping condition is satisfied, then we should use a <code class="code-inline tex2jax_ignore">while</code> loop. If you decide to complete <em class="emphasis">Project I</em> in the next chapter, you’ll have an opportunity to test out what you’ve learned here.</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec_logic-ch-boolean-algebra.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_logic-ch-base-conversion-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

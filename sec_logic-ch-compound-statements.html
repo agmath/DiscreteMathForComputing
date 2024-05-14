@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Compound Statements, Truth Tables, and Logical Equivalence</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Discrete Mathematics for Computing (Draft)">
+<meta property="book:author" content="Christine Caples">
+<meta property="book:author" content="Adam Gilbert">
+<meta property="book:author" content="Melanie Fraser">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.2.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.11/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.11/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.11/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing (Draft)</span></a></h1>
+<p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-logic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_logic-ch-boolean-algebra.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">About This Text</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-first.html" class="internal"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_firstch-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-b2ten.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Converting from Non-Standard Bases into Base-10</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-5" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Numbers in Non-Standard Bases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-6" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Common Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-b2ten.html#sec_firstch-b2ten-7" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-ten2b.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Converting from Base-10 to Non-Standard Bases</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Developing a Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Let’s Try It!</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Converting to Hexadecimal</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-ten2b.html#sec_firstch-ten2b-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_firstch-properties.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Properties of Binary, Octal, and Hexadecimal Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Properties of Binary Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-4" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Connecting Binary to Octal and Hexadecimal</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_firstch-properties.html#sec_firstch-properties-5" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_firstch-between-bases.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Converting Between Arbitrary Bases</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_sets-ch-foundations.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Foundations for Working with Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_sets-ch-operations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Operations with Sets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Statements and Symbolic Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Symbolic Logic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Compound Statements and Truth Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-5" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Logical Equivalence</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-boolean-algebra.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Boolean Algebra</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-boolean-algebra.html#sec_logic-ch-boolean-algebra-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Properties in Boolean Algebra</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic-ch-flow-control.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Logic for Flow Control</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Conditional Statements in Code</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-4" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Conditionals with Compound Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-5" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Looping with <code class="code-inline tex2jax_ignore">for</code> and <code class="code-inline tex2jax_ignore">while</code></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-6" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Putting it all together</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-flow-control.html#sec_logic-ch-flow-control-7" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Conclusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_logic-ch-base-conversion-functions.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Building a Base-Conversion Function</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-counting.html" class="internal"><span class="codenumber">4</span> <span class="title">Counting</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_counting-big-O.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Complexity and Big-O Notation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-probability.html" class="internal"><span class="codenumber">6</span> <span class="title">Probability</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-arrays.html" class="internal"><span class="codenumber">7</span> <span class="title">Arrays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html" class="internal"><span class="codenumber">7.1</span> <span class="title">One-Dimensional Arrays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html#sec_arrays-ch-one-dimensional-arrays-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Addition and Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-one-dimensional-arrays.html#sec_arrays-ch-one-dimensional-arrays-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Inner-products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_arrays-ch-matrices.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Two-Dimensional Arrays (Matrices)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">What is a two-dimensional array?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Matrix Addition/Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-5" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-6" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Matrix Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-7" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Outer-products of one-dimensional arrays</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_arrays-ch-matrices.html#sec_arrays-ch-matrices-8" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Conclusions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_arrays-ch-multidimensional-arrays.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Multidimensional Arrays</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-graphs.html" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_logic-ch-compound-statements"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span>
+</h2>
+<section class="introduction" id="sec_logic-ch-compound-statements-2"><div class="para" id="sec_logic-ch-compound-statements-2-1">In the previous section we were introduced to <em class="emphasis">statements</em> and our four foundational logical operators -- the negation (<span class="process-math">\(!p\)</span>), the conjunction (<span class="process-math">\(p\land q\)</span>), the disjunction (<span class="process-math">\(p \lor q\)</span>), and the implication (<span class="process-math">\(p\to q\)</span>). We described <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> as <em class="emphasis">atomic</em> statements and these statements involving operators as <em class="emphasis">compound logical statements</em>. We also evaluated the conditions under which these compound logical statements are true by constructing tables called truth tables. A single table summarizing the results from that previous section appears below: <figure class="table table-like" id="sec_logic-ch-compound-statements-2-1-10"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\land q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\lor q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure>
+</div> <div class="para" id="sec_logic-ch-compound-statements-2-2">Given your previous experience with mathematics, it likely comes as no surprise to you that we can combine our statements and logical operators together to build more complex logical statements. These more complex statements will be the focus of this section of our text.</div></section><section class="subsection" id="sec_logic-ch-compound-statements-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="space"> </span><span class="title">Truth Tables</span>
+</h3>
+<div class="para" id="sec_logic-ch-compound-statements-3-2">In both the previous section and also the introduction to this section, we’ve utilized truth tables to analyse the conditions under which our compound logical statements are <em class="emphasis">true</em> or <em class="emphasis">false</em>. We’ve used this structures without much explanation though, so we’ll take a moment to discuss them here.</div>
+<div class="para logical" id="sec_logic-ch-compound-statements-3-3">
+<div class="para">In short, a truth table is a stucture which allows us to systematically analyze truth values for logical statements. The number of rows and columns in a truth table will depend on the complexity of the logical statement to be analysed. For a logical statement that includes <span class="process-math">\(n\)</span> distinct atomic statements, a truth table with <span class="process-math">\(2^n\)</span> rows is required to capture all of the combinations of truth and falsity for each of the atomic statements. The number of columns in the truth table will vary with the number of operators in the statement. You can (and should) use the strategy below when constructing a truth table to analyze a logical statement or argument.</div>
+<ol class="decimal">
+<li id="sec_logic-ch-compound-statements-3-3-3-1"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-1">Identify the number of atomic statements included in the compound logical statement.</div></li>
+<li id="sec_logic-ch-compound-statements-3-3-3-3"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-3">Build a truth table with <span class="process-math">\(2^n\)</span> rows (not including the header row), where <span class="process-math">\(n\)</span> is the number of atomic statements you identified in step 1.</div></li>
+<li id="sec_logic-ch-compound-statements-3-3-3-4"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-4">Build a column for each of the individual atomic statements.</div></li>
+<li id="sec_logic-ch-compound-statements-3-3-3-6"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-6">Look for any negation operators attached to atomic statements and build a column in the truth table for each negated atomic statement that appears.</div></li>
+<li id="sec_logic-ch-compound-statements-3-3-3-7"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-7">The order of operations for logic are: <em class="emphasis">parentheses</em>, <em class="emphasis">negations</em>, <em class="emphasis">conjunctions</em>/<em class="emphasis">disjunctions</em> (left to right), and then <em class="emphasis">implications</em>. Slowly add columns to your truth table according to this order of operations that will build up to the full compound logical statement you are analyzing.</div></li>
+</ol>
+</div>
+<div class="para logical" id="sec_logic-ch-compound-statements-3-4">
+<div class="para">Consider the following truth table as an example for analyzing the truth values of <span class="process-math">\(\left(p\lor !q\right)\to !r\text{.}\)</span> <figure class="table table-like" id="sec_logic-ch-compound-statements-3-4-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(r\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!r\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\lor !q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\left(p \lor !q\right)\to !r\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure> Consider the following questions before trying to fill in the truth table on your own.</div>
+<ol class="decimal">
+<li id="sec_logic-ch-compound-statements-3-4-3-1"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-4-3-1">Why are there 8 rows in this truth table? Is having 8 correct?</div></li>
+<li id="sec_logic-ch-compound-statements-3-4-3-2"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-4-3-2">Why isn’t there a <span class="process-math">\(!p\)</span> column if there are columns for <span class="process-math">\(!q\)</span> and <span class="process-math">\(!r\text{?}\)</span>
+</div></li>
+<li id="sec_logic-ch-compound-statements-3-4-3-3"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-4-3-3">Are 7 columns appropriate here? Can we fill in each column by looking at the truth values in at most two columns to the left of it?</div></li>
+</ol>
+<div class="para">Now fill in the remaining truth values before moving on.</div>
+</div></section><section class="subsection" id="sec_logic-ch-compound-statements-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="space"> </span><span class="title">Compound Statements and Truth Tables</span>
+</h3>
+<div class="para" id="sec_logic-ch-compound-statements-4-2">You have all the tools you need to analyze compound logical statements with the help of truth tables. As such, this subsection mainly consists of embedded example problems for you to solve. As usual, these embedded examples are interactive and will help you check your understanding. The earliest examples involve truth tables that are mostly set up for you. The final examples ask you to construct nearly all aspects of the truth tables while you build your solutions. The examples slowly build you up to being able to approach these problems independently.</div>
+<article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-3"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table I.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-3-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=25467&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-4"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table II.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-4-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=25470&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-5"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table III.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-5-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=270242&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table IV.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-6-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=270247&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table V.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-7-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=270249&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table VI.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-8-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=270255&amp;resizer=true"></iframe></div></article><div class="para" id="sec_logic-ch-compound-statements-4-9">Now you’ll be more responsible for building your own truth table. The rows are predetermined, but you’ll need to fill in the column headings.</div>
+<article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-10"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table I.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-10-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=271847&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-11"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table II.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-11-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=271848&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-12"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table III.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-12-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=271853&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_logic-ch-compound-statements-4-13"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table IV.</span>
+</h4>
+<div class="introduction" id="sec_logic-ch-compound-statements-4-13-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=271854&amp;resizer=true"></iframe></div></article><div class="para" id="sec_logic-ch-compound-statements-4-14">How did you do with building those truth tables? Are you gaining confidence in constructing the tables and using them to evaluate the conditions under which a compound logical expression are true or false? In the next subsection, we’ll see how to use truth tables to determine whether compound logical statements are equivalent to one another.</div></section><section class="subsection" id="sec_logic-ch-compound-statements-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="space"> </span><span class="title">Logical Equivalence</span>
+</h3>
+<div class="para" id="sec_logic-ch-compound-statements-5-2">Now that we know how to evaluate logical expressions, the next natural question to ask is "when are two logical expressions equivalent to one another?". Simply put, two expressions are logically equivalent if they have exactly the same truth values under the same conditions. In terms of their truth tables, they have exactly the same combination of <em class="emphasis">trues</em> and <em class="emphasis">falses</em> in exactly the same order (as long as the atomic statements are arranged identically). This means that, if we build a truth table for each of the statements in queston, ensuring that the tables include the same atomic statements and that the truth values for those atomic statements appear in the same order, then two statements are logically equivalent if the final columns in their truth tables are identical.</div>
+<div class="para" id="sec_logic-ch-compound-statements-5-3">For example, we might consider the logical statements <span class="process-math">\(p\to q\)</span> and <span class="process-math">\(q\lor !p\text{.}\)</span> We can construct and compare their truth tables below: <figure class="table table-like" id="sec_logic-ch-compound-statements-5-3-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.13<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure> and <figure class="table table-like" id="sec_logic-ch-compound-statements-5-3-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.14<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\lor !p\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure> Notice that the final columns of the two truth tables are identical. Since <span class="process-math">\(p\to q\)</span> and <span class="process-math">\(q\lor !p\)</span> are true and false under exactly the same conditions, we have identified that they are logically equivalent. In this case, we’ll write that <span class="process-math">\(p\to q \equiv q\lor !p\text{.}\)</span>
+</div>
+<div class="para" id="sec_logic-ch-compound-statements-5-4">Perhaps you also noticed that building two truth tables was inefficient and took up lots of space and effort. We can condense our work into a single truth table as long as we compare the columns in the truth table that correspond to our statements in question. For example, consider the truth table below as an alternative to the two tables above. <figure class="table table-like" id="sec_logic-ch-compound-statements-5-4-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.15<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\to q\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\lor !p\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+</table></div></figure> Notice still that the two columns corresponding to our statements, <span class="process-math">\(p\to q\)</span> and <span class="process-math">\(q\lor !p\)</span> are identical.</div>
+<div class="para" id="sec_logic-ch-compound-statements-5-5">Check your understanding in the following examples by building the truth tables and determining whether the statements are logically equivalent.</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_logic-ch-boolean-algebra.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
