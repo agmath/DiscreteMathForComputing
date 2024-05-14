@@ -1,0 +1,16 @@
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+INFO    : Preparing to build into /workspaces/DiscreteMathForComputing/output/html.
+INFO    : discovering source file's directory name: /workspaces/DiscreteMathForComputing/source
+INFO    : verifying and expanding input directory: /workspaces/DiscreteMathForComputing/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/DiscreteMathForComputing/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/DiscreteMathForComputing/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/DiscreteMathForComputing/assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.1.2
+INFO    : Runestone Services (using newer, via online CDN query): version 7.2.18
+INFO    : converting /workspaces/DiscreteMathForComputing/source/main.ptx to HTML in /tmp/tmpo2i0vch4
+INFO    : XSL conversion of /workspaces/DiscreteMathForComputing/source/main.ptx by /home/vscode/.ptx/xsl/pretext-html.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /home/vscode/.ptx/xsl/pretext-html.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+

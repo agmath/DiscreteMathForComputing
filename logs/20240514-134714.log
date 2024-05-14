@@ -1,0 +1,10 @@
+INFO    : PreTeXt-CLI version: 2.4.0
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+WARNING : Using CLI version 2.4.0 but project's `requirements.txt`
+WARNING : is configured to use 2.3.4. Consider either installing
+WARNING : CLI version 2.3.4 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.0.
+INFO    : Running in a codespace, so using the codespace server instead of the standard python server.
+INFO    : Server will soon be available at https://zany-space-bassoon-jp46799gvp3pr9j-8128.app.github.dev
+INFO    : Opening browser for target `html` at https://zany-space-bassoon-jp46799gvp3pr9j-8128.app.github.dev/output/html in 5 seconds
