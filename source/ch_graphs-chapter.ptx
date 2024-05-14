@@ -23,7 +23,7 @@
 
   <figure>
     <caption>A Graph</caption>
-    <image xml:id="an-example-graph" width="100%">
+    <image xml:id="an-example-graph" width="50%">
         <description>Just a graph.</description>
         <latex-image>
         \begin{tikzpicture}[domain=-3:3,scale=.5]
