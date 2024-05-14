@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-28T20:48:07-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>My Exercises</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Discrete Mathematics for Computing">
+<meta property="book:author" content="Christine Caples">
+<meta property="book:author" content="Adam Gilbert">
+<meta property="book:author" content="Melanie Fraser">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dm4c.html"><span class="title">Discrete Mathematics for Computing</span></a></h1>
+<p class="byline">Christine Caples, Adam Gilbert, Melanie Fraser</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_firstch-between-bases.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-sets.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_firstch-between-bases.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-first.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch-sets.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">About This Text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-first.html" data-scroll="ch-first" class="internal"><span class="codenumber">1</span> <span class="title">Base Representations for Number Systems</span></a><ul>
+<li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro" class="internal">Introduction</a></li>
+<li><a href="sec_firstch-b2ten.html" data-scroll="sec_firstch-b2ten" class="internal">Converting from Non-Standard Bases into Base-10</a></li>
+<li><a href="sec_firstch-ten2b.html" data-scroll="sec_firstch-ten2b" class="internal">Converting from Base-10 to Non-Standard Bases</a></li>
+<li><a href="sec_firstch-properties.html" data-scroll="sec_firstch-properties" class="internal">Properties of Binary, Octal, and Hexadecimal Systems</a></li>
+<li><a href="sec_firstch-between-bases.html" data-scroll="sec_firstch-between-bases" class="internal">Converting Between Arbitrary Bases</a></li>
+<li><a href="ex_firstch.html" data-scroll="ex_firstch" class="active">My Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sets.html" data-scroll="ch-sets" class="internal"><span class="codenumber">2</span> <span class="title">Sets and Set Operations</span></a><ul>
+<li><a href="sec_sets-ch-foundations.html" data-scroll="sec_sets-ch-foundations" class="internal">Foundations for Working with Sets</a></li>
+<li><a href="sec_sets-ch-operations.html" data-scroll="sec_sets-ch-operations" class="internal">Operations with Sets</a></li>
+<li><a href="sec_sets-ch-setsofsets.html" data-scroll="sec_sets-ch-setsofsets" class="internal">Sets of Sets</a></li>
+<li><a href="ex_sets-ch.html" data-scroll="ex_sets-ch" class="internal">My Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic and Boolean Algebra</span></a><ul><li><a href="ex_logic-ch.html" data-scroll="ex_logic-ch" class="internal">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-project1.html" data-scroll="ch-project1" class="internal"><span class="codenumber">4</span> <span class="title">Project I</span></a><ul><li><a href="sec_p1-outline.html" data-scroll="sec_p1-outline" class="internal">Building a Base-Conversion Function</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-counting.html" data-scroll="ch-counting" class="internal"><span class="codenumber">5</span> <span class="title">Counting</span></a><ul>
+<li><a href="sec_counting-basics.html" data-scroll="sec_counting-basics" class="internal">Basic Counting Techniques</a></li>
+<li><a href="sec_counting-permutations.html" data-scroll="sec_counting-permutations" class="internal">Orderings and Permutations</a></li>
+<li><a href="sec_counting-binomial-coefficients.html" data-scroll="sec_counting-binomial-coefficients" class="internal">Selections and Binomial Coefficients</a></li>
+<li><a href="sec_counting-fundamental-principle.html" data-scroll="sec_counting-fundamental-principle" class="internal">The Fundamental Principle of Counting</a></li>
+<li><a href="sec_counting-big-O.html" data-scroll="sec_counting-big-O" class="internal">Complexity and Big-O Notation</a></li>
+<li><a href="ex_counting-ch.html" data-scroll="ex_counting-ch" class="internal">My Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-functions.html" data-scroll="ch-functions" class="internal"><span class="codenumber">6</span> <span class="title">Functions</span></a><ul><li><a href="ex_functions-ch.html" data-scroll="ex_functions-ch" class="internal">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-probability.html" data-scroll="ch-probability" class="internal"><span class="codenumber">7</span> <span class="title">Probability</span></a><ul><li><a href="ex_probability-ch.html" data-scroll="ex_probability-ch" class="internal">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-project2.html" data-scroll="ch-project2" class="internal"><span class="codenumber">8</span> <span class="title">Project II</span></a><ul>
+<li><a href="sec_p2-you-can-count.html" data-scroll="sec_p2-you-can-count" class="internal">You Can Count!</a></li>
+<li><a href="sec_p2-alg-complexity-DNA-replication.html" data-scroll="sec_p2-alg-complexity-DNA-replication" class="internal">Complexity and DNA Replication</a></li>
+<li><a href="sec_p2-a-game-of-bridge.html" data-scroll="sec_p2-a-game-of-bridge" class="internal">A Game of Bridge</a></li>
+<li><a href="sec_p2-a-prisoners-dilemma.html" data-scroll="sec_p2-a-prisoners-dilemma" class="internal">A Prisoners' Dilemma</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-arrays.html" data-scroll="ch-arrays" class="internal"><span class="codenumber">9</span> <span class="title">Arrays</span></a><ul>
+<li><a href="sec_arrays-ch-one-dimensional-arrays.html" data-scroll="sec_arrays-ch-one-dimensional-arrays" class="internal">One-Dimensional Arrays</a></li>
+<li><a href="sec_arrays-ch-matrices.html" data-scroll="sec_arrays-ch-matrices" class="internal">Two-Dimensional Arrays (Matrices)</a></li>
+<li><a href="sec_arrays-ch-multidimensional-arrays.html" data-scroll="sec_arrays-ch-multidimensional-arrays" class="internal">Multidimensional Arrays</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-graphs.html" data-scroll="ch-graphs" class="internal"><span class="codenumber">10</span> <span class="title">Graph Theory</span></a><ul><li><a href="ex_graphs-ch.html" data-scroll="ex_graphs-ch" class="internal">My Exercises</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-project3.html" data-scroll="ch-project3" class="internal"><span class="codenumber">11</span> <span class="title">Project III</span></a><ul>
+<li><a href="sec_p3-our-guidelines.html" data-scroll="sec_p3-our-guidelines" class="internal">Sample Project Guidelines</a></li>
+<li><a href="sec_p3-coloring.html" data-scroll="sec_p3-coloring" class="internal">Graph Colorings</a></li>
+<li><a href="sec_p3-pebbling.html" data-scroll="sec_p3-pebbling" class="internal">Graph Pebbling</a></li>
+<li><a href="sec_p3-cycles-circuits.html" data-scroll="sec_p3-cycles-circuits" class="internal">Eulerian Circuits and Hamiltonian Cycles</a></li>
+<li><a href="sec_p3-algorithms.html" data-scroll="sec_p3-algorithms" class="internal">Graph Algorithms</a></li>
+<li><a href="sec_p3-networks.html" data-scroll="sec_p3-networks" class="internal">Networks</a></li>
+<li><a href="sec_p3-matrix-tree.html" data-scroll="sec_p3-matrix-tree" class="internal">The Matrix-Tree Theorem</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features" class="internal"><span class="codenumber">12</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks" class="internal">Environments and Blocks</a></li>
+<li><a href="section-2-2.html" data-scroll="section-2-2" class="internal">Another section</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="exercises" id="ex_firstch"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">1.6</span> <span class="title">My Exercises</span>
+</h2>
+<article class="exercise exercise-like" id="exercise-15"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<p id="p-64">Is this an exercis?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><p id="p-65">Yes.</p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><p id="p-66">It is, but not a very good one.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-16"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<p id="p-67">Another, with a hint.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-68">The hint.</p></div></div>
+</div></article></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<p>Similarly to the previous example, we'd like to group our bits together. Here, we would like to create groups of three bits (since we are converting to base-8, and <span class="process-math">\(2^3 = 8\)</span>), but our binary number is only 8-bits in length. We'll start by padding the number with an extra 0 on the left. Do you agree that it doesn't change the value of the encoded number? Once we've done this, the conversion is just like before. We convert each group of three consecutive bits into the corresponding octal digit independently of the other groups.</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\left(11011001\right)_{2} \amp = \left(011011001\right)_{2}\\
+\amp = \left(\underbrace{011}_{3_{8}}\underbrace{011}_{3_{8}}\underbrace{001}_{1_{8}}\right)_{2}\\
+\amp = \left(331\right)_{8}
+\end{align*}
+</div>
+</div></body>
+</html>

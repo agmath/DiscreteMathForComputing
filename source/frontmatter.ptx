@@ -33,7 +33,7 @@
       <!-- In addition to specifying the copyright holder, you should  -->
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
-      <year>2022<ndash/>2023</year>
+      <year>2022<ndash/>2024</year>
       <!-- <holder>Copyright holder</holder> -->
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
@@ -67,10 +67,10 @@
 			<p>This text is currently in development and all of it is subject to 
 			change. A very rough draft version is being prepared with high-priority 
 			sections during the Summer of 2022. We expect to release a first stable 
-			version for September 2023.
+			version for September 2024.
 			</p>
 			
-			<p>This interactive, IBL, text was designed for use in a first-year
+			<p>This interactive text was designed for use in a first-year
 			 course in Discrete Mathematics at Southern New Hampshire University. 
 			 The course is designed for students taking a first semester of discrete 
 			 mathematics in conjunction with an introductory programming course. 
