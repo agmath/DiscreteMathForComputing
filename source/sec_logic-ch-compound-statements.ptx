@@ -243,27 +243,27 @@ approach these problems independently.
 [NEED TO UPDATE MoM PROBLEM TO HAVE DYNAMIC ANSWER COLUMNS] 
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table I</title><introduction>
-    </introduction><myopenmath problem="25467" />
+    </introduction><myopenmath problem="1381474" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table II</title><introduction>
-    </introduction><myopenmath problem="25470" />
+    </introduction><myopenmath problem="1381475" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table III</title><introduction>
-    </introduction><myopenmath problem="270242" />
+    </introduction><myopenmath problem="1381477" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table IV</title><introduction>
-    </introduction><myopenmath problem="270247" />
+    </introduction><myopenmath problem="1381480" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table V</title><introduction>
-    </introduction><myopenmath problem="270249" />
+    </introduction><myopenmath problem="1381482" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Evaluating a Truth Table VI</title><introduction>
-    </introduction><myopenmath problem="270255" />
+    </introduction><myopenmath problem="1381487" />
 </exercise>
 
 <p>Now you'll be more responsible for building your own truth table. The rows
@@ -271,19 +271,19 @@ are predetermined, but you'll need to fill in the column headings.
 </p>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table I</title><introduction>
-    </introduction><myopenmath problem="271847" />
+    </introduction><myopenmath problem="1381488" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table II</title><introduction>
-    </introduction><myopenmath problem="271848" />
+    </introduction><myopenmath problem="1381494" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table III</title><introduction>
-    </introduction><myopenmath problem="271853" />
+    </introduction><myopenmath problem="1381501" />
 </exercise>
 
 <exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Truth Table IV</title><introduction>
-    </introduction><myopenmath problem="271854" />
+    </introduction><myopenmath problem="1381508" />
 </exercise>
 
 <p>How did you do with building those truth tables? Are you gaining confidence 
