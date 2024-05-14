@@ -1,0 +1,17 @@
+INFO    : PreTeXt-CLI version: 2.4.0
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+ERROR   : XInclude Error caused build to fail:
+ERROR   : /workspaces/DiscreteMathForComputing/source/frontmatter.ptx:28:11:FATAL:PARSER:ERR_NAME_REQUIRED: error parsing attribute name
+/workspaces/DiscreteMathForComputing/source/frontmatter.ptx:28:11:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
+/workspaces/DiscreteMathForComputing/source/frontmatter.ptx:28:11:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag url line 28
+/workspaces/DiscreteMathForComputing/source/frontmatter.ptx:29:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: website line 27 and url
+/workspaces/DiscreteMathForComputing/source/frontmatter.ptx:30:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: colophon line 26 and website
+/workspaces/DiscreteMathForComputing/source/frontmatter.ptx:48:14:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: frontmatter line 6 and colophon
+/workspaces/DiscreteMathForComputing/source/frontmatter.ptx:64:3:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+/workspaces/DiscreteMathForComputing/source/main.ptx:24:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /workspaces/DiscreteMathForComputing/source/frontmatter.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : While running pretext, the following errors occurred:
+

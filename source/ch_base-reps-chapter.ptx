@@ -19,11 +19,11 @@
   <!-- with organization to include them as separate files.      -->
   <!-- That way it is easy to include the section in a different -->
   <!-- chapter later if you change your mind about the order.    -->
-  <xi:include href="./sec_firstch-intro.ptx" />
-  <xi:include href="./sec_firstch-b2ten.ptx" />
-  <xi:include href="./sec_firstch-ten2b.ptx" />
-  <xi:include href="./sec_firstch-properties.ptx" />
-  <xi:include href="./sec_firstch-b1tob2.ptx" />
+  <xi:include href="./sec_base-reps-ch-intro.ptx" />
+  <xi:include href="./sec_base-reps-ch-b2ten.ptx" />
+  <xi:include href="./sec_base-reps-ch-ten2b.ptx" />
+  <xi:include href="./sec_base-reps-ch-properties.ptx" />
+  <xi:include href="./sec_base-reps-ch-b1tob2.ptx" />
 
   <!-- One or more of the sections of a chapter might be exercises-->
   <!--<xi:include href="./ex_firstch.ptx"/>-->

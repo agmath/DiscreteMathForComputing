@@ -15,7 +15,7 @@
   <source webwork-problems="../generated-assets/webwork/webwork-representations.ptx">
     <directories external="../assets" generated="../generated-assets"/>
   </source>
-
+  
   <numbering>
     <!-- the divisions element describes the numbering of divisions.  -->
     <!-- @part-structure should be "decorative" or "structural",      -->

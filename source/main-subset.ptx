@@ -10,7 +10,7 @@
     <!-- edit href to desired section below -->
     <chapter>
       <title>Placeholder Chapter</title>
-      <xi:include href="./sec_firstch-examples.ptx"/>
+      <xi:include href="./ch-pretext-features.ptx"/>
     </chapter>
 
     <!-- or replace with this include to get a full chapter

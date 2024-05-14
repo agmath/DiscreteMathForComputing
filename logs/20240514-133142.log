@@ -1,0 +1,10 @@
+INFO    : PreTeXt-CLI version: 2.4.0
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+INFO    : Since no target was supplied, we will use "html".
+
+INFO    : Staging latest build located in `/workspaces/DiscreteMathForComputing/output/html` at `/workspaces/DiscreteMathForComputing/output/stage`.
+INFO    : 
+ERROR   : [('/workspaces/DiscreteMathForComputing/output/html/_static/pretext/js/pretext-webwork/2.18', '/workspaces/DiscreteMathForComputing/output/stage/_static/pretext/js/pretext-webwork/2.18', "[Errno 17] File exists: '/workspaces/DiscreteMathForComputing/output/stage/_static/pretext/js/pretext-webwork/2.18'")]
+INFO    : While running pretext, the following errors occurred:
+
