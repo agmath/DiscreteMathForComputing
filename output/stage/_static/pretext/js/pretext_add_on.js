@@ -137,7 +137,7 @@ function permalinkDescription(elem) {
     if ((lastChr == '.') || (lastChr == ':'))  {
         retStr = retStr.slice(0,retStr.length - 1);
     }
-    return retStr.replace(/[\n\r]/g, "");
+    return retStr;
 }
 
 /*
@@ -330,10 +330,7 @@ console.log("this is e", e);
                }
             }
             if(this_anchor) {
-                this_file_name = this_url.split('/').pop().split(".")[0];
-                this_permalink_url = this_url;
-                if (this_file_name !== this_anchor)
-                    this_permalink_url += "#" + this_anchor;
+                this_permalink_url = this_url + "#" + this_anchor;
                 const this_permalink_description = permalinkDescription(this_item);
                 this_permalink_container = document.createElement('div');
                 this_permalink_container.setAttribute('class', 'autopermalink');
