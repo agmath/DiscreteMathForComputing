@@ -694,11 +694,56 @@ var ptx_lunr_docs = [
   "body": "Write Pseudocode 2 Drag and drop the blocks of pseudocode below to outline a program which will convert an integer from its binary representation to its decimal representation.   define bin_to_dec(bit_string):   bit_list = bitstring as numeric list  reverse order of bit_list  initialize dec_int to 0  n = length(bit_list)   for i in list(0, 1,...,n - 1):   dec_int = dec_int + (bit_list[i]*2^i)  return dec_int  "
 },
 {
+  "id": "sec_counting-basics",
+  "level": "1",
+  "url": "sec_counting-basics.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Basic Counting Techniques",
+  "body": " Basic Counting Techniques   In this section we discover some fundamental counting techniques which will provide us a foundation to build upon. You'll encounter some scenarios in which addition is utilized to count a number of objects\/possibilities as well as other scenarios in which multiplication is utilized. You'll identify how to determine which approach should be applied in a given scenario and you'll apply your chosen method to carry out the counting.    Counting Outcomes of Atomic Processes  Throughout this short subsection, we'll use the phrase atomic processes to describe processes which cannot be decomposed into smaller, sub-processes. Examples of these atomic processes are the flip of a coin or a roll of a single die. This is as opposed to a more complex process like the rolling of a pair of dice, the flipping of multiple coins, or a combination of die rolls and coin flips. In these more complex cases, we can break the corresponding process into two or more atomic processes . For example, rolling a pair of dice consists of two atomic processes -- the roll of the first die and the roll of the second.  Verify your understanding of atomic processes versus more complex processes by answering the following embedded exercise.  Identifying Atomic Processes   Were you comfortable with classifying those processes? The convenient thing about what we've classified as atomic processes is that the number of outcomes possible from an atomic process is simple to count. Indeed, the number of outcomes possible on a single flip of a coin is two -- we can observe a heads or a tails as the outcome. Verify this by counting the number of outcomes possible for each of the atomic processes in the embedded exercise below.  Counting Outcomes of Atomic Processes   Good work. In the next subsection and the following section in this chapter, we'll use what we know about counting the number of outcomes from atomic processes to help us count the number of outcomes of more complex processes with multiple components.    Near-Atomic Processes: One or the Other(s)  In this subsection, we consider processes which ultimately consist of just a single action but where there is a choice or uncertainty about which action will be taken. For example, we might consider the opportunity to flip a coin or roll of a six-sided die. In this case, we either flipe the coin or roll the die, but we don't do both. In this case, there are two possible outcomes if we flip the coin and an additional six outcomes possible if we roll the die. In total, there are eight (8) outcomes possible from this process.  We consider the process above a near-atomic process because we can't quite break it into smaller sub-processes because only one of these sub-processes will actually be enacted. In this case, the total number of outcomes possible is the sum of the number of outcomes possible from each component process. That is, we obtained 8 total outcomes possible in the example above because there were two outcomes associated with the coin flip and six outcomes associated with the die roll. Since we were either flipping the coin or rolling the die, we added the two totals together.  Test your grasp of what constitutes a near-atomic process by completing this next interactive exercise.  Identifying near-Atomic Processes   Test your understanding of counting the possible number of outcomes from near-atomic processes in the interactive exercise below.  Counting Outcomes of Atomic Processes   As you worked through those last two exercises, make note of where you were confident as well as where you stumbled or were less sure of yourself. Be sure to ask questions on the items where you were less sure of yourself.   Good work through this introductory section on counting. See you in the section, where we'll be introduced to the Fundamental Principle of Counting which will allow us to count the number of outcomes possible for non-atomic, complex processes where the several component processes are all completed. That is, rather than choosing to flip a coin or roll a die, we'll flip the coin and roll the die.  "
+},
+{
+  "id": "sec_counting-basics-3-4",
+  "level": "2",
+  "url": "sec_counting-basics.html#sec_counting-basics-3-4",
+  "type": "Checkpoint",
+  "number": "4.1.1",
+  "title": "Identifying Atomic Processes.",
+  "body": "Identifying Atomic Processes  "
+},
+{
+  "id": "sec_counting-basics-3-6",
+  "level": "2",
+  "url": "sec_counting-basics.html#sec_counting-basics-3-6",
+  "type": "Checkpoint",
+  "number": "4.1.2",
+  "title": "Counting Outcomes of Atomic Processes.",
+  "body": "Counting Outcomes of Atomic Processes  "
+},
+{
+  "id": "sec_counting-basics-4-5",
+  "level": "2",
+  "url": "sec_counting-basics.html#sec_counting-basics-4-5",
+  "type": "Checkpoint",
+  "number": "4.1.3",
+  "title": "Identifying near-Atomic Processes.",
+  "body": "Identifying near-Atomic Processes  "
+},
+{
+  "id": "sec_counting-basics-4-7",
+  "level": "2",
+  "url": "sec_counting-basics.html#sec_counting-basics-4-7",
+  "type": "Checkpoint",
+  "number": "4.1.4",
+  "title": "Counting Outcomes of Atomic Processes.",
+  "body": "Counting Outcomes of Atomic Processes  "
+},
+{
   "id": "sec_counting-big-O",
   "level": "1",
   "url": "sec_counting-big-O.html",
   "type": "Section",
-  "number": "4.1",
+  "number": "4.2",
   "title": "Complexity and Big-O Notation",
   "body": " Complexity and Big-O Notation   In this section we apply our knowledge of looping and counting to develop the notion of big-O notation. We'll look at routines which accept an array as input and explore the growth in the number of operations run during execution of the routine as the size of the input array grows. In particular, we'll see applications which are , , , and .  We'll consider only run-time complexity in this section, though students should also know that space-complexity is a competing concern when writing code to solve problems. Students in computing disciplines will encounter both run-time- and space-complexity throughout their studies.   About. In this section, it is necessary to provide definitions of example routines. The routines are not written in any particular language -- in fact, most won't work in any language as you see them written here. Instead, the routines are provided via some pseudocode -- something about halfway between human preferrable and computer readable. Since we are working with arrays, it is useful to have some convention about how to access individual array elements. Throughout this section, we use myArray[0] to access the element in the left-most slot of the myArray object. We use myArray[i] to access the element in the slot of myArray , remembering that the left-most item occupies the slot of myArray .  Indexing from 0 may seem awkward to those of you who are just beginning your computing careers, but this is the case for many of the most popular computing languages. For this reason, we adopt 0-based indexing here.  Complete the following checkpoint exercises to gain some familiarity with analyzing operations within a function. For reasons that will become clear later in the section, you'll be asked to ignore any \"operations\" required to initialize variables, initialize a loop, or return a result back to the computing environment. Additionally, you can consider lines combining arithmetic operations and updating a stored value to be a single operation. That is, x = x + i can be considered a single operation in the checkpoint items below. The reason we can do this will be addressed when big-O notation is introduced later in the section.  Operations to Return First Element  Answer the following.   Operations to Sum First Five Elements  Answer the following.   Operations to Sum First Elements  Answer the following.   Operations to Sum All Elements  Answer the following.   Note that in the first three interactive problems above, the size of the input array didn't matter. That is, number of operations required to arrive at the value to be returned did not depend on the length of the input array. If you didn't notice that on your own, try regenerating new versions of the embedded examples and working through the examples again. In the final example, however, the number of operations required to complete before arriving at the value to be returned did depend on the length of the input array. Input arrays with more elements require more calculations, and so it should be expected that, as this sum_array_values() routine is applied to larger and larger arrays, it takes longer to run. How much longer run-time should we expect if the length of the input array were to, let's say, double in length? Should we expect the routine to take approximately twice as long? More time? Less than that? How can we tell? This is the job of big-O notation.  Consider a routine which takes an array as input and then produces some output. The run-time complexity of the algorithm describes the order of the number of operations to be done in transforming the input array into the output, as a function of the length of the input array. Traditionally, the run-time complexity has been written using big-O notation, which looks like , where is a function of the length of the input array. We'll see some examples below.   Run-Time Complexity 1  Consider the routine below, which takes in an array as input and returns the value of the first element of the array. Describe the run-time of the routine as a function of the size of the input array .  def return_first(array): return array[0]  Note that the routine immediately returns the first element of the array, regardless of the size of the input array. There is a single operation being done here, no matter what non-empty array is supplied as the input. This means that the routine in question has constant runtime. We say that the routine is .  Let's see another example in which more than just a single operation is required to transform the input array into the output.  Run-Time Complexity 2  Consider the routine below, which takes in an array as input and returns the sum of the first two array elements. Describe the run-time of the routine as a function of the size of the input array .  def sum_first_two(array): a = array[0] b = array[1] total = a + b return total  Note that the routine uses three operations in order to transform the input array into the value which is returned. First, the item in array[0] is stored in the variable . Next, the intem in array[1] is stored in the variable . Finally, the sum, is stored in the total variable, which is the value to be returned. Three operations are being completed here, so we might say that this routine has run-time complexity . The attentive reader may ask why this routine is not because of the return statement. In short, we shouldn't waste time making a distinction because, regardless of whether we consider return ing a value to be an operation or not, this routine has constant run-time. That is, this routine is also .   We saw in the previous example that there is no distinction made between and , or even , for that matter. All of these denote constant run-time, and so their big-O description of complexity is . We say that such routines have constant run-time , since the time required to run the routine does not change as the size of the input array changes.  Let's see how the run-time complexity grows for some more interesting routines in the examples below.   Run-Time Complexity 3  Consider the routine below, which takes in an array as input and returns the product of all the array elements. Describe the run-time of the routine as a function of the size of the input array .  def array_product(array): myProd = 1 for element in array: myProd = myProd*element return myProd   The presence of the loop here has the potential to result in run times that are related to the size of the input array . There is a single operation being done within the body of the for loop. That is, the body of the loop has run-time. The loop will run once for each element in the input array . Let's label the number of elements in the input array by . We'll ignore accounting for the \"operations\" of setting up the loop and return ing the result, but there is the operation required to initialize the myProd variable which we will account for.  Given the analysis above, the total run-time for this routine is . When analyzing the run-time complexity of a routine, we are looking to identify the bottlenecks in our code. This means that we care only about the part of the code whose run-time grows the fastest. For this reason, we identify the highest-order term in our analysis and throw away all of the others (since for very large input arrays, the lower-order terms will have diminished impact on the observed run-time). This leaves us with      Run-Time Complexity 4  Consider the routine below, which takes in an array as input and returns a value computed using the values from the input array . Describe the run-time of the routine as a function of the size of the input array .  def array_product_difference(array): myValue = 1 for element in array: myValue = myValue - element myValue = myValue * element return myValue   Again, the presence of the loop here has the potential to result in run times that are related to the size of the input array . There are two operations being done within the body of the for loop. That is, the body of the loop has run-time. The loop will run once for each element in the input array . Again, we'll label the number of elements in the input array by . As usual, we'll ignore accounting for the \"operations\" of setting up the loop and return ing the result, but we account for the operation to initialize the myValue variable. The run-time is then   In the last line from the string of equalities above, we dropped the constant from . This wasn't simply a typo, and the rationale for doing so is similar to the rationale for omitting any constant run-time elements from the overall description of the run-time of the entire routine.    NOTE: Need to decide whether setting up a loop or returning values should be counted as an \"operation\" in determining the run-time complexities -- I'll reach out to the CS department about the choice they currently make in Analysis of Algorithms.   Run-Time Complexity 5  Consider the routine below, which takes in an array as input and returns a value of TRUE if there exist elements a , b , and c in the array such that a*b = c , and returns FALSE otherwise. Describe the run-time of the routine as a function of the size of the input array .  def detect_product(array): for element_a in array: for element_b in array: for element_c in array: if element_a*element_b == element_c: return TRUE return FALSE   In the routine defined above, we should note that once a program reaches a return statement, the corresponding value is returned and the routine terminates. When we are analyzing run-time complexity, we always consider a \"worst-case\" scenario for run-time. Given the routine above, a worst-case is that no such trio of array elements are found. As a result, the routine must run completely over the entire array before returning FALSE . In such a scenario, we have   This routine, as coded here, has a run-time of . This means that if we double the length of the input array, say from to , the routine is expected to take about longer to run.    To recap from the examples above, we use big-O notation to describe the run-time of a routine as a function of the length of its input array. Big-O notation allows us to answer the question \" How would our run-time change if the size of our input array was doubled? \". If the length of an input array was doubled, we have the following expected changes in run-times.  For an routine, the expected run time does not change.  For an routine, the expected run time is approximately doubled.  For an routine, the expected run time is approximately four times longer.  For an routine, the expected run time is approximately eight times longer.  There are routines which have run-time complexities which are between constant and linear. For example, some routines have run-time. We'll see some later in our course. There are also routines which don't have polynomial run-time. They may be exponential -- for example -- or factorial , . In general, we desire routines which are more efficient -- that is, routines with lower-order run-time complexities -- because they are faster. However, there is sometimes a tradeoff between run-time complexity and space-complexity. What good is a fast algorithm if requires more memory than you have access to?  Complete the examples below to verify your grasp of algorithmic complexity and big-O notation. Please note that the algorithms are written in pseudocode, and the algorithms don't necessarily claim to solve their corresponding challenge in the most efficient manner possible. Your answers should describe the algorithmic complexity of the routines as written in the sample problems. Interested readers may try writing working versions of these routines in a language of their choice, and are invited to think about optimizing the algorithms.  Big-O Analysis 1  Answer the following.   Big-O Analysis 2  Answer the following.   Big-O Analysis 3  Answer the following.   Big-O Analysis 4  Answer the following.   Big-O Analysis 5  Answer the following. This one is challenging.   "
 },
@@ -707,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-6",
   "type": "Checkpoint",
-  "number": "4.1.1",
+  "number": "4.2.1",
   "title": "Operations to Return First Element.",
   "body": "Operations to Return First Element  Answer the following.  "
 },
@@ -716,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-7",
   "type": "Checkpoint",
-  "number": "4.1.2",
+  "number": "4.2.2",
   "title": "Operations to Sum First Five Elements.",
   "body": "Operations to Sum First Five Elements  Answer the following.  "
 },
@@ -725,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-8",
   "type": "Checkpoint",
-  "number": "4.1.3",
+  "number": "4.2.3",
   "title": "Operations to Sum First Elements.",
   "body": "Operations to Sum First Elements  Answer the following.  "
 },
@@ -734,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-9",
   "type": "Checkpoint",
-  "number": "4.1.4",
+  "number": "4.2.4",
   "title": "Operations to Sum All Elements.",
   "body": "Operations to Sum All Elements  Answer the following.  "
 },
@@ -743,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#return-first",
   "type": "Example",
-  "number": "4.1.5",
+  "number": "4.2.5",
   "title": "Run-Time Complexity 1.",
   "body": " Run-Time Complexity 1  Consider the routine below, which takes in an array as input and returns the value of the first element of the array. Describe the run-time of the routine as a function of the size of the input array .  def return_first(array): return array[0]  Note that the routine immediately returns the first element of the array, regardless of the size of the input array. There is a single operation being done here, no matter what non-empty array is supplied as the input. This means that the routine in question has constant runtime. We say that the routine is .  "
 },
@@ -752,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#return-sum-first-two",
   "type": "Example",
-  "number": "4.1.6",
+  "number": "4.2.6",
   "title": "Run-Time Complexity 2.",
   "body": " Run-Time Complexity 2  Consider the routine below, which takes in an array as input and returns the sum of the first two array elements. Describe the run-time of the routine as a function of the size of the input array .  def sum_first_two(array): a = array[0] b = array[1] total = a + b return total  Note that the routine uses three operations in order to transform the input array into the value which is returned. First, the item in array[0] is stored in the variable . Next, the intem in array[1] is stored in the variable . Finally, the sum, is stored in the total variable, which is the value to be returned. Three operations are being completed here, so we might say that this routine has run-time complexity . The attentive reader may ask why this routine is not because of the return statement. In short, we shouldn't waste time making a distinction because, regardless of whether we consider return ing a value to be an operation or not, this routine has constant run-time. That is, this routine is also .  "
 },
@@ -761,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#return-product-all",
   "type": "Example",
-  "number": "4.1.7",
+  "number": "4.2.7",
   "title": "Run-Time Complexity 3.",
   "body": " Run-Time Complexity 3  Consider the routine below, which takes in an array as input and returns the product of all the array elements. Describe the run-time of the routine as a function of the size of the input array .  def array_product(array): myProd = 1 for element in array: myProd = myProd*element return myProd   The presence of the loop here has the potential to result in run times that are related to the size of the input array . There is a single operation being done within the body of the for loop. That is, the body of the loop has run-time. The loop will run once for each element in the input array . Let's label the number of elements in the input array by . We'll ignore accounting for the \"operations\" of setting up the loop and return ing the result, but there is the operation required to initialize the myProd variable which we will account for.  Given the analysis above, the total run-time for this routine is . When analyzing the run-time complexity of a routine, we are looking to identify the bottlenecks in our code. This means that we care only about the part of the code whose run-time grows the fastest. For this reason, we identify the highest-order term in our analysis and throw away all of the others (since for very large input arrays, the lower-order terms will have diminished impact on the observed run-time). This leaves us with    "
 },
@@ -770,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#return-product-difference",
   "type": "Example",
-  "number": "4.1.8",
+  "number": "4.2.8",
   "title": "Run-Time Complexity 4.",
   "body": " Run-Time Complexity 4  Consider the routine below, which takes in an array as input and returns a value computed using the values from the input array . Describe the run-time of the routine as a function of the size of the input array .  def array_product_difference(array): myValue = 1 for element in array: myValue = myValue - element myValue = myValue * element return myValue   Again, the presence of the loop here has the potential to result in run times that are related to the size of the input array . There are two operations being done within the body of the for loop. That is, the body of the loop has run-time. The loop will run once for each element in the input array . Again, we'll label the number of elements in the input array by . As usual, we'll ignore accounting for the \"operations\" of setting up the loop and return ing the result, but we account for the operation to initialize the myValue variable. The run-time is then   In the last line from the string of equalities above, we dropped the constant from . This wasn't simply a typo, and the rationale for doing so is similar to the rationale for omitting any constant run-time elements from the overall description of the run-time of the entire routine.   "
 },
@@ -779,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#return-check-product",
   "type": "Example",
-  "number": "4.1.9",
+  "number": "4.2.9",
   "title": "Run-Time Complexity 5.",
   "body": " Run-Time Complexity 5  Consider the routine below, which takes in an array as input and returns a value of TRUE if there exist elements a , b , and c in the array such that a*b = c , and returns FALSE otherwise. Describe the run-time of the routine as a function of the size of the input array .  def detect_product(array): for element_a in array: for element_b in array: for element_c in array: if element_a*element_b == element_c: return TRUE return FALSE   In the routine defined above, we should note that once a program reaches a return statement, the corresponding value is returned and the routine terminates. When we are analyzing run-time complexity, we always consider a \"worst-case\" scenario for run-time. Given the routine above, a worst-case is that no such trio of array elements are found. As a result, the routine must run completely over the entire array before returning FALSE . In such a scenario, we have   This routine, as coded here, has a run-time of . This means that if we double the length of the input array, say from to , the routine is expected to take about longer to run.   "
 },
@@ -788,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-22",
   "type": "Checkpoint",
-  "number": "4.1.10",
+  "number": "4.2.10",
   "title": "Big-O Analysis 1.",
   "body": "Big-O Analysis 1  Answer the following.  "
 },
@@ -797,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-23",
   "type": "Checkpoint",
-  "number": "4.1.11",
+  "number": "4.2.11",
   "title": "Big-O Analysis 2.",
   "body": "Big-O Analysis 2  Answer the following.  "
 },
@@ -806,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-24",
   "type": "Checkpoint",
-  "number": "4.1.12",
+  "number": "4.2.12",
   "title": "Big-O Analysis 3.",
   "body": "Big-O Analysis 3  Answer the following.  "
 },
@@ -815,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-25",
   "type": "Checkpoint",
-  "number": "4.1.13",
+  "number": "4.2.13",
   "title": "Big-O Analysis 4.",
   "body": "Big-O Analysis 4  Answer the following.  "
 },
@@ -824,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_counting-big-O.html#sec_counting-big-O-26",
   "type": "Checkpoint",
-  "number": "4.1.14",
+  "number": "4.2.14",
   "title": "Big-O Analysis 5.",
   "body": "Big-O Analysis 5  Answer the following. This one is challenging.  "
 },

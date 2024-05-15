@@ -26,7 +26,7 @@
     <image xml:id="an-example-graph" width="50%">
         <description>Just a graph.</description>
         <latex-image>
-        \begin{tikzpicture}[domain=-3:3,scale=.5]
+        \begin{tikzpicture}[domain=-3:3,scale=.25]
           \draw (0,0) node[circle,draw,fill=black,inner sep=2.5] (D) {};
           \draw (-.2,0) node[left] {$d$};
           \draw (1,1) node[circle,draw,fill=black,inner sep=2.5] (A) {};

@@ -12,9 +12,9 @@
     <p>In progress. Will include the following sections.
     <ul>
       <li> Counting Basics</li>
+      <li> The Fundamental Principle of Counting</li>
       <li> Counting Permutations</li>
       <li> Counting Selections Using Binomial Coefficients</li>
-      <li> The Fundamental Principle of Counting</li>
       <li> Big-O Notation and Run-Time Complexity</li>
     </ul>
     </p>
@@ -25,8 +25,8 @@
   <!-- That way it is easy to include the section in a different -->
   <!-- chapter later if you change your mind about the order.    -->
   <!-- <xi:include href="./sec_sets-ch-intro.ptx" /> -->
-  <!-- <xi:include href="./sec_counting-basics.ptx" />
-  <xi:include href="./sec_counting-permutations.ptx" />
+  <xi:include href="./sec_counting-basics.ptx" />
+  <!-- <xi:include href="./sec_counting-permutations.ptx" />
   <xi:include href="./sec_counting-binomial-coefficients.ptx" />
   <xi:include href="./sec_counting-fundamental-principle.ptx" /> -->
   <xi:include href="./sec_counting-big-O.ptx" />
