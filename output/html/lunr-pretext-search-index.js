@@ -745,7 +745,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "The Fundamental Principle of Counting",
-  "body": " The Fundamental Principle of Counting   In this very short section we build on those very small-scale examples in the Counting Basics section and develop the Fundamental Principle of Counting. Like the previous section, we'll develop mastery through a series of examples with increasing level of difficulty.   Motivation  In the previous section, we considered atomic processes, which we described as processes which couldn't be broken down into smaller, sub-processes. Examples of these atomic events were the roll of a single die or the flip of a coin, but not the rolling of a die and flipping of a coin. Indeed, rolling a die and flipping a coin is not an atomic process because it consists of two sub-processes (the rolling of the die and the flipping of the coin). In this section, we consider how to count the number of outcomes possible for this more complex process, and other complex processes too.  Let's start by considering the process of rolling a fair, six-sided die and then flipping a coin, as described above and in the previous section. There are six outcomes possible from the die roll. Those are depicted in the image on the left, below. For each of the six possible outcomes of the die roll, there are two possible outcomes of the coin flip. A tree depicting possible outcomes from the entire process (coin flip and then die roll) appears on the right, below.    A tree of outcomes for a die roll.   A tree showing the six possible outcomes from the roll of a single, six-sided die.      A tree of outcomes for a die roll and subsequent coin flip.   A tree showing the twelve possible outcomes from the roll of a single, six-sided die followed by the flip of a coin.      Notice that for each of the six possible outcomes of the die roll, there are two possible coin flip outcomes. That is, the number of outcomes possible from the die roll and coin flip process is .   The Fundamental Principle of Counting (and Examples)  The multiplicative approach at the end of the previous subsection works in general. The following fact, labeled the Fundamental Principal of Counting, summarizes this idea.   Fundamental Principle of Counting   If is a process consisting of two sub-processes, and , and the number of outcomes from is while the number of possible possible outcomes from is , then the total number of outcomes possible for the process is . Furthermore, if the process consists of subprocesses, , and the number of possible outcomes for is , then the total number of outcomes possible for the entire process is .    Let's work through one example using the Fundamental Principle of Counting and then you'll have an opportunity to test your understanding by completing several embedded examples.   Ordering From a Restaurant  You are out to eat with some friends at a restaurant. This particular restaurant has a relatively small menu, but every order comes with an entree, a drink, and a dessert. The menue has seven different entrees, five different drinks, and four different dessert options. How many different orders are possible?   Notice that there are seven (7) options for an entree, five (5) options for a drink, and four (4) options for dessert. For every choice of entree, there are five options for a drink, and for every combination of entree and drink there are four optons for dessert. Using the Fundamental Principle of Counting, the total number of orders is the product of the number of entrees, number of drinks, and number of desserts. That is, the number of orders is .    Now you try! Use what you've learned to complete the following examples.  Rolling Several Dice  Rolling Several Dice The first part of this problem involves the Fundmental Principle of Counting -- use what you know to answer it. We won't cover probability until a later chapter in this book. The probability of an event is the number of ways that event can occur divided by the total number of outcomes possible. Can you use the Fundamental Principle of Counting twice to solve the second part? Examples with restrictions: 995589, 983179, 983114 Restrictions and Principle of Inclusion\/Exclusion: 558751  "
+  "body": " The Fundamental Principle of Counting   In this very short section we build on those very small-scale examples in the Counting Basics section and develop the Fundamental Principle of Counting. Like the previous section, we'll develop mastery through a series of examples with increasing level of difficulty.   Motivation  In the previous section, we considered atomic processes, which we described as processes which couldn't be broken down into smaller, sub-processes. Examples of these atomic events were the roll of a single die or the flip of a coin, but not the rolling of a die and flipping of a coin. Indeed, rolling a die and flipping a coin is not an atomic process because it consists of two sub-processes (the rolling of the die and the flipping of the coin). In this section, we consider how to count the number of outcomes possible for this more complex process, and other complex processes too.  Let's start by considering the process of rolling a fair, six-sided die and then flipping a coin, as described above and in the previous section. There are six outcomes possible from the die roll. Those are depicted in the image on the left, below. For each of the six possible outcomes of the die roll, there are two possible outcomes of the coin flip. A tree depicting possible outcomes from the entire process (coin flip and then die roll) appears on the right, below.    A tree of outcomes for a die roll.   A tree showing the six possible outcomes from the roll of a single, six-sided die.      A tree of outcomes for a die roll and subsequent coin flip.   A tree showing the twelve possible outcomes from the roll of a single, six-sided die followed by the flip of a coin.      Notice that for each of the six possible outcomes of the die roll, there are two possible coin flip outcomes. That is, the number of outcomes possible from the die roll and coin flip process is .   The Fundamental Principle of Counting (and Examples)  The multiplicative approach at the end of the previous subsection works in general. The following fact, labeled the Fundamental Principal of Counting, summarizes this idea.   Fundamental Principle of Counting   If is a process consisting of two sub-processes, and , and the number of outcomes from is while the number of possible possible outcomes from is , then the total number of outcomes possible for the process is . Furthermore, if the process consists of subprocesses, , and the number of possible outcomes for is , then the total number of outcomes possible for the entire process is .    Let's work through one example using the Fundamental Principle of Counting and then you'll have an opportunity to test your understanding by completing several embedded examples.   Ordering From a Restaurant  You are out to eat with some friends at a restaurant. This particular restaurant has a relatively small menu, but every order comes with an entree, a drink, and a dessert. The menue has seven different entrees, five different drinks, and four different dessert options. How many different orders are possible?   Notice that there are seven (7) options for an entree, five (5) options for a drink, and four (4) options for dessert. For every choice of entree, there are five options for a drink, and for every combination of entree and drink there are four optons for dessert. Using the Fundamental Principle of Counting, the total number of orders is the product of the number of entrees, number of drinks, and number of desserts. That is, the number of orders is .    Now you try! Use what you've learned to complete the following examples.  Rolling Several Dice  Pizza Shop, Part I  Choosing a PIN (I)  Pizza Shop, Part II The first part of this problem involves the Fundmental Principle of Counting -- use what you know to answer it. We won't cover probability until a later chapter in this book. The probability of an event is the number of ways that event can occur divided by the total number of outcomes possible. Can you use the Fundamental Principle of Counting twice to solve the second part?  Creating \"Words\" from an Alphabet  Choosing a PIN (II)  Race Finishers The first two parts of this problem involve the Fundmental Principle of Counting -- use what you've learned to answer them. We won't cover probability until a later chapter in this book. The probability of an event is the number of ways that event can occur divided by the total number of outcomes possible. Can you use the Fundamental Principle of Counting twice to solve the second part?   In this section, you learned and applied the Fundamental Principle of Counting . This principle allows us to count the number of outcomes (or ways to complete) a process involving multiple sub-processes. Once we know the number of outcomes possible for each sub-process, then we just multiply these values together to obtain the total number of outcomes possible for the overall process. In the next section, we'll be formally introduced to two new tools for computing the number of ways to arrange a set of objects in a particular order, and also the number of ways to select a subset of objects from a collection. We'll see you there!  "
 },
 {
   "id": "sec_counting-fundamental-principle-3-4-1",
@@ -798,8 +798,53 @@ var ptx_lunr_docs = [
   "url": "sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4-8",
   "type": "Checkpoint",
   "number": "4.2.6",
-  "title": "Rolling Several Dice.",
-  "body": "Rolling Several Dice The first part of this problem involves the Fundmental Principle of Counting -- use what you know to answer it. We won't cover probability until a later chapter in this book. The probability of an event is the number of ways that event can occur divided by the total number of outcomes possible. Can you use the Fundamental Principle of Counting twice to solve the second part? "
+  "title": "Pizza Shop, Part I.",
+  "body": "Pizza Shop, Part I "
+},
+{
+  "id": "sec_counting-fundamental-principle-4-9",
+  "level": "2",
+  "url": "sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4-9",
+  "type": "Checkpoint",
+  "number": "4.2.7",
+  "title": "Choosing a PIN (I).",
+  "body": "Choosing a PIN (I) "
+},
+{
+  "id": "sec_counting-fundamental-principle-4-10",
+  "level": "2",
+  "url": "sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4-10",
+  "type": "Checkpoint",
+  "number": "4.2.8",
+  "title": "Pizza Shop, Part II.",
+  "body": "Pizza Shop, Part II The first part of this problem involves the Fundmental Principle of Counting -- use what you know to answer it. We won't cover probability until a later chapter in this book. The probability of an event is the number of ways that event can occur divided by the total number of outcomes possible. Can you use the Fundamental Principle of Counting twice to solve the second part? "
+},
+{
+  "id": "sec_counting-fundamental-principle-4-11",
+  "level": "2",
+  "url": "sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4-11",
+  "type": "Checkpoint",
+  "number": "4.2.9",
+  "title": "Creating \"Words\" from an Alphabet.",
+  "body": "Creating \"Words\" from an Alphabet "
+},
+{
+  "id": "sec_counting-fundamental-principle-4-12",
+  "level": "2",
+  "url": "sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4-12",
+  "type": "Checkpoint",
+  "number": "4.2.10",
+  "title": "Choosing a PIN (II).",
+  "body": "Choosing a PIN (II) "
+},
+{
+  "id": "sec_counting-fundamental-principle-4-13",
+  "level": "2",
+  "url": "sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4-13",
+  "type": "Checkpoint",
+  "number": "4.2.11",
+  "title": "Race Finishers.",
+  "body": "Race Finishers The first two parts of this problem involve the Fundmental Principle of Counting -- use what you've learned to answer them. We won't cover probability until a later chapter in this book. The probability of an event is the number of ways that event can occur divided by the total number of outcomes possible. Can you use the Fundamental Principle of Counting twice to solve the second part? "
 },
 {
   "id": "sec_counting-big-O",

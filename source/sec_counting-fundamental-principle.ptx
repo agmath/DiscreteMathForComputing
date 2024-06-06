@@ -169,11 +169,19 @@
   <p>Now you try! Use what you've learned to complete the following examples.
   </p>
 
-  <exercise exercise-customization="inline" exercise-interactive="static"><title>Rolling Several Dice</title>
+  <exercise exercise-customization="inline" exercise-interactive="static" height="5in"><title>Rolling Several Dice</title>
     <myopenmath problem="983108" />
   </exercise>
 
-  <exercise exercise-customization="inline" exercise-interactive="static"><title>Rolling Several Dice</title>
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Pizza Shop, Part I</title>
+    <myopenmath problem="1392644" />
+  </exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Choosing a PIN (I)</title>
+    <myopenmath problem="1392648" />
+  </exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Pizza Shop, Part II</title>
     <introduction>The first part of this problem involves the Fundmental Principle of
     Counting -- use what you know to answer it. We won't cover probability until a later 
     chapter in this book. The probability of an event is the number of ways that event can
@@ -182,12 +190,35 @@
     </introduction>
     <myopenmath problem="983749" />
   </exercise>
-  
 
-  <p>I'll add some more discussion and some subset of the following questions 
-  from MyOpenMath. (Examples with restrictions: 995589, 983179, 983114, 983766)
-  (Examples with Restrictions and Principle of Inclusion/Exclusion: 558751).
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Creating "Words" from an Alphabet</title>
+    <myopenmath problem="995589" />
+  </exercise>
+  
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Choosing a PIN (II)</title>
+    <myopenmath problem="983179" />
+  </exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Race Finishers</title>
+    <introduction>The first two parts of this problem involve the Fundmental Principle of
+      Counting -- use what you've learned to answer them. We won't cover probability until 
+      a later chapter in this book. The probability of an event is the number of ways that 
+      event can occur divided by the total number of outcomes possible. Can you use the 
+      Fundamental Principle of Counting twice to solve the second part?
+    </introduction>
+    <myopenmath problem="983766" />
+  </exercise>
   </subsection>
+
+  <conclusion>In this section, you learned and applied the <em>Fundamental Principle of 
+  Counting</em>. This principle allows us to count the number of outcomes (or ways to 
+  complete) a process involving multiple sub-processes. Once we know the number of  
+  outcomes possible for each sub-process, then we just multiply these values together 
+  to obtain the total number of outcomes possible for the overall process. In the next 
+  section, we'll be formally introduced to two new tools for computing the number of 
+  ways to <em>arrange</em> a set of objects in a particular order, and also the number 
+  of ways to <em>select</em> a subset of objects from a collection. We'll see you there! 
+  </conclusion>
 
 </section>
 
