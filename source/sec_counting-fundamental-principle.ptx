@@ -4,12 +4,190 @@
   <title>The Fundamental Principle of Counting</title>
 
   <introduction>
-    <p>In this section we build on those very small-scale examples in 
-    the Counting Basics section and develop the Fundamental 
+    <p>In this very short section we build on those very small-scale 
+    examples in the Counting Basics section and develop the Fundamental 
     Principle of Counting. Like the previous section, we'll develop 
     mastery through a series of examples with increasing level of 
     difficulty.</p>
   </introduction>
+
+  <subsection><title>Motivation</title>
+    <p>In the previous section, we considered <em>atomic</em> processes, which 
+      we described as processes which couldn't be broken down into smaller, 
+      sub-processes. Examples of these atomic events were the roll of a single
+      die or the flip of a coin, but not the rolling of a die and flipping of a 
+      coin. Indeed, rolling a die and flipping a coin is not an atomic process 
+      because it consists of two sub-processes (the rolling of the die and the 
+      flipping of the coin). In this section, we consider how to count the 
+      number of outcomes possible for this more complex process, and other 
+      complex processes too.
+    </p>
+
+    <p>Let's start by considering the process of rolling a fair, six-sided die
+      and then flipping a coin, as described above and in the previous section.
+      There are six outcomes possible from the die roll. Those are depicted in
+      the image on the left, below. For each of the six possible outcomes of 
+      the die roll, there are two possible outcomes of the coin flip. A tree 
+      depicting possible outcomes from the entire process (coin flip and then
+      die roll) appears on the right, below.
+    </p>
+
+    <sidebyside widths="30% 60%" valign="middle">
+    <figure>
+      <caption>A tree of outcomes for a die roll.</caption>
+      <image xml:id="forking-process">
+          <description>A tree showing the six possible outcomes from the roll 
+            of a single, six-sided die.</description>
+          <latex-image>
+          \begin{tikzpicture}[domain=0:6]
+            \draw (2, 3) node[right] (1) {$1$};
+            \draw (2,2) node[right] (2) {$2$};
+            \draw (2,1) node[right] (3) {$3$};
+            \draw (2,-1) node[right] (4) {$4$};
+            \draw (2,-2) node[right] (5) {$5$};
+            \draw (2,-3) node[right] (6) {$6$};
+            
+            \draw[thick,black] (1) -- (0, 0) -- (6);
+            \draw[thick,black] (2) -- (0, 0) -- (5);
+            \draw[thick,black] (3) -- (0, 0) -- (4);
+          \end{tikzpicture}
+          </latex-image>
+      </image>
+  </figure>
+
+  <figure>
+    <caption>A tree of outcomes for a die roll and subsequent coin flip.</caption>
+    <image xml:id="forking-process-2">
+        <description>A tree showing the twelve possible outcomes from the roll 
+          of a single, six-sided die followed by the flip of a coin.</description>
+        <latex-image>
+        \begin{tikzpicture}[domain=0:6]
+          \draw (2,3) node (1) {};
+          \draw (1.5, 2.35) node[above] () {$1$};
+          \draw (2,2) node (2) {};
+          \draw (1.5, 1.6) node[above] () {$2$};
+          \draw (2,1) node (3) {};
+          \draw (1.5, 0.85) node[above] () {$3$};
+          \draw (2,-1) node (4) {};
+          \draw (1.5, -0.85) node[below] () {$4$};
+          \draw (2,-2) node (5) {};
+          \draw (1.5, -1.6) node[below] () {$5$};
+          \draw (2,-3) node (6) {};
+          \draw (1.5, -2.35) node[below] () {$6$};
+
+          \draw (4,3.25) node (F1) {};
+          \draw (4, 3.25) node[right] () {$H$};
+          \draw (4,2.75) node (F2) {};
+          \draw (4, 2.75) node[right] () {$T$};
+          \draw (4,2.25) node (F3) {};
+          \draw (4, 2.25) node[right] () {$H$};
+          \draw (4,1.75) node (F4) {};
+          \draw (4, 1.75) node[right] () {$T$};
+          \draw (4,1.25) node (F5) {};
+          \draw (4, 1.25) node[right] () {$H$};
+          \draw (4,0.75) node (F6) {};
+          \draw (4, 0.75) node[right] () {$T$};
+          \draw (4,-0.75) node (F7) {};
+          \draw (4, -0.75) node[right] () {$H$};
+          \draw (4, -1.25) node (F8) {};
+          \draw (4, -1.25) node[right] () {$T$};
+          \draw (4, -1.75) node (F9) {};
+          \draw (4, -1.75) node[right] () {$H$};
+          \draw (4, -2.25) node (F10) {};
+          \draw (4, -2.25) node[right] () {$T$};
+          \draw (4, -2.75) node (F11) {};
+          \draw (4, -2.75) node[right] () {$H$};
+          \draw (4, -3.25) node (F12) {};
+          \draw (4, -3.25) node[right] () {$T$};
+          
+          \draw[thick,black] (4, 3.25) -- (2, 3) -- (0, 0) -- (2, -3) -- (4, -3.25);
+          \draw[thick,black] (4, 2.25) -- (2, 2) -- (0, 0) -- (2, -2) -- (4, -2.25);
+          \draw[thick,black] (4, 1.25) -- (2, 1) -- (0, 0) -- (2, -1) -- (4, -1.25);
+          \draw[thick,black] (2, 3) -- (4, 2.75);
+          \draw[thick,black] (2, 2) -- (4, 1.75);
+          \draw[thick,black] (2, 1) -- (4, 0.75);
+          \draw[thick,black] (2, -1) -- (4, -0.75);
+          \draw[thick,black] (2, -2) -- (4, -1.75);
+          \draw[thick,black] (2, -3) -- (4, -2.75);
+        \end{tikzpicture}
+        </latex-image>
+    </image>
+  </figure>
+  </sidebyside>
+
+  <p>Notice that for each of the six possible outcomes of the die roll, there are
+  two possible coin flip outcomes. That is, the number of outcomes possible from 
+  the die roll and coin flip process is <m>6\cdot \left(2\right) = 12</m>. 
+  </p>
+
+</subsection>
+
+<subsection><title>The Fundamental Principle of Counting (and Examples)</title>
+  
+  <introduction>The multiplicative approach at the end of the previous subsection 
+  works in general. The following fact, labeled the Fundamental Principal of 
+  Counting, summarizes this idea.
+  </introduction>
+
+  <fact>
+    <title>Fundamental Principle of Counting</title>
+    <statement>
+    <p>
+    If <m>P</m> is a process consisting of two sub-processes, <m>P_1</m> and <m>P_2</m>,
+    and the number of outcomes from <m>P_1</m> is <m>n_1</m> while the number of possible
+    possible outcomes from <m>P_2</m> is <m>n_2</m>, then the total number of outcomes 
+    possible for the process <m>P</m> is <m>n_1\cdot n_2</m>. Furthermore, if the process 
+    <m>P</m> consists of <m>k</m> subprocesses, <m>P_1,~P_2,~\cdots,~P_k</m>, and the 
+    number of possible outcomes for <m>P_i</m> is <m>n_i</m>, then the total number of 
+    outcomes possible for the entire process <m>P</m> is <m>n_1\cdot n_2\cdot\cdots\cdot n_k</m>.
+    </p>
+    </statement>
+  </fact>
+
+  <p>Let's work through one example using the <em>Fundamental Principle of Counting</em> 
+  and then you'll have an opportunity to test your understanding by completing several 
+  embedded examples.
+  </p>
+
+  <example xml:id = "int-expansion-ex"> <title> Ordering From a Restaurant</title>
+	<statement><p>You are out to eat with some friends at a restaurant. This particular restaurant has
+  a relatively small menu, but every order comes with an entree, a drink, and a dessert. 
+  The menue has seven different entrees, five different drinks, and four different dessert
+  options. How many different orders are possible?
+  </p>
+  </statement>
+  <answer><p>Notice that there are seven (7) options for an entree, five (5) options for a 
+  drink, and four (4) options for dessert. For every choice of entree, there are five 
+  options for a drink, and for every combination of entree and drink there are four optons 
+  for dessert. Using the Fundamental Principle of Counting, the total number of orders is 
+  the product of the number of entrees, number of drinks, and number of desserts. That is,
+  the number of orders is <m>\boxed{\displaystyle{7\cdot\left(5\cdot 4\right) = 140}}</m>. 			
+	</p>
+  </answer>
+	</example>
+
+  <p>Now you try! Use what you've learned to complete the following examples.
+  </p>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Rolling Several Dice</title>
+    <myopenmath problem="983108" />
+  </exercise>
+
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Rolling Several Dice</title>
+    <introduction>The first part of this problem involves the Fundmental Principle of
+    Counting -- use what you know to answer it. We won't cover probability until a later 
+    chapter in this book. The probability of an event is the number of ways that event can
+    occur divided by the total number of outcomes possible. Can you use the Fundamental 
+    Principle of Counting twice to solve the second part?
+    </introduction>
+    <myopenmath problem="983749" />
+  </exercise>
+  
+
+  <p>I'll add some more discussion and some subset of the following questions 
+  from MyOpenMath. (Examples with restrictions: 995589, 983179, 983114, 983766)
+  (Examples with Restrictions and Principle of Inclusion/Exclusion: 558751).
+  </subsection>
 
 </section>
 
