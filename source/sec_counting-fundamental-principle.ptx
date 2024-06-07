@@ -149,7 +149,7 @@
   embedded examples.
   </p>
 
-  <example xml:id = "int-expansion-ex"> <title> Ordering From a Restaurant</title>
+  <example xml:id = "restaurant-order-ex"> <title> Ordering From a Restaurant</title>
 	<statement><p>You are out to eat with some friends at a restaurant. This particular restaurant has
   a relatively small menu, but every order comes with an entree, a drink, and a dessert. 
   The menue has seven different entrees, five different drinks, and four different dessert
@@ -204,7 +204,7 @@
       Counting -- use what you've learned to answer them. We won't cover probability until 
       a later chapter in this book. The probability of an event is the number of ways that 
       event can occur divided by the total number of outcomes possible. Can you use the 
-      Fundamental Principle of Counting twice to solve the second part?
+      Fundamental Principle of Counting twice to solve the last part?
     </introduction>
     <myopenmath problem="983766" />
   </exercise>
@@ -214,10 +214,15 @@
   Counting</em>. This principle allows us to count the number of outcomes (or ways to 
   complete) a process involving multiple sub-processes. Once we know the number of  
   outcomes possible for each sub-process, then we just multiply these values together 
-  to obtain the total number of outcomes possible for the overall process. In the next 
-  section, we'll be formally introduced to two new tools for computing the number of 
-  ways to <em>arrange</em> a set of objects in a particular order, and also the number 
-  of ways to <em>select</em> a subset of objects from a collection. We'll see you there! 
+  to obtain the total number of outcomes possible for the overall process. In each of 
+  the next two sections, we'll be formally introduced to a new tool for computing the 
+  number of outcomes of a complex process. In the next section, we'll discover a 
+  technique for counting the number of permutations (orderings) of a subset of elements 
+  taken from a collection. In the section that follows that one, we'll see a method for
+  counting the number of ways to select a subset from a larger collection of objects 
+  (where the order of selection does not matter). Perhaps more simply put, the next 
+  section will expose us to counting <em>arrangements</em> and the section that follows
+  will show us how to count <em>selections</em>. We'll see you there! 
   </conclusion>
 
 </section>

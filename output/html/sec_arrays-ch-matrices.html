@@ -267,7 +267,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">The Fundamental Principle of Counting (and Examples)</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_counting-big-O.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Complexity and Big-O Notation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_counting-permutations.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Arrangements and Permutations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_counting-permutations.html#sec_counting-permutations-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Motivation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_counting-permutations.html#sec_counting-permutations-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Interactive Examples Involving Permutations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_counting-big-O.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Complexity and Big-O Notation</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></div></li>
@@ -338,11 +345,10 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
   return myMatrix
 </pre>
 <div class="para" id="sec_arrays-ch-matrices-3-8">Notice the use of the nested <code class="code-inline tex2jax_ignore">for</code> loops to move throw the <code class="code-inline tex2jax_ignore">row</code> and <code class="code-inline tex2jax_ignore">column</code> combinations. Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">list_to_matrix()</code> algorithm proposed above.</div>
-<article class="exercise exercise-like" id="sec_arrays-ch-matrices-3-9"><h4 class="heading">
+<details id="sec_arrays-ch-matrices-3-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">List to Matrix Complexity.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-3-9-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988781&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="sec_arrays-ch-matrices-4"><h3 class="heading hide-type">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-3-9-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988781&amp;resizer=true"></iframe></div></article></details></section><section class="subsection" id="sec_arrays-ch-matrices-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="space"> </span><span class="title">Matrix Addition/Subtraction</span>
 </h3>
 <div class="para" id="sec_arrays-ch-matrices-4-2">Now that we know how matrices are constructed, we can think about operations with these two-dimensional structures. Just like with one-dimensional arrays, matrix addition and subtraction is done element-wise. This requires that two matrices have the same dimensions (the same number of rows and same number of columns) as one another in order to add or subtract the two objects. An algorithm to define matrix addition appears below.</div>
@@ -364,32 +370,26 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
   return sumMatrix
 </pre>
 <div class="para" id="sec_arrays-ch-matrices-4-4">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">matrix_sum()</code> algorithm outlined here.</div>
-<article class="exercise exercise-like" id="sec_arrays-ch-matrices-4-5"><h4 class="heading">
+<details id="sec_arrays-ch-matrices-4-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Sum Complexity.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-4-5-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988788&amp;resizer=true"></iframe></div></article><div class="para" id="sec_arrays-ch-matrices-4-6">Try the following exercises to test your understanding of computing matrix sums and differences.</div>
-<article class="exercise exercise-like" id="sec_arrays-ch-matrices-4-7"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-4-5-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988788&amp;resizer=true"></iframe></div></article></details><div class="para" id="sec_arrays-ch-matrices-4-6">Try the following exercises to test your understanding of computing matrix sums and differences.</div>
+<details id="sec_arrays-ch-matrices-4-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Sum of <span class="process-math">\(2\times 2\)</span> Matrices.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-4-7-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988791&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-4-8"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-4-7-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988791&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-4-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 1.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-4-8-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-4-9"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-4-8-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-4-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 2.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-4-9-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-4-10"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-4-9-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-4-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 3.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-4-10-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-4-11"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-4-10-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-4-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Sum/Difference of <span class="process-math">\(m\times n\)</span> Matrices 4.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-4-11-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="sec_arrays-ch-matrices-5"><h3 class="heading hide-type">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-4-11-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988792&amp;resizer=true"></iframe></div></article></details></section><section class="subsection" id="sec_arrays-ch-matrices-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="space"> </span><span class="title">Scalar Multiplication</span>
 </h3>
 <div class="para" id="sec_arrays-ch-matrices-5-2">Again, similar to one-dimensional arrays, scalar multiplication with matrices is done element-wise. The algorithm below describes a method for computing a scalar multiple of an <span class="process-math">\(m\times n\)</span> matrix.</div>
@@ -405,28 +405,23 @@ a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn}\end{array}\right]
   return scaled_matrix
 </pre>
 <div class="para" id="sec_arrays-ch-matrices-5-4">Complete the exercise below to determine the run-time complexity of the <code class="code-inline tex2jax_ignore">scalar_mult_matrix()</code> algorithm outlined above.</div>
-<article class="exercise exercise-like" id="sec_arrays-ch-matrices-5-5"><h4 class="heading">
+<details id="sec_arrays-ch-matrices-5-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication Complexity.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-5-5-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988797&amp;resizer=true"></iframe></div></article><div class="para" id="sec_arrays-ch-matrices-5-6">Try the following exercises to test your understanding of computing scalar multiples of matrices.</div>
-<article class="exercise exercise-like" id="sec_arrays-ch-matrices-5-7"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-5-5-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988797&amp;resizer=true"></iframe></div></article></details><div class="para" id="sec_arrays-ch-matrices-5-6">Try the following exercises to test your understanding of computing scalar multiples of matrices.</div>
+<details id="sec_arrays-ch-matrices-5-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 1.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-5-7-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-5-8"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-5-7-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-5-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 2.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-5-8-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-5-9"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-5-8-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-5-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 3.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-5-9-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-5-10"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-5-9-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-5-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar Multiplication 4.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-5-10-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="sec_arrays-ch-matrices-6"><h3 class="heading hide-type">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-5-10-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=988799&amp;resizer=true"></iframe></div></article></details></section><section class="subsection" id="sec_arrays-ch-matrices-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="space"> </span><span class="title">Matrix Multiplication</span>
 </h3>
 <div class="para" id="sec_arrays-ch-matrices-6-2">The operation of matrix multiplication is more complex that simply multiplying element-wise. Given two matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we compute the <span class="process-math">\(ij^{\text{th}}\)</span> entry of the matrix product <span class="process-math">\(AB\)</span> by taking the inner product between the <span class="process-math">\(i^{\text{th}}\)</span> row of the matrix <span class="process-math">\(A\)</span> with the <span class="process-math">\(j^{\text{th}}\)</span> column of the matrix <span class="process-math">\(B\text{.}\)</span> This forces that the number of columns in <span class="process-math">\(A\)</span> matches the number of rows in <span class="process-math">\(B\text{.}\)</span> The resulting matrix <span class="process-math">\(AB\)</span> then has a number of rows equal to the number of rows in <span class="process-math">\(A\)</span> and a number of columns equal to the number of columns in <span class="process-math">\(B\text{.}\)</span>
@@ -467,28 +462,23 @@ AB \amp = \left[\begin{array}{cc} 1 \amp 2\\ 0 \amp -3\end{array}\right]\cdot \l
   return matrix_product
 </pre>
 <div class="para" id="sec_arrays-ch-matrices-6-7">As we’ve done with the other algorithms we’ve presented, complete the following exercise to determine the run-time complexity of the matrix multiplication algorithm outlined above.</div>
-<article class="exercise exercise-like" id="sec_arrays-ch-matrices-6-8"><h4 class="heading">
+<details id="sec_arrays-ch-matrices-6-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.14</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication Complexity.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-6-8-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989247&amp;resizer=true"></iframe></div></article><div class="para" id="sec_arrays-ch-matrices-6-9">Try the following exercises to test your understanding of computing matrix products.</div>
-<article class="exercise exercise-like" id="sec_arrays-ch-matrices-6-10"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-6-8-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989247&amp;resizer=true"></iframe></div></article></details><div class="para" id="sec_arrays-ch-matrices-6-9">Try the following exercises to test your understanding of computing matrix products.</div>
+<details id="sec_arrays-ch-matrices-6-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.15</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication 1.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-6-10-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-6-11"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-6-10-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-6-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.16</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication 2.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-6-11-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-6-12"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-6-11-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-6-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.17</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication 3.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-6-12-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-6-13"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-6-12-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article></details><details id="sec_arrays-ch-matrices-6-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.18</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication 4.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-6-13-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="sec_arrays-ch-matrices-7"><h3 class="heading hide-type">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-6-13-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989284&amp;resizer=true"></iframe></div></article></details></section><section class="subsection" id="sec_arrays-ch-matrices-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.2.5</span><span class="space"> </span><span class="title">Outer-products of one-dimensional arrays</span>
 </h3>
 <div class="para" id="sec_arrays-ch-matrices-7-2">At the end of the previous section, you were promised learning how to compute the outer-product between two one-dimensional arrays. We’ve blown by that, but will return to it now. With the addition of a simple initial step, computing the outer-product becomes a special case of the matrix multiplication you’ve just learned. Given two one-dimensional arrays, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> we’ll tip <span class="process-math">\(B\)</span> on its side so that it becomes a <em class="emphasis">row vector</em> rather than a <em class="emphasis">column vector</em>. We’ll call this taking the <em class="emphasis">transpose</em> of <span class="process-math">\(B\text{,}\)</span> and denote it by <span class="process-math">\(B^T\text{.}\)</span> The new array <span class="process-math">\(B^T\)</span> then has a single row. Since the array <span class="process-math">\(A\)</span> has a single column, then matrix multiplication is defined between these two objects. If <span class="process-math">\(A\)</span> is an array of length <span class="process-math">\(m\)</span> and <span class="process-math">\(B\)</span> is an array of length <span class="process-math">\(n\text{,}\)</span> then the outer product <span class="process-math">\(AB^T\)</span> is a two-dimensional array with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. See the example below.</div>
@@ -503,11 +493,10 @@ AB^T \amp = \left[\begin{array}{c} 2\\ 3\end{array}\right]\cdot \left[\begin{arr
 \amp = \left[\begin{array}{ccc} -2 \amp 0 \amp 10\\
 -3 \amp 0 \amp 15\end{array}\right]
 \end{align*}
-</div></div></details></article><article class="exercise exercise-like" id="sec_arrays-ch-matrices-7-4"><h4 class="heading">
+</div></div></details></article><details id="sec_arrays-ch-matrices-7-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">7.2.20</span><span class="period">.</span><span class="space"> </span><span class="title">Compute the Outer Product.</span>
-</h4>
-<div class="introduction" id="sec_arrays-ch-matrices-7-4-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989418&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="sec_arrays-ch-matrices-8"><h3 class="heading hide-type">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_arrays-ch-matrices-7-4-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=989418&amp;resizer=true"></iframe></div></article></details></section><section class="subsection" id="sec_arrays-ch-matrices-8"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.2.6</span><span class="space"> </span><span class="title">Conclusions</span>
 </h3>
 <div class="para" id="sec_arrays-ch-matrices-8-2">In this and the previous section you were exposed two one- and two-dimensional arrays. You’ve seen how simple mathematical operations, including scalar multiplication, addition/subtraction, and products. We saw that there are at least two ways to define vector products, including the inner- and outer-products. Spoiler alert, there are more, and you’ll encounter them elsewhere. We saw that multiplication is not a commutative operation with arrays. That is, <span class="process-math">\(AB\)</span> is not generally the same as <span class="process-math">\(BA\)</span> -- in fact, knowing that the product <span class="process-math">\(AB\)</span> is defined doesn’t even guarantee that the product <span class="process-math">\(BA\)</span> is defined.</div>

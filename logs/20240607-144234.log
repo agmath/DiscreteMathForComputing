@@ -1,0 +1,8 @@
+INFO    : PreTeXt-CLI version: 2.4.1
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+CRITICAL: Opening and ending tag mismatch: underline line 45 and center, line 45, column 96
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : While running pretext, the following errors occurred:
+

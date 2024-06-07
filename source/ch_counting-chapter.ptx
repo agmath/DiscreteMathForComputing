@@ -27,7 +27,8 @@
   <!-- <xi:include href="./sec_sets-ch-intro.ptx" /> -->
   <xi:include href="./sec_counting-basics.ptx" />
   <xi:include href="./sec_counting-fundamental-principle.ptx" />
-  <!-- <xi:include href="./sec_counting-permutations.ptx" />
+  <xi:include href="./sec_counting-permutations.ptx" />
+  <!-- 
   <xi:include href="./sec_counting-binomial-coefficients.ptx" />
    -->
   <xi:include href="./sec_counting-big-O.ptx" />

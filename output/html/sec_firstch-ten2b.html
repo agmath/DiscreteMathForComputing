@@ -267,7 +267,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_counting-fundamental-principle.html#sec_counting-fundamental-principle-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">The Fundamental Principle of Counting (and Examples)</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_counting-big-O.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Complexity and Big-O Notation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_counting-permutations.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Arrangements and Permutations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_counting-permutations.html#sec_counting-permutations-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Motivation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_counting-permutations.html#sec_counting-permutations-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Interactive Examples Involving Permutations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_counting-big-O.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Complexity and Big-O Notation</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></div></li>
@@ -348,36 +355,29 @@ q_{0} = b\cdot q_{1} + r_{1}, \text{ where } 0 \leq r_{1} \lt b
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="space"> </span><span class="title">Let’s Try It!</span>
 </h3>
 <div class="para" id="sec_firstch-ten2b-4-2">Now that we’ve developed a strategy for writing the base-<span class="process-math">\(b\)</span> equivalent of a given decimal integer, let’s get more comfortable using it. In this section, you’ll have a variety of opportunities to work through our algorithm. You’ll have lots of support through the initial examples, but we’ll provide less and less structure with each successive task.</div>
-<article class="exercise exercise-like" id="sec_firstch-ten2b-4-3"><h4 class="heading">
+<details id="sec_firstch-ten2b-4-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part I.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-4-3-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975427&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_firstch-ten2b-4-4"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-4-3-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975427&amp;resizer=true"></iframe></div></article></details><details id="sec_firstch-ten2b-4-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part II.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-4-4-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975431&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_firstch-ten2b-4-5"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-4-4-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975431&amp;resizer=true"></iframe></div></article></details><details id="sec_firstch-ten2b-4-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part III.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-4-5-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975437&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_firstch-ten2b-4-6"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-4-5-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975437&amp;resizer=true"></iframe></div></article></details><details id="sec_firstch-ten2b-4-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Binary, Part IV.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-4-6-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975442&amp;resizer=true"></iframe></div></article><div class="para" id="sec_firstch-ten2b-4-7">Now that you’ve converted from decimal to binary a few times, let’s work with some other bases. In the examples that follow, the bases we want to convert to will change but your strategy remains the same.</div>
-<article class="exercise exercise-like" id="sec_firstch-ten2b-4-8"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-4-6-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975442&amp;resizer=true"></iframe></div></article></details><div class="para" id="sec_firstch-ten2b-4-7">Now that you’ve converted from decimal to binary a few times, let’s work with some other bases. In the examples that follow, the bases we want to convert to will change but your strategy remains the same.</div>
+<details id="sec_firstch-ten2b-4-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-b I.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-4-8-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_firstch-ten2b-4-9"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-4-8-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></details><details id="sec_firstch-ten2b-4-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-b II.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-4-9-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article><article class="exercise exercise-like" id="sec_firstch-ten2b-4-10"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-4-9-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></details><details id="sec_firstch-ten2b-4-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Base-b III.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-4-10-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="sec_firstch-ten2b-5"><h3 class="heading hide-type">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-4-10-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975449&amp;resizer=true"></iframe></div></article></details></section><section class="subsection" id="sec_firstch-ten2b-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="space"> </span><span class="title">Converting to Hexadecimal</span>
 </h3>
 <div class="para" id="sec_firstch-ten2b-5-2">Let’s close out the section with an example showing how to convert a decimal integer into hexadecimal. As reminder, hexadecimal is the base-<span class="process-math">\(16\)</span> number system. We make use of the characters <span class="process-math">\(A\)</span> through <span class="process-math">\(F\)</span> to reprecent the decimal values <span class="process-math">\(10\)</span> through <span class="process-math">\(15\)</span> in order to avoid ambiguity in the base-<span class="process-math">\(16\)</span> value we are writing. Below is a completely worked example, but it is followed by an embedded exercise for you to confirm your understanding.</div>
@@ -392,11 +392,10 @@ q_{0} = b\cdot q_{1} + r_{1}, \text{ where } 0 \leq r_{1} \lt b
 \end{align*}
 </div>
 <div class="para" id="sec_firstch-ten2b-5-3-4">Remembering that <span class="process-math">\(\left(13\right)_{10} = \left(D\right)_{16}\text{,}\)</span> we can write the hexadecimal representation of <span class="process-math">\(\left(1133\right)_{10}\)</span> as <span class="process-math">\(\left(46D\right)_{16}\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="sec_firstch-ten2b-5-4"><h4 class="heading">
+</div></article><details id="sec_firstch-ten2b-5-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Convert to Hexadecimal.</span>
-</h4>
-<div class="introduction" id="sec_firstch-ten2b-5-4-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975491&amp;resizer=true"></iframe></div></article></section><section class="subsection" id="sec_firstch-ten2b-6"><h3 class="heading hide-type">
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_firstch-ten2b-5-4-2"></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=975491&amp;resizer=true"></iframe></div></article></details></section><section class="subsection" id="sec_firstch-ten2b-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="space"> </span><span class="title">Conclusion</span>
 </h3>
 <div class="para" id="sec_firstch-ten2b-6-2">In this section, we’ve learned the <em class="emphasis">mechanics</em> of converting a decimal number into its base-<span class="process-math">\(b\)</span> equivalent for a variety of bases. You got practice implementing the conversion algorithm, and even worked in bases higher than <span class="process-math">\(10\)</span> -- where we needed to introduce the use of symbols to represent large digits. In the next section, we’ll explore the most common non-standard base systems in a bit more detail. We’ll also highlight the connections between them.</div></section></section></div>
