@@ -75,7 +75,7 @@
     <p>Let's explore some more restrictive versions of our wedding photo arrangement.
     </p>
 
-    <example><title>Wedding Photo, Part II</title>
+    <example><title>A Wedding Photo, Part II</title>
       <statement>Assume that we want a photo where the bride and groom 
       are positioned in the center of the photo, with the groom to the left of the bride, 
       the groom's family to the left of the groom, and the bride's family to the right of 
@@ -124,7 +124,7 @@
     to practice what you've learned!
     </p>
 
-    <example><title>Wedding Photo, Part III</title>
+    <example><title>A Wedding Photo, Part III</title>
       <statement>The wedding photographer has set up a photo booth which can accommodate
       six people at a time. In how many ways can six members of the wedding party arrange 
       themselves (left to right) for a photo in the photo booth?
@@ -178,6 +178,31 @@
     embedded exercises below.
     </p>
 
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Creating "Words" from an Alphabet</title>
+      <myopenmath problem="1392998" />
+    </exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Choosing Club Leadership</title>
+      <myopenmath problem="1393001" />
+    </exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Choosing a Restrictive Password</title>
+      <myopenmath problem="1393008" />
+    </exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static"><title>Building a Relay Team</title>
+      <myopenmath problem="1393010" />
+    </exercise>
+
+    <conclusion>In this section you discovered and applied the factorial as a
+    mathematical operation which counts the number of ways we can arrange <m>n</m>
+    elements into an ordering. Additionally, you saw and applied permutations 
+    as a way to arrange a subset of a collection of objects into an ordering
+    where not all of the objects in the collection are utilized. In the next 
+    section, we'll discover how to count the number of ways to <em>select</em> 
+    a subset of items from a collection when the order of selection does not
+    matter.
+    </conclusion>
 
   </subsection>
 
