@@ -169,7 +169,7 @@
   <p>Now you try! Use what you've learned to complete the following examples.
   </p>
 
-  <exercise exercise-customization="inline" exercise-interactive="static" height="5in"><title>Rolling Several Dice</title>
+  <exercise exercise-customization="inline" exercise-interactive="static"><title>Rolling Several Dice</title>
     <myopenmath problem="983108" />
   </exercise>
 

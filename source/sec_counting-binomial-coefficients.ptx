@@ -4,12 +4,99 @@
   <title>Selections and Binomial Coefficients</title>
 
   <introduction>
-    <p>In this section we introduce binomial coefficients and their 
-    connection to making selections from a set of possible options. We 
-    introduce the notation <m>\binom{n}{k}</m>, "<m>n</m> choose 
-    <m>k</m>", to denote <m>\frac{n!}{\left(n - k\right)!\cdot k!}</m>.
+    <p>In the previous sections of this chapter, we've learned how to count the
+    number of possible outcomes to several types of processes. We began with 
+    simple, <em>atomic</em> processes like the roll of a die, the flip of a 
+    coin, or the selection of an entree off of a menu at a restaurant. From 
+    there, we encountered the <em>Fundamental Principle of Counting</em>, which
+    allowed us to count the number of outcomes from more complex processes. 
+    These more complex processes consisted of several atomic processes, and 
+    we multiplied the number of ways to complete each subprocess together in 
+    order to find the total number of ways to complete the overall process. The
+    most recent section showed us how to count the number of arrangements (or 
+    orderings) of a set of objects from a, perhaps larger, collection. In this 
+    section, we'll learn how to count the number of possible selections of a 
+    set of objects from a, perhaps larger, collection but where the order of 
+    selection does not matter.
     </p>
   </introduction>
+    
+  <subsection><title>Motivation</title>
+    <p>Some of the questions you answered in the last section asked about 
+    selecting individuals from a group to fill leadership roles in that group. 
+    What if, rather than selecting individuals for distinct roles (President, 
+    Vice President, etc.), we were simply building a leadership council where
+    all selected individuals had identical roles and responsibilities. In this
+    case, our tools for counting permutations no longer apply because being 
+    chosen first no longer corresponds to being "President", and being second 
+    no longer corresponds to being "Vice President".
+    </p>
+
+    <p>Consider the following example which illustrates the overcounting 
+    associated with using permutations in these scenarios and also introduces 
+    a new counting method which removes the overcounting.
+    </p>
+  
+    <example xml:id = "governing-council-ex"> <title>Choosing a Governing Council</title>
+      <statement>Your local Computing Club has a membership consisting of 35
+      individual members. The club is choosing a governing council which will 
+      serve in a leadership capacity for the club. All members voted to the 
+      leadership council will have identical roles and responsibilities. In 
+      how many ways can a leadership council of five (5) club members be
+      chosen?
+      </statement>
+      <answer><p>Your first instinct may be to use the approach we learned in 
+        the previous section. We'll calculate the number of permutations of 5 
+        elements from a collection of 35 total elements. In this case, we would
+        estimate 
+        <md><mrow>_{35}P_{5} = \frac{35!}{\left(35 - 5\right)!} = 35\cdot\left(34\right)\cdot\left(33\right)\cdot\left(32\right)\cdot\left(31\right) = 38,955,840</mrow></md> 
+        distinct governing councils. The problem with this approach, however, is 
+        that it counts each collection of five people multiple times. For 
+        convenience, let's say we have a governing council consisting of Jim, Sarah,
+        Megan, Steve, and Melissa. In the calculation above, we count the governing 
+        council consisting of Melissa, Sarah, Steve, Jim, and Megan as a distinct 
+        governing council but, given the way that the governing council will 
+        function, these are identical councils.
+      </p>
+      <p>In order to remove the overcounting, we'll need to determine how many 
+      times each collection of five individuals is counted. Recognizing that 
+      this collection will be counted once for each <em>ordering</em> of the 
+      five selected individuals, we know that the collection will be counted 
+      <m>_{5}P_{5} = 5\cdot\left(4\right)\cdot\left(3\right)\cdot\left(2\right)\cdot\left(1\right) = 120</m> 
+      times. Since each distinct governing council is counted 120 times, we'll 
+      take the overestimate of 38,955,840 and divide it by 120 to obtain the 
+      true number of unique governing councils. That is, there are <m>\frac{38,955,840}{120} = \boxed{~324,632~}</m> 
+      distinct governing councils that cound be created from the 35 person 
+      membership.
+      </p>
+      </answer>
+    </example>
+
+    <p>In the solution to the example above, we reasoned a method that would 
+    remove the overcounting and leave us with only the distinct selected 
+    governing councils. As with the other tools for counting we've encountered
+    in this chapter, such a technique is so widely applicable that it is given
+    a name.
+    </p> 
+
+    <definition><title>Combinations</title>
+      <statement>The number of ways to <em>choose</em> a subset of size <m>k</m>
+      from a collection of <m>n</m> distinct objects, where the order of 
+      selection does not matter is given by <m>\frac{n!}{k!\left(n - k\right)!}</m>.
+      The formula above is sometimes referred to as counting the number of 
+      combinations of <m>k</m> items from a collection of <m>n</m>, and can be 
+      denoted as follows:
+      <md><mrow>_{n}C_{k} = \binom{n}{k} = \frac{n!}{k!\left(n-k\right)!}</mrow></md>
+      The notations <m>_{n}C_{k}</m> and <m>\choose{n}{k}</m> are interchangeable 
+      and both are read "<m>n</m> choose <m>k</m>".
+      </statement>
+    </definition>
+
+    <p>Let's do one more example before you have a chance to practice on some 
+    embedded exercises. ...Exercise to be added...
+    </p>
+
+  </subsection>
 
 </section>
 

@@ -1,0 +1,15 @@
+INFO    : PreTeXt-CLI version: 2.4.1
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+INFO    : Since no target was supplied, we will use "html".
+
+INFO    : Staging latest build located in `/workspaces/DiscreteMathForComputing/output/html` at `/workspaces/DiscreteMathForComputing/output/stage`.
+INFO    : 
+INFO    : Deployment is now staged at `/workspaces/DiscreteMathForComputing/output/stage`.
+INFO    : Preparing to deploy from active `main` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+ERROR   : Either add and commit these changes with Git, or run
+ERROR   : `pretext deploy -u` to have these changes updated automatically.
+INFO    : While running pretext, the following errors occurred:
+
