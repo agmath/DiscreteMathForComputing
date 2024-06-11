@@ -9,14 +9,14 @@
   <!-- If the chapter has sections, there may be an introduction -->
   <!-- before those sections. Note the <p> tags around content.  -->
   <introduction>
-    <p>In progress. Will include the following sections.
-    <ul>
-      <li> Counting Basics</li>
-      <li> The Fundamental Principle of Counting</li>
-      <li> Counting Permutations</li>
-      <li> Counting Selections Using Binomial Coefficients</li>
-      <li> Big-O Notation and Run-Time Complexity</li>
-    </ul>
+    <p>A first draft of this chapter is complete. It should be in a condition
+      suitable for student use. Additional improvements will be made over time.
+      Priority improvements include:
+      <ul>
+        <li>Editing the narrative for clarity, brevity, and consistency.</li>
+        <li>Creating and including additonal embedded MyOpenMath exercises.</li>
+        <li>Including some slightly more advanced techniques using an inquiry-based approach.</li>
+      </ul>
     </p>
   </introduction>
 

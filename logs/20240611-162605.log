@@ -1,0 +1,6 @@
+INFO    : PreTeXt-CLI version: 2.4.1
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+INFO    : Running in a codespace, so using the codespace server instead of the standard python server.
+INFO    : Server will soon be available at https://glowing-space-guide-wq965xxppj3qqw-8663.app.github.dev
+INFO    : Opening browser for target `html` at https://glowing-space-guide-wq965xxppj3qqw-8663.app.github.dev/output/html in 2 seconds
