@@ -943,7 +943,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Selections and Binomial Coefficients",
-  "body": " Selections and Binomial Coefficients   In the previous sections of this chapter, we've learned how to count the number of possible outcomes to several types of processes. We began with simple, atomic processes like the roll of a die, the flip of a coin, or the selection of an entree off of a menu at a restaurant. From there, we encountered the Fundamental Principle of Counting , which allowed us to count the number of outcomes from more complex processes. These more complex processes consisted of several atomic processes, and we multiplied the number of ways to complete each subprocess together in order to find the total number of ways to complete the overall process. The most recent section showed us how to count the number of arrangements (or orderings) of a set of objects from a, perhaps larger, collection. In this section, we'll learn how to count the number of possible selections of a set of objects from a, perhaps larger, collection but where the order of selection does not matter.   Motivation  Some of the questions you answered in the last section asked about selecting individuals from a group to fill leadership roles in that group. What if, rather than selecting individuals for distinct roles (President, Vice President, etc.), we were simply building a leadership council where all selected individuals had identical roles and responsibilities. In this case, our tools for counting permutations no longer apply because being chosen first no longer corresponds to being \"President\", and being second no longer corresponds to being \"Vice President\".  Consider the following example which illustrates the overcounting associated with using permutations in these scenarios and also introduces a new counting method which removes the overcounting.   Choosing a Governing Council  Your local Computing Club has a membership consisting of 35 individual members. The club is choosing a governing council which will serve in a leadership capacity for the club. All members voted to the leadership council will have identical roles and responsibilities. In how many ways can a leadership council of five (5) club members be chosen?  Your first instinct may be to use the approach we learned in the previous section. We'll calculate the number of permutations of 5 elements from a collection of 35 total elements. In this case, we would estimate distinct governing councils. The problem with this approach, however, is that it counts each collection of five people multiple times. For convenience, let's say we have a governing council consisting of Jim, Sarah, Megan, Steve, and Melissa. In the calculation above, we count the governing council consisting of Melissa, Sarah, Steve, Jim, and Megan as a distinct governing council but, given the way that the governing council will function, these are identical councils.  In order to remove the overcounting, we'll need to determine how many times each collection of five individuals is counted. Recognizing that this collection will be counted once for each ordering of the five selected individuals, we know that the collection will be counted times. Since each distinct governing council is counted 120 times, we'll take the overestimate of 38,955,840 and divide it by 120 to obtain the true number of unique governing councils. That is, there are distinct governing councils that cound be created from the 35 person membership.    In the solution to the example above, we reasoned a method that would remove the overcounting and leave us with only the distinct selected governing councils. As with the other tools for counting we've encountered in this chapter, such a technique is so widely applicable that it is given a name.  Combinations  The number of ways to choose a subset of size from a collection of distinct objects, where the order of selection does not matter is given by . The formula above is sometimes referred to as counting the number of combinations of items from a collection of , and can be denoted as follows: The notations and are interchangeable and both are read \" choose \".   Let's do one more example before you have a chance to practice on some embedded exercises.   "
+  "body": " Selections and Binomial Coefficients   In the previous sections of this chapter, we've learned how to count the number of possible outcomes to several types of processes. We began with simple, atomic processes like the roll of a die, the flip of a coin, or the selection of an entree off of a menu at a restaurant. From there, we encountered the Fundamental Principle of Counting , which allowed us to count the number of outcomes from more complex processes. These more complex processes consisted of several atomic processes, and we multiplied the number of ways to complete each subprocess together in order to find the total number of ways to complete the overall process. The most recent section showed us how to count the number of arrangements (or orderings) of a set of objects from a, perhaps larger, collection. In this section, we'll learn how to count the number of possible selections of a set of objects from a, perhaps larger, collection but where the order of selection does not matter.   Motivation  Some of the questions you answered in the last section asked about selecting individuals from a group to fill leadership roles in that group. What if, rather than selecting individuals for distinct roles (President, Vice President, etc.), we were simply building a leadership council where all selected individuals had identical roles and responsibilities. In this case, our tools for counting permutations no longer apply because being chosen first no longer corresponds to being \"President\", and being second no longer corresponds to being \"Vice President\".  Consider the following example which illustrates the overcounting associated with using permutations in these scenarios and also introduces a new counting method which removes the overcounting.   Choosing a Governing Council  Your local Computing Club has a membership consisting of 35 individual members. The club is choosing a governing council which will serve in a leadership capacity for the club. All members voted to the leadership council will have identical roles and responsibilities. In how many ways can a leadership council of five (5) club members be chosen?  Your first instinct may be to use the approach we learned in the previous section. We'll calculate the number of permutations of 5 elements from a collection of 35 total elements. In this case, we would estimate distinct governing councils. The problem with this approach, however, is that it counts each collection of five people multiple times. For convenience, let's say we have a governing council consisting of Jim, Sarah, Megan, Steve, and Melissa. In the calculation above, we count the governing council consisting of Melissa, Sarah, Steve, Jim, and Megan as a distinct governing council but, given the way that the governing council will function, these are identical councils.  In order to remove the overcounting, we'll need to determine how many times each collection of five individuals is counted. Recognizing that this collection will be counted once for each ordering of the five selected individuals, we know that the collection will be counted times. Since each distinct governing council is counted 120 times, we'll take the overestimate of 38,955,840 and divide it by 120 to obtain the true number of unique governing councils. That is, there are distinct governing councils that cound be created from the 35 person membership.     Formalizing a Method  In the solution to the example above, we reasoned a method that would remove the overcounting and leave us with only the distinct selected governing councils. As with the other tools for counting we've encountered in this chapter, such a technique is so widely applicable that it is given a name.  Combinations  The number of ways to choose a subset of size from a collection of distinct objects, where the order of selection does not matter is given by . The formula above is sometimes referred to as counting the number of combinations of items from a collection of , and can be denoted as follows: The notations and are interchangeable and both are read \" choose \".   As one additional note, you might find resources referring to the quantity as a binomial coefficient . This is because evaluating allows you to obtain the coefficient of the term of .  Let's do one more example before you have a chance to practice on some embedded exercises. ...Exercise to be added...   Inclusion in an Article  A showcase was held for course projects and 17 students presented on their individual projects. A reporter from the school newspaper was present and plans to write an article highlighting four projects. In how many ways can the reporter select the four projects for inclusion in her write-up?   Notice that the reporter is just selecting the projects for inclusion in her article. There is no importance assigned to the order in which she makes those selections. For this reason, we'll use a combination , as described above. We have 17 student projects available and need to choose four for inclusion in the article.   There are 2,380 different combinations of student projects that the reporter could choose to write about in her article on the showcase.    Now, let's move to the next section, where you'll   Examples to Try   In the exercises that follow, apply what you've learned over these last three sections. Be careful, as not every part of every question involves the techniques introduced here. You'll need to identify opportunities to make use of basic counting techniques, the Fundamental Principle of Counting, Permutations, and Combinations.   Organizing Bookshelves  Golfing Foursomes  Board of Directors  Pizza Menu  Drawing Quadrilaterals  Drawing Triangles  Arranging Letters  School Committee    In this section you learned, and practiced with, another new tool for counting. In particular, the technique introduced here extended your ability to count the number of selections of a set of items from a collection of , where the order of selection did not matter. At the end of the section, you practiced with several examples that required you to idnetify whether to utilize permutations, combinations, or more basic counting techniques and also whether to apply the Fundamental Principle of Counting or not.  In the next section, we'll connect our counting work back to computing. In particular, we'll consider how we can count the number of operations being done in a worst-case application of a computer algorithm. Doing this counting allows us to describe the run-time complexity of the algorithm. Run-time complexity helps us understand how an algorithm will scale with larger and larger input arrays.   "
 },
 {
   "id": "governing-council-ex",
@@ -955,13 +955,94 @@ var ptx_lunr_docs = [
   "body": " Choosing a Governing Council  Your local Computing Club has a membership consisting of 35 individual members. The club is choosing a governing council which will serve in a leadership capacity for the club. All members voted to the leadership council will have identical roles and responsibilities. In how many ways can a leadership council of five (5) club members be chosen?  Your first instinct may be to use the approach we learned in the previous section. We'll calculate the number of permutations of 5 elements from a collection of 35 total elements. In this case, we would estimate distinct governing councils. The problem with this approach, however, is that it counts each collection of five people multiple times. For convenience, let's say we have a governing council consisting of Jim, Sarah, Megan, Steve, and Melissa. In the calculation above, we count the governing council consisting of Melissa, Sarah, Steve, Jim, and Megan as a distinct governing council but, given the way that the governing council will function, these are identical councils.  In order to remove the overcounting, we'll need to determine how many times each collection of five individuals is counted. Recognizing that this collection will be counted once for each ordering of the five selected individuals, we know that the collection will be counted times. Since each distinct governing council is counted 120 times, we'll take the overestimate of 38,955,840 and divide it by 120 to obtain the true number of unique governing councils. That is, there are distinct governing councils that cound be created from the 35 person membership.   "
 },
 {
-  "id": "sec_counting-binomial-coefficients-3-6",
+  "id": "sec_counting-binomial-coefficients-4-3",
   "level": "2",
-  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-3-6",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-4-3",
   "type": "Definition",
   "number": "4.4.2",
   "title": "Combinations.",
   "body": "Combinations  The number of ways to choose a subset of size from a collection of distinct objects, where the order of selection does not matter is given by . The formula above is sometimes referred to as counting the number of combinations of items from a collection of , and can be denoted as follows: The notations and are interchangeable and both are read \" choose \".  "
+},
+{
+  "id": "undergrad-research-article-ex",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#undergrad-research-article-ex",
+  "type": "Example",
+  "number": "4.4.3",
+  "title": "Inclusion in an Article.",
+  "body": " Inclusion in an Article  A showcase was held for course projects and 17 students presented on their individual projects. A reporter from the school newspaper was present and plans to write an article highlighting four projects. In how many ways can the reporter select the four projects for inclusion in her write-up?   Notice that the reporter is just selecting the projects for inclusion in her article. There is no importance assigned to the order in which she makes those selections. For this reason, we'll use a combination , as described above. We have 17 student projects available and need to choose four for inclusion in the article.   There are 2,380 different combinations of student projects that the reporter could choose to write about in her article on the showcase.   "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-3",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-3",
+  "type": "Checkpoint",
+  "number": "4.4.4",
+  "title": "Organizing Bookshelves.",
+  "body": "Organizing Bookshelves "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-4",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-4",
+  "type": "Checkpoint",
+  "number": "4.4.5",
+  "title": "Golfing Foursomes.",
+  "body": "Golfing Foursomes "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-5",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-5",
+  "type": "Checkpoint",
+  "number": "4.4.6",
+  "title": "Board of Directors.",
+  "body": "Board of Directors "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-6",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-6",
+  "type": "Checkpoint",
+  "number": "4.4.7",
+  "title": "Pizza Menu.",
+  "body": "Pizza Menu "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-7",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-7",
+  "type": "Checkpoint",
+  "number": "4.4.8",
+  "title": "Drawing Quadrilaterals.",
+  "body": "Drawing Quadrilaterals "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-8",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-8",
+  "type": "Checkpoint",
+  "number": "4.4.9",
+  "title": "Drawing Triangles.",
+  "body": "Drawing Triangles "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-9",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-9",
+  "type": "Checkpoint",
+  "number": "4.4.10",
+  "title": "Arranging Letters.",
+  "body": "Arranging Letters "
+},
+{
+  "id": "sec_counting-binomial-coefficients-5-10",
+  "level": "2",
+  "url": "sec_counting-binomial-coefficients.html#sec_counting-binomial-coefficients-5-10",
+  "type": "Checkpoint",
+  "number": "4.4.11",
+  "title": "School Committee.",
+  "body": "School Committee "
 },
 {
   "id": "sec_counting-big-O",
