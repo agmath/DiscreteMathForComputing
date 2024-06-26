@@ -1,0 +1,9 @@
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+INFO    : Now preparing local server to preview your project directory `/workspaces/DiscreteMathForComputing`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : Server will soon be available at https://glowing-space-guide-wq965xxppj3qqw-8128.app.github.dev
+INFO    : Opening browser for target `html` at https://glowing-space-guide-wq965xxppj3qqw-8128.app.github.dev/output/html in 3 seconds
+INFO    : Stopping server.
