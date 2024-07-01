@@ -88,7 +88,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
   "inputLocation": "pre.sagecell-sage",
@@ -174,6 +174,17 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.0/prefix-runtime.fd90d8f564bee81c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.0/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.0/prefix-runestone.0dbb743224ea5679.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.0/prefix-347.f9add1ca35d5ad93.css">
 <link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.0/prefix-runestone.f64dcc3632d7a0c3.css">
+<style>
+#sec_logic-ch-compound-statements-3-3-3 { counter-set: sec_logic-ch-compound-statements-3-3-3 0; }
+#sec_logic-ch-compound-statements-3-3-3 > li::marker { content: ""counter(sec_logic-ch-compound-statements-3-3-3,decimal)"."; }
+#sec_logic-ch-compound-statements-3-3-3 > li { counter-increment: sec_logic-ch-compound-statements-3-3-3; }
+#sec_logic-ch-compound-statements-3-3-3-5 { counter-set: sec_logic-ch-compound-statements-3-3-3-5 0; }
+#sec_logic-ch-compound-statements-3-3-3-5 > li::marker { content: "("counter(sec_logic-ch-compound-statements-3-3-3-5,lower-alpha)")"; }
+#sec_logic-ch-compound-statements-3-3-3-5 > li { counter-increment: sec_logic-ch-compound-statements-3-3-3-5; }
+#sec_logic-ch-compound-statements-3-4-3 { counter-set: sec_logic-ch-compound-statements-3-4-3 0; }
+#sec_logic-ch-compound-statements-3-4-3 > li::marker { content: ""counter(sec_logic-ch-compound-statements-3-4-3,decimal)"."; }
+#sec_logic-ch-compound-statements-3-4-3 > li { counter-increment: sec_logic-ch-compound-statements-3-4-3; }
+</style>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -354,7 +365,7 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <section class="introduction" id="sec_logic-ch-base-conversion-functions-2"><div class="para" id="sec_logic-ch-base-conversion-functions-2-1">
 <em class="emphasis">Note.</em> This section asks you to construct a base-conversion function using computer code. Each task includes a prompt to write pseudocode to construct the corresponding function. The first two such prompts are accompanied by interactive exercises asking you to organize provided pseudocode into an order which will achieve the desired result. Subsequent tasks ask you to write your own pseudocode from scratch. Accompanying each task are also interactive code blocks which invite you to write your own working function in a language of your choice. The existing interactive code blocks allow <code class="code-inline tex2jax_ignore">Sage</code>, <code class="code-inline tex2jax_ignore">Python</code>, and <code class="code-inline tex2jax_ignore">R</code>.</div> <div class="para" id="sec_logic-ch-base-conversion-functions-2-2">In order to successfully navigate this section, you’ll need to recall how base-conversion works (from Chapter 1). You’ll also need to use what we learned about logic and how it can be used for programmatic flow control. That is, you’ll need to recall what we learned about <em class="emphasis">If/Then</em> statements. You’ll also need to make use of <code class="code-inline tex2jax_ignore">for</code> and <code class="code-inline tex2jax_ignore">while</code> loops. This section is a great opportunity to connect our discrete math content to the topics you’ve been learning and implementing in your introductory coding course.</div></section><div class="para" id="sec_logic-ch-base-conversion-functions-3">Let’s start with a function that converts decimal numbers into their corresponding binary representations.</div>
-<ul class="disc"><li id="sec_logic-ch-base-conversion-functions-4-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-4-1">Start with a pseudocode outline for your function. Pseudocode is a very high-level description of the steps a program must complete, beginning with 0 or more inputs, before returning a desired output. Write a pseudocode description of this function.</div></li></ul>
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-4"><li id="sec_logic-ch-base-conversion-functions-4-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-4-1">Start with a pseudocode outline for your function. Pseudocode is a very high-level description of the steps a program must complete, beginning with 0 or more inputs, before returning a desired output. Write a pseudocode description of this function.</div></li></ul>
 <details id="Decimal-to-Binary" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Write Pseudocode 1.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="Decimal-to-Binary">
@@ -370,16 +381,16 @@ eBookConfig.enable_chatcodes =  false;
 <pre class="code-display tex2jax_ignore"> reverse the binary_digits list</pre><pre class="code-display tex2jax_ignore"> collapse binary_digits list to a string</pre>
 ---
 <pre class="code-display tex2jax_ignore"> return binary_digits string</pre></pre>
-</div></div></div></article></details><ul class="disc"><li id="sec_logic-ch-base-conversion-functions-6-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-6-1">Choose your favorite programming language and try to transform your pseudocode into a working function.</div></li></ul>
+</div></div></div></article></details><ul class="disc" id="sec_logic-ch-base-conversion-functions-6"><li id="sec_logic-ch-base-conversion-functions-6-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-6-1">Choose your favorite programming language and try to transform your pseudocode into a working function.</div></li></ul>
 <pre id="sec_logic-ch-base-conversion-functions-7" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
 </script></pre>
 <pre id="sec_logic-ch-base-conversion-functions-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
 </script></pre>
 <pre id="sec_logic-ch-base-conversion-functions-9" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
 </script></pre>
-<ul class="disc"><li id="sec_logic-ch-base-conversion-functions-10-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-10-1">Whether or not you’ve chosen to build a working version of the function to take a decimal integer and convert it into binary, think about whether your code/pseudocode will handle special ("edge") cases. Is your function capable of converting 0? Can it handle negative integers as inputs? How does your function behave when you pass it a non-integer value as an input? Try updating your code/pseudocode to handle these things.</div></li></ul>
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-10"><li id="sec_logic-ch-base-conversion-functions-10-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-10-1">Whether or not you’ve chosen to build a working version of the function to take a decimal integer and convert it into binary, think about whether your code/pseudocode will handle special ("edge") cases. Is your function capable of converting 0? Can it handle negative integers as inputs? How does your function behave when you pass it a non-integer value as an input? Try updating your code/pseudocode to handle these things.</div></li></ul>
 <div class="para" id="sec_logic-ch-base-conversion-functions-11">Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</div>
-<ul class="disc"><li id="sec_logic-ch-base-conversion-functions-12-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-12-1">Start with a pseudocode outline for the function.</div></li></ul>
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-12"><li id="sec_logic-ch-base-conversion-functions-12-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-12-1">Start with a pseudocode outline for the function.</div></li></ul>
 <details id="sec_logic-ch-base-conversion-functions-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Write Pseudocode 2.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="">
@@ -393,20 +404,20 @@ eBookConfig.enable_chatcodes =  false;
 <pre class="code-display tex2jax_ignore">  dec_int = dec_int + (bit_list[i]*2^i)</pre>
 ---
 <pre class="code-display tex2jax_ignore"> return dec_int</pre></pre>
-</div></div></div></article></details><ul class="disc"><li id="sec_logic-ch-base-conversion-functions-14-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-14-1">Try taking your pseudocode and implementing it as a working function in your language of choice.</div></li></ul>
+</div></div></div></article></details><ul class="disc" id="sec_logic-ch-base-conversion-functions-14"><li id="sec_logic-ch-base-conversion-functions-14-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-14-1">Try taking your pseudocode and implementing it as a working function in your language of choice.</div></li></ul>
 <pre id="sec_logic-ch-base-conversion-functions-15" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
 </script></pre>
 <pre id="sec_logic-ch-base-conversion-functions-16" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
 </script></pre>
 <pre id="sec_logic-ch-base-conversion-functions-17" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
 </script></pre>
-<ul class="disc">
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-18">
 <li id="sec_logic-ch-base-conversion-functions-18-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-18-1">Does your function "work" if you accidentally provide it a non-binary input? We better update the function to check this. We don’t want users to get an output if they don’t provide a valid input. Make the corresponding update to your function.</div></li>
 <li id="sec_logic-ch-base-conversion-functions-18-2"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-18-2">Does your error check use a separate loop to ensure that the user input is binary? If so, can you make your function more efficient by using just a single loop? NOTE: We’ll return to the idea of looping and efficiency later in our course.</div></li>
 </ul>
 <div class="para logical" id="sec_logic-ch-base-conversion-functions-19">
 <div class="para">Now that you’ve made it this far, maybe we don’t want to restrict ourselves to working only in binary. Make updates to your previous two functions so that they can convert to and from decimal representations and any other base less than 10. HINT: You’ll need to allow for users to input both the value to be converted as well as the base you are working with in each function.</div>
-<ul class="disc"><li id="sec_logic-ch-base-conversion-functions-19-1-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-1-1">Create a new version of your first function which will convert a decimal integer to base-<span class="process-math">\(b\text{,}\)</span> where <span class="process-math">\(2\leq b \lt 10\text{.}\)</span>
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-19-1"><li id="sec_logic-ch-base-conversion-functions-19-1-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-1-1">Create a new version of your first function which will convert a decimal integer to base-<span class="process-math">\(b\text{,}\)</span> where <span class="process-math">\(2\leq b \lt 10\text{.}\)</span>
 </div></li></ul>
 <div class="para">
 <pre id="sec_logic-ch-base-conversion-functions-19-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
@@ -414,19 +425,19 @@ eBookConfig.enable_chatcodes =  false;
 </script></pre> <pre id="sec_logic-ch-base-conversion-functions-19-4" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
 </script></pre>
 </div>
-<ul class="disc"><li id="sec_logic-ch-base-conversion-functions-19-5-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-5-1">Create a new version of your second function which will convert an integer written in base-<span class="process-math">\(b\text{,}\)</span> where <span class="process-math">\(2\leq b \lt 10\text{,}\)</span> into its decimal representation.</div></li></ul>
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-19-5"><li id="sec_logic-ch-base-conversion-functions-19-5-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-5-1">Create a new version of your second function which will convert an integer written in base-<span class="process-math">\(b\text{,}\)</span> where <span class="process-math">\(2\leq b \lt 10\text{,}\)</span> into its decimal representation.</div></li></ul>
 <div class="para">
 <pre id="sec_logic-ch-base-conversion-functions-19-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
 </script></pre> <pre id="sec_logic-ch-base-conversion-functions-19-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
 </script></pre> <pre id="sec_logic-ch-base-conversion-functions-19-8" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
 </script></pre>
 </div>
-<ul class="disc"><li id="sec_logic-ch-base-conversion-functions-19-9-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-9-1">Check to ensure your functions handle "edge" cases, like converting 0, dealing with negative integers, and checking to ensure valid inputs before returning a converted value.</div></li></ul>
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-19-9"><li id="sec_logic-ch-base-conversion-functions-19-9-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-9-1">Check to ensure your functions handle "edge" cases, like converting 0, dealing with negative integers, and checking to ensure valid inputs before returning a converted value.</div></li></ul>
 </div>
 <div class="para logical" id="sec_logic-ch-base-conversion-functions-20">
 <div class="para">You now have all of the tools you need in order to piece together a function that will convert between two bases <span class="process-math">\(b_1\)</span> and <span class="process-math">\(b_2\text{,}\)</span> with <span class="process-math">\(2\leq b_1, b_2 \leq 10\text{.}\)</span>
 </div>
-<ul class="disc"><li id="sec_logic-ch-base-conversion-functions-20-4-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-20-4-1">Build a new function, calling the functions you’ve written so far as helpers, to convert between any two bases (as long as those bases are at most base-10). Your function will need three input values: <code class="code-inline tex2jax_ignore">initial_value</code>, <code class="code-inline tex2jax_ignore">initial_base</code>, and <code class="code-inline tex2jax_ignore">target_base</code>.</div></li></ul>
+<ul class="disc" id="sec_logic-ch-base-conversion-functions-20-4"><li id="sec_logic-ch-base-conversion-functions-20-4-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-20-4-1">Build a new function, calling the functions you’ve written so far as helpers, to convert between any two bases (as long as those bases are at most base-10). Your function will need three input values: <code class="code-inline tex2jax_ignore">initial_value</code>, <code class="code-inline tex2jax_ignore">initial_base</code>, and <code class="code-inline tex2jax_ignore">target_base</code>.</div></li></ul>
 <div class="para">
 <pre id="sec_logic-ch-base-conversion-functions-20-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
 </script></pre> <pre id="sec_logic-ch-base-conversion-functions-20-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
