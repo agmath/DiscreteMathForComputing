@@ -88,7 +88,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -138,6 +138,17 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.0/prefix-runtime.fd90d8f564bee81c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.0/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.0/prefix-runestone.0dbb743224ea5679.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.0/prefix-347.f9add1ca35d5ad93.css">
 <link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.0/prefix-runestone.f64dcc3632d7a0c3.css">
+<style>
+#sec_logic-ch-compound-statements-3-3-3 { counter-set: sec_logic-ch-compound-statements-3-3-3 0; }
+#sec_logic-ch-compound-statements-3-3-3 > li::marker { content: ""counter(sec_logic-ch-compound-statements-3-3-3,decimal)"."; }
+#sec_logic-ch-compound-statements-3-3-3 > li { counter-increment: sec_logic-ch-compound-statements-3-3-3; }
+#sec_logic-ch-compound-statements-3-3-3-5 { counter-set: sec_logic-ch-compound-statements-3-3-3-5 0; }
+#sec_logic-ch-compound-statements-3-3-3-5 > li::marker { content: "("counter(sec_logic-ch-compound-statements-3-3-3-5,lower-alpha)")"; }
+#sec_logic-ch-compound-statements-3-3-3-5 > li { counter-increment: sec_logic-ch-compound-statements-3-3-3-5; }
+#sec_logic-ch-compound-statements-3-4-3 { counter-set: sec_logic-ch-compound-statements-3-4-3 0; }
+#sec_logic-ch-compound-statements-3-4-3 > li::marker { content: ""counter(sec_logic-ch-compound-statements-3-4-3,decimal)"."; }
+#sec_logic-ch-compound-statements-3-4-3 > li { counter-increment: sec_logic-ch-compound-statements-3-4-3; }
+</style>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -321,7 +332,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para logical" id="sec_logic-ch-statements-and-symbolic-logic-3-2">
 <div class="para">In mathematics, a <em class="emphasis">statement</em> is a claim which is either <em class="emphasis">true</em> or <em class="emphasis">false</em>, but for which there is no ambiguity. The following are examples of statements.</div>
-<ul class="disc">
+<ul class="disc" id="sec_logic-ch-statements-and-symbolic-logic-3-2-4">
 <li id="sec_logic-ch-statements-and-symbolic-logic-3-2-4-1"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-2-4-1">Water boils at <span class="process-math">\(100^\circ\)</span>C.</div></li>
 <li id="sec_logic-ch-statements-and-symbolic-logic-3-2-4-2"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-2-4-2">If a triangle is a right triangle, and <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the lengths of its legs while <span class="process-math">\(c\)</span> is the length of its hypotenuse, then <span class="process-math">\(a^2 + b^2 = c^2\text{.}\)</span>
 </div></li>
@@ -331,7 +342,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para logical" id="sec_logic-ch-statements-and-symbolic-logic-3-3">
 <div class="para">Since we’ve defined what a statement <em class="emphasis">is</em>, it will also be helpful to have examples of what a statement <em class="emphasis">isn’t</em>. The following are examples which are not statements.</div>
-<ul class="disc">
+<ul class="disc" id="sec_logic-ch-statements-and-symbolic-logic-3-3-3">
 <li id="sec_logic-ch-statements-and-symbolic-logic-3-3-3-1"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-3-3-1">Trigonometry is difficult.</div></li>
 <li id="sec_logic-ch-statements-and-symbolic-logic-3-3-3-2"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-3-3-2">Are you enjoying this book so far?</div></li>
 <li id="sec_logic-ch-statements-and-symbolic-logic-3-3-3-3"><div class="para" id="p-derived-sec_logic-ch-statements-and-symbolic-logic-3-3-3-3">Make sure you complete all the embedded exercises in this section.</div></li>
@@ -342,7 +353,7 @@ eBookConfig.enable_chatcodes =  false;
 <details id="sec_logic-ch-statements-and-symbolic-logic-3-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Identifying Statements.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-statements-and-symbolic-logic-3-5-2"></div>
-<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=1200983&amp;resizer=true"></iframe></div></article></details><div class="para" id="sec_logic-ch-statements-and-symbolic-logic-3-6">If you got all of those correct on the first try, nice work! If you got any wrong on the first try, click the button to generate a new version and try again on a new set of questions.</div></section><section class="subsection" id="sec_logic-ch-statements-and-symbolic-logic-4"><h3 class="heading hide-type">
+<div id="momid33wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid33" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1200983&amp;frame_id=momid33"></iframe></div></article></details><div class="para" id="sec_logic-ch-statements-and-symbolic-logic-3-6">If you got all of those correct on the first try, nice work! If you got any wrong on the first try, click the button to generate a new version and try again on a new set of questions.</div></section><section class="subsection" id="sec_logic-ch-statements-and-symbolic-logic-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="space"> </span><span class="title">Symbolic Logic</span>
 </h3>
 <div class="para" id="sec_logic-ch-statements-and-symbolic-logic-4-2">Written and spoken language can have ambiguous meaning. For example, if we say "I will be at the gym or I will be studying at the library", what we really mean is that I will be doing one or the other -- but not both. In mathematics we do not work with ambiguity, indeed compound statements -- individual (atomic) statements joined by logical operators (like <em class="emphasis">or</em>) -- must be statements in their own right. That is, these compound logical statements must be true or false, but not both. For this reason, we’ll develop <em class="emphasis">symbolic logic</em>, including a set of boolean (true/false) algebraic operators in our further exploration of logic.</div>
