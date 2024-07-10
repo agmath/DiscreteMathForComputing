@@ -1,0 +1,26 @@
+INFO    : PreTeXt-CLI version: 2.4.2.dev20240629061947
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+WARNING : Using CLI version 2.4.2.dev20240629061947 but project's `requirements.txt`
+WARNING : is configured to use 2.4.2-->. Consider either installing
+WARNING : CLI version 2.4.2--> or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.2.dev20240629061947.
+INFO    : Building target html
+INFO    : Preparing to build into /workspaces/DiscreteMathForComputing/output/html.
+INFO    : discovering source file's directory name: /workspaces/DiscreteMathForComputing/source
+INFO    : verifying and expanding input directory: /workspaces/DiscreteMathForComputing/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/DiscreteMathForComputing/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/DiscreteMathForComputing/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/DiscreteMathForComputing/assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.3.0
+INFO    : Runestone Services (using newer, via online CDN query): version 7.3.1
+INFO    : converting /workspaces/DiscreteMathForComputing/source/main.ptx to HTML in /tmp/ptx-6up6i3d7
+INFO    : XSL conversion of /workspaces/DiscreteMathForComputing/source/main.ptx by /home/vscode/.ptx/2.4.2.dev20240629061947/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "sec_counting-basics" (xml:id), "Basic Counting Techniques" (title)
+INFO    : successful application of /home/vscode/.ptx/2.4.2.dev20240629061947/core/xsl/pretext-html.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+
+INFO    : 

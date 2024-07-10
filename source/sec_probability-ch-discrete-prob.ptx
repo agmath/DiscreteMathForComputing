@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_probability-discrete-prob" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Discrete Probability and Counting</title>
+
+  <introduction>
+    <p>In our [insert cross-refernce here] chapter on counting, we encountered
+    several tools for counting the number of ways to complete a potentially 
+    complex process. If, instead of complex processes, we think about 
+    potentially complex <em>events</em>, we can use those same counting 
+    techniques to count the number of possible outcomes of an event (even the
+    number of possible outcomes satisfying some restrictive requirements).
+    We'll revisit those counting tools throughout this section (and the rest 
+    of this chapter), as we develop an ability to discuss, describe, and 
+    compute probabilities.
+    </p>
+  </introduction>
+    
+  <subsection><title>Motivation</title>
+    <p> Include a motivating example here...
+    </p>
+  </subsection>
+
+  <conclusion>
+    <p>
+      In this section you learned, and practiced with...
+    </p>
+  </conclusion>
+
+</section>
+

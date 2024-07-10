@@ -1,0 +1,11 @@
+INFO    : PreTeXt-CLI version: 2.4.2.dev20240629061947
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+WARNING : Using CLI version 2.4.2.dev20240629061947 but project's `requirements.txt`
+WARNING : is configured to use 2.4.2-->. Consider either installing
+WARNING : CLI version 2.4.2--> or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.2.dev20240629061947.
+INFO    : Running in a codespace, so using the codespace server instead of the standard python server.
+INFO    : Server will soon be available at https://glowing-space-guide-wq965xxppj3qqw-8331.app.github.dev
+INFO    : Opening browser for target `html` at https://glowing-space-guide-wq965xxppj3qqw-8331.app.github.dev/output/html in 2 seconds
+INFO    : 

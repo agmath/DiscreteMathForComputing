@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_probability-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Discrete Probability Basics</title>
+
+  <introduction>
+    <p>In life, we are almost always dealing with uncertainty. We determine 
+    what time to leave for an appointment based on what we think traffic will be like, 
+    how many red lights we expect to hit, how likely it is that we'll find a 
+    desireable parking spot, and more. While it is unlikely that you are 
+    sitting down to actually determine the probabilities associated with 
+    overly heavy traffic or finding no parking spot in your favorite parking 
+    lot, probability is what gives us the framework to assess how these events 
+    impact the risk associated with arriving late to our appointment.
+    </p>
+
+    <p>This chapter is all about computing and interpreting probabilities. 
+    In this first section, we'll begin with some information about probabilities
+    associated with basic (<em>atomic</em>) processes/events. For example, the probability 
+    of flipping a fair coin and observing heads or the probability of rolling a 
+    fair 20-sided die and observing at least a 13. We'll expand on this knowledge 
+    of probabilities of atomic events by considering combinations of events, and 
+    their probabilities. For example, "the probability of rolling a fair 20-sided 
+    die and observing at least a 13 <em>or</em> less than 3" or "the probability 
+    of flipping a coin and rolling a fair 20-sided die and observing a flip of 
+    heads <em>and</em> a roll of atleast 13". Let's dig in.
+    </p>
+  </introduction>
+    
+  <subsection><title>Probability and <em>Atomic</em> Processes</title>
+    <p>As a reminder, <em>atomic</em> processes are events which cannot
+    be decomposed into smaller, "sub"-events. For example, drawing a 
+    single marble from a bag containing some number of red, green, and blue
+    marbles is an atomic process. However, flipping a coin and drawing a marble,
+    or drawing two marbles from the bag are not atomic processes since these 
+    can each be decomposed into two subprocesses: (i) flipping the coin, and 
+    (ii) drawing the marble for the first example, or (i) drawing the first 
+    marble, and then (ii) drawing the next marble in the second exaple.
+    </p>
+
+    <p>For any event, whether the event results from an atomic process or not, 
+    we can define the probability associated with that event (outcome). We'll 
+    use the definition of probability which appears below:
+    </p>
+
+    <definition><title>[Discrete] Probability</title>
+    <statement>
+        <p>Given some discrete process <m>P</m> and some event/outcome <m>E</m>, 
+        let <m>n\left(P\right)</m> denote the total number of possible outcomes 
+        from <m>P</m>, and <m>n\left(E\right)</m> denote the total number of 
+        outcomes of <m>P</m> where the event <m>E</m> has occurred. The probability 
+        of the event <m>E</m> is then denoted and computed as follows:
+        <md><mrow>\mathcal{P}\left[E\right] = \frac{n\left(E\right)}{n\left(P\right)}</mrow></md>
+        </p>
+    </statement>
+    </definition>
+
+    <p>In the definition above, the total number of outcomes possible 
+    (<m>n\left(P\right)</m>) is sometimes referred to as the size of the 
+    <em>sample space</em>. Let's take a look at an example before you try 
+    a few exercises to check your understanding of the probability formula
+    from the definition.
+    </p>
+
+    <example><title>Rolling a fair 20-sided die</title>
+        <statement>
+            <p>Given a fair 20-sided die, find the probability of rolling 
+            at least a 13.
+            </p>
+        </statement>
+        <answer>
+            <p>Note that the process <m>P</m> is the rolling of a fair 
+            20-sided die. There are <m>20</m> outcomes possible here since rolls
+            can result in any number between 1 and 20. This means that 
+            <m>n\left(P\right) = 20</m>. 
+            </p>
+            <p> Similarly, the event <m>E</m> is that we roll at least a 13. 
+            This means that <m>n\left(E\right) = 8</m> since any outcome resulting 
+            in values 13 to 20 (includsive) satisfy <m>E</m>.
+            </p>
+            <p>From here, we can apply the formula from the definition of discrete
+            probability to discover that
+            <md><mrow>\mathcal{P}\left[E\right] &amp;= \frac{n\left(E\right)}{n\left(P\right)}</mrow>
+                <mrow> &amp;= \frac{8}{20}</mrow>
+                <mrow> &amp;= \boxed{~\frac{2}{5}~~\left(\text{ or } 40\%~\right)~}</mrow> 
+            </md>
+            </p>
+        </answer>
+    </example>
+
+    <p>Now that you've seen an example, verify your understanding by completing
+    exercises below.
+    </p>
+    
+    <exercise exercise-customization="inline" exercise-interactive="static">
+      <title>Spinning a Wheel</title><introduction>
+      </introduction><myopenmath problem="153747" />
+    </exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static">
+      <title>Drawing Cards</title><introduction>
+      </introduction><myopenmath problem="155837" />
+    </exercise>
+
+    <exercise exercise-customization="inline" exercise-interactive="static">
+        <title>Running a Red Light</title><introduction>
+        </introduction><myopenmath problem="7088" />
+    </exercise>
+
+    <p>Good work. In the next subsection, we'll see how to calculate 
+    probabilities associated with compound events. These compound events 
+    combine atomic events to allow for requirements like several events 
+    occurring simultaneously, or considering events where at least one outcome
+    criteria from a collection of desired outcomes is satisfied.
+    </p>
+  </subsection>
+
+  <subsection><title>Compound Events and their Probabilities</title>
+    <p>Consider the scenario in which we are drawing a single card from 
+    <url href="https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf">a standard 52-card deck</url>.
+    An example of an atomic event is <em>drawing the four of clubs</em>, and a 
+    separate atomic event might be the event that we <em>draw a red card</em>. 
+    We can use what we learned in the previous subsection to determine 
+    </p>
+    <md>
+      <mrow>\mathcal{P}\left[\text{four of clubs}\right] = \frac{1}{52}~~\left(~\text{or about}~1.9\%\right)</mrow>
+      <mrow>\mathcal{P}\left[\text{red card}\right] = \frac{26}{52}~~\left(~\text{or } 50\%~\right)</mrow>
+    </md>
+
+    <p>What if we aren't interested in these outcomes independently of one another?
+    Perhaps instead, we are interested in the outcome where we <em>draw the four 
+    of clubs or a red card</em>. We could also be interested in the outcome where we 
+    <em>draw the four of clubs and a red card</em>. Let's see how to calculate the 
+    probability of these two compound events below.
+    </p>
+
+    <example><title>Drawing the Four of Clubs <em>or</em> a Red Card</title>
+      <statement>
+        <p>
+          Consider a scenario in which we are drawing a single card from a 
+          well-shuffled standard deck of 52 cards. What is the probability of 
+          drawing the four of clubs <em>or</em> a red card?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          We can proceed exactly as we did with our atomic events. The probability 
+          will be the total number of ways our outcome of interest could occur, 
+          divided by the total number of outcomes possible (the size of the sample 
+          space). Since <m>P</m> is the process of drawing a single card from a 
+          52-card deck, we have <m>n\left(P\right) = 52</m>.
+        </p>
+        <p>
+          Now, there are two ways 
+          that our event of interest could occur. We could draw the four of clubs 
+          (<m>n\left(\text{draw four of clubs}\right) = 1</m>) or we could draw a 
+          red card (<m>n\left(\text{draw a red card}\right) = 26</m>). Since the four 
+          of clubs is a black card, these two sets of outcomes are disjoint (they do 
+          not overlap, and so there is no double-counting of any outcome). This means 
+          that the number of ways to draw a card in which we obtain the four of clubs
+          or a red card is <m>n\left(E\right) = 27</m>, since we can just add the sizes 
+          of the disjoint collections of events together. 
+        </p>
+        <p>
+          To obtain the probability of our event <m>E</m> (we draw the four of clubs
+          or a red card), we divide the number of ways <m>E</m> can occur by the 
+          size of the overall sample space. That is,
+          <md><mrow>\mathcal{P}\left[E\right] &amp;= \frac{n\left(E\right)}{n\left(S\right)}</mrow>
+              <mrow> &amp;= \boxed{~\frac{27}{52}~~(~\text{or about}~51.9\%~)~}</mrow>
+          </md>
+        </p>
+      </answer>
+    </example>
+  </subsection>
+
+  <conclusion>
+    <p>
+      In this section you learned, and practiced with...
+    </p>
+  </conclusion>
+
+</section>

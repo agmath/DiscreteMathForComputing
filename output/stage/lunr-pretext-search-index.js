@@ -1189,13 +1189,76 @@ var ptx_lunr_docs = [
   "body": "  Functions     In progress. This chapter will eventually include the following sections.  Functions and Their Properties  Composition of Functions and Invertibility            "
 },
 {
-  "id": "ch-probability",
+  "id": "sec_probability-basics",
   "level": "1",
-  "url": "ch-probability.html",
-  "type": "Chapter",
-  "number": "6",
-  "title": "Probability",
-  "body": "  Probability     In progress. This chapter will eventually include the following sections.  Counting and Discrete Probabilities  Discrete Probability Distributions  Queueing            "
+  "url": "sec_probability-basics.html",
+  "type": "Section",
+  "number": "6.1",
+  "title": "Discrete Probability Basics",
+  "body": " Discrete Probability Basics   In life, we are almost always dealing with uncertainty. We determine what time to leave for an appointment based on what we think traffic will be like, how many red lights we expect to hit, how likely it is that we'll find a desireable parking spot, and more. While it is unlikely that you are sitting down to actually determine the probabilities associated with overly heavy traffic or finding no parking spot in your favorite parking lot, probability is what gives us the framework to assess how these events impact the risk associated with arriving late to our appointment.  This chapter is all about computing and interpreting probabilities. In this first section, we'll begin with some information about probabilities associated with basic ( atomic ) processes\/events. For example, the probability of flipping a fair coin and observing heads or the probability of rolling a fair 20-sided die and observing at least a 13. We'll expand on this knowledge of probabilities of atomic events by considering combinations of events, and their probabilities. For example, \"the probability of rolling a fair 20-sided die and observing at least a 13 or less than 3\" or \"the probability of flipping a coin and rolling a fair 20-sided die and observing a flip of heads and a roll of atleast 13\". Let's dig in.   Probability and Atomic Processes  As a reminder, atomic processes are events which cannot be decomposed into smaller, \"sub\"-events. For example, drawing a single marble from a bag containing some number of red, green, and blue marbles is an atomic process. However, flipping a coin and drawing a marble, or drawing two marbles from the bag are not atomic processes since these can each be decomposed into two subprocesses: (i) flipping the coin, and (ii) drawing the marble for the first example, or (i) drawing the first marble, and then (ii) drawing the next marble in the second exaple.  For any event, whether the event results from an atomic process or not, we can define the probability associated with that event (outcome). We'll use the definition of probability which appears below:  [Discrete] Probability   Given some discrete process and some event\/outcome , let denote the total number of possible outcomes from , and denote the total number of outcomes of where the event has occurred. The probability of the event is then denoted and computed as follows:     In the definition above, the total number of outcomes possible ( ) is sometimes referred to as the size of the sample space . Let's take a look at an example before you try a few exercises to check your understanding of the probability formula from the definition.  Rolling a fair 20-sided die   Given a fair 20-sided die, find the probability of rolling at least a 13.    Note that the process is the rolling of a fair 20-sided die. There are outcomes possible here since rolls can result in any number between 1 and 20. This means that .  Similarly, the event is that we roll at least a 13. This means that since any outcome resulting in values 13 to 20 (includsive) satisfy .  From here, we can apply the formula from the definition of discrete probability to discover that     Now that you've seen an example, verify your understanding by completing exercises below.  Spinning a Wheel   Drawing Cards   Running a Red Light   Good work. In the next subsection, we'll see how to calculate probabilities associated with compound events. These compound events combine atomic events to allow for requirements like several events occurring simultaneously, or considering events where at least one outcome criteria from a collection of desired outcomes is satisfied.   Compound Events and their Probabilities  Consider the scenario in which we are drawing a single card from a standard 52-card deck . An example of an atomic event is drawing the four of clubs , and a separate atomic event might be the event that we draw a red card . We can use what we learned in the previous subsection to determine   What if we aren't interested in these outcomes independently of one another? Perhaps instead, we are interested in the outcome where we draw the four of clubs or a red card . We could also be interested in the outcome where we draw the four of clubs and a red card . Let's see how to calculate the probability of these two compound events below.  Drawing the Four of Clubs or a Red Card   Consider a scenario in which we are drawing a single card from a well-shuffled standard deck of 52 cards. What is the probability of drawing the four of clubs or a red card?    We can proceed exactly as we did with our atomic events. The probability will be the total number of ways our outcome of interest could occur, divided by the total number of outcomes possible (the size of the sample space). Since is the process of drawing a single card from a 52-card deck, we have .  Now, there are two ways that our event of interest could occur. We could draw the four of clubs ( ) or we could draw a red card ( ). Since the four of clubs is a black card, these two sets of outcomes are disjoint (they do not overlap, and so there is no double-counting of any outcome). This means that the number of ways to draw a card in which we obtain the four of clubs or a red card is , since we can just add the sizes of the disjoint collections of events together.  To obtain the probability of our event (we draw the four of clubs or a red card), we divide the number of ways can occur by the size of the overall sample space. That is,       In this section you learned, and practiced with...   "
+},
+{
+  "id": "sec_probability-basics-3-4",
+  "level": "2",
+  "url": "sec_probability-basics.html#sec_probability-basics-3-4",
+  "type": "Definition",
+  "number": "6.1.1",
+  "title": "[Discrete] Probability.",
+  "body": "[Discrete] Probability   Given some discrete process and some event\/outcome , let denote the total number of possible outcomes from , and denote the total number of outcomes of where the event has occurred. The probability of the event is then denoted and computed as follows:    "
+},
+{
+  "id": "sec_probability-basics-3-6",
+  "level": "2",
+  "url": "sec_probability-basics.html#sec_probability-basics-3-6",
+  "type": "Example",
+  "number": "6.1.2",
+  "title": "Rolling a fair 20-sided die.",
+  "body": "Rolling a fair 20-sided die   Given a fair 20-sided die, find the probability of rolling at least a 13.    Note that the process is the rolling of a fair 20-sided die. There are outcomes possible here since rolls can result in any number between 1 and 20. This means that .  Similarly, the event is that we roll at least a 13. This means that since any outcome resulting in values 13 to 20 (includsive) satisfy .  From here, we can apply the formula from the definition of discrete probability to discover that    "
+},
+{
+  "id": "sec_probability-basics-3-8",
+  "level": "2",
+  "url": "sec_probability-basics.html#sec_probability-basics-3-8",
+  "type": "Checkpoint",
+  "number": "6.1.3",
+  "title": "Spinning a Wheel.",
+  "body": "Spinning a Wheel  "
+},
+{
+  "id": "sec_probability-basics-3-9",
+  "level": "2",
+  "url": "sec_probability-basics.html#sec_probability-basics-3-9",
+  "type": "Checkpoint",
+  "number": "6.1.4",
+  "title": "Drawing Cards.",
+  "body": "Drawing Cards  "
+},
+{
+  "id": "sec_probability-basics-3-10",
+  "level": "2",
+  "url": "sec_probability-basics.html#sec_probability-basics-3-10",
+  "type": "Checkpoint",
+  "number": "6.1.5",
+  "title": "Running a Red Light.",
+  "body": "Running a Red Light  "
+},
+{
+  "id": "sec_probability-basics-4-5",
+  "level": "2",
+  "url": "sec_probability-basics.html#sec_probability-basics-4-5",
+  "type": "Example",
+  "number": "6.1.6",
+  "title": "Drawing the Four of Clubs <em class=\"emphasis\">or<\/em> a Red Card.",
+  "body": "Drawing the Four of Clubs or a Red Card   Consider a scenario in which we are drawing a single card from a well-shuffled standard deck of 52 cards. What is the probability of drawing the four of clubs or a red card?    We can proceed exactly as we did with our atomic events. The probability will be the total number of ways our outcome of interest could occur, divided by the total number of outcomes possible (the size of the sample space). Since is the process of drawing a single card from a 52-card deck, we have .  Now, there are two ways that our event of interest could occur. We could draw the four of clubs ( ) or we could draw a red card ( ). Since the four of clubs is a black card, these two sets of outcomes are disjoint (they do not overlap, and so there is no double-counting of any outcome). This means that the number of ways to draw a card in which we obtain the four of clubs or a red card is , since we can just add the sizes of the disjoint collections of events together.  To obtain the probability of our event (we draw the four of clubs or a red card), we divide the number of ways can occur by the size of the overall sample space. That is,    "
+},
+{
+  "id": "sec_probability-discrete-prob",
+  "level": "1",
+  "url": "sec_probability-discrete-prob.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "Discrete Probability and Counting",
+  "body": " Discrete Probability and Counting   In our [insert cross-refernce here] chapter on counting, we encountered several tools for counting the number of ways to complete a potentially complex process. If, instead of complex processes, we think about potentially complex events , we can use those same counting techniques to count the number of possible outcomes of an event (even the number of possible outcomes satisfying some restrictive requirements). We'll revisit those counting tools throughout this section (and the rest of this chapter), as we develop an ability to discuss, describe, and compute probabilities.   Motivation  Include a motivating example here...    In this section you learned, and practiced with...   "
 },
 {
   "id": "sec_arrays-ch-one-dimensional-arrays",
