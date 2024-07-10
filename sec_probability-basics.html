@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Compound Statements, Truth Tables, and Logical Equivalence</title>
+<title>Discrete Probability Basics</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -167,7 +167,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-logic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_logic-ch-boolean-algebra.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-probability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-probability.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_probability-discrete-prob.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
@@ -225,9 +225,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_sets-ch-operations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Operations with Sets</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Symbolic Logic, Boolean Algebra, and Flow Control</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Statements and Symbolic Logic</span></a></div>
 <ul class="structural toc-item-list">
@@ -236,7 +236,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-statements-and-symbolic-logic.html#sec_logic-ch-statements-and-symbolic-logic-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Summary</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic-ch-compound-statements.html#sec_logic-ch-compound-statements-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables</span></a></div></li>
@@ -297,10 +297,10 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></div></li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-probability.html" class="internal"><span class="codenumber">6</span> <span class="title">Probability</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-section">
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec_probability-basics.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Discrete Probability Basics</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_probability-basics.html#sec_probability-basics-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Probability and <em class="emphasis">Atomic</em> Processes</span></a></div></li>
@@ -339,294 +339,80 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-graphs.html" class="internal"><span class="codenumber">8</span> <span class="title">Graph Theory</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_logic-ch-compound-statements"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">Compound Statements, Truth Tables, and Logical Equivalence</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_probability-basics"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.1</span><span class="space"> </span><span class="title">Discrete Probability Basics</span>
 </h2>
-<section class="introduction" id="sec_logic-ch-compound-statements-2"><div class="para" id="sec_logic-ch-compound-statements-2-1">In the previous section we were introduced to <em class="emphasis">statements</em> and our four foundational logical operators -- the negation (<span class="process-math">\(!p\)</span>), the conjunction (<span class="process-math">\(p\land q\)</span>), the disjunction (<span class="process-math">\(p \lor q\)</span>), and the implication (<span class="process-math">\(p\to q\)</span>). We described <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> as <em class="emphasis">atomic</em> statements and these statements involving operators as <em class="emphasis">compound logical statements</em>. We also evaluated the conditions under which these compound logical statements are true by constructing tables called truth tables. A single table summarizing the results from that previous section appears below: <figure class="table table-like" id="sec_logic-ch-compound-statements-2-1-10"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\land q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\lor q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-</table></div></figure>
-</div> <div class="para" id="sec_logic-ch-compound-statements-2-2">Given your previous experience with mathematics, it likely comes as no surprise to you that we can combine our statements and logical operators together to build more complex logical statements. These more complex statements will be the focus of this section of our text.</div></section><section class="subsection" id="sec_logic-ch-compound-statements-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="space"> </span><span class="title">Truth Tables</span>
+<section class="introduction" id="sec_probability-basics-2"><div class="para" id="sec_probability-basics-2-1">In life, we are almost always dealing with uncertainty. We determine what time to leave for an appointment based on what we think traffic will be like, how many red lights we expect to hit, how likely it is that we’ll find a desireable parking spot, and more. While it is unlikely that you are sitting down to actually determine the probabilities associated with overly heavy traffic or finding no parking spot in your favorite parking lot, probability is what gives us the framework to assess how these events impact the risk associated with arriving late to our appointment.</div> <div class="para" id="sec_probability-basics-2-2">This chapter is all about computing and interpreting probabilities. In this first section, we’ll begin with some information about probabilities associated with basic (<em class="emphasis">atomic</em>) processes/events. For example, the probability of flipping a fair coin and observing heads or the probability of rolling a fair 20-sided die and observing at least a 13. We’ll expand on this knowledge of probabilities of atomic events by considering combinations of events, and their probabilities. For example, "the probability of rolling a fair 20-sided die and observing at least a 13 <em class="emphasis">or</em> less than 3" or "the probability of flipping a coin and rolling a fair 20-sided die and observing a flip of heads <em class="emphasis">and</em> a roll of atleast 13". Let’s dig in.</div></section><section class="subsection" id="sec_probability-basics-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="space"> </span><span class="title">Probability and <em class="emphasis">Atomic</em> Processes</span>
 </h3>
-<div class="para" id="sec_logic-ch-compound-statements-3-2">In both the previous section and also the introduction to this section, we’ve utilized truth tables to analyse the conditions under which our compound logical statements are <em class="emphasis">true</em> or <em class="emphasis">false</em>. We’ve used this structures without much explanation though, so we’ll take a moment to discuss them here.</div>
-<div class="para logical" id="sec_logic-ch-compound-statements-3-3">
-<div class="para">In short, a truth table is a stucture which allows us to systematically analyze truth values for logical statements. The number of rows and columns in a truth table will depend on the complexity of the logical statement to be analysed. For a logical statement that includes <span class="process-math">\(n\)</span> distinct atomic statements, a truth table with <span class="process-math">\(2^n\)</span> rows is required to capture all of the combinations of truth and falsity for each of the atomic statements. The number of columns in the truth table will vary with the number of operators in the statement. You can (and should) use the strategy below when constructing a truth table to analyze a logical statement or argument.</div>
-<ol class="decimal" id="sec_logic-ch-compound-statements-3-3-3">
-<li id="sec_logic-ch-compound-statements-3-3-3-1"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-1">Identify the number of atomic statements included in the compound logical statement.</div></li>
-<li id="sec_logic-ch-compound-statements-3-3-3-3"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-3">Build a truth table with <span class="process-math">\(2^n\)</span> rows (not including the header row), where <span class="process-math">\(n\)</span> is the number of atomic statements you identified in step 1.</div></li>
-<li id="sec_logic-ch-compound-statements-3-3-3-4"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-4">Build a column for each of the individual atomic statements.</div></li>
-<li id="sec_logic-ch-compound-statements-3-3-3-6"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-6">Look for any negation operators attached to atomic statements and build a column in the truth table for each negated atomic statement that appears.</div></li>
-<li id="sec_logic-ch-compound-statements-3-3-3-7"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-3-3-7">The order of operations for logic are: <em class="emphasis">parentheses</em>, <em class="emphasis">negations</em>, <em class="emphasis">conjunctions</em>/<em class="emphasis">disjunctions</em> (left to right), and then <em class="emphasis">implications</em>. Slowly add columns to your truth table according to this order of operations that will build up to the full compound logical statement you are analyzing.</div></li>
-</ol>
+<div class="para" id="sec_probability-basics-3-2">As a reminder, <em class="emphasis">atomic</em> processes are events which cannot be decomposed into smaller, "sub"-events. For example, drawing a single marble from a bag containing some number of red, green, and blue marbles is an atomic process. However, flipping a coin and drawing a marble, or drawing two marbles from the bag are not atomic processes since these can each be decomposed into two subprocesses: (i) flipping the coin, and (ii) drawing the marble for the first example, or (i) drawing the first marble, and then (ii) drawing the next marble in the second exaple.</div>
+<div class="para" id="sec_probability-basics-3-3">For any event, whether the event results from an atomic process or not, we can define the probability associated with that event (outcome). We’ll use the definition of probability which appears below:</div>
+<article class="definition definition-like" id="sec_probability-basics-3-4"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">[Discrete] Probability.</span>
+</h4> <div class="para logical" id="sec_probability-basics-3-4-2-1">
+<div class="para">Given some discrete process <span class="process-math">\(P\)</span> and some event/outcome <span class="process-math">\(E\text{,}\)</span> let <span class="process-math">\(n\left(P\right)\)</span> denote the total number of possible outcomes from <span class="process-math">\(P\text{,}\)</span> and <span class="process-math">\(n\left(E\right)\)</span> denote the total number of outcomes of <span class="process-math">\(P\)</span> where the event <span class="process-math">\(E\)</span> has occurred. The probability of the event <span class="process-math">\(E\)</span> is then denoted and computed as follows:</div>
+<div class="displaymath process-math" id="sec_probability-basics-3-4-2-1-9">
+\begin{gather*}
+\mathcal{P}\left[E\right] = \frac{n\left(E\right)}{n\left(P\right)}
+\end{gather*}
 </div>
-<div class="para logical" id="sec_logic-ch-compound-statements-3-4">
-<div class="para">Consider the following truth table as an example for analyzing the truth values of <span class="process-math">\(\left(p\lor !q\right)\to !r\text{.}\)</span> <figure class="table table-like" id="sec_logic-ch-compound-statements-3-4-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(r\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!r\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\lor !q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\left(p \lor !q\right)\to !r\)</span></th>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-</tr>
-</table></div></figure> Consider the following questions before trying to fill in the truth table on your own.</div>
-<ol class="decimal" id="sec_logic-ch-compound-statements-3-4-3">
-<li id="sec_logic-ch-compound-statements-3-4-3-1"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-4-3-1">Why are there 8 rows in this truth table? Is having 8 correct?</div></li>
-<li id="sec_logic-ch-compound-statements-3-4-3-2"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-4-3-2">Why isn’t there a <span class="process-math">\(!p\)</span> column if there are columns for <span class="process-math">\(!q\)</span> and <span class="process-math">\(!r\text{?}\)</span>
-</div></li>
-<li id="sec_logic-ch-compound-statements-3-4-3-3"><div class="para" id="p-derived-sec_logic-ch-compound-statements-3-4-3-3">Are 7 columns appropriate here? Can we fill in each column by looking at the truth values in at most two columns to the left of it?</div></li>
-</ol>
-<div class="para">Now fill in the remaining truth values before moving on.</div>
-</div></section><section class="subsection" id="sec_logic-ch-compound-statements-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="space"> </span><span class="title">Compound Statements and Truth Tables</span>
-</h3>
-<div class="para" id="sec_logic-ch-compound-statements-4-2">You have all the tools you need to analyze compound logical statements with the help of truth tables. As such, this subsection mainly consists of embedded example problems for you to solve. As usual, these embedded examples are interactive and will help you check your understanding. The earliest examples involve truth tables that are mostly set up for you. The final examples ask you to construct nearly all aspects of the truth tables while you build your solutions. The examples slowly build you up to being able to approach these problems independently.</div>
-<details id="sec_logic-ch-compound-statements-4-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table I.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-3-2"></div>
-<div id="momid34wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid34" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381474&amp;frame_id=momid34"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table II.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-4-2"></div>
-<div id="momid35wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid35" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381475&amp;frame_id=momid35"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table III.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-5-2"></div>
-<div id="momid36wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid36" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381477&amp;frame_id=momid36"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table IV.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-6-2"></div>
-<div id="momid37wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid37" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381480&amp;frame_id=momid37"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table V.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-7-2"></div>
-<div id="momid38wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid38" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381482&amp;frame_id=momid38"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a Truth Table VI.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-8-2"></div>
-<div id="momid39wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid39" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381487&amp;frame_id=momid39"></iframe></div></article></details><div class="para" id="sec_logic-ch-compound-statements-4-9">Now you’ll be more responsible for building your own truth table. The rows are predetermined, but you’ll need to fill in the column headings.</div>
-<details id="sec_logic-ch-compound-statements-4-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table I.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-10-2"></div>
-<div id="momid40wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid40" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381488&amp;frame_id=momid40"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table II.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-11-2"></div>
-<div id="momid41wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid41" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381494&amp;frame_id=momid41"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table III.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-12-2"></div>
-<div id="momid42wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid42" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381501&amp;frame_id=momid42"></iframe></div></article></details><details id="sec_logic-ch-compound-statements-4-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Truth Table IV.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_logic-ch-compound-statements-4-13-2"></div>
-<div id="momid43wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid43" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1381508&amp;frame_id=momid43"></iframe></div></article></details><div class="para" id="sec_logic-ch-compound-statements-4-14">How did you do with building those truth tables? Are you gaining confidence in constructing the tables and using them to evaluate the conditions under which a compound logical expression are true or false? In the next subsection, we’ll see how to use truth tables to determine whether compound logical statements are equivalent to one another.</div></section><section class="subsection" id="sec_logic-ch-compound-statements-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="space"> </span><span class="title">Logical Equivalence</span>
-</h3>
-<div class="para" id="sec_logic-ch-compound-statements-5-2">Now that we know how to evaluate logical expressions, the next natural question to ask is "when are two logical expressions equivalent to one another?". Simply put, two expressions are logically equivalent if they have exactly the same truth values under the same conditions. In terms of their truth tables, they have exactly the same combination of <em class="emphasis">trues</em> and <em class="emphasis">falses</em> in exactly the same order (as long as the atomic statements are arranged identically). This means that, if we build a truth table for each of the statements in queston, ensuring that the tables include the same atomic statements and that the truth values for those atomic statements appear in the same order, then two statements are logically equivalent if the final columns in their truth tables are identical.</div>
-<div class="para" id="sec_logic-ch-compound-statements-5-3">For example, we might consider the logical statements <span class="process-math">\(p\to q\)</span> and <span class="process-math">\(q\lor !p\text{.}\)</span> We can construct and compare their truth tables below: <figure class="table table-like" id="sec_logic-ch-compound-statements-5-3-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.13<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p \to q\)</span></th>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-</table></div></figure> and <figure class="table table-like" id="sec_logic-ch-compound-statements-5-3-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.14<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\lor !p\)</span></th>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-</table></div></figure> Notice that the final columns of the two truth tables are identical. Since <span class="process-math">\(p\to q\)</span> and <span class="process-math">\(q\lor !p\)</span> are true and false under exactly the same conditions, we have identified that they are logically equivalent. In this case, we’ll write that <span class="process-math">\(p\to q \equiv q\lor !p\text{.}\)</span>
+</div></article><div class="para" id="sec_probability-basics-3-5">In the definition above, the total number of outcomes possible (<span class="process-math">\(n\left(P\right)\)</span>) is sometimes referred to as the size of the <em class="emphasis">sample space</em>. Let’s take a look at an example before you try a few exercises to check your understanding of the probability formula from the definition.</div>
+<article class="example example-like" id="sec_probability-basics-3-6"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Rolling a fair 20-sided die.</span>
+</h4>
+<div class="para" id="sec_probability-basics-3-6-2-1">Given a fair 20-sided die, find the probability of rolling at least a 13.</div>
+<div class="solutions"><details id="sec_probability-basics-3-6-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec_probability-basics-3-6-3-1">Note that the process <span class="process-math">\(P\)</span> is the rolling of a fair 20-sided die. There are <span class="process-math">\(20\)</span> outcomes possible here since rolls can result in any number between 1 and 20. This means that <span class="process-math">\(n\left(P\right) = 20\text{.}\)</span>
+</div> <div class="para" id="sec_probability-basics-3-6-3-2">Similarly, the event <span class="process-math">\(E\)</span> is that we roll at least a 13. This means that <span class="process-math">\(n\left(E\right) = 8\)</span> since any outcome resulting in values 13 to 20 (includsive) satisfy <span class="process-math">\(E\text{.}\)</span>
+</div> <div class="para logical" id="sec_probability-basics-3-6-3-3">
+<div class="para">From here, we can apply the formula from the definition of discrete probability to discover that</div>
+<div class="displaymath process-math" id="sec_probability-basics-3-6-3-3-1">
+\begin{align*}
+\mathcal{P}\left[E\right] &amp;= \frac{n\left(E\right)}{n\left(P\right)}\\
+&amp;= \frac{8}{20}\\
+&amp;= \boxed{~\frac{2}{5}~~\left(\text{ or } 40\%~\right)~}
+\end{align*}
 </div>
-<div class="para" id="sec_logic-ch-compound-statements-5-4">Perhaps you also noticed that building two truth tables was inefficient and took up lots of space and effort. We can condense our work into a single truth table as long as we compare the columns in the truth table that correspond to our statements in question. For example, consider the truth table below as an alternative to the two tables above. <figure class="table table-like" id="sec_logic-ch-compound-statements-5-4-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.15<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(!p\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(p\to q\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(q\lor !p\)</span></th>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-<tr>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">F</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-<td class="c m b0 r0 l0 t0 lines">T</td>
-</tr>
-</table></div></figure> Notice still that the two columns corresponding to our statements, <span class="process-math">\(p\to q\)</span> and <span class="process-math">\(q\lor !p\)</span> are identical.</div>
-<div class="para" id="sec_logic-ch-compound-statements-5-5">Check your understanding in the following examples by building the truth tables and determining whether the statements are logically equivalent.</div></section></section></div>
+</div>
+</div></details></div></article><div class="para" id="sec_probability-basics-3-7">Now that you’ve seen an example, verify your understanding by completing exercises below.</div>
+<details id="sec_probability-basics-3-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Spinning a Wheel.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_probability-basics-3-8-2"></div>
+<div id="momid76wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid76" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=153747&amp;frame_id=momid76"></iframe></div></article></details><details id="sec_probability-basics-3-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Drawing Cards.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_probability-basics-3-9-2"></div>
+<div id="momid77wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid77" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=155837&amp;frame_id=momid77"></iframe></div></article></details><details id="sec_probability-basics-3-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Running a Red Light.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec_probability-basics-3-10-2"></div>
+<div id="momid78wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid78" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=7088&amp;frame_id=momid78"></iframe></div></article></details><div class="para" id="sec_probability-basics-3-11">Good work. In the next subsection, we’ll see how to calculate probabilities associated with compound events. These compound events combine atomic events to allow for requirements like several events occurring simultaneously, or considering events where at least one outcome criteria from a collection of desired outcomes is satisfied.</div></section><section class="subsection" id="sec_probability-basics-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="space"> </span><span class="title">Compound Events and their Probabilities</span>
+</h3>
+<div class="para" id="sec_probability-basics-4-2">Consider the scenario in which we are drawing a single card from <a class="external" href="https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf" target="_blank">a standard 52-card deck</a><details class="ptx-footnote" aria-live="polite" id="sec_probability-basics-4-2-2"><summary class="ptx-footnote__number" title="Footnote 1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec_probability-basics-4-2-2"><code class="code-inline tex2jax_ignore">intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf</code></div></details>. An example of an atomic event is <em class="emphasis">drawing the four of clubs</em>, and a separate atomic event might be the event that we <em class="emphasis">draw a red card</em>. We can use what we learned in the previous subsection to determine</div>
+<div class="displaymath process-math" id="sec_probability-basics-4-3">
+\begin{gather*}
+\mathcal{P}\left[\text{four of clubs}\right] = \frac{1}{52}~~\left(~\text{or about}~1.9\%\right)\\
+\mathcal{P}\left[\text{red card}\right] = \frac{26}{52}~~\left(~\text{or } 50\%~\right)
+\end{gather*}
+</div>
+<div class="para" id="sec_probability-basics-4-4">What if we aren’t interested in these outcomes independently of one another? Perhaps instead, we are interested in the outcome where we <em class="emphasis">draw the four of clubs or a red card</em>. We could also be interested in the outcome where we <em class="emphasis">draw the four of clubs and a red card</em>. Let’s see how to calculate the probability of these two compound events below.</div>
+<article class="example example-like" id="sec_probability-basics-4-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Drawing the Four of Clubs <em class="emphasis">or</em> a Red Card.</span>
+</h4>
+<div class="para" id="sec_probability-basics-4-5-2-1">Consider a scenario in which we are drawing a single card from a well-shuffled standard deck of 52 cards. What is the probability of drawing the four of clubs <em class="emphasis">or</em> a red card?</div>
+<div class="solutions"><details id="sec_probability-basics-4-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec_probability-basics-4-5-3-1">We can proceed exactly as we did with our atomic events. The probability will be the total number of ways our outcome of interest could occur, divided by the total number of outcomes possible (the size of the sample space). Since <span class="process-math">\(P\)</span> is the process of drawing a single card from a 52-card deck, we have <span class="process-math">\(n\left(P\right) = 52\text{.}\)</span>
+</div> <div class="para" id="sec_probability-basics-4-5-3-2">Now, there are two ways that our event of interest could occur. We could draw the four of clubs (<span class="process-math">\(n\left(\text{draw four of clubs}\right) = 1\)</span>) or we could draw a red card (<span class="process-math">\(n\left(\text{draw a red card}\right) = 26\)</span>). Since the four of clubs is a black card, these two sets of outcomes are disjoint (they do not overlap, and so there is no double-counting of any outcome). This means that the number of ways to draw a card in which we obtain the four of clubs or a red card is <span class="process-math">\(n\left(E\right) = 27\text{,}\)</span> since we can just add the sizes of the disjoint collections of events together.</div> <div class="para logical" id="sec_probability-basics-4-5-3-3">
+<div class="para">To obtain the probability of our event <span class="process-math">\(E\)</span> (we draw the four of clubs or a red card), we divide the number of ways <span class="process-math">\(E\)</span> can occur by the size of the overall sample space. That is,</div>
+<div class="displaymath process-math" id="sec_probability-basics-4-5-3-3-3">
+\begin{align*}
+\mathcal{P}\left[E\right] &amp;= \frac{n\left(E\right)}{n\left(S\right)}\\
+&amp;= \boxed{~\frac{27}{52}~~(~\text{or about}~51.9\%~)~}
+\end{align*}
+</div>
+</div>
+</div></details></div></article></section><section class="conclusion" id="sec_probability-basics-5"><div class="para" id="sec_probability-basics-5-1">In this section you learned, and practiced with...</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec_logic-ch-statements-and-symbolic-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_logic-ch-boolean-algebra.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-probability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_probability-discrete-prob.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
