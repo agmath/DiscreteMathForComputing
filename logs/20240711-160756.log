@@ -1,0 +1,16 @@
+INFO    : PreTeXt-CLI version: 2.4.2.dev20240629061947
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+WARNING : Using CLI version 2.4.2.dev20240629061947 but project's `requirements.txt`
+WARNING : is configured to use 2.4.2-->. Consider either installing
+WARNING : CLI version 2.4.2--> or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.2.dev20240629061947.
+INFO    : Building target html
+CRITICAL: could not load /workspaces/DiscreteMathForComputing/source/sec_probability-ch-pendance.ptx, and no fallback was found, line 27
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : ----------------------------------------------------

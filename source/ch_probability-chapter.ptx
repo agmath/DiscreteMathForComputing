@@ -24,6 +24,7 @@
   <!-- That way it is easy to include the section in a different -->
   <!-- chapter later if you change your mind about the order.    -->
   <xi:include href="./sec_probability-ch-basics.ptx" />
+  <xi:include href="./sec_probability-ch-independence-and-dependence.ptx" />
   <xi:include href="./sec_probability-ch-discrete-prob.ptx" />
   <!-- <xi:include href="./sec_sets-ch-operations.ptx" />
   <xi:include href="./sec_sets-ch-setsofsets.ptx" />

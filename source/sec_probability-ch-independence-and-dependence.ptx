@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_probability-pendance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Consecutive Events: Independence or Dependence</title>
+
+  <introduction>
+    <p>
+        In the previous section, we were interested in a single outcome 
+        associated with a single (atomic) process. We learned and practiced
+        how to compute probabilities associated with outcomes/events that were
+        determined by multiple restrictions (drawing a red card and a face card) 
+        as well as outcomes that were described by "options" (drawing a red card 
+        or a face card).
+    </p>
+    <p>
+        In this section we'll be interested in outcomes associated with distinct 
+        processes. For example, perhaps we roll a die and then draw a card from a 
+        deck. Similarly, perhaps we deal two cards from a deck rather than a single 
+        card. In this latter example, we can consider the drawing of each individual 
+        card as an atomic process). In the first example, the outcome of the die 
+        roll doesn't impact the drawing of a card -- these events are <em>independent</em>.
+        In the second example, however, the result of the first card dealt does impact 
+        the probabilities associated with what our second card will be -- the dealing 
+        of these two cards are <em>dependent</em> events.
+    </p>
+    <p>
+        Let's dig into the section to learn more and gain some practice.
+    </p>
+  </introduction>
+    
+  <subsection><title>Consecutive Events, Independence/Dependence, and Probabilities</title>
+    <p>
+      Sometimes we are interested in the probabilities of outcomes associated with 
+      several distinct processes. For example, we may want to know the probability 
+      of being dealt an two Aces
+    </p>
+  </subsection>
+
+  <conclusion>
+    <p>
+      In this section you learned, and practiced with...
+    </p>
+  </conclusion>
+
+</section>

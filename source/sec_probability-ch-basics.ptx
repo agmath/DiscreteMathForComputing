@@ -171,6 +171,112 @@
         </p>
       </answer>
     </example>
+
+    <example><title>Drawing the Four of Clubs <em>and</em> a Red Card</title>
+      <statement>
+        <p>
+          Consider a scenario in which we are drawing a single card from a 
+          well-shuffled standard deck of 52 cards. What is the probability of 
+          drawing the four of clubs <em>and</em> that card is a red card?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Since the four of clubs is a black card, there are <m>0</m> ways in 
+          which we can observe an outcome where the card we draw is both the 
+          four of clubs and is a red card (the event <m>E</m>). Using the our definiton of the 
+          probability of an event, we have:
+          <md>
+            <mrow>\mathcal{P}\left[E\right] &amp;= \frac{n\left(E\right)}{n\left(S\right)}</mrow>
+            <mrow> &amp;= \frac{0}{52}</mrow>
+            <mrow> &amp;= \boxed{~0~~\left(\text{ or } 0\%~\right)~}</mrow>
+          </md>
+        </p>
+      </answer>
+    </example>
+
+    <p>
+      These examples were quite straight-forward. Let's take a look at two 
+      additional examples before you verify your understanding with some 
+      checkpoint exercises.
+    </p>
+
+    <example><title>Drawing a Red, Face Card</title>
+      <statement>
+        <p>
+          Consider a scenario in which we are drawing a single card from a 
+          well-shuffled standard deck of 52 cards. What is the probability of 
+          drawing a red, face-card from the deck?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Note that our event <m>E</m>, of drawing a red, face-card could be
+          restated as "the event that we draw a red card <em>and</em> that card
+          is also a face card". Recall that face-cards in a deck are the Jacks, 
+          Queens, and Kings. This means that there are <m>12</m> total face cards
+          in the deck. We also know from an earlier example that there are <m>26</m> red 
+          cards in the deck. However, only six of the face cards are red. This means 
+          that there are <m>6</m> ways in which we can observe our event <m>E</m> 
+          as the outcome of drawing a single card from a 52-card deck.
+        </p>
+        <p>
+          Using our definition of probability, we can compute:
+          <md>
+            <mrow>\mathcal{P}\left[E\right] &amp;= \frac{n\left(E\right)}{n\left(S\right)}</mrow>
+            <mrow> &amp;= \frac{6}{52}</mrow>
+            <mrow> &amp;= \boxed{~\frac{3}{26}~~\left(\text{ or about } 11.5\%~}</mrow>
+          </md>
+        </p>
+        </answer>
+    </example>
+
+    <example><title>Drawing a Red Card or a Face Card</title>
+      <statement>
+        <p>
+          Consider the same scenario in which we are drawing a single card from a 
+          well-shuffled standard deck of 52 cards. What is the probability of 
+          drawing a red card or a face-card from the deck?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          As in the previous example, the face-cards in a deck are the Jacks, 
+          Queens, and Kings. This means that there are <m>12</m> total face cards
+          in the deck. Similarly, we know that there are <m>26</m> red cards in
+          the deck.
+        </p>
+        <p>
+          The problem we encounter here is that some of those face cards are also 
+          red cards. If we were to just add the <m>12</m> face cards to the <m>26</m>
+          red cards, we would be double-counting all of the red, face-cards. To 
+          remove this double counting, we'll subtract out the number of red, face-cards. 
+          That is,
+          <md>
+            <mrow> n\left(\text{red or face}\right) &amp;= n\left(red\right) + n\left(\text{face}\right) - n\left(\text{red and face}\right)</mrow>
+            <mrow> &amp;= 26 + 12 - 6</mrow>
+            <mrow> &amp;= 32</mrow>
+          </md>
+        </p>
+        <p>
+          Now we can use our definition to compute the probability:
+          <md>
+            <mrow>\mathcal{P}\left[\text{red or face}\right] &amp;= \frac{n\left(\text{red or face}\right)}{n\left(S\right)}</mrow>
+            <mrow> &amp;= \frac{32}{52}</mrow>
+            <mrow> &amp;= \boxed{~\frac{8}{13}~~\left(\text{ or about } 61.5\%~}</mrow>
+          </md>
+        </p>
+        </answer>
+    </example>
+
+  </subsection>
+
+ <subsection><title>Consecutive Events, Independence/Dependence, and Probabilities</title>
+    <p>
+      Sometimes we are interested in the probabilities of outcomes associated with 
+      several distinct processes. For example, we may want to know the probability 
+      of being dealt an two Aces
+    </p>
   </subsection>
 
   <conclusion>
