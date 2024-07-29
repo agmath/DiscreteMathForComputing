@@ -197,8 +197,10 @@
 
     <p>
       These examples were quite straight-forward. Let's take a look at two 
-      additional examples before you verify your understanding with some 
-      checkpoint exercises.
+      additional examples that highlight some of the intricacies involved  
+      in counting outcomes to determine probabilities of events. After reading 
+      through these completed examples, you'll have an opportunity to check 
+      your understanding with a few checkpoint exercises.
     </p>
 
     <example><title>Drawing a Red, Face Card</title>
@@ -225,7 +227,7 @@
           <md>
             <mrow>\mathcal{P}\left[E\right] &amp;= \frac{n\left(E\right)}{n\left(S\right)}</mrow>
             <mrow> &amp;= \frac{6}{52}</mrow>
-            <mrow> &amp;= \boxed{~\frac{3}{26}~~\left(\text{ or about } 11.5\%~}</mrow>
+            <mrow> &amp;= \boxed{~\frac{3}{26}~~\left(\text{ or about } 11.5\%\right)~}</mrow>
           </md>
         </p>
         </answer>
@@ -263,20 +265,51 @@
           <md>
             <mrow>\mathcal{P}\left[\text{red or face}\right] &amp;= \frac{n\left(\text{red or face}\right)}{n\left(S\right)}</mrow>
             <mrow> &amp;= \frac{32}{52}</mrow>
-            <mrow> &amp;= \boxed{~\frac{8}{13}~~\left(\text{ or about } 61.5\%~}</mrow>
+            <mrow> &amp;= \boxed{~\frac{8}{13}~~\left(\text{ or about } 61.5\%\right)~}</mrow>
           </md>
         </p>
         </answer>
     </example>
 
-  </subsection>
-
- <subsection><title>Consecutive Events, Independence/Dependence, and Probabilities</title>
-    <p>
-      Sometimes we are interested in the probabilities of outcomes associated with 
-      several distinct processes. For example, we may want to know the probability 
-      of being dealt an two Aces
+    <p> 
+      Notice in the example where we calculated the probability of being dealt 
+      a red, face card we had to limit the event space we were interested. It 
+      wasn't so simple as identifying the number of face cards or the number of 
+      red cards -- we needed to consider both criteria in counting the number 
+      of outcomes satisfying our event of interest. 
     </p>
+    <p>
+      Similarly, in the example that followed, we wanted to know the probability 
+      of being dealt a red card <em>or</em> a face card. In this scenario, we 
+      also needed to take extra care in counting the number of outcomes of 
+      interest. We would have double-counted the red, face cards if we simply 
+      added the number of red cards to the number of face cards. This is because 
+      the red, face cards were included in both groups. The strategy we used in 
+      reducing the overcounting is often referred to as the <em>Principle of 
+      Inclusion and Exclusion</em>, which we'll formalize below.
+    </p>
+
+    <definition><title>Principle of Inclusion and Exclusion (PIE)</title> 
+      <statement>
+        <p>
+          The <em>Principal of Inclusion and Exclusion</em> is a counting 
+          technique which can be utilized to count the number of items in a 
+          union of sets, whether those sets are disjoint (non-overlapping) or 
+          not. This counting method extends to the union between any number 
+          sets. We'll show the two- and three-set forms below:
+          <md>
+            <mrow>\left|A \cup B\right| &amp;=  \left|A\right| + \left|B\right| - \left|A \cap B\right|</mrow>
+            <mrow> \left|A\cup B\cup C\right| &amp; = \left|A\right| + \left|B\right| + \left|C\right| - \left(\left|A\cap B\right| + \left|A\cap C\right| + \left|B\cap C\right|\right) + \left|A\cap B\cap C\right|</mrow>
+          </md> 
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Now, check your understanding with the following checkpoint questions.
+    </p>
+
+    
   </subsection>
 
   <conclusion>
