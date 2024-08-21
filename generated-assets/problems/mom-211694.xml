@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="211694">
 <statement>
 <p>
-Suppose that <m>\displaystyle{A}={\left\lbrace{4},{5},{6},{7}\right\rbrace}</m> and  <m>\displaystyle{B}={\left\lbrace{4},{5},{6},{7}\right\rbrace}</m>. Label each of the following as true or false.
+Suppose that <m>\displaystyle{A}={\left\lbrace{2},{3},{5},{8}\right\rbrace}</m> and  <m>\displaystyle{B}={\left\lbrace{2},{3},{5},{8}\right\rbrace}</m>. Label each of the following as true or false.
 </p>
 <p>
 <m>\displaystyle{A}\subseteq{B}</m> </p>

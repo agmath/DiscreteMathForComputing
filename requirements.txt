@@ -1,1 +1,1 @@
-pretextbook == 2.6.2
+pretextbook == "2.6.2"

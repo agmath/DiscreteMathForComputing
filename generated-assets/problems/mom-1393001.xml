@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1393001">
 <statement>
-<p>A club needs to select a president, a vice president, and a secretary from a group of 6 candidates. In how many different ways can these three positions be filled?</p>
+<p>A club needs to select a president, a vice preseident, a secretary, a treasurer, and a member at large from a group of 6 candidates. In how many different ways can these three positions be filled?</p>
 <p>There are <fillin characters="20" /> different ways to fill the leadership positions.</p>
 
 </statement>
 <solution>
-<p><ul><li>120</li></ul></p>
+<p><ul><li>720</li></ul></p>
 </solution>
 </myopenmath>
 

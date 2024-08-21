@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1392644">
 <statement>
-<p>A pizza shop offers 5 types of crusts, 6 types of sauces, and 7 types of toppings. How many different pizza combinations can you create if you choose one crust, one sauce, and one topping?
+<p>A pizza shop offers 3 types of crusts, 4 types of sauces, and 8 types of toppings. How many different pizza combinations can you create if you choose one crust, one sauce, and one topping?
 </p>
   
 <p>There are <fillin characters="8" />Preview Question 1    total different pizzas that could be created.</p>
@@ -9,7 +9,7 @@
 
 </statement>
 <solution>
-<p><ul><li>210</li></ul></p>
+<p><ul><li>96</li></ul></p>
 </solution>
 </myopenmath>
 

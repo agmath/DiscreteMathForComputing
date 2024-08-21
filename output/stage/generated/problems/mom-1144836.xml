@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1144836">
 <statement>
-<p>In an attempt to clean up your room, you have purchased a new floating shelf to put some of your 17 books you have stacked in a corner. These books are all by different authors. The new book shelf is large enough to hold 10 of the books.
+<p>In an attempt to clean up your room, you have purchased a new floating shelf to put some of your 17 books you have stacked in a corner. These books are all by different authors. The new book shelf is large enough to hold 12 of the books.
   </p>
 <p>
-  a. How many ways can you select and arrange 10 of the 17 books on the shelf? Notice that here will allow the books to end up in any order. <fillin characters="20" /> ways.
+  a. How many ways can you select and arrange 12 of the 17 books on the shelf? Notice that here will allow the books to end up in any order. <fillin characters="20" /> ways.
   </p>
 <p>
-  b. How many ways can you select and arrange 10 of the 17 books on the shelf if you insist they must be arranged alphabetically by author?. <fillin characters="20" /> ways.
+  b. How many ways can you select and arrange 12 of the 17 books on the shelf if you insist they must be arranged alphabetically by author?. <fillin characters="20" /> ways.
   </p>
 <p>
   c. What is the difference (if any) of how you apporached the two problems? </p>
-<p><ol style="list-style-type:upper-alpha"><li>They are both combinations</li> 
-<li>They are both permutations</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Part a is a permutation while part b is a combination</li> 
 <li>Part a is a combination while part b is a permutation</li> 
-<li>Part a is a permutation while part b is a combination</li> 
+<li>They are both combinations</li> 
+<li>They are both permutations</li> 
 </ol></p>
 
 
 </statement>
 <solution>
-<p><ul><li>70572902400</li><li>19448</li><li>D: Part a is a permutation while part b is a combination</li></ul></p>
+<p><ul><li>2964061900800</li><li>6188</li><li>A: Part a is a permutation while part b is a combination</li></ul></p>
 </solution>
 </myopenmath>
 

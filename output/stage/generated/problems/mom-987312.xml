@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="987312">
 <statement>
 <p>
-Compute <m>\displaystyle{\left[\begin{array}{c} {1}\\{7}\\-{3}\\{3}\\-{8}\end{array}\right]}-{\left[\begin{array}{c} -{7}\\{4}\\{10}\\{0}\\-{5}\end{array}\right]}</m></p>
+Compute <m>\displaystyle{\left[\begin{array}{c} {10}\\-{9}\\{3}\\{7}\\{6}\end{array}\right]}-{\left[\begin{array}{c} {10}\\{6}\\{1}\\-{2}\\-{9}\end{array}\right]}</m></p>
 <p>
 <fillin characters="20" />Preview Question 1   
 </p>
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{\left[\begin{array}{c} {8}\\{3}\\-{13}\\{3}\\-{3}\end{array}\right]}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{c} {0}\\-{15}\\{2}\\{9}\\{15}\end{array}\right]}</m></li></ul></p>
 </solution>
 </myopenmath>
 

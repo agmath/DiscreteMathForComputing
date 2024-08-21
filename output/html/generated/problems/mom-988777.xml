@@ -2,14 +2,14 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988777">
 <statement>
 <p>
-Compute the inner product between the two arrays <m>\displaystyle{\left[\begin{array}{c} {3}\\{2}\end{array}\right]}</m> and <m>\displaystyle{\left[\begin{array}{c} -{10}\\-{7}\end{array}\right]}</m>.
+Compute the inner product between the two arrays <m>\displaystyle{\left[\begin{array}{c} {6}\\-{4}\end{array}\right]}</m> and <m>\displaystyle{\left[\begin{array}{c} {0}\\{3}\end{array}\right]}</m>.
 </p>
 <p>
-  inner<underscore/>product(<m>\displaystyle{\left[\begin{array}{c} {3}\\{2}\end{array}\right]}</m>, <m>\displaystyle{\left[\begin{array}{c} -{10}\\-{7}\end{array}\right]}</m>) = <fillin characters="20" /> 
+  inner<underscore/>product(<m>\displaystyle{\left[\begin{array}{c} {6}\\-{4}\end{array}\right]}</m>, <m>\displaystyle{\left[\begin{array}{c} {0}\\{3}\end{array}\right]}</m>) = <fillin characters="20" /> 
 </p>
 </statement>
 <solution>
-<p><ul><li>-44</li></ul></p>
+<p><ul><li>-12</li></ul></p>
 </solution>
 </myopenmath>
 

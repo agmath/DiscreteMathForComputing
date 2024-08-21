@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="989418">
 <statement>
 <p>
-Compute the outer-product, <m>\displaystyle{\left[\begin{array}{c} {2}\\-{10}\end{array}\right]}\cdot{\left({\left[\begin{array}{c} -{6}\\{3}\\-{7}\end{array}\right]}\right)}^{{T}}</m></p>
+Compute the outer-product, <m>\displaystyle{\left[\begin{array}{c} {9}\\-{9}\\-{9}\end{array}\right]}\cdot{\left({\left[\begin{array}{c} {8}\\-{6}\\{3}\end{array}\right]}\right)}^{{T}}</m></p>
 <p><fillin characters="20" />Preview Question 1   </p>
 
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{\left[\begin{array}{ccc} -{12}\amp{6}\amp-{14}\\{60}\amp-{30}\amp{70}\end{array}\right]}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{ccc} {72}\amp-{54}\amp{27}\\-{72}\amp{54}\amp-{27}\\-{72}\amp{54}\amp-{27}\end{array}\right]}</m></li></ul></p>
 </solution>
 </myopenmath>
 

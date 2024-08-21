@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="983749">
 <statement>
-<p>At a pizza parlor, the lunch special comes with your choice of a pizza slice, a salad and a drink. There are <m>\displaystyle{4}</m> pizza slice options, <m>\displaystyle{6}</m> salad options, and <m>\displaystyle{5}</m> soda options.
+<p>At a pizza parlor, the lunch special comes with your choice of a pizza slice, a salad and a drink. There are <m>\displaystyle{8}</m> pizza slice options, <m>\displaystyle{6}</m> salad options, and <m>\displaystyle{5}</m> soda options.
   </p>
 <p>
   (a)  <em>How many different ways</em> are there to choose a lunch special combination?
@@ -10,14 +10,14 @@
   <fillin characters="3" />Preview Question 1 Part 1 of 2   
   </p>
 <p>
-  (b)  Salomé likes 2 of the pizza options, 3 of the salad options, and 4 of the drink options. If Salomé randomly selects a lunch special, <em>what is the probability</em> that it will be a combination where she likes all three choices?
+  (b)  Latasha likes 2 of the pizza options, 4 of the salad options, and 1 of the drink options. If Latasha randomly selects a lunch special, <em>what is the probability</em> that it will be a combination where she likes all three choices?
   </p>
 <p>
   <fillin characters="3" />Preview Question 1 Part 2 of 2    <em>Give the probability as a fraction or as a decimal rounded to four decimal places.</em></p>
 
 </statement>
 <solution>
-<p><ul><li>120</li><li><m>\displaystyle\frac{{1}}{{5}}</m></li></ul></p>
+<p><ul><li>240</li><li><m>\displaystyle\frac{{1}}{{30}}</m></li></ul></p>
 </solution>
 </myopenmath>
 

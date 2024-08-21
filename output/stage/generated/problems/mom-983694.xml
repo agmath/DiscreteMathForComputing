@@ -35,19 +35,19 @@ Consider the routine below which sorts the input array (very inefficiently). Det
 </p>
 <p>
 The algorithm as written above has a run-time complexity of </p>
-<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({2}^{{n}}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({n}!\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({2}^{{n}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({n}^{{3}}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{3}}\right)}</m></li> 
 </ol></p>
  
 
 </statement>
 <solution>
-<p><ul><li>B: <m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li></ul></p>
+<p><ul><li>C: <m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li></ul></p>
 </solution>
 </myopenmath>
 

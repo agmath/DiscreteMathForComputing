@@ -3,18 +3,18 @@
 <statement>
 <p>
 Let <m>\displaystyle{U}</m> be the universal set, where: </p>
-<p><m>\displaystyle{U}={\left\lbrace{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14}\right\rbrace}</m></p>
+<p><m>\displaystyle{U}={\left\lbrace{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20}\right\rbrace}</m></p>
 <p> Let sets <m>\displaystyle{A}</m>, <m>\displaystyle{B}</m>, and <m>\displaystyle{C}</m> be subsets of <m>\displaystyle{U}</m>, where:</p>
 <p>
-<m>\displaystyle{A}={\left\lbrace{3},{7},{8},{10},{12},{13}\right\rbrace}</m> </p>
-<p> <m>\displaystyle{B}={\left\lbrace{10},{11},{12},{14}\right\rbrace}</m>  </p>
-<p> <m>\displaystyle{C}={\left\lbrace{2},{3},{5},{6},{11},{12}\right\rbrace}</m></p>
+<m>\displaystyle{A}={\left\lbrace{3},{8},{9},{10},{16},{17}\right\rbrace}</m> </p>
+<p> <m>\displaystyle{B}={\left\lbrace{2},{13},{16},{17}\right\rbrace}</m>  </p>
+<p> <m>\displaystyle{C}={\left\lbrace{3},{7},{11},{13},{15},{18}\right\rbrace}</m></p>
 <p>
 Find the following:</p>
 <p>
-LIST the elements in  the set <m>\displaystyle{C}^{{c}}\cup\emptyset</m> :
+LIST the elements in  the set <m>\displaystyle{B}^{{c}}\cup\emptyset</m> :
 </p>
-<p> <m>\displaystyle{C}^{{c}}\cup\emptyset</m> = <lbrace/> <fillin characters="50" /> <rbrace/>
+<p> <m>\displaystyle{B}^{{c}}\cup\emptyset</m> = <lbrace/> <fillin characters="50" /> <rbrace/>
 </p>
 <p>Enter the elements as a list, separated by commas. If the result is the empty set, enter <em>DNE</em></p>
 <p>
@@ -24,15 +24,15 @@ LIST the elements in  the set <m>\displaystyle{B}\cap{C}</m> :
 </p>
 <p>Enter the elements as a list, separated by commas. If the result is the empty set, enter <em>DNE</em></p>
 <p>
-LIST the elements in  the set <m>\displaystyle{B}^{{c}}\cup{C}</m> :
+LIST the elements in  the set <m>\displaystyle{B}^{{c}}\cup{A}</m> :
 </p>
-<p> <m>\displaystyle{B}^{{c}}\cup{C}</m> = <lbrace/> <fillin characters="50" /> <rbrace/>
+<p> <m>\displaystyle{B}^{{c}}\cup{A}</m> = <lbrace/> <fillin characters="50" /> <rbrace/>
 </p>
 <p>Enter the elements as a list, separated by commas. If the result is the empty set, enter <em>DNE</em></p>
 <p>
-LIST the elements in  the set <m>\displaystyle{\left({A}\cap{C}\right)}\cap{B}^{{c}}</m> :
+LIST the elements in  the set <m>\displaystyle{\left({A}\cap{B}\right)}\cap{C}^{{c}}</m> :
 </p>
-<p> <m>\displaystyle{\left({A}\cap{C}\right)}\cap{B}^{{c}}</m> = <lbrace/> <fillin characters="50" /> <rbrace/>
+<p> <m>\displaystyle{\left({A}\cap{B}\right)}\cap{C}^{{c}}</m> = <lbrace/> <fillin characters="50" /> <rbrace/>
 </p>
 <p>Enter the elements as a list, separated by commas. If the result is the empty set, enter <em>DNE</em></p>
 <p>
@@ -40,7 +40,7 @@ You may want to draw a Venn Diagram to help answer this question.
 </p>
 </statement>
 <solution>
-<p><ul><li>1,4,7,8,9,10,13,14</li><li>11,12</li><li>1,2,3,4,5,6,7,8,9,11,12,13</li><li>3</li></ul></p>
+<p><ul><li>1,3,4,5,6,7,8,9,10,11,12,14,15,18,19,20</li><li>13</li><li>1,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20</li><li>16,17</li></ul></p>
 </solution>
 </myopenmath>
 

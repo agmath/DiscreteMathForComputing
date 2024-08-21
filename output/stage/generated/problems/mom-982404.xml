@@ -18,13 +18,13 @@
   
   </p>
 <p>
-  Ignoring the operations to initialize total, to set up the for loop, and to return the result, how many operations must be completed when the function is run with myArray = <lbracket/>79, 66, 82, 74, 54, 87, 66, 88, 66, 49, 50, 43<rbracket/>?</p>
+  Ignoring the operations to initialize total, to set up the for loop, and to return the result, how many operations must be completed when the function is run with myArray = <lbracket/>76, 39, 69, 69, 93, 28, 37, 89, 99, 90<rbracket/>?</p>
 <p><fillin characters="20" />
 
 </p>
 </statement>
 <solution>
-<p><ul><li>12</li></ul></p>
+<p><ul><li>10</li></ul></p>
 </solution>
 </myopenmath>
 

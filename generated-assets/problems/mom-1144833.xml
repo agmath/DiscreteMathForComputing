@@ -2,17 +2,17 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1144833">
 <statement>
 <p>
-A pizza parlor offers 10 different toppings.</p>
+A pizza parlor offers 12 different toppings.</p>
 <p>
-a. How many 4-topping pizzas could they put on their menu? Assume double toppings are not allowed. <fillin characters="10" /> pizzas.</p>
+a. How many 2-topping pizzas could they put on their menu? Assume double toppings are not allowed. <fillin characters="10" /> pizzas.</p>
 <p>
-b. How many total pizzas are possible, with between zero and ten toppings (but not double toppings) allowed? <fillin characters="10" /> pizzas.</p>
+b. How many total pizzas are possible, with between zero and twelve toppings (but not double toppings) allowed? <fillin characters="10" /> pizzas.</p>
 <p>
-c. The pizza parlor will list the ten toppings in two equal-sized columns on their menu. How many ways can they arrange the toppings in the left column? <fillin characters="10" /> ways.
+c. The pizza parlor will list the twelve toppings in two equal-sized columns on their menu. How many ways can they arrange the toppings in the left column? <fillin characters="10" /> ways.
 </p>
 </statement>
 <solution>
-<p><ul><li>210</li><li>1024</li><li>30240</li></ul></p>
+<p><ul><li>66</li><li>4096</li><li>665280</li></ul></p>
 </solution>
 </myopenmath>
 

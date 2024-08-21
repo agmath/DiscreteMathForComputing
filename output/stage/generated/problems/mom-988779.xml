@@ -2,14 +2,14 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988779">
 <statement>
 <p>
-Compute the inner product between the two arrays <m>\displaystyle{\left[\begin{array}{c} -{10}\\{5}\\{3}\end{array}\right]}</m> and <m>\displaystyle{\left[\begin{array}{c} -{3}\\{2}\\{3}\end{array}\right]}</m>.
+Compute the inner product between the two arrays <m>\displaystyle{\left[\begin{array}{c} {2}\\{9}\\-{9}\end{array}\right]}</m> and <m>\displaystyle{\left[\begin{array}{c} -{8}\\-{8}\\{10}\end{array}\right]}</m>.
 </p>
 <p>
-  inner<underscore/>product( <m>\displaystyle{\left[\begin{array}{c} -{10}\\{5}\\{3}\end{array}\right]}</m>, <m>\displaystyle{\left[\begin{array}{c} -{3}\\{2}\\{3}\end{array}\right]}</m>) = <fillin characters="20" />
+  inner<underscore/>product( <m>\displaystyle{\left[\begin{array}{c} {2}\\{9}\\-{9}\end{array}\right]}</m>, <m>\displaystyle{\left[\begin{array}{c} -{8}\\-{8}\\{10}\end{array}\right]}</m>) = <fillin characters="20" />
 </p>
 </statement>
 <solution>
-<p><ul><li>49</li></ul></p>
+<p><ul><li>-178</li></ul></p>
 </solution>
 </myopenmath>
 

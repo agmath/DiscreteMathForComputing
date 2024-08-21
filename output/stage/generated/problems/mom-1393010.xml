@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1393010">
 <statement>
-<p>A track team has 15 runners. The coach needs to choose 3 of them to run in a specific order for a relay race. How many different ways can the coach select and arrange these 3 runners?</p>
+<p>A track team has 14 runners. The coach needs to choose 3 of them to run in a specific order for a relay race. How many different ways can the coach select and arrange these 3 runners?</p>
 <p>There are <fillin characters="20" /> different ways for the coach to design the relay team.</p>
 
 </statement>
 <solution>
-<p><ul><li>2730</li></ul></p>
+<p><ul><li>2184</li></ul></p>
 </solution>
 </myopenmath>
 

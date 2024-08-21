@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1201793">
 <statement>
-<p>There are 47 members on the board of directors for a certain non-profit institution.</p>
+<p>There are 30 members on the board of directors for a certain non-profit institution.</p>
 <p>a)  If they must elect a​ chairperson, first vice​ chairperson, second vice​ chairperson, and​ secretary, how many different slates of candidates are​ possible?</p>
 <p style="padding-left: 40px;"><fillin characters="6" /></p>
 <p style="padding-left: 40px;">  </p>
@@ -11,10 +11,10 @@
 
 </statement>
 <solution>
-<p><ul><li>4280760</li><li>178365</li></ul></p><p>a)  Because there are specific titles that people get elected to, the order matters.  There is no repetition (a person selected as chairperson does not also get selected as a vice chairperson, etc.)  Therefore we use the permutation formula with the 47 members and 4 titles.</p>
-<p>= permut(47, 4) = 4280760</p>
-<p>b)  In a committee, the order of people does not matter (they do not have specific titles or jobs). There is no repetition (4 different people are selected). Therefore we use the combination formula with the 47 members and 4 people selected.</p>
-<p>= combin(47, 4) = 178365</p>
+<p><ul><li>657720</li><li>27405</li></ul></p><p>a)  Because there are specific titles that people get elected to, the order matters.  There is no repetition (a person selected as chairperson does not also get selected as a vice chairperson, etc.)  Therefore we use the permutation formula with the 30 members and 4 titles.</p>
+<p>= permut(30, 4) = 657720</p>
+<p>b)  In a committee, the order of people does not matter (they do not have specific titles or jobs). There is no repetition (4 different people are selected). Therefore we use the combination formula with the 30 members and 4 people selected.</p>
+<p>= combin(30, 4) = 27405</p>
 </solution>
 </myopenmath>
 

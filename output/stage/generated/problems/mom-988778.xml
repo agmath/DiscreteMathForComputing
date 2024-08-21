@@ -2,14 +2,14 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988778">
 <statement>
 <p>
-Compute the inner product between the two arrays <m>\displaystyle{\left[\begin{array}{c} {0}\\-{1}\\-{7}\\{4}\end{array}\right]}</m> and <m>\displaystyle{\left[\begin{array}{c} {2}\\-{10}\\{8}\\{4}\end{array}\right]}</m>.
+Compute the inner product between the two arrays <m>\displaystyle{\left[\begin{array}{c} -{4}\\-{6}\\-{8}\\{10}\end{array}\right]}</m> and <m>\displaystyle{\left[\begin{array}{c} -{5}\\-{8}\\-{7}\\{4}\end{array}\right]}</m>.
 </p>
 <p>
-  inner<underscore/>product(<m>\displaystyle{\left[\begin{array}{c} {0}\\-{1}\\-{7}\\{4}\end{array}\right]}</m>, <m>\displaystyle{\left[\begin{array}{c} {2}\\-{10}\\{8}\\{4}\end{array}\right]}</m>) = <fillin characters="20" />
+  inner<underscore/>product(<m>\displaystyle{\left[\begin{array}{c} -{4}\\-{6}\\-{8}\\{10}\end{array}\right]}</m>, <m>\displaystyle{\left[\begin{array}{c} -{5}\\-{8}\\-{7}\\{4}\end{array}\right]}</m>) = <fillin characters="20" />
 </p>
 </statement>
 <solution>
-<p><ul><li>-30</li></ul></p>
+<p><ul><li>164</li></ul></p>
 </solution>
 </myopenmath>
 
