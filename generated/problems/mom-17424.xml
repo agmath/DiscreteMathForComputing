@@ -2,9 +2,9 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="17424">
 <statement>
 <p>
-Let A = <lbrace/>3, 4, 8, 9<rbrace/> and B = <lbrace/>3, 4, 10<rbrace/>.  Indicate if each statement is true or false.</p>
+Let A = <lbrace/>3, 4, 6, 8, 9, 10<rbrace/> and B = <lbrace/>3, 9, 10<rbrace/>.  Indicate if each statement is true or false.</p>
 <p>
-<m>\displaystyle{4}\in{A}</m> </p>
+<m>\displaystyle{10}\in{A}</m> </p>
 <p><ol style="list-style-type:upper-alpha"><li>True</li> 
 <li>False</li> 
 </ol></p>
@@ -17,7 +17,7 @@ Let A = <lbrace/>3, 4, 8, 9<rbrace/> and B = <lbrace/>3, 4, 10<rbrace/>.  Indica
 
 </statement>
 <solution>
-<p><ul><li>A: True</li><li>B: False</li></ul></p>
+<p><ul><li>A: True</li><li>A: True</li></ul></p>
 </solution>
 </myopenmath>
 

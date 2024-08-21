@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="281568">
 <statement>
 <p>
-List the set of numbers greater than 8 and less than 15.</p>
+List the set of numbers greater than 6 and less than 13.</p>
 <p>
 <lbrace/><fillin characters="20" /><rbrace/>
 </p>
 </statement>
 <solution>
-<p><ul><li>9,10,11,12,13,14</li></ul></p>
+<p><ul><li>7,8,9,10,11,12</li></ul></p>
 </solution>
 </myopenmath>
 

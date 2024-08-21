@@ -40,19 +40,19 @@ def matrix<underscore/>product(A, B):</p>
 <p>
 Let <m>\displaystyle{m}{A}</m> denote the number of rows in matrix <m>\displaystyle{A}</m>, <m>\displaystyle{n}{A}</m> denote the number of columns in <m>\displaystyle{A}</m>, <m>\displaystyle{m}{B}</m> denote the number of rows in <m>\displaystyle{B}</m>, and <m>\displaystyle{n}{B}</m> denote the number of columns in <m>\displaystyle{B}</m>. Which expression best defines the run-time complexity of the matrix multiplication alrorithm, using big-O notation? </p>
 <p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({m}{A}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}{A}+{n}{A}+{n}{B}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({m}{A}\cdot{n}{A}\cdot{n}{B}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({m}{A}^{{2}}\cdot{n}{B}^{{2}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({n}{B}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({m}{A}\cdot{n}{B}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({m}{A}+{n}{B}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({m}{A}+{n}{A}+{n}{B}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}{B}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}{A}+{n}{B}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}{A}\cdot{n}{B}\right)}</m></li> 
 </ol></p>
  
 
 </statement>
 <solution>
-<p><ul><li>B: <m>\displaystyle{O}{\left({m}{A}\cdot{n}{A}\cdot{n}{B}\right)}</m></li></ul></p>
+<p><ul><li>C: <m>\displaystyle{O}{\left({m}{A}\cdot{n}{A}\cdot{n}{B}\right)}</m></li></ul></p>
 </solution>
 </myopenmath>
 

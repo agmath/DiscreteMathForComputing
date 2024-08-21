@@ -2,22 +2,22 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="211694">
 <statement>
 <p>
-Suppose that <m>\displaystyle{A}={\left\lbrace{2},{3},{5},{8}\right\rbrace}</m> and  <m>\displaystyle{B}={\left\lbrace{2},{3},{5},{8}\right\rbrace}</m>. Label each of the following as true or false.
+Suppose that A is the set of all animals and C is the set of all cats. Label each of the following as true or false.
 </p>
 <p>
-<m>\displaystyle{A}\subseteq{B}</m> </p>
+<m>\displaystyle{A}\subseteq{C}</m> </p>
 <p><ol style="list-style-type:upper-alpha"><li> true</li> 
 <li> false</li> 
 </ol></p>
 <p>
-<m>\displaystyle{B}\subseteq{A}</m> </p>
+<m>\displaystyle{C}\subseteq{A}</m> </p>
 <p><ol style="list-style-type:upper-alpha"><li> true</li> 
 <li> false</li> 
 </ol></p>
 
 </statement>
 <solution>
-<p><ul><li>A:  true</li><li>A:  true</li></ul></p>
+<p><ul><li>B:  false</li><li>A:  true</li></ul></p>
 </solution>
 </myopenmath>
 

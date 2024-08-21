@@ -22,8 +22,8 @@ What is the run-time complexity of the alrorithm, using big-O notation? </p>
 <p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({n}\cdot{\log{{\left({n}\right)}}}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\cdot{\log{{\left({n}\right)}}}\right)}</m></li> 
 </ol></p>
  
 

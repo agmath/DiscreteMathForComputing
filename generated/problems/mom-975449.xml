@@ -2,24 +2,24 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="975449">
 <statement>
 <p>
-Fill in the missing pieces in the conversion of the decimal integer <m>\displaystyle{\left({166}\right)}_{{{10}}}</m> into its base-<m>\displaystyle{4}</m> representation.
+Fill in the missing pieces in the conversion of the decimal integer <m>\displaystyle{\left({71}\right)}_{{{10}}}</m> into its base-<m>\displaystyle{3}</m> representation.
 </p>
 <p>
-<m>\displaystyle{166}</m> = <m>\displaystyle{4}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" /></p>
+<m>\displaystyle{71}</m> = <m>\displaystyle{3}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" /></p>
 <p>
-<fillin characters="1" /> = <m>\displaystyle{4}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" /></p>
+<fillin characters="1" /> = <m>\displaystyle{3}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" /></p>
 <p>
-<fillin characters="1" /> = <m>\displaystyle{4}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" /></p>
+<fillin characters="1" /> = <m>\displaystyle{3}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" /></p>
 <p>
-<fillin characters="1" /> = <m>\displaystyle{4}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" />
+<fillin characters="1" /> = <m>\displaystyle{3}</m><asterisk/>(<fillin characters="1" />) + <fillin characters="1" />
 </p>
 <p>
-The base-<m>\displaystyle{4}</m> representation of <m>\displaystyle{\left({166}\right)}_{{{10}}}</m> is <m>\displaystyle{(}</m><fillin characters="1" /><m>\displaystyle{)}_{{4}}</m>.
+The base-<m>\displaystyle{3}</m> representation of <m>\displaystyle{\left({71}\right)}_{{{10}}}</m> is <m>\displaystyle{(}</m><fillin characters="1" /><m>\displaystyle{)}_{{3}}</m>.
 
 </p>
 </statement>
 <solution>
-<p><ul><li>41</li><li>2</li><li>41</li><li>10</li><li>1</li><li>10</li><li>2</li><li>2</li><li>2</li><li>0</li><li>2</li><li>2212</li></ul></p>
+<p><ul><li>23</li><li>2</li><li>23</li><li>7</li><li>2</li><li>7</li><li>2</li><li>1</li><li>2</li><li>0</li><li>2</li><li>2122</li></ul></p>
 </solution>
 </myopenmath>
 
