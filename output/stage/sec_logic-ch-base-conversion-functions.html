@@ -88,10 +88,10 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-sage",
+  "inputLocation": "div.sagecell-sage",
   "linked": true,
   "linkKey": "linked-sage",
   "autoeval": false,
@@ -100,10 +100,10 @@ sagecell.makeSagecell({
   ],
   "evalButtonText": "Evaluate (Sage)"
 });
-</script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
+</script><script>// Make *any* div with class 'sagecell-python' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-python",
+  "inputLocation": "div.sagecell-python",
   "linked": true,
   "linkKey": "linked-python",
   "autoeval": false,
@@ -112,10 +112,10 @@ sagecell.makeSagecell({
   ],
   "evalButtonText": "Evaluate (Python)"
 });
-</script><script>// Make *any* pre with class 'sagecell-r' an executable Sage cell
+</script><script>// Make *any* div with class 'sagecell-r' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-r",
+  "inputLocation": "div.sagecell-r",
   "linked": true,
   "linkKey": "linked-r",
   "autoeval": false,
@@ -165,15 +165,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.3.3';
+eBookConfig.runestone_version = '7.3.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runtime.740db250e511e1cc.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.9813637ef2f0e0ee.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.f64dcc3632d7a0c3.css">
+<script src="_static/prefix-runtime.00db6230172ad960.bundle.js"></script><script src="_static/prefix-347.8328b60515045466.bundle.js"></script><script src="_static/prefix-runestone.5d3fd44c34d81620.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f64dcc3632d7a0c3.css">
 <style>
 #sec_logic-ch-compound-statements-3-3-3 { counter-set: sec_logic-ch-compound-statements-3-3-3 0; }
 #sec_logic-ch-compound-statements-3-3-3 > li::marker { content: ""counter(sec_logic-ch-compound-statements-3-3-3,decimal)"."; }
@@ -341,7 +341,6 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_probability-basics.html#sec_probability-basics-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Probability and <em class="emphasis">Atomic</em> Processes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_probability-basics.html#sec_probability-basics-4" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Compound Events and their Probabilities</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_probability-basics.html#sec_probability-basics-5" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Consecutive Events, Independence/Dependence, and Probabilities</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -402,12 +401,12 @@ eBookConfig.enable_chatcodes =  false;
 ---
 <pre class="code-display tex2jax_ignore"> return binary_digits string</pre></pre>
 </div></div></div></article></details><ul class="disc" id="sec_logic-ch-base-conversion-functions-6"><li id="sec_logic-ch-base-conversion-functions-6-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-6-1">Choose your favorite programming language and try to transform your pseudocode into a working function.</div></li></ul>
-<pre id="sec_logic-ch-base-conversion-functions-7" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
-</script></pre>
-<pre id="sec_logic-ch-base-conversion-functions-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
-</script></pre>
-<pre id="sec_logic-ch-base-conversion-functions-9" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
-</script></pre>
+<div id="sec_logic-ch-base-conversion-functions-7" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
+</script></div>
+<div id="sec_logic-ch-base-conversion-functions-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
+</script></div>
+<div id="sec_logic-ch-base-conversion-functions-9" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
+</script></div>
 <ul class="disc" id="sec_logic-ch-base-conversion-functions-10"><li id="sec_logic-ch-base-conversion-functions-10-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-10-1">Whether or not you’ve chosen to build a working version of the function to take a decimal integer and convert it into binary, think about whether your code/pseudocode will handle special ("edge") cases. Is your function capable of converting 0? Can it handle negative integers as inputs? How does your function behave when you pass it a non-integer value as an input? Try updating your code/pseudocode to handle these things.</div></li></ul>
 <div class="para" id="sec_logic-ch-base-conversion-functions-11">Build a function which will convert a bit-string (binary string) to its corresponding decimal representation.</div>
 <ul class="disc" id="sec_logic-ch-base-conversion-functions-12"><li id="sec_logic-ch-base-conversion-functions-12-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-12-1">Start with a pseudocode outline for the function.</div></li></ul>
@@ -425,12 +424,12 @@ eBookConfig.enable_chatcodes =  false;
 ---
 <pre class="code-display tex2jax_ignore"> return dec_int</pre></pre>
 </div></div></div></article></details><ul class="disc" id="sec_logic-ch-base-conversion-functions-14"><li id="sec_logic-ch-base-conversion-functions-14-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-14-1">Try taking your pseudocode and implementing it as a working function in your language of choice.</div></li></ul>
-<pre id="sec_logic-ch-base-conversion-functions-15" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
-</script></pre>
-<pre id="sec_logic-ch-base-conversion-functions-16" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
-</script></pre>
-<pre id="sec_logic-ch-base-conversion-functions-17" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
-</script></pre>
+<div id="sec_logic-ch-base-conversion-functions-15" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
+</script></div>
+<div id="sec_logic-ch-base-conversion-functions-16" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
+</script></div>
+<div id="sec_logic-ch-base-conversion-functions-17" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
+</script></div>
 <ul class="disc" id="sec_logic-ch-base-conversion-functions-18">
 <li id="sec_logic-ch-base-conversion-functions-18-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-18-1">Does your function "work" if you accidentally provide it a non-binary input? We better update the function to check this. We don’t want users to get an output if they don’t provide a valid input. Make the corresponding update to your function.</div></li>
 <li id="sec_logic-ch-base-conversion-functions-18-2"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-18-2">Does your error check use a separate loop to ensure that the user input is binary? If so, can you make your function more efficient by using just a single loop? NOTE: We’ll return to the idea of looping and efficiency later in our course.</div></li>
@@ -440,17 +439,17 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="disc" id="sec_logic-ch-base-conversion-functions-19-1"><li id="sec_logic-ch-base-conversion-functions-19-1-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-1-1">Create a new version of your first function which will convert a decimal integer to base-<span class="process-math">\(b\text{,}\)</span> where <span class="process-math">\(2\leq b \lt 10\text{.}\)</span>
 </div></li></ul>
 <div class="para">
-<pre id="sec_logic-ch-base-conversion-functions-19-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
-</script></pre> <pre id="sec_logic-ch-base-conversion-functions-19-3" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
-</script></pre> <pre id="sec_logic-ch-base-conversion-functions-19-4" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
-</script></pre>
+<div id="sec_logic-ch-base-conversion-functions-19-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
+</script></div> <div id="sec_logic-ch-base-conversion-functions-19-3" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
+</script></div> <div id="sec_logic-ch-base-conversion-functions-19-4" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
+</script></div>
 </div>
 <ul class="disc" id="sec_logic-ch-base-conversion-functions-19-5"><li id="sec_logic-ch-base-conversion-functions-19-5-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-5-1">Create a new version of your second function which will convert an integer written in base-<span class="process-math">\(b\text{,}\)</span> where <span class="process-math">\(2\leq b \lt 10\text{,}\)</span> into its decimal representation.</div></li></ul>
 <div class="para">
-<pre id="sec_logic-ch-base-conversion-functions-19-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
-</script></pre> <pre id="sec_logic-ch-base-conversion-functions-19-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
-</script></pre> <pre id="sec_logic-ch-base-conversion-functions-19-8" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
-</script></pre>
+<div id="sec_logic-ch-base-conversion-functions-19-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
+</script></div> <div id="sec_logic-ch-base-conversion-functions-19-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
+</script></div> <div id="sec_logic-ch-base-conversion-functions-19-8" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
+</script></div>
 </div>
 <ul class="disc" id="sec_logic-ch-base-conversion-functions-19-9"><li id="sec_logic-ch-base-conversion-functions-19-9-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-19-9-1">Check to ensure your functions handle "edge" cases, like converting 0, dealing with negative integers, and checking to ensure valid inputs before returning a converted value.</div></li></ul>
 </div>
@@ -459,19 +458,19 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ul class="disc" id="sec_logic-ch-base-conversion-functions-20-4"><li id="sec_logic-ch-base-conversion-functions-20-4-1"><div class="para" id="p-derived-sec_logic-ch-base-conversion-functions-20-4-1">Build a new function, calling the functions you’ve written so far as helpers, to convert between any two bases (as long as those bases are at most base-10). Your function will need three input values: <code class="code-inline tex2jax_ignore">initial_value</code>, <code class="code-inline tex2jax_ignore">initial_base</code>, and <code class="code-inline tex2jax_ignore">target_base</code>.</div></li></ul>
 <div class="para">
-<pre id="sec_logic-ch-base-conversion-functions-20-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
-</script></pre> <pre id="sec_logic-ch-base-conversion-functions-20-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
-</script></pre> <pre id="sec_logic-ch-base-conversion-functions-20-7" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
-</script></pre>
+<div id="sec_logic-ch-base-conversion-functions-20-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
+</script></div> <div id="sec_logic-ch-base-conversion-functions-20-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
+</script></div> <div id="sec_logic-ch-base-conversion-functions-20-7" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
+</script></div>
 </div>
 </div>
 <div class="para" id="sec_logic-ch-base-conversion-functions-21">As one more challenge, try building a function which will convert a decimal integer value into its hexadecimal representation. You’ll get more practice with <code class="code-inline tex2jax_ignore">if</code> / <code class="code-inline tex2jax_ignore">else if</code>, and <code class="code-inline tex2jax_ignore">else</code> statements here.</div>
-<pre id="sec_logic-ch-base-conversion-functions-22" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
-</script></pre>
-<pre id="sec_logic-ch-base-conversion-functions-23" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
-</script></pre>
-<pre id="sec_logic-ch-base-conversion-functions-24" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
-</script></pre></section></div>
+<div id="sec_logic-ch-base-conversion-functions-22" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">#Define your Sage function here
+</script></div>
+<div id="sec_logic-ch-base-conversion-functions-23" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#Define your Python function here
+</script></div>
+<div id="sec_logic-ch-base-conversion-functions-24" class="ptx-sagecell sagecell-r"><script type="text/x-sage">#Define your R function here
+</script></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_logic-ch-flow-control.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-counting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

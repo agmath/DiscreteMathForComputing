@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="982398">
+<statement>
+<p>Consider the following function which takes an array as input and returns a single numeric value as output. You may assume that all array values are small enough that they can be stored in a typical integer data type.
+  </p>
+<p>
+   def sum<underscore/>first<underscore/>five(myArray):</p>
+<p>
+        total = 0 </p>
+<p>
+        for i in <lbracket/>0, 1, 2, 3, 4<rbracket/>: </p>
+<p>
+          total = total + myArray<lbracket/>i<rbracket/>
+    </p>
+<p>
+        return total
+  
+  </p>
+<p>
+  Ignoring the operations to initialize total, to set up the for loop, and to return the result how many operations must be completed when the function is run with myArray = <lbracket/>59, 62, 73, 80, 28, 39<rbracket/>?</p>
+<p><fillin characters="20" />
+
+</p>
+</statement>
+<solution>
+<p><ul><li>5</li></ul></p>
+</solution>
+</myopenmath>
+

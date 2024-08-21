@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="982380">
+<statement>
+<p>Consider the following function which takes an array as input and returns a single numeric value as output. You may assume that all array values are small enough that they can be stored in a typical integer data type.
+  </p>
+<p>
+   def return<underscore/>first(myArray):</p>
+<p>
+        return myArray<lbracket/>0<rbracket/>
+  
+  </p>
+<p>
+  How many operations must be completed when the function is run with myArray = <lbracket/>79, 50, 48<rbracket/>?</p>
+<p><fillin characters="20" />
+
+</p>
+</statement>
+<solution>
+<p><ul><li>1</li></ul></p>
+</solution>
+</myopenmath>
+

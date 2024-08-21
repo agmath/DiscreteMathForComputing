@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1144838">
+<statement>
+<p>How many triangles are there with vertices from the points shown below? Note, we are not allowing degenerate triangles - ones with all three vertices on the same line, but we do allow non-right triangles.
+  </p><image width="43%"  pi:generated="problems/images/153d3f7633a6c714aae83f0b91fe9160.png" />
+  <p>
+  How many triangles are possible? <fillin characters="20" /> triangles.
+  </p>
+
+</statement>
+<solution>
+<p><ul><li>120</li></ul></p>
+</solution>
+</myopenmath>
+

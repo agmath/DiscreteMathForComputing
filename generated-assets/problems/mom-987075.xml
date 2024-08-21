@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="987075">
+<statement>
+<p>
+Consider the following algorithm to multiply a given array by a scalar.</p>
+<p>
+def array1d<underscore/>sum(myScalar, myArray): </p>
+<p>
+    n1 = length(myArray) </p>
+<p>
+	  scaledArray = <lbracket/><rbracket/> </p>
+<p>
+    for i in <lbracket/>0, 1, ..., n1 - 1<rbracket/>: </p>
+<p>
+      scaledArray<lbracket/>i<rbracket/> = myScalar <asterisk/> myArray<lbracket/>i<rbracket/>
+  </p>
+<p>
+    return scaledArrays
+</p>
+<p>
+What is the run-time complexity of the alrorithm, using big-O notation? </p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\cdot{\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
+</ol></p>
+ 
+
+</statement>
+<solution>
+<p><ul><li>B: <m>\displaystyle{O}{\left({n}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

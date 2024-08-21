@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381482">
+<statement>
+<p>
+Fill out the following truth table.</p><table><tabular> 
+  <row>
+    <cell>P</cell>
+    <cell>Q</cell>
+    <cell>R</cell>
+    <cell> ! R</cell>
+    <cell>P <m>\displaystyle\wedge</m> R</cell>
+    <cell>! Q</cell>
+    <cell> (!Q) <m>\displaystyle\vee</m> (!R) </cell>
+    <cell>(P <m>\displaystyle\wedge</m> R) <m>\displaystyle\wedge</m> (!Q)</cell>
+  </row>
+  <row>
+    <cell>T</cell>
+    <cell>T</cell>
+    <cell>T</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>T</cell>
+    <cell>T</cell>
+    <cell>F</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>T</cell>
+    <cell>F</cell>
+    <cell>T</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>T</cell>
+    <cell>F</cell>
+    <cell>F</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>F</cell>
+    <cell>T</cell>
+    <cell>T</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>F</cell>
+    <cell>T</cell>
+    <cell>F</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>F</cell>
+    <cell>F</cell>
+    <cell>T</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>F</cell>
+    <cell>F</cell>
+    <cell>F</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+</tabular></table>
+</statement>
+<solution>
+<p><ul><li>B: F</li><li>A: T</li><li>B: F</li><li>A: T</li><li>B: F</li><li>A: T</li><li>B: F</li><li>A: T</li><li>A: T</li><li>B: F</li><li>A: T</li><li>B: F</li><li>B: F</li><li>B: F</li><li>B: F</li><li>B: F</li><li>B: F</li><li>B: F</li><li>A: T</li><li>A: T</li><li>B: F</li><li>B: F</li><li>A: T</li><li>A: T</li><li>B: F</li><li>A: T</li><li>A: T</li><li>A: T</li><li>B: F</li><li>A: T</li><li>A: T</li><li>A: T</li><li>B: F</li><li>B: F</li><li>A: T</li><li>B: F</li><li>B: F</li><li>B: F</li><li>B: F</li><li>B: F</li></ul></p>
+</solution>
+</myopenmath>
+

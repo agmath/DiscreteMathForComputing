@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="122183">
+<statement>
+<p>
+Suppose that R is the set of all rectangles and S is the set of all squares. Label each of the following as true or false.
+</p>
+<p>
+<m>\displaystyle{R}\subseteq{S}</m> </p>
+<p><ol style="list-style-type:upper-alpha"><li>true</li> 
+<li>false</li> 
+</ol></p>
+<p>
+<m>\displaystyle{S}\subseteq{R}</m> </p>
+<p><ol style="list-style-type:upper-alpha"><li>true</li> 
+<li>false</li> 
+</ol></p>
+
+</statement>
+<solution>
+<p><ul><li>B: false</li><li>A: true</li></ul></p>
+</solution>
+</myopenmath>
+

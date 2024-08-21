@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1392648">
+<statement>
+<p>An individual is being prompted to create a/an 5 digit PIN (personal identification number) to add security to their account on a website. Each of the digits must be number from 0 - 9.</p>
+<p><ol>
+  <li> If digits may be repeated as many times as the user likes, then there are <fillin characters="8" />Preview Question 1 Part 1 of 3    PINs possible.</li>
+  <li> If no two consecutive digits may be the same, then there are <fillin characters="8" />Preview Question 1 Part 2 of 3    PINs possible.</li>
+  <li> If no digit may be repeated, then there are <fillin characters="8" />Preview Question 1 Part 3 of 3    PINs possible.</li>
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>100000</li><li>65610</li><li>30240</li></ul></p>
+</solution>
+</myopenmath>
+

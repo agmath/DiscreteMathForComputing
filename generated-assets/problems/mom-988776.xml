@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988776">
+<statement>
+<p>
+Consider the following algorithm to compute the inner product between two arrays.</p>
+<p>
+def inner<underscore/>product(myArray1, myArray2): </p>
+<p>
+    n1 = length(myArray1) </p>
+<p>
+    n2 = length(myArray2) </p>
+<p>
+    if(n1 not equal n2): </p>
+<p>
+      print("Warning: Arrays not same length!")</p>
+<p>
+      return NULL
+  </p>
+<p>
+    inner<underscore/>prod = 0 </p>
+<p>
+    for i in <lbracket/>0, 1, ..., n1 - 1<rbracket/>: </p>
+<p>
+      inner<underscore/>prod = inner<underscore/>prod + (myArray1<lbracket/>i<rbracket/> + myArray2<lbracket/>i<rbracket/>)
+  </p>
+<p>
+    return inner<underscore/>prod
+</p>
+<p>
+What is the run-time complexity of the algorithm, using big-O notation? </p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({n}\cdot{\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
+</ol></p>
+ 
+
+</statement>
+<solution>
+<p><ul><li>C: <m>\displaystyle{O}{\left({n}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

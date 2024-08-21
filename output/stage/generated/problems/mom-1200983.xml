@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1200983">
+<statement>
+<p>
+Determine whether each of the following is a statement.</p>
+<p>
+All dogs go to heaven.
+</p>
+<p><ol style="list-style-type:upper-alpha"><li>Yes, it is a statement.</li> 
+<li>No, it is not a statement.</li> 
+</ol></p>
+<p>
+This sentence is false.
+</p>
+<p><ol style="list-style-type:upper-alpha"><li>Yes, it is a statement.</li> 
+<li>No, it is not a statement.</li> 
+</ol></p>
+<p>
+The Sun revolves around the Earth.
+</p>
+<p><ol style="list-style-type:upper-alpha"><li>Yes, it is a statement.</li> 
+<li>No, it is not a statement.</li> 
+</ol></p>
+<p>
+Disney World is in Alabama.
+</p>
+<p><ol style="list-style-type:upper-alpha"><li>Yes, it is a statement.</li> 
+<li>No, it is not a statement.</li> 
+</ol></p>
+
+</statement>
+<solution>
+<p><ul><li>A: Yes, it is a statement.</li><li>B: No, it is not a statement.</li><li>A: Yes, it is a statement.</li><li>A: Yes, it is a statement.</li></ul></p>
+</solution>
+</myopenmath>
+

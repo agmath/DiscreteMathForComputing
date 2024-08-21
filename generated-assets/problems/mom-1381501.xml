@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381501">
+<statement>
+<p>
+Create a truth table below for the proposition !(!(!S)).
+</p><table><tabular> 
+  <row>
+    <cell> <fillin characters="20" /> </cell>
+    <cell> <fillin characters="20" /> </cell>
+    <cell> <fillin characters="20" /></cell>
+    <cell> <fillin characters="20" /></cell>
+  </row>
+  <row>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+</tabular></table>
+</statement>
+<solution>
+<p><ul><li>A: T</li><li>B: F</li><li>B: F</li><li>A: T</li><li>A: T</li><li>B: F</li><li>B: F</li><li>A: T</li><li>S</li><li>!S</li><li>!(!S)</li><li>!(!(!S))</li></ul></p>
+</solution>
+</myopenmath>
+

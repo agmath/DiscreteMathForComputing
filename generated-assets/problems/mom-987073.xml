@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="987073">
+<statement>
+<p>
+Consider the following algorithm to add two one-dimensional arrays together.</p>
+<p>
+def array1d<underscore/>sum(myArray1, myArray2): </p>
+<p>
+  n1 = length(myArray1) </p>
+<p>
+  n2 = length(myArray2) </p>
+<p>
+  if(n1 not equal n2): </p>
+<p>
+    print("Warning: Arrays not same length!") </p>
+<p>
+  sumArrays = <lbracket/><rbracket/> </p>
+<p>
+  for i in <lbracket/>0, 1, ..., n1 - 1<rbracket/>: </p>
+<p>
+    sumArrays<lbracket/>i<rbracket/> = myArray1<lbracket/>i<rbracket/> + myArray2<lbracket/>i<rbracket/> </p>
+<p>
+  return sumArrays
+</p>
+<p>
+What is the run-time complexity of the alrorithm, using big-O notation? </p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\cdot{\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+</ol></p>
+ 
+
+</statement>
+<solution>
+<p><ul><li>E: <m>\displaystyle{O}{\left({n}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1144841">
+<statement>
+<p>
+On a business retreat, your company of 20 executives go golfing.</p>
+<p>
+a. You need to divide up into foursomes (groups of four people): a first foursome, a second foursome, and so on. How many ways can you do this? <fillin characters="20" /> ways.</p>
+<p>
+b. After all your hard work, your realize that in fact, you want each foursome to include one of the five Board members. How many ways can you do this? <fillin characters="20" /> ways.
+</p>
+</statement>
+<solution>
+<p><ul><li>305540235000</li><li>20180160000</li></ul></p>
+</solution>
+</myopenmath>
+

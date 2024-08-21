@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381638">
+<statement>
+<p> Consider each of the atomic processes below. Count the number of outcomes possible. As a reminder, atomic processes cannot be decomposed into smaller, sub-processes.</p>
+<p><ol>
+  <li> When rolling a single 20-sided die, there are <fillin characters="5" /> outcomes possible. </li> 
+  <li> When rolling a single 60-sided die, there are <fillin characters="5" /> outcomes possible. </li> 
+  <li> When choosing a single donut from a donut shop that sells 25 different types of donut, there are <fillin characters="5" /> outcomes possible. </li> 
+  <li> When dealing out a single card from a standard 52-card deck, there are <fillin characters="5" /> outcomes possible. </li>
+  <li> When dealing out a second card from a standard 52-card deck after a first card has been dealt out, there are <fillin characters="5" /> outcomes possible. </li>
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>20</li><li>60</li><li>25</li><li>52</li><li>51</li></ul></p>
+</solution>
+</myopenmath>
+

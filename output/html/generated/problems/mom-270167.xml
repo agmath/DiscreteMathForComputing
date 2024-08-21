@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="270167">
+<statement>
+<p>
+Let <m>\displaystyle{S}</m> be the universal set, where: </p>
+<p><m>\displaystyle{S}={\left\lbrace{1},{2},{3},\ldots,{18},{19},{20}\right\rbrace}</m></p>
+<p> Let sets <m>\displaystyle{A}</m> and <m>\displaystyle{B}</m> be subsets of <m>\displaystyle{S}</m>, where:</p>
+<p>
+Set <m>\displaystyle{A}={\left\lbrace{3},{5},{8},{15},{17}\right\rbrace}</m> </p>
+<p> Set <m>\displaystyle{B}={\left\lbrace{2},{3},{6},{7},{12},{14},{15},{17},{18},{19}\right\rbrace}</m>  </p>
+<p> Set <m>\displaystyle{C}={\left\lbrace{2},{4},{6},{7},{9},{12},{14},{16},{19}\right\rbrace}</m></p>
+<p>
+Write the set <m>\displaystyle{A}\cup{B}\cup{C}</m> in roster notation. If the result is the empty set, enter <em>DNE</em></p>
+<p> <m>\displaystyle{A}\cup{B}\cup{C}</m> = <lbrace/> <fillin characters="40" /> <rbrace/> </p>
+<p>
+Write the set <m>\displaystyle{A}\cap{B}\cap{C}</m> in roster notation. If the result is the empty set, enter <em>DNE</em></p>
+<p> <m>\displaystyle{A}\cap{B}\cap{C}</m> = <lbrace/> <fillin characters="40" /> <rbrace/> </p>
+</statement>
+<solution>
+<p><ul><li>2,3,4,5,6,7,8,9,12,14,15,16,17,18,19</li><li>DNE</li></ul></p>
+</solution>
+</myopenmath>
+

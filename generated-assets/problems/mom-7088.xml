@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7088">
+<statement>
+<p>
+A group of people were asked if they had run a red light in the last year.  442 responded "yes", and 319 responded "no".</p>
+<p>
+Find the probability that if a person is chosen at random, they have run a red light in the last year.</p>
+<p>
+<fillin characters="20" />Preview Question 1   </p>
+<p>
+Give your answer as a fraction or decimal accurate to at least 3 decimal places
+</p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{442}}{{761}}</m></li></ul></p>
+</solution>
+</myopenmath>
+

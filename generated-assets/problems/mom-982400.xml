@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="982400">
+<statement>
+<p>Consider the following function which takes an array as input and returns a single numeric value as output. You may assume that all array values are small enough that they can be stored in a typical integer data type.
+  </p>
+<p>
+   def sum<underscore/>first<underscore/>four(myArray):</p>
+<p>
+        total = 0 </p>
+<p>
+        i = 0
+    </p>
+<p>
+        while i <less/> 4 : </p>
+<p>
+          total = total + myArray<lbracket/>i<rbracket/> </p>
+<p>
+          i = i + 1
+    </p>
+<p>
+        return total
+  
+  </p>
+<p>
+  Ignoring the operations to initialize total, initialize i, to set up the while loop, and to return the result, how many operations must be completed when the function is run with myArray = <lbracket/>85, 33, 48, 82, 88, 54<rbracket/>?</p>
+<p><fillin characters="20" />
+
+</p>
+</statement>
+<solution>
+<p><ul><li>8</li></ul></p>
+</solution>
+</myopenmath>
+

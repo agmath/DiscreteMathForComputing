@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381654">
+<statement>
+<p> Consider each of the following scenarios/processes. Identify each one as an <em>atomic process</em>, a <em>near-atomic process</em>, or <em>neither</em>. As a reminder, atomic processes cannot be decomposed into smaller, sub-processes and a near-atomic process is a process where only one action is ultimately taken out of a slate of possible actions (each of which is an atomic process on its own).</p>
+<p><ol>
+  <li> Choosing a cupcake, cookie, or brownie from a bakery that sells multiple flavors of each. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Near-Atomic</li> 
+<li>Neither</li> 
+</ol></p>
+ </li> 
+  <li> Choosing a donut and a beverage to order from a cafe menu. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Near-Atomic</li> 
+<li>Neither</li> 
+</ol></p>
+ </li> 
+  <li> Drawing a random card from a set of 10 cards or rolling a fair, six-sided die. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Near-Atomic</li> 
+<li>Neither</li> 
+</ol></p>
+ </li> 
+  <li> Drawing a name from a hat filled with slips of paper with names written on them. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Near-Atomic</li> 
+<li>Neither</li> 
+</ol></p>
+ </li> 
+  <li> Rolling a red die and a blue die. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Near-Atomic</li> 
+<li>Neither</li> 
+</ol></p>
+ </li>
+  <li> Rolling a red die or a blue die. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Near-Atomic</li> 
+<li>Neither</li> 
+</ol></p>
+ </li>
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>B: Near-Atomic</li><li>C: Neither</li><li>B: Near-Atomic</li><li>A: Atomic</li><li>C: Neither</li><li>B: Near-Atomic</li></ul></p>
+</solution>
+</myopenmath>
+

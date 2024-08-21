@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="295599">
+<statement>
+<p>Let <m>\displaystyle{U}</m> be the universal set, where: </p>
+<p><m>\displaystyle{U}={\left\lbrace{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}\right\rbrace}</m> </p>
+<p>Let sets <m>\displaystyle{A},{B}</m> and <m>\displaystyle{C}</m> be subsets of <m>\displaystyle{U}</m>, where:
+  </p>
+<p>
+  <m>\displaystyle{A}={\left\lbrace{2},{4},{6},{7}\right\rbrace}</m> , <m>\displaystyle{B}={\left\lbrace{1},{2},{4},{8},{10}\right\rbrace}</m> , and <m>\displaystyle{C}={\left\lbrace{3},{4},{5}\right\rbrace}</m> </p>
+<p>Find <m>\displaystyle{A}\cup{\left({B}\cap{C}\right)}:{\lbrace}</m> <fillin characters="20" /> <m>\displaystyle\rbrace</m> </p>
+<p>Find <m>\displaystyle{\left({A}\cup{B}\right)}\cap{\left({A}\cup{C}\right)}:{\lbrace}</m> <fillin characters="20" /><m>\displaystyle\rbrace</m> 
+  </p>
+<p>
+  Enter the elements as a list, separated by commas in order from smallest to largest. If the result is the empty set, enter <em>DNE</em>
+  </p>
+<p>
+  You may want to draw a Venn Diagram to help answer this question.</p>
+
+</statement>
+<solution>
+<p><ul><li>2,4,6,7</li><li>2,4,6,7</li></ul></p>
+</solution>
+</myopenmath>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="281580">
+<statement>
+<p>Express the set using the roster (listing) method.
+  </p>
+<p>
+  <m>\displaystyle{\lbrace}</m> <em>x</em> | <em>x </em><m>\displaystyle\in</m>  <m>\displaystyle\mathbb{N}</m>  and <m>\displaystyle{10}{<}{x}\leq{15}</m> <m>\displaystyle\rbrace</m> 
+  </p>
+<p>
+  <lbrace/><fillin characters="20" /><rbrace/></p>
+
+</statement>
+<solution>
+<p><ul><li>11,12,13,14,15</li></ul></p>
+</solution>
+</myopenmath>
+

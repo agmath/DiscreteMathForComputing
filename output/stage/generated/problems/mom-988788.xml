@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988788">
+<statement>
+<p>
+Consider the following algorithm to compute the sum of two matrices.
+</p>
+<p>
+def matrix<underscore/>sum(myMatrix1, myMatrix2):</p>
+<p>
+  rows<underscore/>matrix1 = number of rows in myMatrix1</p>
+<p>
+  rows<underscore/>matrix2 = number of rows in muMatrix2</p>
+<p>
+  cols<underscore/>matrix1 = number of columns in myMatrix1</p>
+<p>
+  cols<underscore/>matrix2 = number of columns in muMatrix2</p>
+<p>
+  if (rows<underscore/>matrix1 not equal to rows<underscore/>matrix2) or (cols<underscore/>matrix1 not equal to cols<underscore/>matrix2):</p>
+<p>
+    print("Warning: matrix dimensions don't match")</p>
+<p>
+    return NULL</p>
+<p>
+   sumMatrix = a rows<underscore/>matrix1 x cols<underscore/>matrix1 array</p>
+<p>
+  for row in <lbracket/>0, 1, ..., rows - 1<rbracket/>:</p>
+<p>
+    for column in <lbracket/>0, 1, ..., columns - 1<rbracket/>:</p>
+<p>
+      sumMatrix<lbracket/>row, column<rbracket/> = myMatrix1<lbracket/>row, column<rbracket/> + myMatrix2<lbracket/>row, column<rbracket/></p>
+<p>
+  return sumMatrix
+</p>
+<p>
+Let <m>\displaystyle{n}</m> denote the number of rows in each input matrix and <m>\displaystyle{m}</m> denote the number of columns. What is the run-time complexity of the alrorithm, using big-O notation? </p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}^{{2}}\cdot{n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}+{n}\right)}</m></li> 
+</ol></p>
+ 
+
+</statement>
+<solution>
+<p><ul><li>B: <m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

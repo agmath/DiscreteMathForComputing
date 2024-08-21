@@ -1,0 +1,13 @@
+INFO    : PreTeXt-CLI version: 2.6.2
+
+INFO    : PreTeXt project found in `/workspaces/DiscreteMathForComputing`.
+INFO    : Staging deployment according to strategy default_target
+INFO    : Since no target was supplied, we will use "html".
+
+INFO    : Staging latest build located in `/workspaces/DiscreteMathForComputing/output/html` at `/workspaces/DiscreteMathForComputing/output/stage`.
+INFO    : 
+INFO    : Preparing to deploy from active `main` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+INFO    : Add/committing these changes to local Git repository.
+INFO    : 

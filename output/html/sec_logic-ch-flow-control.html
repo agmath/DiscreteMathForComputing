@@ -88,10 +88,10 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script>// Make *any* div with class 'sagecell-python' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-python",
+  "inputLocation": "div.sagecell-python",
   "linked": true,
   "linkKey": "linked-python",
   "autoeval": false,
@@ -141,15 +141,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.3.3';
+eBookConfig.runestone_version = '7.3.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runtime.740db250e511e1cc.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.9813637ef2f0e0ee.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.f64dcc3632d7a0c3.css">
+<script src="_static/prefix-runtime.00db6230172ad960.bundle.js"></script><script src="_static/prefix-347.8328b60515045466.bundle.js"></script><script src="_static/prefix-runestone.5d3fd44c34d81620.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f64dcc3632d7a0c3.css">
 <style>
 #sec_logic-ch-compound-statements-3-3-3 { counter-set: sec_logic-ch-compound-statements-3-3-3 0; }
 #sec_logic-ch-compound-statements-3-3-3 > li::marker { content: ""counter(sec_logic-ch-compound-statements-3-3-3,decimal)"."; }
@@ -317,7 +317,6 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_probability-basics.html#sec_probability-basics-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Probability and <em class="emphasis">Atomic</em> Processes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_probability-basics.html#sec_probability-basics-4" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Compound Events and their Probabilities</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_probability-basics.html#sec_probability-basics-5" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Consecutive Events, Independence/Dependence, and Probabilities</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -371,13 +370,13 @@ eBookConfig.enable_chatcodes =  false;
 </pre>
 <div class="para" id="sec_logic-ch-flow-control-3-5">The first line in the pseudocode <code class="code-inline tex2jax_ignore">def</code>ines the function, including its name and any inputs (parameters) it requires. The second line contains the <code class="code-inline tex2jax_ignore">if</code> statement and its condition. That is, this line defines the <em class="emphasis">If <span class="process-math">\(P\)</span></em> portion of our conditional statement. The line ends with a colon, and all indented lines below this one define what will be done if the condition is true. That is, the indented lines define the <em class="emphasis">then <span class="process-math">\(Q\)</span></em> portion of our conditional statement. Different programming languages have slightly different syntax. For example, the colon and indentation are used in Python, but curly braces surround the code to be run when the condition is true in C++, R, and others. The final line in the pseudocode definition of the function is a <code class="code-inline tex2jax_ignore">return</code> statement. It describes what the result of the function is and how it will be passed back to the computing environment. The function we’ve written has nothing to return, which we describe as <code class="code-inline tex2jax_ignore">return</code>ing <code class="code-inline tex2jax_ignore">None</code>.</div>
 <div class="para" id="sec_logic-ch-flow-control-3-6">The following is a live implementation of the <code class="code-inline tex2jax_ignore">is_even()</code> function in Python. Please consider experimenting with the code. At the very least, try evaluating <code class="code-inline tex2jax_ignore">is_even()</code> for other input values.</div>
-<pre id="sec_logic-ch-flow-control-3-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
+<div id="sec_logic-ch-flow-control-3-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
     if myNumber % 2 == 0:
         print("The input is even!")
     return None
 
 is_even(846)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-3-8">The Python implementation of the <code class="code-inline tex2jax_ignore">is_even()</code> function looks quite similar to the pseudocode we used to describe the function initially. The major difference is how the condition on the <code class="code-inline tex2jax_ignore">if</code> statement appears. The expression <code class="code-inline tex2jax_ignore">myNumber % 2</code> computes the remainder when <code class="code-inline tex2jax_ignore">myNumber</code> is divided by <code class="code-inline tex2jax_ignore">2</code>. The <code class="code-inline tex2jax_ignore">==</code> is a test for whether the value on the left of the operator is identically the same as the value on the right of the operator. All together, <code class="code-inline tex2jax_ignore">myNumber % 2 == 0</code> evaluates to <code class="code-inline tex2jax_ignore">true</code> if the remainder when dividing the input <code class="code-inline tex2jax_ignore">myNumber</code> by <code class="code-inline tex2jax_ignore">2</code> is <code class="code-inline tex2jax_ignore">0</code>, and it evaluates to <code class="code-inline tex2jax_ignore">false</code> otherwise. This means that our call to <code class="code-inline tex2jax_ignore">print()</code> will only be executed if the <code class="code-inline tex2jax_ignore">myNumber</code> input parameter is even.</div>
 <div class="para" id="sec_logic-ch-flow-control-3-9">If you played around with the function, you’ll have likely noticed that nothing is printed out if you pass a value to the <code class="code-inline tex2jax_ignore">myNumber</code> parameter which is not even. We can add an <code class="code-inline tex2jax_ignore">else</code> statement to print out that the input is odd if the original conditional is not satisfied. We’ll do that in pseudocode and follow it up with a live implementation below.</div>
 <pre class="code-display tex2jax_ignore">def is_even(myNumber):
@@ -387,7 +386,7 @@ is_even(846)
     print("The input is odd!") 
   return None
 </pre>
-<pre id="sec_logic-ch-flow-control-3-11" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
+<div id="sec_logic-ch-flow-control-3-11" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
     if myNumber % 2 == 0:
         print("The input is even!")
     else:
@@ -395,7 +394,7 @@ is_even(846)
     return None
 
 is_even(113)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-3-12">Hopefully you noticed that we’ve constructed a function which no longer behaves correctly. If you didn’t notice this, try passing the value 0.5 to the <code class="code-inline tex2jax_ignore">myNumber</code> input parameter. The function prints out that <code class="code-inline tex2jax_ignore">"The 
 input is odd"</code>, but that’s not correct. This brings up an important point about code and computing in general. Computers are great at following instructions, but they aren’t smart. The computer has no way to know that it is providing us with wrong information -- instead, it is only following the instructions that we’ve written for it. We can create a better (and correct) version of our function if we use <code class="code-inline tex2jax_ignore">else if</code> followed by an <code class="code-inline tex2jax_ignore">else</code> statement to catch scenarios where the user has input a non-integer. Below is what that might look like using pseudocode as well as in a live Python implementation.</div>
 <pre class="code-display tex2jax_ignore">def is_even(myNumber):
@@ -407,7 +406,7 @@ input is odd"</code>, but that’s not correct. This brings up an important poin
     print("The input was not an integer!")
   return None
 </pre>
-<pre id="sec_logic-ch-flow-control-3-14" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
+<div id="sec_logic-ch-flow-control-3-14" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_even(myNumber):
     if myNumber % 2 == 0:
         print("The input is even!")
     elif myNumber % 2 == 1:
@@ -417,7 +416,7 @@ input is odd"</code>, but that’s not correct. This brings up an important poin
     return None
 
 is_even(0.5)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-3-15">Note that in the working implementation, the combination <code class="code-inline tex2jax_ignore">else if</code> is shortened to <code class="code-inline tex2jax_ignore">elif</code>. This is a common feature of many languages, since it helps to avoid nested <code class="code-inline tex2jax_ignore">if</code> statements within <code class="code-inline tex2jax_ignore">else</code> statements. The result is more compact and readable code.</div></section><section class="subsection" id="sec_logic-ch-flow-control-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="space"> </span><span class="title">Conditionals with Compound Conditions</span>
 </h3>
@@ -431,7 +430,7 @@ small or is not even!"</code> otherwise. As before, we’ll start with a pseudoc
     print(The input is either small or is not even!)
   return None
 </pre>
-<pre id="sec_logic-ch-flow-control-4-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_large_even(myNumber):
+<div id="sec_logic-ch-flow-control-4-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_large_even(myNumber):
     if ((myNumber % 2 == 0) and (myNumber > 1000)):
         print("The input is over 1000 and is even!")
     else:
@@ -439,7 +438,7 @@ small or is not even!"</code> otherwise. As before, we’ll start with a pseudoc
     return None
 
 is_large_even(5250)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-4-6">In Python we simply used the keyword <code class="code-inline tex2jax_ignore">and</code> to create the compound conditional statement. The keywords <code class="code-inline tex2jax_ignore">or</code> and <code class="code-inline tex2jax_ignore">not</code> can be used similarly in Python. In other languages the syntax is for constructing these compound conditionals is similar, but you may need to use symbols in place of the <code class="code-inline tex2jax_ignore">and</code>/<code class="code-inline tex2jax_ignore">or</code>/<code class="code-inline tex2jax_ignore">not</code> keywords. For example, in C++ we write <code class="code-inline tex2jax_ignore">\amp\amp</code> to mean "and", use <code class="code-inline tex2jax_ignore">||</code> in place of "or", and use <code class="code-inline tex2jax_ignore">!</code> in place of "not".  For example, let’s create a new function which will print <code class="code-inline tex2jax_ignore">"true"</code> if its input value is large and even <em class="emphasis">or</em> is <em class="emphasis">not</em> a multiple of <span class="process-math">\(3\text{,}\)</span> but will print <code class="code-inline tex2jax_ignore">"false"</code> otherwise. We show a version of the function in pseudocode and a working Python implementation below.</div>
 <pre class="code-display tex2jax_ignore">def is_large_even_or_not_mult3(myNumber):
   if ((myNumber is even) and (myNumber &gt; 1000)) or (myNumber is not a multiple of 3):
@@ -448,7 +447,7 @@ is_large_even(5250)
     print("false")
   return None
 </pre>
-<pre id="sec_logic-ch-flow-control-4-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_large_even_or_not_mult3(myNumber):
+<div id="sec_logic-ch-flow-control-4-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def is_large_even_or_not_mult3(myNumber):
     if ((myNumber % 2 == 0) and (myNumber > 1000)) or (myNumber % 3 != 0):
         print("true")
     else:
@@ -456,7 +455,7 @@ is_large_even(5250)
     return None
 
 is_large_even_or_not_mult3(3000)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-4-9">You may notice that, in the working implementation, <code class="code-inline tex2jax_ignore">myNumber % 3 != 0</code> was used to test whether the input <code class="code-inline tex2jax_ignore">myNumber</code> is not divisible by <span class="process-math">\(3\text{.}\)</span> There are, of course, other ways to encode this test -- perhaps something like <code class="code-inline tex2jax_ignore">(not (myNumber % 3 == 0))</code>. There are always multiple means to an end; we typically prefer code which is more simple, more readable, and more efficient.</div></section><section class="subsection" id="sec_logic-ch-flow-control-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="space"> </span><span class="title">Looping with <code class="code-inline tex2jax_ignore">for</code> and <code class="code-inline tex2jax_ignore">while</code></span>
 </h3>
@@ -469,7 +468,7 @@ is_large_even_or_not_mult3(3000)
     doubled_list element i = 2*(myList element i)
   return doubled_list
 </pre>
-<pre id="sec_logic-ch-flow-control-5-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def double_list_values(myList):
+<div id="sec_logic-ch-flow-control-5-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def double_list_values(myList):
     n = len(myList)
     doubled_list = n*[0]
     for i in range(n):
@@ -478,7 +477,7 @@ is_large_even_or_not_mult3(3000)
 
 result = double_list_values([1, 10, 0, -12, 5])
 print(result)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-5-6">Please experiment with the code above. Try evaluating <code class="code-inline tex2jax_ignore">double_list_values()</code> on lists of a variety of lengths. The <code class="code-inline tex2jax_ignore">for</code> loop in the function definition adapts automatically to input lists of any length. This makes our function quite flexible. You’ll note that when we evaluated our function this time, we stored the result in a new variable and then explicitly printed it out. This is because values returned by a function are not generally printed out in any language. We need to explicitly ask for the returned value to be printed. See this for yourself by simply running <code class="code-inline tex2jax_ignore">double_list_values([1, 2, 3])</code> -- while nothing is printed out, the values of the input list are doubled.</div>
 <div class="para" id="sec_logic-ch-flow-control-5-7">There are a few additional things to notice here about the Python implementation of the <code class="code-inline tex2jax_ignore">double_list_values()</code> function. First, a majority of programming languages are 0-indexed. That means for objects like lists or arrays, the first element occupies index 0, the second occupies index 1, etc. This takes some getting used to, but we’ve adopted the 0-indexing convention here since you are almost certain to encounter it in the future. Next, in the working implementation which uses Python, the code <code class="code-inline tex2jax_ignore">n*[0]</code> initializes a list of length <code class="code-inline tex2jax_ignore">n</code>, all of whose entries are <code class="code-inline tex2jax_ignore">0</code>. In Python, lists are denoted/defined by square brackets. Finally, in Python we can access the item occupying the <code class="code-inline tex2jax_ignore">i</code><span class="process-math">\(^{\text{th}}\)</span> index of a list by using <code class="code-inline tex2jax_ignore">ListName[i]</code>. Finally, values returned by a function are not printed out unless we explicitly ask for that behavior. You can see this for yourself by simply running <code class="code-inline tex2jax_ignore">double_list_values([1, 2, 3])</code>. You’ll notice that other languages have slightly different syntax for working with lists.</div>
 <div class="para" id="sec_logic-ch-flow-control-5-8">What if there is no way to determine ahead of time the number of iterations that the code within the loop should be run? For example, what if we would like to run a block of code until a condition is no longer true? For example, what if we would like to double an input value until the result exceeds 100? There’s no convenient/simple way to determine ahead of time the number of iterations the loop should run through before terminating. This is exactly a scenario for a <code class="code-inline tex2jax_ignore">while</code> loop. Let’s build the function described above.</div>
@@ -488,7 +487,7 @@ print(result)
     val = 2*val
   return val
 </pre>
-<pre id="sec_logic-ch-flow-control-5-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def my_doubling_function(startingValue):
+<div id="sec_logic-ch-flow-control-5-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def my_doubling_function(startingValue):
     val = startingValue
     while val <= 100:
         val = 2*val
@@ -496,7 +495,7 @@ print(result)
 
 result = my_doubling_function(5)
 print(result)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-5-11">Notice that <code class="code-inline tex2jax_ignore">my_doubling_function()</code> does not include a preset number of iterations over which the <code class="code-inline tex2jax_ignore">val = 2*val</code> code in the <code class="code-inline tex2jax_ignore">while</code> loop will be run. At each iteration through the loop, <code class="code-inline tex2jax_ignore">val</code> is checked to see whether it exceeds <span class="process-math">\(100\text{.}\)</span> As soon as <code class="code-inline tex2jax_ignore">val</code> exceeds <span class="process-math">\(100\text{,}\)</span> the <code class="code-inline tex2jax_ignore">while</code> loop is terminated. Try running the function with several input different input values. Unfortunately, with a <code class="code-inline tex2jax_ignore">while</code> loop it is possible to find yourself in a scenario where you function loops infinitely, never returning a value, and eventually crashing. Such is the case here if we try evaluating <code class="code-inline tex2jax_ignore">my_doubling_function()</code> with a negative input value.</div></section><section class="subsection" id="sec_logic-ch-flow-control-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="space"> </span><span class="title">Putting it all together</span>
 </h3>
@@ -515,7 +514,7 @@ print(result)
     append current_val to my_sequence
   return my_sequence
 </pre>
-<pre id="sec_logic-ch-flow-control-6-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def collatz_sequence(startValue):
+<div id="sec_logic-ch-flow-control-6-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">def collatz_sequence(startValue):
     my_sequence = []
     current_val = startValue 
     my_sequence = my_sequence + [current_val]
@@ -529,9 +528,9 @@ print(result)
 
 result = collatz_sequence(5)
 print(result)
-</script></pre>
+</script></div>
 <div class="para" id="sec_logic-ch-flow-control-6-7">Try computing the <code class="code-inline tex2jax_ignore">collatz_sequence()</code> for a variety of different <code class="code-inline tex2jax_ignore">startValue</code>s. Do you always end up with a sequence terminating at <span class="process-math">\(1\text{?}\)</span> Below is another function containing a <code class="code-inline tex2jax_ignore">for</code> loop which has the ability to call our <code class="code-inline tex2jax_ignore">collatz_sequence()</code> function many times and plot the resulting sequences.</div>
-<pre id="sec_logic-ch-flow-control-6-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import matplotlib.pyplot as plt
+<div id="sec_logic-ch-flow-control-6-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import matplotlib.pyplot as plt
 import random
 
 plt.cla()
@@ -546,7 +545,7 @@ def plot_collatz_sequences(n_iterations):
     return None
 
 plot_collatz_sequences(50)
-</script></pre></section><section class="subsection" id="sec_logic-ch-flow-control-7"><h3 class="heading hide-type">
+</script></div></section><section class="subsection" id="sec_logic-ch-flow-control-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="space"> </span><span class="title">Conclusion</span>
 </h3>
 <div class="para" id="sec_logic-ch-flow-control-7-2">That’s it for this section. Hopefully you enjoyed applying our newfound knowledge of logic to code. You saw how the use of <code class="code-inline tex2jax_ignore">if</code>, <code class="code-inline tex2jax_ignore">else if</code>, and <code class="code-inline tex2jax_ignore">else</code> statements combined with conditions can direct the flow of your code. This is powerful because it allows us to run different instructions depending on the state of a parameter within our code. You also saw how we can use looping to run the same set of instructions over and over within a function. We saw that <code class="code-inline tex2jax_ignore">for</code> loops can be used when we know the number of iterations the loop must run ahead of time. If a loop should run an unspecified number of iterations and terminate only when a stopping condition is satisfied, then we should use a <code class="code-inline tex2jax_ignore">while</code> loop. If you decide to complete <em class="emphasis">Project I</em> in the next chapter, you’ll have an opportunity to test out what you’ve learned here.</div></section></section></div>

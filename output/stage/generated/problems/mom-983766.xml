@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="983766">
+<statement>
+<p>Contestants <em><em>A, B, C, D, E, F, </em> </em>and<em><em> G</em></em> are in a 10K race.</p>
+<p>(a) How many different ways can a race with 7 runners be completed? (Assume there is no tie.)</p>
+<p><fillin characters="8" />Preview Question 1 Part 1 of 3    ways</p>
+<p>(b) In how many ways can <em><em>D</em></em> finish first and <em><em>C</em></em> finish second?</p>
+<p><fillin characters="8" />Preview Question 1 Part 2 of 3    ways</p>
+<p>(c) What is the probability that <em><em>D</em></em> finishes first and <em><em>C</em></em> finishes second? <em>Give the probability as a fraction or a decimal rounded to four decimal places.</em></p>
+<p><fillin characters="8" />Preview Question 1 Part 3 of 3   </p>
+
+</statement>
+<solution>
+<p><ul><li>5040</li><li>120</li><li><m>\displaystyle\frac{{120}}{{5040}}</m> (or reduced fraction <m>\displaystyle\frac{{1}}{{42}}</m>) or decimal 0.0238</li></ul></p><p>Contestants <em><em>A, B, C, D, E, F, </em> </em>and<em><em> G</em></em> are in a 10K race.</p>
+(a) How many different ways can a race with 7 runners be completed? (Assume there is no tie.)
+<p>The order in which the runners complete the race matters so use Permutations
+</p>
+<p>Number of different ways <m>\displaystyle{7}</m> runners can complete race =  <m>\displaystyle{7}{P}{7}={5040}</m> 
+(b) In how many ways can D finish first and C finish second?
+</p>
+<p>Ways D finishes first x Ways C finishes second x Ways that the remaining <m>\displaystyle{5}</m> contestants can complete the race
+</p>
+<p>= 1 x 1 x <m>\displaystyle{5}{P}{5}={120}</m>
+(c) Probability that D finishes first and C finishes second
+</p>
+<p><m>\displaystyle=\frac{\text{Number of ways D finishes first and C finishes second}}{\text{Number of different ways 7 runners can complete race}}</m>
+</p>
+<p><m>\displaystyle=\frac{{120}}{{5040}}</m></p>
+</solution>
+</myopenmath>
+

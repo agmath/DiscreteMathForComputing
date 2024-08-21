@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381475">
+<statement>
+<p>
+Complete the truth table for the statement !S → R.</p><table><tabular> 
+  <row><cell>S</cell><cell>R</cell><cell>!S → R</cell></row>
+  <row><cell>T</cell><cell>T</cell><cell><p><ol style="list-style-type:upper-alpha"><li>F</li> 
+<li>T</li> 
+</ol></p>
+</cell></row>
+  <row><cell>T</cell><cell>F</cell><cell><p><ol style="list-style-type:upper-alpha"><li>F</li> 
+<li>T</li> 
+</ol></p>
+</cell></row>
+  <row><cell>F</cell><cell>T</cell><cell><p><ol style="list-style-type:upper-alpha"><li>F</li> 
+<li>T</li> 
+</ol></p>
+</cell></row>
+  <row><cell>F</cell><cell>F</cell><cell><p><ol style="list-style-type:upper-alpha"><li>F</li> 
+<li>T</li> 
+</ol></p>
+</cell></row>
+  
+</tabular></table>
+</statement>
+<solution>
+<p><ul><li>B: T</li><li>B: T</li><li>B: T</li><li>A: F</li></ul></p>
+</solution>
+</myopenmath>
+

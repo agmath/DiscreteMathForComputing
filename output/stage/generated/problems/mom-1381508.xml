@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381508">
+<statement>
+<p>
+Create a truth table below for the proposition A <m>\displaystyle\rightarrow</m> A <m>\displaystyle\vee</m> !B .
+</p><table><tabular> 
+  <row>
+    <cell> <fillin characters="20" /> </cell>
+    <cell> <fillin characters="20" /> </cell>
+    <cell> <fillin characters="20" /></cell>
+    <cell> <fillin characters="20" /></cell>
+    <cell> <fillin characters="20" /></cell>
+  </row>
+  <row>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+</tabular></table>
+</statement>
+<solution>
+<p><ul><li>A: T</li><li>A: T</li><li>B: F</li><li>B: F</li><li>A: T</li><li>B: F</li><li>A: T</li><li>B: F</li><li>B: F</li><li>A: T</li><li>B: F</li><li>A: T</li><li>A: T</li><li>A: T</li><li>B: F</li><li>A: T</li><li>A: T</li><li>A: T</li><li>A: T</li><li>A: T</li><li>a or (a)</li><li>b or (b)</li><li>!B or !(B) or (!B) or (!(B))</li><li>Av!B or Av!(B) or Av(!B) or Av(!(B)) or (A)v!B or (A)v!(B) or (A)v(!B) or (A)v(!(B)) or (Av!B) or (Av!(B)) or (Av(!B)) or (Av(!(B))) or ((A)v!B) or ((A)v!(B)) or ((A)v(!B)) or ((A)v(!(B)))</li><li>A--<greater/>Av!B or A--<greater/>Av!(B) or A--<greater/>Av(!B) or A--<greater/>Av(!(B)) or A--<greater/>(A)v!B or A--<greater/>(A)v!(B) or A--<greater/>(A)v(!B) or A--<greater/>(A)v(!(B)) or A--<greater/>(Av!B) or A--<greater/>(Av!(B)) or A--<greater/>(Av(!B)) or A--<greater/>(Av(!(B))) or A--<greater/>((A)v!B) or A--<greater/>((A)v!(B)) or A--<greater/>((A)v(!B)) or A--<greater/>((A)v(!(B))) or (A)--<greater/>Av!B or (A)--<greater/>Av!(B) or (A)--<greater/>Av(!B) or (A)--<greater/>Av(!(B)) or (A)--<greater/>(A)v!B or (A)--<greater/>(A)v!(B) or (A)--<greater/>(A)v(!B) or (A)--<greater/>(A)v(!(B)) or (A)--<greater/>(Av!B) or (A)--<greater/>(Av!(B)) or (A)--<greater/>(Av(!B)) or (A)--<greater/>(Av(!(B))) or (A)--<greater/>((A)v!B) or (A)--<greater/>((A)v!(B)) or (A)--<greater/>((A)v(!B)) or (A)--<greater/>((A)v(!(B))) or (A--<greater/>Av!B) or (A--<greater/>Av!(B)) or (A--<greater/>Av(!B)) or (A--<greater/>Av(!(B))) or (A--<greater/>(A)v!B) or (A--<greater/>(A)v!(B)) or (A--<greater/>(A)v(!B)) or (A--<greater/>(A)v(!(B))) or (A--<greater/>(Av!B)) or (A--<greater/>(Av!(B))) or (A--<greater/>(Av(!B))) or (A--<greater/>(Av(!(B)))) or (A--<greater/>((A)v!B)) or (A--<greater/>((A)v!(B))) or (A--<greater/>((A)v(!B))) or (A--<greater/>((A)v(!(B)))) or ((A)--<greater/>Av!B) or ((A)--<greater/>Av!(B)) or ((A)--<greater/>Av(!B)) or ((A)--<greater/>Av(!(B))) or ((A)--<greater/>(A)v!B) or ((A)--<greater/>(A)v!(B)) or ((A)--<greater/>(A)v(!B)) or ((A)--<greater/>(A)v(!(B))) or ((A)--<greater/>(Av!B)) or ((A)--<greater/>(Av!(B))) or ((A)--<greater/>(Av(!B))) or ((A)--<greater/>(Av(!(B)))) or ((A)--<greater/>((A)v!B)) or ((A)--<greater/>((A)v!(B))) or ((A)--<greater/>((A)v(!B))) or ((A)--<greater/>((A)v(!(B)))) or A-<greater/>Av!B or A-<greater/>Av!(B) or A-<greater/>Av(!B) or A-<greater/>Av(!(B)) or A-<greater/>(A)v!B or A-<greater/>(A)v!(B) or A-<greater/>(A)v(!B) or A-<greater/>(A)v(!(B)) or A-<greater/>(Av!B) or A-<greater/>(Av!(B)) or A-<greater/>(Av(!B)) or A-<greater/>(Av(!(B))) or A-<greater/>((A)v!B) or A-<greater/>((A)v!(B)) or A-<greater/>((A)v(!B)) or A-<greater/>((A)v(!(B))) or (A)-<greater/>Av!B or (A)-<greater/>Av!(B) or (A)-<greater/>Av(!B) or (A)-<greater/>Av(!(B)) or (A)-<greater/>(A)v!B or (A)-<greater/>(A)v!(B) or (A)-<greater/>(A)v(!B) or (A)-<greater/>(A)v(!(B)) or (A)-<greater/>(Av!B) or (A)-<greater/>(Av!(B)) or (A)-<greater/>(Av(!B)) or (A)-<greater/>(Av(!(B))) or (A)-<greater/>((A)v!B) or (A)-<greater/>((A)v!(B)) or (A)-<greater/>((A)v(!B)) or (A)-<greater/>((A)v(!(B))) or (A-<greater/>Av!B) or (A-<greater/>Av!(B)) or (A-<greater/>Av(!B)) or (A-<greater/>Av(!(B))) or (A-<greater/>(A)v!B) or (A-<greater/>(A)v!(B)) or (A-<greater/>(A)v(!B)) or (A-<greater/>(A)v(!(B))) or (A-<greater/>(Av!B)) or (A-<greater/>(Av!(B))) or (A-<greater/>(Av(!B))) or (A-<greater/>(Av(!(B)))) or (A-<greater/>((A)v!B)) or (A-<greater/>((A)v!(B))) or (A-<greater/>((A)v(!B))) or (A-<greater/>((A)v(!(B)))) or ((A)-<greater/>Av!B) or ((A)-<greater/>Av!(B)) or ((A)-<greater/>Av(!B)) or ((A)-<greater/>Av(!(B))) or ((A)-<greater/>(A)v!B) or ((A)-<greater/>(A)v!(B)) or ((A)-<greater/>(A)v(!B)) or ((A)-<greater/>(A)v(!(B))) or ((A)-<greater/>(Av!B)) or ((A)-<greater/>(Av!(B))) or ((A)-<greater/>(Av(!B))) or ((A)-<greater/>(Av(!(B)))) or ((A)-<greater/>((A)v!B)) or ((A)-<greater/>((A)v!(B))) or ((A)-<greater/>((A)v(!B))) or ((A)-<greater/>((A)v(!(B))))</li></ul></p>
+</solution>
+</myopenmath>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="155837">
+<statement>
+<p>A special deck of cards has 5 green cards , and 3 yellow cards. The green cards are numbered 1, 2, 3, 4, and 5. The yellow cards are numbered 1, 2, and 3. The cards are well shuffled and you randomly draw one card.</p>
+<p style="padding-left: 30px;">G = card drawn is green</p>
+<p>E = card drawn is even-numbered</p>
+<p>a. How many elements are there in the sample space? <fillin characters="5" />Preview Question 1 Part 1 of 2   </p>
+<p>b. P(E) = <fillin characters="5" /> (Round to 4 decimal places)</p>
+<p><em>Hint:</em> <url href="http://www.ltcconline.net/greenl/courses/201/MoodleHints/Probability/BasicDefinition/hints.html">Sample Space and Probability</url></p>
+<p><url href="https://youtu.be/0n-WQSTZVGU">Video on Probability</url></p>
+<p><url href="https://stats.libretexts.org/Courses/Lake_Tahoe_Community_College/Book%3A_Introductory_Statistics_(OpenStax)_With_Multimedia_and_Interactivity/03%3A_Probability_Topics/3.02%3A_Terminology">Textbook</url></p>
+
+
+</statement>
+<solution>
+<p><ul><li>8</li><li>0.375</li></ul></p>
+</solution>
+</myopenmath>
+

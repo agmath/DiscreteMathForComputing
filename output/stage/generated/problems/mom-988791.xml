@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988791">
+<statement>
+<p>
+Compute: <m>\displaystyle{\left[\begin{array}{cc} {9}\amp{10}\\{4}\amp-{6}\end{array}\right]}+{\left[\begin{array}{cc} {7}\amp{0}\\{0}\amp{4}\end{array}\right]}</m></p>
+<p><fillin characters="20" />Preview Question 1   </p>
+
+
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{cc} {16}\amp{10}\\{4}\amp-{2}\end{array}\right]}</m></li></ul></p>
+</solution>
+</myopenmath>
+

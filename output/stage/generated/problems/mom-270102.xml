@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="270102">
+<statement>
+<p>
+Suppose that the universal set <m>\displaystyle{U}</m> is the set defined as <m>\displaystyle{U}={\lbrace}</m>whole numbers <m>\displaystyle{\mid}</m> the numbers greater than 5 and less than 15<m>\displaystyle\rbrace</m>. </p>
+<p>
+Write the sets <m>\displaystyle{A}</m> and <m>\displaystyle{B}</m> out in roster notation.</p>
+<p>
+<m>\displaystyle{C}={\lbrace}</m>a number in U <m>\displaystyle{\mid}</m> the number is an odd number <m>\displaystyle\rbrace={\lbrace}</m> <fillin characters="25" />   <m>\displaystyle\rbrace</m></p>
+<p>
+<m>\displaystyle{D}={\lbrace}</m>a number in U <m>\displaystyle{\mid}</m> the number is a composite number <m>\displaystyle\rbrace={\lbrace}</m> <fillin characters="25" />   <m>\displaystyle\rbrace</m> 
+</p>
+<p>
+Find each of the following:</p>
+<p>
+<m>\displaystyle{n}{\left({C}\right)}=</m><fillin characters="25" /></p>
+<p>
+<m>\displaystyle{n}{\left({D}\right)}=</m><fillin characters="25" />
+
+</p>
+</statement>
+<solution>
+<p><ul><li>7,9,11,13</li><li>6,8,9,10,12,14</li><li>4</li><li>6</li></ul></p>
+</solution>
+</myopenmath>
+
