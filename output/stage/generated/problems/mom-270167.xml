@@ -3,12 +3,12 @@
 <statement>
 <p>
 Let <m>\displaystyle{S}</m> be the universal set, where: </p>
-<p><m>\displaystyle{S}={\left\lbrace{1},{2},{3},\ldots,{28},{29},{30}\right\rbrace}</m></p>
+<p><m>\displaystyle{S}={\left\lbrace{1},{2},{3},\ldots,{23},{24},{25}\right\rbrace}</m></p>
 <p> Let sets <m>\displaystyle{A}</m> and <m>\displaystyle{B}</m> be subsets of <m>\displaystyle{S}</m>, where:</p>
 <p>
-Set <m>\displaystyle{A}={\left\lbrace{1},{4},{5},{8},{14},{19},{20},{21},{28}\right\rbrace}</m> </p>
-<p> Set <m>\displaystyle{B}={\left\lbrace{3},{10},{13},{22},{27},{28},{30}\right\rbrace}</m>  </p>
-<p> Set <m>\displaystyle{C}={\left\lbrace{2},{3},{4},{10},{11},{19},{22},{24},{26},{30}\right\rbrace}</m></p>
+Set <m>\displaystyle{A}={\left\lbrace{3},{5},{6},{8},{13},{18},{20},{23},{24}\right\rbrace}</m> </p>
+<p> Set <m>\displaystyle{B}={\left\lbrace{1},{3},{9},{21}\right\rbrace}</m>  </p>
+<p> Set <m>\displaystyle{C}={\left\lbrace{2},{11},{12},{21},{22},{25}\right\rbrace}</m></p>
 <p>
 Write the set <m>\displaystyle{A}\cup{B}\cup{C}</m> in roster notation. If the result is the empty set, enter <em>DNE</em></p>
 <p> <m>\displaystyle{A}\cup{B}\cup{C}</m> = <lbrace/> <fillin characters="40" /> <rbrace/> </p>
@@ -17,7 +17,7 @@ Write the set <m>\displaystyle{A}\cap{B}\cap{C}</m> in roster notation. If the r
 <p> <m>\displaystyle{A}\cap{B}\cap{C}</m> = <lbrace/> <fillin characters="40" /> <rbrace/> </p>
 </statement>
 <solution>
-<p><ul><li>1,2,3,4,5,8,10,11,13,14,19,20,21,22,24,26,27,28,30</li><li>DNE</li></ul></p>
+<p><ul><li>1,2,3,5,6,8,9,11,12,13,18,20,21,22,23,24,25</li><li>DNE</li></ul></p>
 </solution>
 </myopenmath>
 

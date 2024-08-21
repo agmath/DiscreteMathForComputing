@@ -4,14 +4,14 @@
 <p>Express the set using the roster (listing) method.
   </p>
 <p>
-  <m>\displaystyle{\lbrace}</m> <em>x</em> | <em>x </em><m>\displaystyle\in</m>  <m>\displaystyle\mathbb{N}</m>  and <m>\displaystyle{12}{<}{x}\leq{17}</m> <m>\displaystyle\rbrace</m> 
+  <m>\displaystyle{\lbrace}</m> <em>x</em> | <em>x </em><m>\displaystyle\in</m>  <m>\displaystyle\mathbb{N}</m>  and <m>\displaystyle{14}{<}{x}\leq{19}</m> <m>\displaystyle\rbrace</m> 
   </p>
 <p>
   <lbrace/><fillin characters="20" /><rbrace/></p>
 
 </statement>
 <solution>
-<p><ul><li>13,14,15,16,17</li></ul></p>
+<p><ul><li>15,16,17,18,19</li></ul></p>
 </solution>
 </myopenmath>
 

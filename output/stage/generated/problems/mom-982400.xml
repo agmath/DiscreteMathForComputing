@@ -22,7 +22,7 @@
   
   </p>
 <p>
-  Ignoring the operations to initialize total, initialize i, to set up the while loop, and to return the result, how many operations must be completed when the function is run with myArray = <lbracket/>87, 94, 79, 32, 55, 70, 33, 53, 90<rbracket/>?</p>
+  Ignoring the operations to initialize total, initialize i, to set up the while loop, and to return the result, how many operations must be completed when the function is run with myArray = <lbracket/>90, 60, 49, 29, 49, 69, 54<rbracket/>?</p>
 <p><fillin characters="20" />
 
 </p>

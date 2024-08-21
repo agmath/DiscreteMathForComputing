@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="974643">
 <statement>
 <p>
-Consider the number <m>\displaystyle{\left({45}\right)}_{{6}}</m>, written in base-6. Convert <m>\displaystyle{\left({45}\right)}_{{6}}</m> to its equivalent in base-10.</p>
+Consider the number <m>\displaystyle{\left({5340}\right)}_{{6}}</m>, written in base-6. Convert <m>\displaystyle{\left({5340}\right)}_{{6}}</m> to its equivalent in base-10.</p>
 <p>
-<m>\displaystyle{\left({45}\right)}_{{6}}</m> = <fillin characters="5" /> base-10
+<m>\displaystyle{\left({5340}\right)}_{{6}}</m> = <fillin characters="5" /> base-10
 </p>
 </statement>
 <solution>
-<p><ul><li>29</li></ul></p>
+<p><ul><li>1212</li></ul></p>
 </solution>
 </myopenmath>
 

@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="987525">
 <statement>
 <p>
-Compute the scalar product <m>\displaystyle{6}\cdot{\left[\begin{array}{c} -{9}\\{2}\\-{7}\end{array}\right]}</m></p>
+Compute the scalar product <m>\displaystyle{14}\cdot{\left[\begin{array}{c} {2}\\{4}\end{array}\right]}</m></p>
 <p>
 <fillin characters="20" />Preview Question 1   
 </p>
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{\left[\begin{array}{c} -{54}\\{12}\\-{42}\end{array}\right]}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{c} {28}\\{56}\end{array}\right]}</m></li></ul></p>
 </solution>
 </myopenmath>
 

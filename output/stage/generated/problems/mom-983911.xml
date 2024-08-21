@@ -2,14 +2,14 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="983911">
 <statement>
 <p>
-Consider the routine below which checks whether the element <m>\displaystyle{99}</m> is contained in the input myArray. Determine the run-time complexity of the routine using Big-O notation.
+Consider the routine below which checks whether the element <m>\displaystyle{26}</m> is contained in the input myArray. Determine the run-time complexity of the routine using Big-O notation.
 </p>
 <p>
   def check<underscore/>for<underscore/>value(myArray): </p>
 <p>
     for element in myArray: </p>
 <p>
-      if element == 99:</p>
+      if element == 26:</p>
 <p>
         return TRUE
   </p>
@@ -18,19 +18,19 @@ Consider the routine below which checks whether the element <m>\displaystyle{99}
 </p>
 <p>
 The algorithm as written above has a run-time complexity of </p>
-<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({n}!\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({n}^{{3}}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({2}^{{n}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
 </ol></p>
  
 
 </statement>
 <solution>
-<p><ul><li>G: <m>\displaystyle{O}{\left({n}\right)}</m></li></ul></p>
+<p><ul><li>A: <m>\displaystyle{O}{\left({n}\right)}</m></li></ul></p>
 </solution>
 </myopenmath>
 

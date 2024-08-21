@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="989284">
 <statement>
 <p>
-Compute: <m>\displaystyle{\left[\begin{array}{cc} -{3}\amp{10}\\{6}\amp-{5}\end{array}\right]}\cdot{\left[\begin{array}{ccc} -{6}\amp-{8}\amp{2}\\{10}\amp-{8}\amp-{8}\end{array}\right]}</m></p>
+Compute: <m>\displaystyle{\left[\begin{array}{cc} {6}\amp{9}\\{9}\amp-{6}\\-{1}\amp{4}\end{array}\right]}\cdot{\left[\begin{array}{ccc} {3}\amp{8}\amp{4}\\{10}\amp-{7}\amp-{5}\end{array}\right]}</m></p>
 <p><fillin characters="20" />Preview Question 1   </p>
 
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{\left[\begin{array}{ccc} {118}\amp-{56}\amp-{86}\\-{86}\amp-{8}\amp{52}\end{array}\right]}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{ccc} {108}\amp-{15}\amp-{21}\\-{33}\amp{114}\amp{66}\\{37}\amp-{36}\amp-{24}\end{array}\right]}</m></li></ul></p>
 </solution>
 </myopenmath>
 

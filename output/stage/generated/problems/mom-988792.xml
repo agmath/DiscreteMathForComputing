@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988792">
 <statement>
 <p>
-Compute: <m>\displaystyle{\left[\begin{array}{cc} -{6}\amp{9}\\-{6}\amp{10}\end{array}\right]}+{\left[\begin{array}{cc} -{1}\amp-{4}\\{2}\amp{9}\end{array}\right]}</m></p>
+Compute: <m>\displaystyle{\left[\begin{array}{cc} {8}\amp{1}\\-{8}\amp{9}\\{9}\amp{8}\end{array}\right]}+{\left[\begin{array}{cc} -{1}\amp{3}\\-{3}\amp-{7}\\-{4}\amp{8}\end{array}\right]}</m></p>
 <p><fillin characters="20" />Preview Question 1   </p>
 
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{\left[\begin{array}{cc} -{5}\amp{13}\\-{8}\amp{1}\end{array}\right]}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{cc} {9}\amp-{2}\\-{5}\amp{16}\\{13}\amp{0}\end{array}\right]}</m></li></ul></p>
 </solution>
 </myopenmath>
 

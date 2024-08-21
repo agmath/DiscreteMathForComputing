@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1392998">
 <statement>
-<p>A bookshelf contains 6 different books. How many different ways can you arrange all 6 books on the shelf?</p>
+<p>A bookshelf contains 4 different books. How many different ways can you arrange all 4 books on the shelf?</p>
 <p>There are <fillin characters="8" /> different ways to arrange the books on the shelf.
 </p>
 </statement>
 <solution>
-<p><ul><li>720</li></ul></p>
+<p><ul><li>24</li></ul></p>
 </solution>
 </myopenmath>
 

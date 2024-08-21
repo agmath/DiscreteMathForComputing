@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1393008">
 <statement>
-<p>A password requires 7 different lowercase letters to be chosen from the alphabet (which has 26 letters). How many different 7-letter passwords can be formed?</p>
+<p>A password requires 4 different lowercase letters to be chosen from the alphabet (which has 26 letters). How many different 4-letter passwords can be formed?</p>
 <p>There are <fillin characters="20" /> different passwords that could be created using this scheme.</p>
 
 </statement>
 <solution>
-<p><ul><li>3315312000</li></ul></p>
+<p><ul><li>358800</li></ul></p>
 </solution>
 </myopenmath>
 

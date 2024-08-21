@@ -25,20 +25,20 @@ def scalar<underscore/>mult<underscore/>matrix(myScalar, myMatrix):</p>
 </p>
 <p>
 Let <m>\displaystyle{n}</m> denote the number of rows and <m>\displaystyle{m}</m> denote the number of columns in the myMatrix input parameter. What is the run-time complexity of the alrorithm, using big-O notation? </p>
-<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({m}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({m}^{{2}}\cdot{n}^{{2}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({m}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({m}^{{2}}\right)}</m></li> 
-<li><m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
 <li><m>\displaystyle{O}{\left({m}+{n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}^{{2}}\cdot{n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li> 
 </ol></p>
  
 
 </statement>
 <solution>
-<p><ul><li>G: <m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li></ul></p>
+<p><ul><li>H: <m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li></ul></p>
 </solution>
 </myopenmath>
 

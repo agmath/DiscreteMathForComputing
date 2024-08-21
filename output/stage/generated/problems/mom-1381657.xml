@@ -3,15 +3,15 @@
 <statement>
 <p> Consider each of the following near-atomic scenarios/processes. Count the total number of possible outcomes for each. As a reminder, atomic processes cannot be decomposed into smaller, sub-processes and a near-atomic process is a process where only one action is ultimately taken out of a slate of possible actions (each of which is an atomic process on its own).</p>
 <p><ol>
-  <li> When choosing a cupcake, cookie, or brownie from a bakery that sells <m>\displaystyle{11}</m> flavors of cupcake, <m>\displaystyle{3}</m> types of cookie, and <m>\displaystyle{6}</m> types of brownie, there are <fillin characters="5" /> total outcomes possible. </li> 
-  <li> When drawing a random card from a set of <m>\displaystyle{11}</m> cards or rolling a fair, six-sided die, there are <fillin characters="5" /> total outcomes possible. </li> 
-  <li> When choosing to roll a red die or a blue die, if both are <m>\displaystyle{10}</m>-sided, then the total number of outcomes possible is <fillin characters="5" />. </li>
+  <li> When choosing a cupcake, cookie, or brownie from a bakery that sells <m>\displaystyle{8}</m> flavors of cupcake, <m>\displaystyle{4}</m> types of cookie, and <m>\displaystyle{6}</m> types of brownie, there are <fillin characters="5" /> total outcomes possible. </li> 
+  <li> When drawing a random card from a set of <m>\displaystyle{9}</m> cards or rolling a fair, six-sided die, there are <fillin characters="5" /> total outcomes possible. </li> 
+  <li> When choosing to roll a red die or a blue die, if both are <m>\displaystyle{20}</m>-sided, then the total number of outcomes possible is <fillin characters="5" />. </li>
 </ol></p>
 
 
 </statement>
 <solution>
-<p><ul><li>20</li><li>17</li><li>20</li></ul></p>
+<p><ul><li>18</li><li>15</li><li>40</li></ul></p>
 </solution>
 </myopenmath>
 

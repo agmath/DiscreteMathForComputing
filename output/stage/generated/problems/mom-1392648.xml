@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1392648">
 <statement>
-<p>An individual is being prompted to create a/an 8 digit PIN (personal identification number) to add security to their account on a website. Each of the digits must be number from 0 - 9.</p>
+<p>An individual is being prompted to create a/an 7 digit PIN (personal identification number) to add security to their account on a website. Each of the digits must be number from 0 - 9.</p>
 <p><ol>
   <li> If digits may be repeated as many times as the user likes, then there are <fillin characters="8" />Preview Question 1 Part 1 of 3    PINs possible.</li>
   <li> If no two consecutive digits may be the same, then there are <fillin characters="8" />Preview Question 1 Part 2 of 3    PINs possible.</li>
@@ -11,7 +11,7 @@
 
 </statement>
 <solution>
-<p><ul><li>100000000</li><li>47829690</li><li>1814400</li></ul></p>
+<p><ul><li>10000000</li><li>5314410</li><li>604800</li></ul></p>
 </solution>
 </myopenmath>
 

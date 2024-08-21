@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="983766">
 <statement>
-<p>Contestants <em><em>A, B, C, D, E, F, </em> </em>and<em><em> G</em></em> are in a 10K race.</p>
-<p>(a) How many different ways can a race with 7 runners be completed? (Assume there is no tie.)</p>
+<p>Contestants <em><em>A, B, C, D, E, F, G, </em> </em>and<em><em> I</em></em> are in a 10K race.</p>
+<p>(a) How many different ways can a race with 8 runners be completed? (Assume there is no tie.)</p>
 <p><fillin characters="8" />Preview Question 1 Part 1 of 3    ways</p>
-<p>(b) In how many ways can <em><em>D</em></em> finish first and <em><em>E</em></em> finish second?</p>
+<p>(b) In how many ways can <em><em>G</em></em> finish first and <em><em>D</em></em> finish second?</p>
 <p><fillin characters="8" />Preview Question 1 Part 2 of 3    ways</p>
-<p>(c) What is the probability that <em><em>D</em></em> finishes first and <em><em>E</em></em> finishes second? <em>Give the probability as a fraction or a decimal rounded to four decimal places.</em></p>
+<p>(c) What is the probability that <em><em>G</em></em> finishes first and <em><em>D</em></em> finishes second? <em>Give the probability as a fraction or a decimal rounded to four decimal places.</em></p>
 <p><fillin characters="8" />Preview Question 1 Part 3 of 3   </p>
 
 </statement>
 <solution>
-<p><ul><li>5040</li><li>120</li><li><m>\displaystyle\frac{{120}}{{5040}}</m> (or reduced fraction <m>\displaystyle\frac{{1}}{{42}}</m>) or decimal 0.0238</li></ul></p><p>Contestants <em><em>A, B, C, D, E, F, </em> </em>and<em><em> G</em></em> are in a 10K race.</p>
-(a) How many different ways can a race with 7 runners be completed? (Assume there is no tie.)
+<p><ul><li>40320</li><li>720</li><li><m>\displaystyle\frac{{720}}{{40320}}</m> (or reduced fraction <m>\displaystyle\frac{{1}}{{56}}</m>) or decimal 0.0179</li></ul></p><p>Contestants <em><em>A, B, C, D, E, F, G, </em> </em>and<em><em> I</em></em> are in a 10K race.</p>
+(a) How many different ways can a race with 8 runners be completed? (Assume there is no tie.)
 <p>The order in which the runners complete the race matters so use Permutations
 </p>
-<p>Number of different ways <m>\displaystyle{7}</m> runners can complete race =  <m>\displaystyle{7}{P}{7}={5040}</m> 
-(b) In how many ways can D finish first and E finish second?
+<p>Number of different ways <m>\displaystyle{8}</m> runners can complete race =  <m>\displaystyle{8}{P}{8}={40320}</m> 
+(b) In how many ways can G finish first and D finish second?
 </p>
-<p>Ways D finishes first x Ways E finishes second x Ways that the remaining <m>\displaystyle{5}</m> contestants can complete the race
+<p>Ways G finishes first x Ways D finishes second x Ways that the remaining <m>\displaystyle{6}</m> contestants can complete the race
 </p>
-<p>= 1 x 1 x <m>\displaystyle{5}{P}{5}={120}</m>
-(c) Probability that D finishes first and E finishes second
+<p>= 1 x 1 x <m>\displaystyle{6}{P}{6}={720}</m>
+(c) Probability that G finishes first and D finishes second
 </p>
-<p><m>\displaystyle=\frac{\text{Number of ways D finishes first and E finishes second}}{\text{Number of different ways 7 runners can complete race}}</m>
+<p><m>\displaystyle=\frac{\text{Number of ways G finishes first and D finishes second}}{\text{Number of different ways 8 runners can complete race}}</m>
 </p>
-<p><m>\displaystyle=\frac{{120}}{{5040}}</m></p>
+<p><m>\displaystyle=\frac{{720}}{{40320}}</m></p>
 </solution>
 </myopenmath>
 

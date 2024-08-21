@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="995589">
 <statement>
-<p>Suppose we form 3-letter "words" using the letters <em>A, B, C, D, E, F, G</em>.</p>
+<p>Suppose we form 5-letter "words" using the letters <em>A, B, C, D, E, F, G</em>.</p>
 <p>How many such words are possible for each of the following conditions?</p>
 <p>(a) No condition is imposed: <fillin characters="8" />Preview Question 1 Part 1 of 5   </p>
 <p>(b) No letter can be repeated in a word: <fillin characters="8" />Preview Question 1 Part 2 of 5   </p>
@@ -11,7 +11,7 @@
 
 </statement>
 <solution>
-<p><ul><li>343</li><li>210</li><li>49</li><li>49</li><li>98</li></ul></p>
+<p><ul><li>16807</li><li>2520</li><li>2401</li><li>2401</li><li>4802</li></ul></p>
 </solution>
 </myopenmath>
 
