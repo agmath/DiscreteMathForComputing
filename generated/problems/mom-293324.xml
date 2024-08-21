@@ -4,7 +4,7 @@
 <p>Suppose that <m>\displaystyle{U}</m> (the universal set), <m>\displaystyle{A}</m> and <m>\displaystyle{B}</m> are sets, given as shown below.
   </p>
 <p><m>\displaystyle{U}={\left\lbrace{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}\right\rbrace}</m>, </p>
-<p><m>\displaystyle{A}={\left\lbrace{2},{7},{8},{10}\right\rbrace}</m>, and <m>\displaystyle{B}={\left\lbrace{1},{2},{7},{8}\right\rbrace}</m>.
+<p><m>\displaystyle{A}={\left\lbrace{2},{5},{7},{10}\right\rbrace}</m>, and <m>\displaystyle{B}={\left\lbrace{1},{2},{3},{7},{8},{10}\right\rbrace}</m>.
   </p>
 <p>
   Given a set <m>\displaystyle{S}</m>, <m>\displaystyle{S}^{{c}}</m> denotes the complement of <m>\displaystyle{S}</m>. Find each of the following sets. Enter your answer by listing the elements in increasing order, separated by commas. Do not put a comma after the last number. If the set is empty, enter DNE.
@@ -13,7 +13,7 @@
   <m>\displaystyle{\left({A}\cap{B}\right)}^{{c}}=</m> <m>\displaystyle{\lbrace}</m><fillin characters="20" /><m>\displaystyle\rbrace</m>
   </p>
 <p>
-  <m>\displaystyle{A}^{{c}}\cap{B}=</m> <m>\displaystyle{\lbrace}</m><fillin characters="20" /><m>\displaystyle\rbrace</m>
+  <m>\displaystyle{A}\cap{B}^{{c}}=</m> <m>\displaystyle{\lbrace}</m><fillin characters="20" /><m>\displaystyle\rbrace</m>
   </p>
 <p>
   <m>\displaystyle{A}\cup{B}^{{c}}=</m> <m>\displaystyle{\lbrace}</m><fillin characters="20" /><m>\displaystyle\rbrace</m>
@@ -21,7 +21,7 @@
 
 </statement>
 <solution>
-<p><ul><li>1,3,4,5,6,9,10</li><li>1</li><li>2,3,4,5,6,7,8,9,10</li></ul></p>
+<p><ul><li>1,3,4,5,6,8,9</li><li>5</li><li>2,4,5,6,7,9,10</li></ul></p>
 </solution>
 </myopenmath>
 

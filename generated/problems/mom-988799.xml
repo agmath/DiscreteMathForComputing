@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988799">
 <statement>
 <p>
-Compute: <m>\displaystyle{5}\cdot{\left[\begin{array}{ccc} {10}\amp-{2}\amp-{6}\\-{7}\amp-{9}\amp{5}\\-{6}\amp-{10}\amp-{3}\\{3}\amp-{6}\amp{10}\\{1}\amp-{9}\amp{0}\end{array}\right]}</m></p>
+Compute: <m>\displaystyle{3}\cdot{\left[\begin{array}{cc} {5}\amp-{7}\\{0}\amp-{5}\\-{1}\amp-{5}\\{1}\amp-{4}\end{array}\right]}</m></p>
 <p><fillin characters="20" />Preview Question 1   </p>
 
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{\left[\begin{array}{ccc} {50}\amp-{10}\amp-{30}\\-{35}\amp-{45}\amp{25}\\-{30}\amp-{50}\amp-{15}\\{15}\amp-{30}\amp{50}\\{5}\amp-{45}\amp{0}\end{array}\right]}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{cc} {15}\amp-{21}\\{0}\amp-{15}\\-{3}\amp-{15}\\{3}\amp-{12}\end{array}\right]}</m></li></ul></p>
 </solution>
 </myopenmath>
 

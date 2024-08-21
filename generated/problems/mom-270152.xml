@@ -5,9 +5,9 @@
 Let <m>\displaystyle{S}</m> be the universal set, where: </p>
 <p><m>\displaystyle{S}={\left\lbrace{1},{2},{3},{4},{5},{6}\right\rbrace}</m></p>
 <p> Let sets <m>\displaystyle{A}</m> and <m>\displaystyle{B}</m> be subsets of <m>\displaystyle{S}</m>, where:</p>
-<p> Set <m>\displaystyle{A}={\left\lbrace{4},{5},{6}\right\rbrace}</m> </p>
-<p> Set <m>\displaystyle{B}={\left\lbrace{4},{6}\right\rbrace}</m>  </p>
-<p> Set <m>\displaystyle{C}={\left\lbrace{2},{4},{5},{6}\right\rbrace}</m></p>
+<p> Set <m>\displaystyle{A}={\left\lbrace{2},{4},{6}\right\rbrace}</m> </p>
+<p> Set <m>\displaystyle{B}={\left\lbrace{3},{6}\right\rbrace}</m>  </p>
+<p> Set <m>\displaystyle{C}={\left\lbrace{1},{4},{5},{6}\right\rbrace}</m></p>
 <p>Write out the following sets in roster notation. </p>
 <p> <m>\displaystyle{A}\cup{B}={\lbrace}</m> <fillin characters="20" /> <m>\displaystyle\rbrace</m></p>
 <p> <m>\displaystyle{A}\cap{B}={\lbrace}</m> <fillin characters="20" /> <m>\displaystyle\rbrace</m></p>
@@ -17,7 +17,7 @@ Let <m>\displaystyle{S}</m> be the universal set, where: </p>
 <p> <m>\displaystyle{B}\cup{C}={\lbrace}</m> <fillin characters="20" /> <m>\displaystyle\rbrace</m></p>
 </statement>
 <solution>
-<p><ul><li>5,4,6</li><li>4,6</li><li>5,4,6</li><li>5,4,6,2</li><li>4,6</li><li>2,5,4,6</li></ul></p>
+<p><ul><li>4,2,6,3</li><li>6</li><li>4,6</li><li>4,2,6,5,1</li><li>6</li><li>4,5,1,6,3</li></ul></p>
 </solution>
 </myopenmath>
 

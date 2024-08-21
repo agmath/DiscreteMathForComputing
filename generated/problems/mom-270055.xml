@@ -2,15 +2,15 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="270055">
 <statement>
 <p>
-Let A = <lbrace/>2, 3, 6, 9<rbrace/>.  Indicate if the statement is true or false.</p>
+Let A = <lbrace/>2, 6, 7, 9<rbrace/>.  Indicate if the statement is true or false.</p>
 <p>
 <m>\displaystyle{1}\notin{A}</m> TrueFalse</p>
 <p>
-<m>\displaystyle{4}\notin{A}</m> TrueFalse</p>
+<m>\displaystyle{3}\notin{A}</m> TrueFalse</p>
 <p>
 <m>\displaystyle{5}\notin{A}</m> TrueFalse</p>
 <p>
-<m>\displaystyle{7}\notin{A}</m> TrueFalse</p>
+<m>\displaystyle{8}\notin{A}</m> TrueFalse</p>
 <p>
 <m>\displaystyle{9}\notin{A}</m> TrueFalse</p>
 </statement>
