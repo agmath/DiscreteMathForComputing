@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="989284">
+<statement>
+<p>
+Compute: <m>\displaystyle{\left[\begin{array}{cccc} {9}\amp-{6}\amp{8}\amp-{6}\\-{3}\amp{9}\amp{10}\amp-{6}\\{3}\amp{5}\amp-{8}\amp-{5}\end{array}\right]}\cdot{\left[\begin{array}{cc} -{5}\amp-{6}\\-{5}\amp{8}\\-{8}\amp-{2}\\{8}\amp{10}\end{array}\right]}</m></p>
+<p><fillin characters="20" />Preview Question 1   </p>
+
+
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle{\left[\begin{array}{cc} -{127}\amp-{178}\\-{158}\amp{10}\\-{16}\amp-{12}\end{array}\right]}</m></li></ul></p>
+</solution>
+</myopenmath>
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381477">
+<statement>
+<p>
+Fill out the following truth table.
+</p><table><tabular> 
+  <row>
+    <cell>S</cell>
+    <cell>T</cell>
+    <cell>S <m>\displaystyle\vee</m> T</cell>
+    <cell>S <m>\displaystyle\wedge</m> T</cell>
+    <cell>! T</cell>
+    <cell>!S </cell>
+    <cell>(!T) <m>\displaystyle\vee</m> S</cell>
+  </row>
+  <row>
+    <cell>T</cell>
+    <cell>T</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>T</cell>
+    <cell>F</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>F</cell>
+    <cell>T</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+  <row>
+    <cell>F</cell>
+    <cell>F</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+    <cell><p><ol style="list-style-type:upper-alpha"><li>T</li> 
+<li>F</li> 
+</ol></p>
+</cell>
+  </row>
+</tabular></table>
+</statement>
+<solution>
+<p><ul><li>A: T</li><li>A: T</li><li>A: T</li><li>B: F</li><li>A: T</li><li>B: F</li><li>B: F</li><li>B: F</li><li>B: F</li><li>A: T</li><li>B: F</li><li>A: T</li><li>B: F</li><li>B: F</li><li>A: T</li><li>A: T</li><li>A: T</li><li>A: T</li><li>B: F</li><li>A: T</li></ul></p>
+</solution>
+</myopenmath>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="17424">
+<statement>
+<p>
+Let A = <lbrace/>1, 3, 4, 7, 10<rbrace/> and B = <lbrace/>1, 6, 7<rbrace/>.  Indicate if each statement is true or false.</p>
+<p>
+<m>\displaystyle{10}\in{A}</m> </p>
+<p><ol style="list-style-type:upper-alpha"><li>True</li> 
+<li>False</li> 
+</ol></p>
+<p>
+<m>\displaystyle{B}\subset{A}</m> </p>
+<p><ol style="list-style-type:upper-alpha"><li>True</li> 
+<li>False</li> 
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>A: True</li><li>B: False</li></ul></p>
+</solution>
+</myopenmath>
+

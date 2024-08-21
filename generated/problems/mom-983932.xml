@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="983932">
+<statement>
+<p>
+Consider the routine below checks whether the input myArray contains three elements, a, b, and c such that a + b = c. Determine the run-time complexity of the routine using Big-O notation.
+</p>
+<p>
+  def check<underscore/>for<underscore/>sum<underscore/>triplet(myArray): </p>
+<p>
+    for element<underscore/>a in myArray: </p>
+<p>
+      for element<underscore/>b in myArray: </p>
+<p>
+        for element<underscore/>c in myArray: </p>
+<p>
+          if element<underscore/>a + element<underscore/>b == element<underscore/>c:</p>
+<p>
+            return TRUE
+  </p>
+<p>
+    return FALSE
+</p>
+<p>
+The algorithm as written above has a run-time complexity of </p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({2}^{{n}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{3}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}!\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+</ol></p>
+ 
+
+</statement>
+<solution>
+<p><ul><li>B: <m>\displaystyle{O}{\left({n}^{{3}}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

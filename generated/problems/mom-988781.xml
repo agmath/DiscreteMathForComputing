@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988781">
+<statement>
+<p>
+Consider the following algorithm to convert a list into a two-dimensional array (a matrix).</p>
+<p>
+def list<underscore/>to<underscore/>matrix(myList, rows):</p>
+<p>
+  list<underscore/>length = length(myList)</p>
+<p>
+    if (rows does not divide list<underscore/>length):</p>
+<p>
+      print("Warning: number of rows must divide the length of the list")</p>
+<p>
+      return NULL</p>
+<p>
+  columns = list<underscore/>length / rows </p>
+<p>
+  myMatrix = a rows x columns array</p>
+<p>
+  list<underscore/>counter = 0</p>
+<p>
+  for row in <lbracket/>0, 1, ..., rows - 1<rbracket/>:</p>
+<p>
+    for column in <lbracket/>0, 1, ..., columns - 1<rbracket/>:</p>
+<p>
+      myMatrix<lbracket/>row, column<rbracket/> = myList<lbracket/>list<underscore/>counter<rbracket/></p>
+<p>
+      list<underscore/>counter = list<underscore/>counter + 1</p>
+<p>
+  return myMatrix
+ </p>
+<p>
+Let <m>\displaystyle{n}</m> denote the length of the input parameter <m>\displaystyle{m}{y}{L}{i}{s}{t}</m>. What is the run-time complexity of the alrorithm, using big-O notation? </p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({n}\cdot{\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({\log{{\left({n}\right)}}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+</ol></p>
+ 
+
+</statement>
+<solution>
+<p><ul><li>D: <m>\displaystyle{O}{\left({n}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

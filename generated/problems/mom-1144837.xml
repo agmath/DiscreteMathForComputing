@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1144837">
+<statement>
+<p>
+Suppose you wanted to draw a quadrilateral using the dots below as vertices (corners). The dots are spaced one unit apart horizontally and two units apart vertically.</p><image width="33%"  pi:generated="problems/images/4bdcc550ab071fce6ca1feafe7cdc6ff.png" /><p>
+How many quadrilaterals are possible? <fillin characters="10" /> quadrilaterals.</p>
+<p>
+How many are squares? <fillin characters="10" /> squares.</p>
+<p>
+How many are rectangles? <fillin characters="10" /> rectangles.</p>
+<p>
+How many are paralellograms? <fillin characters="10" /> parallelograms.</p>
+<p>
+How many are trapezoids? (Here, as is calculus, a trapezoid is defined as a quadrilateral with at least one pair of parallel sides. In particular, parallelograms are trapezoids.) <fillin characters="10" /> trapezoids.</p>
+<p>
+How many are trapezoids that are not paralleograms? <fillin characters="10" />
+
+</p>
+</statement>
+<solution>
+<p><ul><li>441</li><li>5</li><li>21</li><li>91</li><li>441</li><li>350</li></ul></p>
+</solution>
+</myopenmath>
+

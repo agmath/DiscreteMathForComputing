@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="974086">
+<statement>
+<p>
+In the explicit base-10 expansion of the integer <m>\displaystyle{72613}</m>, what power of 10 is the digit <m>\displaystyle{1}</m> attatched to?
+</p>
+<p>
+The digit <m>\displaystyle{1}</m> is attached to <m>\displaystyle{10}</m> to the power of <fillin characters="1" />.
+</p>
+</statement>
+<solution>
+<p><ul><li>1</li></ul></p>
+</solution>
+</myopenmath>
+

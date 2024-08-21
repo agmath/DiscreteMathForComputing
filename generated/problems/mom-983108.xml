@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="983108">
+<statement>
+<p>
+5 dice of different colors are rolled, and the numbers showing on each of the colored dice are recorded. How many different outcomes are possible for the dice?
+</p>
+<p>
+<fillin characters="8" />Preview Question 1   
+
+</p>
+</statement>
+<solution>
+<p><ul><li>7776</li></ul></p>
+</solution>
+</myopenmath>
+

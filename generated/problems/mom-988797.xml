@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="988797">
+<statement>
+<p>
+Consider the following algorithm to compute a scalar multiple of a matrix.
+</p>
+<p>
+def scalar<underscore/>mult<underscore/>matrix(myScalar, myMatrix):</p>
+<p>
+    rows = number of rows in myMatrix</p>
+<p>
+    cols = number of columns in muMatrix</p>
+<p>
+    scaled<underscore/>matrix = a rows x cols array
+  </p>
+<p>
+    for row in <lbracket/>0, 1, ..., rows - 1<rbracket/>:</p>
+<p>
+      for column in <lbracket/>0, 1, ..., columns - 1<rbracket/>:</p>
+<p>
+        scaled<underscore/>matrix<lbracket/>row, column<rbracket/> = myScalar <asterisk/> myMatrix<lbracket/>row, column<rbracket/>
+  </p>
+<p>
+    return scaled<underscore/>matrix
+</p>
+<p>
+Let <m>\displaystyle{n}</m> denote the number of rows and <m>\displaystyle{m}</m> denote the number of columns in the myMatrix input parameter. What is the run-time complexity of the alrorithm, using big-O notation? </p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{O}{\left({m}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({1}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}+{n}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({n}^{{2}}\right)}</m></li> 
+<li><m>\displaystyle{O}{\left({m}^{{2}}\cdot{n}^{{2}}\right)}</m></li> 
+</ol></p>
+ 
+
+</statement>
+<solution>
+<p><ul><li>E: <m>\displaystyle{O}{\left({m}\cdot{n}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1381631">
+<statement>
+<p> Consider each of the following scenarios/processes. Identify each one as an <em>atomic process</em> or a more complex, non-atomic process. As a reminder, atomic processes cannot be decomposed into smaller, sub-processes.</p>
+<p><ol>
+  <li> The rolling of three 20-sided die. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Non-Atomic</li> 
+</ol></p>
+ </li> 
+  <li> The rolling of a single 60-sided die. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Non-Atomic</li> 
+</ol></p>
+ </li> 
+  <li> Choosing a single donut from a donut shop that sells many different types of donut. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Non-Atomic</li> 
+</ol></p>
+ </li> 
+  <li> Choosing a donut and a drink from a donut shop that sells many different types of donut and has a large drink menu. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Non-Atomic</li> 
+</ol></p>
+ </li> 
+  <li> Dealing out a pair of cards from a standard 52-card deck. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Non-Atomic</li> 
+</ol></p>
+ </li>
+  <li> Dealing out a second card from a standard 52-card deck after a first card has been dealt out. <p><ol style="list-style-type:upper-alpha"><li>Atomic</li> 
+<li>Non-Atomic</li> 
+</ol></p>
+ </li>
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>B: Non-Atomic</li><li>A: Atomic</li><li>A: Atomic</li><li>B: Non-Atomic</li><li>B: Non-Atomic</li><li>A: Atomic</li></ul></p>
+</solution>
+</myopenmath>
+

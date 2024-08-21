@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="293170">
+<statement>
+<p>Consider a community where people have between 0 and 7 pets.  Let <m>\displaystyle{A}</m> be the event of a person having at least 3 pets and <m>\displaystyle{B}</m> be the event of a person having at most 7 pets. Find each of the following sets. Enter your answer by listing the elements in increasing order, separated by commas. Do not put a comma after the last number. If the set is empty, enter DNE.</p>
+<p><ol style="list-style-type: lower-alpha;">
+  <li> <m>\displaystyle{A}={\lbrace}</m>  <fillin characters="20" /> <m>\displaystyle\rbrace</m> </li>
+  <li> <m>\displaystyle{B}={\lbrace}</m>  <fillin characters="20" /> <m>\displaystyle\rbrace</m> </li>
+  <li> <m>\displaystyle{A}\cap{B}={\lbrace}</m>  <fillin characters="20" /> <m>\displaystyle\rbrace</m> </li>
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>3,4,5,6,7</li><li>0,1,2,3,4,5,6,7</li><li>3,4,5,6,7</li></ul></p>
+</solution>
+</myopenmath>
+

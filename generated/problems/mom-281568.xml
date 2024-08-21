@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="281568">
+<statement>
+<p>
+List the set of numbers greater than 9 and less than 16.</p>
+<p>
+<lbrace/><fillin characters="20" /><rbrace/>
+</p>
+</statement>
+<solution>
+<p><ul><li>10,11,12,13,14,15</li></ul></p>
+</solution>
+</myopenmath>
+
